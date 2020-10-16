@@ -38,12 +38,18 @@ BaseName, Extension, `
 ```
 ## Get path apps
 ```
-Get-ChildItem $env:SystemRoot\*, $env:SystemRoot\system32\* -Include *.exe, *.dll `
+[String[]]$paths = @($env:path -split ";")
+$paths = $paths[0..($paths.Length-2)]
+$paths = $paths.ForEach({"$_\*"})
+Get-ChildItem -Path $paths -Include *.exe, *.dll `
 | Select -Property `
 Extension, BaseName, `
 @{Label="Description"; Expression={[System.Diagnostics.FileVersionInfo]::GetVersionInfo($_).FileDescription}}, `
-@{Label="Version"; Expression={[System.Diagnostics.FileVersionInfo]::GetVersionInfo($_).FileVersion}} `
+@{Label="Version"; Expression={[System.Diagnostics.FileVersionInfo]::GetVersionInfo($_).FileVersion}}, `
+@{Label="Size|KB"; Expression={[math]::Round($_.Length / 1KB)}}, `
+Directory `
 | Sort-Object -Property `
+Directory,
 @{Expression="Extension"; Descending=$True}, `
 @{Expression="Description"; Descending=$False} `
 | Export-Csv path-apps.csv -NoType -Delimiter ";"
