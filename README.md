@@ -36,3 +36,16 @@ BaseName, Extension, `
 @{Label="Description"; Expression={[System.Diagnostics.FileVersionInfo]::GetVersionInfo($_).FileDescription}}, `
 @{Label="Version"; Expression={[System.Diagnostics.FileVersionInfo]::GetVersionInfo($_).FileVersion}}
 ```
+## Get path apps
+```
+Get-ChildItem $env:SystemRoot\*, $env:SystemRoot\system32\* -Include *.exe, *.dll `
+| Select -Property `
+Extension, BaseName, `
+@{Label="Description"; Expression={[System.Diagnostics.FileVersionInfo]::GetVersionInfo($_).FileDescription}}, `
+@{Label="Version"; Expression={[System.Diagnostics.FileVersionInfo]::GetVersionInfo($_).FileVersion}} `
+| Sort-Object -Property `
+@{Expression="Extension"; Descending=$True}, `
+@{Expression="Description"; Descending=$False} `
+| Export-Csv path-apps.csv -NoType -Delimiter ";"
+.\path-apps.csv
+```
