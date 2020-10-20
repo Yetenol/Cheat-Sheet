@@ -1,5 +1,5 @@
 # Powershell cheat sheet
-## See [command](commands.md)
+- See [commands](commands.md)
 
 ## Export to excel
 ```
