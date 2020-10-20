@@ -2,7 +2,7 @@
 - see [RunDll32](http://www.winfaq.de/faq_html/Content/tip0500/onlinefaq.php?h=tip0564.htm)
 
 Command | Description
-- | -
+--- | ---
 rundll32 advpack.dll,LaunchINFSection \<INF-Datei\>,\<Section\> | Installation aus INF-Files
 rundll32 appwiz.cpl,NewLinkHere \<Verzeichnis\> | Neue Verknüpfung anlegen
 rundll32 desk.cpl,InstallScreenSaver \<saver.scr\> | Screensaver installieren
