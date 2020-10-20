@@ -1,4 +1,6 @@
 # Powershell cheat sheet
+## See [command](commands.md)
+
 ## Export to excel
 ```
 Get-Process | Export-Csv <FILE> -NoType -Delimiter ";"
