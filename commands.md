@@ -1,5 +1,4 @@
 # Windows Commands Cheat Sheet
-- see [RunDll32](http://www.winfaq.de/faq_html/Content/tip0500/onlinefaq.php?h=tip0564.htm)
 
 Command | Description
 --- | ---
@@ -54,3 +53,6 @@ rundll32 Keymgr.dll,KRShowKeyMgr | Gespeicherte Benutzernamen und Kennwörter
 rundll32 powrprof.dll,SetSuspendState | Rechner wird in den Ruhezustand gefahren
 rundll32 shell32.dll,Control_RunDLL wscui.cpl,Security Center | Windows Sicherheitscenter
 rundll32 shell32.dll, Options_RunDLL 0 | Ordneroptionen
+
+
+Source: [Funktionen-Befehle der Dateien RUNDLL.EXE und RUNDLL32.EXE](http://www.winfaq.de/faq_html/Content/tip0500/onlinefaq.php?h=tip0564.htm)
