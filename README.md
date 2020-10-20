@@ -41,15 +41,16 @@ BaseName, Extension, `
 [String[]]$paths = @($env:path -split ";")
 $paths = $paths[0..($paths.Length-2)]
 $paths = $paths.ForEach({"$_\*"})
-Get-ChildItem -Path $paths -Include *.exe, *.dll `
+Get-ChildItem -Path $paths -Include *.exe, *.msc `
 | Select -Property `
-Extension, BaseName, `
+@{Label="Type"; Expression={($_.Extension.toUpper() -replace "\`.","")}}, `
+@{Label="Command"; Expression={($_.Name -replace ".exe", "")}}, `
 @{Label="Description"; Expression={[System.Diagnostics.FileVersionInfo]::GetVersionInfo($_).FileDescription}}, `
 @{Label="Version"; Expression={[System.Diagnostics.FileVersionInfo]::GetVersionInfo($_).FileVersion}}, `
 @{Label="Size|KB"; Expression={[math]::Round($_.Length / 1KB)}}, `
-Directory `
+@{Label="Location"; Expression={$_.Directory}} `
 | Sort-Object -Property `
-Directory,
+@{Expression="Location"; Descending=$False}, `
 @{Expression="Extension"; Descending=$True}, `
 @{Expression="Description"; Descending=$False} `
 | Export-Csv path-apps.csv -NoType -Delimiter ";"
