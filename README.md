@@ -53,6 +53,6 @@ Get-ChildItem -Path $paths -Include *.exe, *.msc `
 @{Expression="Location"; Descending=$False}, `
 @{Expression="Extension"; Descending=$True}, `
 @{Expression="Description"; Descending=$False} `
-| Export-Csv path-apps.csv -NoType -Delimiter ";"
-.\path-apps.csv
+| Export-Csv -Path "$env:temp\path-apps.csv" -NoType -Delimiter ";"
+start "$env:temp\path-apps.csv"
 ```
