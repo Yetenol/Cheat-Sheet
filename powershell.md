@@ -56,3 +56,6 @@ Get-ChildItem -Path $paths -Include *.exe, *.msc `
 | Export-Csv -Path "$env:temp\path-apps.csv" -NoType -Delimiter ";"
 start "$env:temp\path-apps.csv"
 ```
+
+Read further
+- [Invoke command, item or strings](https://social.technet.microsoft.com/wiki/contents/articles/7703.powershell-running-executables.aspx)
