@@ -2,7 +2,7 @@
 
 ## Variables - Common data types
 Examples | .GetType()-Names
-- | -
+--- | ---
 42 | INTEGER (Convert automatically to larger types) <br> <b>Int32, Int (32-bit signed integer)</b> <br> Int64, Long (64-bit signed integer)
 3,65 | DECIMAL NUMBER <br> <b>Double (Double-precision 64-bit floating point number)</b> <br> Single, Float (Single-precision 32-bit floating point number)
 $True <br> $False | <b>Boolean</b>
