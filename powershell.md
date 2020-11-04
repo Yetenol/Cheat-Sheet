@@ -14,7 +14,7 @@ Update-Help
 ```
 ## Get syntax help
 ```
-help Get-Process
+(Get-Process -?).syntax
 ```
 Browser help page
 ```
@@ -25,9 +25,18 @@ Specific parameter help
 help Get-Process -Parameter Id
 ```
 
-## Analyse an object
+# Analyse an object / output
 ```
-Get-Process | Get-Member -MemberType Property
+dir | Get-Member -MemberType Property
+```
+## Display output / export to Microsoft Excel
+```
+dir | Export-Csv .\table.csv -NoType -Delimiter ";"
+.\table.csv
+```
+```
+Get-ChildItem | Export-Csv -File .\table.csv -NoTypeInformation -Delimiter ";"
+.\table.csv
 ```
 
 
@@ -39,7 +48,7 @@ Examples | .GetType()-Names
 $True <br> $False | <b>Boolean</b>
 "Hello" <br> 'Raw &%\Text' <br> "$env:temp\Trash" <br> "Hi " + $a + "!"| Text or single characters <br> <b>String (Fixed-length string of Unicode characters)</b> <br> Char (A Unicode 16-bit character)
 [DateTime]::Now <br> [DateTime]::UtcNow <br> [DateTime]"1999-12-31" <br> [DateTime]"23:45:33" <br> [DateTime]"1.1.07 12:30" | Timestamp as date and time <br> <b>DateTime</b>
-1, 2, 3, 7 <br> @(1..3; 7) <br> 'I', 'am', "here" | <b>Object[], Array</b>
+@(1; 2; 3; 7) <br> @(1..3; 7) <br> @('I'; 'am'; "here") | <b>Object[], Array</b>
 @{X=12; Y=45; N="Karl"} | Dictionary of key/value pairs <br> <b>Hashtable</b>
 [ordered]@{X=12; Y=45} | Ordered dictionary of key/value pairs <br> <b>OrderedDictionary</b>
 
@@ -156,13 +165,6 @@ Get-ChildItem | Format-Table -Property Name, `
 Get-ChildItem | Format-Table -Property Name, `
 @{Label="Size|KB"; Expression={[math]::Round($_.Length / 1KB, 2)}}
 ```
-## Export to excel
-```
-dir | Export-Csv table.csv -NoType -Delimiter ";"
-```
-```
-Get-ChildItem | Export-Csv -File table.csv -NoTypeInformation -Delimiter ";"
-```
 ## Interesting information
 ```
 Get-ChildItem $env:SystemRoot\* -Include *.exe, *.dll | Format-Table -Property `
@@ -199,6 +201,10 @@ ii .
 ```
 ```
 Invote-Item .
+```
+## Create empty file
+```
+Out-File .\new.txt
 ```
 
 ## Open Powershell from Windows Explorer
