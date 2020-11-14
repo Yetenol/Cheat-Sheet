@@ -1,4 +1,4 @@
-# Windows Troubleshoot Cheat Sheet
+# Windows Troubleshooting wizzard - Cheat Sheet
 
 Command | Title | Description
 --- | --- | ---

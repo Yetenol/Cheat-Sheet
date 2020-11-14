@@ -1,4 +1,4 @@
-# Windows Commands Cheat Sheet
+# Windows command line calls - Cheat Sheet
 
 Command | Description
 --- | ---

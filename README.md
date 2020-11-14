@@ -1,4 +1,5 @@
 # Cheat sheet
-- See [Windows commands](commands.md)
-- See [Windows Troubleshoot](troubleshoot.md)
+- See [Windows command line calls](commands.md)
+- See [Windows troubleshoot wizzard](troubleshoot.md)
 - See [PowerShell](powershell.md)
+- See [C Debugging - gdb](gdb.md)
