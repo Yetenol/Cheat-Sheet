@@ -30,11 +30,11 @@ help Get-Process -Parameter Id
 
 # Analyse an object / output
 ```powershell
-dir | Get-Member -MemberType Property
+Get-ChildItem | Get-Member -MemberType Property
 ```
 ## Display output / export to Microsoft Excel
 ```powershell
-dir | Export-Csv .\table.csv -NoType -Delimiter ";"
+Get-ChildItem | Export-Csv .\table.csv -NoType -Delimiter ";"
 .\table.csv
 ```
 
@@ -159,16 +159,16 @@ function Show-Hello {
 # Tables
 ## Display table
 ```powershell
-dir | ft Name, Length
-```
-```powershell
 Get-ChildItem | Format-Table -Property Name, Length
 ```
+> `dir | ft Name, Length`
 
 ## Export object as table to Microsoft Excel
 ```powershell
-Get-Process | Export-Csv <FILE> -NoType -Delimiter ";"
+Get-Process | Export-Csv -Path <FILE> -NoTypeInformation -Delimiter ";"
 ```
+> `Get-Process | Export-Csv <FILE> -NoType -Delimiter ";"`
+
 
 ## Rename table columns
 ```powershell
@@ -183,7 +183,7 @@ Get-ChildItem | Format-Table -Property Name, `
 ```
 ## Interesting information
 ```powershell
-Get-ChildItem $env:SystemRoot\* -Include *.exe, *.dll | Format-Table -Property `
+Get-ChildItem -Path $env:SystemRoot\* -Include *.exe, *.dll | Format-Table -Property `
   BaseName, Extension, `
   @{Label="Description"; Expression={[System.Diagnostics.FileVersionInfo]::GetVersionInfo($_).FileDescription}}, `
   @{Label="Version"; Expression={[System.Diagnostics.FileVersionInfo]::GetVersionInfo($_).FileVersion}}
@@ -191,7 +191,7 @@ Get-ChildItem $env:SystemRoot\* -Include *.exe, *.dll | Format-Table -Property `
 
 ## Get path apps
 ```powershell
-[String[]]$paths = @($env:path -split ";")
+$paths = [String[]] @($env:path -split ";") 
 $paths = $paths[0..($paths.Length-2)]
 $paths = $paths.ForEach({"$_\*"})
 Get-ChildItem -Path $paths -Include *.exe, *.msc `
