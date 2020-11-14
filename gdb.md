@@ -81,3 +81,5 @@ run<br>r<br>run <i>command-line-arguments</i><br>run &lt; <i>infile</i> &gt; <i>
 continue<br>c | Continue execution to next break point.
 kill | Stop program execution.
 quit<br>q | Exit GDB debugger.
+
+Source: [Linux Tutorial - GNU GDB Debugger Command Cheat Sheet](http://www.yolinux.com/TUTORIALS/GDB-Commands.html)
