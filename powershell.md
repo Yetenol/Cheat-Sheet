@@ -4,8 +4,9 @@
 
 ## Find the right cmdlet
 ```
-Get-Command | Where-Object Name -Match "vpn"
+Get-Command | Where-Object -Property Name -Match "vpn"
 ```
+>`Get-Command | Where-Object `<i>Name</i>` -Match "vpn`
 
 ## Help-Files
 Update Help Files (Run as admin)
