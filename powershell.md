@@ -93,7 +93,7 @@ if($validLines.Count -le 0) {
 } elseif($validLines.Count -eq 1) {
   # Use this code if you only want one entry
   $regex = [RegEx]::Match($validLines[0], $regexFormat) # Only use first entry
-  $Username = $regex.Groups[1].value
+  $Username = $regex.Groups[1].value # Matches start at index 1
   $Password = $regex.Groups["pwd"].value
   Write-Output -InputObject @("Successfully extracted:", $Username, $Password)
 } else {
