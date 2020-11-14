@@ -1,4 +1,4 @@
-# Windows Troubleshooting wizzard - Cheat Sheet
+# Troubleshooting Wizzard (Windows) - Cheat Sheet
 
 Command | Title | Description
 --- | --- | ---
