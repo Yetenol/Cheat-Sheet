@@ -80,7 +80,7 @@ $Lines_User[0]                  # Only use first line
 
 Get first line with <i>User: \<username\> </i>
 ```powershell
-# LineFormat =   ···Username:···theo···Password:····turles1987·· 
+# LineFormat =   ···Username:···theo···Password:···turles1987·· 
 $regexFormat = "^\s*Username:\s*(.*)\s*Password:\s*(?<pwd>.*)\s*$"
 # ^: Start of line      $: End of line      \s*: Whitespace
 # (.*) Unnamed entry    (?<pwd>.*) Named entry called pwd
