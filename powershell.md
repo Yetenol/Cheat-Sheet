@@ -34,23 +34,20 @@ Get-ChildItem | Get-Member -MemberType Property
 ```
 ## Display output / export to Microsoft Excel
 ```powershell
-Get-ChildItem | Export-Csv .\table.csv -NoType -Delimiter ";"
-.\table.csv
-```
-
-```powershell
 Get-ChildItem | Export-Csv -File .\table.csv -NoTypeInformation -Delimiter ";"
 .\table.csv
 ```
+> DIRTY CODE: `Get-ChildItem | Export-Csv .\table.csv -NoType -Delimiter ";"`
+
 
 
 # Variables - Common data types
 Examples | .GetType()-Names
 --- | ---
 42 | Integers (Convert automatically to larger types) <br> <b>Int32, Int (32-bit signed integer)</b> <br> Int64, Long (64-bit signed integer)
-3,65 | Decimal numbers <br> <b>Double (Double-precision 64-bit floating point number)</b> <br> Single, Float (Single-precision 32-bit floating point number)
+3.65 | Decimal numbers <br> <b>Double (Double-precision 64-bit floating point number)</b> <br> Single, Float (Single-precision 32-bit floating point number)
 $True <br> $False | <b>Boolean</b>
-"Hello" <br> 'Raw &%\Text' <br> "$env:temp\Trash" <br> "Hi " + $a + "!"| Text or single characters <br> <b>String (Fixed-length string of Unicode characters)</b> <br> Char (A Unicode 16-bit character)
+"Hello" <br> 'Raw &%\Text' <br> "$env:temp\Trash" <br> "Hi " + $a + "!`n"| Text or single characters <br> <b>String (Fixed-length string of Unicode characters)</b> <br> Char (A Unicode 16-bit character)
 [DateTime]::Now <br> [DateTime]::UtcNow <br> [DateTime]"1999-12-31" <br> [DateTime]"23:45:33" <br> [DateTime]"1.1.07 12:30" | Timestamp as date and time <br> <b>DateTime</b>
 @(1; 2; 3; 7) <br> @(1..3; 7) <br> @('I'; 'am'; "here") | <b>Object[], Array</b>
 @{X=12; Y=45; N="Karl"} | Dictionary of key/value pairs <br> <b>Hashtable</b>
@@ -67,25 +64,50 @@ $User = Get-Host "Username"
 ### Get plaintext input from file at specific line
 TotalCount speeds up the commands by only loading the first 26 lines.
 ```powershell
-$Line26 = (Get-Content ".\data.txt")[25]
+$Line26 = (Get-Content -Path <#File#>)[25]
 ```
 
 ```powershell
-$Line26 = (Get-Content ".\data.txt" -TotalCount 26)[25]
+$Line26 = (Get-Content -Path <#File#> -TotalCount 26)[25]
 ```
 
 Get first line starting with <i>User</i>
 ```powershell
-$Lines_User = Get-Content ".\data.txt" -ReadCount 1000 | 
-  foreach {$_ -match "^User"}
-$Lines_User[0]
+$Lines_User = Get-Content -Path <#File#> -ReadCount 1000 # Load in shunks of 1k lines
+  | foreach {$_ -match "^User"} # ^: Beginning of line (regex)
+$Lines_User[0]                  # Only use first line
 ```
 
 Get first line with <i>User: \<username\> </i>
 ```powershell
-$Lines_User = Get-Content ".\data.txt" -ReadCount 1000 | 
-  foreach {$_ -match "^User:"}
-$Username = [RegEx]::Match($Lines_User[0], "^User:\s*(.*)").Groups[1].value
+# LineFormat =   ···Username:···theo···Password:····turles1987·· 
+$regexFormat = "^\s*Username:\s*(.*)\s*Password:\s*(?<pwd>.*)\s*$"
+# ^: Start of line      $: End of line      \s*: Whitespace
+# (.*) Unnamed entry    (?<pwd>.*) Named entry called pwd
+
+$validLines = Get-Content -Path <#File#>text.txt -ReadCount 1000 `
+  | foreach {$_ -match $regexFormat}
+
+if($validLines.Count -le 0) {
+  Write-Host -Object "No entries found!"
+} elseif($validLines.Count -eq 1) {
+  # Use this code if you only want one entry
+  $regex = [RegEx]::Match($validLines[0], $regexFormat) # Only use first entry
+  $Username = $regex.Groups[1].value
+  $Password = $regex.Groups["pwd"].value
+  Write-Output -InputObject @("Successfully extracted:", $Username, $Password)
+} else {
+  # Use this code if you want multiple entries
+  $credentials = @{}
+  foreach ($line in $validLines) {
+    $regex = [RegEx]::Match($line, $regexFormat) # Only use first entry
+    $Username = $regex.Groups[1].value
+    $Password = $regex.Groups["pwd"].value
+    $credentials[$Username] = $Password
+  }
+  Write-Host -Object "Successfully extracted:"
+  Write-Output -InputObject $credentials
+}
 ```
 
 
@@ -120,22 +142,53 @@ Only the <b>SAME USER ON THE SAME MASHINE</b> can decrypt.
 $Secure = Get-Content "${Env:AppData}\Sec.bin" | ConvertTo-SecureString
 ```
 
-## Select input from list
+## Ask a question once / until answered
 ```powershell
-$promt = "Select from:
-1 Sleep
-2 Shutdown
-r Restart
-"
 do {
-  $Choice = Read-Host "$promt"
+  $Choice = Read-Host -Prompt "=== Select from: ===`n0 blue`ny yellow`n"
   switch ($Choice) {
-    1 {"You selected Sleep"}
-    2 {"You selected Shutdown"}
-    "r" {"You selected Restart"}
-    default {$Choice = $null; "Invalid choice!"}
+    0 {
+      Write-Host -Object "Painting in blue"
+      break
+    } 
+    "y" {
+      Write-Host -Object "Painting in yellow"
+      return
+    }
+    default {
+      $Choice = $null
+      Write-Host -Object "=== Invalid choice! ==="
+      break
+    }
   }
 } while ($Choice -eq $null)
+```
+
+## Ask a question repeatedly until canceled
+```powershell
+while ($true) {
+  $Choice = Read-Host -Prompt "=== Select from: ===`n0  Sleep`n9+ Shutdown in _s`nq  Quit`n"
+  $n = -1 # Choice parsed to number
+  switch ($Choice) {
+    0 {
+      Write-Host -Object "Falling asleep"
+      break
+    } 
+    {<#isNumber#>[double]::TryParse($_,[ref]$n) -and <# >8 #>($n -gt 8)} {
+      Write-Host -Object @("Shutdown in", [math]::floor($_), "seconds")
+      break
+    }
+    "q" {
+      Write-Host -Object "=== Quit ==="
+      return
+    }
+    default {
+      $Choice = $null
+      Write-Host -Object "=== Invalid choice! ==="
+      break
+    }
+  }
+}
 ```
 
 ## Function: Set parameter AutoComplete
@@ -161,13 +214,13 @@ function Show-Hello {
 ```powershell
 Get-ChildItem | Format-Table -Property Name, Length
 ```
-> `dir | ft Name, Length`
+> DIRTY CODE: `dir | ft Name, Length`
 
 ## Export object as table to Microsoft Excel
 ```powershell
-Get-Process | Export-Csv -Path <FILE> -NoTypeInformation -Delimiter ";"
+Get-Process | Export-Csv -Path <#File#>table.csv -NoTypeInformation -Delimiter ";"
 ```
-> `Get-Process | Export-Csv <FILE> -NoType -Delimiter ";"`
+> DIRTY CODE: `Get-Process | Export-Csv <#File#>table.csv -NoType -Delimiter ";"`
 
 
 ## Rename table columns
@@ -214,15 +267,15 @@ start "$env:temp\path-apps.csv"
 
 ## Open location in Windows Explorer
 ```powershell
-ii .
+Invote-Item -Path .
 ```
-```powershell
-Invote-Item .
-```
+> DIRTY CODE: `ii .`
+
 ## Create empty file
 ```powershell
-Out-File .\new.txt
+Out-File -FilePath <#File>
 ```
+> DIRTY CODE: Out-File <#File#>
 
 ## Open Powershell from Windows Explorer
 Press `Shift + Right click` and select `Open Powershell window here`
