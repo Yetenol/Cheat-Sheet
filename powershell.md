@@ -100,8 +100,8 @@ if($validLines.Count -le 0) {
   # Use this code if you want multiple entries
   $credentials = @{}
   foreach ($line in $validLines) {
-    $regex = [RegEx]::Match($line, $regexFormat) # Only use first entry
-    $Username = $regex.Groups[1].value
+    $regex = [RegEx]::Match($line, $regexFormat)
+    $Username = $regex.Groups[1].value # Matches start at index 1
     $Password = $regex.Groups["pwd"].value
     $credentials[$Username] = $Password
   }
