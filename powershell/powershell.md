@@ -1,5 +1,13 @@
 # Powershell Cheat Sheet
 
+# Make a powershell script executable
+- Attach .bat to your script filename e.g: `script.ps1.bat`
+- Add this as the first line of code
+```powershell
+# & start powershell -Command "Invoke-Command -ScriptBlock ([ScriptBlock]::Create(((Get-Content %0) -join """`n""")))" & exit
+# The above line makes the script executable when renamed .cmd or .bat
+```
+
 # Help yourself
 
 ## Find the right cmdlet
