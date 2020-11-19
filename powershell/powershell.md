@@ -1,7 +1,7 @@
 # Powershell Cheat Sheet
 
 # Make a powershell script executable
-- Attach .bat to your script filename e.g: `script.ps1.bat`
+- Attach .bat at the end of your script filename e.g: `script.ps1.bat`
 - Add this as the first line of code
 ```powershell
 # & start powershell -Command "Invoke-Command -ScriptBlock ([ScriptBlock]::Create(((Get-Content %0) -join """`n""")))" & exit
@@ -12,7 +12,7 @@
 
 ## Find the right cmdlet
 ```powershell
-Get-Command | Where-Object -Property Name -Match "vpn"
+Get-Command | Where-Object {$_.Name -Match "vpn"}
 ```
 
 ## Help-Files

@@ -1,17 +1,38 @@
 # Powershell - Input / Output Handling
 
-# Analyse an output
+# Your best buddies / Analyse an output
+Since everything in PowerShell already is or becomes an object you should know how to analyse and handle them. Objects are most easily visualised as text tables but keep in mind that each value can be an object itself.
 What <b>type of object</b> am I working with <br>
 - Most return type are Object[]: Array of Objects
 - External programs return an Object[] containing Strings
 ```powershell
-$o = <# command #>
-$o.GetType()                         # Get return type
+# You can often replace $o with a command directly
+# Sometimes you have to surround it in brackets
+$o = <# command e.g: Get-Process #>
+
+# Display object in GUI
+$o | Out-GridView                      # Display main properties
+$o | Select-Object * | Out-GridView           # Display all properties
+$o | Get-Member -MemberType Properties # List property names (table header)
+
+# Access member properties or methods()
+$o | Get-Member | Select -First 1    # Show object type
+$o | Get-Member -MemberType Method   # List method names
+$o.<# member name #>                 # Access members
+$o[<# range[] # e.g: $o[0..5+7] #>]  # Access range of indexes or lines
 $o.Count                             # If array: Get number of elements
 $o[0].GetType()                      # If array: Get element's type
-$o | Get-Member -MemberType Property # Get properties list
-$o | Get-Member -MemberType Method   # Get methods list
-$o.<# member name #>                 # Access members
+
+# Working with objects
+$o | Select-Object <# Properties e.g: Name, ID #>
+$o | Where-Object {$_.<# member #> <# operator #> <# value #>}
+<#  $_: Current entry (line)    Examples:
+$o | Where-Object {$_.Company}                   # Require value for Company
+$o | Where-Object {$_.Company -match "^Microsoft"}        # Regular Expression
+$o | Where-Object {$_.Path -eq "C:\WINDOWS\Explorer.exe"}
+$o | Where-Object {$_.WorkingSet -gt 250MB -and $_.StartTime -le [DateTime]"8:00"}
+#>
+$o | Group-Object <# Property #>
 ```
 
 ## Display output over multiple pages
