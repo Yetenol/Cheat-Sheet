@@ -13,7 +13,7 @@ ms-settings:sound | Sound
 ms-settings:sound-devices | Manage sound devices
 ms-settings:apps-volume | App volume and device preferences
 ms-settings:notifications | Notifications & actions
-ms-settings:quiethours, OR ms-settings:quietmomentshome | Focus assist
+ms-settings:quiethours <br> ms-settings:quietmomentshome | Focus assist
 ms-settings:quietmomentsscheduled | During these hours
 ms-settings:quietmomentspresentation | Duplicating my display (When I'm duplicating my display)
 ms-settings:quietmomentsgame | Playing a game full screen (When I'm playing a game)
@@ -33,7 +33,7 @@ ms-settings:remotedesktop | Remote Desktop
 ms-settings:deviceencryption | Device Encryption (where available)
 ms-settings:about | About
 ⠀|⠀⠀⠀⠀⠀**Devices**
-ms-settings:bluetooth, OR ms-settings:connecteddevices | Bluetooth & other devices
+ms-settings:bluetooth <br> ms-settings:connecteddevices | Bluetooth & other devices
 ms-settings:printers | Printers & scanners
 ms-settings:mousetouchpad | Mouse
 ms-settings:devices-touchpad | Touchpad
@@ -60,7 +60,7 @@ ms-settings:network-ethernet | Ethernet
 ms-settings:network-dialup | Dial-up
 ms-settings:network-directaccess | DirectAccess (where available)
 ms-settings:network-vpn | VPN
-ms-settings:network-airplanemode, OR ms-settings:proximity | Airplane mode
+ms-settings:network-airplanemode <br> ms-settings:proximity | Airplane mode
 ms-settings:network-mobilehotspot | Mobile hotspot
 ms-settings:nfctransactions | NFC
 ms-settings:datausage | Data usage
@@ -68,7 +68,7 @@ ms-settings:network-proxy | Proxy
 ⠀|⠀⠀⠀⠀⠀**Personalization**
 ms-settings:personalization | Personalization
 ms-settings:personalization-background | Background
-ms-settings:personalization-colors, OR ms-settings:colors | Colors
+ms-settings:personalization-colors <br> ms-settings:colors | Colors
 ms-settings:lockscreen | Lock screen
 ms-settings:themes | Themes
 ms-settings:fonts | Fonts (build 17083+)
@@ -76,7 +76,7 @@ ms-settings:personalization-start | Start
 ms-settings:personalization-start-places | Choose which folders appear on Start
 ms-settings:taskbar | Taskbar 
 ⠀|⠀⠀⠀⠀⠀**Apps**
-ms-settings:appsfeatures OR ms-settings:appsfeatures-app | Apps & features
+ms-settings:appsfeatures <br> ms-settings:appsfeatures-app | Apps & features
 ms-settings:optionalfeatures | Manage optional features
 ms-settings:defaultapps | Default apps
 ms-settings:maps | Offline maps
@@ -103,7 +103,7 @@ ms-settings:regionlanguage-jpnime | Japan IME settings (where available)
 ms-settings:regionlanguage-chsime-pinyin | Pinyin IME settings (where available)
 ms-settings:regionlanguage-chsime-wubi | Wubi IME settings (where available)
 ms-settings:regionlanguage-korime | Korea IME settings (where available)
-ms-settings:regionlanguage OR ms-settings:regionlanguage-languageoptions | Language
+ms-settings:regionlanguage <br> ms-settings:regionlanguage-languageoptions | Language
 ms-settings:regionlanguage-setdisplaylanguage | Windows Display language
 ms-settings:regionlanguage-adddisplaylanguage | Add Display language
 ms-settings:keyboard | Keyboard (removed in build 17083+)
@@ -181,7 +181,7 @@ ms-settings:windowsupdate-history | View update history
 ms-settings:windowsupdate-restartoptions | Restart options
 ms-settings:windowsupdate-options | Advanced options
 ms-settings:windowsupdate-activehours | Change active hours
-ms-settings:windowsupdate-optionalupdates OR ms-settings:windowsupdate-seekerondemand | Optional updates
+ms-settings:windowsupdate-optionalupdates<br>R ms-settings:windowsupdate-seekerondemand | Optional updates
 ms-settings:delivery-optimization | Delivery Optimization
 ms-settings:windowsdefender | Windows Security / Windows Defender
 windowsdefender: | Open Windows Security
@@ -191,7 +191,7 @@ ms-settings:recovery | Recovery
 ms-settings:activation | Activation
 ms-settings:findmydevice | Find My Device
 ms-settings:developers | For developers
-ms-settings:windowsinsider, OR ms-settings:windowsinsider-optin | Windows Insider Program
+ms-settings:windowsinsider <br> ms-settings:windowsinsider-optin | Windows Insider Program
 ⠀|⠀⠀⠀⠀⠀**Mixed reality**
 ms-settings:holographic | Mixed reality
 ms-settings:holographic-audio | Audio and speech
