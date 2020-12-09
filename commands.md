@@ -1,9 +1,9 @@
 Command (URI) | Page
 :--- | :---
-⠀ | ⠀
+<p> | <p>
 ==================== | **Settings home page**
 ms-settings: | Settings home page
-⠀ | ⠀
+<p> | 
 ==================== | **System**
 ms-settings:display | Display
 ms-settings:nightlight | Night light settings
