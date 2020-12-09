@@ -74,8 +74,8 @@ ms-settings:themes | Themes
 ms-settings:fonts | Fonts (build 17083+)
 ms-settings:personalization-start | Start
 ms-settings:personalization-start-places | Choose which folders appear on Start
-ms-settings:taskbar | Taskbar
-Apps
+ms-settings:taskbar | Taskbar 
+| Apps
 ms-settings:appsfeatures OR ms-settings:appsfeatures-app | Apps &amp; features
 ms-settings:optionalfeatures | Manage optional features
 ms-settings:defaultapps | Default apps
