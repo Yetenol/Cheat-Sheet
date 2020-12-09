@@ -156,3 +156,5 @@ winver | Versione Windows
 wmimgmt.msc | WMI Management
 write | WordPad
 xpsrchvw | XPS Viewer
+
+Source: [List of ms-settings URI commands to open specific settings in Windows 10 – 4sysops](https://4sysops.com/wiki/list-of-ms-settings-uri-commands-to-open-specific-settings-in-windows-10/)
