@@ -3,42 +3,41 @@
 Command | Description
 --- | ---
 rundll32 advpack.dll,LaunchINFSection \<INF-Datei\>,\<Section\> | Installation aus INF-Files
-rundll32 appwiz.cpl,NewLinkHere \<Verzeichnis\> | Neue Verknüpfung anlegen
+rundll32 appwiz.cpl,NewLinkHere \<Verzeichnis\> | <mark>Neue Verknüpfung anlegen</mark>
 rundll32 desk.cpl,InstallScreenSaver \<saver.scr\> | Screensaver installieren
 rundll32 diskcopy.dll,DiskCopyRunDLL \<0 oder 1\> | Ruft Diskcopy auf
-rundll32 keymgr.dll,KRShowKeyMgr | Dialog "Gespeicherte Benutzernamen und Kennwörter"
+rundll32 keymgr.dll,KRShowKeyMgr | <mark>Stored User Names and Passwords</mark>
 rundll32 setupapi.dll,InstallHinfSection 132 \<.inf-Datei\> | Installation aus einer INF-Datei
-rundll32 Shell32.dll,Control_RunDLL | Systemsteuerung
+rundll32 Shell32.dll,Control_RunDLL | **Systemsteuerung**
 rundll32 shell32.dll,Control_FillCache_RunDLL | Systemsteuerungs-Applets neu einlesen
-rundll32 Shell32.dll,Control_RunDLL main.cpl,@\<Zahl\> | Einstellung "Einstellung" aufrufen, 0 Maus, 1 Tastatur, 2 Drucker, 3 Schriftarten, 4 Energie
+rundll32 Shell32.dll,Control_RunDLL main.cpl,@0 | Mouse Settings # ThinkPad (TrackPoint / <mark>TouchPad</mark>)
+rundll32 Shell32.dll,Control_RunDLL main.cpl,@1 | Keyboard Properties
 rundll32 shell32.dll,Control_RunDLL access.cpl | Erleichterte Bedienung
-rundll32 shell32.dll,Control_RunDLL appwiz.cpl,null,0 | Software (Entfernen/Hinzufügen neuer Programme)
-rundll32 shell32.dll,Control_RunDLL appwiz.cpl,null,1 | Software (Neue Programme vom Netzwerk hinzufügen)
-rundll32 shell32.dll,Control_RunDLL appwiz.cpl,null,2 | Software (Windows Assistenten für Windows Komponenten, Windows Features)
-rundll32 Shell32.dll,Control_RunDLL desk.cpl | Einstellung "Anzeigeeinstellungen" aufrufen
-rundll32 shell32.dll,Control_RunDLL desk.cpl,null,0 | Desktop-Symboleinstellungen
-rundll32 shell32.dll,Control_RunDLL desk.cpl,null,1 | Eigenschaften von Anzeige (Bildschirmschoner-Einstellungen)
-rundll32 shell32.dll,Control_RunDLL desk.cpl,null,2 | Eigenschaften von Anzeige (Darstellung)
-rundll32 shell32.dll,Control_RunDLL intl.cpl,null,0 | Regions-und Sprachoptionen - Tabreiter: Formate
-rundll32 shell32.dll,Control_RunDLL intl.cpl,null,1 | Regions-und Sprachoptionen - Tabreiter: Verwaltung
-rundll32 shell32.dll,Control_RunDLL joy.cpl | Gamecontroller
-rundll32 shell32.dll,Control_RunDLL main.cpl @0 | Eigenschaften von Maus - Tabreiter: Tasten
-rundll32 shell32.dll,Control_RunDLL main.cpl @1 | Eigenschaften von Tastatur - Tabreiter: Geschwindigkeit
-rundll32 shell32.dll,Control_RunDLL mmsys.cpl,null,0 | Sound - Tabreiter: Wiedergabe
-rundll32 shell32.dll,Control_RunDLL mmsys.cpl,null,1 | Sound - Tabreiter: Aufnahme
-rundll32 shell32.dll,Control_RunDLL mmsys.cpl,null,2 | Sound - Tabreiter: Sounds
-rundll32 shell32.dll,Control_RunDLL modem.cpl | Telefon- und Modemoptionen (Modems)
-rundll32 shell32.dll,Control_RunDLL sysdm.cpl,null,1 | Systemeigenschaften - Tabreiter: Computername
-rundll32 shell32.dll,Control_RunDLL sysdm.cpl,null,2 | Systemeigenschaften - Tabreiter: Hardware
-rundll32 shell32.dll,Control_RunDLL sysdm.cpl,null,3 | Systemeigenschaften - Tabreiter: Erweitert
-rundll32 shell32.dll,Control_RunDLL sysdm.cpl,null,4 | Systemeigenschaften - Tabreiter: Computerschutz
-rundll32 shell32.dll,Control_RunDLL timedate.cpl,null,0 | Eigenschaften von Datum/Uhrzeit - Tabreiter: Datum und Uhrzeit
-rundll32 shell32.dll,Control_RunDLL timedate.cpl,null,1 | Eigenschaften von Datum/Uhrzeit - Tabreiter: Zusätzliche Uhren
-rundll32 shell32.dll,OpenAs_RunDLL | Box "Öffnen mit" aufrufen
-rundll32 shell32.dll,OpenAs_RunDLL \<Datei\> | Öffnen mit... mit Dateiangabe
-rundll32 Shell32.dll,ShellAboutA | Microsoft Windows Infobox
-rundll32 shell32.dll,SHHelpShortcuts_RunDLL AddPrinter | Drucker hinzufügen
-rundll32 shell32.dll,SHHelpShortcuts_RunDLL PrintersFolder | Druckerordner anzeigen
+rundll32 shell32.dll,Control_RunDLL appwiz.cpl,null,0 | Control Panel > <mark>Uninstall or change a program</mark>
+rundll32 shell32.dll,Control_RunDLL appwiz.cpl,null,1 | Control Panel > Install a program from the network
+rundll32 shell32.dll,Control_RunDLL appwiz.cpl,null,2 | Control Panel > <mark>Windows Features</mark>
+rundll32 Shell32.dll,Control_RunDLL desk.cpl | Settings > Display
+rundll32 shell32.dll,Control_RunDLL desk.cpl,null,0 | Control Panel > <mark>Desktop Icon Settings</mark>
+rundll32 shell32.dll,Control_RunDLL desk.cpl,null,1 | Control Panel > Screen Saver Settings
+rundll32 shell32.dll,Control_RunDLL desk.cpl,null,2 | Settinngs > Background
+rundll32 shell32.dll,Control_RunDLL intl.cpl,null,0 | Control Panel > Region # <mark>Formats</mark>
+rundll32 shell32.dll,Control_RunDLL intl.cpl,null,1 | Control Panel > Region # Administrative
+rundll32 shell32.dll,Control_RunDLL joy.cpl | Game Controllers
+rundll32 shell32.dll,Control_RunDLL mmsys.cpl | Control Panel > Sound
+rundll32 shell32.dll,Control_RunDLL mmsys.cpl,null,0 | Control Panel > Sound # <mark>Playback</mark>
+rundll32 shell32.dll,Control_RunDLL mmsys.cpl,null,1 | Control Panel > Sound # <mark>Recording</mark>
+rundll32 shell32.dll,Control_RunDLL mmsys.cpl,null,2 | Control Panel > Sound # <mark>Sounds</mark>
+rundll32 shell32.dll,Control_RunDLL sysdm.cpl,null,1 | Control Panel > System Properties # Computer Name
+rundll32 shell32.dll,Control_RunDLL sysdm.cpl,null,2 | Control Panel > System Properties # Hardware
+rundll32 shell32.dll,Control_RunDLL sysdm.cpl,null,3 | Control Panel > System Properties # Advanced <br> (Performance, <mark>User Profiles</mark>, Startup and Recovery, Environment Variables)
+rundll32 shell32.dll,Control_RunDLL sysdm.cpl,null,4 | Control Panel > System Properties # System Protection <br> (<mark>Restore Point</mark>)
+rundll32 shell32.dll,Control_RunDLL timedate.cpl,null,0 | Control Panel > Date and Time # Date and Time
+rundll32 shell32.dll,Control_RunDLL timedate.cpl,null,1 | Control Panel > Date and Time # Additional Clocks
+rundll32 shell32.dll,OpenAs_RunDLL | Open with dialog
+rundll32 shell32.dll,OpenAs_RunDLL \<Datei\> | <mark>Open with dialog for a specific file</mark>
+rundll32 Shell32.dll,ShellAboutA <br> winver | About MZ/Windows (Version, <mark>OS Build</mark>)
+rundll32 shell32.dll,SHHelpShortcuts_RunDLL AddPrinter | <mark>Add a printer</mark> dialog
+rundll32 shell32.dll,SHHelpShortcuts_RunDLL PrintersFolder <br> explorer shell:printersfolder | <mark>Printers Folder</mark>
 rundll32 printui.dll,PrintUIEntry \<Optionen\> \<@Befehlsdatei\> | Drucker direkt ohne Assistent hinzufügen, [Details](http://www.winfaq.de/faq_html/Content/tip2000/onlinefaq.php?h=tip2028.htm)
 rundll32 printui.dll,PrintUIEntry /q /in /n \\\\ServerName\Freigabename | z.B. Netzwerkdrucker hinzufügen
 rundll32 shell32.dll,SHHelpShortcuts_RunDLL FontsFolder | Schriftarten anzeigen
