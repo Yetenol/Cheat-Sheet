@@ -1,10 +1,9 @@
 Command (URI) | Page
 :--- | :---
-<p> | <p>
-==================== | **Settings home page**
+ | ⠀
+⠀ | <center> **Settings home page**
 ms-settings: | Settings home page
-<p> | 
-==================== | **System**
+⠀ | <center> **System**
 ms-settings:display | Display
 ms-settings:nightlight | Night light settings
 ms-settings:display-advanced | Advanced scaling settings
@@ -34,8 +33,7 @@ ms-settings:clipboard | Clipboard
 ms-settings:remotedesktop | Remote Desktop
 ms-settings:deviceencryption | Device Encryption (where available)
 ms-settings:about | About
-⠀ | ⠀
-==================== | **Devices**
+⠀ | <center> **Devices**
 ms-settings:bluetooth, OR ms-settings:connecteddevices | Bluetooth & other devices
 ms-settings:printers | Printers & scanners
 ms-settings:mousetouchpad | Mouse
@@ -46,13 +44,11 @@ ms-settings:wheel | Wheel (where available)
 ms-settings:pen | Pen & Windows Ink
 ms-settings:autoplay | AutoPlay
 ms-settings:usb | USB
-⠀ | ⠀
-==================== | **Phone**
+⠀ | <center> **Phone**
 ms-settings:mobile-devices | Phone
 ms-settings:mobile-devices-addphone | Add a phone
 ms-settings:mobile-devices-addphone-direct | Your Phone (opens app)
-⠀ | ⠀
-==================== | **Network & Internet**
+⠀ | <center> **Network & Internet**
 ms-settings:network | Network & Internet
 ms-settings:network-status | Status
 ms-availablenetworks: | Show available networks
@@ -70,8 +66,7 @@ ms-settings:network-mobilehotspot | Mobile hotspot
 ms-settings:nfctransactions | NFC
 ms-settings:datausage | Data usage
 ms-settings:network-proxy | Proxy
-⠀ | ⠀
-==================== | **Personalization**
+⠀ | <center> **Personalization**
 ms-settings:personalization | Personalization
 ms-settings:personalization-background | Background
 ms-settings:personalization-colors, OR ms-settings:colors | Colors
@@ -81,8 +76,7 @@ ms-settings:fonts | Fonts (build 17083+)
 ms-settings:personalization-start | Start
 ms-settings:personalization-start-places | Choose which folders appear on Start
 ms-settings:taskbar | Taskbar 
-⠀ | ⠀
-==================== | **Apps**
+⠀ | <center> **Apps**
 ms-settings:appsfeatures OR ms-settings:appsfeatures-app | Apps & features
 ms-settings:optionalfeatures | Manage optional features
 ms-settings:defaultapps | Default apps
@@ -91,8 +85,7 @@ ms-settings:maps-downloadmaps | Download maps
 ms-settings:appsforwebsites | Apps for websites
 ms-settings:videoplayback | Video playback
 ms-settings:startupapps | Startup
-⠀ | ⠀
-==================== | **Accounts**
+⠀ | <center> **Accounts**
 ms-settings:yourinfo | Your info
 ms-settings:emailandaccounts | Email & accounts
 ms-settings:signinoptions | Sign-in options
@@ -104,8 +97,7 @@ ms-settings:workplace | Access work or school
 ms-settings:otherusers | Family & other people
 ms-settings:assignedaccess | Set up a kiosk
 ms-settings:sync | Sync your settings
-⠀ | ⠀
-==================== | **Time & language**
+⠀ | <center> **Time & language**
 ms-settings:dateandtime | Date & time
 ms-settings:regionformatting | Region
 ms-settings:regionlanguage-jpnime | Japan IME settings (where available)
@@ -117,19 +109,16 @@ ms-settings:regionlanguage-setdisplaylanguage | Windows Display language
 ms-settings:regionlanguage-adddisplaylanguage | Add Display language
 ms-settings:keyboard | Keyboard (removed in build 17083+)
 ms-settings:speech | Speech
-⠀ | ⠀
-==================== | **Gaming**
+⠀ | <center> **Gaming**
 ms-settings:gaming-gamebar | Game bar
 ms-settings:gaming-gamedvr | Captures
 ms-settings:gaming-broadcasting | Broadcasting
 ms-settings:gaming-gamemode | Game Mode
 ms-settings:gaming-trueplay | TruePlay (removed in version 1809+)
 ms-settings:gaming-xboxnetworking | Xbox Networking
-⠀ | ⠀
-==================== | **Extras**
+⠀ | <center> **Extras**
 ms-settings:extras | Extras (available only when Settings app extensions installed)
-⠀ | ⠀
-==================== | **Ease of Access**
+⠀ | <center> **Ease of Access**
 ms-settings:easeofaccess-display | Display
 ms-settings:easeofaccess-cursorandpointersize | Mouse Pointer
 ms-settings:easeofaccess-cursor | Text Cursor
@@ -147,19 +136,16 @@ ms-settings:easeofaccess-keyboard | Keyboard
 ms-settings:easeofaccess-mouse | Mouse
 ms-settings:easeofaccess-eyecontrol | Eye Control
 ms-settings:easeofaccess-otheroptions | Other options (removed in version 1809+)
-⠀ | ⠀
-==================== | **Search (version 1903+)**
+⠀ | <center> **Search (version 1903+)**
 ms-settings:search-permissions | Permissions & history
 ms-settings:cortana-windowssearch | Searching Windows
 ms-settings:search-moredetails | More details
-⠀ | ⠀
-==================== | **Cortana**
+⠀ | <center> **Cortana**
 ms-settings:cortana | Cortana
 ms-settings:cortana-talktocortana | Talk to Cortana
 ms-settings:cortana-permissions | Permissions
 ms-settings:cortana-moredetails | More details
-⠀ | ⠀
-==================== | **Privacy**
+⠀ | <center> **Privacy**
 ms-settings:privacy | General
 ms-settings:privacy-speech | Speech
 ms-settings:privacy-speechtyping | Inking & typing personalization
@@ -189,8 +175,7 @@ ms-settings:privacy-documents | Documents
 ms-settings:privacy-pictures | Pictures
 ms-settings:privacy-documents | Videos
 ms-settings:privacy-broadfilesystemaccess | File system
-⠀ | ⠀
-==================== | **Update & security**
+⠀ | <center> **Update & security**
 ms-settings:windowsupdate | Windows Update
 ms-settings:windowsupdate-action | Check for updates
 ms-settings:windowsupdate-history | View update history
@@ -208,15 +193,13 @@ ms-settings:activation | Activation
 ms-settings:findmydevice | Find My Device
 ms-settings:developers | For developers
 ms-settings:windowsinsider, OR ms-settings:windowsinsider-optin | Windows Insider Program
-⠀ | ⠀
-==================== | **Mixed reality**
+⠀ | <center> **Mixed reality**
 ms-settings:holographic | Mixed reality
 ms-settings:holographic-audio | Audio and speech
 ms-settings:privacy-holographic-environment | Environment
 ms-settings:holographic-headset | Headset display
 ms-settings:holographic-management | Uninstall
-⠀ | ⠀
-==================== | **Surface Hub**
+⠀ | <center> **Surface Hub**
 ms-settings:surfacehub-accounts | Accounts
 ms-settings:surfacehub-calling | Team Conferencing
 ms-settings:surfacehub-devicemanagenent | Team device management
