@@ -17,13 +17,13 @@
 ⠀|⠀⠀⠀⠀⠀**Break and Watch**
 `break `funtion-name <br> `break `line-number <br> `break `ClassName::functionName  | Suspend program at specified function of line number.
 `break +`offset <br> `break -`offset  | Set a breakpoint specified number of lines forward or back from the position at which execution stopped.
-`break `filename:function  | Don't specify path, just the file name and function name.
-`break `filename:line-number  | Don't specify path, just the file name and line number.<br>`break `Directory/Path/filename`.cpp:62`
+`break `filename`:`function  | Don't specify path, just the file name and function name.
+`break `filename`:`line-number  | Don't specify path, just the file name and line number.<br>`break `Directory/Path/filename`.cpp:62`
 `break *`address  | Suspend processing at an instruction address. Used when you do not have source.
 `break `line-number`⠀if `condition  | Where condition is an expression. i.e. `x > 5` <br> Suspend when boolean expression is true.
 `break `line`⠀thread `thread-number  | Break in thread at specified line number. Use `info threads` to display thread numbers.
 `tbreak` | Temporary break. Break once only. Break is then removed. See "break" above for options.
-`watch` condition  | Suspend processing when condition is met. i.e. `x > 5`
+`watch `condition  | Suspend processing when condition is met. i.e. `x > 5`
 `clear` <br> `clear `function <br> `clear `line-number  | Delete breakpoints as identified by command option.<br>Delete all breakpoints in `function` <br> Delete breakpoints at a given line
 `delete` <br> `d` | Delete all breakpoints, watchpoints, or catchpoints.
 `delete `breakpoint-number <br> `delete `range  | Delete the breakpoints, watchpoints, or catchpoints of the breakpoint ranges specified as arguments.
@@ -46,7 +46,7 @@
 `info frame` | List address, language, address of arguments/local variables and which registers were saved in frame.
 `info args` <br> `info locals` <br> `info catch` | Info arguments of selected frame, local variables and exception handlers.
 ⠀|⠀⠀⠀⠀⠀**Source Code**
-`list` <br> `l` <br> `list `line-number <br> `list `function <br> `list -` <br> `list `start#,end# <br> `list `filename:function | List source code.
+`list` <br> `l` <br> `list `line-number <br> `list `function <br> `list -` <br> `list `start#`,`end# <br> `list `filename`:`function | List source code.
 `set listsize `count <br> `show listsize` | Number of lines listed when `list command` given.
 `directory `directory-name <br> `dir `directory-name <br> `show directories` | Add specified directory to front of source code path.
 `directory` | Clear sourcepath when nothing specified.
@@ -56,7 +56,7 @@
 `stepi` <br> `si` <br> `nexti` <br> `ni` | step/next assembly/processor instruction.
 `x `0xaddress <br> `x/nfu `0xaddress  | Examine the contents of memory.<br>Examine the contents of memory and specify formatting.<ul><li>n: number of display items to print</li><li>f: specify the format for the output</li><li>u: specify the size of the data unit (eg. byte, word, ...)</li></ul>Example: `x/4dw var`
 ⠀|⠀⠀⠀⠀⠀**Examine Variables**
-`print `variable-name <br> `p `variable-name <br> `p `file-name::variable-name <br> `p `'file-name'::variable-name  | Print value stored in variable.
+`print `variable-name <br> `p `variable-name <br> `p `file-name`::`variable-name <br> `p '`file-name`'::`variable-name  | Print value stored in variable.
 `p *`array-variable`@`length  | Print first # values of array specified by `length`. Good for pointers to dynamicaly allocated memory.
 `p/x `variable  | Print as integer variable in hex.
 `p/d `variable  | Print variable as a signed integer.
