@@ -48,3 +48,33 @@ while ($true) {
   }
 }
 ```
+
+## Edit file attributes
+```powershell
+function Get-FileAttribute{
+    param (
+        [string]$Path,
+        [System.IO.FileAttributes]$Attribute
+    )
+    $item = Get-Item -Path $Path -ErrorAction Stop
+    if (($item.Attributes -band $item.Attributes) -eq $Attribute) {
+        return $true
+    } else {
+        return $false
+    }
+}
+
+function Set-FileAttribute{
+    param (
+        [string]$Path,
+        [System.IO.FileAttributes]$Attribute
+    )
+    $item = Get-Item -Path $Path -ErrorAction Stop
+    $item.Attributes = $item.Attributes -bor ($Attribute).value__
+    if ($?) { 
+        return $true
+    } else {
+        return $false
+    }
+} 
+```
