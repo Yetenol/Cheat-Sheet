@@ -53,8 +53,8 @@ while ($true) {
 ```powershell
 function Get-FileAttribute{
     param (
-        [string]$Path,
-        [System.IO.FileAttributes]$Attribute
+        [Parameter(Mandatory=$true)]    [string]$Path,
+        [Parameter(Mandatory=$true)]    [System.IO.FileAttributes]$Attribute
     )
     $item = Get-Item -Path $Path -ErrorAction Stop
     if (($item.Attributes -band $item.Attributes) -eq $Attribute) {
@@ -66,15 +66,33 @@ function Get-FileAttribute{
 
 function Set-FileAttribute{
     param (
-        [string]$Path,
-        [System.IO.FileAttributes]$Attribute
+        [Parameter(Mandatory=$true)]    [string]$Path,
+        [Parameter(Mandatory=$true)]    [System.IO.FileAttributes]$Attribute
     )
     $item = Get-Item -Path $Path -ErrorAction Stop
     $item.Attributes = $item.Attributes -bor ($Attribute).value__
-    if ($?) { 
-        return $true
-    } else {
-        return $false
-    }
+    if (!$?) {throw}
 } 
+
+function Clear-FileAttribute{
+    param (
+        [Parameter(Mandatory=$true)]    [string]$Path,
+        [Parameter(Mandatory=$true)]    [System.IO.FileAttributes]$Attribute
+    )
+    $item = Get-Item -Path $Path -ErrorAction Stop
+    if (($item.Attributes -band $item.Attributes) -eq $Attribute) {
+        $item.Attributes = $item.Attributes -bxor ($Attribute).value__
+    }
+    if (!$?) {throw}
+}
+
+function Toggle-FileAttribute{
+    param (
+        [Parameter(Mandatory=$true)]    [string]$Path,
+        [Parameter(Mandatory=$true)]    [System.IO.FileAttributes]$Attribute
+    )
+    $item = Get-Item -Path $Path -ErrorAction Stop
+    $item.Attributes = $item.Attributes -bxor ($Attribute).value__
+    if (!$?) {throw}
+}
 ```
