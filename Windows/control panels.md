@@ -1,3 +1,5 @@
+Windows - Special locations / Control panels / Wizzards
+
 `Command` | Description
 :--- | :---
 `documents` | Open Documents Folder
