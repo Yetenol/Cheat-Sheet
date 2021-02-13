@@ -33,7 +33,7 @@ Control Panel (always Category view) | `shell:::{26EE0668-A00A-44D7-9371-BEB064C
 ⠀⮱ Hardware and Sound | `shell:::{26EE0668-A00A-44D7-9371-BEB064C98683}\2`
 ⠀⮱ Network and Internet | `shell:::{26EE0668-A00A-44D7-9371-BEB064C98683}\3`
 ⠀⮱ Programs | `shell:::{26EE0668-A00A-44D7-9371-BEB064C98683}\8`
-⠀⮱ System and Security | `shell:::{26EE0668-A00A-44D7-9371-BEB064C98683}\5` <br>OR<br> `shell:::{26EE0668-A00A-44D7-9371-BEB064C98683}\10`
+⠀⮱ System and Security | `shell:::{26EE0668-A00A-44D7-9371-BEB064C98683}\5`<br>OR<br>`shell:::{26EE0668-A00A-44D7-9371-BEB064C98683}\10`
 ⠀⮱ User Accounts | `shell:::{26EE0668-A00A-44D7-9371-BEB064C98683}\9`
 Control Panel (always Icons view) | `shell:::{21EC2020-3AEA-1069-A2DD-08002B30309D}`
 Credential Manager | `shell:::{1206F5F1-0569-412C-8FEC-3204630DFB70}`
@@ -45,8 +45,8 @@ delegate folder that appears in Computer | `shell:::{b155bdf8-02f0-451e-9a26-ae3
 Desktop (folder) | `shell:::{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}`
 Device Manager | `shell:::{74246bfc-4c96-11d0-abef-0020af6b0b7a}`
 Devices and Printers | `shell:::{A8A91A66-3A7D-4424-8D24-04E180695C7A}`
-Documents (folder) | `shell:::{A8CDFF1C-4878-43be-B5FD-F8091C1C60D0}` <br>OR<br> `shell:::{d3162b92-9365-467a-956b-92703aca08af}`
-Downloads (folder) | `shell:::{088e3905-0323-4b02-9826-5d99428e115f}` <br>OR<br> `shell:::{374DE290-123F-4565-9164-39C4925E467B}`
+Documents (folder) | `shell:::{A8CDFF1C-4878-43be-B5FD-F8091C1C60D0}`<br>OR<br>`shell:::{d3162b92-9365-467a-956b-92703aca08af}`
+Downloads (folder) | `shell:::{088e3905-0323-4b02-9826-5d99428e115f}`<br>OR<br>`shell:::{374DE290-123F-4565-9164-39C4925E467B}`
 Ease of Access Center | `shell:::{D555645E-D4F8-4c29-A827-D93C859C4F2A}`
 ⠀⮱ Use the computer without a display | `shell:::{D555645E-D4F8-4c29-A827-D93C859C4F2A}\pageNoVisual`
 ⠀⮱ Make the computer easier to see | `shell:::{D555645E-D4F8-4c29-A827-D93C859C4F2A}\pageEasierToSee`
@@ -84,14 +84,14 @@ Location Information (Phone and Modem Control Panel) | `shell:::{40419485-C444-4
 Location Settings | `shell:::{E9950154-C418-419e-A90A-20C5287AE24B}`
 Media Servers | `shell:::{289AF617-1CC3-42A6-926C-E6A863F0E3BA}`
 Mouse Properties | `shell:::{6C8EEC18-8D75-41B2-A177-8831D59D2D50}`
-Music (folder) | `shell:::{1CF1260C-4DD0-4ebb-811F-33C572699FDE}` <br>OR<br> `shell:::{3dfdf296-dbec-4fb4-81d1-6a3438bcf4de}`
+Music (folder) | `shell:::{1CF1260C-4DD0-4ebb-811F-33C572699FDE}`<br>OR<br>`shell:::{3dfdf296-dbec-4fb4-81d1-6a3438bcf4de}`
 My Documents | `shell:::{450D8FBA-AD25-11D0-98A8-0800361B1103}`
 netplwiz | `shell:::{7A9D77BD-5403-11d2-8785-2E0420524153}`
 Network | `shell:::{F02C1A0D-BE21-4350-88B0-7367FC96EF3C}`
 Network and Sharing Center | `shell:::{8E908FC9-BECC-40f6-915B-F4CA0E70D03D}`
 ⠀⮱ Advanced sharing settings | `shell:::{8E908FC9-BECC-40f6-915B-F4CA0E70D03D}\Advanced`
 ⠀⮱ Media streaming options | `shell:::{8E908FC9-BECC-40f6-915B-F4CA0E70D03D}\ShareMedia`
-Network Connections | `shell:::{7007ACC7-3202-11D1-AAD2-00805FC1270E}` <br>OR<br> `shell:::{992CFFA0-F557-101A-88EC-00DD010CCC48}`
+Network Connections | `shell:::{7007ACC7-3202-11D1-AAD2-00805FC1270E}`<br>OR<br>`shell:::{992CFFA0-F557-101A-88EC-00DD010CCC48}`
 Network (WorkGroup) | `shell:::{208D2C60-3AEA-1069-A2D7-08002B30309D}`
 Notification Area Icons | `shell:::{05d7b0f4-2121-4eff-bf6b-ed3f69b894d9}`
 NVIDIA Control Panel (if installed) | `shell:::{0bbca823-e77d-419e-9a44-5adec2c8eeb0}`
@@ -101,7 +101,7 @@ Pen and Touch | `shell:::{F82DF8F7-8B9F-442E-A48C-818EA735FF9B}`
 Personalization | `shell:::{ED834ED6-4B5A-4bfe-8F11-A626DCB6A921}`
 ⠀⮱ Color and Appearance | `shell:::{ED834ED6-4B5A-4bfe-8F11-A626DCB6A921}\pageColorization`
 ⠀⮱ Desktop Background | `shell:::{ED834ED6-4B5A-4bfe-8F11-A626DCB6A921}\pageWallpaper`
-Pictures (folder) | `shell:::{24ad3ad4-a569-4530-98e1-ab02f9417aa8}` <br>OR<br> `shell:::{3ADD1653-EB32-4cb0-BBD7-DFA0ABB5ACCA}`
+Pictures (folder) | `shell:::{24ad3ad4-a569-4530-98e1-ab02f9417aa8}`<br>OR<br>`shell:::{3ADD1653-EB32-4cb0-BBD7-DFA0ABB5ACCA}`
 Portable Devices | `shell:::{35786D3C-B075-49b9-88DD-029876E11C01}`
 Power Options | `shell:::{025A5937-A6BE-4686-A844-36FE4BEC8B6D}`
 ⠀⮱ Create a power plan | `shell:::{025A5937-A6BE-4686-A844-36FE4BEC8B6D}\pageCreateNewPlan`
@@ -109,7 +109,7 @@ Power Options | `shell:::{025A5937-A6BE-4686-A844-36FE4BEC8B6D}`
 ⠀⮱ System Settings | `shell:::{025A5937-A6BE-4686-A844-36FE4BEC8B6D}\pageGlobalSettings`
 Previous Versions Results Folder | `shell:::{f8c2ab3b-17bc-41da-9758-339d7dbf2d88}`
 printhood delegate folder | `shell:::{ed50fc29-b964-48a9-afb3-15ebb9b97f36}`
-Printers | `shell:::{2227A280-3AEA-1069-A2DE-08002B30309D}` <br>OR<br> `shell:::{863aa9fd-42df-457b-8e4d-0de1b8015c60}`
+Printers | `shell:::{2227A280-3AEA-1069-A2DE-08002B30309D}`<br>OR<br>`shell:::{863aa9fd-42df-457b-8e4d-0de1b8015c60}`
 Problem Reporting Settings | `shell:::{BB64F8A7-BEE7-4E1A-AB8D-7D8273F7FDB6}\pageSettings`
 Programs and Features | `shell:::{7b81be6a-ce2b-4676-a29e-eb907a5126c5}`
 Public (folder) | `shell:::{4336a54d-038b-4685-ab02-99bb52d3fb8b}`
@@ -171,7 +171,7 @@ User Accounts | `shell:::{60632754-c523-4b62-b45c-4172da012619}`
 User Accounts (netplwiz) | `shell:::{7A9D77BD-5403-11d2-8785-2E0420524153}`
 User Pinned | `shell:::{1f3427c8-5c10-4210-aa03-2ee45287d668}`
 %UserProfile% | `shell:::{59031a47-3f72-44a7-89c5-5595fe6b30ee}`
-Videos (folder) | `shell:::{A0953C92-50DC-43bf-BE83-3742FED03C9C}` <br>OR<br> `shell:::{f86fa3ab-70d2-4fc7-9c99-fcbf05467f3a}`
+Videos (folder) | `shell:::{A0953C92-50DC-43bf-BE83-3742FED03C9C}`<br>OR<br>`shell:::{f86fa3ab-70d2-4fc7-9c99-fcbf05467f3a}`
 Web browser (default) | `shell:::{871C5380-42A0-1069-A2EA-08002B30309D}`
 Windows Defender Firewall | `shell:::{4026492F-2F69-46B8-B9BF-5654FC07E423}`
 ⠀⮱ Allowed apps | `shell:::{4026492F-2F69-46B8-B9BF-5654FC07E423}\pageConfigureApps`
