@@ -126,7 +126,7 @@ RemoteApp and Desktop Connections | `shell:::{241D7C96-F8BF-4F85-B01F-E2B043341A
 Remote Printers | `shell:::{863aa9fd-42df-457b-8e4d-0de1b8015c60}`
 Removable Drives | `shell:::{F5FB2C77-0E2F-4A16-A381-3E560C68BC83}`
 Removable Storage Devices | `shell:::{a6482830-08eb-41e2-84c1-73920c2badb9}`
-﻿﻿Results Folder | `shell:::{2965e715-eb66-4719-b53f-1672673bbefa}`
+Results Folder | `shell:::{2965e715-eb66-4719-b53f-1672673bbefa}`
 Run | `shell:::{2559a1f3-21d7-11d4-bdaf-00c04f60b9f0}`
 Search (File Explorer) | `shell:::{9343812e-1c37-4a49-a12e-4b2d810d956b}`
 Search (Windows) | `shell:::{2559a1f8-21d7-11d4-bdaf-00c04f60b9f0}`
@@ -183,3 +183,5 @@ Windows To Go | `shell:::{8E0C279D-0BD1-43C3-9EBD-31C3DC5B8A77}`
 Work Folders | `shell:::{ECDB0924-4208-451E-8EE0-373C0956DE16}`
 
 Source: [CLSID Key (GUID) Shortcuts List for Windows 10 - Tutorials](https://www.tenforums.com/tutorials/3123-clsid-key-guid-shortcuts-list-windows-10-a.html)
+
+Source: [Windows 10 User Shell Folders Restore Default Paths - Winhelponline](https://www.winhelponline.com/blog/windows-10-shell-folders-paths-defaults-restore/)
