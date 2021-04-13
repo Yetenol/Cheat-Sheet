@@ -1,106 +1,126 @@
 # Powershell - Input / Output Handling
 
-# Your best buddies / Analyse an output
-Since everything in PowerShell already is or becomes an object you should know how to analyse and handle them. Objects are most easily visualised as text tables but keep in mind that each value can be an object itself.
-What <b>type of object</b> am I working with <br>
-- Most return type are Object[]: Array of Objects
-- External programs return an Object[] containing Strings
-```powershell
-# You can often replace $o with a command directly
-# Sometimes you have to surround it in brackets
-$o = <# command e.g: Get-Process #>
+> ## Wissensvoraussetzungen
+> - Pipeline
 
-# Display object in GUI
-$o | Out-GridView                      # Display main properties
-$o | Select-Object * | Out-GridView           # Display all properties
-$o | Get-Member -MemberType Properties # List property names (table header)
+Alles in PowerShell ist bereits oder wird ein `.NET`-Objekt. Daher sollte man mit Ihrem Umgang und Ihrer Analyse vertraut sein. Objekte lassen sich am einfachsten als Text-Tabellen visualisieren, bedenke jedoch, dass die Einträge selbst auch Objekte sein können.
 
-# Access member properties or methods()
-$o | Get-Member | Select -First 1    # Show object type
-$o | Get-Member -MemberType Method   # List method names
-$o.<# member name #>                 # Access members
-$o[<# range[] # e.g: $o[0..5+7] #>]  # Access range of indexes or lines
-$o.Count                             # If array: Get number of elements
-$o[0].GetType()                      # If array: Get element's type
+- PowerShell Module geben Objekte eines bestimmten Typs zurück.
+- Externe Programme geben `Object[]` (Array von Textzeilen) zurück.
+1. Objekttyp und Eigenschaften analysieren
+	```powershell
+	| Get-Member
+	```
 
-# Working with objects
-$o | Select-Object <# Properties e.g: Name, ID #>
-$o | Where-Object {$_.<# member #> <# operator #> <# value #>}
-<#  $_: Current entry (line)    Examples:
-$o | Where-Object {$_.Company}                   # Require value for Company
-$o | Where-Object {$_.Company -match "^Microsoft"}        # Regular Expression
-$o | Where-Object {$_.Path -eq "C:\WINDOWS\Explorer.exe"}
-$o | Where-Object {$_.WorkingSet -gt 250MB -and $_.StartTime -le [DateTime]"8:00"}
-#>
-$o | Group-Object <# Property #>
-```
+# Visualisiere Ausgabe
+1. ...als Seite-für-Seite Textansicht
+	```powershell
+	| more
+	```
+1. ...als GUI mit Tabellenformat
+	```powershell
+	| Out-GridView
+	```
+1. ...als reine Text-Tabelle
+	- verwirft Objectstruktur
+	```powershell
+	| Format-Table
+	```
 
-## Display output over multiple pages
-```powershell
-<# command #> | more
-```
+# Ausgabe analysieren
+1. Einträge / Zeilen zählen
+	```powershell
+	$o.Count
+	```
 
-## Display output in Microsoft Excel
-- To hide the header add -NoTypeInformation
-```powershell
-<# command #> | Export-Csv -Path .\table.csv -Delimiter ";"
-.\table.csv
-```
+# Eingabedatensatz eingrenzen
+1. Einträge abzählen: Wähle die ersten 2 Einträge und die letzten 3
+	```powershell
+	| select -First 2 -Last 3
+	```
+1. Einträgespanne auswählen: Wähle den 5. bis 27. Eintrag
+	```powershell
+	$objects[5..27]
+	```
+1. Eine Bedingung
+	```powershell
+	| where {$_.BaseName -like "*anton*"}
+	```
+1. Verknüpfte Bedingungen
+	``` powershell
+	| where { `
+		{ $_.Extension -like ".mkv" -or $_.Extension -like ".mp4" } `
+		-and 
+		$_.LastWriteTime -ge [DateTime]::"2000-12-31" `
+	}
+	```
+# Spalten auswählen
+1. Alle Spalten anzeigen
+	```powershell
+	| select -Property *
+	```
+1. (Mehrere) Spalten auswählen
+	```powershell
+	| select -Property BaseName, Extension
+	```
+1. Spalte umbenennen
+	```powershell
+	| select -Property `
+		@{Label="Bytesize"; Expression={ $_.Length }}
+1. Eigene Spalte erzeugen
+	```powershell
+	| select -Property `
+		@{Label="Size in MB"; Expression={ $_.Length / 1GB}}
+	```
+# Sortieren
+1. Nur aufsteigende Sortierung
+	```powershell
+	| sort -Property Extension, BaseName
+	```
+1. Sortierung
+	```powershell
+	| sort -Property `
+		@{Expression="Length"; Descending=$True}, `
+		Name
+	```
+# Exportieren
+1. ...als XML-Objektdatei
+	- **EMPFOHLEN**
+	- **VERLUSTFREI** (behält gesamte `.NET`-Information)
+	```powershell
+	| Export-Clixml -Path "object.xml"
+	```
+1. ...als Excel-Tabelle
+	```powershell
+	| Export-Csv -Delimiter ";" -NoTypeInformation -Path ".\text.csv"
+	```
+1. ...als tabellarische Textdatei
+	```powershell
+	| Format-Table -AutoSize -Wrap `
+	| Out-File -FilePath ".\text.txt
+	```
+1. ...als auflistende Textdatei
+	```powershell
+	| Format-List `
+	| Out-File -FilePath ".\text.txt
+	```
+1. ...als verschlüsselte Textdatei
+	- siehe [Verschlüsselung](encryption.md)
+	```powershell
+	| ConvertTo-SecureString -AsPlainText -Force `
+	| ConvertFrom-SecureString `
+	| Out-File -FilePath ".\key.bin"
+	```
+1. ...als sicherer Text
+	```powershell
+	| ConvertTo-SecureString -AsPlainText -Force
+	```
+___
 
-## Export to Microsoft Excel
-Hides the type header
-```powershell
-<# command #> | Export-Csv -Path .\table.csv -NoTypeInformation -Delimiter ";"
-```
-
-## Export to file
-The data is encrypted using the Windows Data Protection API (DPAPI). <br>
-Only the <b>SAME USER ON THE SAME MASHINE</b> can decrypt.
-```powershell
-$Secure = Read-Host "Password" -AsSecureString
-ConvertFrom-SecureString $Secure | Out-File "${Env:AppData}\Credential.bin"
-```
-
-## Import from file
-Only the <b>SAME USER ON THE SAME MASHINE</b> can decrypt.
-```powershell
-$Secure = Get-Content "${Env:AppData}\Sec.bin" | ConvertTo-SecureString
-```
-
-
-
-# Files
-
-
-# Tables
-## Display table
-```powershell
-Get-ChildItem | Format-Table -Property Name, Length
-```
-> DIRTY CODE: `dir | ft Name, Length`
-
-## Export object as table to Microsoft Excel
-```powershell
-Get-Process | Export-Csv -Path <#File#>table.csv -NoTypeInformation -Delimiter ";"
-```
-> DIRTY CODE: `Get-Process | Export-Csv <#File#>table.csv -NoType -Delimiter ";"`
-
-
-## Rename table columns
-```powershell
-Get-ChildItem | Format-Table -Property Name, `
-@{Label="Size|Byte"; Expression={$_.Length}}
-```
-
-## Custom table columns
-```powershell
-Get-ChildItem | Format-Table -Property Name, `
-@{Label="Size|KB"; Expression={[math]::Round($_.Length / 1KB, 2)}}
-```
-## Interesting information
+# Interesting information
 ```powershell
 Get-ChildItem -Path $env:SystemRoot\* -Include *.exe, *.dll | Format-Table -Property `
-  BaseName, Extension, `
-  @{Label="Description"; Expression={[System.Diagnostics.FileVersionInfo]::GetVersionInfo($_).FileDescription}}, `
-  @{Label="Version"; Expression={[System.Diagnostics.FileVersionInfo]::GetVersionInfo($_).FileVersion}}
+	BaseName, Extension, `
+	@{Label="Description"; Expression={[System.Diagnostics.FileVersionInfo]::GetVersionInfo($_).FileDescription}}, `
+	@{Label="Version"; Expression={[System.Diagnostics.FileVersionInfo]::GetVersionInfo($_).FileVersion}}
 ```
