@@ -34,6 +34,7 @@ Command (URI) | Page
 `ms-settings:about` | About
 ⠀|⠀⠀⠀⠀⠀**Devices**
 `ms-settings:bluetooth` <br> `ms-settings:connecteddevices` | Bluetooth & other devices
+`ms-settings-connectabledevices:devicediscovery` | **CONNECT** to wireless display or audio device
 `ms-settings:printers` | Printers & scanners
 `ms-settings:mousetouchpad` | Mouse
 `ms-settings:devices-touchpad` | Touchpad
