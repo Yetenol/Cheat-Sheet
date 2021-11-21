@@ -1,4 +1,6 @@
-# Command Line Calls (Windows) - Cheat Sheet
+# Windows Core components
+- Dynamic Link Library (dll) components
+- Control Panel tabs (cpl tab)
 
 Command | Description
 --- | ---
