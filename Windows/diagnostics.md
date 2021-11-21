@@ -1,4 +1,5 @@
-# Troubleshooting Wizzard (Windows) - Cheat Sheet
+# Diagnostic Tools 
+- run Microsoft's troubleshooting wizzards (Windows)
 
 Command | Title | Description
 --- | --- | ---
