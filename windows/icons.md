@@ -1,4 +1,5 @@
-# Windows 10/11 icon location
+# Build-in icon libraries
+
 Path | Description
 --- | ---
 `%systemroot%\system32\imageres.dll` | contains lots of icons, used almost everywhere in Windows 10. It has icons for different types of folders, hardware devices, actions, and so on.

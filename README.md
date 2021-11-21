@@ -7,6 +7,6 @@
     - [Settings app shortcuts](windows/ms-settings.md) _e.g. ms-settings:display_
     - [Special locations (GUID)](windows/guids.md) _e.g. shell:::{...}_
     - [Troubleshooters](windows/troubleshooters.md) _e.g. msdt_
-    - [Built-in icon libraries](windows/icons.md) _e.g. shell32.dll_
+    - [Icon libraries](windows/icons.md) _e.g. shell32.dll_
 1. Powershell
     - [Encryption](powershell/encryption.md)
