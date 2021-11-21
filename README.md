@@ -3,7 +3,7 @@
 - Cheat sheets
 
 1. Windows
-    - [Components](windows/components.md) _e.g. `Certificates`_
+    - [Components](windows/components.md) _e.g. `Certificates`, certmgr.msc_
     - [Settings app shortcuts](windows/ms-settings.md) _e.g. `Display`, ms-settings:display_
     - [Special locations (GUID)](windows/guids.md) _e.g. `Recycle Bin`, shell:::{...}_
     - [Dll commands](windows/dll.md) _e.g. `Neue Verknüpfung anlegen`, rundll32 appwiz.cpl,NewLinkHere_
