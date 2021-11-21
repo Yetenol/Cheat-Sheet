@@ -1,4 +1,6 @@
-# C Debugging - gdb Command Cheat Sheet
+# [⌂](../README.md) [Linux](../README.md#linux) › C › GNU Debugger Cheat Sheet
+
+- GDB Command Line Arguments
 
 `Option` | Description
 :--- | :---
