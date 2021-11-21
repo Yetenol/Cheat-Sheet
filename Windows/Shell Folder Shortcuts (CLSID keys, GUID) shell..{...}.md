@@ -181,6 +181,6 @@ Windows Features | `shell:::{67718415-c450-4f3c-bf8a-b487642dc39b}`
 Windows To Go | `shell:::{8E0C279D-0BD1-43C3-9EBD-31C3DC5B8A77}`
 Work Folders | `shell:::{ECDB0924-4208-451E-8EE0-373C0956DE16}`
 
-Source: [CLSID Key (GUID) Shortcuts List for Windows 10 - Tutorials](https://www.tenforums.com/tutorials/3123-clsid-key-guid-shortcuts-list-windows-10-a.html)
-
-Source: [Windows 10 User Shell Folders Restore Default Paths - Winhelponline](https://www.winhelponline.com/blog/windows-10-shell-folders-paths-defaults-restore/)
+### Sources
+- 2021-08-13: [CLSID Key (GUID) Shortcuts List for Windows 10 - Tutorials](https://www.tenforums.com/tutorials/3123-clsid-key-guid-shortcuts-list-windows-10-a.html)
+- 2021-08-13: [Windows 10 User Shell Folders Restore Default Paths - Winhelponline](https://www.winhelponline.com/blog/windows-10-shell-folders-paths-defaults-restore/)
