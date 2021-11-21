@@ -10,7 +10,7 @@
 - [Troubleshooters](windows/troubleshooters.md) _e.g. `Printer Troubleshooter`,_ msdt -id PrinterDiagnosticmsdt
 - [Icon libraries](windows/icons.md) _e.g. `Imageres Library`,_ shell32.dll
 ### Powershell
-- [Getting Started](powershell/gettings-started.md) _e.g. _`Help cmdlets`,_ script.ps1.bat
+- [Getting Started](powershell/getting-started.md) _e.g. _`Help cmdlets`,_ script.ps1.bat
 - [Data Types](powershell/data-types.md) _e.g. `Hashtable`,_ [DateTime]::Now
 - [Input](powershell/input.md) _e.g. `File Parsing`,_ [RegEx]::Match($line, $regexFormat).Groups[1].value
 - [Output](powershell/output.md) _e.g. `Custom Table View`,_ Export-Clixml
