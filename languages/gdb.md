@@ -1,4 +1,4 @@
-# [⌂](../README.md) [Linux](../README.md#linux) › C › GNU Debugger Cheat Sheet
+# [⌂](../README.md) [C](../README.md#languages) › GNU Debugger
 
 - GDB Command Line Arguments
 

@@ -24,6 +24,19 @@
 - [File attributes](powershell/file-attributes.md) _e.g. `make read-only`,_ function Set-FileAttribute{}
 
 
-### Linux
+### Languages
 
-- [GNU Debugger](linux/gdb.md)
+- `[AutoHotkey]` [AutoHotkey](languages/autohotkey.md)
+- `[RegEx]` Regular Expression
+    - [PDF Overview](languages/regex.pdf)
+    - [Quick Reference (MS Docs)](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference)
+    - [Visual Studio (MS Docs)](https://docs.microsoft.com/en-us/visualstudio/ide/using-regular-expressions-in-visual-studio) 
+- `[C Debugging]` [GNU Debugger](languages/gdb.md)
+- `[Minecraft Datapacks]` [Minecraft](languages/minecraft.md)
+
+
+### Apps
+
+- [Excel](apps/excel.md)
+
+

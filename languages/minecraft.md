@@ -1,7 +1,8 @@
-# Minecraft command cheat sheet
+# [⌂](../README.md) [Minecraft Datapacks](../README.md#languages) › mcfunction
 
-## Useful commands
-### Create leash between to entities
+- usefull mcfunction commands
+
+### Create leash between two entities
 ```
 data modify entity @e[type=chicken,sort=nearest,limit=1] Leash set from entity @e[type=bat,sort=nearest,limit=1] {}
 ```
