@@ -1,4 +1,4 @@
-# [⌂](../README.md) › [Minecraft Datapacks](../README.md#languages) › mcfunction
+# [⌂](../README.md) [Minecraft Datapacks](../README.md#languages) › mcfunction
 
 - usefull mcfunction commands
 
