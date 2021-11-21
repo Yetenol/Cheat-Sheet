@@ -1,3 +1,6 @@
+# Settings app links via ms-settings URI
+- _The following table lists ms-settings URIs used to open various pages of the Settings app:_
+
 Command (URI) | Page
 :--- | :---
 ⠀⠀⠀⠀⠀**Settings home page**
