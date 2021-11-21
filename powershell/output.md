@@ -1,12 +1,10 @@
 # Powershell - Input / Output Handling
+- Knowledge requirements: [Pipeline](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_pipelines)
 
-> ## Wissensvoraussetzungen
-> - Pipeline
+Everything in PowerShell is already or becomes a .NET object. Therefore, you should be familiar with how to handle and analyze them. Objects are easiest to visualize as text tables, but keep in mind that the entries themselves can also be objects.
 
-Alles in PowerShell ist bereits oder wird ein `.NET`-Objekt. Daher sollte man mit Ihrem Umgang und Ihrer Analyse vertraut sein. Objekte lassen sich am einfachsten als Text-Tabellen visualisieren, bedenke jedoch, dass die Einträge selbst auch Objekte sein können.
-
-- PowerShell Module geben Objekte eines bestimmten Typs zurück.
-- Externe Programme geben `Object[]` (Array von Textzeilen) zurück.
+- PowerShell modules return objects of a specific type
+- external programs return an array of lines `Object[]`  (Array von Textzeilen) zurück.
 1. Objekttyp und Eigenschaften analysieren
 	```powershell
 	| Get-Member
