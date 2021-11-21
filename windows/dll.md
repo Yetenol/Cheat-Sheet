@@ -1,4 +1,4 @@
-# Windows Core components
+# [⌂](../README.md) › Windows › Dll commands
 - Dynamic Link Library (dll) components
 - Control Panel tabs (cpl tab)
 

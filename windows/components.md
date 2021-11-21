@@ -1,4 +1,4 @@
-# OS components
+# [⌂](../README.md) Windows › OS Components
 - User folders
 - Control Panels _(cpl)_
 - Management Consoles _(msc)_
