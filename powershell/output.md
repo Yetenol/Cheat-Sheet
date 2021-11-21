@@ -1,4 +1,5 @@
-# Powershell - Input / Output Handling
+# [⌂](../README.md) [Powershell](../README.md#powershell) › Output Handling
+
 - Knowledge requirements: [Pipeline](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_pipelines)
 
 Everything in PowerShell is already or becomes a .NET object. Therefore, you should be familiar with how to handle and analyze them. Objects are easiest to visualize as text tables, but keep in mind that the entries themselves can also be objects.

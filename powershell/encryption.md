@@ -1,4 +1,5 @@
-# PowerShell encryption
+# [⌂](../README.md) [Powershell](../README.md#powershell) › Encryption
+
 - The data is encrypted using the Windows Data Protection API (DPAPI).
 - Only the **SAME USER ON THE SAME MASHINE** can decrypt.
 

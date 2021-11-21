@@ -1,4 +1,4 @@
-# Edit file attributes
+# [⌂](../README.md) [Powershell](../README.md#powershell) › File attributes
 
 ## Get attributes
 ```powershell
