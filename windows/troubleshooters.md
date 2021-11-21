@@ -1,4 +1,4 @@
-# [⌂](../README.md) [Windows](../READE.md#windows) › Troubleshooters
+# [⌂](../README.md) [Windows](../README.md#windows) › Troubleshooters
 - run Microsoft's troubleshootings wizzard
 
 Command | Title | Description
