@@ -1,4 +1,4 @@
-# Settings app links via ms-settings URI
+# [⌂](../README.md) Windows › Settings app pages via ms-settings URI
 - _The following table lists ms-settings URIs used to open various pages of the Settings app:_
 
 Command (URI) | Page

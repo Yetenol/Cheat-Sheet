@@ -1,4 +1,4 @@
-# GUID shortcuts
+# [⌂](../README.md) Windows › GUID shortcuts
 - shortcuts to special OS folders
 - referenced using a [**CLSID keys**](https://docs.microsoft.com/de-de/windows/win32/com/clsid-key-hklm?redirectedfrom=MSDN) 
     - globally unique identifier that identifies a COM class object
