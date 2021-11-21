@@ -1,13 +1,13 @@
-# Windows 10 - Special folders - GUID shortcuts
-
-- GUID shortcuts link to special folders
-- They use [**CLSID keys**](https://docs.microsoft.com/de-de/windows/win32/com/clsid-key-hklm?redirectedfrom=MSDN): globally unique identifier that identifies a COM class object
-- To access a location run one of the following:
+# GUID shortcuts
+- shortcuts to special OS folders
+- referenced using a [**CLSID keys**](https://docs.microsoft.com/de-de/windows/win32/com/clsid-key-hklm?redirectedfrom=MSDN) 
+    - globally unique identifier that identifies a COM class object
+- to open a shortcut run one of the following:
     ```cmd
-    explorer shell:::{CLSID key}
+    explorer shell:::{CLSID-key}
     ```
     ```cmd
-    explorer /e,::{CLSID key}
+    explorer /e,::{CLSID-key}
     ```
 
 Opens | GUID shortcut
