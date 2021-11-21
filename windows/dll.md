@@ -1,4 +1,4 @@
-# [⌂] › (../README.md) › Windows › Dll commands
+# [⌂](../README.md) › › Windows › Dll commands
 - Dynamic Link Library (dll) components
 - Control Panel tabs (cpl tab)
 

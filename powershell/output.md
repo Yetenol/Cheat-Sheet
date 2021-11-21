@@ -1,4 +1,4 @@
-# [⌂] › (../README.md) [Powershell](../README.md#powershell) › Output Handling
+# [⌂](../README.md) › [Powershell](../README.md#powershell) › Output Handling
 
 - Knowledge requirements: [Pipeline](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_pipelines)
 

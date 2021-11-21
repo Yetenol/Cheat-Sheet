@@ -1,4 +1,4 @@
-# [⌂] › (../README.md) [Apps](../README.md#apps) › Microsoft Excel
+# [⌂](../README.md) › [Apps](../README.md#apps) › Microsoft Excel
 
 Is a range of cells empty
 ```

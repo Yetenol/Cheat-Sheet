@@ -1,4 +1,4 @@
-# [⌂] › (../README.md) [Windows](../README.md#windows) › Settings app pages
+# [⌂](../README.md) › [Windows](../README.md#windows) › Settings app pages
 - _ms-settings URIs used to open various pages of the Settings app_
 
 Command (URI) | Page
