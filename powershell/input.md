@@ -1,4 +1,4 @@
-# [⌂](../README.md) [Powershell](../README.md#powershell) › Input Handling
+# [⌂] › (../README.md) [Powershell](../README.md#powershell) › Input Handling
 
 # User input
 

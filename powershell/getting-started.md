@@ -1,4 +1,4 @@
-# [⌂](../README.md) [Powershell](../README.md#powershell) › Getting Started
+# [⌂] › (../README.md) [Powershell](../README.md#powershell) › Getting Started
 
 # Make a powershell script executable
 - Attach .bat at the end of your script filename e.g: `script.ps1.bat`

@@ -1,4 +1,4 @@
-# [⌂](../README.md) [Windows](../README.md#windows) › Build-in icon libraries
+# [⌂] › (../README.md) [Windows](../README.md#windows) › Build-in icon libraries
 
 Path | Description
 --- | ---
