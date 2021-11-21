@@ -1,8 +1,6 @@
 # PowerShell encryption
-The data is encrypted using the Windows Data Protection API (DPAPI). <br>
-Only the **SAME USER ON THE SAME MASHINE** can decrypt.
-
-# Sicherer Text vs Verschlüsselter Text
+- The data is encrypted using the Windows Data Protection API (DPAPI).
+- Only the **SAME USER ON THE SAME MASHINE** can decrypt.
 
 # Eingabe eines sicheren Texts
 1. Consoleneingabe
