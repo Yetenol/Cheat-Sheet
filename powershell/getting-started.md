@@ -1,4 +1,4 @@
-# Powershell - Gettings started
+# [⌂](../README.md) [Powershell](../README.md#powershell) › Getting Started
 
 # Make a powershell script executable
 - Attach .bat at the end of your script filename e.g: `script.ps1.bat`
@@ -8,7 +8,7 @@
 # The above line makes the script executable when renamed .cmd or .bat
 ```
 
-# Help yourself
+# Help cmdlets
 
 ## Find the right cmdlet
 ```powershell
