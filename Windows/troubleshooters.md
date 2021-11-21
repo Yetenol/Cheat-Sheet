@@ -1,5 +1,5 @@
-# Diagnostic Tools 
-- run Microsoft's troubleshooting wizzards (Windows)
+# Troubleshooters
+- run Microsoft's troubleshootings wizzard
 
 Command | Title | Description
 --- | --- | ---
