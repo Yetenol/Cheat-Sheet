@@ -1,14 +1,15 @@
 # Powershell - Input Handling
 
-# Get user input
+# User input
 
 ### Enter plaintext input in console
 ```powershell
 $User = Get-Host "Username"
 ```
 
+# File input
 ### Get plaintext input from file at specific line
-TotalCount speeds up the commands by only loading the first 26 lines.
+> _TotalCount speeds up the commands by only loading the first 26 lines._
 ```powershell
 $Line26 = (Get-Content -Path <#File#>)[25]
 ```
@@ -26,7 +27,7 @@ $Lines_User[0]                  # Only use first line
 
 Get first line with <i>User: \<username\> </i>
 ```powershell
-# LineFormat =   ···Username:···theo···Password:···turles1987·· 
+# LineFormat =   ···Username:···anna···Password:···turles1987·· 
 $regexFormat = "^\s*Username:\s*(.*)\s*Password:\s*(?<pwd>.*)\s*$"
 # ^: Start of line      $: End of line      \s*: Whitespace
 # (.*) Unnamed entry    (?<pwd>.*) Named entry called pwd
@@ -57,9 +58,9 @@ if($validLines.Count -le 0) {
 ```
 
 
-# Get sensitive input
-<b> Don't save passwords as plain text </b> <br>
-Instead save them as a secure string and encrypt them locally.
+# Sensitive input
+- <b> Don't save passwords as plain text </b>
+- Instead save them as a secure string and encrypt them locally.
 
 ## Enter sensitive input in console
 ```powershell
@@ -67,7 +68,8 @@ $Secure = Read-Host "Password" -AsSecureString
 ```
 
 ## Decrypt locally
-Only the <b>SAME INSTANCE</b> can decrypt. The last line prevents memory leaks.
+- Only the <b>SAME INSTANCE</b> can decrypt. 
+> _The last line prevents memory leaks._
 ```powershell
 $bstr = [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($Secure)
 $Plaintext [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($bstr)
