@@ -10,7 +10,7 @@
     explorer /e,::{CLSID-key}
     ```
 
-Opens | GUID shortcut
+Target | GUID shortcut
 --- | ---
 3D Objects (folder) | `shell:::{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}`
 Add Network Location | `shell:::{D4480A50-BA28-11d1-8E75-00C04FA31A86}`
