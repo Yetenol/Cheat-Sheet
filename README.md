@@ -31,9 +31,9 @@
     - [PDF Overview](languages/regex.pdf)
     - [Quick Reference (MS Docs)](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference)
     - [Visual Studio (MS Docs)](https://docs.microsoft.com/en-us/visualstudio/ide/using-regular-expressions-in-visual-studio) 
-- `[C Debugging]` [GNU Debugger](languages/gdb.md)
+- `[C]` [GNU Debugger](languages/gdb.md)
 - `[Git]` [Git](languages/git.md)
-- `[Minecraft Datapacks]` [Minecraft](languages/minecraft.md)
+- `[Minecraft]` [Datapacks](languages/minecraft.md)
 
 
 ### Apps

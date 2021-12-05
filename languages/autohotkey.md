@@ -1,4 +1,4 @@
-# [⌂](../README.md) [AutoHotkey](../README.md#languages) › Syntax
+# [⌂](../README.md) › [Languages](../README.md#languages) › **AutoHotkey**
 - Windows Automation scripting language
 
 ## 1. Generell code structure
