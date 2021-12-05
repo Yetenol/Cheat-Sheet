@@ -1,4 +1,4 @@
-# [⌂](../README.md) › [Languages](../README.md#languages) › C › **GNU Debugger**
+# [⌂](../README.md) ([#](../README.md#languages)) › C › **GNU Debugger**
 
 - GDB Command Line Arguments
 
