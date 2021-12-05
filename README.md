@@ -28,9 +28,9 @@
 
 - `[AutoHotkey]` [AutoHotkey](languages/autohotkey.md)
 - `[RegEx]` Regular Expression
-    - [PDF Overview](languages/regex.pdf)
-    - [Quick Reference (MS Docs)](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference)
-    - [Visual Studio (MS Docs)](https://docs.microsoft.com/en-us/visualstudio/ide/using-regular-expressions-in-visual-studio) 
+    - [🗎 PDF Overview](languages/regex.pdf)
+    - [🔗Quick Reference (MS Docs)](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference)
+    - [🔗Visual Studio (MS Docs)](https://docs.microsoft.com/en-us/visualstudio/ide/using-regular-expressions-in-visual-studio) 
 - `[C]` [GNU Debugger](languages/gdb.md)
 - `[Git]` [Git](languages/git.md)
 - `[Minecraft]` [Datapacks](languages/minecraft.md)
