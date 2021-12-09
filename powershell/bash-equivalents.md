@@ -38,7 +38,6 @@ Write text to the screen.
 ### Bash
 
 ```bash
-#!/bin/bash
 echo "Hello, World!"
 echo -e "Hello, \t World!"
 ```
@@ -61,7 +60,6 @@ Save and execute a script with bash and PowerShell.
 Assume that `echo1.sh` has the following contents.
 
 ```bash
-#!/bin/bash
 echo "Hello, World!"
 ```
 
@@ -108,7 +106,6 @@ Multiline comments are different between bash and PowerShell.
 ### Bash
 
 ```bash
-#!/bin/bash
 : 'Multi
 line
 comment'
@@ -132,7 +129,6 @@ Write-Output "42"
 ### Bash
 
 ```bash
-#!/bin/bash
 valid=true
 count=1
 while [ $valid ]
@@ -165,7 +161,6 @@ while ($true) {
 ### Bash
 
 ```bash
-#!/bin/bash
 for (( counter=10; counter>0; counter-- ))
 do
 echo -n "$counter "
@@ -186,7 +181,6 @@ for ($counter = 10; $counter -gt 0; $counter--) {
 ### Bash
 
 ```bash
-#!/bin/bash
 echo "Enter Your Name"
 read name
 echo "Welcome, $name!"
@@ -205,7 +199,6 @@ Write-Host "Welcome, $name!"
 ### Bash
 
 ```bash
-#!/bin/bash
 n=10
 if [ $n -lt 10 ];
 then
@@ -232,7 +225,6 @@ if ($n -lt 10) {
 ### Bash
 
 ```bash
-#!/bin/bash
 echo "Enter username"
 read username
 echo "Enter password"
@@ -264,7 +256,6 @@ if ($username -eq 'admin' -and $password -eq 'secret') {
 ### Bash
 
 ```bash
-#!/bin/bash
 echo "Enter any number"
 read n
 
@@ -294,7 +285,6 @@ if ($n -eq 15 -or $n -eq 45) {
 ### Bash
 
 ```bash
-#!/bin/bash
 echo "Enter your lucky number"
 read n
 
@@ -335,7 +325,6 @@ if ($n -eq 101) {
 ### Bash
 
 ```bash
-#!/bin/bash
 echo "Enter your lucky number"
 read n
 case $n in
@@ -368,7 +357,6 @@ switch($n) {
 ### Bash
 
 ```bash
-#!/bin/bash
 echo "Total arguments : $#"
 echo "1st Argument = $1"
 echo "2nd argument = $2"
@@ -388,7 +376,6 @@ Write-Host "2nd Argument: $($args[1])"
 ### Bash
 
 ```bash
-#!/bin/bash
 for arg in "$@"
 do
 index=$(echo $arg | cut -f1 -d=)
@@ -420,7 +407,6 @@ Write-Host "X+Y=$Result"
 ### Bash
 
 ```bash
-#!/bin/bash
 string1="Linux"
 string2="Hint"
 echo "$string1$string2"
@@ -446,7 +432,6 @@ Write-Host $string3
 ### Bash
 
 ```bash
-#!/bin/bash
 Str="Learn Linux from LinuxHint"
 subStr=${Str:6:5}
 echo $subStr
@@ -466,7 +451,6 @@ Write-Host $subStr
 ### Bash
 
 ```bash
-#!/bin/bash
 function F1()
 {
 echo 'I like bash programming'
@@ -490,7 +474,6 @@ F1
 ### Bash
 
 ```bash
-#!/bin/bash
 Rectangle_Area() {
 area=$(($1 * $2))
 echo "Area is : $area"
@@ -515,7 +498,6 @@ RectangleArea 10 20
 ### Bash
 
 ```bash
-#!/bin/bash
 function greeting() {
 
 str="Hello, $name"
@@ -548,7 +530,6 @@ Write-Host "Return value of the function is $val"
 ### Bash
 
 ```bash
-#!/bin/bash
 echo "Enter directory name"
 read newdir
 `mkdir $newdir`
@@ -569,7 +550,6 @@ mkdir $newdir
 ### Bash
 
 ```bash
-#!/bin/bash
 echo "Enter directory name"
 read ndir
 if [ -d "$ndir" ]
@@ -608,7 +588,6 @@ if (gi $newdir -ea si)
 ### Bash
 
 ```bash
-#!/bin/bash
 file='book.txt'
 while read line; do
 echo $line
@@ -627,7 +606,6 @@ Get-Content 'book.txt'
 ### Bash
 
 ```bash
-#!/bin/bash
 echo "Enter filename to remove"
 read fn
 rm -i $fn
@@ -650,7 +628,6 @@ rm $fn
 ### Bash
 
 ```bash
-#!/bin/bash
 echo "Before appending the file"
 cat book.txt
 
@@ -676,7 +653,6 @@ Get-Content book.txt
 ### Bash
 
 ```bash
-#!/bin/bash
 echo "Wait command" &amp;
 process_id=$!
 wait $process_id
@@ -696,7 +672,6 @@ Get-Process -Id $ProcessId | Wait-Process
 ### Bash
 
 ```bash
-#!/bin/bash
 echo “Wait for 5 seconds”
 sleep 5
 echo “Completed”
