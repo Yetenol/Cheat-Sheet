@@ -46,7 +46,6 @@ echo -e "Hello, \t World!"
 ### PowerShell
 
 ```powershell
-#!/usr/bin/env pwsh
 Write-Output 'Hello, World!'
 Write-Output "Hello, `t World!"
 # Alias is also echo
@@ -77,7 +76,6 @@ bash echo1.sh
 Assume `echo1.ps1` has the following contents.
 
 ```powershell
-#!/usr/bin/env pwsh
 Write-Output "Hello, World!"
 ```
 
@@ -120,7 +118,6 @@ echo "42"
 ### PowerShell
 
 ```powershell
-#!/usr/bin/env pwsh
 <# 
 Multi
 line
@@ -152,7 +149,6 @@ done
 ### PowerShell
 
 ```powershell
-#!/usr/bin/env pwsh
 $count = 0
 while ($true) {
   Write-Host $count
@@ -179,7 +175,6 @@ done
 ### PowerShell
 
 ```powershell
-#!/usr/bin/env pwsh
 for ($counter = 10; $counter -gt 0; $counter--) {
     Write-Host $counter
 }
@@ -200,7 +195,6 @@ echo "Welcome, $name!"
 ### PowerShell
 
 ```powershell
-#!/usr/bin/env pwsh
 $name = Read-Host "Enter Your Name"
 Write-Host "Welcome, $name!"
 ```
@@ -224,7 +218,6 @@ fi
 ### PowerShell
 
 ```powershell
-#!/usr/bin/env pwsh
 $n = 10
 if ($n -lt 10) {
     Write-Host "It is a one digit number"
@@ -255,7 +248,6 @@ fi
 ### PowerShell
 
 ```powershell
-#!/usr/bin/env pwsh
 $UserName = Read-Host "Enter username"
 $Password = Read-Host "Enter password"
 
@@ -287,7 +279,6 @@ fi
 ### PowerShell
 
 ```powershell
-#!/usr/bin/env pwsh
 [int]$n = Read-Host "Enter any number"
 
 if ($n -eq 15 -or $n -eq 45) {
@@ -325,7 +316,6 @@ fi
 ### PowerShell
 
 ```powershell
-#!/usr/bin/env pwsh
 [int]$n = Read-Host "Enter your lucky number"
 
 if ($n -eq 101) {
@@ -363,7 +353,6 @@ esac
 ### PowerShell
 
 ```powershell
-#!/usr/bin/env pwsh
 [int]$n = Read-Host "Enter your lucky number"
 switch($n) {
     101 { Write-Host "You got 1st prize" }
@@ -419,7 +408,6 @@ echo "X+Y=$result"
 ### PowerShell
 
 ```powershell
-#!/usr/bin/env pwsh
 param([int]$X, [int]$Y)
 
 $Result = $X + $Y
@@ -444,7 +432,6 @@ echo $string3
 ### PowerShell
 
 ```powershell
-#!/usr/bin/env pwsh
 $string1 = "Ironman"
 $string2 = "Software"
 Write-Host "$string1$string2"
@@ -468,7 +455,6 @@ echo $subStr
 ### PowerShell
 
 ```powershell
-#!/usr/bin/env pwsh
 $Str = 'Learn PowerShell from Ironman Software'
 $subStr = $Str.Substring(6, 10)
 Write-Host $subStr
@@ -492,7 +478,6 @@ F1
 ### PowerShell
 
 ```powershell
-#!/usr/bin/env pwsh
 function F1 {
     Write-Host "I like PowerShell programming"
 }
@@ -517,7 +502,6 @@ Rectangle_Area 10 20
 ### PowerShell
 
 ```powershell
-#!/usr/bin/env pwsh
 function RectangleArea {
     $Area = $Args[0] * $Args[1]
     Write-Host "Area is: $Area"
@@ -549,7 +533,6 @@ echo "Return value of the function is $val"
 ### PowerShell
 
 ```powershell
-#!/usr/bin/env pwsh
 function Greeting {
     "Hello, $Name"
 }
@@ -574,7 +557,6 @@ read newdir
 ### PowerShell
 
 ```powershell
-#!/usr/bin/env pwsh
 $newdir = Read-Host "Enter directory name"
 New-Item $newdir -ItemType Directory
 # mkdir also works
@@ -602,7 +584,6 @@ fi
 ### PowerShell
 
 ```powershell
-#!/usr/bin/env pwsh
 $newdir = Read-Host "Enter directory name"
 if (Test-Path $newdir)
 {
@@ -637,7 +618,6 @@ done < $file
 ### PowerShell
 
 ```powershell
-#!/usr/bin/env pwsh
 Get-Content 'book.txt'
 ```
 
@@ -656,7 +636,6 @@ rm -i $fn
 ### PowerShell
 
 ```powershell
-#!/usr/bin/env pwsh
 $fn = Read-Host "Enter a file to remove"
 Remove-Item $fn
 
@@ -683,7 +662,6 @@ cat book.txt
 ### PowerShell
 
 ```powershell
-#!/usr/bin/env pwsh
 Write-Host "Before appending the file"
 Get-Content book.txt
 
@@ -708,7 +686,6 @@ echo "Exited with status $?"
 ### PowerShell
 
 ```powershell
-#!/usr/bin/env pwsh
 Start-Process notepad -Wait
 Get-Process -Id $ProcessId | Wait-Process
 ```
@@ -728,7 +705,6 @@ echo “Completed”
 ### PowerShell
 
 ```powershell
-#!/usr/bin/env pwsh
 Write-Host "Wait for 5 seconds"
 Start-Sleep 5 
 #shorter syntax
