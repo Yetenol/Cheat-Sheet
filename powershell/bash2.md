@@ -34,55 +34,88 @@ In this blog post, we’ll look at examples of bash scripts and how to do the sa
 <p>We also have a <a href="https://blog.ironmansoftware.com/powershell-vs-python/">Python vs PowerShell Cheat Sheet</a>.</p>
 
 
-<h2 id="echo">Echo</h2>
-<p>Write text to the screen.</p>
-<p><strong>Bash</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo <span style="color:#e6db74">"Hello, World!"</span>
+
+
+## Echo
+Write text to the screen.
+
+### Bash
+
+<code class="language-bash" data-lang="bash">echo <span style="color:#e6db74">"Hello, World!"</span>
 echo -e <span style="color:#e6db74">"Hello, \t World!"</span>
-</code></pre></div><p><strong>PowerShell</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">Write-Output <span style="color:#e6db74">'Hello, World!'</span>
+
+### PowerShell
+
+```powershell
+Write-Output <span style="color:#e6db74">'Hello, World!'</span>
 Write-Output <span style="color:#e6db74">"Hello, </span><span style="color:#ae81ff">`t</span><span style="color:#e6db74"> World!"</span>
 <span style="color:#75715e"># Alias is also echo</span>
 echo <span style="color:#e6db74">'Hello, World!'</span>
-</code></pre></div><h2 id="execute-a-script">Execute a Script</h2>
-<p>Save and execute a script with bash and PowerShell.</p>
-<p><strong>Bash</strong></p>
+
+
+## Execute a Script
+Save and execute a script with bash and PowerShell.
+
+### Bash
+
 <p>Assume that <code>echo1.sh</code> has the following contents.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+<code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
 </span><span style="color:#75715e"></span>echo <span style="color:#e6db74">"Hello, World!"</span>
 </code></pre></div><p>You would the execute it with the following command line.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">bash echo1.sh
-</code></pre></div><p><strong>PowerShell</strong></p>
+<code class="language-bash" data-lang="bash">bash echo1.sh
+
+### PowerShell
+
 <p>Assume <code>echo1.ps1</code> has the following contents.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#75715e">#!/usr/bin/env pwsh</span>
+```powershell
+<span style="color:#75715e">#!/usr/bin/env pwsh</span>
 Write-Host <span style="color:#e6db74">"Hello, World!"</span>
 </code></pre></div><p>You would then execute it with the following command line.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">pwsh echo1.ps1
-</code></pre></div><h2 id="comments">Comments</h2>
-<p>Comments are the same in PowerShell and bash.</p>
-<p><strong>Bash</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># My Comment!</span>
-</code></pre></div><p><strong>PowerShell</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#75715e"># My Comment!</span>
-</code></pre></div><h2 id="multiline-comments">Multiline Comments</h2>
-<p>Multiline comments are different between bash and PowerShell.</p>
-<p><strong>Bash</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+```powershell
+pwsh echo1.ps1
+
+
+## Comments
+Comments are the same in PowerShell and bash.
+
+### Bash
+
+<code class="language-bash" data-lang="bash"><span style="color:#75715e"># My Comment!</span>
+
+### PowerShell
+
+```powershell
+<span style="color:#75715e"># My Comment!</span>
+
+
+## Multiline Comments
+Multiline comments are different between bash and PowerShell.
+
+### Bash
+
+<code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
 </span><span style="color:#75715e"></span>: <span style="color:#e6db74">'Multi
 </span><span style="color:#e6db74">line
 </span><span style="color:#e6db74">comment'</span>
 echo <span style="color:#e6db74">"42"</span>
-</code></pre></div><p><strong>PowerShell</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#75715e">#!/usr/bin/env pwsh</span>
+
+### PowerShell
+
+```powershell
+<span style="color:#75715e">#!/usr/bin/env pwsh</span>
 <span style="color:#75715e">&lt;# 
 </span><span style="color:#75715e">Multi
 </span><span style="color:#75715e">line
 </span><span style="color:#75715e">comment
 </span><span style="color:#75715e">#&gt;</span>
 Write-Host <span style="color:#e6db74">"42"</span>
-</code></pre></div><h2 id="while-loop">While Loop</h2>
-<p><strong>Bash</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+
+
+## While Loop
+
+### Bash
+
+<code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
 </span><span style="color:#75715e"></span>valid<span style="color:#f92672">=</span>true
 count<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
 <span style="color:#66d9ef">while</span> <span style="color:#f92672">[</span> $valid <span style="color:#f92672">]</span>
@@ -94,8 +127,11 @@ break
 <span style="color:#66d9ef">fi</span>
 <span style="color:#f92672">((</span>count++<span style="color:#f92672">))</span>
 <span style="color:#66d9ef">done</span>
-</code></pre></div><p><strong>PowerShell</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#75715e">#!/usr/bin/env pwsh</span>
+
+### PowerShell
+
+```powershell
+<span style="color:#75715e">#!/usr/bin/env pwsh</span>
 $count = 0
 <span style="color:#66d9ef">while</span>($true) {
   Write-Host $count
@@ -104,31 +140,49 @@ $count = 0
   }
   $count++
 }
-</code></pre></div><h2 id="for-loop">For Loop</h2>
-<p><strong>Bash</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+
+
+## For Loop
+
+### Bash
+
+<code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">for</span> <span style="color:#f92672">((</span> counter<span style="color:#f92672">=</span>10; counter&gt;0; counter-- <span style="color:#f92672">))</span>
 <span style="color:#66d9ef">do</span>
 echo -n <span style="color:#e6db74">"</span>$counter<span style="color:#e6db74"> "</span>
 <span style="color:#66d9ef">done</span>
-</code></pre></div><p><strong>PowerShell</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#75715e">#!/usr/bin/env pwsh</span>
+
+### PowerShell
+
+```powershell
+<span style="color:#75715e">#!/usr/bin/env pwsh</span>
 <span style="color:#66d9ef">for</span>($counter = 10; $counter <span style="color:#f92672">-gt</span> 0; $counter--) {
     Write-Host $counter
 }
-</code></pre></div><h2 id="get-user-input">Get User Input</h2>
-<p><strong>Bash</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+
+
+## Get User Input
+
+### Bash
+
+<code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
 </span><span style="color:#75715e"></span>echo <span style="color:#e6db74">"Enter Your Name"</span>
 read name
 echo <span style="color:#e6db74">"Welcome, </span>$name<span style="color:#e6db74">!"</span>
-</code></pre></div><p><strong>PowerShell</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#75715e">#!/usr/bin/env pwsh</span>
+
+### PowerShell
+
+```powershell
+<span style="color:#75715e">#!/usr/bin/env pwsh</span>
 $name = Read-Host <span style="color:#e6db74">"Enter Your Name"</span>
 Write-Host <span style="color:#e6db74">"Welcome, $name!"</span>
-</code></pre></div><h2 id="if-statement">If Statement</h2>
-<p><strong>Bash</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+
+
+## If Statement
+
+### Bash
+
+<code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
 </span><span style="color:#75715e"></span>n<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>
 <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> $n -lt <span style="color:#ae81ff">10</span> <span style="color:#f92672">]</span>;
 <span style="color:#66d9ef">then</span>
@@ -136,17 +190,24 @@ echo <span style="color:#e6db74">"It is a one digit number"</span>
 <span style="color:#66d9ef">else</span>
 echo <span style="color:#e6db74">"It is a two digit number"</span>
 <span style="color:#66d9ef">fi</span>
-</code></pre></div><p><strong>PowerShell</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#75715e">#!/usr/bin/env pwsh</span>
+
+### PowerShell
+
+```powershell
+<span style="color:#75715e">#!/usr/bin/env pwsh</span>
 $n = 10
 <span style="color:#66d9ef">if</span> ($n <span style="color:#f92672">-lt</span> 10) {
     Write-Host <span style="color:#e6db74">"It is a one digit number"</span>
 } <span style="color:#66d9ef">else</span> {
     Write-Host <span style="color:#e6db74">"It is a two digit number"</span>
 }
-</code></pre></div><h2 id="if-with-and-logic">If with And Logic</h2>
-<p><strong>Bash</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+
+
+## If with And Logic
+
+### Bash
+
+<code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
 </span><span style="color:#75715e"></span>
 echo <span style="color:#e6db74">"Enter username"</span>
 read username
@@ -158,8 +219,11 @@ echo <span style="color:#e6db74">"valid user"</span>
 <span style="color:#66d9ef">else</span>
 echo <span style="color:#e6db74">"invalid user"</span>
 <span style="color:#66d9ef">fi</span>
-</code></pre></div><p><strong>PowerShell</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#75715e">#!/usr/bin/env pwsh</span>
+
+### PowerShell
+
+```powershell
+<span style="color:#75715e">#!/usr/bin/env pwsh</span>
 $UserName = Read-Host <span style="color:#e6db74">"Enter username"</span>
 $Password = Read-Host <span style="color:#e6db74">"Enter password"</span>
 
@@ -168,9 +232,13 @@ $Password = Read-Host <span style="color:#e6db74">"Enter password"</span>
 } <span style="color:#66d9ef">else</span> {
     Write-Host <span style="color:#e6db74">'invalid user'</span>
 }
-</code></pre></div><h2 id="if-with-or-logic">If with Or Logic</h2>
-<p><strong>Bash</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+
+
+## If with Or Logic
+
+### Bash
+
+<code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
 </span><span style="color:#75715e"></span>
 echo <span style="color:#e6db74">"Enter any number"</span>
 read n
@@ -181,8 +249,11 @@ echo <span style="color:#e6db74">"You won the game"</span>
 <span style="color:#66d9ef">else</span>
 echo <span style="color:#e6db74">"You lost the game"</span>
 <span style="color:#66d9ef">fi</span>
-</code></pre></div><p><strong>PowerShell</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#75715e">#!/usr/bin/env pwsh</span>
+
+### PowerShell
+
+```powershell
+<span style="color:#75715e">#!/usr/bin/env pwsh</span>
 <span style="color:#66d9ef">[int]</span>$n = Read-Host <span style="color:#e6db74">"Enter any number"</span>
 
 <span style="color:#66d9ef">if</span> ($n <span style="color:#f92672">-eq</span> 15 <span style="color:#f92672">-or</span> $n <span style="color:#f92672">-eq</span> 45) {
@@ -190,9 +261,13 @@ echo <span style="color:#e6db74">"You lost the game"</span>
 } <span style="color:#66d9ef">else</span> {
     Write-Host <span style="color:#e6db74">"You lost the game"</span>
 }
-</code></pre></div><h2 id="if-else-statements">If Else Statements</h2>
-<p><strong>Bash</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+
+
+## If Else Statements
+
+### Bash
+
+<code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
 </span><span style="color:#75715e"></span>
 echo <span style="color:#e6db74">"Enter your lucky number"</span>
 read n
@@ -210,8 +285,11 @@ echo <span style="color:#e6db74">"You got 3rd prize"</span>
 <span style="color:#66d9ef">else</span>
 echo <span style="color:#e6db74">"Sorry, try for the next time"</span>
 <span style="color:#66d9ef">fi</span>
-</code></pre></div><p><strong>PowerShell</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#75715e">#!/usr/bin/env pwsh</span>
+
+### PowerShell
+
+```powershell
+<span style="color:#75715e">#!/usr/bin/env pwsh</span>
 <span style="color:#66d9ef">[int]</span>$n = Read-Host <span style="color:#e6db74">"Enter your lucky number"</span>
 
 <span style="color:#66d9ef">if</span> ($n <span style="color:#f92672">-eq</span> 101) {
@@ -223,9 +301,13 @@ echo <span style="color:#e6db74">"Sorry, try for the next time"</span>
 } <span style="color:#66d9ef">else</span> {
     Write-Host <span style="color:#e6db74">"Sorry, try for the next time"</span>
 }
-</code></pre></div><h2 id="case-statement">Case Statement</h2>
-<p><strong>Bash</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+
+
+## Case Statement
+
+### Bash
+
+<code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
 </span><span style="color:#75715e"></span>
 echo <span style="color:#e6db74">"Enter your lucky number"</span>
 read n
@@ -239,8 +321,11 @@ echo <span style="color:#e6db74">"You got 3rd prize"</span> ;;
 *<span style="color:#f92672">)</span>
 echo <span style="color:#e6db74">"Sorry, try for the next time"</span> ;;
 <span style="color:#66d9ef">esac</span>
-</code></pre></div><p><strong>PowerShell</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#75715e">#!/usr/bin/env pwsh</span>
+
+### PowerShell
+
+```powershell
+<span style="color:#75715e">#!/usr/bin/env pwsh</span>
 <span style="color:#66d9ef">[int]</span>$n = Read-Host <span style="color:#e6db74">"Enter your lucky number"</span>
 <span style="color:#66d9ef">switch</span>($n) {
     101 { Write-Host <span style="color:#e6db74">"You got 1st prize"</span> }
@@ -248,19 +333,30 @@ echo <span style="color:#e6db74">"Sorry, try for the next time"</span> ;;
     999 { Write-Host <span style="color:#e6db74">"You got 3rd prize"</span> }
     <span style="color:#66d9ef">default</span> { Write-Host <span style="color:#e6db74">"Sorry, try for the next time"</span> }
 }
-</code></pre></div><h2 id="command-line-arguments">Command Line Arguments</h2>
-<p><strong>Bash</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+
+
+## Command Line Arguments
+
+### Bash
+
+<code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
 </span><span style="color:#75715e"></span>echo <span style="color:#e6db74">"Total arguments : </span>$#<span style="color:#e6db74">"</span>
 echo <span style="color:#e6db74">"1st Argument = </span>$1<span style="color:#e6db74">"</span>
 echo <span style="color:#e6db74">"2nd argument = </span>$2<span style="color:#e6db74">"</span>
-</code></pre></div><p><strong>PowerShell</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">Write-Host <span style="color:#e6db74">"Total arguments: </span>$($args.Length)<span style="color:#e6db74">"</span>
+
+### PowerShell
+
+```powershell
+Write-Host <span style="color:#e6db74">"Total arguments: </span>$($args.Length)<span style="color:#e6db74">"</span>
 Write-Host <span style="color:#e6db74">"1st Argument: </span>$($args[0])<span style="color:#e6db74">"</span>
 Write-Host <span style="color:#e6db74">"2nd Argument: </span>$($args[1])<span style="color:#e6db74">"</span>
-</code></pre></div><h2 id="named-command-line-arguments">Named Command Line Arguments</h2>
-<p><strong>Bash</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+
+
+## Named Command Line Arguments
+
+### Bash
+
+<code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">for</span> arg in <span style="color:#e6db74">"</span>$@<span style="color:#e6db74">"</span>
 <span style="color:#66d9ef">do</span>
 index<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>echo $arg | cut -f1 -d<span style="color:#f92672">=</span><span style="color:#66d9ef">)</span>
@@ -275,15 +371,22 @@ Y<span style="color:#f92672">)</span> y<span style="color:#f92672">=</span>$val;
 <span style="color:#66d9ef">done</span>
 <span style="color:#f92672">((</span>result<span style="color:#f92672">=</span>x+y<span style="color:#f92672">))</span>
 echo <span style="color:#e6db74">"X+Y=</span>$result<span style="color:#e6db74">"</span>
-</code></pre></div><p><strong>PowerShell</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#75715e">#!/usr/bin/env pwsh</span>
+
+### PowerShell
+
+```powershell
+<span style="color:#75715e">#!/usr/bin/env pwsh</span>
 <span style="color:#66d9ef">param</span>(<span style="color:#66d9ef">[int]</span>$X, <span style="color:#66d9ef">[int]</span>$Y)
 
 $Result = $X + $Y
 Write-Host <span style="color:#e6db74">"X+Y=$Result"</span>
-</code></pre></div><h2 id="concatenating-strings">Concatenating Strings</h2>
-<p><strong>Bash</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+
+
+## Concatenating Strings
+
+### Bash
+
+<code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
 </span><span style="color:#75715e"></span>
 string1<span style="color:#f92672">=</span><span style="color:#e6db74">"Linux"</span>
 string2<span style="color:#f92672">=</span><span style="color:#e6db74">"Hint"</span>
@@ -291,43 +394,64 @@ echo <span style="color:#e6db74">"</span>$string1$string2<span style="color:#e6d
 string3<span style="color:#f92672">=</span>$string1+$string2
 string3<span style="color:#f92672">+=</span><span style="color:#e6db74">" is a good tutorial blog site"</span>
 echo $string3
-</code></pre></div><p><strong>PowerShell</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#75715e">#!/usr/bin/env pwsh</span>
+
+### PowerShell
+
+```powershell
+<span style="color:#75715e">#!/usr/bin/env pwsh</span>
 $string1 = <span style="color:#e6db74">"Ironman"</span>
 $string2 = <span style="color:#e6db74">"Software"</span>
 Write-Host <span style="color:#e6db74">"$string1 $string2"</span>
 $string3 = $string1+$string2
 $string3 +=<span style="color:#e6db74">" makes good software"</span>
 Write-Host $string3
-</code></pre></div><h2 id="substring-of-a-string">Substring of a String</h2>
-<p><strong>Bash</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+
+
+## Substring of a String
+
+### Bash
+
+<code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
 </span><span style="color:#75715e"></span>Str<span style="color:#f92672">=</span><span style="color:#e6db74">"Learn Linux from LinuxHint"</span>
 subStr<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>Str:6:5<span style="color:#e6db74">}</span>
 echo $subStr
-</code></pre></div><p><strong>PowerShell</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#75715e">#!/usr/bin/env pwsh</span>
+
+### PowerShell
+
+```powershell
+<span style="color:#75715e">#!/usr/bin/env pwsh</span>
 $Str = <span style="color:#e6db74">'Learn PowerShell from Ironman Software'</span>
 $subStr = $Str.Substring(6, 10)
 Write-Host $subStr
-</code></pre></div><h2 id="functions">Functions</h2>
-<p><strong>Bash</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+
+
+## Functions
+
+### Bash
+
+<code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> F1<span style="color:#f92672">()</span>
 <span style="color:#f92672">{</span>
 echo <span style="color:#e6db74">'I like bash programming'</span>
 <span style="color:#f92672">}</span>
 
 F1
-</code></pre></div><p><strong>PowerShell</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#75715e">#!/usr/bin/env pwsh</span>
+
+### PowerShell
+
+```powershell
+<span style="color:#75715e">#!/usr/bin/env pwsh</span>
 <span style="color:#66d9ef">function</span> F1 {
     Write-Host <span style="color:#e6db74">"I like PowerShell programming"</span>
 }
 F1
-</code></pre></div><h2 id="functions-with-parameters">Functions with Parameters</h2>
-<p><strong>Bash</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+
+
+## Functions with Parameters
+
+### Bash
+
+<code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
 </span><span style="color:#75715e"></span>
 Rectangle_Area<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
 area<span style="color:#f92672">=</span><span style="color:#66d9ef">$((</span>$1 <span style="color:#f92672">*</span> $2<span style="color:#66d9ef">))</span>
@@ -335,16 +459,23 @@ echo <span style="color:#e6db74">"Area is : </span>$area<span style="color:#e6db
 <span style="color:#f92672">}</span>
 
 Rectangle_Area <span style="color:#ae81ff">10</span> <span style="color:#ae81ff">20</span>
-</code></pre></div><p><strong>PowerShell</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#75715e">#!/usr/bin/env pwsh</span>
+
+### PowerShell
+
+```powershell
+<span style="color:#75715e">#!/usr/bin/env pwsh</span>
 <span style="color:#66d9ef">function</span> RectangleArea {
     $Area = $Args[0] * $Args[1]
     Write-Host <span style="color:#e6db74">"Area is: $Area"</span>
 }
 RectangleArea 10 20
-</code></pre></div><h2 id="use-the-return-value-of-a-function">Use the Return value of a Function</h2>
-<p><strong>Bash</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+
+
+## Use the Return value of a Function
+
+### Bash
+
+<code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> greeting<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
 
 str<span style="color:#f92672">=</span><span style="color:#e6db74">"Hello, </span>$name<span style="color:#e6db74">"</span>
@@ -357,8 +488,11 @@ read name
 
 val<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>greeting<span style="color:#66d9ef">)</span>
 echo <span style="color:#e6db74">"Return value of the function is </span>$val<span style="color:#e6db74">"</span>
-</code></pre></div><p><strong>PowerShell</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#75715e">#!/usr/bin/env pwsh</span>
+
+### PowerShell
+
+```powershell
+<span style="color:#75715e">#!/usr/bin/env pwsh</span>
 <span style="color:#66d9ef">function</span> Greeting {
     <span style="color:#e6db74">"Hello, $Name"</span>
 }
@@ -366,21 +500,32 @@ echo <span style="color:#e6db74">"Return value of the function is </span>$val<sp
 $Name = Read-Host <span style="color:#e6db74">"Enter your name"</span>
 $Val = Greeting
 Write-Host <span style="color:#e6db74">"Return value of the function is $val"</span>
-</code></pre></div><h2 id="make-a-directory">Make a Directory</h2>
-<p><strong>Bash</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+
+
+## Make a Directory
+
+### Bash
+
+<code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
 </span><span style="color:#75715e"></span>echo <span style="color:#e6db74">"Enter directory name"</span>
 read newdir
 <span style="color:#e6db74">`</span>mkdir $newdir<span style="color:#e6db74">`</span>
-</code></pre></div><p><strong>PowerShell</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#75715e">#!/usr/bin/env pwsh</span>
+
+### PowerShell
+
+```powershell
+<span style="color:#75715e">#!/usr/bin/env pwsh</span>
 $newdir = Read-Host <span style="color:#e6db74">"Enter directory name"</span>
 New-Item $newdir -ItemType Directory
 <span style="color:#75715e"># mkdir also works</span>
 mkdir $newdir
-</code></pre></div><h2 id="make-directory-if-it-doesnt-exist">Make Directory if it doesn’t exist</h2>
-<p><strong>Bash</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+
+
+## Make Directory if it doesn’t exist
+
+### Bash
+
+<code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
 </span><span style="color:#75715e"></span>echo <span style="color:#e6db74">"Enter directory name"</span>
 read ndir
 <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> -d <span style="color:#e6db74">"</span>$ndir<span style="color:#e6db74">"</span> <span style="color:#f92672">]</span>
@@ -390,8 +535,11 @@ echo <span style="color:#e6db74">"Directory exist"</span>
 <span style="color:#e6db74">`</span>mkdir $ndir<span style="color:#e6db74">`</span>
 echo <span style="color:#e6db74">"Directory created"</span>
 <span style="color:#66d9ef">fi</span>
-</code></pre></div><p><strong>PowerShell</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#75715e">#!/usr/bin/env pwsh</span>
+
+### PowerShell
+
+```powershell
+<span style="color:#75715e">#!/usr/bin/env pwsh</span>
 $newdir = Read-Host <span style="color:#e6db74">"Enter directory name"</span>
 <span style="color:#66d9ef">if</span> (Test-Path $newdir)
 {
@@ -408,33 +556,51 @@ $newdir = Read-Host <span style="color:#e6db74">"Enter directory name"</span>
 } <span style="color:#66d9ef">else</span> {
     mkdir $newdir
 }
-</code></pre></div><h2 id="read-a-file">Read a File</h2>
-<p><strong>Bash</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+
+
+## Read a File
+
+### Bash
+
+<code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
 </span><span style="color:#75715e"></span>file<span style="color:#f92672">=</span><span style="color:#e6db74">'book.txt'</span>
 <span style="color:#66d9ef">while</span> read line; <span style="color:#66d9ef">do</span>
 echo $line
 <span style="color:#66d9ef">done</span> &lt; $file
-</code></pre></div><p><strong>PowerShell</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#75715e">#!/usr/bin/env pwsh</span>
+
+### PowerShell
+
+```powershell
+<span style="color:#75715e">#!/usr/bin/env pwsh</span>
 Get-Content <span style="color:#e6db74">'book.txt'</span>
-</code></pre></div><h2 id="delete-a-file">Delete a File</h2>
-<p><strong>Bash</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+
+
+## Delete a File
+
+### Bash
+
+<code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
 </span><span style="color:#75715e"></span>echo <span style="color:#e6db74">"Enter filename to remove"</span>
 read fn
 rm -i $fn
-</code></pre></div><p><strong>PowerShell</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#75715e">#!/usr/bin/env pwsh</span>
+
+### PowerShell
+
+```powershell
+<span style="color:#75715e">#!/usr/bin/env pwsh</span>
 $fn = Read-Host <span style="color:#e6db74">"Enter a file to remove"</span>
 Remove-Item $fn
 
 <span style="color:#75715e"># Shorter syntax</span>
 $fn = Read-Host <span style="color:#e6db74">"Enter a file to remove"</span>
 rm $fn
-</code></pre></div><h2 id="append-to-a-file">Append to a File</h2>
-<p><strong>Bash</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+
+
+## Append to a File
+
+### Bash
+
+<code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
 </span><span style="color:#75715e"></span>
 echo <span style="color:#e6db74">"Before appending the file"</span>
 cat book.txt
@@ -442,49 +608,77 @@ cat book.txt
 echo <span style="color:#e6db74">"Learning Laravel 5"</span>&gt;&gt; book.txt
 echo <span style="color:#e6db74">"After appending the file"</span>
 cat book.txt
-</code></pre></div><p><strong>PowerShell</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#75715e">#!/usr/bin/env pwsh</span>
+
+### PowerShell
+
+```powershell
+<span style="color:#75715e">#!/usr/bin/env pwsh</span>
 Write-Host <span style="color:#e6db74">"Before appending the file"</span>
 Get-Content book.txt
 
 <span style="color:#e6db74">"Learning Laravel 5"</span> &gt;&gt; book.txt
 Write-Host <span style="color:#e6db74">"After appending the file"</span>
 Get-Content book.txt
-</code></pre></div><h2 id="wait-for-a-process">Wait for a Process</h2>
-<p><strong>Bash</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+
+
+## Wait for a Process
+
+### Bash
+
+<code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
 </span><span style="color:#75715e"></span>echo <span style="color:#e6db74">"Wait command"</span> &amp;
 process_id<span style="color:#f92672">=</span>$!
 wait $process_id
 echo <span style="color:#e6db74">"Exited with status </span>$?<span style="color:#e6db74">"</span>
-</code></pre></div><p><strong>PowerShell</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#75715e">#!/usr/bin/env pwsh</span>
+
+### PowerShell
+
+```powershell
+<span style="color:#75715e">#!/usr/bin/env pwsh</span>
 Start-Process notepad -Wait
 Get-Process -Id $ProcessId | Wait-Process
-</code></pre></div><h2 id="sleep">Sleep</h2>
-<p><strong>Bash</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+
+
+## Sleep
+
+### Bash
+
+<code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
 </span><span style="color:#75715e"></span>
 echo “Wait <span style="color:#66d9ef">for</span> <span style="color:#ae81ff">5</span> seconds”
 sleep <span style="color:#ae81ff">5</span>
 echo “Completed”
-</code></pre></div><p><strong>PowerShell</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#75715e">#!/usr/bin/env pwsh</span>
+
+### PowerShell
+
+```powershell
+<span style="color:#75715e">#!/usr/bin/env pwsh</span>
 Write-Host <span style="color:#e6db74">"Wait for 5 seconds"</span>
 Start-Sleep 5 
 <span style="color:#75715e">#shorter syntax</span>
 sleep 5
 Write-Host <span style="color:#e6db74">"Completed"</span>
-</code></pre></div><h2 id="download-files">Download Files</h2>
-<p><strong>Bash</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -o newname.txt http://www.het.brown.edu/guide/UNIX-password-security.txt
-</code></pre></div><p><strong>PowerShell</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">Invoke-WebRequest http<span style="color:#960050;background-color:#1e0010">:</span>//www.het.brown.edu/guide/UNIX-password-security.txt -OutFile .\newname.txt
+
+
+## Download Files
+
+### Bash
+
+<code class="language-bash" data-lang="bash">curl -o newname.txt http://www.het.brown.edu/guide/UNIX-password-security.txt
+
+### PowerShell
+
+```powershell
+Invoke-WebRequest http<span style="color:#960050;background-color:#1e0010">:</span>//www.het.brown.edu/guide/UNIX-password-security.txt -OutFile .\newname.txt
 <span style="color:#75715e"># shorter syntax</span>
 iwr http<span style="color:#960050;background-color:#1e0010">:</span>//www.het.brown.edu/guide/UNIX-password-security.txt -o newname.txt
-</code></pre></div><h2 id="search-a-file-for-a-string">Search a File for a String</h2>
-<p><strong>Bash</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Search a file</span>
+
+
+## Search a File for a String
+
+### Bash
+
+<code class="language-bash" data-lang="bash"><span style="color:#75715e"># Search a file</span>
 grep error log.txt
 
 <span style="color:#75715e"># Search a directory</span>
@@ -501,8 +695,11 @@ grep -c error *
 
 <span style="color:#75715e"># Display lines before and after</span>
 grep -C <span style="color:#ae81ff">2</span> error *
-</code></pre></div><p><strong>PowerShell</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#75715e"># Search a file</span>
+
+### PowerShell
+
+```powershell
+<span style="color:#75715e"># Search a file</span>
 Select-String error log.txt
 
 <span style="color:#75715e"># Search a Directory</span>
