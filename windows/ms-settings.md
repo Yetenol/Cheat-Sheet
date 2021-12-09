@@ -1,4 +1,5 @@
-# [⌂](../README.md) › [Windows](../README.md#windows) › Settings app pages
+# [⌂](../README.md) › [Windows](../README.md#windows) › Settings app pages - Table of Contents
+
 - _ms-settings URIs used to open various pages of the Settings app_
 
 1. [Settings home page](#settings-home-page)
@@ -21,13 +22,16 @@
 1. [Surface Hub](#surface-hub)
 
 
+
 ## Settings home page
+
 Page | URI
 --- | ---
 Settings home page | `ms-settings:`
 
 
 ## System
+
 Page | URI
 --- | ---
 Display | `ms-settings:display`
@@ -62,6 +66,7 @@ About | `ms-settings:about`
 
 
 ## Devices
+
 Page | URI
 --- | ---
 Bluetooth & other devices | `ms-settings:bluetooth` <br> `ms-settings:connecteddevices`
@@ -78,6 +83,7 @@ USB | `ms-settings:usb`
 
 
 ## Phone
+
 Page | URI
 --- | ---
 Phone | `ms-settings:mobile-devices`
@@ -86,6 +92,7 @@ Your Phone (opens app) | `ms-settings:mobile-devices-addphone-direct`
 
 
 ## Network & Internet
+
 Page | URI
 --- | ---
 Network & Internet | `ms-settings:network`
@@ -108,6 +115,7 @@ Proxy | `ms-settings:network-proxy`
 
 
 ## Personalization
+
 Page | URI
 --- | ---
 Personalization | `ms-settings:personalization`
@@ -122,6 +130,7 @@ Taskbar  | `ms-settings:taskbar`
 
 
 ## Apps
+
 Page | URI
 --- | ---
 Apps & features | `ms-settings:appsfeatures` <br> `ms-settings:appsfeatures-app`
@@ -135,6 +144,7 @@ Startup | `ms-settings:startupapps`
 
 
 ## Accounts
+
 Page | URI
 --- | ---
 Your info | `ms-settings:yourinfo`
@@ -151,6 +161,7 @@ Sync your settings | `ms-settings:sync`
 
 
 ## Time & language
+
 Page | URI
 --- | ---
 Date & time | `ms-settings:dateandtime`
@@ -167,6 +178,7 @@ Speech | `ms-settings:speech`
 
 
 ## Gaming
+
 Page | URI
 --- | ---
 Game bar | `ms-settings:gaming-gamebar`
@@ -178,12 +190,14 @@ Xbox Networking | `ms-settings:gaming-xboxnetworking`
 
 
 ## Extras
+
 Page | URI
 --- | ---
 Extras (available only when Settings app extensions installed) | `ms-settings:extras`
 
 
 ## Ease of Access
+
 Page | URI
 --- | ---
 Display | `ms-settings:easeofaccess-display`
@@ -206,6 +220,7 @@ Other options (removed in version 1809+) | `ms-settings:easeofaccess-otheroption
 
 
 ## Search (version 1903+)
+
 Page | URI
 --- | ---
 Permissions & history | `ms-settings:search-permissions`
@@ -214,6 +229,7 @@ More details | `ms-settings:search-moredetails`
 
 
 ## Cortana
+
 Page | URI
 --- | ---
 Cortana | `ms-settings:cortana`
@@ -223,6 +239,7 @@ More details | `ms-settings:cortana-moredetails`
 
 
 ## Privacy
+
 Page | URI
 --- | ---
 General | `ms-settings:privacy`
@@ -257,6 +274,7 @@ File system | `ms-settings:privacy-broadfilesystemaccess`
 
 
 ## Update & security
+
 Page | URI
 --- | ---
 Windows Update | `ms-settings:windowsupdate`
@@ -279,6 +297,7 @@ Windows Insider Program | `ms-settings:windowsinsider` <br> `ms-settings:windows
 
 
 ## Mixed reality
+
 Page | URI
 --- | ---
 Mixed reality | `ms-settings:holographic`
@@ -289,6 +308,7 @@ Uninstall | `ms-settings:holographic-management`
 
 
 ## Surface Hub
+
 Page | URI
 --- | ---
 Accounts | `ms-settings:surfacehub-accounts`
@@ -298,5 +318,6 @@ Session cleanup | `ms-settings:surfacehub-sessioncleanup`
 Welcome screen | `ms-settings:surfacehub-welcome`
 
 ### Sources
+
 - 2021-08-13: [List of `ms-settings` URI commands to open specific settings in Windows 10 – 4sysops](https://4sysops.com/wiki/list-of-ms-settings-uri-commands-to-open-specific-settings-in-windows-10/history/?revision=1555539)
 - 2021-11-19: [ms-settings: URI scheme reference](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference)
