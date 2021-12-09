@@ -38,6 +38,7 @@ Write text to the screen.
 ### Bash
 
 ```bash
+#!/bin/bash
 echo "Hello, World!"
 echo -e "Hello, \t World!"
 ```
@@ -45,6 +46,7 @@ echo -e "Hello, \t World!"
 ### PowerShell
 
 ```powershell
+#!/usr/bin/env pwsh
 Write-Output 'Hello, World!'
 Write-Output "Hello, `t World!"
 # Alias is also echo
@@ -76,12 +78,12 @@ Assume `echo1.ps1` has the following contents.
 
 ```powershell
 #!/usr/bin/env pwsh
-Write-Host "Hello, World!"
+Write-Output "Hello, World!"
 ```
 
 You would then execute it with the following command line.
 
-```powershell
+```bash
 pwsh echo1.ps1
 ```
 
@@ -124,7 +126,7 @@ Multi
 line
 comment
 #>
-Write-Host "42"
+Write-Output "42"
 ```
 
 
@@ -152,7 +154,7 @@ done
 ```powershell
 #!/usr/bin/env pwsh
 $count = 0
-while($true) {
+while ($true) {
   Write-Host $count
   if ($count -eq 5) {
       break
@@ -178,7 +180,7 @@ done
 
 ```powershell
 #!/usr/bin/env pwsh
-for($counter = 10; $counter -gt 0; $counter--) {
+for ($counter = 10; $counter -gt 0; $counter--) {
     Write-Host $counter
 }
 ```
@@ -348,7 +350,7 @@ echo "Enter your lucky number"
 read n
 case $n in
 101)
-echo echo "You got 1st prize" ;;
+echo "You got 1st prize" ;;
 510)
 echo "You got 2nd prize" ;;
 999)
@@ -445,7 +447,7 @@ echo $string3
 #!/usr/bin/env pwsh
 $string1 = "Ironman"
 $string2 = "Software"
-Write-Host "$string1 $string2"
+Write-Host "$string1$string2"
 $string3 = $string1+$string2
 $string3 +=" makes good software"
 Write-Host $string3
