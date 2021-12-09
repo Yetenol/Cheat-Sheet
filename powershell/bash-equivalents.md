@@ -1,17 +1,48 @@
-# [⌂](../README.md) › [Powershell](../README.md#powershell) › Bash equivalents
+# [⌂](../README.md) › [Powershell](../README.md#powershell) › **Bash equivalents** - Table of Contents
+- examples of bash commands and how to do the same thing in PowerShell
+
+1. [Echo](#echo)
+1. [Execute a Script](#execute-a-script)
+1. [Comments](#comments)
+1. [Multiline Comments](#multiline-comments)
+1. [While Loop](#while-loop)
+1. [For Loop](#for-loop)
+1. [Get User Input](#get-user-input)
+1. [If Statement](#if-statement)
+1. [If with And Logic](#if-with-and-logic)
+1. [If with Or Logic](#if-with-or-logic)
+1. [If Else Statements](#if-else-statements)
+1. [Case Statement](#case-statement)
+1. [Command Line Arguments](#command-line-arguments)
+1. [Named Command Line Arguments](#named-command-line-arguments)
+1. [Concatenating Strings](#concatenating-strings)
+1. [Substring of a String](#substring-of-a-string)
+1. [Functions](#functions)
+1. [Functions with Parameters](#functions-with-parameters)
+1. [Use the Return value of a Function](#use-the-return-value-of-a-function)
+1. [Make a Directory](#make-a-directory)
+1. [Make Directory if it doesn’t exist](#make-directory-if-it-doesnt-exist)
+1. [Read a File](#read-a-file)
+1. [Delete a File](#delete-a-file)
+1. [Append to a File](#append-to-a-file)
+1. [Wait for a Process](#wait-for-a-process)
+1. [Sleep](#sleep)
+1. [Download Files](#download-files)
+1. [Search a File for a String](#search-a-file-for-a-string)
+
+
 
 ## Echo
-
 Write text to the screen.
 
-> Bash
+### Bash
 
 ```bash
 echo "Hello, World!"
 echo -e "Hello, \t World!"
 ```
 
-> PowerShell
+### PowerShell
 
 ```powershell
 Write-Output 'Hello, World!'
@@ -22,62 +53,86 @@ echo 'Hello, World!'
 
 
 ## Execute a Script
-
 Save and execute a script with bash and PowerShell.
 
-> Bash
-- Assume that echo1.sh has the following contents.
+### Bash
+
+Assume that `echo1.sh` has the following contents.
 
 ```bash
 #!/bin/bash
 echo "Hello, World!"
 ```
 
-- You would the execute it with the following command line.
+You would the execute it with the following command line.
+
 ```bash
 bash echo1.sh
 ```
 
-> PowerShell
-- Assume echo1.ps1 has the following contents.
+### PowerShell
+
+Assume `echo1.ps1` has the following contents.
+
 ```powershell
 #!/usr/bin/env pwsh
 Write-Host "Hello, World!"
 ```
+
 You would then execute it with the following command line.
 
+```powershell
 pwsh echo1.ps1
-Comments
+```
+
+
+## Comments
 Comments are the same in PowerShell and bash.
 
-Bash
+### Bash
 
+```bash
 # My Comment!
-PowerShell
+```
 
+### PowerShell
+
+```powershell
 # My Comment!
-Multiline Comments
+```
+
+
+## Multiline Comments
 Multiline comments are different between bash and PowerShell.
 
-Bash
+### Bash
 
+```bash
 #!/bin/bash
 : 'Multi
 line
 comment'
 echo "42"
-PowerShell
+```
 
+### PowerShell
+
+```powershell
 #!/usr/bin/env pwsh
-<# 
+&lt;# 
 Multi
 line
 comment
-#>
+#&gt;
 Write-Host "42"
-While Loop
-Bash
+```
 
+
+## While Loop
+
+### Bash
+
+```bash
 #!/bin/bash
 valid=true
 count=1
@@ -90,8 +145,11 @@ break
 fi
 ((count++))
 done
-PowerShell
+```
 
+### PowerShell
+
+```powershell
 #!/usr/bin/env pwsh
 $count = 0
 while($true) {
@@ -101,35 +159,56 @@ while($true) {
   }
   $count++
 }
-For Loop
-Bash
+```
 
+
+## For Loop
+
+### Bash
+
+```bash
 #!/bin/bash
-for (( counter=10; counter>0; counter-- ))
+for (( counter=10; counter&gt;0; counter-- ))
 do
 echo -n "$counter "
 done
-PowerShell
+```
 
+### PowerShell
+
+```powershell
 #!/usr/bin/env pwsh
 for($counter = 10; $counter -gt 0; $counter--) {
     Write-Host $counter
 }
-Get User Input
-Bash
+```
 
+
+## Get User Input
+
+### Bash
+
+```bash
 #!/bin/bash
 echo "Enter Your Name"
 read name
 echo "Welcome, $name!"
-PowerShell
+```
 
+### PowerShell
+
+```powershell
 #!/usr/bin/env pwsh
 $name = Read-Host "Enter Your Name"
 Write-Host "Welcome, $name!"
-If Statement
-Bash
+```
 
+
+## If Statement
+
+### Bash
+
+```bash
 #!/bin/bash
 n=10
 if [ $n -lt 10 ];
@@ -138,8 +217,11 @@ echo "It is a one digit number"
 else
 echo "It is a two digit number"
 fi
-PowerShell
+```
 
+### PowerShell
+
+```powershell
 #!/usr/bin/env pwsh
 $n = 10
 if ($n -lt 10) {
@@ -147,9 +229,14 @@ if ($n -lt 10) {
 } else {
     Write-Host "It is a two digit number"
 }
-If with And Logic
-Bash
+```
 
+
+## If with And Logic
+
+### Bash
+
+```bash
 #!/bin/bash
 
 echo "Enter username"
@@ -157,13 +244,16 @@ read username
 echo "Enter password"
 read password
 
-if [[ ( $username == "admin" && $password == "secret" ) ]]; then
+if [[ ( $username == "admin" &amp;&amp; $password == "secret" ) ]]; then
 echo "valid user"
 else
 echo "invalid user"
 fi
-PowerShell
+```
 
+### PowerShell
+
+```powershell
 #!/usr/bin/env pwsh
 $UserName = Read-Host "Enter username"
 $Password = Read-Host "Enter password"
@@ -173,9 +263,14 @@ if ($username -eq 'admin' -and $password -eq 'secret') {
 } else {
     Write-Host 'invalid user'
 }
-If with Or Logic
-Bash
+```
 
+
+## If with Or Logic
+
+### Bash
+
+```bash
 #!/bin/bash
 
 echo "Enter any number"
@@ -187,8 +282,11 @@ echo "You won the game"
 else
 echo "You lost the game"
 fi
-PowerShell
+```
 
+### PowerShell
+
+```powershell
 #!/usr/bin/env pwsh
 [int]$n = Read-Host "Enter any number"
 
@@ -197,9 +295,14 @@ if ($n -eq 15 -or $n -eq 45) {
 } else {
     Write-Host "You lost the game"
 }
-If Else Statements
-Bash
+```
 
+
+## If Else Statements
+
+### Bash
+
+```bash
 #!/bin/bash
 
 echo "Enter your lucky number"
@@ -218,8 +321,11 @@ echo "You got 3rd prize"
 else
 echo "Sorry, try for the next time"
 fi
-PowerShell
+```
 
+### PowerShell
+
+```powershell
 #!/usr/bin/env pwsh
 [int]$n = Read-Host "Enter your lucky number"
 
@@ -232,9 +338,14 @@ if ($n -eq 101) {
 } else {
     Write-Host "Sorry, try for the next time"
 }
-Case Statement
-Bash
+```
 
+
+## Case Statement
+
+### Bash
+
+```bash
 #!/bin/bash
 
 echo "Enter your lucky number"
@@ -249,8 +360,11 @@ echo "You got 3rd prize" ;;
 *)
 echo "Sorry, try for the next time" ;;
 esac
-PowerShell
+```
 
+### PowerShell
+
+```powershell
 #!/usr/bin/env pwsh
 [int]$n = Read-Host "Enter your lucky number"
 switch($n) {
@@ -259,21 +373,34 @@ switch($n) {
     999 { Write-Host "You got 3rd prize" }
     default { Write-Host "Sorry, try for the next time" }
 }
-Command Line Arguments
-Bash
+```
 
+
+## Command Line Arguments
+
+### Bash
+
+```bash
 #!/bin/bash
 echo "Total arguments : $#"
 echo "1st Argument = $1"
 echo "2nd argument = $2"
-PowerShell
+```
 
+### PowerShell
+
+```powershell
 Write-Host "Total arguments: $($args.Length)"
 Write-Host "1st Argument: $($args[0])"
 Write-Host "2nd Argument: $($args[1])"
-Named Command Line Arguments
-Bash
+```
 
+
+## Named Command Line Arguments
+
+### Bash
+
+```bash
 #!/bin/bash
 for arg in "$@"
 do
@@ -289,16 +416,24 @@ esac
 done
 ((result=x+y))
 echo "X+Y=$result"
-PowerShell
+```
 
+### PowerShell
+
+```powershell
 #!/usr/bin/env pwsh
 param([int]$X, [int]$Y)
 
 $Result = $X + $Y
 Write-Host "X+Y=$Result"
-Concatenating Strings
-Bash
+```
 
+
+## Concatenating Strings
+
+### Bash
+
+```bash
 #!/bin/bash
 
 string1="Linux"
@@ -307,8 +442,11 @@ echo "$string1$string2"
 string3=$string1+$string2
 string3+=" is a good tutorial blog site"
 echo $string3
-PowerShell
+```
 
+### PowerShell
+
+```powershell
 #!/usr/bin/env pwsh
 $string1 = "Ironman"
 $string2 = "Software"
@@ -316,22 +454,35 @@ Write-Host "$string1 $string2"
 $string3 = $string1+$string2
 $string3 +=" makes good software"
 Write-Host $string3
-Substring of a String
-Bash
+```
 
+
+## Substring of a String
+
+### Bash
+
+```bash
 #!/bin/bash
 Str="Learn Linux from LinuxHint"
 subStr=${Str:6:5}
 echo $subStr
-PowerShell
+```
 
+### PowerShell
+
+```powershell
 #!/usr/bin/env pwsh
 $Str = 'Learn PowerShell from Ironman Software'
 $subStr = $Str.Substring(6, 10)
 Write-Host $subStr
-Functions
-Bash
+```
 
+
+## Functions
+
+### Bash
+
+```bash
 #!/bin/bash
 function F1()
 {
@@ -339,16 +490,24 @@ echo 'I like bash programming'
 }
 
 F1
-PowerShell
+```
 
+### PowerShell
+
+```powershell
 #!/usr/bin/env pwsh
 function F1 {
     Write-Host "I like PowerShell programming"
 }
 F1
-Functions with Parameters
-Bash
+```
 
+
+## Functions with Parameters
+
+### Bash
+
+```bash
 #!/bin/bash
 
 Rectangle_Area() {
@@ -357,17 +516,25 @@ echo "Area is : $area"
 }
 
 Rectangle_Area 10 20
-PowerShell
+```
 
+### PowerShell
+
+```powershell
 #!/usr/bin/env pwsh
 function RectangleArea {
     $Area = $Args[0] * $Args[1]
     Write-Host "Area is: $Area"
 }
 RectangleArea 10 20
-Use the Return value of a Function
-Bash
+```
 
+
+## Use the Return value of a Function
+
+### Bash
+
+```bash
 #!/bin/bash
 function greeting() {
 
@@ -381,8 +548,11 @@ read name
 
 val=$(greeting)
 echo "Return value of the function is $val"
-PowerShell
+```
 
+### PowerShell
+
+```powershell
 #!/usr/bin/env pwsh
 function Greeting {
     "Hello, $Name"
@@ -391,23 +561,36 @@ function Greeting {
 $Name = Read-Host "Enter your name"
 $Val = Greeting
 Write-Host "Return value of the function is $val"
-Make a Directory
-Bash
+```
 
+
+## Make a Directory
+
+### Bash
+
+```bash
 #!/bin/bash
 echo "Enter directory name"
 read newdir
 `mkdir $newdir`
-PowerShell
+```
 
+### PowerShell
+
+```powershell
 #!/usr/bin/env pwsh
 $newdir = Read-Host "Enter directory name"
 New-Item $newdir -ItemType Directory
 # mkdir also works
 mkdir $newdir
-Make Directory if it doesn’t exist
-Bash
+```
 
+
+## Make Directory if it doesn’t exist
+
+### Bash
+
+```bash
 #!/bin/bash
 echo "Enter directory name"
 read ndir
@@ -418,8 +601,11 @@ else
 `mkdir $ndir`
 echo "Directory created"
 fi
-PowerShell
+```
 
+### PowerShell
+
+```powershell
 #!/usr/bin/env pwsh
 $newdir = Read-Host "Enter directory name"
 if (Test-Path $newdir)
@@ -437,27 +623,43 @@ if (gi $newdir -ea si)
 } else {
     mkdir $newdir
 }
-Read a File
-Bash
+```
 
+
+## Read a File
+
+### Bash
+
+```bash
 #!/bin/bash
 file='book.txt'
 while read line; do
 echo $line
-done < $file
-PowerShell
+done &lt; $file
+```
 
+### PowerShell
+
+```powershell
 #!/usr/bin/env pwsh
 Get-Content 'book.txt'
-Delete a File
-Bash
+```
 
+
+## Delete a File
+
+### Bash
+
+```bash
 #!/bin/bash
 echo "Enter filename to remove"
 read fn
 rm -i $fn
-PowerShell
+```
 
+### PowerShell
+
+```powershell
 #!/usr/bin/env pwsh
 $fn = Read-Host "Enter a file to remove"
 Remove-Item $fn
@@ -465,67 +667,104 @@ Remove-Item $fn
 # Shorter syntax
 $fn = Read-Host "Enter a file to remove"
 rm $fn
-Append to a File
-Bash
+```
 
+
+## Append to a File
+
+### Bash
+
+```bash
 #!/bin/bash
 
 echo "Before appending the file"
 cat book.txt
 
-echo "Learning Laravel 5">> book.txt
+echo "Learning Laravel 5"&gt;&gt; book.txt
 echo "After appending the file"
 cat book.txt
-PowerShell
+```
 
+### PowerShell
+
+```powershell
 #!/usr/bin/env pwsh
 Write-Host "Before appending the file"
 Get-Content book.txt
 
-"Learning Laravel 5" >> book.txt
+"Learning Laravel 5" &gt;&gt; book.txt
 Write-Host "After appending the file"
 Get-Content book.txt
-Wait for a Process
-Bash
+```
 
+
+## Wait for a Process
+
+### Bash
+
+```bash
 #!/bin/bash
-echo "Wait command" &
+echo "Wait command" &amp;
 process_id=$!
 wait $process_id
 echo "Exited with status $?"
-PowerShell
+```
 
+### PowerShell
+
+```powershell
 #!/usr/bin/env pwsh
 Start-Process notepad -Wait
 Get-Process -Id $ProcessId | Wait-Process
-Sleep
-Bash
+```
 
+
+## Sleep
+
+### Bash
+
+```bash
 #!/bin/bash
 
 echo “Wait for 5 seconds”
 sleep 5
 echo “Completed”
-PowerShell
+```
 
+### PowerShell
+
+```powershell
 #!/usr/bin/env pwsh
 Write-Host "Wait for 5 seconds"
 Start-Sleep 5 
 #shorter syntax
 sleep 5
 Write-Host "Completed"
-Download Files
-Bash
+```
 
+
+## Download Files
+
+### Bash
+
+```bash
 curl -o newname.txt http://www.het.brown.edu/guide/UNIX-password-security.txt
-PowerShell
+```
 
+### PowerShell
+
+```powershell
 Invoke-WebRequest http://www.het.brown.edu/guide/UNIX-password-security.txt -OutFile .\newname.txt
 # shorter syntax
 iwr http://www.het.brown.edu/guide/UNIX-password-security.txt -o newname.txt
-Search a File for a String
-Bash
+```
 
+
+## Search a File for a String
+
+### Bash
+
+```bash
 # Search a file
 grep error log.txt
 
@@ -543,8 +782,11 @@ grep -c error *
 
 # Display lines before and after
 grep -C 2 error *
-PowerShell
+```
 
+### PowerShell
+
+```powershell
 # Search a file
 Select-String error log.txt
 
@@ -562,3 +804,10 @@ Select-String error * | Measure-Object
 
 # Display lines before and after
 Select-String error * 
+```
+
+
+# Sources
+
+- 2021-12-09: [Bash vs PowerShell Cheat Sheet](https://blog.ironmansoftware.com/daily-powershell/bash-powershell-cheatsheet/)
+- 2021-12-09: [30 Bash Script Examples](https://linuxhint.com/30_bash_script_examples/)
