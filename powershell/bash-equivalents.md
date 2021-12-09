@@ -119,11 +119,11 @@ echo "42"
 
 ```powershell
 #!/usr/bin/env pwsh
-&lt;# 
+<# 
 Multi
 line
 comment
-#&gt;
+#>
 Write-Host "42"
 ```
 
@@ -168,7 +168,7 @@ while($true) {
 
 ```bash
 #!/bin/bash
-for (( counter=10; counter&gt;0; counter-- ))
+for (( counter=10; counter>0; counter-- ))
 do
 echo -n "$counter "
 done
@@ -629,7 +629,7 @@ if (gi $newdir -ea si)
 file='book.txt'
 while read line; do
 echo $line
-done &lt; $file
+done < $file
 ```
 
 ### PowerShell
@@ -673,7 +673,7 @@ rm $fn
 echo "Before appending the file"
 cat book.txt
 
-echo "Learning Laravel 5"&gt;&gt; book.txt
+echo "Learning Laravel 5">> book.txt
 echo "After appending the file"
 cat book.txt
 ```
@@ -685,7 +685,7 @@ cat book.txt
 Write-Host "Before appending the file"
 Get-Content book.txt
 
-"Learning Laravel 5" &gt;&gt; book.txt
+"Learning Laravel 5" >> book.txt
 Write-Host "After appending the file"
 Get-Content book.txt
 ```
