@@ -5,7 +5,7 @@
 ### Windows
 
 - [Components](windows/components.md) _e.g. `Certificates`,_ certmgr.msc
-- [Settings app pages](windows/ms-settings.md) _e.g. `Display`,_ ms-settings:display
+- [Settings app pages](windows/settings.md) _e.g. `Display`,_ ms-settings:display
 - [Special locations (GUID)](windows/guids.md) _e.g. `Recycle Bin`,_ shell:::{...}
 - [Dll commands](windows/dll.md) _e.g. `Neue Verknüpfung anlegen`,_ rundll32 appwiz.cpl,NewLinkHere
 - [Troubleshooters](windows/troubleshooters.md) _e.g. `Printer Troubleshooter`,_ msdt -id PrinterDiagnosticmsdt
