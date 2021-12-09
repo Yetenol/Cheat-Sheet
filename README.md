@@ -4,7 +4,7 @@
 
 ### Windows
 
-Title | Example Component | Example Code
+Topic | Example Component | Example Code
 --- | --- | ---
 [Components](windows/components.md) | Certificates | `certmgr.msc`
 [Settings app pages](windows/settings.md) | Display | `ms-settings:display`
@@ -16,7 +16,7 @@ Title | Example Component | Example Code
 
 ### Powershell
 
-Title | Example Component | Example Code
+Topic | Example Component | Example Code
 --- | --- | ---
 [Getting Started](powershell/getting-started.md) | Help cmdlets | `script.ps1.bat`
 [Data Types](powershell/data-types.md) | Hashtable | `[DateTime]::Now`
