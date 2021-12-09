@@ -6,185 +6,185 @@
 - OS apps
 
 ## User folders
-`Command` | Description
+Description | `Command`
 --- | ---
-`documents` | Open Documents Folder
-`videos` | Open Videos folder
-`downloads` | Open Downloads Folder
-`favorites` | Open Favorites Folder
-`recent` | Open Recent Folder
-`pictures` | Open Pictures Folder
+Open Documents Folder | `documents`
+Open Videos folder | `videos`
+Open Downloads Folder | `downloads`
+Open Favorites Folder | `favorites`
+Open Recent Folder | `recent`
+Open Pictures Folder | `pictures`
 
 ## Apps
-`Command` | Description
+Description | `Command`
 --- | ---
-`calc` | Calculator
-`cmd` | Command Prompt
-`control` | Control Panel
-`devmgmt.msc` <br>or<br> `hdwwiz.cpl` | Device Manager
-`iexplore` | Internet Explorer
-`mspaint` | Paint
-`regedit` | Registry Editor
-`regedt32` | Registry Editor 32
-`taskmgr` | Task Manager
-`notepad` | Notepad
-`magnify` | Magnifier
-`narrator` | Narrator
+Calculator | `calc`
+Command Prompt | `cmd`
+Control Panel | `control`
+Device Manager | `devmgmt.msc` <br>or<br> `hdwwiz.cpl`
+Internet Explorer | `iexplore`
+Paint | `mspaint`
+Registry Editor | `regedit`
+Registry Editor 32 | `regedt32`
+Task Manager | `taskmgr`
+Notepad | `notepad`
+Magnifier | `magnify`
+Narrator | `narrator`
 
 
 ## Control panels
-`Command` | Description
+Description | `Command`
 --- | ---
-`timedate.cpl` | Date and Time
-`joy.cpl` | Game Controllers
-`inetcpl.cpl` | Internet Options
-`main.cpl` | Mouse
-`ncpa.cpl` | Network Connections
-`tabletpc.cpl` | Pen and Touch
-`collab.cpl` | People Near Me
-`telephon.cpl` | Phone and Modem
-`powercfg.cpl` | Power Options
-`appwiz.cpl` | Programs and Features
-`intl.cpl` | Region and Language
-`desk.cpl` | Screen Resolution
-`mmsys.cpl` | Sound
-`sysdm.cpl` | System Properties
-`wscui.cpl` | Windows Action Center
-`firewall.cpl` | Windows Firewall
-`sdclt` | Backup and Restore
-`systempropertiesperformance` | Change Computer Performance Settings
+Date and Time | `timedate.cpl`
+Game Controllers | `joy.cpl`
+Internet Options | `inetcpl.cpl`
+Mouse | `main.cpl`
+Network Connections | `ncpa.cpl`
+Pen and Touch | `tabletpc.cpl`
+People Near Me | `collab.cpl`
+Phone and Modem | `telephon.cpl`
+Power Options | `powercfg.cpl`
+Programs and Features | `appwiz.cpl`
+Region and Language | `intl.cpl`
+Screen Resolution | `desk.cpl`
+Sound | `mmsys.cpl`
+System Properties | `sysdm.cpl`
+Windows Action Center | `wscui.cpl`
+Windows Firewall | `firewall.cpl`
+Backup and Restore | `sdclt`
+Change Computer Performance Settings | `systempropertiesperformance`
 
 
 ## Managment Consoles
-`Command` | Description
+Description | `Command`
 :--- | :---
-`mmc` | Microsoft Management Console
-`azman.msc` | Advanced User Accounts
-`certmgr.msc` | Certificates
-`compmgmt.msc` | Computer Management
-`comexp.msc` | Component Services
-`devmgmt.msc` <br>or<br> `hdwwiz.cpl` | Device Manager
-`eventvwr.msc` | Event Viewer
-`diskmgmt.msc` | Disk Management
-`gpedit.msc` | Local Group Policy Editor
-`secpol.msc` | Local Security Policy
-`lusrmgr.msc` | Local Users and Groups
-`napclcfg.msc` | NAP Client Configuration
-`perfmon.msc` | Performance Monitor
-`printmanagement.msc` | Print Management
-`rsop.msc` | Resultant Set of Policy
-`services.msc` | Services
-`fsmgmt.msc` | Shared Folders
-`taskschd.msc` | Task Scheduler
-`tpm.msc` | Trusted Platform Module (TPM) Management
-`wf.msc` | Windows Firewall with Advanced Security
-`wmimgmt.msc` | WMI Management
+Microsoft Management Console | `mmc`
+Advanced User Accounts | `azman.msc`
+Certificates | `certmgr.msc`
+Computer Management | `compmgmt.msc`
+Component Services | `comexp.msc`
+Device Manager | `devmgmt.msc` <br>or<br> `hdwwiz.cpl`
+Event Viewer | `eventvwr.msc`
+Disk Management | `diskmgmt.msc`
+Local Group Policy Editor | `gpedit.msc`
+Local Security Policy | `secpol.msc`
+Local Users and Groups | `lusrmgr.msc`
+NAP Client Configuration | `napclcfg.msc`
+Performance Monitor | `perfmon.msc`
+Print Management | `printmanagement.msc`
+Resultant Set of Policy | `rsop.msc`
+Services | `services.msc`
+Shared Folders | `fsmgmt.msc`
+Task Scheduler | `taskschd.msc`
+Trusted Platform Module (TPM) Management | `tpm.msc`
+Windows Firewall with Advanced Security | `wf.msc`
+WMI Management | `wmimgmt.msc`
 
 ## Commands
-`Command` | Description
+Description | `Command`
 :--- | :---
-`printui` | Printer User Interface
-`msdt` | Diagnostics Troubleshooting Wizard
-`fontview` | Font Viewer
+Printer User Interface | `printui`
+Diagnostics Troubleshooting Wizard | `msdt`
+Font Viewer | `fontview`
 
 ## Deprecated / Redirected
-`locationnotifications` | Location Activity
-`dpiscaling` | Display
-`utilman` | Ease of Access Center
-`fxscover` | Fax Cover Page Editor
+Location Activity | `locationnotifications`
+Display | `dpiscaling`
+Ease of Access Center | `utilman`
+Fax Cover Page Editor | `fxscover`
 
 
 ## Wizzards
-`Command` | Description
+Description | `Command`
 :--- | :---
-`devicepairingwizard` | Adding a new Device
-`winver` | About Windows dialog
-`hdwwiz` | Add Hardware Wizard
-`netplwiz` | **Advanced User Accounts**
-`fsquirt` | **Bluetooth File Transfer**
-`charmap` | Character Map
-`cttune` | ClearType Tuner
-`colorcpl` | Color Management
-`dcomcnfg` | Component Services
-`compmgmtlauncher` | Computer Management
-`displayswitch` | **Project**
-`shrpubw` | Create A Shared Folder Wizard
-`recdisc` | Create a System Repair Disc
-`systempropertiesdataexecutionprevention` | Data Execution Prevention
-`devicepairingwizard` | **Add a device (wizzard)**
-`tabcal` | **Digitizer Calibration Tool**
-`dxdiag` | DirectX Diagnostic Tool
-`cleanmgr` | **Disk Cleanup**
-`dfrgui` | **Disk Defragmenter**
-`dccw` | Display Color Calibration
-`dpapimig` | DPAPI Key Migration Wizard
-`verifier` | Driver Verifier Manager
-`rekeywiz` | **File Encryption Certificates Manager**
-`sigverif` | File Signature Verification
-`iexpress` | **IExpress: Create a selt-extracting / self-installung package**
-`iscsicpl` | iSCSI Initiator Configuration Tool
-`lpksetup` | Language Pack Installer
-`mrt` | **Malicious Software Removal Tool**
-`rekeywiz` | **Manage Your File Encryption Certificates**
-`msdt` | Microsoft Support Diagnostic Tool
-`wiaacmgr` | New Scan Wizard
-`odbcad32` | ODBC Data Source Administrator
-`odbcconf` | ODBC Driver Configuration
-`osk` | On-Screen Keyboard
-`systempropertiesperformance` | Performance Options
-`dialer` | Phone Dialer
-`presentationsettings` | Presentation Settings
-`printbrmui` | Printer Migration
-`printui` | Printer User Interface
-`eudcedit` | Private Character Editor
-`psr` | Problem Steps Recorder
-`dpapimig` | Protected Content Migration
-`rasphone` | Remote Access Phonebook
-`mstsc` | Remote Desktop Connection
-`resmon` | Resource Monitor
-`syskey` | SAM Lock Tool
-`syskey` | Securing the Windows Account Database
-`computerdefaults` | Set Program Access and Computer Defaults
-`shrpubw` | Share Creation Wizard
-`logoff` | Signout
-`snippingtool` | Snipping Tool
-`soundrecorder` | Sound recorder
-`cliconfg` | SQL Server Client Network Utility
-`stikynot` | Sticky Notes
-`credwiz` | Stored User Names and Passwords
-`mobsync` | Sync Center
-`msconfig` | System Configuration
-`sysedit` | System Configuration Editor
-`msinfo32` | System Information
-`systempropertiesadvanced` | System Properties (Advanced Tab)
-`systempropertiescomputername` | System Properties (Computer Name Tab)
-`systempropertieshardware` | System Properties (Hardware Tab)
-`systempropertiesremote` | System Properties (Remote Tab)
-`systempropertiesprotection` | System Properties (System Protection Tab)
-`rstrui` | System Restore
-`optionalfeatures` | **Turn Windows features on or off**
-`useraccountcontrolsettings` | User Account Control Settings
-`sndvol` | Volume Mixer
-`slui` | Windows Activation Client
-`windowsanytimeupgraderesults` | Windows Anytime Upgrade Results
-`isoburn` | Windows Disc Image Burning Tool
-`explorer` | Windows Explorer
-`wfs` | Windows Fax and Scan
-`journal` | Windows Journal
-`wmplayer` | Windows Media Player
-`mdsched` | Windows Memory Diagnostic Scheduler
-`mblctr` | Windows Mobility Center
-`wiaacmgr` | Windows Picture Acquisition Wizard
-`powershell` | Windows PowerShell
-`powershell_ise` | Windows PowerShell ISE
-`msra` | Windows Remote Assistance
-`recdisc` | Windows Repair Disc
-`wscript` | Windows Script Host
-`wuapp` | Windows Update
-`wusa` | Windows Update Standalone Installer
-`winver` | Versione Windows
-`write` | WordPad
-`xpsrchvw` | XPS Viewer
+Adding a new Device | `devicepairingwizard`
+About Windows dialog | `winver`
+Add Hardware Wizard | `hdwwiz`
+**Advanced User Accounts** | `netplwiz`
+**Bluetooth File Transfer** | `fsquirt`
+Character Map | `charmap`
+ClearType Tuner | `cttune`
+Color Management | `colorcpl`
+Component Services | `dcomcnfg`
+Computer Management | `compmgmtlauncher`
+**Project** | `displayswitch`
+Create A Shared Folder Wizard | `shrpubw`
+Create a System Repair Disc | `recdisc`
+Data Execution Prevention | `systempropertiesdataexecutionprevention`
+**Add a device (wizzard)** | `devicepairingwizard`
+**Digitizer Calibration Tool** | `tabcal`
+DirectX Diagnostic Tool | `dxdiag`
+**Disk Cleanup** | `cleanmgr`
+**Disk Defragmenter** | `dfrgui`
+Display Color Calibration | `dccw`
+DPAPI Key Migration Wizard | `dpapimig`
+Driver Verifier Manager | `verifier`
+**File Encryption Certificates Manager** | `rekeywiz`
+File Signature Verification | `sigverif`
+**IExpress: Create a selt-extracting / self-installung package** | `iexpress`
+iSCSI Initiator Configuration Tool | `iscsicpl`
+Language Pack Installer | `lpksetup`
+**Malicious Software Removal Tool** | `mrt`
+**Manage Your File Encryption Certificates** | `rekeywiz`
+Microsoft Support Diagnostic Tool | `msdt`
+New Scan Wizard | `wiaacmgr`
+ODBC Data Source Administrator | `odbcad32`
+ODBC Driver Configuration | `odbcconf`
+On-Screen Keyboard | `osk`
+Performance Options | `systempropertiesperformance`
+Phone Dialer | `dialer`
+Presentation Settings | `presentationsettings`
+Printer Migration | `printbrmui`
+Printer User Interface | `printui`
+Private Character Editor | `eudcedit`
+Problem Steps Recorder | `psr`
+Protected Content Migration | `dpapimig`
+Remote Access Phonebook | `rasphone`
+Remote Desktop Connection | `mstsc`
+Resource Monitor | `resmon`
+SAM Lock Tool | `syskey`
+Securing the Windows Account Database | `syskey`
+Set Program Access and Computer Defaults | `computerdefaults`
+Share Creation Wizard | `shrpubw`
+Signout | `logoff`
+Snipping Tool | `snippingtool`
+Sound recorder | `soundrecorder`
+SQL Server Client Network Utility | `cliconfg`
+Sticky Notes | `stikynot`
+Stored User Names and Passwords | `credwiz`
+Sync Center | `mobsync`
+System Configuration | `msconfig`
+System Configuration Editor | `sysedit`
+System Information | `msinfo32`
+System Properties (Advanced Tab) | `systempropertiesadvanced`
+System Properties (Computer Name Tab) | `systempropertiescomputername`
+System Properties (Hardware Tab) | `systempropertieshardware`
+System Properties (Remote Tab) | `systempropertiesremote`
+System Properties (System Protection Tab) | `systempropertiesprotection`
+System Restore | `rstrui`
+**Turn Windows features on or off** | `optionalfeatures`
+User Account Control Settings | `useraccountcontrolsettings`
+Volume Mixer | `sndvol`
+Windows Activation Client | `slui`
+Windows Anytime Upgrade Results | `windowsanytimeupgraderesults`
+Windows Disc Image Burning Tool | `isoburn`
+Windows Explorer | `explorer`
+Windows Fax and Scan | `wfs`
+Windows Journal | `journal`
+Windows Media Player | `wmplayer`
+Windows Memory Diagnostic Scheduler | `mdsched`
+Windows Mobility Center | `mblctr`
+Windows Picture Acquisition Wizard | `wiaacmgr`
+Windows PowerShell | `powershell`
+Windows PowerShell ISE | `powershell_ise`
+Windows Remote Assistance | `msra`
+Windows Repair Disc | `recdisc`
+Windows Script Host | `wscript`
+Windows Update | `wuapp`
+Windows Update Standalone Installer | `wusa`
+Versione Windows | `winver`
+WordPad | `write`
+XPS Viewer | `xpsrchvw`
 
 ### Sources
 - 2021-09-02: [List of ms-settings URI commands to open specific settings in Windows 10 – 4sysops](https://4sysops.com/wiki/list-of-ms-settings-uri-commands-to-open-specific-settings-in-windows-10/)
