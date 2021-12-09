@@ -238,7 +238,6 @@ if ($n -lt 10) {
 
 ```bash
 #!/bin/bash
-
 echo "Enter username"
 read username
 echo "Enter password"
@@ -272,7 +271,6 @@ if ($username -eq 'admin' -and $password -eq 'secret') {
 
 ```bash
 #!/bin/bash
-
 echo "Enter any number"
 read n
 
@@ -304,7 +302,6 @@ if ($n -eq 15 -or $n -eq 45) {
 
 ```bash
 #!/bin/bash
-
 echo "Enter your lucky number"
 read n
 
@@ -347,7 +344,6 @@ if ($n -eq 101) {
 
 ```bash
 #!/bin/bash
-
 echo "Enter your lucky number"
 read n
 case $n in
@@ -435,7 +431,6 @@ Write-Host "X+Y=$Result"
 
 ```bash
 #!/bin/bash
-
 string1="Linux"
 string2="Hint"
 echo "$string1$string2"
@@ -509,7 +504,6 @@ F1
 
 ```bash
 #!/bin/bash
-
 Rectangle_Area() {
 area=$(($1 * $2))
 echo "Area is : $area"
@@ -676,7 +670,6 @@ rm $fn
 
 ```bash
 #!/bin/bash
-
 echo "Before appending the file"
 cat book.txt
 
@@ -725,7 +718,6 @@ Get-Process -Id $ProcessId | Wait-Process
 
 ```bash
 #!/bin/bash
-
 echo “Wait for 5 seconds”
 sleep 5
 echo “Completed”
