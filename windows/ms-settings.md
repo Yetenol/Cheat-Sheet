@@ -1,11 +1,35 @@
 # [⌂](../README.md) › [Windows](../README.md#windows) › Settings app pages
 - _ms-settings URIs used to open various pages of the Settings app_
 
-Command (URI) | Page
-:--- | :---
-⠀⠀⠀⠀⠀**Settings home page**
+1. [Settings home page](#settings-home-page)
+1. [System](#system)
+1. [Devices](#devices)
+1. [Phone](#phone)
+1. [Network & Internet](#network--internet)
+1. [Personalization](#personalization)
+1. [Apps](#apps)
+1. [Accounts](#accounts)
+1. [Time & language](#time--language)
+1. [Gaming](#gaming)
+1. [Extras](#extras)
+1. [Ease of Access](#ease-of-access)
+1. [Search (version 1903+)](#search-version-1903)
+1. [Cortana](#cortana)
+1. [Privacy](#privacy)
+1. [Update & security](#update--security)
+1. [Mixed reality](#mixed-reality)
+1. [Surface Hub](#surface-hub)
+
+
+## Settings home page
+Page | URI
+--- | ---
 Settings home page | `ms-settings:`
-⠀⠀⠀⠀⠀**System**
+
+
+## System
+Page | URI
+--- | ---
 Display | `ms-settings:display`
 Night light settings | `ms-settings:nightlight`
 Advanced scaling settings | `ms-settings:display-advanced`
@@ -35,7 +59,11 @@ Clipboard | `ms-settings:clipboard`
 Remote Desktop | `ms-settings:remotedesktop`
 Device Encryption (where available) | `ms-settings:deviceencryption`
 About | `ms-settings:about`
-⠀⠀⠀⠀⠀**Devices**
+
+
+## Devices
+Page | URI
+--- | ---
 Bluetooth & other devices | `ms-settings:bluetooth` <br> `ms-settings:connecteddevices`
 **CONNECT** to wireless display or audio device | `ms-settings-connectabledevices:devicediscovery`
 Printers & scanners | `ms-settings:printers`
@@ -47,11 +75,19 @@ Wheel (where available) | `ms-settings:wheel`
 Pen & Windows Ink | `ms-settings:pen`
 AutoPlay | `ms-settings:autoplay`
 USB | `ms-settings:usb`
-⠀⠀⠀⠀⠀**Phone**
+
+
+## Phone
+Page | URI
+--- | ---
 Phone | `ms-settings:mobile-devices`
 Add a phone | `ms-settings:mobile-devices-addphone`
 Your Phone (opens app) | `ms-settings:mobile-devices-addphone-direct`
-⠀⠀⠀⠀⠀**Network & Internet**
+
+
+## Network & Internet
+Page | URI
+--- | ---
 Network & Internet | `ms-settings:network`
 Status | `ms-settings:network-status`
 Show available networks | `ms-availablenetworks:`
@@ -69,7 +105,11 @@ Mobile hotspot | `ms-settings:network-mobilehotspot`
 NFC | `ms-settings:nfctransactions`
 Data usage | `ms-settings:datausage`
 Proxy | `ms-settings:network-proxy`
-⠀⠀⠀⠀⠀**Personalization**
+
+
+## Personalization
+Page | URI
+--- | ---
 Personalization | `ms-settings:personalization`
 Background | `ms-settings:personalization-background`
 Colors | `ms-settings:personalization-colors` <br> `ms-settings:colors`
@@ -79,7 +119,11 @@ Fonts (build 17083+) | `ms-settings:fonts`
 Start | `ms-settings:personalization-start`
 Choose which folders appear on Start | `ms-settings:personalization-start-places`
 Taskbar  | `ms-settings:taskbar`
-⠀⠀⠀⠀⠀**Apps**
+
+
+## Apps
+Page | URI
+--- | ---
 Apps & features | `ms-settings:appsfeatures` <br> `ms-settings:appsfeatures-app`
 Manage optional features | `ms-settings:optionalfeatures`
 Default apps | `ms-settings:defaultapps`
@@ -88,7 +132,11 @@ Download maps | `ms-settings:maps-downloadmaps`
 Apps for websites | `ms-settings:appsforwebsites`
 Video playback | `ms-settings:videoplayback`
 Startup | `ms-settings:startupapps`
-⠀⠀⠀⠀⠀**Accounts**
+
+
+## Accounts
+Page | URI
+--- | ---
 Your info | `ms-settings:yourinfo`
 Email & accounts | `ms-settings:emailandaccounts`
 Sign-in options | `ms-settings:signinoptions`
@@ -100,7 +148,11 @@ Access work or school | `ms-settings:workplace`
 Family & other people | `ms-settings:otherusers`
 Set up a kiosk | `ms-settings:assignedaccess`
 Sync your settings | `ms-settings:sync`
-⠀⠀⠀⠀⠀**Time & language**
+
+
+## Time & language
+Page | URI
+--- | ---
 Date & time | `ms-settings:dateandtime`
 Region | `ms-settings:regionformatting`
 Japan IME settings (where available) | `ms-settings:regionlanguage-jpnime`
@@ -112,16 +164,28 @@ Windows Display language | `ms-settings:regionlanguage-setdisplaylanguage`
 Add Display language | `ms-settings:regionlanguage-adddisplaylanguage`
 Keyboard (removed in build 17083+) | `ms-settings:keyboard`
 Speech | `ms-settings:speech`
-⠀⠀⠀⠀⠀**Gaming**
+
+
+## Gaming
+Page | URI
+--- | ---
 Game bar | `ms-settings:gaming-gamebar`
 Captures | `ms-settings:gaming-gamedvr`
 Broadcasting | `ms-settings:gaming-broadcasting`
 Game Mode | `ms-settings:gaming-gamemode`
 TruePlay (removed in version 1809+) | `ms-settings:gaming-trueplay`
 Xbox Networking | `ms-settings:gaming-xboxnetworking`
-⠀⠀⠀⠀⠀**Extras**
+
+
+## Extras
+Page | URI
+--- | ---
 Extras (available only when Settings app extensions installed) | `ms-settings:extras`
-⠀⠀⠀⠀⠀**Ease of Access**
+
+
+## Ease of Access
+Page | URI
+--- | ---
 Display | `ms-settings:easeofaccess-display`
 Mouse Pointer | `ms-settings:easeofaccess-cursorandpointersize`
 Text Cursor | `ms-settings:easeofaccess-cursor`
@@ -139,16 +203,28 @@ Keyboard | `ms-settings:easeofaccess-keyboard`
 Mouse | `ms-settings:easeofaccess-mouse`
 Eye Control | `ms-settings:easeofaccess-eyecontrol`
 Other options (removed in version 1809+) | `ms-settings:easeofaccess-otheroptions`
-⠀⠀⠀⠀⠀**Search (version 1903+)**
+
+
+## Search (version 1903+)
+Page | URI
+--- | ---
 Permissions & history | `ms-settings:search-permissions`
 Searching Windows | `ms-settings:cortana-windowssearch`
 More details | `ms-settings:search-moredetails`
-⠀⠀⠀⠀⠀**Cortana**
+
+
+## Cortana
+Page | URI
+--- | ---
 Cortana | `ms-settings:cortana`
 Talk to Cortana | `ms-settings:cortana-talktocortana`
 Permissions | `ms-settings:cortana-permissions`
 More details | `ms-settings:cortana-moredetails`
-⠀⠀⠀⠀⠀**Privacy**
+
+
+## Privacy
+Page | URI
+--- | ---
 General | `ms-settings:privacy`
 Speech | `ms-settings:privacy-speech`
 Inking & typing personalization | `ms-settings:privacy-speechtyping`
@@ -178,7 +254,11 @@ Documents | `ms-settings:privacy-documents`
 Pictures | `ms-settings:privacy-pictures`
 Videos | `ms-settings:privacy-documents`
 File system | `ms-settings:privacy-broadfilesystemaccess`
-⠀⠀⠀⠀⠀**Update & security**
+
+
+## Update & security
+Page | URI
+--- | ---
 Windows Update | `ms-settings:windowsupdate`
 Check for updates | `ms-settings:windowsupdate-action`
 View update history | `ms-settings:windowsupdate-history`
@@ -196,13 +276,21 @@ Activation | `ms-settings:activation`
 Find My Device | `ms-settings:findmydevice`
 For developers | `ms-settings:developers`
 Windows Insider Program | `ms-settings:windowsinsider` <br> `ms-settings:windowsinsider-optin`
-⠀⠀⠀⠀⠀**Mixed reality**
+
+
+## Mixed reality
+Page | URI
+--- | ---
 Mixed reality | `ms-settings:holographic`
 Audio and speech | `ms-settings:holographic-audio`
 Environment | `ms-settings:privacy-holographic-environment`
 Headset display | `ms-settings:holographic-headset`
 Uninstall | `ms-settings:holographic-management`
-⠀⠀⠀⠀⠀**Surface Hub**
+
+
+## Surface Hub
+Page | URI
+--- | ---
 Accounts | `ms-settings:surfacehub-accounts`
 Team Conferencing | `ms-settings:surfacehub-calling`
 Team device management | `ms-settings:surfacehub-devicemanagenent`
