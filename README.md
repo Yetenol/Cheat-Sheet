@@ -23,6 +23,7 @@ Topic | Example Component | Example Code
 [Input](powershell/input.md) | File Parsing | `[RegEx]::Match($line, $regexFormat).Groups[1].value`
 [Output](powershell/output.md) | Custom Table View | `Export-Clixml`
 [Bash equivalents](powershell/bash-equivalents.md) | While Loop | `read name` <-> `$name = Read-Host "Name"`
+[Applications](powershell/applications.md) | Update store apps | `$wmiObj.UpdateScanMethod()`
 [Interactive Menu](powershell/menu.md) | Select option 1, 2, 3 | `$Choice = Read-Host "Select ..."`
 [Encryption](powershell/encryption.md) | Passwords | `ConvertTo-SecureString`
 [Bluetooth](powershell/bluetooth.md) | List devices | `Get-PnpDevice -Class Bluetooth`
