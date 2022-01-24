@@ -16,6 +16,20 @@ Name: | Scope: | Refers to:
 `THIS_COLUMN` | `Workbook` | `=SUBSTITUTE(ADDRESS(THIS_ROW, THIS_COLUMN_NUMBER,4),THIS_ROW,"")`
 
 
+### Get cell information
+
+- **REQUIRES** [Set common names](#set-common-names)
+
+Description | Command | Example
+--- | --- | ---
+Get current cell | `=THIS_CELL` | C2 => `0` <br> throws circular reference
+Get current row | `=THIS_ROW` | C2 => `2`
+Get current column | `=THIS_COLUMN` | C2 => `C`
+Get current column number | `=THIS_COLUMN_NUMBER` | C2 => `3`
+Get current address | `=ADDRESS(THIS_ROW,THIS_COLUMN_NUMBER)` | C2 => `$C$2`
+Get current address | `=ADDRESS(THIS_ROW,THIS_COLUMN_NUMBER,4)` | C2 => `C2`
+
+
 Is a range of cells empty
 ```
 =IF(SUMPRODUCT(--(D16:G16<>""))<>0;"not empty";"empty")
