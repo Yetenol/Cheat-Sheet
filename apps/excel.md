@@ -30,6 +30,21 @@ Get current address | `=ADDRESS(THIS_ROW,THIS_COLUMN_NUMBER)` | C2 => `$C$2`
 Get current address | `=ADDRESS(THIS_ROW,THIS_COLUMN_NUMBER,4)` | C2 => `C2`
 
 
+### Get neighboring cells
+
+- **REQUIRES** [Set common names](#set-common-names)
+
+Description | Command | Example
+--- | --- | ---
+Get current cell | `=INDIRECT(THIS_COLUMN & THIS_ROW)` <br> `=INDIRECT(ADDRESS(THIS_ROW,THIS_COLUMN_NUMBER))` | C2 => `=C2` <br> throws circular reference
+Get E column in current row | `=INDIRECT("E" & THIS_ROW)` | C2 => `=E2`
+Get 5th row in current column | `=INDIRECT(THIS_COLUMN & 5)` | C2 => `=C5`
+Get right neighbor | `=INDIRECT(ADDRESS(THIS_ROW,THIS_COLUMN_NUMBER+1))` | C2 => `=C3`
+Get left neighbor | `=INDIRECT(ADDRESS(THIS_ROW,THIS_COLUMN_NUMBER-1))` | C2 => `=C1`
+Get upper neighbor | `=INDIRECT(ADDRESS(THIS_ROW-1,THIS_COLUMN_NUMBER))` | C2 => `=B2`
+Get lower neighbor | `=INDIRECT(ADDRESS(THIS_ROW+1,THIS_COLUMN_NUMBER))` | C2 => `=D2`
+
+
 Is a range of cells empty
 ```
 =IF(SUMPRODUCT(--(D16:G16<>""))<>0;"not empty";"empty")
