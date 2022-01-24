@@ -10,10 +10,12 @@
 
 Name: | Scope: | Refers to:
 --- | --- | ---
-`THIS_CELL` | `Workbook` | `=A1`
-`THIS_ROW` | `Workbook` | `=ROW(THIS_CELL)`
-`THIS_COLUMN_NUMBER` | `Workbook` | `=COLUMN(THIS_CELL)`
-`THIS_COLUMN` | `Workbook` | `=SUBSTITUTE(ADDRESS(THIS_ROW, THIS_COLUMN_NUMBER,4),THIS_ROW,"")`
+`THIS_CELL` | _current sheet_ | `=A1`
+`THIS_ROW` | _current sheet_ | `=ROW(THIS_CELL)`
+`THIS_COLUMN_NUMBER` | _current sheet_ | `=COLUMN(THIS_CELL)`
+`THIS_COLUMN` | _current sheet_ | `=SUBSTITUTE(ADDRESS(THIS_ROW, THIS_COLUMN_NUMBER,4),THIS_ROW,"")`
+
+- repeat for every sheet
 
 
 ### Get cell information
