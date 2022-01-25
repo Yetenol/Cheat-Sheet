@@ -10,6 +10,15 @@
 
 ### Sorting differences
 
+- top first entry
+    ```
+    !
+    ```
+- top last entry
+    ```
+    Ξ
+    ``` 
+
 . | Windows | Android <br> VS Code | Powershell <br> CMD | Bash
 --- | --- | --- | --- | ---
 . | `␣`
