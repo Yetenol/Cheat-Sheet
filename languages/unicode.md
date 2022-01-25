@@ -8,7 +8,7 @@
 
 ## Character sorting
 
-### Sorting differences
+### Top character choices
 
 Position |   | Name
 --- | --- | ---
@@ -18,7 +18,9 @@ Position |   | Name
 
 ```
 Ξ
-``` 
+```
+
+### Sorting differences
 
 . | Windows | Android <br> VS Code | Powershell <br> CMD | Bash
 --- | --- | --- | --- | ---
