@@ -10,12 +10,15 @@
 
 ### Sorting differences
 
-- `!` top first entry
-- `+` top second entry
-- `Ξ` top last entry
-    ```
-    Ξ
-    ``` 
+Position |   | Name
+--- | --- | ---
+1 first entry | `!` | Exclamation Mark
+2 second entry | `+` | Plus Sign
+∞ last entry | `Ξ` | Capital Xi
+
+```
+Ξ
+``` 
 
 . | Windows | Android <br> VS Code | Powershell <br> CMD | Bash
 --- | --- | --- | --- | ---
