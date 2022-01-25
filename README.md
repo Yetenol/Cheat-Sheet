@@ -30,7 +30,7 @@ Topic | Example Component | Example Code
 [File attributes](powershell/file-attributes.md) | make read-only | `function Set-FileAttribute{}`
 
 
-### Languages
+### Languages, Encodings
 
 - `[AutoHotkey]` [AutoHotkey](languages/autohotkey.md)
 - `[RegEx]` Regular Expression
