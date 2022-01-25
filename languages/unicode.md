@@ -39,23 +39,15 @@
 . |   |   | `Ω` | `π`
 . |   |   | `␣` | `␣`
 
-### Candidates to get sorted first
+### Special sorting characters
 
 . | Name | Unicode number | Alt code
 --- | --- | --- | ---
 `␣` | Open Box | U+2423 | 
-`!`
-`_`
-`~`
-
-### Candidates to get sorted last
-
-. | Name | Unicode number | Alt code
---- | --- | --- | ---
+`µ` | Micro | U+00B5 | Alt 230
 `Ξ` | Xi (greek uppercase) | U+039E | 
 `π` | Pi (greek lowercase) | U+03C0 | Alt 227
 `Ω` | Omega (greek uppercase) | U+03A9 | Alt 234
-`µ` | Micro | U+00B5 | Alt 230
 
 
 ## Greek letters
