@@ -39,6 +39,7 @@ Topic | Example Component | Example Code
     - [🔗Visual Studio (MS Docs)](https://docs.microsoft.com/en-us/visualstudio/ide/using-regular-expressions-in-visual-studio) 
 - `[C]` [GNU Debugger](languages/gdb.md)
 - `[Git]` [Git](languages/git.md)
+- `[Unicode]` [Character sorting](languages/unicode.md)
 - `[Minecraft]` [Datapacks](languages/minecraft.md)
 
 
