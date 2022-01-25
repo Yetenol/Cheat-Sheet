@@ -1,4 +1,4 @@
-# [⌂](../README.md) ([#](../README.md#languages-encodings)) › [**Git**](../README.md#languages-encodings)
+# [⌂](../README.md) ([Languages](../README.md#languages-encodings)) › [**Git**](../README.md#languages-encodings)
 
 - software for tracking changes in any set of files
 - works best for non-binary text files
