@@ -37,10 +37,7 @@ Topic | Example Component | Example Code
 [Unicode](languages/unicode.md) | Character sorting | `!` `+` `Ξ`
 [Git](languages/git.md)
 [AutoHotkey v1](languages/autohotkey.md) | Get program stdout |  `Shell := ComObjCreate("WScript.Shell")`
-Regular Expression (RegEx)
-→➝ [🗎 PDF Overview](languages/regex.pdf)
-→➝ [🔗Quick Reference (MS Docs)](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference)
-→➝ [🔗Visual Studio (MS Docs)](https://docs.microsoft.com/en-us/visualstudio/ide/using-regular-expressions-in-visual-studio)
+[Regular Expression (RegEx)](languages/regex.md)
 C › [GNU Debugger](languages/gdb.md)
 Minecraft › [Datapacks](languages/minecraft.md)
 
