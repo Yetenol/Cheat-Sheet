@@ -2,58 +2,58 @@
 - Dynamic Link Library (dll) components
 - Control Panel tabs (cpl tab)
 
-Command | Description
---- | ---
-Installation aus INF-Files | `rundll32 advpack.dll,LaunchINFSection \<INF-Datei\>,\<Section\>`
-`Neue Verknüpfung anlegen` | `rundll32 appwiz.cpl,NewLinkHere \<Verzeichnis\>`
-Screensaver installieren | `rundll32 desk.cpl,InstallScreenSaver \<saver.scr\>`
-Ruft Diskcopy auf | `rundll32 diskcopy.dll,DiskCopyRunDLL \<0 oder 1\>`
-`Stored User Names and Passwords` | `rundll32 keymgr.dll,KRShowKeyMgr`
-Installation aus einer INF-Datei | `rundll32 setupapi.dll,InstallHinfSection 132 \<.inf-Datei\>`
-**Systemsteuerung** | `rundll32 Shell32.dll,Control_RunDLL`
-Systemsteuerungs-Applets neu einlesen | `rundll32 shell32.dll,Control_FillCache_RunDLL`
-Mouse Settings # ThinkPad (TrackPoint / `TouchPad`) | `rundll32 Shell32.dll,Control_RunDLL main.cpl,@0`
-Keyboard Properties | `rundll32 Shell32.dll,Control_RunDLL main.cpl,@1`
-Erleichterte Bedienung | `rundll32 shell32.dll,Control_RunDLL access.cpl`
-Control Panel > `Uninstall or change a program` | `rundll32 shell32.dll,Control_RunDLL appwiz.cpl,null,0`
-Control Panel > Install a program from the network | `rundll32 shell32.dll,Control_RunDLL appwiz.cpl,null,1`
-Control Panel > `Windows Features` | `rundll32 shell32.dll,Control_RunDLL appwiz.cpl,null,2`
-Settings > Display | `rundll32 Shell32.dll,Control_RunDLL desk.cpl`
-Control Panel > `Desktop Icon Settings` | `rundll32 shell32.dll,Control_RunDLL desk.cpl,null,0`
-Control Panel > Screen Saver Settings | `rundll32 shell32.dll,Control_RunDLL desk.cpl,null,1`
-Settings > Background | `rundll32 shell32.dll,Control_RunDLL desk.cpl,null,2`
-Control Panel > Region # `Formats` | `rundll32 shell32.dll,Control_RunDLL intl.cpl,null,0`
-Control Panel > Region # Administrative | `rundll32 shell32.dll,Control_RunDLL intl.cpl,null,1`
-Game Controllers | `rundll32 shell32.dll,Control_RunDLL joy.cpl`
-Control Panel > Sound | `rundll32 shell32.dll,Control_RunDLL mmsys.cpl`
-Control Panel > Sound # `Playback` | `rundll32 shell32.dll,Control_RunDLL mmsys.cpl,null,0`
-Control Panel > Sound # `Recording` | `rundll32 shell32.dll,Control_RunDLL mmsys.cpl,null,1`
-Control Panel > Sound # `Sounds` | `rundll32 shell32.dll,Control_RunDLL mmsys.cpl,null,2`
-Control Panel > System Properties # Computer Name | `rundll32 shell32.dll,Control_RunDLL sysdm.cpl,null,1`
-Control Panel > System Properties # Hardware | `rundll32 shell32.dll,Control_RunDLL sysdm.cpl,null,2`
-Control Panel > System Properties # Advanced <br> (Performance, `User Profiles`, Startup and Recovery, Environment Variables) | `rundll32 shell32.dll,Control_RunDLL sysdm.cpl,null,3`
-Control Panel > System Properties # System Protection <br> (`Restore Point`) | `rundll32 shell32.dll,Control_RunDLL sysdm.cpl,null,4`
-Control Panel > Date and Time # Date and Time | `rundll32 shell32.dll,Control_RunDLL timedate.cpl,null,0`
-Control Panel > Date and Time # Additional Clocks | `rundll32 shell32.dll,Control_RunDLL timedate.cpl,null,1`
-Open with dialog | `rundll32 shell32.dll,OpenAs_RunDLL`
-`Open with dialog for a specific file` | `rundll32 shell32.dll,OpenAs_RunDLL \<Datei\>`
-About MZ/Windows (Version, `OS Build`) | `rundll32 Shell32.dll,ShellAboutA <br> winver`
-`Add a printer` dialog | `rundll32 shell32.dll,SHHelpShortcuts_RunDLL AddPrinter`
-`Printers Folder` | `rundll32 shell32.dll,SHHelpShortcuts_RunDLL PrintersFolder <br> explorer shell:printersfolder`
-Drucker direkt ohne Assistent hinzufügen, [Details](http://www.winfaq.de/faq_html/Content/tip2000/onlinefaq.php?h=tip2028.htm) | `rundll32 printui.dll,PrintUIEntry \<Optionen\> \<@Befehlsdatei\>`
-z.B. Netzwerkdrucker hinzufügen | `rundll32 printui.dll,PrintUIEntry /q /in /n \\\\ServerName\Freigabename`
-Schriftarten anzeigen | `rundll32 shell32.dll,SHHelpShortcuts_RunDLL FontsFolder`
-Netzwerklaufwerk verbinden, Dialog öffnen | `rundll32 shell32.dll,SHHelpShortcuts_RunDLL Connect`
-Telnet-Verbindung öffnen | `rundll32 url.dll,TelnetProtocolHandler \<IP-Adresse bzw. Hostname\>`
-Startet die URL | `rundll32 url.dll,FileProtocolHandler \<URL\>`
-E-Mail erzeugen | `rundll32 url.dll,MailToProtocolHandler mailto:\<E-Mail Adresse\>`
-z.B. E-Mail Vorlage, nutze %20 als Leerzeichen | `rundll32 url.dll,MailToProtocolHandler "mailto:0?cc=1&?bcc=2&subject=3"`
-Rechner sperren | `rundll32 user32.dll,LockWorkStation`
-Hardware sicher entfernen, Ist es möglich die Ansicht "Unplug or Eject Hardware" zu öffnen | `rundll32 shell32.dll,Control_RunDLL hotplug.dll`
-Gespeicherte Benutzernamen und Kennwörter | `rundll32 Keymgr.dll,KRShowKeyMgr`
-Rechner wird in den Ruhezustand gefahren | `rundll32 powrprof.dll,SetSuspendState`
-Windows Sicherheitscenter | `rundll32 shell32.dll,Control_RunDLL wscui.cpl,Security Center`
-Ordneroptionen | `rundll32 shell32.dll, Options_RunDLL 0`
+| Command                                                                                                                        | Description                                                                                     |
+| ------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------- |
+| Installation aus INF-Files                                                                                                     | `rundll32 advpack.dll,LaunchINFSection \<INF-Datei\>,\<Section\>`                               |
+| `Neue Verknüpfung anlegen`                                                                                                     | `rundll32 appwiz.cpl,NewLinkHere \<Verzeichnis\>`                                               |
+| Screensaver installieren                                                                                                       | `rundll32 desk.cpl,InstallScreenSaver \<saver.scr\>`                                            |
+| Ruft Diskcopy auf                                                                                                              | `rundll32 diskcopy.dll,DiskCopyRunDLL \<0 oder 1\>`                                             |
+| `Stored User Names and Passwords`                                                                                              | `rundll32 keymgr.dll,KRShowKeyMgr`                                                              |
+| Installation aus einer INF-Datei                                                                                               | `rundll32 setupapi.dll,InstallHinfSection 132 \<.inf-Datei\>`                                   |
+| **Systemsteuerung**                                                                                                            | `rundll32 Shell32.dll,Control_RunDLL`                                                           |
+| Systemsteuerungs-Applets neu einlesen                                                                                          | `rundll32 shell32.dll,Control_FillCache_RunDLL`                                                 |
+| Mouse Settings # ThinkPad (TrackPoint / `TouchPad`)                                                                            | `rundll32 Shell32.dll,Control_RunDLL main.cpl,@0`                                               |
+| Keyboard Properties                                                                                                            | `rundll32 Shell32.dll,Control_RunDLL main.cpl,@1`                                               |
+| Erleichterte Bedienung                                                                                                         | `rundll32 shell32.dll,Control_RunDLL access.cpl`                                                |
+| Control Panel > `Uninstall or change a program`                                                                                | `rundll32 shell32.dll,Control_RunDLL appwiz.cpl,null,0`                                         |
+| Control Panel > Install a program from the network                                                                             | `rundll32 shell32.dll,Control_RunDLL appwiz.cpl,null,1`                                         |
+| Control Panel > `Windows Features`                                                                                             | `rundll32 shell32.dll,Control_RunDLL appwiz.cpl,null,2`                                         |
+| Settings > Display                                                                                                             | `rundll32 Shell32.dll,Control_RunDLL desk.cpl`                                                  |
+| Control Panel > `Desktop Icon Settings`                                                                                        | `rundll32 shell32.dll,Control_RunDLL desk.cpl,null,0`                                           |
+| Control Panel > Screen Saver Settings                                                                                          | `rundll32 shell32.dll,Control_RunDLL desk.cpl,null,1`                                           |
+| Settings > Background                                                                                                          | `rundll32 shell32.dll,Control_RunDLL desk.cpl,null,2`                                           |
+| Control Panel > Region # `Formats`                                                                                             | `rundll32 shell32.dll,Control_RunDLL intl.cpl,null,0`                                           |
+| Control Panel > Region # Administrative                                                                                        | `rundll32 shell32.dll,Control_RunDLL intl.cpl,null,1`                                           |
+| Game Controllers                                                                                                               | `rundll32 shell32.dll,Control_RunDLL joy.cpl`                                                   |
+| Control Panel > Sound                                                                                                          | `rundll32 shell32.dll,Control_RunDLL mmsys.cpl`                                                 |
+| Control Panel > Sound # `Playback`                                                                                             | `rundll32 shell32.dll,Control_RunDLL mmsys.cpl,null,0`                                          |
+| Control Panel > Sound # `Recording`                                                                                            | `rundll32 shell32.dll,Control_RunDLL mmsys.cpl,null,1`                                          |
+| Control Panel > Sound # `Sounds`                                                                                               | `rundll32 shell32.dll,Control_RunDLL mmsys.cpl,null,2`                                          |
+| Control Panel > System Properties # Computer Name                                                                              | `rundll32 shell32.dll,Control_RunDLL sysdm.cpl,null,1`                                          |
+| Control Panel > System Properties # Hardware                                                                                   | `rundll32 shell32.dll,Control_RunDLL sysdm.cpl,null,2`                                          |
+| Control Panel > System Properties # Advanced <br> (Performance, `User Profiles`, Startup and Recovery, Environment Variables)  | `rundll32 shell32.dll,Control_RunDLL sysdm.cpl,null,3`                                          |
+| Control Panel > System Properties # System Protection <br> (`Restore Point`)                                                   | `rundll32 shell32.dll,Control_RunDLL sysdm.cpl,null,4`                                          |
+| Control Panel > Date and Time # Date and Time                                                                                  | `rundll32 shell32.dll,Control_RunDLL timedate.cpl,null,0`                                       |
+| Control Panel > Date and Time # Additional Clocks                                                                              | `rundll32 shell32.dll,Control_RunDLL timedate.cpl,null,1`                                       |
+| Open with dialog                                                                                                               | `rundll32 shell32.dll,OpenAs_RunDLL`                                                            |
+| `Open with dialog for a specific file`                                                                                         | `rundll32 shell32.dll,OpenAs_RunDLL \<Datei\>`                                                  |
+| About MZ/Windows (Version, `OS Build`)                                                                                         | `rundll32 Shell32.dll,ShellAboutA <br> winver`                                                  |
+| `Add a printer` dialog                                                                                                         | `rundll32 shell32.dll,SHHelpShortcuts_RunDLL AddPrinter`                                        |
+| `Printers Folder`                                                                                                              | `rundll32 shell32.dll,SHHelpShortcuts_RunDLL PrintersFolder <br> explorer shell:printersfolder` |
+| Drucker direkt ohne Assistent hinzufügen, [Details](http://www.winfaq.de/faq_html/Content/tip2000/onlinefaq.php?h=tip2028.htm) | `rundll32 printui.dll,PrintUIEntry \<Optionen\> \<@Befehlsdatei\>`                              |
+| z.B. Netzwerkdrucker hinzufügen                                                                                                | `rundll32 printui.dll,PrintUIEntry /q /in /n \\\\ServerName\Freigabename`                       |
+| Schriftarten anzeigen                                                                                                          | `rundll32 shell32.dll,SHHelpShortcuts_RunDLL FontsFolder`                                       |
+| Netzwerklaufwerk verbinden, Dialog öffnen                                                                                      | `rundll32 shell32.dll,SHHelpShortcuts_RunDLL Connect`                                           |
+| Telnet-Verbindung öffnen                                                                                                       | `rundll32 url.dll,TelnetProtocolHandler \<IP-Adresse bzw. Hostname\>`                           |
+| Startet die URL                                                                                                                | `rundll32 url.dll,FileProtocolHandler \<URL\>`                                                  |
+| E-Mail erzeugen                                                                                                                | `rundll32 url.dll,MailToProtocolHandler mailto:\<E-Mail Adresse\>`                              |
+| z.B. E-Mail Vorlage, nutze %20 als Leerzeichen                                                                                 | `rundll32 url.dll,MailToProtocolHandler "mailto:0?cc=1&?bcc=2&subject=3"`                       |
+| Rechner sperren                                                                                                                | `rundll32 user32.dll,LockWorkStation`                                                           |
+| Hardware sicher entfernen, Ist es möglich die Ansicht "Unplug or Eject Hardware" zu öffnen                                     | `rundll32 shell32.dll,Control_RunDLL hotplug.dll`                                               |
+| Gespeicherte Benutzernamen und Kennwörter                                                                                      | `rundll32 Keymgr.dll,KRShowKeyMgr`                                                              |
+| Rechner wird in den Ruhezustand gefahren                                                                                       | `rundll32 powrprof.dll,SetSuspendState`                                                         |
+| Windows Sicherheitscenter                                                                                                      | `rundll32 shell32.dll,Control_RunDLL wscui.cpl,Security Center`                                 |
+| Ordneroptionen                                                                                                                 | `rundll32 shell32.dll, Options_RunDLL 0`                                                        |
 
 
 ### Sources

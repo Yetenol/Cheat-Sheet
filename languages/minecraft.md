@@ -23,14 +23,14 @@ kill @e[type=item,nbt={Item:{id:"minecraft:wool"}}]
 ```
 
 ## Entity data
-Nbt Data | Description
-:--- | :---
-`CustomName:"\"_NAME_\""` | Entity custom name
-`display:{Name:'[{"text":"_NAME_","color":"_COLOR_","italic":false}]'}` | Item display name
-`ActiveEffects:[{Id:14b,Duration:999999,ShowParticles:0b}]` | Invisible (via effect)
-`Glowing:true` | Glowing (permanently)
-`PersistenceRequired:true` | Never naturally despawn
-`Silent:true` | Disable sound
-`DeathLootTable:"invalid"` | No loot / mob drops
-`NoAI:true` | Not moving on their own
-`Invulnerable:true` | 
+| Nbt Data                                                                | Description             |
+| :---------------------------------------------------------------------- | :---------------------- |
+| `CustomName:"\"_NAME_\""`                                               | Entity custom name      |
+| `display:{Name:'[{"text":"_NAME_","color":"_COLOR_","italic":false}]'}` | Item display name       |
+| `ActiveEffects:[{Id:14b,Duration:999999,ShowParticles:0b}]`             | Invisible (via effect)  |
+| `Glowing:true`                                                          | Glowing (permanently)   |
+| `PersistenceRequired:true`                                              | Never naturally despawn |
+| `Silent:true`                                                           | Disable sound           |
+| `DeathLootTable:"invalid"`                                              | No loot / mob drops     |
+| `NoAI:true`                                                             | Not moving on their own |
+| `Invulnerable:true`                                                     |
