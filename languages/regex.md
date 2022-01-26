@@ -2,21 +2,21 @@
 
 > .Net Implementation
 
-- [Single Characters](#single-characters)
-- [Control Characters](#control-characters)
-- [Non-ASCII Codes](#non-ascii-codes)
-- [Character Classes](#character-classes)
-- [Quantifiers](#quantifiers)
-- [Anchors](#anchors)
-- [Groups](#groups)
-- [Inline Options](#inline-options)
-- [Backreferences](#backreferences)
-- [Alternation](#alternation)
-- [Substitution](#substitution)
-- [Comments](#comments)
-- [Supported Unicode Categories](#supported-unicode-categories)
-- [.Net Operations](regex-dot-net.md)
-- [Sources](#sources)
+  - [Single Characters](#single-characters)
+  - [Control Characters](#control-characters)
+  - [Non-ASCII Codes](#non-ascii-codes)
+  - [Character Classes](#character-classes)
+  - [Quantifiers](#quantifiers)
+  - [Anchors](#anchors)
+  - [Groups](#groups)
+  - [Inline Options](#inline-options)
+  - [Backreferences](#backreferences)
+  - [Alternation](#alternation)
+  - [Substitution](#substitution)
+  - [Comments](#comments)
+  - [Supported Unicode Categories](#supported-unicode-categories)
+  - [.Net Operations](regex-dot-net.md)
+  - [Sources](#sources)
 
 
 ## Single Characters
@@ -136,7 +136,7 @@
 
 ## Alternation
 
-| Use                        | To match                                              |
+| Use                        | To match                                                 |
 | -------------------------- | -------------------------------------------------------- |
 | `a\|b`                     | Either a or b                                            |
 | `(?(exp)`_yes_`\|`_no_`)`  | _yes_ if exp is matched <br> _no_ if exp isn't matched   |
