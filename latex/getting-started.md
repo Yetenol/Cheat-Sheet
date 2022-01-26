@@ -35,7 +35,7 @@
 
 ```latex
 \usepackage{hyperref}
-\hypersetup{colorlinks=true, color=blue} % optional
+\hypersetup{colorlinks=true} % optional
 ```
 
 ```latex
