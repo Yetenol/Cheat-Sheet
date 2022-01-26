@@ -30,7 +30,7 @@
 | [File attributes](powershell/file-attributes.md)   | make read-only        | `function Set-FileAttribute{}`                        |
 
 
-###
+### LaTeX
 
 | Topic                                       | Example Component | Example Code |
 | ------------------------------------------- | ----------------- | ------------ |
