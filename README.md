@@ -32,15 +32,17 @@ Topic | Example Component | Example Code
 
 ### Languages, Encodings
 
-- `[AutoHotkey]` [AutoHotkey](languages/autohotkey.md)
-- `[RegEx]` Regular Expression
-    - [🗎 PDF Overview](languages/regex.pdf)
-    - [🔗Quick Reference (MS Docs)](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference)
-    - [🔗Visual Studio (MS Docs)](https://docs.microsoft.com/en-us/visualstudio/ide/using-regular-expressions-in-visual-studio) 
-- `[C]` [GNU Debugger](languages/gdb.md)
-- `[Git]` [Git](languages/git.md)
-- `[Unicode]` [Character sorting](languages/unicode.md)
-- `[Minecraft]` [Datapacks](languages/minecraft.md)
+Topic | Example Component | Example Code
+--- | --- | ---
+[Unicode](languages/unicode.md) | Character sorting | `!` `+` `Ξ`
+[Git](languages/git.md)
+[AutoHotkey v1](languages/autohotkey.md) | Get program stdout |  `Shell := ComObjCreate("WScript.Shell")`
+Regular Expression (RegEx)
+→➝ [🗎 PDF Overview](languages/regex.pdf)
+→➝ [🔗Quick Reference (MS Docs)](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference)
+→➝ [🔗Visual Studio (MS Docs)](https://docs.microsoft.com/en-us/visualstudio/ide/using-regular-expressions-in-visual-studio)
+C › [GNU Debugger](languages/gdb.md)
+Minecraft › [Datapacks](languages/minecraft.md)
 
 
 ### Apps
