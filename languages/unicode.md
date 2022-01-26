@@ -1,7 +1,7 @@
 # [⌂](../README.md) ([Languages](../README.md#languages-encodings)) › **Unicode**
 
 ## Useful characters
-. | Name | Unicode number | Alt code
+. | Name | Unicode | Alt code
 --- | --- | --- | ---
 ` ` | No-Break Space | U+00A0 | Alt 255 <br> Alt 0160
 
@@ -46,7 +46,7 @@ Position |   | Name
 
 ### Special sorting characters
 
-. | Name | Unicode number | Alt code
+. | Name | Unicode | Alt code
 --- | --- | --- | ---
 `␣` | Open Box | U+2423 | 
 `µ` | Micro | U+00B5 | Alt 230
@@ -57,7 +57,7 @@ Position |   | Name
 
 ## Greek letters
 
-. | Name | Unicode number | Alt code
+. | Name | Unicode | Alt code
 --- | ---         | ---    | ---
 `α` | Alpha       | U+03B1 | Alt 224
 `Γ` | Gamma       | U+0393 | Alt 226
