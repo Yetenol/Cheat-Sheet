@@ -32,14 +32,14 @@
 
 ### Languages, Encodings
 
-| Topic                           | Example Component | Example Code |
-| ------------------------------- | ----------------- | ------------ |
-| [Unicode](languages/unicode.md) | Character sorting | `!` `+` `Ξ`  |
-[Git](languages/git.md)
-[AutoHotkey v1](languages/autohotkey.md) | Get program stdout |  `Shell := ComObjCreate("WScript.Shell")`
-[Regular Expression (RegEx)](languages/regex.md)
-C › [GNU Debugger](languages/gdb.md)
-Minecraft › [Datapacks](languages/minecraft.md)
+| Topic                                            | Example Component  | Example Code                             |
+| ------------------------------------------------ | ------------------ | ---------------------------------------- |
+| [Unicode](languages/unicode.md)                  | Character sorting  | `!` `+` `Ξ`                              |
+| [Git](languages/git.md)                          |
+| [AutoHotkey v1](languages/autohotkey.md)         | Get program stdout | `Shell := ComObjCreate("WScript.Shell")` |
+| [Regular Expression (RegEx)](languages/regex.md) |
+| C › [GNU Debugger](languages/gdb.md)             |
+| Minecraft › [Datapacks](languages/minecraft.md)  |
 
 
 ### Apps
