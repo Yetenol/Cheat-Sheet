@@ -30,6 +30,15 @@
 | [File attributes](powershell/file-attributes.md)   | make read-only        | `function Set-FileAttribute{}`                        |
 
 
+###
+
+| Topic                                       | Example Component | Example Code |
+| ------------------------------------------- | ----------------- | ------------ |
+| [Getting Started](latex/getting-started.md) |
+| [Figures](latex/figures.md)                 |
+| [Packages](latex/packages.md)               |
+
+
 ### Languages, Encodings
 
 | Topic                                            | Example Component  | Example Code                             |
