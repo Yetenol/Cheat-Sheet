@@ -3,16 +3,16 @@
 # Make a powershell script executable
 - Attach .bat at the end of your script filename e.g: `script.ps1.bat`
 - Add this as the first line of code
-```powershell
+```cmd
 # & cls & powershell -Command "Invoke-Command -ScriptBlock ([ScriptBlock]::Create(((Get-Content """%0""") -join """`n""")))" & exit
 # The above line makes the script executable when renamed .cmd or .bat
 ```
 
 # Help Yourself
 
-## Find the right cmdlet
+## Discover available commands[ᴰ](glossary.md#command)
 ```powershell
-Get-Command | Where-Object {$_.Name -Match "vpn"}
+Get-Command | where {$_.Name -Match "vpn"}
 ```
 
 ## Help-Files
@@ -37,14 +37,7 @@ help Get-Process -Parameter Id
 ```
 
 
-
-
-
-
-
-
-
-## Function: Set parameter AutoComplete
+## Function[ᴰ](glossary.md#function): Set parameter AutoComplete
 
 ```powershell
 function Show-Hello {
