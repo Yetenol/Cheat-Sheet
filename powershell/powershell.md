@@ -8,7 +8,7 @@
 # The above line makes the script executable when renamed .cmd or .bat
 ```
 
-# Help cmdlets
+# Help Yourself
 
 ## Find the right cmdlet
 ```powershell
