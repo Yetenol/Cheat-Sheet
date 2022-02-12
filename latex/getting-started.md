@@ -87,5 +87,5 @@
 | `/`  | `\slash`          | support hyphenation              | read\slash write         |
 | `◦C` | `^{\circ}\mathrm` | degree symbol                    | °C                       |
 | `…`  | `\ldots`          | (low dots                        | a, b, c, …               |
-|      | `                 | surpress bigger sentence spacing | Mr.~Smith w              |
+|      | `                 | suppress bigger sentence spacing | Mr.~Smith w              |
 
