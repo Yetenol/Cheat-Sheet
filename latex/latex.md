@@ -1,12 +1,19 @@
 # [⌂](../README.md) › [LaTeX](../README.md#latex) › **Getting Started**
 
+## Help Yourself
+
+View package documentation
+```powershell
+texdoc PACKAGE_NAME
+```
+
 ## File Structure
 
 - `config`
   - `packages.tex` only \usepackage commands
   - `definitions.tex` new commands, environments, columns
   - `layout.tex` global formatting, spacing, margins
-- `figrues` floating bodies: tables and figures
+- `figures` floating bodies: tables and figures
 - `references`
   - `bibliography.tex`
   - ...`.bib`

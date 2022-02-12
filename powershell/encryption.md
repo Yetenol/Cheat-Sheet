@@ -6,8 +6,13 @@
 # Eingabe eines sicheren Texts
 1. Consoleneingabe
     ```powershell
-    Read-Host "Password" -AsSecureString
+    Read-Host "Password" -AsSecureString # secure string
     ```
+1. Credential erzeugen
+    ```powershell
+    Get-Credential | ConvertTo-SecureString -AsPlainText -Force # secure string
+    ```
+
 1. Klartextkonvertierung
 	```powershell
 	| ConvertTo-SecureString -AsPlainText -Force
@@ -46,7 +51,7 @@
 
 
 
-
+    ```
 	| ConvertTo-SecureString -AsPlainText -Force `
 	| ConvertFrom-SecureString `
 	| Out-File -FilePath ".\key.bin"
