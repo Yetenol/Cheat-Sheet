@@ -87,7 +87,7 @@ texdoc PACKAGE_NAME
 | ---- | ----------------- | -------------------------------- | ------------------------ |
 | `-`  | `-`               | hyphen                           | daughter-in-law, X-rated |
 | `–`  | `--` en-dash      | pages 13–67                      |
-| `—`  | `---` em-das      | yes—or no?                       |
+| `—`  | `---` em-dash     | yes—or no?                       |
 | `−`  | `$-1$`            | minus-sign                       | 0, 1 and −1              |
 | `∼`  | `$\sim$`          |
 | `/`  | `/`slash          | no hyphenation                   | 5 MB/s                   |
