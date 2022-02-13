@@ -2,6 +2,10 @@
 
 ## Extend an existing environment 
 
+```
+\usepackage{etoolbox} % Append methods to environments
+```
+
 Declare placeholders for environment-internal methods: 
 ```latex
 \newcommand{\inaccessiblesetauthor}{}
