@@ -8,3 +8,10 @@ $className = "MDM_EnterpriseModernAppManagement_AppManagement01"
 $wmiObj = Get-WmiObject -Namespace $namespaceName -Class $className
 $result = $wmiObj.UpdateScanMethod()
 ```
+
+
+## Upgrade all winget apps
+
+```powershell
+winget upgrade --all
+```
