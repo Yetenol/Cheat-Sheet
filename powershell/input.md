@@ -30,8 +30,9 @@ $User = Get-Host "Username"
 
 - find all items whose name starts with _user_
 
-  > _-match_ uses [regular expression](../languages/regex.md) syntax  
-  > `^` Start of line;  `$` End of line;  `.*` $\geq 0$ character(s);  `.+` $\geq 1$ character(s);  `\w*` Any word;  
+  > Quick [**Regular Expression**](../languages/regex.md) Reference for `-match` and `[RegEx]::`  
+  > `(?ENABLE-DISABLE)` [Interpretation Options](../languages/regex.md#engine-interpretation-options):  `i` IgnoreCase;  `n` ExplicitCapture;  `x` IgnorePatternWhitespace;  `m` Multiline;  `s` Singleline;  
+  > `^` Start of line;  `$` End of line;  `.*` ≥0 character(s);  `.+` ≥0 character(s);  `\w*` Any word;  `\S*` Any non-whitespace;
   > `\s*` Any whitespace;  `(.*)` Unnamed group;     `(?<user>.*)` Named group called user
 
   ```powershell
@@ -81,7 +82,7 @@ $User = Get-Host "Username"
 
 > Quick [**Regular Expression**](../languages/regex.md) Reference for `-match` and `[RegEx]::`  
 > `(?ENABLE-DISABLE)` [Interpretation Options](../languages/regex.md#engine-interpretation-options):  `i` IgnoreCase;  `n` ExplicitCapture;  `x` IgnorePatternWhitespace;  `m` Multiline;  `s` Singleline;  
-> `^` Start of line;  `$` End of line;  `.*` $\geq 0$ character(s);  `.+` $\geq 1$ character(s);  `\w*` Any word;  `\S*` Any non-whitespace;
+> `^` Start of line;  `$` End of line;  `.*` ≥0 character(s);  `.+` ≥0 character(s);  `\w*` Any word;  `\S*` Any non-whitespace;
 > `\s*` Any whitespace;  `(.*)` Unnamed group;     `(?<user>.*)` Named group called user
 
 - find **all** lines starting with _user_
@@ -134,7 +135,7 @@ $User = Get-Host "Username"
 
   > Quick [**Regular Expression**](../languages/regex.md) Reference for `-match` and `[RegEx]::`  
   > `(?ENABLE-DISABLE)` [Interpretation Options](../languages/regex.md#engine-interpretation-options):  `i` IgnoreCase;  `n` ExplicitCapture;  `x` IgnorePatternWhitespace;  `m` Multiline;  `s` Singleline;  
-  > `^` Start of line;  `$` End of line;  `.*` $\geq 0$ character(s);  `.+` $\geq 1$ character(s);  `\w*` Any word;  `\S*` Any non-whitespace;
+  > `^` Start of line;  `$` End of line;  `.*` ≥0 character(s);  `.+` ≥0 character(s);  `\w*` Any word;  `\S*` Any non-whitespace;
   > `\s*` Any whitespace;  `(.*)` Unnamed group;     `(?<user>.*)` Named group called user
 
   ```powershell
