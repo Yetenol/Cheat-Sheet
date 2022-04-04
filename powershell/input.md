@@ -189,6 +189,8 @@ $pattern = "(?i)^user"
 
   Get the title key pairs of listings in consecutive lines.
 
+  > Use `[RegEx]::Matches` for **all** and `[RegEx]::Match` for the **first** occurrence of the pattern.
+
   > Import file using `-Raw` to save it as a **single string** instead of an array of lines.  
   > Use option `m` (multiline) to let `^` and `$` match the beginning and end of **each line** instead of the entire input string. 
 
