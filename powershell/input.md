@@ -2,28 +2,109 @@
 
 # User input
 
-### Enter plaintext input in console
+### Read keyboard input
 ```powershell
 $User = Get-Host "Username"
 ```
 
-# File input
-### Get plaintext input from file at specific line
-> _TotalCount speeds up the commands by only loading the first 26 lines._
-```powershell
-$Line26 = (Get-Content -Path <#File#>)[25]
-```
+# .Net formatted file
+
+> _Use xml files to keep PowerShells Object formatting._
+
+- import an object from an .xml file
+  ```powershell
+  $object = Import-Clixml -Path <#XML-File#>
+  ```
+
+- count its number of items
+  ```powershell
+  $object = Import-Clixml -Path <#XML-File#>
+  $object.Count
+  ```
+  ```powershell
+  ($object = Import-Clixml -Path <#XML-File#>).Count
+  ```
+
+- find all items whose name starts with _user_
+  > _-match_ uses [regular expression](../languages/regex.md) syntax  
+  > `^` Start of line;  `$` End of line;  `.*` $\geq 0$ character(s);  `.+` $\geq 1$ character(s);  `\w*` Any word;  
+  > `\s*` Any whitespace;  `(.*)` Unnamed group;     `(?<user>.*)` Named group called user
+
+  ```powershell
+  $object | foreach {
+    if ($_.Name -match "^user") {
+      Write-Output $_
+    }
+  }
+  ```
+
+
+# Plain text file
+
+- import all lines from a plain text file
+  ```powershell
+  $lines = Get-Content -Path <#File#>
+  ```
+
+- only import (a) specific line(s)
+  ```powershell
+  $line26      = (Get-Content -Path <#File#>)[25]
+  $line23til26 = (Get-Content -Path <#File#>)[22..25]
+  ```
+  > `-TotalCount` speeds up the commands by only loading the first 26 lines.
+  ```powershell
+  $line26      = (Get-Content -Path <#File#> -TotalCount 26)[25]
+  $line23til26 = (Get-Content -Path <#File#> -TotalCount 26)[22..25]
+  ```
+
+- count number of lines
 
 ```powershell
-$Line26 = (Get-Content -Path <#File#> -TotalCount 26)[25]
+$lines = Get-Content -Path <#File#>
+$lines.Count
+```
+```powershell
+($lines = Get-Content -Path <#File#>).Count
 ```
 
-Get first line starting with <i>User</i>
-```powershell
-$Lines_User = Get-Content -Path <#File#> -ReadCount 1000 # Load in shunks of 1k lines
-  | foreach {$_ -match "^User"} # ^: Beginning of line (regex)
-$Lines_User[0]                  # Only use first line
-```
+## Find Occurrences
+
+> `-match` uses [regular expression](../languages/regex.md) syntax  
+> `^` Start of line;  `$` End of line;  `.*` $\geq 0$ character(s);  `.+` $\geq 1$ character(s);  `\w*` Any word;  
+> `\s*` Any whitespace;  `(.*)` Unnamed group;     `(?<user>.*)` Named group called user
+
+- find **all** lines starting with _user_
+  ```powershell
+  $captures = $lines | foreach {
+    if ($_ -match "^user") {
+      Write-Output $_
+    }
+  }
+  ```
+
+  > `-ReadCount` speeds up the search when using large files as it sends the lines in 1k batches through the pipeline. Beware of slightly different formatting.
+  ```powershell
+  $captures = Get-Content -Path .\env.txt -ReadCount 1000 | foreach {
+    $_ -match "^user"
+  }
+  ```
+
+
+- count occurrences
+  ```powershell
+  $captures.Count
+  ```
+
+- find **first** line starting with _user_ 
+  ```powershell
+  $lines | foreach {
+    if ($_ -match "^user") {
+      $capture = $_
+      break # stop further searching
+    }
+  }
+  ```
+
 
 Get first line with <i>User: \<username\> </i>
 ```powershell
