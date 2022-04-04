@@ -41,14 +41,15 @@
 
 ### Languages, Encodings
 
-| Topic                                            | Example Component  | Example Code                             |
-| ------------------------------------------------ | ------------------ | ---------------------------------------- |
-| [Unicode](languages/unicode.md)                  | Character sorting  | `!` `+` `Ξ`                              |
+| Topic                                            | Example Component  | Example Code                                                                      |
+| ------------------------------------------------ | ------------------ | --------------------------------------------------------------------------------- |
+| [Unicode](languages/unicode.md)                  | Character sorting  | `!` `+` `Ξ`                                                                       |
 | [Git](languages/git.md)                          |
-| [AutoHotkey v1](languages/autohotkey.md)         | Get program stdout | `Shell := ComObjCreate("WScript.Shell")` |
+| [AutoHotkey v1](languages/autohotkey.md)         | Get program stdout | `Shell := ComObjCreate("WScript.Shell")`                                          |
 | [Regular Expression (RegEx)](languages/regex.md) |
 | C › [GNU Debugger](languages/gdb.md)             |
 | Minecraft › [Datapacks](languages/minecraft.md)  |
+| [Markdown](languages/markdown.md)                | LaTeX Render       | <img src="https://render.githubusercontent.com/render/math?math=\int_0^1{\pi^2}"> |
 
 
 ### Apps
