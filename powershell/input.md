@@ -160,6 +160,27 @@ $User = Get-Host "Username"
     Write-Output @("Successfully extracted:", $username)
   }
   ```
+  ```powershell
+  $pattern = '(?i)^\s*username:\s*(\w*)\s*'
+  # line example   ···Username:···anna····[...] 
+
+  $lines = Get-Content -Path ".\example.txt"
+
+  $capture = $null
+  $lines | foreach {
+    $regex = [RegEx]::Match($_, $pattern)
+    if ($regex.Success) {
+      $capture = $regex.Groups[1].value # matched groups start at index 1
+      break # stop further searching
+    }
+  }
+
+  if (-not $capture) {
+    Write-Error "No matching line found!"
+  } else {
+    Write-Output @("Successfully extracted:", $capture)
+  }
+  ```
 
 - extract the credentials from **all** lines like: _User: anna Password: turtles\_48_
 
@@ -196,7 +217,8 @@ $User = Get-Host "Username"
 
 - find **multiline** paterns
 
-  > File is read using `-Raw` to import it as a single string instead of an array of lines.
+  > File is read using `-Raw` to import it as a **single string** instead of an array of lines.  
+  > In multiline mode (`m`) matches `^` and `$` the beginning and end of **each line** instead of the entire input string. 
 
   ```powershell
   $pattern = '(?inm)^name\s*:\s*(?<title>.*)\nvalue\s*:\s*(?<key>.*)$'
