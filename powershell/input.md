@@ -37,7 +37,7 @@ $User = Get-Host "Username"
 
   ```powershell
   $pattern = "(?i)^user"
-  $object | foreach {
+  foreach ($_ in $object) {
     if ($_.Name -match $pattern) {
       Write-Output $_
     }
@@ -78,18 +78,22 @@ $User = Get-Host "Username"
   ($lines = Get-Content -Path ".\example.txt").Count
   ```
 
-## Find Pattern
+## Find Occurrences Of A Pattern
 
 > Quick [**Regular Expression**](../languages/regex.md) Reference for `-match` and `[RegEx]::`  
 > `(?ENABLE-DISABLE)` [Interpretation Options](../languages/regex.md#engine-interpretation-options):  `i` IgnoreCase;  `n` ExplicitCapture;  `x` IgnorePatternWhitespace;  `m` Multiline;  `s` Singleline;  
 > `^` Start of line;  `$` End of line;  `.*` ≥0 character(s);  `.+` ≥0 character(s);  `\w*` Any word;  `\S*` Any non-whitespace;
 > `\s*` Any whitespace;  `(.*)` Unnamed group;     `(?<user>.*)` Named group called user
 
-- find **all** lines starting with _user_
+Example: search for lines starting with _user_
+```powershell
+$pattern = "(?i)^user"
+```
+
+- find the lines of **all** occurrences of the pattern
 
   ```powershell
-  $pattern = "(?i)^user"
-  $captures = $lines | foreach {
+  $captures = foreach ($_ in $lines) {
     if ($_ -match $pattern) {
       Write-Output $_
     }
@@ -99,31 +103,28 @@ $User = Get-Host "Username"
   > `-ReadCount` speeds up the search when using large files as it sends the lines in 1k batches through the pipeline. Beware of slightly different formatting.
 
   ```powershell
-  $pattern = "(?i)^user"
   $captures = Get-Content -Path ".\example.txt" -ReadCount 1000 | foreach {
     $_ -match $pattern
   }
   ```
 
 
-- count occurrences
+- **count** occurrences of the pattern
 
   ```powershell
   $captures.Count
   ```
 
-- find **first** line starting with _user_ 
+- find the line of the **first** occurrence of the pattern
 
   ```powershell
   $capture = $captures[0]
   ```
 
   ```powershell
-  $pattern = "(?i)^user"
-  $capture = $null
-  $lines | foreach {
+  $capture = foreach ($_ in $lines) {
     if ($_ -match $pattern) {
-      $capture = $_
+      Write-Output $_
       break # stop further searching
     }
   }
@@ -131,60 +132,39 @@ $User = Get-Host "Username"
 
   > `-ReadCount` is difficult to use here.
 
-- extract the username from the **first** line starting like: _Username: anna_
+## Extract Data Using A Pattern
 
-  > Quick [**Regular Expression**](../languages/regex.md) Reference for `-match` and `[RegEx]::`  
-  > `(?ENABLE-DISABLE)` [Interpretation Options](../languages/regex.md#engine-interpretation-options):  `i` IgnoreCase;  `n` ExplicitCapture;  `x` IgnorePatternWhitespace;  `m` Multiline;  `s` Singleline;  
-  > `^` Start of line;  `$` End of line;  `.*` ≥0 character(s);  `.+` ≥0 character(s);  `\w*` Any word;  `\S*` Any non-whitespace;
-  > `\s*` Any whitespace;  `(.*)` Unnamed group;     `(?<user>.*)` Named group called user
+> Quick [**Regular Expression**](../languages/regex.md) Reference for `-match` and `[RegEx]::`  
+> `(?ENABLE-DISABLE)` [Interpretation Options](../languages/regex.md#engine-interpretation-options):  `i` IgnoreCase;  `n` ExplicitCapture;  `x` IgnorePatternWhitespace;  `m` Multiline;  `s` Singleline;  
+> `^` Start of line;  `$` End of line;  `.*` ≥0 character(s);  `.+` ≥0 character(s);  `\w*` Any word;  `\S*` Any non-whitespace;
+> `\s*` Any whitespace;  `(.*)` Unnamed group;     `(?<user>.*)` Named group called user
+
+- Extract a **single** datum from the **first** occurrence of the pattern.
+  
+  Get the username from lines that start with the listing of a user name.
 
   ```powershell
-  $pattern = '(?i)^\s*username:\s*(\w*)\s*'
+  $pattern = '(?i)^\s*username:\s*(\w*)'
   # line example   ···Username:···anna····[...] 
 
   $lines = Get-Content -Path ".\example.txt"
 
-  $capture = $null
-  $lines | foreach {
-    if ($_ -match $pattern) {
-      $capture = $_
-      break # stop further searching
-    }
-  }
-
-  if (-not $capture) {
-    Write-Error "No matching line found!"
-  } else {
-    $regex = [RegEx]::Match($capture, $pattern)
-    $username = $regex.Groups[1].value # matched groups start at index 1
-    Write-Output @("Successfully extracted:", $username)
-  }
-  ```
-  ```powershell
-  $pattern = '(?i)^\s*username:\s*(\w*)\s*'
-  # line example   ···Username:···anna····[...] 
-
-  $lines = Get-Content -Path ".\example.txt"
-
-  $capture = $null
-  $lines | foreach {
+  $capture = foreach ($_ in $lines) {
     $regex = [RegEx]::Match($_, $pattern)
     if ($regex.Success) {
-      $capture = $regex.Groups[1].value # matched groups start at index 1
+      Write-Output $regex.Groups[1].value # matched groups start at index 1
       break # stop further searching
     }
   }
 
-  if (-not $capture) {
-    Write-Error "No matching line found!"
-  } else {
-    Write-Output @("Successfully extracted:", $capture)
-  }
+  if ($capture) {Write-Output $capture} else {Write-Error "Nothing found!"}
   ```
 
-- extract the credentials from **all** lines like: _User: anna Password: turtles\_48_
+- Extract **multiple** data from **each** occurrence of the pattern.
+  
+  Get the credentials from lines that list a username and password.
 
-  > to ignore all unnamed groups, set option `n`
+  > Use option `n` (ExplicitCapture) to ignore all unnamed groups.
 
   ```powershell
   $pattern = '(?in)^\s*username:\s*(?<user>\S*)\s*password:\s*(?<pwd>\S*)\s*$'
@@ -192,33 +172,25 @@ $User = Get-Host "Username"
 
   $lines = Get-Content -Path ".\example.txt"
 
-  $captures = $lines | foreach {
-    if ($_ -match $pattern) {
-      Write-Output $_
+  $captures = foreach ($_ in $lines) {
+    $regex = [RegEx]::Match($_, $pattern)
+    if ($regex.Success) {
+      Write-Output ([PSCustomObject]@{ 
+        Username = $regex.Groups["user"].value
+        Password = $regex.Groups["pwd"].value
+      })
     }
   }
 
-  if (-not $captures) {
-    Write-Error "No matching line found!"
-  } else {
-    $credentials = @()
-    $captures | foreach {
-      $regex = [RegEx]::Match($_, $pattern)
-      $username = $regex.Groups["user"].value
-      $password = $regex.Groups["pwd"].value
-      $credentials += [PSCustomObject]@{ 
-        Username = $username
-        Password = $password
-      }
-    }
-    Write-Output @("Successfully extracted:", $credentials)
-  }
+  if ($captures) {Write-Output $captures} else {Write-Error "Nothing found!"}
   ```
 
-- find **multiline** paterns
+- Extract from occurrences of a **multiline** pattern.
 
-  > File is read using `-Raw` to import it as a **single string** instead of an array of lines.  
-  > In multiline mode (`m`) matches `^` and `$` the beginning and end of **each line** instead of the entire input string. 
+  Get the title key pairs of listings in consecutive lines.
+
+  > Import file using `-Raw` to save it as a **single string** instead of an array of lines.  
+  > Use option `m` (multiline) to let `^` and `$` match the beginning and end of **each line** instead of the entire input string. 
 
   ```powershell
   $pattern = '(?inm)^name\s*:\s*(?<title>.*)\nvalue\s*:\s*(?<key>.*)$'
@@ -228,13 +200,14 @@ $User = Get-Host "Username"
   $text = Get-Content -Path ".\example.txt" -Raw
 
   $regex = [RegEx]::Matches($text, $pattern)
-  $regex | foreach {
-      $data = [PSCustomObject]@{
-        Title = $_.Groups["title"].value
-        Key = $_.Groups["key"].value
-      }
-      Write-Output $data
+  $captures = foreach ($_ in $regex) {
+    Write-Output ([PSCustomObject]@{
+      Title = $_.Groups["title"].value
+      Key   = $_.Groups["key"].value
+    })
   }
+
+  if ($captures) {Write-Output $captures} else {Write-Error "Nothing found!"}
   ```
 
 # Sensitive input
