@@ -2,6 +2,8 @@
 
 > .Net Implementation
 
+  - [Miscellaneous Constructs](#miscellaneous-constructs)
+  - [Engine Interpretation Options](#engine-interpretation-options)
   - [Single Characters](#single-characters)
   - [Control Characters](#control-characters)
   - [Non-ASCII Codes](#non-ascii-codes)
@@ -15,9 +17,36 @@
   - [Substitution](#substitution)
   - [Comments](#comments)
   - [Supported Unicode Categories](#supported-unicode-categories)
-  - [.Net Operations](regex-dot-net.md)
+  - [.Net Operations](#net-operations)
   - [Sources](#sources)
 
+
+## Miscellaneous Constructs
+
+| Construct            | Definition                                                                                                                            | Example                                                       |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| `(?imnsx-imnsx)`     | Sets or disables options such as case insensitivity in the middle of a pattern. For more information, see Regular Expression Options. | `\bA(?i)b\w+\b` matches `"ABA"`, `"Able"` in `"ABA Able Act"` |
+| `(?#` _comment_ `)`  | Inline comment. The comment ends at the first closing parenthesis.                                                                    | `\bA(?#Matches words starting with A)\w+\b`                   |
+| `#` [to end of line] | X-mode comment. The comment starts at an unescaped `#` and continues to the end of the line.                                          | `(?x)\bA\w+\b#Matches words starting with A`                  |
+
+
+## Engine Interpretation Options
+
+> Start pattern with `(?`_enabled options_`-`_disabled options_`)` e.g: `(?imnsx-imnsx)`
+
+
+| Inline character | RegexOptions member     | Effect                                                                                                                                                                                                |
+| ---------------- | ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Not available    | None                    | Use default behavior. For more information, see Default Options.                                                                                                                                      |
+| `i`              | IgnoreCase              | Use case-insensitive matching. For more information, see Case-Insensitive Matching.                                                                                                                   |
+| `m`              | Multiline               | Use multiline mode, where `^` and `$` match the beginning and end of each line (instead of the beginning and end of the input string). For more information, see Multiline Mode.                      |
+| `s`              | Singleline              | Use single-line mode, where the period (.) matches every character (instead of every character except `\n`). For more information, see Single-line Mode.                                              |
+| `n`              | ExplicitCapture         | Do not capture unnamed groups. The only valid captures are explicitly named or numbered groups of the form `(?&lt;`_name_`&gt;` _subexpression_`)`. For more information, see Explicit Captures Only. |
+| Not available    | Compiled                | Compile the regular expression to an assembly. For more information, see Compiled Regular Expressions.                                                                                                |
+| `x`              | IgnorePatternWhitespace | Exclude unescaped white space from the pattern, and enable comments after a number sign (`#`). For more information, see Ignore White Space.                                                          |
+| Not available    | RightToLeft             | Change the search direction. Search moves from right to left instead of from left to right. For more information, see Right-to-Left Mode.                                                             |
+| Not available    | ECMAScript              | Enable ECMAScript-compliant behavior for the expression. For more information, see ECMAScript Matching Behavior.                                                                                      | <tr>  |
+| Not available    | CultureInvariant        | Ignore cultural differences in language. For more information, see Comparison Using the Invariant Culture.                                                                                            | </tr> |
 
 ## Single Characters
 
@@ -71,14 +100,14 @@
 
 ## Quantifiers
 
-| Greedy  | Lazy   | Matches           |
-| ------- | ------ | ----------------- |
-| `*`     | *?     | 0 or more times   |
-| `+`     | +?     | 1 or more times   |
-| `?`     | ??     | 0 or 1 time       |
-| `{n}`   | {n}?   | Exactly n times   |
-| `{n,}`  | {n,}?  | At least n times  |
-| `{n,m}` | {n,m}? | From n to m times |
+| Greedy <br> _as many as possible_ | Lazy <br> _as few as possible_ | Matches           |
+| --------------------------------- | ------------------------------ | ----------------- |
+| `*`                               | *?                             | 0 or more times   |
+| `+`                               | +?                             | 1 or more times   |
+| `?`                               | ??                             | 0 or 1 time       |
+| `{n}`                             | {n}?                           | Exactly n times   |
+| `{n,}`                            | {n,}?                          | At least n times  |
+| `{n,m}`                           | {n,m}?                         | From n to m times |
 
 
 ## Anchors
@@ -214,5 +243,6 @@
 ## Sources 
 
 - 2022-01-26: [Quick Reference (MS Docs)](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference)
+- 2022-04-04: [Regular Expression Language - Quick Reference - Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference#regular-expression-options)
 - 2022-01-26: [Visual Studio (MS Docs)](https://docs.microsoft.com/en-us/visualstudio/ide/using-regular-expressions-in-visual-studio)
 - 2022-01-26: [🗎 .NET Framework Regular Expressions](regex.pdf)
