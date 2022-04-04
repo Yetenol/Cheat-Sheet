@@ -35,8 +35,9 @@ $User = Get-Host "Username"
   > `\s*` Any whitespace;  `(.*)` Unnamed group;     `(?<user>.*)` Named group called user
 
   ```powershell
+  $pattern = "(?i)^user"
   $object | foreach {
-    if ($_.Name -match "(?-i)^user") {
+    if ($_.Name -match $pattern) {
       Write-Output $_
     }
   }
