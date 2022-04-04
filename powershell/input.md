@@ -222,6 +222,23 @@ $securePassword = Read-Host "Password" -AsSecureString
 
 > _The last line prevents memory leaks._
 $SecurePassword = ConvertTo-SecureString $PlainPassword -AsPlainText -Force
+```powershell
+function Decrypt-SecureString {
+  [CmdletBinding()]
+  param(
+    [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
+    $SecureObject
+  )
+  $type = ($SecureObject).getType()
+  if ($type -eq [System.Security.SecureString]) {
+    Write-Output ([System.Net.NetworkCredential]::new("", $SecureObject).Password)
+  } elseif ($type -eq [System.Management.Automation.PSCredential]) {
+    Decrypt-SecureString -SecureObject $SecureObject.Password
+  } else {
+    Write-Error ("A positional parameter cannot be found that accepts type [" + [string]$($SecureObject.GetType().FullName) + "]")
+  }
+}
+```
 
 ```powershell
 function Decrypt-SecureString {
@@ -240,23 +257,6 @@ function Decrypt-SecureString {
     'credential' {
       Decrypt-SecureString -secureString $credential.Password
     }
-  }
-}
-```
-```powershell
-function Decrypt-SecureString {
-  [CmdletBinding()]
-  param(
-    [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
-    $SecureObject
-  )
-  $type = ($SecureObject).getType()
-  if ($type -eq [System.Security.SecureString]) {
-    Write-Output ([System.Net.NetworkCredential]::new("", $SecureObject).Password)
-  } elseif ($type -eq [System.Management.Automation.PSCredential]) {
-    Decrypt-SecureString -SecureObject $SecureObject.Password
-  } else {
-    Write-Error ("A positional parameter cannot be found that accepts type [" + [string]$($SecureObject.GetType().FullName) + "]")
   }
 }
 ```
