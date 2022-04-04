@@ -78,16 +78,17 @@ $User = Get-Host "Username"
 
 ## Find Pattern
 
-> `-match` uses [**Regular Expression**](../languages/regex.md) syntax  
+> Quick [**Regular Expression**](../languages/regex.md) Reference for `-match` and `[RegEx]::`  
 > `(?ENABLE-DISABLE)` [Interpretation Options](../languages/regex.md#engine-interpretation-options):  `i` IgnoreCase;  `n` ExplicitCapture;  `x` IgnorePatternWhitespace;  
-> `^` Start of line;  `$` End of line;  `.*` $\geq 0$ character(s);  `.+` $\geq 1$ character(s);  `\w*` Any word;  
+> `^` Start of line;  `$` End of line;  `.*` $\geq 0$ character(s);  `.+` $\geq 1$ character(s);  `\w*` Any word;  `\S*` Any non-whitespace;
 > `\s*` Any whitespace;  `(.*)` Unnamed group;     `(?<user>.*)` Named group called user
 
 - find **all** lines starting with _user_
 
   ```powershell
+  $pattern = "(?i)^user"
   $captures = $lines | foreach {
-    if ($_ -match "(?i)^user") {
+    if ($_ -match $pattern) {
       Write-Output $_
     }
   }
@@ -96,8 +97,9 @@ $User = Get-Host "Username"
   > `-ReadCount` speeds up the search when using large files as it sends the lines in 1k batches through the pipeline. Beware of slightly different formatting.
 
   ```powershell
+  $pattern = "(?i)^user"
   $captures = Get-Content -Path ".\example.txt" -ReadCount 1000 | foreach {
-    $_ -match "(?i)^user"
+    $_ -match $pattern
   }
   ```
 
@@ -115,9 +117,10 @@ $User = Get-Host "Username"
   ```
 
   ```powershell
+  $pattern = "(?i)^user"
   $capture = $null
   $lines | foreach {
-    if ($_ -match "(?i)^user") {
+    if ($_ -match $pattern) {
       $capture = $_
       break # stop further searching
     }
@@ -126,16 +129,16 @@ $User = Get-Host "Username"
 
   > `-ReadCount` is difficult to use here.
 
-- extract the username from the **first** line like: _Username: anna_
+- extract the username from the **first** line starting like: _Username: anna_
 
-  > `-match` uses [regular expression](../languages/regex.md) syntax  
-  > Options: `(?imnsx)`  
-  > `^` Start of line;  `$` End of line;  `.*` $\geq 0$ character(s);  `.+` $\geq 1$ character(s);  `\w*` Any word;  
+  > Quick [**Regular Expression**](../languages/regex.md) Reference for `-match` and `[RegEx]::`  
+  > `(?ENABLE-DISABLE)` [Interpretation Options](../languages/regex.md#engine-interpretation-options):  `i` IgnoreCase;  `n` ExplicitCapture;  `x` IgnorePatternWhitespace;  
+  > `^` Start of line;  `$` End of line;  `.*` $\geq 0$ character(s);  `.+` $\geq 1$ character(s);  `\w*` Any word;  `\S*` Any non-whitespace;
   > `\s*` Any whitespace;  `(.*)` Unnamed group;     `(?<user>.*)` Named group called user
 
   ```powershell
-  $pattern = '(?i)^\s*username:\s*(.*)\s*$'
-  # line example   ···Username:···anna··· 
+  $pattern = '(?i)^\s*username:\s*(\w*)\s*'
+  # line example   ···Username:···anna····[...] 
 
   $lines = Get-Content -Path ".\example.txt"
 
@@ -150,17 +153,19 @@ $User = Get-Host "Username"
   if (-not $capture) {
     Write-Error "No matching line found!"
   } else {
-    $regex = [RegEx]::Match($capture, $pattern, "IgnoreCase")
+    $regex = [RegEx]::Match($capture, $pattern)
     $username = $regex.Groups[1].value # matched groups start at index 1
     Write-Output @("Successfully extracted:", $username)
   }
   ```
 
-  - extract the credentials from **all** lines like: _User: anna Password: turtles\_48_
+- extract the credentials from **all** lines like: _User: anna Password: turtles\_48_
+
+  > to ignore all unnamed groups, set option `n`
 
   ```powershell
-  $pattern = '(?i)^\s*username:\s*(?<user>.*)\s*password:\s*(?<pwd>.*)\s*$'
-  # line example   ···Username:···annaSchmidt···Password:···turtles_48··· 
+  $pattern = '(?in)^\s*username:\s*(?<user>.*)\s*password:\s*(?<pwd>.*)\s*$'
+  # line example    ···Username:···annaSchmidt···Password:···turtles_48··· 
 
   $lines = Get-Content -Path ".\example.txt"
 
