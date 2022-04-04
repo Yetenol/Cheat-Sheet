@@ -1,44 +1,42 @@
 # [⌂](../README.md) › [Powershell](../README.md#powershell) › Input Handling
 
-# User input
+- [⌂ › [Powershell](../README.md#powershell) › Input Handling](#--powershell--input-handling)
+- [Type An Input With The Keyboard](#type-an-input-with-the-keyboard)
+- [.Net formatted file](#net-formatted-file)
+- [Plain text file](#plain-text-file)
+  - [Find Occurrences Of A Pattern](#find-occurrences-of-a-pattern)
+  - [Extract Data Using A Pattern](#extract-data-using-a-pattern)
+- [Sensitive input](#sensitive-input)
+  - [Enter sensitive input in console](#enter-sensitive-input-in-console)
+  - [Decrypt locally](#decrypt-locally)
 
-### Read keyboard input
+# Type An Input With The Keyboard
+
 ```powershell
 $User = Get-Host "Username"
 ```
 
 # .Net formatted file
 
-> _Use xml files to keep PowerShells Object formatting._
+> _Use xml files to keep the PowerShells Object formatting._
 
-- import an object from an .xml file
+- Import an **object** from an .xml file:
 
   ```powershell
   $object = Import-Clixml -Path ".\example.xml"
   ```
 
-- count its number of items
+- Count the elements of the object:
 
   ```powershell
-  $object = Import-Clixml -Path ".\example.xml"
   $object.Count
   ```
 
-  ```powershell
-  ($object = Import-Clixml -Path ".\example.xml").Count
-  ```
-
-- find all items whose name starts with _user_
-
-  > Quick [**Regular Expression**](../languages/regex.md) Reference for `-match` and `[RegEx]::`  
-  > `(?ENABLE-DISABLE)` [Interpretation Options](../languages/regex.md#engine-interpretation-options):  `i` IgnoreCase;  `n` ExplicitCapture;  `x` IgnorePatternWhitespace;  `m` Multiline;  `s` Singleline;  
-  > `^` Start of line;  `$` End of line;  `.*` ≥0 character(s);  `.+` ≥0 character(s);  `\w*` Any word;  `\S*` Any non-whitespace;
-  > `\s*` Any whitespace;  `(.*)` Unnamed group;     `(?<user>.*)` Named group called user
+- Find all an array's elements whose name contains `processor`:
 
   ```powershell
-  $pattern = "(?i)^user"
-  foreach ($_ in $object) {
-    if ($_.Name -match $pattern) {
+  $captures = foreach ($_ in $object) {
+    if ($_.Name -match "processor") {
       Write-Output $_
     }
   }
@@ -47,13 +45,13 @@ $User = Get-Host "Username"
 
 # Plain text file
 
-- import all lines from a plain text file
+- Import **all** lines from a plaintext file:
 
   ```powershell
   $lines = Get-Content -Path ".\example.txt"
   ```
 
-- only import (a) specific line(s)
+- Import only a specific line or **range of lines** from a plaintext file: 
 
   ```powershell
   $line26      = (Get-Content -Path ".\example.txt")[25]
@@ -67,15 +65,10 @@ $User = Get-Host "Username"
   $line23til26 = (Get-Content -Path ".\example.txt" -TotalCount 26)[22..25]
   ```
 
-- count number of lines
+- Count the number of lines:
 
   ```powershell
-  $lines = Get-Content -Path ".\example.txt"
   $lines.Count
-  ```
-
-  ```powershell
-  ($lines = Get-Content -Path ".\example.txt").Count
   ```
 
 ## Find Occurrences Of A Pattern
@@ -85,12 +78,12 @@ $User = Get-Host "Username"
 > `^` Start of line;  `$` End of line;  `.*` ≥0 character(s);  `.+` ≥0 character(s);  `\w*` Any word;  `\S*` Any non-whitespace;
 > `\s*` Any whitespace;  `(.*)` Unnamed group;     `(?<user>.*)` Named group called user
 
-Example: search for lines starting with _user_
+In the following, lines are searched for that begin with the word `user`, case-insensitive:
 ```powershell
 $pattern = "(?i)^user"
 ```
 
-- find the lines of **all** occurrences of the pattern
+- Find the lines of **all** occurrences of the pattern:
 
   ```powershell
   $captures = foreach ($_ in $lines) {
@@ -109,13 +102,13 @@ $pattern = "(?i)^user"
   ```
 
 
-- **count** occurrences of the pattern
+- **Count** the occurrences of the pattern:
 
   ```powershell
   $captures.Count
   ```
 
-- find the line of the **first** occurrence of the pattern
+- Find the line of the **first** occurrence of the pattern:
 
   ```powershell
   $capture = $captures[0]
@@ -141,7 +134,7 @@ $pattern = "(?i)^user"
 
 - Extract a **single** datum from the **first** occurrence of the pattern.
   
-  Get the username from lines that start with the listing of a user name.
+  Get the username from lines that start with the listing of a user name:
 
   ```powershell
   $pattern = '(?i)^\s*username:\s*(\w*)'
@@ -161,8 +154,8 @@ $pattern = "(?i)^user"
   ```
 
 - Extract **multiple** data from **each** occurrence of the pattern.
-  
-  Get the credentials from lines that list a username and password.
+
+  Get the credentials from lines that list a username and password:
 
   > Use option `n` (ExplicitCapture) to ignore all unnamed groups.
 
@@ -187,7 +180,7 @@ $pattern = "(?i)^user"
 
 - Extract from occurrences of a **multiline** pattern.
 
-  Get the title key pairs of listings in consecutive lines.
+  Get the title key pairs of listings in consecutive lines:
 
   > Use `[RegEx]::Matches` for **all** and `[RegEx]::Match` for the **first** occurrence of the pattern.
 
