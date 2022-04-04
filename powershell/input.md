@@ -210,10 +210,10 @@ $pattern = "(?i)^user"
 - <b> Don't save passwords as plain text </b>
 - Instead save them as a secure string and encrypt them locally.
 
-## Enter sensitive input in console
+## Enter Sensitive Input Into The Console
 
 ```powershell
-$Secure = Read-Host "Password" -AsSecureString
+$securePassword = Read-Host "Password" -AsSecureString
 ```
 
 ## Decrypt locally
@@ -221,9 +221,42 @@ $Secure = Read-Host "Password" -AsSecureString
 - Only the <b>SAME INSTANCE</b> can decrypt. 
 
 > _The last line prevents memory leaks._
+$SecurePassword = ConvertTo-SecureString $PlainPassword -AsPlainText -Force
 
 ```powershell
-$bstr = [System.Runtime.InteropServices.Marshal]::SecureStringToBSTR($Secure)
-$Plaintext [System.Runtime.InteropServices.Marshal]::PtrToStringAuto($bstr)
-[System.Runtime.InteropServices.Marshal]::ZeroFreeBSTR($bstr)
+function Decrypt-SecureString {
+  [CmdletBinding()]
+  param(
+    [Parameter(ParameterSetName='secureString', Position=0, ValueFromPipeline=$true)]
+    [System.Security.SecureString] $secureString
+    ,
+    [Parameter(ParameterSetName='credential', Position=0)]
+    [System.Management.Automation.PSCredential] $credential
+  )
+  switch ($PSCmdlet.ParameterSetName) {
+    'secureString' {
+      Write-Output ([System.Net.NetworkCredential]::new("", $secureString).Password)
+    }
+    'credential' {
+      Decrypt-SecureString -secureString $credential.Password
+    }
+  }
+}
+```
+```powershell
+function Decrypt-SecureString {
+  [CmdletBinding()]
+  param(
+    [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
+    $SecureObject
+  )
+  $type = ($SecureObject).getType()
+  if ($type -eq [System.Security.SecureString]) {
+    Write-Output ([System.Net.NetworkCredential]::new("", $SecureObject).Password)
+  } elseif ($type -eq [System.Management.Automation.PSCredential]) {
+    Decrypt-SecureString -SecureObject $SecureObject.Password
+  } else {
+    Write-Error ("A positional parameter cannot be found that accepts type [" + [string]$($SecureObject.GetType().FullName) + "]")
+  }
+}
 ```
