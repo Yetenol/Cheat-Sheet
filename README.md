@@ -18,7 +18,7 @@
 
 | Topic                                              | Example Component     | Example Code                                          |
 | -------------------------------------------------- | --------------------- | ----------------------------------------------------- |
-| [Getting Started](powershell/getting-started.md)   | Help cmdlets          | `script.ps1.bat`                                      |
+| [Getting Started](powershell/powershell.md)        | Help cmdlets          | `script.ps1.bat`                                      |
 | [Data Types](powershell/data-types.md)             | Hashtable             | `[DateTime]::Now`                                     |
 | [Input](powershell/input.md)                       | File Parsing          | `[RegEx]::Match($line, $regexFormat).Groups[1].value` |
 | [Output](powershell/output.md)                     | Custom Table View     | `Export-Clixml`                                       |
