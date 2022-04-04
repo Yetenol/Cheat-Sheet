@@ -20,16 +20,18 @@
 1. Image Rendering
 
     ```markdown
-    ![equation](https://render.githubusercontent.com/render/math?math=\int_0^1{\pi^2}\geq{}0)                                                                                                                                           
+    ![equation](https://render.githubusercontent.com/render/math?math=)                                                                                                                                           
     ```
 
     ![equation](https://render.githubusercontent.com/render/math?math=\int_0^1{\pi^2}\geq{}0)                                                                                                                                           
 
 
-1. HTML Image Rendering
+2. HTML Image Rendering
 
-    ```
-    <img src="https://render.githubusercontent.com/render/math?math=\int_0^1{\pi^2} \geq 0">
+    > Allows spaces in url.
+
+    ```html
+    <img src="https://render.githubusercontent.com/render/math?math=">
     ```
 
     <img src="https://render.githubusercontent.com/render/math?math=\int_0^1{\pi^2} \geq 0">
