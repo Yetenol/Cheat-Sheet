@@ -80,7 +80,7 @@ $User = Get-Host "Username"
 ## Find Pattern
 
 > Quick [**Regular Expression**](../languages/regex.md) Reference for `-match` and `[RegEx]::`  
-> `(?ENABLE-DISABLE)` [Interpretation Options](../languages/regex.md#engine-interpretation-options):  `i` IgnoreCase;  `n` ExplicitCapture;  `x` IgnorePatternWhitespace;  
+> `(?ENABLE-DISABLE)` [Interpretation Options](../languages/regex.md#engine-interpretation-options):  `i` IgnoreCase;  `n` ExplicitCapture;  `x` IgnorePatternWhitespace;  `m` Multiline;  `s` Singleline;  
 > `^` Start of line;  `$` End of line;  `.*` $\geq 0$ character(s);  `.+` $\geq 1$ character(s);  `\w*` Any word;  `\S*` Any non-whitespace;
 > `\s*` Any whitespace;  `(.*)` Unnamed group;     `(?<user>.*)` Named group called user
 
@@ -133,7 +133,7 @@ $User = Get-Host "Username"
 - extract the username from the **first** line starting like: _Username: anna_
 
   > Quick [**Regular Expression**](../languages/regex.md) Reference for `-match` and `[RegEx]::`  
-  > `(?ENABLE-DISABLE)` [Interpretation Options](../languages/regex.md#engine-interpretation-options):  `i` IgnoreCase;  `n` ExplicitCapture;  `x` IgnorePatternWhitespace;  
+  > `(?ENABLE-DISABLE)` [Interpretation Options](../languages/regex.md#engine-interpretation-options):  `i` IgnoreCase;  `n` ExplicitCapture;  `x` IgnorePatternWhitespace;  `m` Multiline;  `s` Singleline;  
   > `^` Start of line;  `$` End of line;  `.*` $\geq 0$ character(s);  `.+` $\geq 1$ character(s);  `\w*` Any word;  `\S*` Any non-whitespace;
   > `\s*` Any whitespace;  `(.*)` Unnamed group;     `(?<user>.*)` Named group called user
 
