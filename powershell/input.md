@@ -166,7 +166,7 @@ $User = Get-Host "Username"
   > to ignore all unnamed groups, set option `n`
 
   ```powershell
-  $pattern = '(?in)^\s*username:\s*(?<user>.*)\s*password:\s*(?<pwd>.*)\s*$'
+  $pattern = '(?in)^\s*username:\s*(?<user>\S*)\s*password:\s*(?<pwd>\S*)\s*$'
   # line example    ···Username:···annaSchmidt···Password:···turtles_48··· 
 
   $lines = Get-Content -Path ".\example.txt"
@@ -182,7 +182,7 @@ $User = Get-Host "Username"
   } else {
     $credentials = @()
     $captures | foreach {
-      $regex = [RegEx]::Match($_, $pattern, "IgnoreCase")
+      $regex = [RegEx]::Match($_, $pattern)
       $username = $regex.Groups["user"].value
       $password = $regex.Groups["pwd"].value
       $credentials += [PSCustomObject]@{ 
@@ -191,6 +191,27 @@ $User = Get-Host "Username"
       }
     }
     Write-Output @("Successfully extracted:", $credentials)
+  }
+  ```
+
+- find **multiline** paterns
+
+  > File is read using `-Raw` to import it as a single string instead of an array of lines.
+
+  ```powershell
+  $pattern = '(?inm)^name\s*:\s*(?<title>.*)\nvalue\s*:\s*(?<key>.*)$'
+  # lines example    Name···:···ProgramFiles 
+  #                  Value··:···C:\Program Files (x86)
+
+  $text = Get-Content -Path ".\example.txt" -Raw
+
+  $regex = [RegEx]::Matches($text, $pattern)
+  $regex | foreach {
+      $data = [PSCustomObject]@{
+        Title = $_.Groups["title"].value
+        Key = $_.Groups["key"].value
+      }
+      Write-Output $data
   }
   ```
 
