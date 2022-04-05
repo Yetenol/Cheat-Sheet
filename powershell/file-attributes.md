@@ -2,7 +2,7 @@
 
 ## .Net Attribute Flags
 
-Attributes are bitwise combination of the following fields:
+Attributes are bitwise combination of the following `[System.IO.FileAttributes]` fields:
 
 
 | Value                      | Name                 | Description                                                                                                                                                                                                                                                                                                                                                                 |
