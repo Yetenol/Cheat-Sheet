@@ -75,8 +75,11 @@ $item = Get-Item -Path ".\example.txt"
     ```
 
 - Display all attributes in a folder:
+  
+    > `(Get-ChildItem).Attributes` doesn't work with ¹⁾ attributes
+
     ```powershell
-    Get-ChildItem -Path "." `
+    Get-ChildItem `
     | select -Property Name, `
         @{Label="Value"; Expression={[int]$_.Attributes}}, `
         @{Label="Attributes"; Expression={
