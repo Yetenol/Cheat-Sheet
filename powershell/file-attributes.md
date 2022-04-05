@@ -24,6 +24,64 @@ Attributes are bitwise combination of the following fields:
 | `0x008000`  | 32768   | IntegrityStream   | The file or directory includes data integrity support. When this value is applied to a file, all data streams in the file have integrity support. When this value is applied to a directory, all new files and subdirectories within that directory, by default, include integrity support.                                                                                 |
 | `0x020000`  | 131072  | NoScrubData       | The file or directory is excluded from the data integrity scan. When this value is applied to a directory, by default, all new files and subdirectories within that directory are excluded from data integrity.                                                                                                                                                             |
 
+- Test a specific attribute:
+    ```powershell
+    function Test-Attribute {
+        [CmdletBinding()]
+        param (
+            [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
+            [ValidateNotNullOrEmpty()]
+            [string]$Path
+            ,
+            [ValidateSet('ReadOnly', 'Hidden', 'System', 'Directory', 'Archive', 'Device', 
+            'Normal', 'Temporary', 'SparseFile', 'ReparsePoint', 'Compressed', 'Offline', 
+            'NotContentIndexed', 'Encrypted', 'IntegrityStream', 'NoScrubData',
+            '1', '2', '4', '8', '16', '32', '64', '128', '256', '512', '1024', 
+            '2048', '4096', '8192', '16384', '32768', '65536', '131072', '262144', '524288', 
+            '1048576', '2097152', '4194304', '8388608', '16777216', '33554432', '67108864', 
+            '134217728', '268435456', '536870912', '1073741824')]
+            [Parameter(Mandatory=$true)]
+            $Attribute
+        )
+        $item = Get-Item -Path $Path -ErrorAction Stop
+        return [boolean]($item.Attributes -band $Attribute)
+    }
+    ```
+
+
+- Get all attributes:
+    ```powershell
+    function Get-Attributes {
+        [CmdletBinding()]
+        param(
+            [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
+            [ValidateNotNullOrEmpty()]
+            [string]$Path
+        )
+        foreach ($_ in 0..30) {
+            [int]$value = [Math]::Pow(2, $_)
+            if (Test-Attribute -Path $Path -Attribute $value) {
+                Write-Output ([Enum]::Parse([System.IO.FileAttributes], $value))
+            }
+        }
+    }
+    ```
+
+- Show attributes in current folder:
+    ```powershell
+    Get-ChildItem . `
+    | select -Property Name, `
+        @{Label="Flags"; Expression={[int]$_.Attributes}}, `
+        @{Label="Attributes"; Expression={Get-Attributes -Path $_}}
+    ```
+
+## Useful Combinations
+
+| Hexadecimal            | Description                     | Fields                                     | Target | Name |
+| ---------------------- | ------------------------------- | ------------------------------------------ | ------ | ---- |
+| `0x080410` <br> 525328 | Always available on this device | `0x000010` <br> `0x000400` <br> `0x008000` |        |      |
+| `0x080420` <br> 525344 |                                 | `0x000020` <br> `0x000400` <br> `0x008000` |        |      |
+
 - List all valid attributes:
     ```powershell
     function List-ValidAttributes {
@@ -41,122 +99,6 @@ Attributes are bitwise combination of the following fields:
         }
     }
     ```
-
-- Test a specific attribute:
-```powershell
-function Test-Attribute {
-    [CmdletBinding()]
-    param (
-        [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
-        [ValidateNotNullOrEmpty()]
-        [string]$Path
-        ,
-        # [ValidateSet("ReadOnly", "Hidden", "System", "Directory", "Archive", "Device", 
-        # "Normal", "Temporary", "SparseFile", "ReparsePoint", "Compressed", "Offline", 
-        # "NotContentIndexed", "Encrypted", "IntegrityStream", "NoScrubData")]
-        [Parameter(Mandatory=$true)]
-        [ValidateNotNullOrEmpty()]
-        [System.IO.FileAttributes]$Attribute
-    )
-    $item = Get-Item -Path $Path -ErrorAction Stop
-    return [boolean]($item.Attributes -band $Attribute)
-}
-```
-```powershell
-function Test-Attribute {
-    [CmdletBinding()]
-    param (
-        [Parameter(Mandatory=$true, ValueFromPipeline=$true, Position=0)]
-        [ValidateNotNullOrEmpty()]
-        [string]$Path
-        ,
-        [ValidateSet('ReadOnly', 'Hidden', 'System', 'Directory', 'Archive', 'Device', 
-        'Normal', 'Temporary', 'SparseFile', 'ReparsePoint', 'Compressed', 'Offline', 
-        'NotContentIndexed', 'Encrypted', 'IntegrityStream', 'NoScrubData')]
-        [Parameter(ParameterSetName='Attribute', Position=1)]
-        [System.IO.FileAttributes]$Attribute
-        ,
-        [ValidateSet('1', '2', '4', '8', '16', '32', '64', '128', '256', '512', '1024', 
-        '2048', '4096', '8192', '16384', '32768', '65536', '131072', '262144', '524288', 
-        '1048576', '2097152', '4194304', '8388608', '16777216', '33554432', '67108864', 
-        '134217728', '268435456', '536870912', '1073741824')]
-        [Parameter(ParameterSetName='Value', Position=1)]
-        [int]$Value
-    )
-
-    switch ($PSCmdlet.ParameterSetName) {
-        'Attribute' {
-            $Value = $Attribute.value
-        }
-        'Value' {
-        }
-        default {
-            Write-Error "Missing parameter Attribute or Value!"
-            return
-        }
-    }
-    $item = Get-Item -Path $Path -ErrorAction Stop
-    return [boolean]($item.Attributes -band $Value)
-}
-```
-```powershell
-function Test-Attribute {
-    [CmdletBinding()]
-    param (
-        [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
-        [ValidateNotNullOrEmpty()]
-        [string]$Path
-        ,
-        [ValidateSet('ReadOnly', 'Hidden', 'System', 'Directory', 'Archive', 'Device', 
-        'Normal', 'Temporary', 'SparseFile', 'ReparsePoint', 'Compressed', 'Offline', 
-        'NotContentIndexed', 'Encrypted', 'IntegrityStream', 'NoScrubData',
-        '1', '2', '4', '8', '16', '32', '64', '128', '256', '512', '1024', 
-        '2048', '4096', '8192', '16384', '32768', '65536', '131072', '262144', '524288', 
-        '1048576', '2097152', '4194304', '8388608', '16777216', '33554432', '67108864', 
-        '134217728', '268435456', '536870912', '1073741824')]
-        [Parameter(Mandatory=$true)]
-        $Attribute
-    )
-    $item = Get-Item -Path $Path -ErrorAction Stop
-    return [boolean]($item.Attributes -band $Attribute)
-}
-```
-
-
-- Get all attributes:
-    ```powershell
-    function Get-Attribute {
-        [CmdletBinding()]
-        param(
-            [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
-            [ValidateNotNullOrEmpty()]
-            [string]$Path
-        )
-        foreach ($_ in 0..30) {
-            [int]$flag = [Math]::Pow(2, $_)
-            $item = Get-Item -Path $Path -ErrorAction Stop
-            if ($item.Attributes -band $flag) {
-                Write-Output ([Enum]::Parse([System.IO.FileAttributes], $flag))
-            }
-        }
-    }
-    ```
-
-- Show attributes in current folder:
-    ```powershell
-    Get-ChildItem . `
-    | select -Property Name, `
-        @{Label="Flags"; Expression={[int]$_.Attributes}}, `
-        @{Label="Attributes"; Expression={Get-Attribute -Path $_}}
-    ```
-
-## Useful Combinations
-
-| Hexadecimal            | Description                     | Fields                                     | Target | Name |
-| ---------------------- | ------------------------------- | ------------------------------------------ | ------ | ---- |
-| `0x080410` <br> 525328 | Always available on this device | `0x000010` <br> `0x000400` <br> `0x008000` |        |      |
-| `0x080420` <br> 525344 |                                 | `0x000020` <br> `0x000400` <br> `0x008000` |        |      |
-
 
 ## Get attributes
 ```powershell
