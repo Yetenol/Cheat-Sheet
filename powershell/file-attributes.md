@@ -35,7 +35,7 @@ function Test-Attribute {
     param (
         [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
         [ValidateNotNullOrEmpty()]
-        [string]$Path
+        $Path
         ,
         [ValidateSet('ReadOnly', 'Hidden', 'System', 'Directory', 'Archive', 'Device', 
         'Normal', 'Temporary', 'SparseFile', 'ReparsePoint', 'Compressed', 'Offline', 
@@ -47,6 +47,14 @@ function Test-Attribute {
         [Parameter(Mandatory=$true)]
         $Attribute
     )
+    switch (($Path).GetType()) {
+        'System.IO.FileInfo' {
+            $Path = $Path.FullName
+        }
+        'System.IO.DirectoryInfo' {
+            $Path = $Path.FullName
+        }
+    }
     $item = Get-Item -Path $Path -ErrorAction Stop
     return [boolean]($item.Attributes -band $Attribute)
 }
@@ -59,8 +67,16 @@ function Get-Attributes {
     param(
         [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
         [ValidateNotNullOrEmpty()]
-        [string]$Path
+        $Path
     )
+    switch (($Path).GetType()) {
+        'System.IO.FileInfo' {
+            $Path = $Path.FullName
+        }
+        'System.IO.DirectoryInfo' {
+            $Path = $Path.FullName
+        }
+    }
     foreach ($_ in 0..30) {
         [int]$value = [Math]::Pow(2, $_)
         if (Test-Attribute -Path $Path -Attribute $value) {
@@ -85,7 +101,7 @@ function Enable-Attribute {
     param (
         [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
         [ValidateNotNullOrEmpty()]
-        [string]$Path
+        $Path
         ,
         [ValidateSet('ReadOnly', 'Hidden', 'System', 'Directory', 'Archive', 'Device', 
         'Normal', 'Temporary', 'SparseFile', 'ReparsePoint', 'Compressed', 'Offline', 
@@ -97,6 +113,14 @@ function Enable-Attribute {
         [Parameter(Mandatory=$true)]
         $Attribute
     )
+    switch (($Path).GetType()) {
+        'System.IO.FileInfo' {
+            $Path = $Path.FullName
+        }
+        'System.IO.DirectoryInfo' {
+            $Path = $Path.FullName
+        }
+    }
     $item = Get-Item -Path $Path -ErrorAction Stop
     $item.Attributes = $item.Attributes -bor [int]$Attribute
 }
@@ -109,7 +133,7 @@ function Disable-Attribute {
     param (
         [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
         [ValidateNotNullOrEmpty()]
-        [string]$Path
+        $Path
         ,
         [ValidateSet('ReadOnly', 'Hidden', 'System', 'Directory', 'Archive', 'Device', 
         'Normal', 'Temporary', 'SparseFile', 'ReparsePoint', 'Compressed', 'Offline', 
@@ -121,6 +145,14 @@ function Disable-Attribute {
         [Parameter(Mandatory=$true)]
         $Attribute
     )
+    switch (($Path).GetType()) {
+        'System.IO.FileInfo' {
+            $Path = $Path.FullName
+        }
+        'System.IO.DirectoryInfo' {
+            $Path = $Path.FullName
+        }
+    }
     $item = Get-Item -Path $Path -ErrorAction Stop
     $item.Attributes = $item.Attributes -bxor [int]$Attribute
 }
