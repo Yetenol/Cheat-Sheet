@@ -62,6 +62,66 @@ function Test-Attribute {
     return [boolean]($item.Attributes -band $Attribute)
 }
 ```
+```powershell
+function Test-Attribute {
+    [CmdletBinding()]
+    param (
+        [Parameter(Mandatory=$true, ValueFromPipeline=$true, Position=0)]
+        [ValidateNotNullOrEmpty()]
+        [string]$Path
+        ,
+        [ValidateSet('ReadOnly', 'Hidden', 'System', 'Directory', 'Archive', 'Device', 
+        'Normal', 'Temporary', 'SparseFile', 'ReparsePoint', 'Compressed', 'Offline', 
+        'NotContentIndexed', 'Encrypted', 'IntegrityStream', 'NoScrubData')]
+        [Parameter(ParameterSetName='Attribute', Position=1)]
+        [System.IO.FileAttributes]$Attribute
+        ,
+        [ValidateSet('1', '2', '4', '8', '16', '32', '64', '128', '256', '512', '1024', 
+        '2048', '4096', '8192', '16384', '32768', '65536', '131072', '262144', '524288', 
+        '1048576', '2097152', '4194304', '8388608', '16777216', '33554432', '67108864', 
+        '134217728', '268435456', '536870912', '1073741824')]
+        [Parameter(ParameterSetName='Value', Position=1)]
+        [int]$Value
+    )
+
+    switch ($PSCmdlet.ParameterSetName) {
+        'Attribute' {
+            $Value = $Attribute.value
+        }
+        'Value' {
+        }
+        default {
+            Write-Error "Missing parameter Attribute or Value!"
+            return
+        }
+    }
+    $item = Get-Item -Path $Path -ErrorAction Stop
+    return [boolean]($item.Attributes -band $Value)
+}
+```
+```powershell
+function Test-Attribute {
+    [CmdletBinding()]
+    param (
+        [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
+        [ValidateNotNullOrEmpty()]
+        [string]$Path
+        ,
+        [ValidateSet('ReadOnly', 'Hidden', 'System', 'Directory', 'Archive', 'Device', 
+        'Normal', 'Temporary', 'SparseFile', 'ReparsePoint', 'Compressed', 'Offline', 
+        'NotContentIndexed', 'Encrypted', 'IntegrityStream', 'NoScrubData',
+        '1', '2', '4', '8', '16', '32', '64', '128', '256', '512', '1024', 
+        '2048', '4096', '8192', '16384', '32768', '65536', '131072', '262144', '524288', 
+        '1048576', '2097152', '4194304', '8388608', '16777216', '33554432', '67108864', 
+        '134217728', '268435456', '536870912', '1073741824')]
+        [Parameter(Mandatory=$true)]
+        $Attribute
+    )
+    $item = Get-Item -Path $Path -ErrorAction Stop
+    return [boolean]($item.Attributes -band $Attribute)
+}
+```
+
 
 - Get all attributes:
     ```powershell
@@ -86,7 +146,7 @@ function Test-Attribute {
     ```powershell
     Get-ChildItem . `
     | select -Property Name, `
-        @{Label="Flag"; Expression={[int]$_.Attributes}}, `
+        @{Label="Flags"; Expression={[int]$_.Attributes}}, `
         @{Label="Attributes"; Expression={Get-Attribute -Path $_}}
     ```
 
