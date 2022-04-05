@@ -27,7 +27,7 @@
 | [Interactive Menu](powershell/menu.md)             | Select option 1, 2, 3 | `$Choice = Read-Host "Select ..."`                    |
 | [Encryption](powershell/encryption.md)             | Passwords             | `ConvertTo-SecureString`                              |
 | [Bluetooth](powershell/bluetooth.md)               | List devices          | `Get-PnpDevice -Class Bluetooth`                      |
-| [File attributes](powershell/file-attributes.md)   | make read-only        | `function Set-FileAttribute{}`                        |
+| [File attributes](powershell/file-attributes.md)   | make read-only        | `$item.Attributes = $item.Attributes -bor 0x080000`   |
 
 
 ### LaTeX
