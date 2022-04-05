@@ -28,157 +28,81 @@ Attributes are bitwise combination of the following fields:
 
 > ¹⁾ Non part of the official .Net documentation but official Windows behavior.
 
-## Test A Specific Attribute:
+## Modify Attributes
 ```powershell
-function Test-Attribute {
-    [CmdletBinding()]
-    param (
-        [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
-        [ValidateNotNullOrEmpty()]
-        $Path
-        ,
-        [ValidateSet('ReadOnly', 'Hidden', 'System', 'Directory', 'Archive', 'Device', 
-        'Normal', 'Temporary', 'SparseFile', 'ReparsePoint', 'Compressed', 'Offline', 
-        'NotContentIndexed', 'Encrypted', 'IntegrityStream', 'NoScrubData',
-        '1', '2', '4', '8', '16', '32', '64', '128', '256', '512', '1024', 
-        '2048', '4096', '8192', '16384', '32768', '65536', '131072', '262144', '524288', 
-        '1048576', '2097152', '4194304', '8388608', '16777216', '33554432', '67108864', 
-        '134217728', '268435456', '536870912', '1073741824')]
-        [Parameter(Mandatory=$true)]
-        $Attribute
-    )
-    switch (($Path).GetType()) {
-        'System.IO.FileInfo' {
-            $Path = $Path.FullName
-        }
-        'System.IO.DirectoryInfo' {
-            $Path = $Path.FullName
-        }
-    }
-    $item = Get-Item -Path $Path -ErrorAction Stop
-    return [boolean]($item.Attributes -band $Attribute)
-}
+$item = Get-Item -Path ".\example.txt"
 ```
 
-## Get All Attributes:
-```powershell
-function Get-Attributes {
-    [CmdletBinding()]
-    param(
-        [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
-        [ValidateNotNullOrEmpty()]
-        $Path
-    )
-    switch (($Path).GetType()) {
-        'System.IO.FileInfo' {
-            $Path = $Path.FullName
-        }
-        'System.IO.DirectoryInfo' {
-            $Path = $Path.FullName
-        }
-    }
-    foreach ($_ in 0..30) {
-        [int]$value = [Math]::Pow(2, $_)
-        if (Test-Attribute -Path $Path -Attribute $value) {
+- Test an attribute:
+    ```powershell
+    [bool]($item.Attributes -band [System.IO.FileAttributes]::ReadOnly) # is read only?
+    [bool]($item.Attributes -band 0x080000) # is always available on this device?
+    ```
+
+- Enable an attribute:
+    ```powershell
+    $item.Attributes = $item.Attributes -bor 0x080000
+    ```
+
+- Disable an attribute:
+    ```powershell
+    $item.Attributes = $item.Attributes -bxor 0x080000
+    ```
+    
+- List all attributes
+    ```powershell
+    foreach ($n in 0..30) {
+        [int]$value = [Math]::Pow(2, $n)
+        if ([bool]($item.Attributes -band $value)) {
             Write-Output ([Enum]::Parse([System.IO.FileAttributes], $value))
         }
     }
-}
-```
+    ```
 
-## Show Attributes In Current Folder:
-```powershell
-Get-ChildItem . `
-| select -Property Name, `
-    @{Label="Flags"; Expression={[int]$_.Attributes}}, `
-    @{Label="Attributes"; Expression={Get-Attributes -Path $_}}
-```
 
-## Enable A Specific Attribute:
-```powershell
-function Enable-Attribute {
-    [CmdletBinding()]
-    param (
-        [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
-        [ValidateNotNullOrEmpty()]
-        $Path
-        ,
-        [ValidateSet('ReadOnly', 'Hidden', 'System', 'Directory', 'Archive', 'Device', 
-        'Normal', 'Temporary', 'SparseFile', 'ReparsePoint', 'Compressed', 'Offline', 
-        'NotContentIndexed', 'Encrypted', 'IntegrityStream', 'NoScrubData',
-        '1', '2', '4', '8', '16', '32', '64', '128', '256', '512', '1024', 
-        '2048', '4096', '8192', '16384', '32768', '65536', '131072', '262144', '524288', 
-        '1048576', '2097152', '4194304', '8388608', '16777216', '33554432', '67108864', 
-        '134217728', '268435456', '536870912', '1073741824')]
-        [Parameter(Mandatory=$true)]
-        $Attribute
-    )
-    switch (($Path).GetType()) {
-        'System.IO.FileInfo' {
-            $Path = $Path.FullName
-        }
-        'System.IO.DirectoryInfo' {
-            $Path = $Path.FullName
-        }
+## Examples
+
+- Recursively enable _AlwaysAvailable_ for a folder and all its subfolders
+    ```powershell
+    $directoryPath = ".\example\"
+    $list = @()
+    $list += Get-Item -Path $directoryPath # add itself
+    $list += Get-ChildItem -Path $directoryPath -Recurse | where {$_.PSIsContainer} | Get-Item # add directories
+    $list += Get-ChildItem -Path $directoryPath -Recurse -File # add files
+    foreach ($item in $list) {
+        $item.Attributes = $item.Attributes -bor 0x080000
     }
-    $item = Get-Item -Path $Path -ErrorAction Stop
-    $item.Attributes = $item.Attributes -bor [int]$Attribute
-}
-```
+    ```
 
-## Disable A Specific Attribute:
-```powershell
-function Disable-Attribute {
-    [CmdletBinding()]
-    param (
-        [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
-        [ValidateNotNullOrEmpty()]
-        $Path
-        ,
-        [ValidateSet('ReadOnly', 'Hidden', 'System', 'Directory', 'Archive', 'Device', 
-        'Normal', 'Temporary', 'SparseFile', 'ReparsePoint', 'Compressed', 'Offline', 
-        'NotContentIndexed', 'Encrypted', 'IntegrityStream', 'NoScrubData',
-        '1', '2', '4', '8', '16', '32', '64', '128', '256', '512', '1024', 
-        '2048', '4096', '8192', '16384', '32768', '65536', '131072', '262144', '524288', 
-        '1048576', '2097152', '4194304', '8388608', '16777216', '33554432', '67108864', 
-        '134217728', '268435456', '536870912', '1073741824')]
-        [Parameter(Mandatory=$true)]
-        $Attribute
-    )
-    switch (($Path).GetType()) {
-        'System.IO.FileInfo' {
-            $Path = $Path.FullName
-        }
-        'System.IO.DirectoryInfo' {
-            $Path = $Path.FullName
-        }
-    }
-    $item = Get-Item -Path $Path -ErrorAction Stop
-    $item.Attributes = $item.Attributes -bxor [int]$Attribute
-}
-```
+- Display all attributes in a folder:
+    ```powershell
+    Get-ChildItem -Path "." `
+    | select -Property Name, `
+        @{Label="Value"; Expression={[int]$_.Attributes}}, `
+        @{Label="Attributes"; Expression={
+            foreach ($n in 0..30) {
+                [int]$value = [Math]::Pow(2, $n)
+                if ([bool]($_.Attributes -band $value)) {
+                    Write-Output ([Enum]::Parse([System.IO.FileAttributes], $value))
+                }
+            }
+        }}
+    ```
 
-## Useful Combinations
-
-| Hexadecimal            | Description                     | Fields                                     | Target | Name |
-| ---------------------- | ------------------------------- | ------------------------------------------ | ------ | ---- |
-| `0x080410` <br> 525328 | Always available on this device | `0x000010` <br> `0x000400` <br> `0x008000` |        |      |
-| `0x080420` <br> 525344 |                                 | `0x000020` <br> `0x000400` <br> `0x008000` |        |      |
+## Other
 
 - List all valid attributes:
     ```powershell
-    function List-ValidAttributes {
-        foreach ($_ in 0..30) {
-            [int]$flag = [Math]::Pow(2, $_)
-            $possibleName = [Enum]::Parse([System.IO.FileAttributes], $flag)
-            if ($possibleName -match "\D+") {
-                $hexFlag = ("0x" + [System.String]::Format("{0:X6}",$flag))
-                Write-Output ([PSCustomObject]@{ 
-                Decimal = $flag
-                Hexadecimal = $hexFlag
+    foreach ($_ in 0..30) {
+        [int]$value = [Math]::Pow(2, $_)
+        $possibleName = [Enum]::Parse([System.IO.FileAttributes], $value)
+        if ($possibleName -match "\D+") {
+            $hexValue = ("0x" + [System.String]::Format("{0:X6}",$value))
+            Write-Output ([PSCustomObject]@{ 
+                Decimal = $value
+                Hexadecimal = $hexValue
                 Name = $possibleName
             })
-            }
         }
     }
     ```
