@@ -19,7 +19,7 @@ Give the existing start and end commands of the environment aliases to be able t
 ```
 
 Expand the existing environment.
-```
+```latex
 \renewenvironment{quote}
 {
     \oldquote % begin{quote}

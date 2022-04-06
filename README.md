@@ -32,15 +32,15 @@
 
 ### LaTeX
 
-| Topic                                 | Example Component | Example Code          |
-| ------------------------------------- | ----------------- | --------------------- |
-| [Getting Started](latex/latex.md)     | set page margins  | `texdoc PACKAGE_NAME` |
-| [Debugging](latex/debugging.md)       | draft output      |
-| [Environments](latex/environments.md) |                   |
-| [Floats](latex/floats.md)             |                   |
-| [Packages](latex/packages.md)         |                   |
-| [Spacing](latex/spacing.md)           |                   |
-| [Tables](latex/tables.md)             |                   |
+| Topic                                 | Example Component            | Example Code                     |
+| ------------------------------------- | ---------------------------- | -------------------------------- |
+| [Getting Started](latex/latex.md)     | set page margins             | `texdoc PACKAGE_NAME`            |
+| [Debugging](latex/debugging.md)       | draft, syntax only           | `\documentclass[draft]{article}` |
+| [Environments](latex/environments.md) | modify existing environments | `\usepackage{etoolbox}`          |
+| [Floats](latex/floats.md)             |                              |
+| [Packages](latex/packages.md)         |                              |
+| [Spacing](latex/spacing.md)           |                              |
+| [Tables](latex/tables.md)             |                              |
 
 
 
