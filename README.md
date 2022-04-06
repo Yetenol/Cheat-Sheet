@@ -19,16 +19,16 @@
 
 | Topic                                              | Example Component     | Example Code                                          |
 | -------------------------------------------------- | --------------------- | ----------------------------------------------------- |
-| [Getting Started](powershell/powershell.md)        | Help cmdlets          | `script.ps1.bat`                                      |
+| [Getting Started](powershell/powershell.md)        | Help Cmdlets          | `script.ps1.bat`                                      |
 | [Data Types](powershell/data-types.md)             | Hashtable             | `[DateTime]::Now`                                     |
 | [Input](powershell/input.md)                       | File Parsing          | `[RegEx]::Match($line, $regexFormat).Groups[1].value` |
 | [Output](powershell/output.md)                     | Custom Table View     | `Export-Clixml`                                       |
 | [Bash equivalents](powershell/bash-equivalents.md) | While Loop            | `read name` <-> `$name = Read-Host "Name"`            |
-| [Applications](powershell/applications.md)         | Update store apps     | `$wmiObj.UpdateScanMethod()`                          |
+| [Applications](powershell/applications.md)         | Update Store Apps     | `$wmiObj.UpdateScanMethod()`                          |
 | [Interactive Menu](powershell/menu.md)             | Select option 1, 2, 3 | `$Choice = Read-Host "Select ..."`                    |
 | [Encryption](powershell/encryption.md)             | Passwords             | `ConvertTo-SecureString`                              |
-| [Bluetooth](powershell/bluetooth.md)               | List devices          | `Get-PnpDevice -Class Bluetooth`                      |
-| [File attributes](powershell/file-attributes.md)   | make read-only        | `$item.Attributes = $item.Attributes -bor 0x080000`   |
+| [Bluetooth](powershell/bluetooth.md)               | List Devices          | `Get-PnpDevice -Class Bluetooth`                      |
+| [File attributes](powershell/file-attributes.md)   | Make ReadOnly         | `$item.Attributes = $item.Attributes -bor 0x080000`   |
 
 
 ### LaTeX
@@ -48,19 +48,19 @@
 
 ### Languages, Encodings
 
-| Topic                                            | Example Component  | Example Code                                                                      |
-| ------------------------------------------------ | ------------------ | --------------------------------------------------------------------------------- |
-| [Unicode](languages/unicode.md)                  | Character sorting  | `!` `+` `Ξ`                                                                       |
-| [Git](languages/git.md)                          |
-| [AutoHotkey v1](languages/autohotkey.md)         | Get program stdout | `Shell := ComObjCreate("WScript.Shell")`                                          |
-| [Regular Expression (RegEx)](languages/regex.md) |
-| C › [GNU Debugger](languages/gdb.md)             |
-| Minecraft › [Datapacks](languages/minecraft.md)  |
-| [Markdown](languages/markdown.md)                | LaTeX Render       | <img src="https://render.githubusercontent.com/render/math?math=\int_0^1{\pi^2}"> |
+| Topic                                            | Example Component           | Example Code                                                                      |
+| ------------------------------------------------ | --------------------------- | --------------------------------------------------------------------------------- |
+| [Unicode](languages/unicode.md)                  | Character Sorting           | `!` `+` `Ξ`                                                                       |
+| [Git](languages/git.md)                          | Commit History: Delete File | `git clone https://yetenol@github.com/yetenol/`                                   |
+| [AutoHotkey v1](languages/autohotkey.md)         | Get Program stdout          | `Shell := ComObjCreate("WScript.Shell")`                                          |
+| [Regular Expression (RegEx)](languages/regex.md) | Quantifiers                 | `(?in)user:(?<name>\S*)\s*key:(?<pwd>\S*)`                                        |
+| C › [GNU Debugger](languages/gdb.md)             | Examinate Variables         | `break`                                                                           |
+| Minecraft › [Datapacks](languages/minecraft.md)  | Leash Decorations           | `kill @e[type=item,nbt={Item:{id:"minecraft:wool"}}]`                             |
+| [Markdown](languages/markdown.md)                | LaTeX Render                | <img src="https://render.githubusercontent.com/render/math?math=\int_0^1{\pi^2}"> |
 
 
 ### Apps
 
-- [Excel](apps/excel.md)
-
-
+| Topic                  | Example Component | Example Code                                            |
+| ---------------------- | ----------------- | ------------------------------------------------------- |
+| [Excel](apps/excel.md) | Empty Range?      | `=IF(SUMPRODUCT(--(A1:C4<>""))<>0,"not empty","empty")` |
