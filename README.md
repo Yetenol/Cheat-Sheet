@@ -59,7 +59,7 @@
 | [Markdown](languages/markdown.md)                | LaTeX Render                | <img src="https://render.githubusercontent.com/render/math?math=\int_0^1{\pi^2}"> |
 
 
-### Apps
+### Applications
 
 | Topic                  | Example Component | Example Code                                            |
 | ---------------------- | ----------------- | ------------------------------------------------------- |
