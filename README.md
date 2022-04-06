@@ -32,15 +32,15 @@
 
 ### LaTeX
 
-| Topic                                 | Example Component            | Example Code                     |
-| ------------------------------------- | ---------------------------- | -------------------------------- |
-| [Getting Started](latex/latex.md)     | set page margins             | `texdoc PACKAGE_NAME`            |
-| [Debugging](latex/debugging.md)       | draft, syntax only           | `\documentclass[draft]{article}` |
-| [Environments](latex/environments.md) | modify existing environments | `\usepackage{etoolbox}`          |
-| [Floats](latex/floats.md)             |                              |
-| [Packages](latex/packages.md)         |                              |
-| [Spacing](latex/spacing.md)           |                              |
-| [Tables](latex/tables.md)             |                              |
+| Topic                                 | Example Component            | Example Code                                       |
+| ------------------------------------- | ---------------------------- | -------------------------------------------------- |
+| [Getting Started](latex/latex.md)     | Page Margins                 | `texdoc PACKAGE_NAME`                              |
+| [Debugging](latex/debugging.md)       | Syntax Only                  | `\documentclass[draft]{article}`                   |
+| [Environments](latex/environments.md) | Modify Existing Environments | `\usepackage{etoolbox}`                            |
+| [Floats](latex/floats.md)             | Images                       | `\begin{figure}[htbp]`                             |
+| [Useful Packages](latex/packages.md)  | Lipsum Text                  | `\usepackage[utf8]{inputenc}`                      |
+| [Spacing](latex/spacing.md)           | Hyphenation                  | `\!` `\,` `\:` `\;` `\quad` `\qquad`               |
+| [Tables](latex/tables.md)             | TABULARX                     | `\begin{tabularx}{\columnwidth}{X\|p{1.7cm}\|C\|}` |
 
 
 
