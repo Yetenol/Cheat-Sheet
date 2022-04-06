@@ -36,6 +36,25 @@
 
     <img src="https://render.githubusercontent.com/render/math?math=\int_0^1{\pi^2} \geq 0">
 
+## Special Character Escaping
+
+| Character | Escape Code                 | Name                |
+| --------- | --------------------------- | ------------------- |
+| \         | `\\\\`                      | backslash           |
+| &#96;     | \\&#96; <br> `&#96;`        | backtick            |
+| &#96;     | &#96;&#96; &#96; &#96;&#96; | backtick in code    |
+| \*        | `\*`                        | asterisk            |
+| \_        | `\_`                        | underscore          |
+| \{ \}     | `\{` `\}`                   | curly braces        |
+| \[ \]     | `\[` `\]`                   | brackets            |
+| \< \>     | `\<` `\>`                   | angle brackets      |
+| \( \)     | `\(` `\)`                   | parentheses         |
+| \#        | `\#`                        | pound sign          |
+| \+        | `\+`                        | plus sign           |
+| \-        | `\-`                        | minus sign (hyphen) |
+| \.        | `\.`                        | dot                 |
+| \!        | `\!`                        | exclamation mark    |
+| \|        | `\\|` <br> `&#124;`         | pipe                |
 
 ## Sources
 
