@@ -32,11 +32,17 @@
 
 ### LaTeX
 
-| Topic                                       | Example Component | Example Code |
-| ------------------------------------------- | ----------------- | ------------ |
-| [Getting Started](latex/getting-started.md) |
-| [Figures](latex/figures.md)                 |
-| [Packages](latex/packages.md)               |
+| Topic                                 | Example Component | Example Code          |
+| ------------------------------------- | ----------------- | --------------------- |
+| [Getting Started](latex/latex.md)     | set page margins  | `texdoc PACKAGE_NAME` |
+| [Debugging](latex/debugging.md)       | draft output      |
+| [Environments](latex/environments.md) |                   |
+| [Floats](latex/floats.md)             |                   |
+| [Packages](latex/packages.md)         |                   |
+| [Spacing](latex/spacing.md)           |                   |
+| [Tables](latex/tables.md)             |                   |
+
+
 
 
 ### Languages, Encodings
