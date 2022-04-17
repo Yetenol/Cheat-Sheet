@@ -169,8 +169,8 @@ $pattern = "(?i)^user"
     $regex = [RegEx]::Match($_, $pattern)
     if ($regex.Success) {
       Write-Output ([PSCustomObject]@{ 
-        Username = $regex.Groups["user"].value
-        Password = $regex.Groups["pwd"].value
+        Username = $regex.Groups["user"].value;
+        Password = $regex.Groups["pwd"].value;
       })
     }
   }
@@ -197,8 +197,8 @@ $pattern = "(?i)^user"
   $regex = [RegEx]::Matches($text, $pattern)
   $captures = foreach ($_ in $regex) {
     Write-Output ([PSCustomObject]@{
-      Title = $_.Groups["title"].value
-      Key   = $_.Groups["key"].value
+      Title = $_.Groups["title"].value;
+      Key   = $_.Groups["key"].value;
     })
   }
 
