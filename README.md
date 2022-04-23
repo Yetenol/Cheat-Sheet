@@ -5,17 +5,17 @@
 
 ### Windows
 
-| Topic                                                           | Example Component        | Example Code                      |
-| --------------------------------------------------------------- | ------------------------ | --------------------------------- |
-| [Components](windows/components.md)                             | Certificates             | `certmgr.msc`                     |
-| [Settings app pages](windows/settings.md)                       | Display                  | `ms-settings:display`             |
-| Known Folders                                                   |
-| ⮱ [User Folders](user-windows/known-folders/user-folders.md)    | Downloads Folder         | `shell:My Pictures`               |
-| ⮱ [OS Panels, Folders](windows/known-folders/guids.md)          | Recycle Bin              | `shell:::{...}`                   |
-| ⮱ [GUIDs Archive](guids-windows/known-folders/guids-archive.md) | 3D Objects               | `shell:::{...}`                   |
-| [Dll commands](windows/dll.md)                                  | Neue Verknüpfung anlegen | `rundll32 appwiz.cpl,NewLinkHere` |
-| [Troubleshooters](windows/troubleshooters.md)                   | Printer Troubleshooter   | `msdt -id PrinterDiagnosticmsdt`  |
-| [Icon libraries](windows/icons.md)                              | Imageres Library         | `shell32.dll`                     |
+| Topic                                                     | Example Component        | Example Code                      |
+| --------------------------------------------------------- | ------------------------ | --------------------------------- |
+| [Components](windows/components.md)                       | Certificates             | `certmgr.msc`                     |
+| [Settings app pages](windows/settings.md)                 | Display                  | `ms-settings:display`             |
+| Known Folders                                             |                          |                                   |
+| ⮱ [User Folders](windows/known-folders/user-folders.md)   | Downloads Folder         | `shell:My Pictures`               |
+| ⮱ [OS Panels, Folders](windows/known-folders/guids.md)    | Recycle Bin              | `shell:::{...}`                   |
+| ⮱ [GUIDs Archive](windows/known-folders/guids-archive.md) | 3D Objects               | `shell:::{...}`                   |
+| [Dll commands](windows/dll.md)                            | Neue Verknüpfung anlegen | `rundll32 appwiz.cpl,NewLinkHere` |
+| [Troubleshooters](windows/troubleshooters.md)             | Printer Troubleshooter   | `msdt -id PrinterDiagnosticmsdt`  |
+| [Icon libraries](windows/icons.md)                        | Imageres Library         | `shell32.dll`                     |
 
 
 ### Powershell
