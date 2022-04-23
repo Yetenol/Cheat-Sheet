@@ -2,13 +2,26 @@
 - shortcuts to special OS folders
 - referenced using a [**CLSID keys**](https://docs.microsoft.com/de-de/windows/win32/com/clsid-key-hklm?redirectedfrom=MSDN) 
     - globally unique identifier that identifies a COM class object
-- to open a shortcut run one of the following:
-    ```cmd
-    explorer shell:::{CLSID-key}
-    ```
-    ```cmd
-    explorer /e,::{CLSID-key}
-    ```
+
+## Open a shortcut
+
+- run one of the following:
+```powershell
+explorer shell:::{088e3905-0323-4b02-9826-5d99428e115f}
+```
+
+```powershell
+explorer /e,::{088e3905-0323-4b02-9826-5d99428e115f}
+```
+
+## Resolve a shortcut
+
+- return the location as a string:
+
+```powershell
+(New-Object -ComObject Shell.Application).NameSpace('shell:::{088e3905-0323-4b02-9826-5d99428e115f}').Self.Path
+```
+
 
 | Target                                                                 | GUID shortcut                                                                                                   |
 | ---------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
@@ -181,6 +194,6 @@
 | Windows To Go                                                          | `shell:::{8E0C279D-0BD1-43C3-9EBD-31C3DC5B8A77}`                                                                |
 | Work Folders                                                           | `shell:::{ECDB0924-4208-451E-8EE0-373C0956DE16}`                                                                |
 
-### Sources
+## Sources
 - 2021-08-13: [CLSID Key (GUID) Shortcuts List for Windows 10 - Tutorials](https://www.tenforums.com/tutorials/3123-clsid-key-guid-shortcuts-list-windows-10-a.html)
 - 2021-08-13: [Windows 10 User Shell Folders Restore Default Paths - Winhelponline](https://www.winhelponline.com/blog/windows-10-shell-folders-paths-defaults-restore/)
