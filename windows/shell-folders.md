@@ -43,17 +43,17 @@ Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User 
 
 The following items do not exist in a clean install of Windows 10 and Windows 11. They’re created only if you redirect those folders to Microsoft OneDrive or DropBox. If the following values exist, the location defined in the following values takes precedence. In case of any conflict, the following values can be deleted so that the defaults (above) are used.
 
-| Description     | Shell Folder Name                        |
-| --------------- | ---------------------------------------- |
-| Cloud Root      | `{A52BBA46-E9E1-435F-B3D9-28DAA648C0F6}` |
-| Saved Pictures  | `{3B193882-D3AD-4EAB-965A-69829D1FB59F}` |
-| Camera Roll     | `{AB5FB87B-7CE2-4F83-915D-550846C9537B}` |
-| Screenshots     | `{B7BEDE81-DF94-4682-A7D8-57A52620B86F}` |
-| Local Documents | `{F42EE2D3-909F-4907-8871-4C22FC0BF756}` |
-| Local Downloads | `{7D83EE9B-2244-4E70-B1F5-5393042AF1E4}` |
-| Local Music     | `{A0C69A99-21C8-4671-8703-7934162FCF1D}` |
-| Local Pictures  | `{0DDD015D-B06C-45D5-8C4C-F59713854639}` |
-| Local Videos    | `{35286A68-3C57-41A1-BBB1-0EAE73D76C95}` |
+| Shell Folder Name                        | Description       |
+| ---------------------------------------- | ----------------- |
+| `{A52BBA46-E9E1-435F-B3D9-28DAA648C0F6}` | _Cloud Root_      |
+| `{3B193882-D3AD-4EAB-965A-69829D1FB59F}` | _Saved Pictures_  |
+| `{AB5FB87B-7CE2-4F83-915D-550846C9537B}` | _Camera Roll_     |
+| `{B7BEDE81-DF94-4682-A7D8-57A52620B86F}` | _Screenshots_     |
+| `{F42EE2D3-909F-4907-8871-4C22FC0BF756}` | _Local Documents_ |
+| `{7D83EE9B-2244-4E70-B1F5-5393042AF1E4}` | _Local Downloads_ |
+| `{A0C69A99-21C8-4671-8703-7934162FCF1D}` | _Local Music_     |
+| `{0DDD015D-B06C-45D5-8C4C-F59713854639}` | _Local Pictures_  |
+| `{35286A68-3C57-41A1-BBB1-0EAE73D76C95}` | _Local Videos_    |
 
 ## Local Machine Folders
 
