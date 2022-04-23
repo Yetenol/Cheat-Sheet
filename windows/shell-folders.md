@@ -16,28 +16,28 @@ Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User 
 
 - Value type: REG_EXPAND_SZ
 
-| Description       | Shell Folder Name                        | Default location                                                              |
-| ----------------- | ---------------------------------------- | ----------------------------------------------------------------------------- |
-|                   | `AppData`                                | `%USERPROFILE%\AppData\Roaming`                                               |
-| IE Cache          | `Cache`                                  | `%USERPROFILE%\AppData\Local\Microsoft\Windows\INetCache`                     |
-| IE Cache          | `Cookies`                                | `%USERPROFILE%\AppData\Local\Microsoft\Windows\INetCookies`                   |
-|                   | `Desktop`                                | `%USERPROFILE%\Desktop`                                                       |
-|                   | `Favorites`                              | `%USERPROFILE%\Favorites`                                                     |
-|                   | `History`                                | `%USERPROFILE%\AppData\Local\Microsoft\Windows\History`                       |
-|                   | `Local AppData`                          | `%USERPROFILE%\AppData\Local`                                                 |
-|                   | `My Music`                               | `%USERPROFILE%\Music`                                                         |
-|                   | `My Pictures`                            | `%USERPROFILE%\Pictures`                                                      |
-|                   | `My Video`                               | `%USERPROFILE%\Videos`                                                        |
-| Network Shortcuts | `NetHood`                                | `%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Network Shortcuts`           |
-|                   | `Personal`                               | `%USERPROFILE%\Documents`                                                     |
-|                   | `PrintHood`                              | `%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Printer Shortcuts`           |
-|                   | `Programs`                               | `%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs`         |
-|                   | `Recent`                                 | `%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Recent`                      |
-|                   | `SendTo`                                 | `%USERPROFILE%\AppData\Roaming\Microsoft\Windows\SendTo`                      |
-|                   | `Start Menu`                             | `%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Start Menu`                  |
-|                   | `Startup`                                | `%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup` |
-|                   | `Templates`                              | `%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Templates`                   |
-| Downloads         | `{374DE290-123F-4565-9164-39C4925E467B}` | `%USERPROFILE%\Downloads`                                                     |
+| Shell Folder Name - Description                           | Default location                                                              |
+| --------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| `AppData`                                                 | `%USERPROFILE%\AppData\Roaming`                                               |
+| `Cache` <br> _Internet Explorer Cache_                    | `%USERPROFILE%\AppData\Local\Microsoft\Windows\INetCache`                     |
+| `Cookies` <br> _Internet Explorer Cookies_                | `%USERPROFILE%\AppData\Local\Microsoft\Windows\INetCookies`                   |
+| `Desktop`                                                 | `%USERPROFILE%\Desktop`                                                       |
+| `Favorites`                                               | `%USERPROFILE%\Favorites`                                                     |
+| `History`                                                 | `%USERPROFILE%\AppData\Local\Microsoft\Windows\History`                       |
+| `Local AppData`                                           | `%USERPROFILE%\AppData\Local`                                                 |
+| `My Music`                                                | `%USERPROFILE%\Music`                                                         |
+| `My Pictures`                                             | `%USERPROFILE%\Pictures`                                                      |
+| `My Video`                                                | `%USERPROFILE%\Videos`                                                        |
+| `NetHood` <br> _Network Shortcuts_                        | `%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Network Shortcuts`           |
+| `Personal`                                                | `%USERPROFILE%\Documents`                                                     |
+| `PrintHood`                                               | `%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Printer Shortcuts`           |
+| `Programs`                                                | `%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs`         |
+| `Recent`                                                  | `%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Recent`                      |
+| `SendTo`                                                  | `%USERPROFILE%\AppData\Roaming\Microsoft\Windows\SendTo`                      |
+| `Start Menu`                                              | `%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Start Menu`                  |
+| `Startup`                                                 | `%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup` |
+| `Templates`                                               | `%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Templates`                   |
+| `{374DE290-123F-4565-9164-39C4925E467B}` <br> _Downloads_ | `%USERPROFILE%\Downloads`                                                     |
 
 ## Cloud Synchronization Folders
 
@@ -59,19 +59,19 @@ The following items do not exist in a clean install of Windows 10 and Windows 11
 
 - Value type: REG_EXPAND_SZ
 
-| Description      | Shell Folder Name                        | Default location                                              |
-| ---------------- | ---------------------------------------- | ------------------------------------------------------------- |
-| Common Downloads | `{3D644C9B-1FB8-4f30-9B45-F670235F79C0}` | `%PUBLIC%\Downloads`                                          |
-|                  | `Common AppData`                         | `%ProgramData%`                                               |
-|                  | `Common Desktop`                         | `%PUBLIC%\Desktop`                                            |
-|                  | `Common Documents`                       | `%PUBLIC%\Documents`                                          |
-|                  | `Common Programs`                        | `%ProgramData%\Microsoft\Windows\Start Menu\Programs`         |
-|                  | `Common Start Menu`                      | `%ProgramData%\Microsoft\Windows\Start Menu`                  |
-|                  | `Common Startup`                         | `%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup` |
-|                  | `Common Templates`                       | `%ProgramData%\Microsoft\Windows\Templates`                   |
-| _no space_       | `CommonMusic`                            | `%PUBLIC%\Music`                                              |
-| _no space_       | `CommonPictures`                         | `%PUBLIC%\Pictures`                                           |
-| _no space_       | `CommonVideo`                            | `%PUBLIC%\Videos`                                             |
+| Shell Folder Name - Description                                  | Default location                                              |
+| ---------------------------------------------------------------- | ------------------------------------------------------------- |
+| `{3D644C9B-1FB8-4f30-9B45-F670235F79C0}` <br> _Common Downloads_ | `%PUBLIC%\Downloads`                                          |
+| `Common AppData`                                                 | `%ProgramData%`                                               |
+| `Common Desktop`                                                 | `%PUBLIC%\Desktop`                                            |
+| `Common Documents`                                               | `%PUBLIC%\Documents`                                          |
+| `Common Programs`                                                | `%ProgramData%\Microsoft\Windows\Start Menu\Programs`         |
+| `Common Start Menu`                                              | `%ProgramData%\Microsoft\Windows\Start Menu`                  |
+| `Common Startup`                                                 | `%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup` |
+| `Common Templates`                                               | `%ProgramData%\Microsoft\Windows\Templates`                   |
+| `CommonMusic`                                                    | `%PUBLIC%\Music`                                              |
+| `CommonPictures`                                                 | `%PUBLIC%\Pictures`                                           |
+| `CommonVideo`                                                    | `%PUBLIC%\Videos`                                             |
 
 
 
