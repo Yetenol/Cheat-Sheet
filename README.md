@@ -9,7 +9,7 @@
 | --------------------------------------------------------- | ------------------------ | --------------------------------- |
 | [Components](windows/components.md)                       | Certificates             | `certmgr.msc`                     |
 | [Settings app pages](windows/settings.md)                 | Display                  | `ms-settings:display`             |
-| Known Folders                                             |                          |                                   |
+| [Known Folders](windows/known-folders/known-folders.md)   |                          |                                   |
 | ⮱ [User Folders](windows/known-folders/user-folders.md)   | Downloads Folder         | `shell:My Pictures`               |
 | ⮱ [OS Panels, Folders](windows/known-folders/guids.md)    | Recycle Bin              | `shell:::{...}`                   |
 | ⮱ [GUIDs Archive](windows/known-folders/guids-archive.md) | 3D Objects               | `shell:::{...}`                   |
