@@ -128,6 +128,6 @@
 | `quit` <br> `q`                                                                | Exit GDB debugger.                                                                                                                               |
 
 
-## Sources
+# Sources
 
 - 2022-04-06 [Linux Tutorial - GNU GDB Debugger Command Cheat Sheet](http://www.yolinux.com/TUTORIALS/GDB-Commands.html)
