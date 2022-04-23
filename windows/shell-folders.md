@@ -1,22 +1,29 @@
 # [⌂](../README.md) › [Windows](../README.md#windows) › Shell Folders
 
-## List per-user folders
+
+# Current User Shell Folders
+
+
+## List all locations
 
 ```powershell
 Get-ItemProperty "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders" | select * -Exclude "PS*"
 ```
 
-## List per-system folders
+## Resolve one location
+
+- return the location as a string:
 
 ```powershell
-Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders" | select * -Exclude "PS*"
+(Get-ItemProperty "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders")."{374DE290-123F-4565-9164-39C4925E467B}"
 ```
 
-## Current User Folders
+
+## Default locations
 
 - Value type: REG_EXPAND_SZ
 
-| Shell Folder Name - Description                           | Default location                                                              |
+| Shell Folder Name - _Description_                         | Default location                                                              |
 | --------------------------------------------------------- | ----------------------------------------------------------------------------- |
 | `AppData`                                                 | `%USERPROFILE%\AppData\Roaming`                                               |
 | `Cache` <br> _Internet Explorer Cache_                    | `%USERPROFILE%\AppData\Local\Microsoft\Windows\INetCache`                     |
@@ -29,7 +36,7 @@ Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User 
 | `My Pictures`                                             | `%USERPROFILE%\Pictures`                                                      |
 | `My Video`                                                | `%USERPROFILE%\Videos`                                                        |
 | `NetHood` <br> _Network Shortcuts_                        | `%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Network Shortcuts`           |
-| `Personal`                                                | `%USERPROFILE%\Documents`                                                     |
+| `Personal` <br> _Documents_                               | `%USERPROFILE%\Documents`                                                     |
 | `PrintHood`                                               | `%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Printer Shortcuts`           |
 | `Programs`                                                | `%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs`         |
 | `Recent`                                                  | `%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Recent`                      |
@@ -39,7 +46,8 @@ Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User 
 | `Templates`                                               | `%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Templates`                   |
 | `{374DE290-123F-4565-9164-39C4925E467B}` <br> _Downloads_ | `%USERPROFILE%\Downloads`                                                     |
 
-## Cloud Synchronization Folders
+
+## If cloud synchronization enabled
 
 The following items do not exist in a clean install of Windows 10 and Windows 11. They’re created only if you redirect those folders to Microsoft OneDrive or DropBox. If the following values exist, the location defined in the following values takes precedence. In case of any conflict, the following values can be deleted so that the defaults (above) are used.
 
@@ -55,11 +63,29 @@ The following items do not exist in a clean install of Windows 10 and Windows 11
 | `{0DDD015D-B06C-45D5-8C4C-F59713854639}` | _Local Pictures_  |
 | `{35286A68-3C57-41A1-BBB1-0EAE73D76C95}` | _Local Videos_    |
 
-## Local Machine Folders
+
+# All Users Shell Folders
+
+## List all locations
+
+```powershell
+Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders" | select * -Exclude "PS*"
+```
+
+## Resolve one location
+
+- return the location as a string:
+
+```powershell
+(Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders")."Common AppData"
+```
+
+
+## Default locations
 
 - Value type: REG_EXPAND_SZ
 
-| Shell Folder Name - Description                                  | Default location                                              |
+| Shell Folder Name - _Description_                                | Default location                                              |
 | ---------------------------------------------------------------- | ------------------------------------------------------------- |
 | `{3D644C9B-1FB8-4f30-9B45-F670235F79C0}` <br> _Common Downloads_ | `%PUBLIC%\Downloads`                                          |
 | `Common AppData`                                                 | `%ProgramData%`                                               |
