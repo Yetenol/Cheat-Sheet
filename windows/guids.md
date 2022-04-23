@@ -2,13 +2,26 @@
 - shortcuts to special OS folders
 - referenced using a [**CLSID keys**](https://docs.microsoft.com/de-de/windows/win32/com/clsid-key-hklm?redirectedfrom=MSDN) 
     - globally unique identifier that identifies a COM class object
-- to open a shortcut run one of the following:
-    ```cmd
-    explorer shell:::{CLSID-key}
-    ```
-    ```cmd
-    explorer /e,::{CLSID-key}
-    ```
+
+## Open a shortcut
+
+- run one of the following:
+```powershell
+explorer shell:::{088e3905-0323-4b02-9826-5d99428e115f}
+```
+
+```powershell
+explorer /e,::{088e3905-0323-4b02-9826-5d99428e115f}
+```
+
+## Resolve a shortcut
+
+- return the location as a string:
+
+```powershell
+(New-Object -ComObject Shell.Application).NameSpace('shell:::{088e3905-0323-4b02-9826-5d99428e115f}').Self.Path
+```
+
 
 | Target                                                                 | GUID shortcut                                                                                                   |
 | ---------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
