@@ -2,6 +2,45 @@
 - Dynamic Link Library (dll) components
 - Control Panel tabs (cpl tab)
 
+## Control Panel
+
+| Command                                                                                                | Description                                                     |
+| ------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------- |
+| Control Panel                                                                                          | `rundll32 Shell32.dll,Control_RunDLL`                           |
+| Control Panel reload Applets                                                                           | `rundll32 shell32.dll,Control_FillCache_RunDLL`                 |
+| Mouse Properties &#127775; <br> _(TrackPoint, TouchPad)_                                               | `rundll32 Shell32.dll,Control_RunDLL main.cpl,@0`               |
+| Keyboard Properties                                                                                    | `rundll32 Shell32.dll,Control_RunDLL main.cpl,@1`               |
+| Erleichterte Bedienung                                                                                 | `rundll32 shell32.dll,Control_RunDLL access.cpl`                |
+| Programs                                                                                               | `appwiz.cpl`                                                    |
+| ⠀⮱ Uninstall or change a program &#127775;                                                             | `rundll32 shell32.dll,Control_RunDLL appwiz.cpl,null,0`         |
+| ⠀⮱ Install a program from the network                                                                  | `rundll32 shell32.dll,Control_RunDLL appwiz.cpl,null,1`         |
+| ⠀⮱ Windows Features &#127775;                                                                          | `rundll32 shell32.dll,Control_RunDLL appwiz.cpl,null,2`         |
+| Display (Settings App)                                                                                 | `desk.cpl`                                                      |
+| ⠀⮱ Desktop Icon Settings &#127775;                                                                     | `rundll32 shell32.dll,Control_RunDLL desk.cpl,null,0`           |
+| ⠀⮱ Screen Saver Settings                                                                               | `rundll32 shell32.dll,Control_RunDLL desk.cpl,null,1`           |
+| ⠀⮱ Background (Settings App)                                                                           | `rundll32 shell32.dll,Control_RunDLL desk.cpl,null,2`           |
+| Region                                                                                                 | `intl.cpl`                                                      |
+| ⠀⮱ Formats &#127775;                                                                                   | `rundll32 shell32.dll,Control_RunDLL intl.cpl,null,0`           |
+| ⠀⮱ Administrative                                                                                      | `rundll32 shell32.dll,Control_RunDLL intl.cpl,null,1`           |
+| Game Controllers                                                                                       | `joy.cpl`                                                       |
+| Sound                                                                                                  | `mmsys.cpl`                                                     |
+| ⠀⮱ Playback &#127775;                                                                                  | `rundll32 shell32.dll,Control_RunDLL mmsys.cpl,null,0`          |
+| ⠀⮱ Recording &#127775;                                                                                 | `rundll32 shell32.dll,Control_RunDLL mmsys.cpl,null,1`          |
+| ⠀⮱ Sounds                                                                                              | `rundll32 shell32.dll,Control_RunDLL mmsys.cpl,null,2`          |
+| System Properties                                                                                      | `sysdm.cpl`                                                     |
+| ⠀⮱ Computer Name                                                                                       | `rundll32 shell32.dll,Control_RunDLL sysdm.cpl,null,1`          |
+| ⠀⮱ Hardware                                                                                            | `rundll32 shell32.dll,Control_RunDLL sysdm.cpl,null,2`          |
+| ⠀⮱ Advanced &#127775; <br> _(Performance, User Profiles, Startup and Recovery, Environment Variables)_ | `rundll32 shell32.dll,Control_RunDLL sysdm.cpl,null,3`          |
+| ⠀⮱ System Protection &#127775; <br> _(Restore Point)_                                                  | `rundll32 shell32.dll,Control_RunDLL sysdm.cpl,null,4`          |
+| Date and Time                                                                                          | `timedate.cpl`                                                  |
+| ⠀⮱ Date and Time                                                                                       | `rundll32 shell32.dll,Control_RunDLL timedate.cpl,null,0`       |
+| ⠀⮱ Additional Clocks                                                                                   | `rundll32 shell32.dll,Control_RunDLL timedate.cpl,null,1`       |
+| Security and Maintenance                                                                               | `wscui.cpl`                                                     |
+| ⠀⮱ Windows Sicherheitscenter                                                                           | `rundll32 shell32.dll,Control_RunDLL wscui.cpl,Security Center` |
+
+
+## Other commands
+
 | Command                                                                                                                                        | Description                                                                                     |
 | ---------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
 | Installation aus INF-Files                                                                                                                     | `rundll32 advpack.dll,LaunchINFSection \<INF-Datei\>,\<Section\>`                               |
@@ -10,31 +49,6 @@
 | Ruft Diskcopy auf                                                                                                                              | `rundll32 diskcopy.dll,DiskCopyRunDLL \<0 oder 1\>`                                             |
 | Stored User Names and Passwords &#127775;                                                                                                      | `rundll32 keymgr.dll,KRShowKeyMgr`                                                              |
 | Installation aus einer INF-Datei                                                                                                               | `rundll32 setupapi.dll,InstallHinfSection 132 \<.inf-Datei\>`                                   |
-| Systemsteuerung                                                                                                                                | `rundll32 Shell32.dll,Control_RunDLL`                                                           |
-| Systemsteuerungs-Applets neu einlesen                                                                                                          | `rundll32 shell32.dll,Control_FillCache_RunDLL`                                                 |
-| Mouse Settings # ThinkPad &#127775; <br> _(TrackPoint / TouchPad)_                                                                             | `rundll32 Shell32.dll,Control_RunDLL main.cpl,@0`                                               |
-| Keyboard Properties                                                                                                                            | `rundll32 Shell32.dll,Control_RunDLL main.cpl,@1`                                               |
-| Erleichterte Bedienung                                                                                                                         | `rundll32 shell32.dll,Control_RunDLL access.cpl`                                                |
-| Control Panel > Uninstall or change a program &#127775;                                                                                        | `rundll32 shell32.dll,Control_RunDLL appwiz.cpl,null,0`                                         |
-| Control Panel > Install a program from the network                                                                                             | `rundll32 shell32.dll,Control_RunDLL appwiz.cpl,null,1`                                         |
-| Control Panel > Windows Features &#127775;                                                                                                     | `rundll32 shell32.dll,Control_RunDLL appwiz.cpl,null,2`                                         |
-| Settings > Display                                                                                                                             | `rundll32 Shell32.dll,Control_RunDLL desk.cpl`                                                  |
-| Control Panel > Desktop Icon Settings &#127775;                                                                                                | `rundll32 shell32.dll,Control_RunDLL desk.cpl,null,0`                                           |
-| Control Panel > Screen Saver Settings                                                                                                          | `rundll32 shell32.dll,Control_RunDLL desk.cpl,null,1`                                           |
-| Settings > Background                                                                                                                          | `rundll32 shell32.dll,Control_RunDLL desk.cpl,null,2`                                           |
-| Control Panel > Region # Formats &#127775;                                                                                                     | `rundll32 shell32.dll,Control_RunDLL intl.cpl,null,0`                                           |
-| Control Panel > Region # Administrative                                                                                                        | `rundll32 shell32.dll,Control_RunDLL intl.cpl,null,1`                                           |
-| Game Controllers                                                                                                                               | `rundll32 shell32.dll,Control_RunDLL joy.cpl`                                                   |
-| Control Panel > Sound                                                                                                                          | `rundll32 shell32.dll,Control_RunDLL mmsys.cpl`                                                 |
-| ⠀⮱ Playback &#127775;                                                                                                                          | `rundll32 shell32.dll,Control_RunDLL mmsys.cpl,null,0`                                          |
-| ⠀⮱ Recording &#127775;                                                                                                                         | `rundll32 shell32.dll,Control_RunDLL mmsys.cpl,null,1`                                          |
-| ⠀⮱ Sounds                                                                                                                                      | `rundll32 shell32.dll,Control_RunDLL mmsys.cpl,null,2`                                          |
-| Control Panel > System Properties # Computer Name                                                                                              | `rundll32 shell32.dll,Control_RunDLL sysdm.cpl,null,1`                                          |
-| Control Panel > System Properties # Hardware                                                                                                   | `rundll32 shell32.dll,Control_RunDLL sysdm.cpl,null,2`                                          |
-| Control Panel > System Properties # Advanced &#127775; <br> _(Performance, User Profiles, Startup and Recovery, Environment Variables)_        | `rundll32 shell32.dll,Control_RunDLL sysdm.cpl,null,3`                                          |
-| Control Panel > System Properties # System Protection &#127775; <br> _(Restore Point)_                                                         | `rundll32 shell32.dll,Control_RunDLL sysdm.cpl,null,4`                                          |
-| Control Panel > Date and Time # Date and Time                                                                                                  | `rundll32 shell32.dll,Control_RunDLL timedate.cpl,null,0`                                       |
-| Control Panel > Date and Time # Additional Clocks                                                                                              | `rundll32 shell32.dll,Control_RunDLL timedate.cpl,null,1`                                       |
 | Open with dialog                                                                                                                               | `rundll32 shell32.dll,OpenAs_RunDLL`                                                            |
 | Open with dialog for a specific file &#127775;                                                                                                 | `rundll32 shell32.dll,OpenAs_RunDLL \<Datei\>`                                                  |
 | About MZ/Windows <br> _(Version, OS Build)_                                                                                                    | `rundll32 Shell32.dll,ShellAboutA` <br> `winver`                                                |
@@ -52,7 +66,6 @@
 | Hardware sicher entfernen                                                                                                                      | `rundll32 shell32.dll,Control_RunDLL hotplug.dll`                                               |
 | Gespeicherte Benutzernamen und Kennwörter                                                                                                      | `rundll32 Keymgr.dll,KRShowKeyMgr`                                                              |
 | Rechner wird in den Ruhezustand gefahren                                                                                                       | `rundll32 powrprof.dll,SetSuspendState`                                                         |
-| Windows Sicherheitscenter                                                                                                                      | `rundll32 shell32.dll,Control_RunDLL wscui.cpl,Security Center`                                 |
 | Ordneroptionen                                                                                                                                 | `rundll32 shell32.dll, Options_RunDLL 0`                                                        |
 
 
