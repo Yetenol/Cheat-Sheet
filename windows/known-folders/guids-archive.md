@@ -33,7 +33,7 @@
 | Documents                | `shell:::{24D89E24-2F19-4534-9DDE-6A6671FBB8FE}` | `%USERPROFILE%\OneDrive\Documents`                                                    |
 | Documents                | `shell:::{7B0DB17D-9CD2-4A93-9733-46CC89022E7C}` | `%APPDATA%\Microsoft\Windows\Libraries\Documents.library-ms`                          |
 | Documents                | `shell:::{FDD39AD0-238F-46AF-ADB4-6C85480369C7}` | `%USERPROFILE%\Documents`                                                             |
-| Downloads                | `shell:::{374DE290-123F-4565-9164-39C4925E467B}` | `%USERPROFILE%\Downloads or %HOMEDRIVE%%HOMEPATH%\Downloads`                          |
+| Downloads                | `shell:::{374DE290-123F-4565-9164-39C4925E467B}` | `%USERPROFILE%\Downloads` or <br> `%HOMEDRIVE%%HOMEPATH%\Downloads`                   |
 | Favorites                | `shell:::{1777F761-68AD-4D8A-87BD-30B759FA33DD}` | `%USERPROFILE%\Favorites`                                                             |
 | Fonts                    | `shell:::{FD228CB7-AE11-4AE3-864C-16F3910AB8FE}` | `%windir%\Fonts`                                                                      |
 | Gadgets                  | `shell:::{7B396E54-9EC5-4300-BE0A-2482EBAE1A26}` | `%ProgramFiles%\Windows Sidebar\Gadgets`                                              |
@@ -130,7 +130,7 @@
 | Videos                   | `shell:::{18989B1D-99B5-455B-841C-AB7C74E4DDFC}` | `%USERPROFILE%\Videos`                                                                |
 | Videos                   | `shell:::{491E922F-5643-4AF4-A7EB-4E7A138D8174}` | `%APPDATA%\Microsoft\Windows\Libraries\Videos.library-ms`                             |
 | Windows                  | `shell:::{F38BF404-1D43-42F2-9305-67DE0B28FC23}` | `%windir%`                                                                            |
-| %USERNAME%               | `shell:::{5E6C858F-0E22-4760-9AFE-EA3317B67173}` | `%USERPROFILE%` <br> `(%SystemDrive%\Users\%USERNAME%)`                               |
+| %USERNAME%               | `shell:::{5E6C858F-0E22-4760-9AFE-EA3317B67173}` | `%USERPROFILE%` or <br> `%SystemDrive%\Users\%USERNAME%`                              |
 | %USERNAME%               | `shell:::{9B74B6A3-0DFD-4F11-9E78-5F7800F2E772}` | _virtual folder_                                                                      |
 
 
