@@ -20,18 +20,19 @@
 
 ### Powershell
 
-| Topic                                              | Example Component     | Example Code                                          |
-| -------------------------------------------------- | --------------------- | ----------------------------------------------------- |
-| [Getting Started](powershell/powershell.md)        | Help Cmdlets          | `script.ps1.bat`                                      |
-| [Data Types](powershell/data-types.md)             | Hashtable             | `[DateTime]::Now`                                     |
-| [Input](powershell/input.md)                       | File Parsing          | `[RegEx]::Match($line, $regexFormat).Groups[1].value` |
-| [Output](powershell/output.md)                     | Custom Table View     | `Export-Clixml`                                       |
-| [Bash equivalents](powershell/bash-equivalents.md) | While Loop            | `read name` <-> `$name = Read-Host "Name"`            |
-| [Applications](powershell/applications.md)         | Update Store Apps     | `$wmiObj.UpdateScanMethod()`                          |
-| [Interactive Menu](powershell/menu.md)             | Select option 1, 2, 3 | `$Choice = Read-Host "Select ..."`                    |
-| [Encryption](powershell/encryption.md)             | Passwords             | `ConvertTo-SecureString`                              |
-| [Bluetooth](powershell/bluetooth.md)               | List Devices          | `Get-PnpDevice -Class Bluetooth`                      |
-| [File attributes](powershell/file-attributes.md)   | Make ReadOnly         | `$item.Attributes = $item.Attributes -bor 0x080000`   |
+| Topic                                              | Example Component      | Example Code                                          |
+| -------------------------------------------------- | ---------------------- | ----------------------------------------------------- |
+| [Getting Started](powershell/powershell.md)        | Help Cmdlets           | `script.ps1.bat`                                      |
+| [Data Types](powershell/data-types.md)             | Hashtable              | `[DateTime]::Now`                                     |
+| [Input](powershell/input.md)                       | File Parsing           | `[RegEx]::Match($line, $regexFormat).Groups[1].value` |
+| [Output](powershell/output.md)                     | Custom Table View      | `Export-Clixml`                                       |
+| [Web](powershell/web.md)                           | Download, extract ZIPs | `Invoke-WebRequest -Uri $url -OutFile $file`          |
+| [Bash equivalents](powershell/bash-equivalents.md) | While Loop             | `read name` <-> `$name = Read-Host "Name"`            |
+| [Applications](powershell/applications.md)         | Update Store Apps      | `$wmiObj.UpdateScanMethod()`                          |
+| [Interactive Menu](powershell/menu.md)             | Select option 1, 2, 3  | `$Choice = Read-Host "Select ..."`                    |
+| [Encryption](powershell/encryption.md)             | Passwords              | `ConvertTo-SecureString`                              |
+| [Bluetooth](powershell/bluetooth.md)               | List Devices           | `Get-PnpDevice -Class Bluetooth`                      |
+| [File attributes](powershell/file-attributes.md)   | Make ReadOnly          | `$item.Attributes = $item.Attributes -bor 0x080000`   |
 
 
 ### LaTeX

@@ -9,7 +9,9 @@ if (-not $myDownloads) {throw "Cannot find Downloads folder!"}
 
 $url = "https://newsfeed.zeit.de"
 $file = "$myDownloads\Zeit RSS.xml"
-Invoke-WebRequest $url -OutFile $file -ErrorAction Stop
+Invoke-WebRequest -Uri $url -OutFile $file -ErrorAction Stop
+
+explorer "/select,""$(Get-Item -Path $file)""" # show file
 ```
 
 ## Download a file into %TEMP%
@@ -17,7 +19,9 @@ Invoke-WebRequest $url -OutFile $file -ErrorAction Stop
 ```powershell
 $url = "https://newsfeed.zeit.de"
 $file = "$env:Temp\Zeit RSS.xml"
-Invoke-WebRequest $url -OutFile $file -ErrorAction Stop
+Invoke-WebRequest -Uri $url -OutFile $file -ErrorAction Stop
+
+explorer "/select,""$(Get-Item -Path $file)""" # show file
 ```
 
 
@@ -30,8 +34,10 @@ if (-not $myDownloads) {throw "Cannot find Downloads folder!"}
 $url = "https://www.autohotkey.com/download/ahk-v2.zip"
 $folder = "$myDownloads\AutoHotkey 2"
 $archive = "$folder.zip"
-Invoke-WebRequest $url -OutFile $archive -ErrorAction Stop
+Invoke-WebRequest -Uri $url -OutFile $archive -ErrorAction Stop
 
 Remove-Item -Path $folder -Recurse -ErrorAction SilentlyContinue
 Expand-Archive -Path $archive -DestinationPath $folder -Force
+
+explorer $folder # show folder
 ```
