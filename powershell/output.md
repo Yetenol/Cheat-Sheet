@@ -96,12 +96,12 @@ Everything in PowerShell is already or becomes a .NET object. Therefore, you sho
 1. ...als tabellarische Textdatei
 	```powershell
 	| Format-Table -AutoSize -Wrap `
-	| Out-File -FilePath ".\text.txt
+	| Out-File -FilePath ".\text.txt"
 	```
 1. ...als auflistende Textdatei
 	```powershell
 	| Format-List `
-	| Out-File -FilePath ".\text.txt
+	| Out-File -FilePath ".\text.txt"
 	```
 1. ...als verschlüsselte Textdatei
 	- siehe [Verschlüsselung](encryption.md)
@@ -114,6 +114,12 @@ Everything in PowerShell is already or becomes a .NET object. Therefore, you sho
 	```powershell
 	| ConvertTo-SecureString -AsPlainText -Force
 	```
+
+## Launch explorer and select item
+
+```powershell
+explorer "/select,""$(Get-Item -Path ".\text.txt")"""
+```
 ___
 
 # Interesting information
