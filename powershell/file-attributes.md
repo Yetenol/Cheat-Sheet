@@ -1,4 +1,4 @@
-# [⌂](../README.md) › [Powershell](../README.md#powershell) › File attributes
+# [⌂](../README.md) › [PowerShell](../README.md#powershell) › File attributes
 
 ## .Net Attribute Flags
 

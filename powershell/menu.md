@@ -1,4 +1,4 @@
-# [⌂](../README.md) › [Powershell](../README.md#powershell) › Interactive Menu
+# [⌂](../README.md) › [PowerShell](../README.md#powershell) › Interactive Menu
 
 ## Ask a question once / until answered
 ```powershell

@@ -1,4 +1,4 @@
-# [⌂](../README.md) › [Powershell](../README.md#powershell) › Glossary
+# [⌂](../README.md) › [PowerShell](../README.md#powershell) › Glossary
 
 ## Command
 

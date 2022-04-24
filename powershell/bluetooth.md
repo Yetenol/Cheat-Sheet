@@ -1,4 +1,4 @@
-# [⌂](../README.md) › [Powershell](../README.md#powershell) › Bluetooth
+# [⌂](../README.md) › [PowerShell](../README.md#powershell) › Bluetooth
 
 ## List all bluetooth devices
 ```powershell

@@ -1,4 +1,4 @@
-# [⌂](../README.md) › [Powershell](../README.md#powershell) › Symbolic Link
+# [⌂](../README.md) › [PowerShell](../README.md#powershell) › Symbolic Link
 
 ## Create a symbolic link
 

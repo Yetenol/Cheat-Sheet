@@ -1,6 +1,6 @@
-# [⌂](../README.md) › [Powershell](../README.md#powershell) › Input Handling
+# [⌂](../README.md) › [PowerShell](../README.md#powershell) › Input Handling
 
-- [⌂ › [Powershell](../README.md#powershell) › Input Handling](#--powershell--input-handling)
+- [⌂ › [PowerShell](../README.md#powershell) › Input Handling](#--powershell--input-handling)
 - [Type An Input With The Keyboard](#type-an-input-with-the-keyboard)
 - [.Net formatted file](#net-formatted-file)
 - [Plain text file](#plain-text-file)
