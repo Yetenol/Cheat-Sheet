@@ -35,6 +35,7 @@
 | [Interactive Menu](powershell/menu.md)                | Select option 1, 2, 3  | `$Choice = Read-Host -Prompt "Select ..."`            |
 | [Encryption](powershell/encryption.md)                | Passwords              | `ConvertTo-SecureString`                              |
 | [Bluetooth](powershell/bluetooth.md)                  | List Devices           | `Get-PnpDevice -Class Bluetooth`                      |
+| [Win+X Menu](windows/win-x.md)                        | Add Win+X entries      |                                                       |
 
 
 ### LaTeX
