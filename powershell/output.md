@@ -115,11 +115,6 @@ Everything in PowerShell is already or becomes a .NET object. Therefore, you sho
 	| ConvertTo-SecureString -AsPlainText -Force
 	```
 
-## Launch explorer and select item
-
-```powershell
-explorer "/select,""$(Get-Item -Path ".\text.txt")"""
-```
 ___
 
 # Interesting information

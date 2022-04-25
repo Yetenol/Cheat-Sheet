@@ -77,31 +77,3 @@ Get-ChildItem -Path $paths -Include *.exe, *.msc `
   | Export-Csv -Path "$env:temp\path-apps.csv" -NoType -Delimiter ";"
 start "$env:temp\path-apps.csv"
 ```
-
-# Random stuff
-
-## Open location in Windows Explorer
-```powershell
-Invote-Item -Path .
-```
-> DIRTY CODE: `ii .`
-
-## Create empty file
-```powershell
-Out-File -FilePath <#File>
-```
-> DIRTY CODE: Out-File <#File#>
-
-## Open Powershell from Windows Explorer
-Press `Shift + Right click` and select `Open Powershell window here`
-
-Read further
-- [Invoke command, item or strings](https://social.technet.microsoft.com/wiki/contents/articles/7703.powershell-running-executables.aspx)
-
-## Download file
-
-```powershell
-Invoke-WebRequest http://www.het.brown.edu/guide/UNIX-password-security.txt -OutFile .\newname.txt
-# shorter syntax
-iwr http://www.het.brown.edu/guide/UNIX-password-security.txt -o newname.txt
-```

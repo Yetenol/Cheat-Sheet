@@ -26,6 +26,7 @@
 | [Data Types](powershell/data-types.md)             | Hashtable              | `[DateTime]::Now`                                     |
 | [Input](powershell/input.md)                       | File Parsing           | `[RegEx]::Match($line, $regexFormat).Groups[1].value` |
 | [Output](powershell/output.md)                     | Custom Table View      | `Export-Clixml`                                       |
+| [Storage](powershell/storage.md)                   | Create shortcuts       | ``explorer "/select,`"$(Resolve-Path $file)`""``      |
 | [Web](powershell/web.md)                           | Download, extract ZIPs | `Invoke-WebRequest -Uri $url -OutFile $file`          |
 | [Bash equivalents](powershell/bash-equivalents.md) | While Loop             | `read name` <-> `$name = Read-Host "Name"`            |
 | [Applications](powershell/applications.md)         | Update Store Apps      | `$wmiObj.UpdateScanMethod()`                          |
