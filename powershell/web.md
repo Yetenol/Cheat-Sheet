@@ -11,7 +11,7 @@ $url = "https://newsfeed.zeit.de"
 $file = "$env:Downloads\Zeit RSS.xml"
 Invoke-WebRequest -Uri $url -OutFile $file -ErrorAction Stop
 
-explorer "/select,""$(Get-Item -Path $file)""" # show file
+explorer "/select,""$(Get-Item -Path $file)""" # suggest file
 ```
 
 ## Download a file into %TEMP%
@@ -21,7 +21,7 @@ $url = "https://newsfeed.zeit.de"
 $file = "$env:Temp\Zeit RSS.xml"
 Invoke-WebRequest -Uri $url -OutFile $file -ErrorAction Stop
 
-explorer "/select,""$(Get-Item -Path $file)""" # show file
+explorer "/select,`"$(Resolve-Path $file)`"" # suggest file
 ```
 
 
@@ -39,5 +39,5 @@ Invoke-WebRequest -Uri $url -OutFile $archive -ErrorAction Stop
 Remove-Item -Path $folder -Recurse -ErrorAction SilentlyContinue
 Expand-Archive -Path $archive -DestinationPath $folder -Force
 
-explorer $folder # show folder
+Invoke-Item -Path $folder # open folder
 ```
