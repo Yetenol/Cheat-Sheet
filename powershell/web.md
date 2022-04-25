@@ -4,11 +4,11 @@
 ## Download a file
 
 ```powershell
-$myDownloads = (New-Object -ComObject Shell.Application).NameSpace('shell:::{374DE290-123F-4565-9164-39C4925E467B}').Self.Path
-if (-not $myDownloads) {throw "Cannot find Downloads folder!"}
+$env:Downloads = (New-Object -ComObject Shell.Application).NameSpace('shell:::{374DE290-123F-4565-9164-39C4925E467B}').Self.Path
+if (-not $env:Downloads) {throw "Cannot find Downloads folder!"}
 
 $url = "https://newsfeed.zeit.de"
-$file = "$myDownloads\Zeit RSS.xml"
+$file = "$env:Downloads\Zeit RSS.xml"
 Invoke-WebRequest -Uri $url -OutFile $file -ErrorAction Stop
 
 explorer "/select,""$(Get-Item -Path $file)""" # show file
@@ -28,11 +28,11 @@ explorer "/select,""$(Get-Item -Path $file)""" # show file
 ## Download and unzip an archive
 
 ```powershell
-$myDownloads = (New-Object -ComObject Shell.Application).NameSpace('shell:::{374DE290-123F-4565-9164-39C4925E467B}').Self.Path
-if (-not $myDownloads) {throw "Cannot find Downloads folder!"}
+$env:Downloads = (New-Object -ComObject Shell.Application).NameSpace('shell:::{374DE290-123F-4565-9164-39C4925E467B}').Self.Path
+if (-not $env:Downloads) {throw "Cannot find Downloads folder!"}
 
 $url = "https://www.autohotkey.com/download/ahk-v2.zip"
-$folder = "$myDownloads\AutoHotkey 2"
+$folder = "$env:Downloads\AutoHotkey 2"
 $archive = "$folder.zip"
 Invoke-WebRequest -Uri $url -OutFile $archive -ErrorAction Stop
 
