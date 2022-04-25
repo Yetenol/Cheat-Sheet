@@ -1,5 +1,11 @@
 # [⌂](../../README.md) › [PowerShell](../../README.md) › IO
 
+### [Input ❯](input.md)
+### [Output ❯](output.md)
+### [Links ❯](links.md)
+### [File attributes ❯](file-attributes.md)
+### [Web ❯](web.md)
+
 ## Windows Explorer
 
 - Open current folder
