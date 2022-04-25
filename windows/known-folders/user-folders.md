@@ -28,15 +28,14 @@ $shellCommand = [ordered]@{
 }
 $shell = [ordered]@{}
 foreach ($_ in $shellCommand.GetEnumerator()) {
-    if ($_.Value -like '{*}') {
-        [string]$namespace = "shell:::" + $_.Value
+    $namespace = $(if ($_.Value -like '{*}') {
+        "shell:::" + $_.Value
     } else {
-        [string]$namespace = "shell:" + $_.Value
-    }
+        "shell:" + $_.Value
+    })
     try {
         $shell.Add($_.Name, (New-Object -ComObject Shell.Application).NameSpace($namespace).Self.Path)
-    } catch {
-    }
+    } catch {}
 }
 ```
 
