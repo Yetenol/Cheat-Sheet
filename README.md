@@ -11,8 +11,8 @@
 | [Settings app pages](windows/settings.md)                 | Display                  | `ms-settings:display`             |
 | [Known Folders](windows/known-folders/known-folders.md)   |                          |                                   |
 | ⮱ [User Folders](windows/known-folders/user-folders.md)   | Downloads Folder         | `shell:My Pictures`               |
-| ⮱ [OS Panels, Folders](windows/known-folders/guids.md)    | Recycle Bin              | `shell:::{...}`                   |
-| ⮱ [GUIDs Archive](windows/known-folders/guids-archive.md) | 3D Objects               | `shell:::{...}`                   |
+| ⮱ [OS Panels, Folders](windows/known-folders/guids.md)    | Recycle Bin              | `shell:::{�}`                     |
+| ⮱ [GUIDs Archive](windows/known-folders/guids-archive.md) | 3D Objects               | `shell:::{�}`                     |
 | [Dll commands](windows/dll.md)                            | Neue Verknüpfung anlegen | `rundll32 appwiz.cpl,NewLinkHere` |
 | [Troubleshooters](windows/troubleshooters.md)             | Printer Troubleshooter   | `msdt -id PrinterDiagnosticmsdt`  |
 | [Icon libraries](windows/icons.md)                        | Imageres Library         | `shell32.dll`                     |
@@ -20,20 +20,21 @@
 
 ### Powershell
 
-| Topic                                              | Example Component      | Example Code                                          |
-| -------------------------------------------------- | ---------------------- | ----------------------------------------------------- |
-| [Getting Started](powershell/powershell.md)        | Help Cmdlets           | `script.ps1.bat`                                      |
-| [Data Types](powershell/data-types.md)             | Hashtable              | `[DateTime]::Now`                                     |
-| [Input](powershell/input.md)                       | File Parsing           | `[RegEx]::Match($line, $regexFormat).Groups[1].value` |
-| [Output](powershell/output.md)                     | Custom Table View      | `Export-Clixml`                                       |
-| [Storage](powershell/storage.md)                   | Create shortcuts       | ``explorer "/select,`"$(Resolve-Path $file)`""``      |
-| [Web](powershell/web.md)                           | Download, extract ZIPs | `Invoke-WebRequest -Uri $url -OutFile $file`          |
-| [Bash equivalents](powershell/bash-equivalents.md) | While Loop             | `read name` <-> `$name = Read-Host "Name"`            |
-| [Applications](powershell/applications.md)         | Update Store Apps      | `$wmiObj.UpdateScanMethod()`                          |
-| [Interactive Menu](powershell/menu.md)             | Select option 1, 2, 3  | `$Choice = Read-Host "Select ..."`                    |
-| [Encryption](powershell/encryption.md)             | Passwords              | `ConvertTo-SecureString`                              |
-| [Bluetooth](powershell/bluetooth.md)               | List Devices           | `Get-PnpDevice -Class Bluetooth`                      |
-| [File attributes](powershell/file-attributes.md)   | Make ReadOnly          | `$item.Attributes = $item.Attributes -bor 0x080000`   |
+| Topic                                                 | Example Component      | Example Code                                          |
+| ----------------------------------------------------- | ---------------------- | ----------------------------------------------------- |
+| [Getting Started](powershell/powershell.md)           | Help Cmdlets           | `script.ps1.bat`                                      |
+| ⮱ [Data Types](powershell/data-types.md)              | Hashtable              | `[DateTime]::Now`                                     |
+| ⮱ [Bash equivalents](powershell/bash-equivalents.md)  | While Loop             | `read name` <-> `$name = Read-Host -Prompt "Name"`    |
+| [IO](powershell/io/io.md)                             | Run as administrator   | ``explorer "/select,`"$(Resolve-Path $file)`""``      |
+| ⮱ [Input](powershell/io/input.md)                     | File Parsing           | `[RegEx]::Match($line, $regexFormat).Groups[1].value` |
+| ⮱ [Output](powershell/io/output.md)                   | Custom Table View      | `Export-Clixml`                                       |
+| ⮱ [Links](powershell/io/links.md)                     | Create symbolic links  | `New-Item -ItemType SymbolicLink -Name � -Target �`   |
+| ⮱ [File attributes](powershell/io/file-attributes.md) | Make ReadOnly          | `$item.Attributes = $item.Attributes -bor 0x080000`   |
+| ⮱ [Web](powershell/io/web.md)                         | Download, extract ZIPs | `Invoke-WebRequest -Uri $url -OutFile $file`          |
+| [Applications](powershell/applications.md)            | Update Store Apps      | `$wmiObj.UpdateScanMethod()`                          |
+| [Interactive Menu](powershell/menu.md)                | Select option 1, 2, 3  | `$Choice = Read-Host -Prompt "Select ..."`            |
+| [Encryption](powershell/encryption.md)                | Passwords              | `ConvertTo-SecureString`                              |
+| [Bluetooth](powershell/bluetooth.md)                  | List Devices           | `Get-PnpDevice -Class Bluetooth`                      |
 
 
 ### LaTeX

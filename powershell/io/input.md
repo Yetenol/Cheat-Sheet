@@ -1,14 +1,5 @@
-# [⌂](../README.md) › [PowerShell](../README.md#powershell) › Input Handling
+# [⌂](../../README.md) › [PowerShell](../../README.md) › [IO](io.md) › Input Handling
 
-- [⌂ › [PowerShell](../README.md#powershell) › Input Handling](#--powershell--input-handling)
-- [Type An Input With The Keyboard](#type-an-input-with-the-keyboard)
-- [.Net formatted file](#net-formatted-file)
-- [Plain text file](#plain-text-file)
-  - [Find Occurrences Of A Pattern](#find-occurrences-of-a-pattern)
-  - [Extract Data Using A Pattern](#extract-data-using-a-pattern)
-- [Sensitive input](#sensitive-input)
-  - [Enter sensitive input in console](#enter-sensitive-input-in-console)
-  - [Decrypt locally](#decrypt-locally)
 
 # Type An Input With The Keyboard
 

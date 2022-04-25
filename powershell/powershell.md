@@ -51,12 +51,6 @@ function Show-Hello {
 ```
 
 
-
-
-
-
-
-
 ## Get path apps
 ```powershell
 $paths = [String[]] @($env:path -split ";") 
