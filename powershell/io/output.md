@@ -6,79 +6,119 @@ Everything in PowerShell is already or becomes a .NET object. Therefore, you sho
 
 - PowerShell modules return objects of a specific type
 - external programs return an array of lines `Object[]`  (Array von Textzeilen) zurück.
-1. Objekttyp und Eigenschaften analysieren
+
+```powershell
+$c = Get-Command
+$f = Get-ChildItem
+```
+
+# Diagnose
+- See object type, properties
 	```powershell
-	| Get-Member
+	$c | Get-Member -MemberType Properties
+	```
+	> DIRTY: `| gm`
+
+- Count elements or file lines
+	```powershell
+	$c.Count
 	```
 
-# Visualisiere Ausgabe
-1. ...als Seite-für-Seite Textansicht
+# Visualize
+
+- **PAGES**: Split output into console-sized pages
 	```powershell
-	| more
-	```
-1. ...als GUI mit Tabellenformat
-	```powershell
-	| Out-GridView
-	```
-1. ...als reine Text-Tabelle
-	- verwirft Objectstruktur
-	```powershell
-	| Format-Table
+	$c | more
 	```
 
-# Ausgabe analysieren
-1. Einträge / Zeilen zählen
+- **GUI**: Launch table GUI
 	```powershell
-	$o.Count
+	$c | Out-GridView
 	```
 
-# Eingabedatensatz eingrenzen
-1. Einträge abzählen: Wähle die ersten 2 Einträge und die letzten 3
+- **PLAINTEXT TABLE**: Show plaintext table
+	> Discards object structure.
 	```powershell
-	| select -First 2 -Last 3
+	$c | Format-Table
 	```
-1. Einträgespanne auswählen: Wähle den 5. bis 27. Eintrag
+
+
+# Limit data set
+
+- **LIST**: Select the 2nd 4th and 7th item
 	```powershell
-	$objects[5..27]
+	$c | select -Index 3, 4
 	```
-1. Eine Bedingung
 	```powershell
-	| where {$_.BaseName -like "*anton*"}
+	$c[@(2;4;7)]
 	```
-1. Verknüpfte Bedingungen
+	> DIRTY: `$c[2,4,7]`
+
+- **RANGE**: Select the first 2 and the last 3 items
+	```powershell
+	$c | select -First 2 -Last 3
+	```
+	```powershell
+	$c[@(0..1;-3..-1)]
+	```
+	> DIRTY: `$c[0..1+-3..-1]`
+
+- **HIDE DUPLICATES**: If multiple items have equal values, display it only once.
+	```powershell
+	$c.Noun | select -Unique
+	```
+
+- **CONDITION**  
+Learn operators: `Get-Help about_Comparison_Operators`
+
+	```powershell
+	$c | where {$_.Name -match "vpn"}
+	```
+	> DIRTY: `$c | where Name -match "vpn"`
+
 	``` powershell
-	| where { `
-		{ $_.Extension -like ".mkv" -or $_.Extension -like ".mp4" } `
+	$f | where { `
+		( $_.Extension -eq ".xml" -or $_.Name -like "example*" ) `
 		-and 
 		$_.LastWriteTime -ge [DateTime]::"2000-12-31" `
 	}
 	```
-# Spalten auswählen
-1. Alle Spalten anzeigen
+
+
+# Properties (columns)
+
+- All properties
 	```powershell
-	| select -Property *
+	$c | select -Property *
 	```
-1. (Mehrere) Spalten auswählen
+- Select properties
 	```powershell
-	| select -Property BaseName, Extension
+	$c | select -Property @("Verb"; "Noun")
 	```
-1. Spalte umbenennen
+	> DIRTY: `$c | select Verb, Noun`
+- Add custom property
 	```powershell
-	| select -Property `
-		@{Label="Bytesize"; Expression={ $_.Length }}
-1. Eigene Spalte erzeugen
-	```powershell
-	| select -Property `
-		@{Label="Size in MB"; Expression={ $_.Length / 1GB}}
+	$f | select -Property @(
+		"Name";
+		@{Label="Size in MB"; Expression={  [Math]::Round($_.Length / 1MB, 2)  }};
+	)
 	```
+	```powershell
+	$f | % { Write-Output ([PSCustomObject]@{
+		Name = $_.Name;
+		"Size in MB" = [Math]::Round($_.Length / 1MB, 2);
+  	})}
+	```
+
+
 # Sortieren
 1. Nur aufsteigende Sortierung
 	```powershell
-	| sort -Property Extension, BaseName
+	$c | sort -Property Extension, BaseName
 	```
 1. Sortierung
 	```powershell
-	| sort -Property `
+	$c | sort -Property `
 		@{Expression="Length"; Descending=$True}, `
 		Name
 	```
@@ -87,32 +127,32 @@ Everything in PowerShell is already or becomes a .NET object. Therefore, you sho
 	- **EMPFOHLEN**
 	- **VERLUSTFREI** (behält gesamte `.NET`-Information)
 	```powershell
-	| Export-Clixml -Path "object.xml"
+	$c | Export-Clixml -Path "object.xml"
 	```
 1. ...als Excel-Tabelle
 	```powershell
-	| Export-Csv -Delimiter ";" -NoTypeInformation -Path ".\text.csv"
+	$c | Export-Csv -Delimiter ";" -NoTypeInformation -Path ".\text.csv"
 	```
 1. ...als tabellarische Textdatei
 	```powershell
-	| Format-Table -AutoSize -Wrap `
+	$c | Format-Table -AutoSize -Wrap `
 	| Out-File -FilePath ".\text.txt"
 	```
 1. ...als auflistende Textdatei
 	```powershell
-	| Format-List `
+	$c | Format-List `
 	| Out-File -FilePath ".\text.txt"
 	```
 1. ...als verschlüsselte Textdatei
 	- siehe [Verschlüsselung](encryption.md)
 	```powershell
-	| ConvertTo-SecureString -AsPlainText -Force `
+	$c | ConvertTo-SecureString -AsPlainText -Force `
 	| ConvertFrom-SecureString `
 	| Out-File -FilePath ".\key.bin"
 	```
 1. ...als sicherer Text
 	```powershell
-	| ConvertTo-SecureString -AsPlainText -Force
+	$c | ConvertTo-SecureString -AsPlainText -Force
 	```
 
 ___
