@@ -1,7 +1,7 @@
-# [⌂](../../README.md) › [PowerShell](../../README.md) › [IO](io.md) › Input Handling
+# [⌂](../../README.md) › [PowerShell](../../README.md) › [FileSystem](filesystem.md) › Import data
 
 
-# Type An Input With The Keyboard
+# Type an input with the keyboard
 
 ```powershell
 $User = Get-Host "Username"

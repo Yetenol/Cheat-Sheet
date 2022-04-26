@@ -20,23 +20,23 @@
 
 ### Powershell
 
-| Topic                                                 | Example Component       | Example Code                                        |
-| ----------------------------------------------------- | ----------------------- | --------------------------------------------------- |
-| [Getting Started](powershell/powershell.md)           | Help Cmdlets            | `script.ps1.bat`                                    |
-| ⮱ [Data Types](powershell/data-types.md)              | Hashtable               | `[DateTime]::Now`                                   |
-| ⮱ [Bash equivalents](powershell/bash-equivalents.md)  | While Loop              | `read name` <-> `$name = Read-Host -Prompt "Name"`  |
-| [IO](powershell/io/io.md)                             | Run as administrator    | ``explorer "/select,`"$(Resolve-Path $file)`""``    |
-| ⮱ [Input](powershell/io/input.md)                     | File Parsing            | `[RegEx]::Match(�, $pattern).Groups[1].value`       |
-| ⮱ [Modify data](powershell/io/modify.md)              | Add calculated property | `$list[@(0..1;-3..-1)]`                             |
-| ⮱ [Output](powershell/io/output.md)                   | Export spreadsheet      | `Export-Clixml`                                     |
-| ⮱ [Filesystem links](powershell/io/links.md)          | Create symbolic link    | `New-Item -ItemType SymbolicLink -Name � -Target �` |
-| ⮱ [File attributes](powershell/io/file-attributes.md) | Make ReadOnly           | `$item.Attributes = $item.Attributes -bor 0x080000` |
-| ⮱ [Web](powershell/io/web.md)                         | Download, extract ZIPs  | `Invoke-WebRequest -Uri $url -OutFile $file`        |
-| [Applications](powershell/applications.md)            | Update Store Apps       | `$wmiObj.UpdateScanMethod()`                        |
-| [Interactive Menu](powershell/menu.md)                | Select option 1, 2, 3   | `$Choice = Read-Host -Prompt "Select ..."`          |
-| [Encryption](powershell/encryption.md)                | Passwords               | `ConvertTo-SecureString`                            |
-| [Bluetooth](powershell/bluetooth.md)                  | List Devices            | `Get-PnpDevice -Class Bluetooth`                    |
-| [Win+X Menu](windows/win-x.md)                        | Add Win+X entries       |                                                     |
+| Topic                                                          | Example Component       | Example Code                                        |
+| -------------------------------------------------------------- | ----------------------- | --------------------------------------------------- |
+| [Getting Started](powershell/powershell.md)                    | Help Cmdlets            | `script.ps1.bat`                                    |
+| ⮱ [Data Types](powershell/data-types.md)                       | Hashtable               | `[DateTime]::Now`                                   |
+| ⮱ [Modify data](powershell/filesystem/modify.md)               | Add calculated property | `$list[@(0..1;-3..-1)]`                             |
+| ⮱ [Bash equivalents](powershell/bash-equivalents.md)           | While Loop              | `read name` <-> `$name = Read-Host -Prompt "Name"`  |
+| [FileSystem Interactions](powershell/filesystem/filesystem.md) | Run as administrator    | ``explorer "/select,`"$(Resolve-Path $file)`""``    |
+| ⮱ [Import](powershell/filesystem/import.md)                    | File Parsing            | `[RegEx]::Match(�, $pattern).Groups[1].value`       |
+| ⮱ [Export](powershell/filesystem/export.md)                    | Export spreadsheet      | `Export-Clixml`                                     |
+| ⮱ [Links](powershell/filesystem/links.md)                      | Create symbolic link    | `New-Item -ItemType SymbolicLink -Name � -Target �` |
+| ⮱ [Attributes](powershell/filesystem/file-attributes.md)       | Make ReadOnly           | `$item.Attributes = $item.Attributes -bor 0x080000` |
+| ⮱ [Web](powershell/filesystem/web.md)                          | Download, extract ZIPs  | `Invoke-WebRequest -Uri $url -OutFile $file`        |
+| [Applications](powershell/applications.md)                     | Update Store Apps       | `$wmiObj.UpdateScanMethod()`                        |
+| [Interactive Menu](powershell/menu.md)                         | Select option 1, 2, 3   | `$Choice = Read-Host -Prompt "Select ..."`          |
+| [Encryption](powershell/encryption.md)                         | Passwords               | `ConvertTo-SecureString`                            |
+| [Bluetooth](powershell/bluetooth.md)                           | List Devices            | `Get-PnpDevice -Class Bluetooth`                    |
+| [Win+X Menu](windows/win-x.md)                                 | Add Win+X entries       |                                                     |
 
 
 ### LaTeX

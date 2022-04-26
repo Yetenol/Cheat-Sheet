@@ -1,9 +1,9 @@
-# [⌂](../../README.md) › [PowerShell](../../README.md) › IO
+# [⌂](../../README.md) › [PowerShell](../../README.md) › FileSystem - Interactions
 
-### [Input ❯](input.md)
-### [Output ❯](output.md)
+### [Import ❯](import.md)
+### [Export ❯](export.md)
 ### [Links ❯](links.md)
-### [File attributes ❯](file-attributes.md)
+### [Attributes ❯](file-attributes.md)
 ### [Web ❯](web.md)
 
 ## Windows Explorer

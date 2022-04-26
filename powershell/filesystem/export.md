@@ -1,4 +1,4 @@
-# [⌂](../../README.md) › [PowerShell](../../README.md) › [IO](io.md) › Output variants
+# [⌂](../../README.md) › [PowerShell](../../README.md) › [FileSystem](filesystem.md) › Export data
 
 ```powershell
 $c = Get-Command
