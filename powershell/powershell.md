@@ -8,33 +8,29 @@
 # The above line makes the script executable when renamed .cmd or .bat
 ```
 
-# Help Yourself
-
-## Discover available commands[ᴰ](glossary.md#command)
-```powershell
-Get-Command | where {$_.Name -Match "vpn"}
-```
-
-## Help-Files
-Update Help Files (Run as admin)
+# Help yourself
+Update help files (**Run elevated**)
 ```powershell
 Update-Help
 ```
 
-## Get syntax help
-```powershell
-(Get-Process -?).syntax
-```
+- Discover available commands[ᴰ](glossary.md#command)
+  ```powershell
+  Get-Command | where {$_.Name -Match "vpn"}
+  ```
+  > DIRTY: `gcm | where Name -Match "vpn"`
 
-Browser help page
-```powershell
-help Get-Process -online
-```
 
-Specific parameter help
-```powershell
-help Get-Process -Parameter Id
-```
+- Show syntax
+  ```powershell
+  (Get-Process -?).syntax
+  ```
+
+- Open help page in browser
+  ```powershell
+  Get-Help Get-Process -Online
+  ```
+  > DIRTY: `help Get-Process -Online`
 
 
 ## Function[ᴰ](glossary.md#function): Set parameter AutoComplete
