@@ -2,7 +2,6 @@
 
 ```powershell
 $c = Get-Command
-$f = Get-ChildItem
 ```
 
 # Visualize

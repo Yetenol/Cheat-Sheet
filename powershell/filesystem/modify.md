@@ -7,6 +7,11 @@ Everything in PowerShell is already or becomes a .NET object. Therefore, you sho
 - PowerShell modules return objects of a specific type
 - external programs return an array of lines `Object[]`  (Array von Textzeilen) zurück.
 
+```powershell
+$c = Get-Command
+$f = Get-ChildItem
+```
+
 
 # Diagnose
 
@@ -27,7 +32,7 @@ Everything in PowerShell is already or becomes a .NET object. Therefore, you sho
 - **List**:  
   Select the 2nd 4th and 7th item
 	```powershell
-	$c | select -Index 3, 4
+	$c | select -Index 2, 4, 7 
 	```
 	```powershell
 	$c[@(2;4;7)]
