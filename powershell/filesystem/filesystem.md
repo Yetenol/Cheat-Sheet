@@ -22,6 +22,7 @@
 
 ```powershell
 $file = ".\example.txt"
+$tool = "$env:SystemRoot\System32\notepad.exe"
 ```
 
 # Windows Explorer
@@ -67,6 +68,14 @@ Flag is stored in byte `0x15` (= 21) at bit `0x20` (= 6).
     $bytes = [System.IO.File]::ReadAllBytes((Resolve-Path $file))
     $bytes[0x15] = $bytes[0x15] -bxor 0x20
     [System.IO.File]::WriteAllBytes((Resolve-Path $file), $bytes)
+    ```
+
+
+# File Information
+
+- Get version data of Windows components
+    ```powershell
+    [System.Diagnostics.FileVersionInfo]::GetVersionInfo($tool) | select *
     ```
 
 
