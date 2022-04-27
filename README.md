@@ -31,6 +31,7 @@
 | ⮱ [Export](powershell/filesystem/export.md)                    | Export spreadsheet      | `Export-Clixml`                                     |
 | ⮱ [Links](powershell/filesystem/links.md)                      | Create symbolic link    | `New-Item -ItemType SymbolicLink -Name � -Target �` |
 | ⮱ [Attributes](powershell/filesystem/file-attributes.md)       | Make ReadOnly           | `$item.Attributes = $item.Attributes -bor 0x080000` |
+| ⮱ [Meta data](powershell/filesystem/metadata.md)               | Get meta data           | _Function_                                          |
 | ⮱ [Web](powershell/filesystem/web.md)                          | Download, extract ZIPs  | `Invoke-WebRequest -Uri $url -OutFile $file`        |
 | [Applications](powershell/applications.md)                     | Update Store Apps       | `$wmiObj.UpdateScanMethod()`                        |
 | [Interactive Menu](powershell/menu.md)                         | Select option 1, 2, 3   | `$Choice = Read-Host -Prompt "Select ..."`          |
