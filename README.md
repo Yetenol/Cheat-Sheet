@@ -16,6 +16,7 @@
 | [Dll commands](windows/dll.md)                            | Neue Verknüpfung anlegen | `rundll32 appwiz.cpl,NewLinkHere` |
 | [Troubleshooters](windows/troubleshooters.md)             | Printer Troubleshooter   | `msdt -id PrinterDiagnosticmsdt`  |
 | [Icon libraries](windows/icons.md)                        | Imageres Library         | `shell32.dll`                     |
+| [Context menu](windows/context-menu.md)                   | Open in VS Code          |
 
 
 ### Powershell
