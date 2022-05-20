@@ -77,9 +77,9 @@ $(\pi^{\pi})^{\pi}$ & 80662&7 \\
         \toprule     %%%%%%%%%% TABLE HEADER %%%%%%%%%%
         & \multicolumn{2}{c}{Group} \\
         \cmidrule(lr){2-3}   % partial horizontal line
-        \SYMBOLA* in \unit{V} & 
-        \SYMBOLB* in \unit{\micro\second/l} &
-        \SYMBOLC* in \unit{kg.\frac{m}{s}}
+        {\SYMBOLA* in \unit{V}} &
+        {\SYMBOLB* in \unit{\micro\second/l}} &
+        {\SYMBOLC* in \unit{kg.\frac{m}{s}}}
         \\ \midrule     %%%%%%%%%% TABLE BODY %%%%%%%%%%
         453.116 & 382.657  & -426418 \\
         88.760  & -245.946 & 332002 \\
