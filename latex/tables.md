@@ -58,21 +58,21 @@ $(\pi^{\pi})^{\pi}$ & 80662&7 \\
 ```
 
 ```latex
-\begin{table}
+\begin{table}%[POSITIONING]
     %%%%%%%%%% LAYOUT, META DATA %%%%%%%%%%
     \centering
     \caption[SHORT-CAPTION]{CAPTION}
     \label{fig:TABLE_LABEL}
-    \sisetup{table-auto-round=true}
+    \sisetup{table-auto-round = true}
     %%%%%%%%%% COLUMN SYMBOLS %%%%%%%%%%
     \def\SYMBOLA*{$\alpha$}
     \def\SYMBOLB*{$\beta$}
     \def\SYMBOLC*{$\gamma$}
     %%%%%%%%%% COLUMN FORMATTING %%%%%%%%%%
     \begin{tabular}[]{
-        S[table-format=-3.0e-1] % column A
-        S[table-format=3.1] % column B
-        S[table-format=2.e1, color=orange] % column C
+        S[table-format = -3.0e-1] % column A
+        S[table-format = 3.1] % column B
+        S[table-format = 2.e1, color = orange] % column C
     }
         \toprule     %%%%%%%%%% TABLE HEADER %%%%%%%%%%
         & \multicolumn{2}{c}{Group} \\
