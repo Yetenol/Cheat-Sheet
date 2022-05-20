@@ -24,7 +24,7 @@
 ```latex
 \begin{figure}[POSITIONING]
     \centering
-    \caption[SHORT_CAPTION]{CAPTION}
+    \caption[SHORT-CAPTION]{CAPTION}
     \label{fig:IMAGE_LABEL}
     \includegraphics[width=0.75\columnwidth]{FILE_NAME}
 \end{figure}
@@ -32,7 +32,7 @@
 
 - `POSITIONING` := see [Positioning](#positioning)
 - `FILE_NAME` := path (without extension) of the image 
-- `SHORT_CAPTION` := (optional) replaced the entry in the list of figures with a summary
+- `SHORT-CAPTION` := (optional) replaced the entry in the list of figures with a summary
 - `CAPTION` := displayed name of the figure
 - `IMAGE_LABEL` := label to reference the figure
 
