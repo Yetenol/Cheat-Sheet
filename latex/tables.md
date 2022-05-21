@@ -1,37 +1,50 @@
 # [⌂](../README.md) › [LaTeX](../README.md#latex) › **Tables**
 
-## TABULARX Set table width
+# Column types
+
+|                        | Width               | Alignment       | Content   |
+| ---------------------- | ------------------- | --------------- | --------- |
+| `L`                    | equally distributed | left            | paragraph |
+| `R`                    | equally distributed | right           | paragraph |
+| `C`                    | equally distributed | center          | paragraph |
+| `X`                    | equally distributed | justify         | paragraph |
+| `p{1cm}`               | fixed               | left            | paragraph |
+| `m{}`                  | fixed               | vertical center | paragraph |
+| `S[[table-format=3.1]` | fixed               | decimal point   | numbers   |
+| `S`                    | auto-fit to content | decimal point   | numbers   |
+
+## Adjustable-width columns
+
+> Requirement [LaTeX.table](https://github.com/Yetenol/latex.table)
 
 ```latex
-\usepackage{tabularx}
-```
+\begin{table}%[POSITIONING]
+%%%%%%%%%% LAYOUT, META DATA %%%%%%%%%%
+\centering
+\caption{CAPTION} % \caption[LISTOFTABLES-CAPTION]{CAPTION}
+\label{tab:LABEL}
+%%%%%%%%%% COLUMN FORMATTING %%%%%%%%%%
+\begin{tabularx}{\columnwidth}
+{
+    p{1.75cm} % fixes width
+    X % Justify text
+    C % centering text
+    X % 
+}
+    \toprule     %%%%%%%%%% TABLE HEADER %%%%%%%%%%
+    & \multicolumn{2}{c}{Group} 
+    \\ \cmidrule(lr){2-3}   % partial horizontal line
+    {\SYMBOLA* in \unit{V}} &
+    {\SYMBOLB* in \unit{\micro\second\per\liter}} &
+    {\SYMBOLC* in \unit{kg.\frac{m}{s}}}
+    \\ \midrule     %%%%%%%%%% TABLE BODY %%%%%%%%%%
 
-```
-\newcolumntype{L}{>{\raggedright\arraybackslash}X}
-\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
-\newcolumntype{C}{>{\centering\arraybackslash}X}
-```
-
-```latex
-\begin{center}
-\begin{tabularx}{\SYMBOLwidth}{X|p{1.7cm}|C|}
-    
 \end{tabularx}
-\end{center}
+\end{table}
 ```
 
-| .      | Width               | Alignment      | Content   |
-| ------ | ------------------- |
-| L      | equally distributed | left-aligned   | paragraph |
-| R      | equally distributed | right-aligned  | paragraph |
-| X      | equally distributed | center-aligned | paragraph |
-| p{1cm} | fixed               | left-aligned   | paragraph |
-| m{}    | fixed               |
 
-`ALLIGNMENT` := 
-
-
-## Allign decimal points
+## Align decimal points
 
 ```latex
 \begin{tabular}{c r @{.} l}
