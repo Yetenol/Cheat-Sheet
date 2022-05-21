@@ -22,27 +22,39 @@
 
 ```latex
 \begin{table}%[POSITIONING]
-%%%%%%%%%% LAYOUT, META DATA %%%%%%%%%%
-\centering
-\caption{CAPTION} % \caption[LISTOFTABLES-CAPTION]{CAPTION}
-\label{tab:LABEL}
-%%%%%%%%%% COLUMN FORMATTING %%%%%%%%%%
-\begin{tabularx}{\columnwidth}
-{
-    p{1.75cm} % fixes width
-    X % Justify text
-    C % centering text
-    X % 
-}
-    \toprule     %%%%%%%%%% TABLE HEADER %%%%%%%%%%
-    & \multicolumn{2}{c}{Group} 
-    \\ \cmidrule(lr){2-3}   % partial horizontal line
-    {\SYMBOLA* in \unit{V}} &
-    {\SYMBOLB* in \unit{\micro\second\per\liter}} &
-    {\SYMBOLC* in \unit{kg.\frac{m}{s}}}
-    \\ \midrule     %%%%%%%%%% TABLE BODY %%%%%%%%%%
-
-\end{tabularx}
+    %%%%%%%%%% LAYOUT, META DATA %%%%%%%%%%
+    \centering
+    \caption{CAPTION} % \caption[LISTOFTABLES-CAPTION]{CAPTION}
+    \label{tab:LABEL}
+    %%%%%%%%%% COLUMN NAMES %%%%%%%%%%
+    \def\COLUMNA*{Person}
+    \def\COLUMNB*{Father}
+    \def\COLUMNC*{Mother}
+    %%%%%%%%%% COLUMN FORMATTING %%%%%%%%%%
+    \begin{tabularx}{\columnwidth}
+    {
+        p{1.75cm} % fixes width
+        X % Justify text
+        C % centering text
+        X % 
+    }
+        \toprule     %%%%%%%%%% TABLE HEADER %%%%%%%%%%
+        & \multicolumn{2}{c}{Parents} 
+        \\ \cmidrule(lr){2-3}   % partial horizontal line
+        {\COLUMNA* (a-z)} &
+        {\COLUMNB*} &
+        {\COLUMNC*}
+        \\ \midrule     %%%%%%%%%% TABLE BODY %%%%%%%%%%
+            Dieter & Klaus & Hans \\
+        \bottomrule     %%%%%%%%%% END OF BODY %%%%%%%%%%
+    \end{tabularx}
+    \begin{multicols}{2}   % number of legend columns
+        \begin{enumerate}     %%%%% COLUMN LEGEND %%%%%
+            \item[\COLUMNA*] Frequenz
+            \item[\COLUMNB*] Eingangsspannung
+            \item[\COLUMNC*] Spannung über den Widerstand
+        \end{enumerate}     %%%%% END OF LEGEND %%%%%
+    \end{multicols}
 \end{table}
 ```
 
@@ -77,8 +89,8 @@ $(\pi^{\pi})^{\pi}$ & 80662&7 \\
 \begin{table}%[POSITIONING]
     %%%%%%%%%% LAYOUT, META DATA %%%%%%%%%%
     \centering
-    \caption[LISTOFTABLES-CAPTION]{CAPTION}
-    \label{fig:TABLE_LABEL}
+    \caption{CAPTION} % \caption[LISTOFTABLES-CAPTION]{CAPTION}
+    \label{tab:LABEL}
     \sisetup{table-auto-round = true}
     %%%%%%%%%% COLUMN SYMBOLS %%%%%%%%%%
     \def\SYMBOLA*{$\alpha$}
