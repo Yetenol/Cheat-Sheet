@@ -2,16 +2,19 @@
 
 # Column types
 
-|                        | Width               | Alignment       | Content   |
-| ---------------------- | ------------------- | --------------- | --------- |
-| `L`                    | equally distributed | left            | paragraph |
-| `R`                    | equally distributed | right           | paragraph |
-| `C`                    | equally distributed | center          | paragraph |
-| `X`                    | equally distributed | justify         | paragraph |
-| `p{1cm}`               | fixed               | left            | paragraph |
-| `m{}`                  | fixed               | vertical center | paragraph |
-| `S[[table-format=3.1]` | fixed               | decimal point   | numbers   |
-| `S`                    | auto-fit to content | decimal point   | numbers   |
+> Requirement [LaTeX.table](https://github.com/Yetenol/latex.table)
+
+|                       | Content            | Width               | Alignment       |
+| --------------------- | ------------------ | ------------------- | --------------- |
+| `L`                   | paragraph          | equally distributed | left            |
+| `R`                   | paragraph          | equally distributed | right           |
+| `C`                   | paragraph          | equally distributed | center          |
+| `X`                   | paragraph          | equally distributed | justify         |
+| `p{1cm}`              | paragraph          | fixed               | left            |
+| `p`                   | single line        | auto-fit to content | left            |
+| `m{}`                 | paragraph          | fixed               | vertical center |
+| `S[table-format=3.1]` | number/single line | fixed               | decimal point   |
+| `S`                   | number/single line | auto-fit to content | decimal point   |
 
 ## Adjustable-width columns
 
