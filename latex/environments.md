@@ -2,45 +2,38 @@
 
 ## Extend an existing environment 
 
-```
+```latex
 \usepackage{etoolbox} % Append methods to environments
 ```
 
-Declare placeholders for environment-internal methods: 
-```latex
-\newcommand{\inaccessiblesetauthor}{}
-\newcommand{\inaccessiblesetpage}{}
-```
+## Private environment methods
 
-Give the existing start and end commands of the environment aliases to be able to call them later on.
-```latex
-\let\oldquote\quote
-\let\endoldquote\endquote
-```
+1. Declare a public global placeholder _METHOD_
+    ```latex
+    \newcommand{\inaccessibleMETHOD}{}
+    ```
 
-Expand the existing environment.
-```latex
-\renewenvironment{quote}
-{
-    \oldquote % begin{quote}
+2. Create references to the environment _ENVIRONMENT_ to be overwritten in order to access it later on
+    ```latex
+    \let\@oldENVIRONMENT\ENVIRONMENT
+    \let\@endoldENVIRONMENT\endENVIRONMENT
+    ```
 
-    % Define setauthor (only accessible inside the environment)
-    \renewcommand{\inaccessiblesetauthor}[1]
+3. Define method (private)
+    ```latex
+    \renewenvironment{ENVIRONMENT}
     {
-        \def\author{##1}
-    }
-    \global\let\setauthor\inaccessiblesetauthor
+        \oldENVIRONMENT % begin{ENVIRONMENT}
 
-    % Define setpage (only accessible inside the environment)
-    \renewcommand{\inaccessiblesetpage}[1]
-    {
-        \def\page{##1}
+        % Define method \SETTER{ATTRIBUTE}
+        % - only accessible inside the environment (aka method)
+        \renewcommand{\inaccessibleSETTER}[1]
+        {
+            \def\@ATTRIBUTE{##1}
+        }
+        \global\let\SETTER\inaccessibleSETTER
     }
-    \global\let\setpage\inaccessiblesetpage
-}
-{
-    \par\nobreak\smallskip\hfill(\author --- \page)
-    \endoldquote % end{quote}
-    \addvspace{\bigskipamount}
-}
-```
+    {
+        \endoldENVIRONMENT % end{ENVIRONMENT}
+    }
+    ```

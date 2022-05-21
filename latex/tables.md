@@ -70,19 +70,19 @@ $(\pi^{\pi})^{\pi}$ & 80662&7 \\
     \def\SYMBOLC*{$\gamma$}
     %%%%%%%%%% COLUMN FORMATTING %%%%%%%%%%
     \begin{tabular}[]{
-        S[table-format = -3.0e-1] % column A
+        S[table-format = +3.0e-1] % column A
         S[table-format =  3.1] % column B
-        S[table-format =  2.e1, color = orange] % column C
+        S[table-format = +2.e1, color = orange] % column C
     }
         \toprule     %%%%%%%%%% TABLE HEADER %%%%%%%%%%
-        & \multicolumn{2}{c}{Group} \\
-        \cmidrule(lr){2-3}   % partial horizontal line
+        & \multicolumn{2}{c}{Group} 
+        \\ \cmidrule(lr){2-3}   % partial horizontal line
         {\SYMBOLA* in \unit{V}} &
-        {\SYMBOLB* in \unit{\micro\second/l}} &
+        {\SYMBOLB* in \unit{\micro\second\per\liter}} &
         {\SYMBOLC* in \unit{kg.\frac{m}{s}}}
         \\ \midrule     %%%%%%%%%% TABLE BODY %%%%%%%%%%
         453.116 & 382.657  & -426418 \\
-        88.760  & -245.946 & 332002 \\
+        88.760  & 245.946 & 332002 \\
         \bottomrule     %%%%%%%%%% END OF BODY %%%%%%%%%%
     \end{tabular}
     \begin{multicols}{2}   % number of legend columns
