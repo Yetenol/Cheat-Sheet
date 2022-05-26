@@ -114,11 +114,11 @@ $(\pi^{\pi})^{\pi}$ & 80662&7 \\
         \bottomrule     %%%%%%%%%% END OF BODY %%%%%%%%%%
     \end{tabular}
     \begin{multicols}{2}   % number of legend columns
-        \begin{enumerate}     %%%%% COLUMN LEGEND %%%%%
+        \begin{itemize}     %%%%% COLUMN LEGEND %%%%%
             \item[\SYMBOLA*] Frequenz
             \item[\SYMBOLB*] Eingangsspannung
             \item[\SYMBOLC*] Spannung über den Widerstand
-        \end{enumerate}     %%%%% END OF LEGEND %%%%%
+        \end{itemize}     %%%%% END OF LEGEND %%%%%
     \end{multicols}
 \end{table}
 ```
