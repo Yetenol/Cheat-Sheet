@@ -93,9 +93,9 @@ $(\pi^{\pi})^{\pi}$ & 80662&7 \\
     \label{tab:LABEL}
     \sisetup{table-auto-round = true}
     %%%%%%%%%% COLUMN SYMBOLS %%%%%%%%%%
-    \def\SYMBOLA*{$\alpha$}
-    \def\SYMBOLB*{$\beta$}
-    \def\SYMBOLC*{$\gamma$}
+    \def\SYMBOLA*{\ensuremath{\alpha}}
+    \def\SYMBOLB*{\ensuremath{\beta}}
+    \def\SYMBOLC*{\ensuremath{\gamma}}
     %%%%%%%%%% COLUMN FORMATTING %%%%%%%%%%
     \begin{tabular}[]{
         S[table-format = +3.0e-1] % column A
