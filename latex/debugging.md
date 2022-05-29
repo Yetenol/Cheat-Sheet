@@ -1,8 +1,10 @@
 # [⌂](../README.md) › [LaTeX](../README.md#latex) › **Debugging**
 
-- [⌂ › [LaTeX](../README.md#latex) › **Debugging**](#--latex--debugging)
-  - [Obmit PDF output and only check syntax](#obmit-pdf-output-and-only-check-syntax)
-  - [Draft Mode](#draft-mode)
+## Throw Errors
+
+```latex
+\PackageError {⟨package-name⟩} {⟨error-text⟩} {⟨help-text⟩}
+```
 
 ## Obmit PDF output and only check syntax
 
