@@ -4,7 +4,7 @@
 
 View package documentation
 ```powershell
-texdoc PACKAGE_NAME
+texdoc ⟨package-name⟩
 ```
 
 ## File Structure

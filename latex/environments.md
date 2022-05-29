@@ -1,5 +1,7 @@
 # [⌂](../README.md) › [LaTeX](../README.md#latex) › **Environment**
 
+> CAPITAL letter are ⟨placeholders⟩
+
 ## Extend an existing environment 
 
 ```latex
@@ -10,7 +12,8 @@
 
 1. Declare a public global placeholder _METHOD_
     ```latex
-    \newcommand{\inaccessibleMETHOD}{}
+    %%%%%%%%%%%%%%%%%%%% DECLARE INTERFACE FUNCTIONS: %%%%%%%%%%%%%%%%%%%%
+    \newcommand\@setATTRIBUTE{}
     ```
 
 2. Create references to the environment _ENVIRONMENT_ to be overwritten in order to access it later on
@@ -25,13 +28,13 @@
     {
         \oldENVIRONMENT % begin{ENVIRONMENT}
 
-        % Define method \SETTER{ATTRIBUTE}
+        % Define setter method \setATTRIBUTE{⟨value⟩}
         % - only accessible inside the environment (aka method)
-        \renewcommand{\inaccessibleSETTER}[1]
+        \renewcommand\@setATTRIBUTE[1]
         {
             \def\@ATTRIBUTE{##1}
         }
-        \global\let\SETTER\inaccessibleSETTER
+        \global\let\setATTRIBUTE\@setATTRIBUTE
     }
     {
         \endoldENVIRONMENT % end{ENVIRONMENT}

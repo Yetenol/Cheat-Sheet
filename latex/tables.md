@@ -4,28 +4,29 @@
 
 > Requirement [LaTeX.table](https://github.com/Yetenol/latex.table)
 
-|                       | Content            | Width               | Alignment       |
-| --------------------- | ------------------ | ------------------- | --------------- |
-| `L`                   | paragraph          | equally distributed | left            |
-| `R`                   | paragraph          | equally distributed | right           |
-| `C`                   | paragraph          | equally distributed | center          |
-| `X`                   | paragraph          | equally distributed | justify         |
-| `p{1cm}`              | paragraph          | fixed               | left            |
-| `p`                   | single line        | auto-fit to content | left            |
-| `m{}`                 | paragraph          | fixed               | vertical center |
-| `S[table-format=3.1]` | number/single line | fixed               | decimal point   |
-| `S`                   | number/single line | auto-fit to content | decimal point   |
+|                       | Content            | Width               | Alignment       | Availability                                          |
+| --------------------- | ------------------ | ------------------- | --------------- | ----------------------------------------------------- |
+| `L`                   | paragraph          | equally distributed | left            | [LaTeX.table](https://github.com/Yetenol/latex.table) |
+| `R`                   | paragraph          | equally distributed | right           | [LaTeX.table](https://github.com/Yetenol/latex.table) |
+| `C`                   | paragraph          | equally distributed | center          | [LaTeX.table](https://github.com/Yetenol/latex.table) |
+| `X`                   | paragraph          | equally distributed | justify         | tabularx package                                      |
+| `p{1cm}`              | paragraph          | fixed               | left            | built-in                                              |
+| `p`                   | single line        | auto-fit to content | left            | built-in                                              |
+| `m{}`                 | paragraph          | fixed               | vertical center | built-in                                              |
+| `S[table-format=3.1]` | number/single line | fixed               | decimal point   | siunitx package                                       |
+| `S`                   | number/single line | auto-fit to content | decimal point   | siunitx package                                       |
 
 ## Adjustable-width columns
 
-> Requirement [LaTeX.table](https://github.com/Yetenol/latex.table)
+> Requirement [LaTeX.table](https://github.com/Yetenol/latex.table)  
+> CAPITAL letters are ⟨placeholders⟩
 
 ```latex
-\begin{table}%[POSITIONING]
+\begin{table} % \begin{table}[⟨positioning⟩]
     %%%%%%%%%% LAYOUT, META DATA %%%%%%%%%%
     \centering
-    \caption{CAPTION} % \caption[LISTOFTABLES-CAPTION]{CAPTION}
-    \label{tab:LABEL}
+    \caption{⟨caption⟩} % \caption[⟨list of tables caption⟩]{⟨caption⟩}
+    \label{tab:⟨label name⟩}
     %%%%%%%%%% COLUMN NAMES %%%%%%%%%%
     \def\COLUMNA*{Person}
     \def\COLUMNB*{Father}
@@ -39,9 +40,9 @@
         X % 
     }
         \toprule     %%%%%%%%%% TABLE HEADER %%%%%%%%%%
-        & \multicolumn{2}{c}{Parents} 
+        & \multicolumn{2}{c}{multicolumn header⟩} 
         \\ \cmidrule(lr){2-3}   % partial horizontal line
-        {\COLUMNA* (a-z)} &
+        {\COLUMNA* ⟨title supplement⟩} &
         {\COLUMNB*} &
         {\COLUMNC*}
         \\ \midrule     %%%%%%%%%% TABLE BODY %%%%%%%%%%
@@ -58,17 +59,28 @@
 \end{table}
 ```
 
+- `⟨positioning⟩` := see [Positioning](#positioning)
+- `⟨caption⟩` := displayed name of the figure
+- `⟨list of tables caption⟩` := (optional) replaced the entry in the list of figures with a summary
+- `⟨label name⟩` := label to reference the figure using `\ref{fig:⟨label name⟩}`
+- `⟨multicolumn header⟩` := column title that spans multiple columns
+- `⟨title supplement⟩` optional := short supplement like sorting order that is only displayed in the table header
 
-## Align decimal points
+
+## Formatting numbers in tables
+
+## Built-in work around
+
+> Align numbers by splitting table cells at the decimal point
 
 ```latex
 \begin{tabular}{c r @{.} l}
 Pi expression &
 \multicolumn{2}{c}{Value} \\
 \hline
-$\pi$ & 3&1416 \\
-$\pi^{\pi}$ & 36&46 \\
-$(\pi^{\pi})^{\pi}$ & 80662&7 \\
+$\pi$           &     3&1416 \\
+$\pi^\pi$       &    36&46   \\
+$(\pi^\pi)^\pi$ & 80662&7    \\
 \end{tabular}
 ```
 
