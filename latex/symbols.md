@@ -362,30 +362,30 @@
 | `\underleftrightarrow{AB}` | $\underleftrightarrow{AB}$ |
 
 ## Delimiters
-| Command             | Rendering           |
-| ------------------- | ------------------- |
-| `(`                 | $($                 |
-| `)`                 | $)$                 |
-| `\uparrow`          | $\uparrow$          |
-| `\lbrack` <br> `[`  | $\lbrack$ <br> $[$  |
-| `\rbrack` <br> `]`  | $\rbrack$ <br> $]$  |
-| `\downarrow`        | $\downarrow$        |
-| `\lbrace` <br> `\{` | $\lbrace$ <br> $\{$ |
-| `\rbrace` <br> `\}` | $\rbrace$ <br> $\}$ |
-| `\updownarrow`      | $\updownarrow$      |
-| `\langle`           | $\langle$           |
-| `\rangle`           | $\rangle$           |
-| `\Uparrow`          | $\Uparrow$          |
-| `\vert` <br> `\|`   | $\vert$ <br> $\|$   |
-| `\Vert` <br> `\\|`  | $\Vert$ <br> $\\|$  |
-| `\Downarrow`        | $\Downarrow$        |
-| `/`                 | $/$                 |
-| `\backslash`        | $\backslash$        |
-| `\Updownarrow`      | $\Updownarrow$      |
-| `\lfloor`           | $\lfloor$           |
-| `\rfloor`           | $\rfloor$           |
-| `\rceil`            | $\rceil$            |
-| `\lceil`            | $\lceil$            |
+| Command             | Rendering             |
+| ------------------- | --------------------- |
+| `(`                 | $($                   |
+| `)`                 | $)$                   |
+| `\uparrow`          | $\uparrow$            |
+| `\lbrack` <br> `[`  | $\lbrack$ <br> $[$    |
+| `\rbrack` <br> `]`  | $\rbrack$ <br> $]$    |
+| `\downarrow`        | $\downarrow$          |
+| `\lbrace` <br> `\{` | $\lbrace$ <br> $\\\{$ |
+| `\rbrace` <br> `\}` | $\rbrace$ <br> $\\\}$ |
+| `\updownarrow`      | $\updownarrow$        |
+| `\langle`           | $\langle$             |
+| `\rangle`           | $\rangle$             |
+| `\Uparrow`          | $\Uparrow$            |
+| `\vert` <br> `\|`   | $\vert$ <br> $\|$     |
+| `\Vert` <br> `\\|`  | $\Vert$ <br> $\\|$    |
+| `\Downarrow`        | $\Downarrow$          |
+| `/`                 | $/$                   |
+| `\backslash`        | $\backslash$          |
+| `\Updownarrow`      | $\Updownarrow$        |
+| `\lfloor`           | $\lfloor$             |
+| `\rfloor`           | $\rfloor$             |
+| `\rceil`            | $\rceil$              |
+| `\lceil`            | $\lceil$              |
 
 ## Large Delimiters
 | Command       | Rendering     |
