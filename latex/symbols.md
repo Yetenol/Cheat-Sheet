@@ -177,7 +177,7 @@
 | `\nRightarrow`      | $\nRightarrow$      |
 | `\nLeftrightarrow`  | $\nLeftrightarrow$  |
 
-## Binary Relations (negated)
+## Primitively Negated Binary Relations
 | Command                    | Rendering                  | Dependency |
 | -------------------------- | -------------------------- | ---------- |
 | `\not<`                    | $\not<$                    |
