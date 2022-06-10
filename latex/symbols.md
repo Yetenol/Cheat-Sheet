@@ -1,4 +1,4 @@
-# [⌂](../README.md) › [LaTeX](../README.md#latex) › Symbols
+# [⌂](../README.md) › [LaTeX](../README.md#latex) › **Symbols**
 
 ## Math Mode Accents
 | Command           | Rendering         |
@@ -631,5 +631,6 @@
 
 # Sources
 
-- 2022-06-10: [lshort.pdf](https://tobi.oetiker.ch/lshort/lshort.pdf)
+- 2022-06-10: [The Not So Short Introduction to LaTeX2e](https://tobi.oetiker.ch/lshort/lshort.pdf)
 - 2022-06-10: [LaTeX Math Symbols Cheat Sheet - Kapeli](https://kapeli.com/cheat_sheets/LaTeX_Math_Symbols.docset/Contents/Resources/Documents/index)
+- 2022-06-10: [LaTeX Math for Undergrads](http://tug.ctan.org/info/undergradmath/undergradmath.pdf)
