@@ -215,3 +215,55 @@
 | `\bigodot`   | $\bigodot$   |
 | `\bigoplus`  | $\bigoplus$  |
 | `\bigotimes` | $\bigotimes$ |
+
+## Arrows
+| Command                   | Rendering                 | Dependency |
+| ------------------------- | ------------------------- | ---------- |
+| `\leftarrow` <br> `\gets` | $\leftarrow$ <br> $\gets$ |
+| `\longleftarrow`          | $\longleftarrow$          |
+| `\rightarrow` <br> `\to`  | $\rightarrow$ <br> $\to$  |
+| `\longrightarrow`         | $\longrightarrow$         |
+| `\leftrightarrow`         | $\leftrightarrow$         |
+| `\longleftrightarrow`     | $\longleftrightarrow$     |
+| `\Leftarrow`              | $\Leftarrow$              |
+| `\Longleftarrow`          | $\Longleftarrow$          |
+| `\Rightarrow`             | $\Rightarrow$             |
+| `\Longrightarrow`         | $\Longrightarrow$         |
+| `\Leftrightarrow`         | $\Leftrightarrow$         |
+| `\Longleftrightarrow`     | $\Longleftrightarrow$     |
+| `\iff`                    | $\iff$ (bigger spaces)    |
+| `\mapsto`                 | $\mapsto$                 |
+| `\longmapsto`             | $\longmapsto$             |
+| `\hookleftarrow`          | $\hookleftarrow$          |
+| `\hookrightarrow`         | $\hookrightarrow$         |
+| `\leftharpoonup`          | $\leftharpoonup$          |
+| `\rightharpoonup`         | $\rightharpoonup$         |
+| `\leftharpoondown`        | $\leftharpoondown$        |
+| `\rightharpoondown`       | $\rightharpoondown$       |
+| `\rightleftharpoons`      | $\rightleftharpoons$      |
+| `\uparrow`                | $\uparrow$                |
+| `\downarrow`              | $\downarrow$              |
+| `\updownarrow`            | $\updownarrow$            |
+| `\Uparrow`                | $\Uparrow$                |
+| `\Downarrow`              | $\Downarrow$              |
+| `\Updownarrow`            | $\Updownarrow$            |
+| `\nearrow`                | $\nearrow$                |
+| `\searrow`                | $\searrow$                |
+| `\swarrow`                | $\swarrow$                |
+| `\nwarrow`                | $\nwarrow$                |
+| `\leadsto`                | $\leadsto$                | latexsym   |
+
+## Arrows as Accents
+| Command                    | Rendering                  |
+| -------------------------- | -------------------------- |
+| `\overrightarrow{AB}`      | $\overrightarrow{AB}$      |
+| `\underrightarrow{AB}`     | $\underrightarrow{AB}$     |
+| `\overleftarrow{AB}`       | $\overleftarrow{AB}$       |
+| `\underleftarrow{AB}`      | $\underleftarrow{AB}$      |
+| `\overleftrightarrow{AB}`  | $\overleftrightarrow{AB}$  |
+| `\underleftrightarrow{AB}` | $\underleftrightarrow{AB}$ |
+
+# Sources
+
+- 2022-06-10: [lshort.pdf](https://tobi.oetiker.ch/lshort/lshort.pdf)
+- 2022-06-10: [LaTeX Math Symbols Cheat Sheet - Kapeli](https://kapeli.com/cheat_sheets/LaTeX_Math_Symbols.docset/Contents/Resources/Documents/index)
