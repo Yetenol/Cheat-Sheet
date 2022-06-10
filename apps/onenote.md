@@ -30,8 +30,8 @@
 - Press `[Right]` (indicated by →) to leave the inside of the integral to write the differential
     | Example Input        | Renders as                        |
     | -------------------- | --------------------------------- |
-    | `\int _a^b f(x) →dx` | $\displaystyle\int_a^b{f(x)}\,dx$ |
-    | `\int  f(x) →dx`     | $\displaystyle\int{f(x)}\,dx$     |
+    | `\int _a^b f(x) →dx` | $\displaystyle\int_a^b{f(x)}\ dx$ |
+    | `\int  f(x) →dx`     | $\displaystyle\int{f(x)}\ dx$     |
 
 ## Arrays and Matrices
 - `&` separates cells within a row

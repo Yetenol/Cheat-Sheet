@@ -52,7 +52,7 @@
 | [Useful Packages](latex/packages.md)  | Lipsum Text                  | `\usepackage[utf8]{inputenc}`                      |
 | [Spacing](latex/spacing.md)           | Hyphenation                  | `\!` `\,` `\:` `\;` `\quad` `\qquad`               |
 | [Tables](latex/tables.md)             | TABULARX                     | `\begin{tabularx}{\columnwidth}{X\|p{1.7cm}\|C\|}` |
-| [Mathematics](latex/symbols.md)       | Arrows                       | $\mathbb{N\;Z\;Q\;R\;C} \iff \Psi$                 |
+| [Mathematics](latex/symbols.md)       | Arrows                       | $\mathbb{N\ Z\ Q\ R\ C} \iff \Psi$                 |
 
 
 ## Languages, Encodings
@@ -62,7 +62,7 @@
 | [RegEx: Regular Expression](languages/regex.md) | Quantifiers                 | `(?in)user:(?<name>\S*)\s*key:(?<pwd>\S*)`            |
 | [Git](languages/git.md)                         | Commit History: Delete File | `git clone https://yetenol@github.com/yetenol/`       |
 | [Unicode](languages/unicode.md)                 | Character Sorting           | `!` `+` `Ξ`                                           |
-| [Markdown](languages/markdown.md)               | LaTeX Render                | $\int_0^1{f(\pi^2)}\,dx$                              |
+| [Markdown](languages/markdown.md)               | LaTeX Render                | $\int_0^1{f(\pi^2)}\ dx$                              |
 | C › [GNU Debugger](languages/gdb.md)            | Examinate Variables         | `break`                                               |
 | [Java](languages/java.md)                       |
 | [AutoHotkey v1](languages/autohotkey.md)        | Get Program stdout          | `Shell := ComObjCreate("WScript.Shell")`              |
