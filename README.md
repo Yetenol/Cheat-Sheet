@@ -3,7 +3,7 @@
 - Various documentations and tips I have accumulated over the years
 - Cheat sheets
 
-### Windows
+## Windows
 
 | Topic                                                     | Example Component        | Example Code                      |
 | --------------------------------------------------------- | ------------------------ | --------------------------------- |
@@ -19,7 +19,7 @@
 | [Context menu](windows/context-menu.md)                   | Open in VS Code          |
 
 
-### Powershell
+## Powershell
 
 | Topic                                                          | Example Component       | Example Code                                        |
 | -------------------------------------------------------------- | ----------------------- | --------------------------------------------------- |
@@ -41,7 +41,7 @@
 | [Win+X Menu](windows/win-x.md)                                 | Add Win+X entries       |                                                     |
 
 
-### LaTeX
+## LaTeX
 
 | Topic                                 | Example Component            | Example Code                                       |
 | ------------------------------------- | ---------------------------- | -------------------------------------------------- |
@@ -52,26 +52,26 @@
 | [Useful Packages](latex/packages.md)  | Lipsum Text                  | `\usepackage[utf8]{inputenc}`                      |
 | [Spacing](latex/spacing.md)           | Hyphenation                  | `\!` `\,` `\:` `\;` `\quad` `\qquad`               |
 | [Tables](latex/tables.md)             | TABULARX                     | `\begin{tabularx}{\columnwidth}{X\|p{1.7cm}\|C\|}` |
+| [Mathematics](latex/symbols.md)       | Arrows                       | $\mathbb{N\;Z\;Q\;R\;C} \iff \Psi$                 |
 
 
+## Languages, Encodings
 
-
-### Languages, Encodings
-
-| Topic                                           | Example Component           | Example Code                                                                      |
-| ----------------------------------------------- | --------------------------- | --------------------------------------------------------------------------------- |
-| [RegEx: Regular Expression](languages/regex.md) | Quantifiers                 | `(?in)user:(?<name>\S*)\s*key:(?<pwd>\S*)`                                        |
-| [Git](languages/git.md)                         | Commit History: Delete File | `git clone https://yetenol@github.com/yetenol/`                                   |
-| [Unicode](languages/unicode.md)                 | Character Sorting           | `!` `+` `Ξ`                                                                       |
-| [Markdown](languages/markdown.md)               | LaTeX Render                | <img src="https://render.githubusercontent.com/render/math?math=\int_0^1{\pi^2}"> |
-| C › [GNU Debugger](languages/gdb.md)            | Examinate Variables         | `break`                                                                           |
+| Topic                                           | Example Component           | Example Code                                          |
+| ----------------------------------------------- | --------------------------- | ----------------------------------------------------- |
+| [RegEx: Regular Expression](languages/regex.md) | Quantifiers                 | `(?in)user:(?<name>\S*)\s*key:(?<pwd>\S*)`            |
+| [Git](languages/git.md)                         | Commit History: Delete File | `git clone https://yetenol@github.com/yetenol/`       |
+| [Unicode](languages/unicode.md)                 | Character Sorting           | `!` `+` `Ξ`                                           |
+| [Markdown](languages/markdown.md)               | LaTeX Render                | $\int_0^1{f(\pi^2)}\,dx$                              |
+| C › [GNU Debugger](languages/gdb.md)            | Examinate Variables         | `break`                                               |
 | [Java](languages/java.md)                       |
-| [AutoHotkey v1](languages/autohotkey.md)        | Get Program stdout          | `Shell := ComObjCreate("WScript.Shell")`                                          |
-| Minecraft › [Datapacks](languages/minecraft.md) | Leash Decorations           | `kill @e[type=item,nbt={Item:{id:"minecraft:wool"}}]`                             |
+| [AutoHotkey v1](languages/autohotkey.md)        | Get Program stdout          | `Shell := ComObjCreate("WScript.Shell")`              |
+| Minecraft › [Datapacks](languages/minecraft.md) | Leash Decorations           | `kill @e[type=item,nbt={Item:{id:"minecraft:wool"}}]` |
 
 
-### Applications
+## Applications
 
-| Topic                  | Example Component | Example Code                                            |
-| ---------------------- | ----------------- | ------------------------------------------------------- |
-| [Excel](apps/excel.md) | Empty Range?      | `=IF(SUMPRODUCT(--(A1:C4<>""))<>0,"not empty","empty")` |
+| Topic                      | Example Component | Example Code                                            |
+| -------------------------- | ----------------- | ------------------------------------------------------- |
+| [Excel](apps/excel.md)     | Empty Range?      | `=IF(SUMPRODUCT(--(A1:C4<>""))<>0,"not empty","empty")` |
+| [OneNote](apps/onenote.md) | Matrices          | $\sqrt{a+b}-c\cdot\alpha$                               |
