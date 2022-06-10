@@ -66,6 +66,19 @@
 | `\Psi`     | $\Psi$     |
 | `\Omega`   | $\Omega$   |
 
+## Number sets
+| Command                      | Rendering                    |
+| ---------------------------- | ---------------------------- |
+| `\mathbb{A}`                 | $\mathbb{A}$                 |
+| `\mathbb{C}` <br> `\Complex` | $\mathbb{C}$ <br> $\Complex$ |
+| `\mathbb{H}` <br> `\H`       | $\mathbb{H}$ <br> $\H$       |
+| `\mathbb{N}` <br> `\N`       | $\mathbb{N}$ <br> $\N$       |
+| `\mathbb{O}`                 | $\mathbb{O}$                 |
+| `\mathbb{Q}` <br> `\Q`       | $\mathbb{Q}$ <br> $\Q$       |
+| `\mathbb{R}` <br> `\R`       | $\mathbb{R}$ <br> $\R$       |
+| `\mathbb{S}`                 | $\mathbb{S}$                 |
+| `\mathbb{Z}` <br> `\Z`       | $\mathbb{Z}$ <br> $\Z$       |
+
 ## Binary Relations
 
 | Command            | Rendering          | Dependency |
