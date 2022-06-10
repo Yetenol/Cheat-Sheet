@@ -57,16 +57,16 @@
 
 ## Languages, Encodings
 
-| Topic                                           | Example Component           | Example Code                                                                            |
-| ----------------------------------------------- | --------------------------- | --------------------------------------------------------------------------------------- |
-| [RegEx: Regular Expression](languages/regex.md) | Quantifiers                 | `(?in)user:(?<name>\S*)\s*key:(?<pwd>\S*)`                                              |
-| [Git](languages/git.md)                         | Commit History: Delete File | `git clone https://yetenol@github.com/yetenol/`                                         |
-| [Unicode](languages/unicode.md)                 | Character Sorting           | `!` `+` `Ξ`                                                                             |
-| [Markdown](languages/markdown.md)               | LaTeX Render                | <img src="https://render.githubusercontent.com/render/math?math=\int_0^1 f(\pi^2)\,dx"> |
-| C › [GNU Debugger](languages/gdb.md)            | Examinate Variables         | `break`                                                                                 |
+| Topic                                           | Example Component           | Example Code                                                                  |
+| ----------------------------------------------- | --------------------------- | ----------------------------------------------------------------------------- |
+| [RegEx: Regular Expression](languages/regex.md) | Quantifiers                 | `(?in)user:(?<name>\S*)\s*key:(?<pwd>\S*)`                                    |
+| [Git](languages/git.md)                         | Commit History: Delete File | `git clone https://yetenol@github.com/yetenol/`                               |
+| [Unicode](languages/unicode.md)                 | Character Sorting           | `!` `+` `Ξ`                                                                   |
+| [Markdown](languages/markdown.md)               | LaTeX Render                | <img src="https://render.githubusercontent.com/render/math?math=e^{i\pi}=-1"> |
+| C › [GNU Debugger](languages/gdb.md)            | Examinate Variables         | `break`                                                                       |
 | [Java](languages/java.md)                       |
-| [AutoHotkey v1](languages/autohotkey.md)        | Get Program stdout          | `Shell := ComObjCreate("WScript.Shell")`                                                |
-| Minecraft › [Datapacks](languages/minecraft.md) | Leash Decorations           | `kill @e[type=item,nbt={Item:{id:"minecraft:wool"}}]`                                   |
+| [AutoHotkey v1](languages/autohotkey.md)        | Get Program stdout          | `Shell := ComObjCreate("WScript.Shell")`                                      |
+| Minecraft › [Datapacks](languages/minecraft.md) | Leash Decorations           | `kill @e[type=item,nbt={Item:{id:"minecraft:wool"}}]`                         |
 
 
 ## Applications
