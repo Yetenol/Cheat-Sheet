@@ -115,8 +115,10 @@ p{1.7cm}\|C\|}` |
 
 ## Languages, Encodings
 
-- [**RegEx: Regular Expression**](languages/regex.md)  
+- [**Regular Expression**](languages/regex.md)  
   Quantifiers | `(?in)user:(?<name>\S*)\s*key:(?<pwd>\S*)`
+
+- [**Java**](languages/java.md)  
 
 - [**Git**](languages/git.md)  
   Commit History: Delete File | `git clone https://yetenol	github.com/yetenol/`
@@ -130,7 +132,6 @@ p{1.7cm}\|C\|}` |
 - C › [**GNU Debugger**](languages/gdb.md)  
   Examinate Variables | `break`
 
-- [**Java**](languages/java.md)  
 
 - [**AutoHotkey v1**](languages/autohotkey.md)  
   Get Program stdout | `Shell := ComObjCreate("WScript.Shell")`
