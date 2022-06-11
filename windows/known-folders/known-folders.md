@@ -2,17 +2,16 @@
 
 
 - [**User Folders ❯**](user-folders.md)  
-  Folder Shortcuts in `This PC`  
-  Per-user folders & Common-user folders  
-  _Desktop_, _Pictures_, _Documents_
+  _This PC_-Folders, Per-user folders & Common-user folders  
+  Downloads | `shell:My Pictures`
 
 - [**OS Panels, Folders ❯**](guids.md)  
   Known folders and panels specified by a [GUID](https://docs.microsoft.com/en-us/dotnet/api/system.guid)  
-  _Recycle Bin_  
+  Recycle Bin | `shell:::{�}`
 
 - [**GUIDs Archive ❯**](guids-archive.md)  
   Deprecated GUIDs (usually nonfunctional in current versions)  
-  _3D Objects_  
+  3D Objects | `shell:::{�}`
 
 
 ## Import all user folders as environment variables

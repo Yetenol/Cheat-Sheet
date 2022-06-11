@@ -1,7 +1,7 @@
 # [⌂](README.md) Documentation ![GitHub last commit](https://img.shields.io/github/last-commit/yetenol/doc?color=white)
+- Various information, tricks and tips I have accumulated over the years
+- _Cheat Sheets_, _Documentations_
 
-- Various documentations and tips I have accumulated over the years
-- Cheat sheets
 
 ## Windows
 
@@ -33,7 +33,6 @@
 
 - [**Context menu**](windows/context-menu.md)  
   Open in VS Code
-
 
 
 ## Powershell
@@ -87,7 +86,6 @@
   Add Win+X entries
 
 
-
 ## LaTeX
 
 - [**Getting Started**](latex/latex.md)  
@@ -115,7 +113,6 @@ p{1.7cm}\|C\|}` |
   Arrows | $\mathbb{N\ Z\ Q\ R\ C} \iff \Psi$
 
 
-
 ## Languages, Encodings
 
 - [**RegEx: Regular Expression**](languages/regex.md)  
@@ -140,7 +137,6 @@ p{1.7cm}\|C\|}` |
 
 - Minecraft › [**Datapacks**](languages/minecraft.md)  
   Leash Decorations | `kill 	e[type=item,nbt={Item:{id:"minecraft:wool"}}]`
-
 
 
 ## Applications

@@ -55,7 +55,5 @@
     | **2nd-order** subscripts or superscripts | `\scriptscriptstyle a=1/2 ` | $\scriptscriptstyle a=\frac{1}{2}$ |
 
 
-
 # Sources
-
 - 2022-06-10: [Using OneNote to Write Equations – Blake Margolis](https://sites.utexas.edu/margolis/2019/04/09/using-onenote/)

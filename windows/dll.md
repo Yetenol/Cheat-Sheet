@@ -1,8 +1,9 @@
 # [⌂](../README.md) › [Windows](../README.md#windows) › Dll commands
-- Dynamic Link Library (dll) components
-- Control Panel tabs (cpl tab)
 
-## Control Panel
+- [☟ Control Panels and their Tabs](#control-panels-and-their-tabs)
+- [☟ Other Dynamic Link Libraries](#other-dynamic-link-libraries)
+
+## Control Panels and their Tabs
 
 | Command                                                                                                     | Description                                                     |
 | ----------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
@@ -39,7 +40,7 @@
 | ⠀⮱ Windows Sicherheitscenter                                                                                | `rundll32 shell32.dll,Control_RunDLL wscui.cpl,Security Center` |
 
 
-## Other commands
+## Other Dynamic Link Libraries
 
 | Command                                                                                                                                        | Description                                                                                     |
 | ---------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
