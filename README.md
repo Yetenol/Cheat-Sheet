@@ -61,7 +61,7 @@
 	- [**Links** ›](powershell/filesystem/links.md)  
 	  Create symbolic link | `New-Item -ItemType SymbolicLink -Name � -Target �`
 
-	- [**Attributes** ›](powershell/filesystem/file-attributes.md)  
+	- [**Attributes** ›](powershell/filesystem/attributes.md)  
 	  Make ReadOnly | `$item.Attributes = $item.Attributes -bor 0x080000`
 
 	- [**Meta data** ›](powershell/filesystem/metadata.md)  
