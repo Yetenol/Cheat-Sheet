@@ -1,6 +1,7 @@
 # [⌂](../README.md) › [PowerShell](../README.md#powershell) › Getting Started
 
-# Make a powershell script executable
+## Executable Scripts
+Make a powershell script executable
 - Attach .bat at the end of your script filename e.g: `script.ps1.bat`
 - Add this as the first line of code
 ```cmd
@@ -8,7 +9,7 @@
 # The above line makes the script executable when renamed .cmd or .bat
 ```
 
-# Help yourself
+## Help yourself
 Update help files (**Run elevated**)
 ```powershell
 Update-Help
@@ -33,7 +34,8 @@ Update-Help
   > DIRTY: `help Get-Process -Online`
 
 
-## Function[ᴰ](glossary.md#function): Set parameter AutoComplete
+## Parameter AutoComplete
+Define a list of all valid [function](glossary.md#function) parameters to enable AutoComplete
 
 ```powershell
 function Show-Hello {
@@ -46,8 +48,8 @@ function Show-Hello {
 }
 ```
 
-
-## Get path apps
+## Apps in PATH locations
+List all applications in the PATH locations
 ```powershell
 $paths = [String[]] @($env:path -split ";") 
 $paths = $paths[0..($paths.Length-2)]

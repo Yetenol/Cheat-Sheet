@@ -1,30 +1,28 @@
 # [⌂](../../README.md) › [Windows](../../README.md#windows) › [Known Folders](known-folders.md) › OS Panels, Folders
+> - shortcuts to special OS folders or panels
+> - referenced using a [**CLSID keys**](https://docs.microsoft.com/de-de/windows/win32/com/clsid-key-hklm?redirectedfrom=MSDN) 
+>   (globally unique identifier that identifies a COM class object)
+> - [Archive of old GUIDs ❯](guids-archive.md)
 
-- shortcuts to special OS folders or panels
-- referenced using a [**CLSID keys**](https://docs.microsoft.com/de-de/windows/win32/com/clsid-key-hklm?redirectedfrom=MSDN) 
-    - globally unique identifier that identifies a COM class object
-- [Archive of old GUIDs](guids-archive.md)
+- **Open a shortcut**  
+  run one of the following:
+  
+    ```powershell
+    explorer shell:::{088e3905-0323-4b02-9826-5d99428e115f}
+    ```
 
-## Open a shortcut
+    ```powershell
+    explorer /e,::{088e3905-0323-4b02-9826-5d99428e115f}
+    ```
 
-- run one of the following:
-```powershell
-explorer shell:::{088e3905-0323-4b02-9826-5d99428e115f}
-```
+- **Resolve a shortcut**  
+  return the location as a string
 
-```powershell
-explorer /e,::{088e3905-0323-4b02-9826-5d99428e115f}
-```
+    ```powershell
+    (New-Object -ComObject Shell.Application).NameSpace('shell:::{088e3905-0323-4b02-9826-5d99428e115f}').Self.Path
+    ```
 
-## Resolve a shortcut
-
-- return the location as a string:
-
-```powershell
-(New-Object -ComObject Shell.Application).NameSpace('shell:::{088e3905-0323-4b02-9826-5d99428e115f}').Self.Path
-```
-
-
+## List of GUIDS
 | Target                                                                 | GUID shortcut                                                                                                   |
 | ---------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
 | 3D Objects (folder)                                                    | `shell:::{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}`                                                                |
