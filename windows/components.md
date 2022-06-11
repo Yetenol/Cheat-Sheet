@@ -1,9 +1,12 @@
-# [⌂](../README.md) › [Windows](../README.md#windows) › OS Components
-- User folders
-- Control Panels _(cpl)_
-- Management Consoles _(msc)_
-- Wizzards
-- OS apps
+# [⌂](../README.md) › [Windows](../README.md#windows) › **OS Components**
+
+- [☟ User folders](#user-folders)
+- [☟ Apps](#apps)
+- [☟ Control panels](#control-panels)
+- [☟ Managment Consoles](#managment-consoles)
+- [☟ Commands](#commands)
+- [☟ Wizzards](#wizzards)
+- [☟ Deprecated / Redirected](#deprecated--redirected)
 
 ## User folders
 | Description           | `Command`   |
@@ -31,7 +34,6 @@
 | Magnifier          | `magnify`                             |
 | Narrator           | `narrator`                            |
 
-
 ## Control panels
 | Description                          | `Command`                     |
 | ------------------------------------ | ----------------------------- |
@@ -53,7 +55,6 @@
 | Windows Firewall                     | `firewall.cpl`                |
 | Backup and Restore                   | `sdclt`                       |
 | Change Computer Performance Settings | `systempropertiesperformance` |
-
 
 ## Managment Consoles
 | Description                              | `Command`                             |
@@ -86,13 +87,6 @@
 | Printer User Interface             | `printui`  |
 | Diagnostics Troubleshooting Wizard | `msdt`     |
 | Font Viewer                        | `fontview` |
-
-## Deprecated / Redirected
-Location Activity | `locationnotifications`
-Display | `dpiscaling`
-Ease of Access Center | `utilman`
-Fax Cover Page Editor | `fxscover`
-
 
 ## Wizzards
 | Description                                                      | `Command`                                 |
@@ -185,6 +179,15 @@ Fax Cover Page Editor | `fxscover`
 | Versione Windows                                                 | `winver`                                  |
 | WordPad                                                          | `write`                                   |
 | XPS Viewer                                                       | `xpsrchvw`                                |
+
+## Deprecated / Redirected
+| Description           | `Command`               |
+| :-------------------- | :---------------------- |
+| Location Activity     | `locationnotifications` |
+| Display               | `dpiscaling`            |
+| Ease of Access Center | `utilman`               |
+| Fax Cover Page Editor | `fxscover`              |
+
 
 # Sources
 - 2021-09-02: [List of ms-settings URI commands to open specific settings in Windows 10 – 4sysops](https://4sysops.com/wiki/list-of-ms-settings-uri-commands-to-open-specific-settings-in-windows-10/)
