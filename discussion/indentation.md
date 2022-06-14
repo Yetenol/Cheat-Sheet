@@ -1,32 +1,10 @@
 Indentation: Tabs vs Spaces
 =============================
 [⌂](../README.md) ([Discussions](../README.md#discussions)) ›  
------------------------------
 > GDB Command Line Arguments
-- [Indentation: Tabs vs Spaces](#indentation-tabs-vs-spaces)
 - [Spaces](#spaces)
 - [Tabs](#tabs)
 - [Sources](#sources)
-
-Indentation: Tabs vs Spaces
-=============================
-[⌂](../README.md) ([Discussions](../README.md#discussions)) ›  
-> GDB Command Line Arguments
-- [Indentation: Tabs vs Spaces](#indentation-tabs-vs-spaces)
-- [Spaces](#spaces)
-- [Tabs](#tabs)
-- [Sources](#sources)
-
-Indentation: Tabs vs Spaces
-=============================
-**[⌂](../README.md) ([Discussions](../README.md#discussions)) ›**
-> GDB Command Line Arguments
-- [Indentation: Tabs vs Spaces](#indentation-tabs-vs-spaces)
-- [Spaces](#spaces)
-- [Tabs](#tabs)
-- [Sources](#sources)
-
-
 
 # Spaces
 - A tab could be a different number of columns depending on your environment, but a space is always one column.
