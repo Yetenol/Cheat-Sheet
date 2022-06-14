@@ -151,7 +151,7 @@ p{1.7cm}\|C\|}` |
 - **[Excel ›](apps/excel.md)**  
     Empty Range? | `=IF(SUMPRODUCT(--(A1:C4<>""))<>0,"not empty","empty")`
 
-- **[OneNote ›](apps/onenote)**  
+- **[OneNote ›](apps/onenote.md)**  
     Matrices | $\sqrt{a+b}-c\cdot\alpha$
 
 
