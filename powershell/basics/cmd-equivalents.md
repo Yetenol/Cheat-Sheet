@@ -1,4 +1,4 @@
-# Bash equivalents
+# CMD (Batch) equivalents
 [⌂](../README.md) › [PowerShell](../README.md#powershell) ›
 > examples of bash commands and how to do the same thing in PowerShell
 - [Echo](#echo)

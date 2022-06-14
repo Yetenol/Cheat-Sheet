@@ -1,14 +1,14 @@
 # Getting Started
-[⌂](../README.md) › [PowerShell](../README.md#powershell) ›
+[⌂](../../README.md) › [PowerShell](../../README.md#powershell) ›
 
-- **[Data Types ›](powershell/data-types.md)**  
-  Hashtable | `[DateTime]::Now`
+- **[Data Types ›](data-types.md)**  
+    Hashtable | `[DateTime]::Now`
 
-- **[Modify data ›](powershell/filesystem/modify.md)**  
-  Add calculated property | `$list[	(0..1;-3..-1)]`
+- **[Modify data ›](modify.md)**  
+    Add calculated property | `$list[	(0..1;-3..-1)]`
 
-- **[Bash equivalents ›](powershell/bash-equivalents.md)**  
-  While Loop | `read name` <-> `$name = Read-Host -Prompt "Name"`
+- **[CMD equivalents ›](cmd-equivalents.md)**  
+    While Loop | `read name` <-> `$name = Read-Host -Prompt "Name"`
 
 ## Executable Scripts
 Make a powershell script executable

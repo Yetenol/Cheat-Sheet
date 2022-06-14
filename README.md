@@ -43,16 +43,16 @@
 
 ## Powershell
 
-- **[Getting Started ›](powershell/powershell.md)**  
+- **[Getting Started ›](powershell/basics/basics.md)**  
     Help Cmdlets | `script.ps1.bat`
 
-    - **[Data Types ›](powershell/data-types.md)**  
+    - **[Data Types ›](powershell/basics/data-types.md)**  
         Hashtable | `[DateTime]::Now`
 
-    - **[Modify data ›](powershell/filesystem/modify.md)**  
+    - **[Modify data ›](powershell/basics/modify.md)**  
         Add calculated property | `$list[	(0..1;-3..-1)]`
 
-    - **[Bash equivalents ›](powershell/bash-equivalents.md)**  
+    - **[CMD equivalents ›](powershell/basics/cmd-equivalents.md)**  
         While Loop | `read name` <-> `$name = Read-Host -Prompt "Name"`
 
 - **[FileSystem Interactions ›](powershell/filesystem/filesystem.md)**  
