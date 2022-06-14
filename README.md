@@ -53,7 +53,7 @@
         Add calculated property | `$list[	(0..1;-3..-1)]`
 
     - **[CMD equivalents ›](powershell/basics/cmd-equivalents.md)**  
-        While Loop | `read name` <-> `$name = Read-Host -Prompt "Name"`
+        While Loop | `read name` ⟷ `$name = Read-Host -Prompt "Name"`
 
 - **[FileSystem Interactions ›](powershell/filesystem/filesystem.md)**  
     Run as administrator | ``explorer "/select,`"$(Resolve-Path $file)`""``
@@ -116,7 +116,7 @@
     TABULARX | `\begin{tabularx}{\columnwidth}{X\
 p{1.7cm}\|C\|}` |
 - **[Mathematics ›](latex/symbols.md)**  
-    Arrows | `\mathbb{N}` = ℕZQRC ⟺ Ψ
+    Arrows | `\mathbb{NR}` → ℕℝ
 
 
 ## Languages, Encodings
@@ -133,7 +133,7 @@ p{1.7cm}\|C\|}` |
     Character Sorting | `!` `+` `Ξ`
 
 - **[Markdown ›](languages/markdown.md)**  
-    LaTeX Render | <img src="https://render.githubusercontent.com/render/math?math=e^{i\pi}=-1">
+    LaTeX Render | `$e^{i\pi}=-1$` → <img src="https://render.githubusercontent.com/render/math?math=e^{i\pi}=-1">
 
 - **C › [GNU Debugger ›](languages/gdb.md)**  
     Examinate Variables | `break`
