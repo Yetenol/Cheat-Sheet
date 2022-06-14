@@ -25,6 +25,25 @@
 - [AMS Miscellaneous](#ams-miscellaneous)
 - [Sources](#sources)
 
+## Favorites
+| Command           | Rendering         |
+| ----------------- | ----------------- |
+| `\lnot`           | $\lnot$           |
+| `\longrightarrow` | $\longrightarrow$ |
+| `\Rightarrow`     | $\Rightarrow$     |
+| `\mathbb{R}`      | $\mathbb{R}$      |
+| `\approx`         | $\approx$         |
+| `\subseteq`       | $\subseteq$       |
+| `\supseteq`       | $\supseteq$       |
+| `\leq`            | $\leq$            |
+| `\geq`            | $\geq$            |
+| `\lor`            | $\lor$            |
+| `\land`           | $\land$           |
+| `\cup`            | $\cup$            |
+| `\cap`            | $\cap$            |
+
+
+
 ## Math Mode Accents
 | Command           | Rendering         |
 | ----------------- | ----------------- |
@@ -259,46 +278,46 @@
 | `\not\asymp`               | $\not\asymp$               |
 
 ## Binary Operators
-| Command            | Rendering          | Dependency |
-| ------------------ | ------------------ | ---------- |
-| `+`                | $+$                |
-| `-`                | $-$                |
-| `\pm`              | $\pm$              |
-| `\mp`              | $\mp$              |
-| `\triangleleft`    | $\triangleleft$    |
-| `\cdot`            | $\cdot$            |
-| `\div`             | $\div$             |
-| `\triangleright`   | $\triangleright$   |
-| `\times`           | $\times$           |
-| `\setminus`        | $\setminus$        |
-| `\star`            | $\star$            |
-| `\cup`             | $\cup$             |
-| `\cap`             | $\cap$             |
-| `\ast`             | $\ast$             |
-| `\sqcup`           | $\sqcup$           |
-| `\sqcap`           | $\sqcap$           |
-| `\circ`            | $\circ$            |
-| `\vee`\lor         | $\vee$             |
-| `\wedge`\land      | $\wedge$           |
-| `\bullet`          | $\bullet$          |
-| `\oplus`           | $\oplus$           |
-| `\ominus`          | $\ominus$          |
-| `\diamond`         | $\diamond$         |
-| `\odot`            | $\odot$            |
-| `\oslash`          | $\oslash$          |
-| `\uplus`           | $\uplus$           |
-| `\otimes`          | $\otimes$          |
-| `\bigcirc`         | $\bigcirc$         |
-| `\amalg`           | $\amalg$           |
-| `\bigtriangleup`   | $\bigtriangleup$   |
-| `\bigtriangledown` | $\bigtriangledown$ |
-| `\dagger`          | $\dagger$          |
-| `\lhd`             | $\lhd$             | latexsym   |
-| `\rhd`             | $\rhd$             | latexsym   |
-| `\ddagger`         | $\ddagger$         |
-| `\unlhd`           | $\unlhd$           | latexsym   |
-| `\unrhd`           | $\unrhd$           | latexsym   |
-| `\wr`              | $\wr$              |
+| Command               | Rendering             | Dependency |
+| --------------------- | --------------------- | ---------- |
+| `+`                   | $+$                   |
+| `-`                   | $-$                   |
+| `\pm`                 | $\pm$                 |
+| `\mp`                 | $\mp$                 |
+| `\triangleleft`       | $\triangleleft$       |
+| `\cdot`               | $\cdot$               |
+| `\div`                | $\div$                |
+| `\triangleright`      | $\triangleright$      |
+| `\times`              | $\times$              |
+| `\setminus`           | $\setminus$           |
+| `\star`               | $\star$               |
+| `\cup`                | $\cup$                |
+| `\cap`                | $\cap$                |
+| `\ast`                | $\ast$                |
+| `\sqcup`              | $\sqcup$              |
+| `\sqcap`              | $\sqcap$              |
+| `\circ`               | $\circ$               |
+| `\vee` <br> `\lor`    | $\vee$ <br> $\lor$    |
+| `\wedge` <br> `\land` | $\wedge$ <br> $\land$ |
+| `\bullet`             | $\bullet$             |
+| `\oplus`              | $\oplus$              |
+| `\ominus`             | $\ominus$             |
+| `\diamond`            | $\diamond$            |
+| `\odot`               | $\odot$               |
+| `\oslash`             | $\oslash$             |
+| `\uplus`              | $\uplus$              |
+| `\otimes`             | $\otimes$             |
+| `\bigcirc`            | $\bigcirc$            |
+| `\amalg`              | $\amalg$              |
+| `\bigtriangleup`      | $\bigtriangleup$      |
+| `\bigtriangledown`    | $\bigtriangledown$    |
+| `\dagger`             | $\dagger$             |
+| `\lhd`                | $\lhd$                | latexsym   |
+| `\rhd`                | $\rhd$                | latexsym   |
+| `\ddagger`            | $\ddagger$            |
+| `\unlhd`              | $\unlhd$              | latexsym   |
+| `\unrhd`              | $\unrhd$              | latexsym   |
+| `\wr`                 | $\wr$                 |
 
 ## Big Operators
 | Command      | Rendering    |
@@ -437,45 +456,44 @@
 | `\rmoustache` | $\rmoustache$ |
 
 ## Miscellaneous Symbols
-| Command        | Rendering      | Dependency |
-| -------------- | -------------- | ---------- |
-| `\dots`        | $\dots$        |
-| `\cdots`       | $\cdots$       |
-| `\vdots`       | $\vdots$       |
-| `\ddots`       | $\ddots$       |
-| `\hbar`        | $\hbar$        |
-| `\imath`       | $\imath$       |
-| `\jmath`       | $\jmath$       |
-| `\ell`         | $\ell$         |
-| `\Re`          | $\Re$          |
-| `\Im`          | $\Im$          |
-| `\aleph`       | $\aleph$       |
-| `\wp`          | $\wp$          |
-| `\forall`      | $\forall$      |
-| `\exists`      | $\exists$      |
-| `\mho`         | $\mho$         | latexsym   |
-| `\partial`     | $\partial$     |
-| `'`            | $'$            |
-| `\prime`       | $\prime$       |
-| `\emptyset`    | $\emptyset$    |
-| `\infty`       | $\infty$       |
-| `\nabla`       | $\nabla$       |
-| `\triangle`    | $\triangle$    |
-| `\Box`         | $\Box$         | latexsym   |
-| `\Diamond`     | $\Diamond$     | latexsym   |
-| `\bot`         | $\bot$         |
-| `\top`         | $\top$         |
-| `\angle`       | $\angle$       |
-| `\surd`        | $\surd$        |
-| `\diamondsuit` | $\diamondsuit$ |
-| `\heartsuit`   | $\heartsuit$   |
-| `\clubsuit`    | $\clubsuit$    |
-| `\spadesuit`   | $\spadesuit$   |
-| `\neg`         | $\neg$         |
-| `\lnot`        | $\lnot$        |
-| `\flat`        | $\flat$        |
-| `\natural`     | $\natural$     |
-| `\sharp`       | $\sharp$       |
+| Command             | Rendering           | Dependency |
+| ------------------- | ------------------- | ---------- |
+| `\dots`             | $\dots$             |
+| `\cdots`            | $\cdots$            |
+| `\vdots`            | $\vdots$            |
+| `\ddots`            | $\ddots$            |
+| `\hbar`             | $\hbar$             |
+| `\imath`            | $\imath$            |
+| `\jmath`            | $\jmath$            |
+| `\ell`              | $\ell$              |
+| `\Re`               | $\Re$               |
+| `\Im`               | $\Im$               |
+| `\aleph`            | $\aleph$            |
+| `\wp`               | $\wp$               |
+| `\forall`           | $\forall$           |
+| `\exists`           | $\exists$           |
+| `\mho`              | $\mho$              | latexsym   |
+| `\partial`          | $\partial$          |
+| `'`                 | $'$                 |
+| `\prime`            | $\prime$            |
+| `\emptyset`         | $\emptyset$         |
+| `\infty`            | $\infty$            |
+| `\nabla`            | $\nabla$            |
+| `\triangle`         | $\triangle$         |
+| `\Box`              | $\Box$              | latexsym   |
+| `\Diamond`          | $\Diamond$          | latexsym   |
+| `\bot`              | $\bot$              |
+| `\top`              | $\top$              |
+| `\angle`            | $\angle$            |
+| `\surd`             | $\surd$             |
+| `\diamondsuit`      | $\diamondsuit$      |
+| `\heartsuit`        | $\heartsuit$        |
+| `\clubsuit`         | $\clubsuit$         |
+| `\spadesuit`        | $\spadesuit$        |
+| `\neg` <br> `\lnot` | $\neg$ <br> $\lnot$ |
+| `\flat`             | $\flat$             |
+| `\natural`          | $\natural$          |
+| `\sharp`            | $\sharp$            |
 
 ## Non-Mathematical Symbols
 > These symbols can also be used in text mode.
