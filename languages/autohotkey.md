@@ -1,8 +1,6 @@
-AutoHotkey
-=============================
+# AutoHotkey
 [⌂](../README.md) ([Languages](../README.md#languages-encodings)) › 
-> - Windows Automation scripting language
------------------------------
+> Windows Automation scripting language
 
 ## 1. Generell code structure
 ```ahk

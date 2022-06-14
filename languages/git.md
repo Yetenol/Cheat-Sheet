@@ -1,7 +1,7 @@
-# [⌂](../README.md) ([Languages](../README.md#languages-encodings)) › **Git**
-
-- software for tracking changes in any set of files
-- works best for non-binary text files
+# Git
+[⌂](../README.md) ([Languages](../README.md#languages-encodings)) ›
+> - software for tracking changes in any set of files
+> - works best for non-binary text files
 
 ## Git remove folder from commit history
 - _rewrite all effected commits to erase a folder/file from their changes_
