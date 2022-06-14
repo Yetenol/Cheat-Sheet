@@ -1,15 +1,15 @@
 # Known Folders
 [⌂](../../README.md) › [Windows](../../README.md#windows) ›
 
-- [**User Folders ❯**](user-folders.md)  
+- **[User Folders ›](user-folders.md)**  
   _This PC_-Folders, Per-user folders & Common-user folders  
   Downloads | `shell:My Pictures`
 
-- [**OS Panels, Folders ❯**](guids.md)  
+- **[OS Panels, Folders ›](guids.md)**  
   Known folders and panels specified by a [GUID](https://docs.microsoft.com/en-us/dotnet/api/system.guid)  
   Recycle Bin | `shell:::{�}`
 
-- [**GUIDs Archive ❯**](guids-archive.md)  
+- **[GUIDs Archive ›](guids-archive.md)**  
   Deprecated GUIDs (usually nonfunctional in current versions)  
   3D Objects | `shell:::{�}`
 

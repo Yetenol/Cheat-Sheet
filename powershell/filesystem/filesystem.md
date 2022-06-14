@@ -1,28 +1,27 @@
 # FileSystem - Interactions
 [⌂](../../README.md) › [PowerShell](../../README.md) ›
 
-### [Import ❯](import.md)
-- extract data from files
-- parse using regular expressions
+- **[Import ›](import.md)**  
+    extract data from files  
+    parse using regular expressions  
 
-### [Export ❯](export.md)
-- visualize date
-- export to different filetypes
+- **[Export ›](export.md)**  
+    visualize date  
+    export to different filetypes  
 
-### [Links ❯](links.md)
-- create shell, symbolic or hard links and junctions
+- **[Links ›](links.md)**  
+    create shell, symbolic or hard links and junctions  
 
-### [Attributes ❯](attributes.md)
-- get, set and test file, folder attributes
-- set ReadOnly, Archived, OneDrive AlwaysOnDevice, ...
+- **[Attributes ›](attributes.md)**  
+    get, set and test file, folder attributes  
+    set ReadOnly, Archived, OneDrive AlwaysOnDevice, ...  
 
-### [Meta data ❯](metadata.md)
-- get additional file metadata
+- **[Meta data ›](metadata.md)**  
+    get additional file metadata  
 
-### [Web ❯](web.md)
-- download files, archives
-
----
+- **[Web ›](web.md)**  
+    download files, archives  
+----------
 
 ```powershell
 $file = ".\example.txt"
