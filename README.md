@@ -34,7 +34,7 @@
   Printer Troubleshooter | `msdt -id PrinterDiagnosticmsdt`
 
 - [**Icon libraries** ›](windows/icons.md)  
-  Imageres Library | `shell32.dll`
+  Images Library | `shell32.dll`
 
 - [**Context menu** ›](windows/context-menu.md)  
   Open in VS Code
@@ -152,3 +152,8 @@ p{1.7cm}\|C\|}` |
 
 - [**OneNote** ›](apps/onenote.md)  
   Matrices | $\sqrt{a+b}-c\cdot\alpha$
+
+
+## Discussions
+
+- [**Indentation: Tabs vs Spaces**]
