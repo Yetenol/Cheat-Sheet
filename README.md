@@ -2,11 +2,12 @@
 [⌂](README.md) Home
 > Various information, tricks and tips I have accumulated over the years  
 > _Cheat Sheets_, _Documentations_
-- [☟ Windows](#windows)
-- [☟ Powershell](#powershell)
-- [☟ LaTeX](#latex)
-- [☟ Languages, Encodings](#languages-encodings)
-- [☟ Applications](#applications)
+- [Windows](#windows)
+- [Powershell](#powershell)
+- [LaTeX](#latex)
+- [Languages, Encodings](#languages-encodings)
+- [Applications](#applications)
+- [Discussions](#discussions)
 
 ## Windows
 
