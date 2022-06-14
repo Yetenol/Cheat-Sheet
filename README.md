@@ -116,7 +116,7 @@
     TABULARX | `\begin{tabularx}{\columnwidth}{X\
 p{1.7cm}\|C\|}` |
 - **[Mathematics ›](latex/symbols.md)**  
-    Arrows | $\mathbb{N\ Z\ Q\ R\ C} \iff \Psi$
+    Arrows | `\mathbb{N}` = ℕZQRC ⟺ Ψ
 
 
 ## Languages, Encodings
@@ -152,7 +152,7 @@ p{1.7cm}\|C\|}` |
     Empty Range? | `=IF(SUMPRODUCT(--(A1:C4<>""))<>0,"not empty","empty")`
 
 - **[OneNote ›](apps/onenote.md)**  
-    Matrices | $\sqrt{a+b}-c\cdot\alpha$
+    Mathematical Typesetting | `\displaystyle\bmatrix(1&2@a&b) `
 
 
 ## Discussions
