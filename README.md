@@ -1,7 +1,7 @@
-# [⌂](README.md) Documentation ![GitHub last commit](https://img.shields.io/github/last-commit/yetenol/doc?color=white)
+# Documentation ![GitHub last commit](https://img.shields.io/github/last-commit/yetenol/doc?color=white)
+[⌂](README.md) Home
 > Various information, tricks and tips I have accumulated over the years  
 > _Cheat Sheets_, _Documentations_
-
 - [☟ Windows](#windows)
 - [☟ Powershell](#powershell)
 - [☟ LaTeX](#latex)

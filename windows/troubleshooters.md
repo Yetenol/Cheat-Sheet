@@ -1,7 +1,6 @@
 # Troubleshooters
 [⌂](../README.md) › [Windows](../README.md#windows) ›
-
-- run Microsoft's troubleshootings wizzard
+> run Microsoft's troubleshootings wizzard
 
 | Title                                        | Description                                                                                                            | Command                                   |
 | -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |

@@ -1,8 +1,7 @@
 # Dll commands
 [⌂](../README.md) › [Windows](../README.md#windows) ›
-
-- [☟ Control Panels and their Tabs](#control-panels-and-their-tabs)
-- [☟ Other Dynamic Link Libraries](#other-dynamic-link-libraries)
+-[Control Panels and their Tabs](#control-panels-and-their-tabs)
+-[Other Dynamic Link Libraries](#other-dynamic-link-libraries)
 
 ## Control Panels and their Tabs
 

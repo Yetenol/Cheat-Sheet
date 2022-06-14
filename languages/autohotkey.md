@@ -1,5 +1,5 @@
 # AutoHotkey
-[⌂](../README.md) ([Languages](../README.md#languages-encodings)) › 
+[⌂](../README.md) ([Languages](../README.md#languages-encodings)) ›
 > Windows Automation scripting language
 
 ## 1. Generell code structure

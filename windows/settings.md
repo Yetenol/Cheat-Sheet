@@ -1,26 +1,24 @@
 # Settings app pages
 [⌂](../README.md) › [Windows](../README.md#windows) ›
-
 > ms-settings URIs used to open various pages of the Settings app
-
-- [☟ Settings home page](#settings-home-page)
-- [☟ System](#system)
-- [☟ Devices](#devices)
-- [☟ Phone](#phone)
-- [☟ Network & Internet](#network--internet)
-- [☟ Personalization](#personalization)
-- [☟ Apps](#apps)
-- [☟ Accounts](#accounts)
-- [☟ Time & language](#time--language)
-- [☟ Gaming](#gaming)
-- [☟ Extras](#extras)
-- [☟ Ease of Access](#ease-of-access)
-- [☟ Search (version 1903+)](#search-version-1903)
-- [☟ Cortana](#cortana)
-- [☟ Privacy](#privacy)
-- [☟ Update & security](#update--security)
-- [☟ Mixed reality](#mixed-reality)
-- [☟ Surface Hub](#surface-hub)
+- [Settings home page](#settings-home-page)
+- [System](#system)
+- [Devices](#devices)
+- [Phone](#phone)
+- [Network & Internet](#network--internet)
+- [Personalization](#personalization)
+- [Apps](#apps)
+- [Accounts](#accounts)
+- [Time & language](#time--language)
+- [Gaming](#gaming)
+- [Extras](#extras)
+- [Ease of Access](#ease-of-access)
+- [Search (version 1903+)](#search-version-1903)
+- [Cortana](#cortana)
+- [Privacy](#privacy)
+- [Update & security](#update--security)
+- [Mixed reality](#mixed-reality)
+- [Surface Hub](#surface-hub)
 
 
 

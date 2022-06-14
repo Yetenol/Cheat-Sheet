@@ -1,13 +1,12 @@
 # OS Components
 [⌂](../README.md) › [Windows](../README.md#windows) ›
-
-- [☟ User folders](#user-folders)
-- [☟ Apps](#apps)
-- [☟ Control panels](#control-panels)
-- [☟ Managment Consoles](#managment-consoles)
-- [☟ Commands](#commands)
-- [☟ Wizzards](#wizzards)
-- [☟ Deprecated / Redirected](#deprecated--redirected)
+- [User folders](#user-folders)
+- [Apps](#apps)
+- [Control panels](#control-panels)
+- [Managment Consoles](#managment-consoles)
+- [Commands](#commands)
+- [Wizzards](#wizzards)
+- [Deprecated / Redirected](#deprecated--redirected)
 
 ## User folders
 | Description           | `Command`   |

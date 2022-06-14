@@ -2,7 +2,6 @@
 [⌂](../README.md) ([Languages](../README.md#languages-encodings)) › C ›
 > GDB Command Line Arguments
 
-
 ## Help
 
 | Option                         | Description                                                        |

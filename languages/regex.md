@@ -1,8 +1,6 @@
 # Regular Expressions
 [⌂](../README.md) ([Languages](../README.md#languages-encodings)) ›
-
 > .Net Implementation
-
 - [☟ Miscellaneous Constructs](#miscellaneous-constructs)
 - [☟ Engine Interpretation Options](#engine-interpretation-options)
 - [☟ Single Characters](#single-characters)
