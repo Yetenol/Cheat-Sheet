@@ -1,6 +1,7 @@
 # Symbols
 [⌂](../README.md) › [LaTeX](../README.md#latex) ›
 > Commands for Mathematical Expressions, Symbols, Operators and Relations
+- [Favorites](#favorites)
 - [Math Mode Accents](#math-mode-accents)
 - [Greek Letters (lowercase)](#greek-letters-lowercase)
 - [Greek Letters (uppercase)](#greek-letters-uppercase)
@@ -29,6 +30,8 @@
 | Command           | Rendering         |
 | ----------------- | ----------------- |
 | `\lnot`           | $\lnot$           |
+| `\land`           | $\land$           |
+| `\lor`            | $\lor$            |
 | `\longrightarrow` | $\longrightarrow$ |
 | `\Rightarrow`     | $\Rightarrow$     |
 | `\mathbb{R}`      | $\mathbb{R}$      |
@@ -37,10 +40,8 @@
 | `\supseteq`       | $\supseteq$       |
 | `\leq`            | $\leq$            |
 | `\geq`            | $\geq$            |
-| `\lor`            | $\lor$            |
-| `\land`           | $\land$           |
-| `\cup`            | $\cup$            |
 | `\cap`            | $\cap$            |
+| `\cup`            | $\cup$            |
 
 
 
