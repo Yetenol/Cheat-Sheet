@@ -18,14 +18,14 @@
 
 - [**Known Folders** ›](windows/known-folders/known-folders.md)  
 
-	- [**User Folders** ›](windows/known-folders/user-folders.md)  
-	  Downloads Folder | `shell:My Pictures`
+  - [**User Folders** ›](windows/known-folders/user-folders.md)  
+    Downloads Folder | `shell:My Pictures`
 
-	- [**OS Panels, Folders** ›](windows/known-folders/guids.md)  
-	  Recycle Bin | `shell:::{�}`
+  - [**OS Panels, Folders** ›](windows/known-folders/guids.md)  
+    Recycle Bin | `shell:::{�}`
 
-	- [**GUIDs Archive** ›](windows/known-folders/guids-archive.md)  
-	  3D Objects | `shell:::{�}`
+  - [**GUIDs Archive** ›](windows/known-folders/guids-archive.md)  
+    3D Objects | `shell:::{�}`
 
 - [**Dll commands** ›](windows/dll.md)  
   Neue Verknüpfung anlegen | `rundll32 appwiz.cpl,NewLinkHere`
@@ -45,35 +45,35 @@
 - [**Getting Started** ›](powershell/powershell.md)  
   Help Cmdlets | `script.ps1.bat`
 
-	- [**Data Types** ›](powershell/data-types.md)  
-	  Hashtable | `[DateTime]::Now`
+  - [**Data Types** ›](powershell/data-types.md)  
+    Hashtable | `[DateTime]::Now`
 
-	- [**Modify data** ›](powershell/filesystem/modify.md)  
-	  Add calculated property | `$list[	(0..1;-3..-1)]`
+  - [**Modify data** ›](powershell/filesystem/modify.md)  
+    Add calculated property | `$list[	(0..1;-3..-1)]`
 
-	- [**Bash equivalents** ›](powershell/bash-equivalents.md)  
-	  While Loop | `read name` <-> `$name = Read-Host -Prompt "Name"`
+  - [**Bash equivalents** ›](powershell/bash-equivalents.md)  
+    While Loop | `read name` <-> `$name = Read-Host -Prompt "Name"`
 
 - [**FileSystem Interactions** ›](powershell/filesystem/filesystem.md)  
   Run as administrator | ``explorer "/select,`"$(Resolve-Path $file)`""``
 
-	- [**Import** ›](powershell/filesystem/import.md)  
-	  File Parsing | `[RegEx]::Match(�, $pattern).Groups[1].value`
+  - [**Import** ›](powershell/filesystem/import.md)  
+    File Parsing | `[RegEx]::Match(�, $pattern).Groups[1].value`
 
-	- [**Export** ›](powershell/filesystem/export.md)  
-	  Export spreadsheet | `Export-Clixml`
+  - [**Export** ›](powershell/filesystem/export.md)  
+    Export spreadsheet | `Export-Clixml`
 
-	- [**Links** ›](powershell/filesystem/links.md)  
-	  Create symbolic link | `New-Item -ItemType SymbolicLink -Name � -Target �`
+  - [**Links** ›](powershell/filesystem/links.md)  
+    Create symbolic link | `New-Item -ItemType SymbolicLink -Name � -Target �`
 
-	- [**Attributes** ›](powershell/filesystem/attributes.md)  
-	  Make ReadOnly | `$item.Attributes = $item.Attributes -bor 0x080000`
+  - [**Attributes** ›](powershell/filesystem/attributes.md)  
+    Make ReadOnly | `$item.Attributes = $item.Attributes -bor 0x080000`
 
-	- [**Meta data** ›](powershell/filesystem/metadata.md)  
-	  Get meta data | _Function_
+  - [**Meta data** ›](powershell/filesystem/metadata.md)  
+    Get meta data | _Function_
 
-	- [**Web** ›](powershell/filesystem/web.md)  
-	  Download, extract ZIPs | `Invoke-WebRequest -Uri $url -OutFile $file`
+  - [**Web** ›](powershell/filesystem/web.md)  
+    Download, extract ZIPs | `Invoke-WebRequest -Uri $url -OutFile $file`
 
 - [**Applications** ›](powershell/applications.md)  
   Update Store Apps | `$wmiObj.UpdateScanMethod()`
