@@ -1,4 +1,5 @@
-# [⌂](../../README.md) › [PowerShell](../../README.md) › FileSystem - Interactions
+# FileSystem - Interactions
+[⌂](../../README.md) › [PowerShell](../../README.md) ›
 
 ### [Import ❯](import.md)
 - extract data from files

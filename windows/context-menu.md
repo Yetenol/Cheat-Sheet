@@ -1,4 +1,5 @@
-# [⌂](../README.md) › [Windows](../README.md#windows) › Context menu
+# Context menu
+[⌂](../README.md) › [Windows](../README.md#windows) ›
 
 ```powershell
 regedit

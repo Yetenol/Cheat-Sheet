@@ -1,4 +1,5 @@
-# [⌂](../README.md) › [LaTeX](../README.md#latex) › **Tables**
+# Tables
+[⌂](../README.md) › [LaTeX](../README.md#latex) ›
 
 # Column types
 

@@ -1,4 +1,5 @@
-# [⌂](../README.md) › [PowerShell](../README.md#powershell) › Getting Started
+# Getting Started
+[⌂](../README.md) › [PowerShell](../README.md#powershell) ›
 
 ## Executable Scripts
 Make a powershell script executable

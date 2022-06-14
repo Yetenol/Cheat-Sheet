@@ -1,4 +1,5 @@
-# [⌂](../README.md) › [Windows](../README.md#windows) › `Win + X` Menu
+# _Win + X_ Menu
+[⌂](../README.md) › [Windows](../README.md#windows) ›
 
 ## View shortcuts
 

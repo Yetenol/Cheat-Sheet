@@ -1,4 +1,5 @@
-# [⌂](../README.md) ([Languages](../README.md#languages-encodings)) › **Markdown**
+# Markdown
+[⌂](../README.md) ([Languages](../README.md#languages-encodings)) ›
 
 ## LaTeX Rendering
 

@@ -1,4 +1,5 @@
-# [⌂](../../README.md) › [PowerShell](../../README.md) › [FileSystem](filesystem.md) › Meta data
+# Meta data
+[⌂](../../README.md) › [PowerShell](../../README.md) › [FileSystem](filesystem.md) ›
 
 ```
 function Get-FileMetaData {

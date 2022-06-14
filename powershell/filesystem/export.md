@@ -1,4 +1,5 @@
-# [⌂](../../README.md) › [PowerShell](../../README.md) › [FileSystem](filesystem.md) › Export data
+# Export data
+[⌂](../../README.md) › [PowerShell](../../README.md) › [FileSystem](filesystem.md) ›
 
 ```powershell
 $c = Get-Command

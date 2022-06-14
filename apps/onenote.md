@@ -1,5 +1,5 @@
-# [⌂](../README.md) ([Apps](../README.md#applications)) › **Microsoft OneNote**
-
+# Microsoft OneNote
+[⌂](../README.md) ([Apps](../README.md#applications)) ›
 
 # Mathematical Typesetting
 

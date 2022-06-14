@@ -1,4 +1,5 @@
-# [⌂](../README.md) › [Windows](../README.md#windows) › **OS Components**
+# OS Components
+[⌂](../README.md) › [Windows](../README.md#windows) ›
 
 - [☟ User folders](#user-folders)
 - [☟ Apps](#apps)

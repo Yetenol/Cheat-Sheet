@@ -1,4 +1,5 @@
-# [⌂](../README.md) › [PowerShell](../README.md#powershell) › Data types
+# Data types
+[⌂](../README.md) › [PowerShell](../README.md#powershell) ›
 
 - examples for common data types
 

@@ -1,4 +1,5 @@
-# [⌂](../README.md) › [LaTeX](../README.md#latex) › **Debugging**
+# Debugging
+[⌂](../README.md) › [LaTeX](../README.md#latex) ›
 
 - [⌂ › [LaTeX](../README.md#latex) › **Debugging**](#--latex--debugging)
   - [Obmit PDF output and only check syntax](#obmit-pdf-output-and-only-check-syntax)

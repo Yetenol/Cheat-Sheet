@@ -1,5 +1,5 @@
-# [⌂](../../README.md) › [PowerShell](../../README.md) › [FileSystem](filesystem.md) › Links
-
+# Links
+[⌂](../../README.md) › [PowerShell](../../README.md) › [FileSystem](filesystem.md) ›
 
 ## Create a shell link (shortcut)
 

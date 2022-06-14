@@ -1,4 +1,6 @@
-# [⌂](../README.md) › [PowerShell](../README.md#powershell) › **Bash equivalents** - Table of Contents
+# Bash equivalents
+[⌂](../README.md) › [PowerShell](../README.md#powershell) ›
+
 - examples of bash commands and how to do the same thing in PowerShell
 
 1. [Echo](#echo)

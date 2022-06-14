@@ -1,4 +1,5 @@
-# [⌂](../README.md) › [LaTeX](../README.md#latex) › **Packages**
+# Packages
+[⌂](../README.md) › [LaTeX](../README.md#latex) ›
 
 ## Set Encoding
 

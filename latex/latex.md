@@ -1,4 +1,5 @@
-# [⌂](../README.md) › [LaTeX](../README.md#latex) › **Getting Started**
+# Getting Started
+[⌂](../README.md) › [LaTeX](../README.md#latex) ›
 
 ## Help Yourself
 

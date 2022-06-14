@@ -1,4 +1,5 @@
-# [⌂](../README.md) › [PowerShell](../README.md#powershell) › **Applications**
+# Applications
+[⌂](../README.md) › [PowerShell](../README.md#powershell) ›
 
 ## Update all Microsoft Store apps
 

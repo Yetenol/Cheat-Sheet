@@ -1,4 +1,5 @@
-# [⌂](../README.md) › [LaTeX](../README.md#latex) › **Spacing**
+# Spacing
+[⌂](../README.md) › [LaTeX](../README.md#latex) ›
 
 ## Math Spacing
 

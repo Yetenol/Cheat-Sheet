@@ -1,4 +1,5 @@
-# [⌂](../README.md) › [LaTeX](../README.md#latex) › **Symbols**
+# Symbols
+[⌂](../README.md) › [LaTeX](../README.md#latex) ›
 
 ## Math Mode Accents
 | Command           | Rendering         |

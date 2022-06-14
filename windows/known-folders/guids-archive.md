@@ -1,4 +1,5 @@
-# [⌂](../../README.md) › [Windows](../../README.md#windows) › [Known Folders](known-folders.md) › GUIDs Archive
+# GUIDs Archive
+[⌂](../../README.md) › [Windows](../../README.md#windows) › [Known Folders](known-folders.md) ›
 
 > - archive of GUID shortcuts that might still work
 > - shortcuts to special OS folders or panels

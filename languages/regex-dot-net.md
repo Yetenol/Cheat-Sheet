@@ -1,4 +1,5 @@
-# [⌂](../README.md) ([Languages](../README.md#languages-encodings)) › [Regular Expressions](regex.md) › **.Net Operations**
+# .Net Operations
+[⌂](../README.md) ([Languages](../README.md#languages-encodings)) › [Regular Expressions](regex.md) ›
 
 > Class: System.Text.RegularExpressions.Regex 
 

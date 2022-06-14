@@ -1,4 +1,5 @@
-# [⌂](../README.md) ([Languages](../README.md#languages-encodings)) › Minecraft › **Datapacks**
+# Datapacks
+[⌂](../README.md) ([Languages](../README.md#languages-encodings)) › Minecraft ›
 
 - usefull mcfunction commands
 

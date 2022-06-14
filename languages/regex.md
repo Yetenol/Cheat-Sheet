@@ -1,4 +1,5 @@
-# [⌂](../README.md) ([Languages](../README.md#languages-encodings)) › **Regular Expressions**
+# Regular Expressions
+[⌂](../README.md) ([Languages](../README.md#languages-encodings)) ›
 
 > .Net Implementation
 

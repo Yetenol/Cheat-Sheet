@@ -1,5 +1,5 @@
-# [⌂](../README.md) › [LaTeX](../README.md#latex) › **Floating Bodies**
-
+# Floating Bodies
+[⌂](../README.md) › [LaTeX](../README.md#latex) ›
 
 ## Positioning
 

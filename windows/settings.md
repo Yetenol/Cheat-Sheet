@@ -1,4 +1,5 @@
-# [⌂](../README.md) › [Windows](../README.md#windows) › Settings app pages - Table of Contents
+# Settings app pages
+[⌂](../README.md) › [Windows](../README.md#windows) ›
 
 > ms-settings URIs used to open various pages of the Settings app
 
