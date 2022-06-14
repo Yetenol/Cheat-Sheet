@@ -1,5 +1,5 @@
 # CMD (Batch) equivalents
-[⌂](../README.md) › [PowerShell](../README.md#powershell) ›
+[⌂](../../README.md) › [PowerShell](../../README.md#powershell) ›
 > examples of bash commands and how to do the same thing in PowerShell
 - [Echo](#echo)
 - [Execute a Script](#execute-a-script)
