@@ -1,8 +1,7 @@
-[⌂](../README.md) ([Discussions](../README.md#discussions)) ›  
----
 Indentation: Tabs vs Spaces
 ==============
-
+[⌂](../README.md) ([Discussions](../README.md#discussions)) ›  
+---
 - [Spaces](#spaces)
 - [Tabs](#tabs)
 - [Sources](#sources)
