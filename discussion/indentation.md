@@ -19,7 +19,7 @@ Indentation: Tabs vs Spaces
 
 Indentation: Tabs vs Spaces
 =============================
-> [⌂](../README.md) ([Discussions](../README.md#discussions)) ›  
+**[⌂](../README.md) ([Discussions](../README.md#discussions)) ›**
 > GDB Command Line Arguments
 - [Indentation: Tabs vs Spaces](#indentation-tabs-vs-spaces)
 - [Spaces](#spaces)
