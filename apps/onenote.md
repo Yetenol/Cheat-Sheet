@@ -40,9 +40,8 @@
 ## Arrays and Matrices
 - `&` separates cells within a row
 - `@` starts a new row    
-- Enclosing Delimiter:
-    > Github cannot yet display inline matrices correctly  
-
+- Enclosing Delimiter:  
+    _Github cannot yet display inline matrices correctly_
     | Delimiter                         | OneNote markup                 | Renders as                                               |
     | --------------------------------- | ------------------------------ | -------------------------------------------------------- |
     | Plain                             | `\matrix(1&2@a&b) `            | $\begin{matrix}1&2\\a&b\end{matrix}$                     |
