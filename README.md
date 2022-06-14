@@ -1,7 +1,12 @@
 # [⌂](README.md) Documentation ![GitHub last commit](https://img.shields.io/github/last-commit/yetenol/doc?color=white)
-- Various information, tricks and tips I have accumulated over the years
-- _Cheat Sheets_, _Documentations_
+> Various information, tricks and tips I have accumulated over the years  
+> _Cheat Sheets_, _Documentations_
 
+- [☟ Windows](#windows)
+- [☟ Powershell](#powershell)
+- [☟ LaTeX](#latex)
+- [☟ Languages, Encodings](#languages-encodings)
+- [☟ Applications](#applications)
 
 ## Windows
 
