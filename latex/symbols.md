@@ -2,7 +2,7 @@
 [⌂](../README.md) › [LaTeX](../README.md#latex) ›
 > Commands for Mathematical Expressions, Symbols, Operators and Relations
 - [Favorites](#favorites)
-- [Text Symbols](#text-symbols)
+- [Non-Mathematical Symbols](#non-mathematical-symbols)
 - [Degree Symbols](#degree-symbols)
 - [Math Mode Accents](#math-mode-accents)
 - [Greek Letters (lowercase)](#greek-letters-lowercase)
@@ -19,7 +19,6 @@
 - [Delimiters](#delimiters)
 - [Large Delimiters](#large-delimiters)
 - [Miscellaneous Symbols](#miscellaneous-symbols)
-- [Non-Mathematical Symbols](#non-mathematical-symbols)
 - [AMS Delimiters](#ams-delimiters)
 - [AMS Greek and Hebrew](#ams-greek-and-hebrew)
 - [Math Alphabets](#math-alphabets)
@@ -45,19 +44,30 @@
 | `\cap`            | $\cap$            |
 | `\cup`            | $\cup$            |
 
-## Text Symbols
-> These commands work outside mathmode.
+## Non-Mathematical Symbols
+> These symbols can also be used in text mode.
 
-| Command     | Rendering          | Name or _Function_                   | Usage Example                    |
-| ----------- | ------------------ | ------------------------------------ | -------------------------------- |
-| `-`         | -                  | hyphen                               | daughter-in-law, X-rated         |
-| `--`        | –                  | en-dash                              | pages 13–67                      |
-| `---`       | —                  | em-dash                              | yes—or no?                       |
-| `$-1$`      | −                  | minus-sign                           | 0, 1 and −1                      |
-| `/`         | /                  | _prevents hyphenation_               | 5 MB/s                           |
-| `\slash`    | /                  | _supports hyphenation_               | read/write                       |
-| `\ldots`    | …                  | ellipsis                             | a, b, c, …                       |
-| `Mr.~Smith` | $\text{Mr.~Smith}$ | _suppresses bigger sentence spacing_ | Did ⠀Mr.&#160;Smith ⠀win ⠀today? |
+| Command                                              | Rendering                                    | Name or _Function_                   | Usage Example                    |
+| ---------------------------------------------------- | -------------------------------------------- | ------------------------------------ | -------------------------------- |
+| `-`                                                  | -                                            | hyphen                               | daughter-in-law, X-rated         |
+| `--`                                                 | –                                            | en-dash                              | pages 13–67                      |
+| `---`                                                | —                                            | em-dash                              | yes—or no?                       |
+| `$-1$`                                               | −                                            | minus-sign                           | 0, 1 and −1                      |
+| `/`                                                  | /                                            | _prevents hyphenation_               | 5 MB/s                           |
+| `\slash`                                             | /                                            | _supports hyphenation_               | read/write                       |
+| `\ldots`                                             | …                                            | ellipsis                             | a, b, c, …                       |
+| `Mr.~Smith`                                          | $\text{Mr.~Smith}$                           | _suppresses bigger sentence spacing_ | Did ⠀Mr.&#160;Smith ⠀win ⠀today? |
+| `\dag`                                               | † $\dag$                                     | Dagger                               |
+| `\ddag`                                              | ‡ $\ddag$                                    | Double Dagger                        |
+| `\S`                                                 | § $\S$                                       | Section Sign                         |
+| `\P`                                                 | ¶ $\P$                                       | Pilcrow Sign                         |
+| `\pounds`                                            | £ $\pounds$                                  | Pound Sign                           |
+| `\copyright` <br> `\textsuperscript{\textcopyright}` | © $^{\copyright}$ <br> © $^{\textcopyright}$ | Copyright Sign                       |
+| `\textsuperscript{\textregistered}`                  | ® $^{\textregistered}$                       | Registered Trade Mark Sign           |
+| `\texttrademark`                                     | ™ $\texttrademark$                           | Trade Mark Sign                      |
+| `\%`                                                 | % $\%$                                       | Percent Sign                         |
+
+
 
 ## Degree Symbols
 | Command           | Rendering        | Dependency |
@@ -516,20 +526,6 @@
 | `\flat`             | $\flat$             |
 | `\natural`          | $\natural$          |
 | `\sharp`            | $\sharp$            |
-
-## Non-Mathematical Symbols
-> These symbols can also be used in text mode.
-
-| Command           | Rendering         |
-| ----------------- | ----------------- |
-| `\dag`            | $\dag$            |
-| `\ddag`           | $\ddag$           |
-| `\S`              | $\S$              |
-| `\P`              | $\P$              |
-| `\copyright`      | $\copyright$      |
-| `\pounds`         | $\pounds$         |
-| `\textregistered` | $\textregistered$ |
-| `\%`              | $\%$              |
 
 ## AMS Delimiters
 | Command     | Rendering   |
