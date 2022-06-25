@@ -43,7 +43,26 @@
 | `\cap`            | $\cap$            |
 | `\cup`            | $\cup$            |
 
+## Text Symbols
+> These commands work outside mathmode.
 
+| Command     | Rendering          | Comment              | Usage Example                    |
+| ----------- | ------------------ | -------------------- | -------------------------------- |
+| `-`         | -                  | hyphen               | daughter-in-law, X-rated         |
+| `--`        | –                  | en-dash              | pages 13–67                      |
+| `---`       | —                  | em-dash              | yes—or no?                       |
+| `$-1$`      | −                  | minus-sign           | 0, 1 and −1                      |
+| `/`slash    | /                  | prevent hyphenation  | 5 MB/s                           |
+| `\slash`    | /                  | supports hyphenation | read\slash write                 |
+| `\ldots`    | …                  |                      |                                  |
+| `Mr.~Smith` | $\text{Mr.~Smith}$ |                      | suppress bigger sentence spacing |
+
+## Degree Symbols
+| Command           | Rendering              | Dependency |     |
+| ----------------- | ---------------------- | ---------- | --- |
+| `^\circ`          | $^\circ$ <br> $^\circ$ |            |     |
+| `\unit{\degree}`  | $^\circ$               | siunitx    |     |
+| `\unit{\celsius}` | $^\circ$C              | siunitx    |     |
 
 ## Math Mode Accents
 | Command           | Rendering         |
