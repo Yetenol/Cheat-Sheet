@@ -1,7 +1,7 @@
 # Documentation ![GitHub last commit](https://img.shields.io/github/last-commit/yetenol/doc?color=white)
 [⌂](README.md) Home
-> Various information, tricks and tips I have accumulated over the years  
-> _Cheat Sheets_, _Documentations_
+> This project contains all my documentations of my developer life. 
+> This includes code templates, tips and tricks, cheat sheets and glossaries.
 - [Windows](#windows)
 - [Powershell](#powershell)
 - [LaTeX](#latex)
