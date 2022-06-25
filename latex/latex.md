@@ -47,37 +47,3 @@ texdoc PACKAGE_NAME
 \documentclass[twocolumn]{article}
 ```
 
-
-### Add Table Of Contents
-
-```latex
-\usepackage{hyperref}
-\hypersetup{colorlinks=true} % optional
-```
-
-```latex
-\tableofcontents
-```
-
-
-## Set Page Margins
-
-```latex
-\usepackage[margin=1.5cm]{geometry} % Set page margins
-\usepackage[top=2cm, bottom=2cm, left=3cm, right=1cm]{geometry} % Set page margins
-```
-
-## Dashes
-
-| .    | LaTeX             | Name                             | Example                  |
-| ---- | ----------------- | -------------------------------- | ------------------------ |
-| `-`  | `-`               | hyphen                           | daughter-in-law, X-rated |
-| `–`  | `--` en-dash      | pages 13–67                      |
-| `—`  | `---` em-dash     | yes—or no?                       |
-| `−`  | `$-1$`            | minus-sign                       | 0, 1 and −1              |
-| `∼`  | `$\sim$`          |
-| `/`  | `/`slash          | no hyphenation                   | 5 MB/s                   |
-| `/`  | `\slash`          | support hyphenation              | read\slash write         |
-| `◦C` | `^{\circ}\mathrm` | degree symbol                    | °C                       |
-| `…`  | `\ldots`          | (low dots                        | a, b, c, …               |
-|      | `                 | suppress bigger sentence spacing | Mr.~Smith w              |

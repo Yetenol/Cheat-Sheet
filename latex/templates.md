@@ -1,5 +1,9 @@
 # File Templates
 [⌂](../README.md) › [LaTeX](../README.md#latex) ›
+- [Preamble](#preamble)
+- [Package requirements](#package-requirements)
+- [Layout](#layout)
+- [Headings](#headings)
 
 ## Preamble
 Main document at **`main.tex`**

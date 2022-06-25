@@ -1,5 +1,8 @@
 # Floating Bodies
 [⌂](../README.md) › [LaTeX](../README.md#latex) ›
+- [Positioning](#positioning)
+- [Add Images](#add-images)
+- [Add List Of Figures](#add-list-of-figures)
 
 ## Positioning
 
