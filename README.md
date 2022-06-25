@@ -100,8 +100,8 @@
 - **[Floating Bodies ›](latex/floats.md)**  
     Images | `\begin{figure}[htbp]`
 
-- **[Tables ›](latex/tables.md)**  
-    TABULARX | `\begin{tabularx}{\columnwidth}{X\p{1.7cm}\|C\|}`
+    - **[Tables ›](latex/tables.md)**  
+        Auto-Stretching Columns | `S[table-format = -3.0e-1]`
 
 - **[Symbols ›](latex/symbols.md)**  
     Arrows | `\mathbb{NR}` → ℕℝ

@@ -1,5 +1,9 @@
 # Tables
-[⌂](../README.md) › [LaTeX](../README.md#latex) ›
+[⌂](../README.md) › [LaTeX](../README.md#latex) › [Floating Bodies](floats.md) ›
+- [Column types](#column-types)
+- [Auto-stretching columns table](#auto-stretching-columns-table)
+- [Number table](#number-table)
+- [Align custom delimiter tables](#align-custom-delimiter-tables)
 
 ## Column types
 
@@ -111,9 +115,9 @@
         \sisetup{table-auto-round = true}
         \begin{tabular}[]
         {   %%%%%%%%%% COLUMN FORMATTING %%%%%%%%%%
-            S[table-format = +3.0e-1] % column A
+            S[table-format = -3.0e-1] % column A
             S[table-format =  3.1] % column B
-            S[table-format = +2.e1, color = orange] % column C
+            S[table-format = -2.e1, color = orange] % column C
         }
             \toprule     %%%%%%%%%% MULTICOLUMN HEADERS %%%%%%%%%%
             & \multicolumn{2}{c}{Group} 

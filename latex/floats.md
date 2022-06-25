@@ -1,8 +1,11 @@
 # Floating Bodies
 [⌂](../README.md) › [LaTeX](../README.md#latex) ›
-- [Positioning](#positioning)
-- [Add Images](#add-images)
-- [Add List Of Figures](#add-list-of-figures)
+- **[Tables ›](tables.md)**  
+    Auto-Stretching Columns | `S[table-format = -3.0e-1]`
+- [Placement Specifiers](#placement-specifiers)
+- [Images](#images)
+- [Source Code Listings](#source-code-listings)
+- [Directories](#directories)
 
 ## Placement Specifiers
 
@@ -11,22 +14,21 @@
 \end{figure}
 ```
 
-- default `tbp`
 
-| .   | Name   | Placement Permissions                                                            |
-| --- | ------ | -------------------------------------------------------------------------------- |
-| `!` | force  | Force the following settings, without considerung most of the internal parameter |
-| `h` | here   | Put it exactly where we say it should go.                                        |
-| `t` | top    | Put it at the top of the _next available_ page.                                  |
-| `b` | bottom | Put it at the bottom of the _next available_ page.                               |
-| `p` | page   | Put it on a special page containing only floats.                                 |
+| Specifier          | Name    | Add placement option                                                              |
+| ------------------ | ------- | --------------------------------------------------------------------------------- |
+| _empty_ <br> `tbp` | default | Put if at the top, bottom of the _next available_ page or on a floats-only page.  |
+| `!`                | force   | Force the following settings, without considerung most of the internal parameter. |
+| `h`                | here    | Put it exactly where we say it should go.                                         |
+| `t`                | top     | Put it at the top of the _next available_ page.                                   |
+| `b`                | bottom  | Put it at the bottom of the _next available_ page.                                |
+| `p`                | page    | Put it on a special page containing only floats.                                  |
 
-## [Tables ›](tables.md)
 
 ## Images
 
 ```latex
-\begin{figure}  % or \begin{figure}[PLACEMENT]
+\begin{figure}  % or \begin{figure}[PLACEMENT-SPECIFIERS]
     \centering
     \caption{CAPTION}  % or \caption[LISTOFTABLES-CAPTION]{CAPTION}
     \label{fig:LABEL}
@@ -34,10 +36,9 @@
 \end{figure}
 ```
 
-- `PLACEMENT` := see [Placement Specifiers](#placement-specifiers)
 - `CAPTION` := displayed name of the figure
 - `LISTOFTABLES-CAPTION` := (optional) replaces the entry in the list of figures with a shorter version
-- `LABEL` := label to reference the figure
+- `LABEL` := label to reference the figure using `\ref{fig:LABEL}`
 - `FILENAME` := file path (with extension) of the image 
 
 ## Source Code Listings
@@ -49,11 +50,6 @@
     \lstinputlisting[language = matlab]{FILENAME}
 \end{figure}
 ```
-
-- `PLACEMENT` := see [Placement Specifiers](#placement-specifiers)
-- `CAPTION` := displayed name of the source code listing
-- `LABEL` := label to reference the figure
-- `FILENAME` := file path (with extension) of the source code 
 
 ## Directories
 
