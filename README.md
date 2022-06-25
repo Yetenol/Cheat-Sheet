@@ -95,28 +95,25 @@
 ## LaTeX
 
 - **[Getting Started ›](latex/latex.md)**  
-    Page Margins | `texdoc PACKAGE_NAME`
-
-- **[Debugging ›](latex/debugging.md)**  
-    Syntax Only | `\documentclass[draft]{article}`
-
-- **[Modify Environments ›](latex/environments.md)**  
-    Modify Existing Environments | `\usepackage{etoolbox}`
+    Project Structure | `texdoc PACKAGE_NAME`
 
 - **[Floating Bodies ›](latex/floats.md)**  
     Images | `\begin{figure}[htbp]`
 
+- **[Tables ›](latex/tables.md)**  
+    TABULARX | `\begin{tabularx}{\columnwidth}{X\p{1.7cm}\|C\|}`
+
+- **[Symbols ›](latex/symbols.md)**  
+    Arrows | `\mathbb{NR}` → ℕℝ
+
+- **[Layout ›](latex/layout.md)**  
+    Hyphenation | `\!` `\,` `\:` `\;` `\quad` `\qquad`
+
 - **[Useful Packages ›](latex/packages.md)**  
     Lipsum Text | `\usepackage[utf8]{inputenc}`
 
-- **[Spacing ›](latex/spacing.md)**  
-    Hyphenation | `\!` `\,` `\:` `\;` `\quad` `\qquad`
-
-- **[Tables ›](latex/tables.md)**  
-    TABULARX | `\begin{tabularx}{\columnwidth}{X\
-p{1.7cm}\|C\|}` |
-- **[Mathematics ›](latex/symbols.md)**  
-    Arrows | `\mathbb{NR}` → ℕℝ
+- **[Modify Environments ›](latex/environments.md)**  
+    Modify Existing Environments | `\usepackage{etoolbox}`
 
 
 ## Languages, Encodings

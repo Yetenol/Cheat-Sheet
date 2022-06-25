@@ -2,6 +2,8 @@
 [⌂](../README.md) › [LaTeX](../README.md#latex) ›
 > Commands for Mathematical Expressions, Symbols, Operators and Relations
 - [Favorites](#favorites)
+- [Text Symbols](#text-symbols)
+- [Degree Symbols](#degree-symbols)
 - [Math Mode Accents](#math-mode-accents)
 - [Greek Letters (lowercase)](#greek-letters-lowercase)
 - [Greek Letters (uppercase)](#greek-letters-uppercase)
@@ -46,16 +48,16 @@
 ## Text Symbols
 > These commands work outside mathmode.
 
-| Command     | Rendering          | Comment              | Usage Example                    |
-| ----------- | ------------------ | -------------------- | -------------------------------- |
-| `-`         | -                  | hyphen               | daughter-in-law, X-rated         |
-| `--`        | –                  | en-dash              | pages 13–67                      |
-| `---`       | —                  | em-dash              | yes—or no?                       |
-| `$-1$`      | −                  | minus-sign           | 0, 1 and −1                      |
-| `/`slash    | /                  | prevent hyphenation  | 5 MB/s                           |
-| `\slash`    | /                  | supports hyphenation | read\slash write                 |
-| `\ldots`    | …                  |                      |                                  |
-| `Mr.~Smith` | $\text{Mr.~Smith}$ |                      | suppress bigger sentence spacing |
+| Command     | Rendering          | Comment                          | Usage Example            |
+| ----------- | ------------------ | -------------------------------- | ------------------------ |
+| `-`         | -                  | hyphen                           | daughter-in-law, X-rated |
+| `--`        | –                  | en-dash                          | pages 13–67              |
+| `---`       | —                  | em-dash                          | yes—or no?               |
+| `$-1$`      | −                  | minus-sign                       | 0, 1 and −1              |
+| `/`         | /                  | prevent hyphenation              | 5 MB/s                   |
+| `\slash`    | /                  | supports hyphenation             | read\slash write         |
+| `\ldots`    | …                  |                                  |                          |
+| `Mr.~Smith` | $\text{Mr.~Smith}$ | suppress bigger sentence spacing |
 
 ## Degree Symbols
 | Command           | Rendering              | Dependency |     |
