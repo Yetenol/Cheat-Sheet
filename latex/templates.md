@@ -1,0 +1,76 @@
+# File Templates
+[⌂](../README.md) › [LaTeX](../README.md#latex) ›
+
+## Preamble
+Main document at **`main.tex`**
+- minimal version
+    ```latex
+    %%%%%%%%%% PREAMBLE %%%%%%%%%%
+    \input{setup/packages}
+    \input{setup/definitions}
+    \input{setup/layout}
+    \begin{document} 
+        %%%%%%%%%% HEADINGS %%%%%%%%%%
+        \input{text/headings}
+    \end{document}
+    ```
+- regular version
+    ```latex
+    %%%%%%%%%% PREAMBLE %%%%%%%%%%
+    \input{setup/packages}
+    \input{setup/definitions}
+    \input{setup/layout}
+    \begin{document} 
+        %%%%%%%%%% TITLE PAGES %%%%%%%%%%
+        \maketitle % print title, author, date information
+        \input{setup/titlepage}
+        \pagestyle{empty}
+        \input{setup/eidesstattlicheErklaerung}
+        \tableofcontents
+        %%%%%%%%%% HEADINGS %%%%%%%%%%
+        \newpage
+        \pagestyle{headings}
+        \input{text/headings}
+        %%%%%%%%%%% DIRECTORIES %%%%%%%%%%
+        \clearpage
+        \section{Verzeichnisse}
+        \listoftables       % Tabellenverzeichnis
+        \listoffigures      % Abbildungsverzeichnis
+        \lstlistoflistings  % Codelistenverzeichnis
+        \input{bib/bibliography} % Literaturverzeichnis
+        %%%%%%%%%% APPENDICES %%%%%%%%%%
+    \end{document}
+    ```
+
+## Package requirements 
+Dependencies at **`setup/packages.tex`**
+```latex
+\documentclass[a4paper, 11pt]{article}
+\usepackage{syntonly} % Suppress pdf creating and check syntax only
+
+\usepackage[T1]{fontenc} % Use Latin Modern font encoding, e.g. accents, greek letters
+\usepackage[utf8]{inputenc} % Use unicode as input encoding 
+\usepackage[margin=1.5cm]{geometry} % Set page margins
+\usepackage[ngerman]{babel} % Use German hyphenation and names like Inhaltsverzeichnis
+\usepackage{csquotes} % Use German quotation marks
+```
+
+## Layout
+Global formatting at **`setup/layout.tex`**
+```
+\title{My Template}
+\author{Anton Pusch}
+\date{\today}
+```
+
+## Headings
+at **`text/headings.tex`**
+```latex
+\section{Introduction}
+\label{sec:introduction}
+\input{text/introduction}
+
+\section{Capter 1}
+\label{sec:capter-1}
+\input{text/capter-1}
+```

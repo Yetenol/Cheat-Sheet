@@ -100,10 +100,10 @@
 - **[Debugging ›](latex/debugging.md)**  
     Syntax Only | `\documentclass[draft]{article}`
 
-- **[Environments ›](latex/environments.md)**  
+- **[Modify Environments ›](latex/environments.md)**  
     Modify Existing Environments | `\usepackage{etoolbox}`
 
-- **[Floats ›](latex/floats.md)**  
+- **[Floating Bodies ›](latex/floats.md)**  
     Images | `\begin{figure}[htbp]`
 
 - **[Useful Packages ›](latex/packages.md)**  

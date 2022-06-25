@@ -1,4 +1,4 @@
-# Environment
+# Modify Environments
 [⌂](../README.md) › [LaTeX](../README.md#latex) ›
 
 ## Extend an existing environment 
