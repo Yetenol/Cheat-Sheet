@@ -143,17 +143,17 @@
 | `\Omega`   | $\Omega$   |
 
 ## Number sets
-| Command                      | Rendering                    |
-| ---------------------------- | ---------------------------- |
-| `\mathbb{A}`                 | $\mathbb{A}$                 |
-| `\mathbb{C}` <br> `\Complex` | $\mathbb{C}$ <br> $\Complex$ |
-| `\mathbb{H}` <br> `\H`       | $\mathbb{H}$ <br> $\H$       |
-| `\mathbb{N}` <br> `\N`       | $\mathbb{N}$ <br> $\N$       |
-| `\mathbb{O}`                 | $\mathbb{O}$                 |
-| `\mathbb{Q}` <br> `\Q`       | $\mathbb{Q}$ <br> $\Q$       |
-| `\mathbb{R}` <br> `\R`       | $\mathbb{R}$ <br> $\R$       |
-| `\mathbb{S}`                 | $\mathbb{S}$                 |
-| `\mathbb{Z}` <br> `\Z`       | $\mathbb{Z}$ <br> $\Z$       |
+| Command      | Rendering    |
+| ------------ | ------------ |
+| `\mathbb{A}` | $\mathbb{A}$ |
+| `\mathbb{C}` | $\mathbb{C}$ |
+| `\mathbb{H}` | $\mathbb{H}$ |
+| `\mathbb{N}` | $\mathbb{N}$ |
+| `\mathbb{O}` | $\mathbb{O}$ |
+| `\mathbb{Q}` | $\mathbb{Q}$ |
+| `\mathbb{R}` | $\mathbb{R}$ |
+| `\mathbb{S}` | $\mathbb{S}$ |
+| `\mathbb{Z}` | $\mathbb{Z}$ |
 
 ## Binary Relations
 
