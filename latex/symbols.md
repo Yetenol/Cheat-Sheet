@@ -64,7 +64,7 @@
 | ----------------- | ---------------------- | ---------- |
 | `^\circ`          | $^\circ$ <br> $^\circ$ |            |
 | `\unit{\degree}`  | $^\circ$               | siunitx    |
-| `\unit{\celsius}` | $^\circ$C              | siunitx    |
+| `\unit{\celsius}` | $^\circ\text{C}$       | siunitx    |
 
 ## Math Mode Accents
 | Command           | Rendering         |
