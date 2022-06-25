@@ -47,25 +47,25 @@
 ## Non-Mathematical Symbols
 > These symbols can also be used in text mode.
 
-| Command                                              | Rendering                                    | Name or _Function_                   | Usage Example                    |
-| ---------------------------------------------------- | -------------------------------------------- | ------------------------------------ | -------------------------------- |
-| `-`                                                  | -                                            | hyphen                               | daughter-in-law, X-rated         |
-| `--`                                                 | –                                            | en-dash                              | pages 13–67                      |
-| `---`                                                | —                                            | em-dash                              | yes—or no?                       |
-| `$-1$`                                               | −                                            | minus-sign                           | 0, 1 and −1                      |
-| `/`                                                  | /                                            | _prevents hyphenation_               | 5 MB/s                           |
-| `\slash`                                             | /                                            | _supports hyphenation_               | read/write                       |
-| `\ldots`                                             | …                                            | ellipsis                             | a, b, c, …                       |
-| `Mr.~Smith`                                          | $\text{Mr.~Smith}$                           | _suppresses bigger sentence spacing_ | Did ⠀Mr.&#160;Smith ⠀win ⠀today? |
-| `\dag`                                               | † $\dag$                                     | Dagger                               |
-| `\ddag`                                              | ‡ $\ddag$                                    | Double Dagger                        |
-| `\S`                                                 | § $\S$                                       | Section Sign                         |
-| `\P`                                                 | ¶ $\P$                                       | Pilcrow Sign                         |
-| `\pounds`                                            | £ $\pounds$                                  | Pound Sign                           |
-| `\copyright` <br> `\textsuperscript{\textcopyright}` | © $^{\copyright}$ <br> © $^{\textcopyright}$ | Copyright Sign                       |
-| `\textsuperscript{\textregistered}`                  | ® $^{\textregistered}$                       | Registered Trade Mark Sign           |
-| `\texttrademark`                                     | ™ $\texttrademark$                           | Trade Mark Sign                      |
-| `\%`                                                 | % $\%$                                       | Percent Sign                         |
+| Command                                                                | Rendering      | Name or _Function_                   | Usage Example                    |
+| ---------------------------------------------------------------------- | -------------- | ------------------------------------ | -------------------------------- |
+| `-`                                                                    | -              | hyphen                               | daughter-in-law, X-rated         |
+| `--`                                                                   | –              | en-dash                              | pages 13–67                      |
+| `---`                                                                  | —              | em-dash                              | yes—or no?                       |
+| `$-1$`                                                                 | −              | minus-sign                           | 0, 1 and −1                      |
+| `/`                                                                    | /              | _prevents hyphenation_               | 5 MB/s                           |
+| `\slash`                                                               | /              | _supports hyphenation_               | read/write                       |
+| `\ldots`                                                               | …              | ellipsis                             | a, b, c, …                       |
+| `Mr.~Smith`                                                            | Mr.&#160;Smith | _suppresses bigger sentence spacing_ | Did ⠀Mr.&#160;Smith ⠀win ⠀today? |
+| `\dag`                                                                 | †              | Dagger                               |
+| `\ddag`                                                                | ‡              | Double Dagger                        |
+| `\S`                                                                   | §              | Section Sign                         |
+| `\P`                                                                   | ¶              | Pilcrow Sign                         |
+| `\pounds`                                                              | £              | Pound Sign                           |
+| `\textsuperscript{\copyright}` <br> `\textsuperscript{\textcopyright}` | © <br> ©       | Copyright Sign                       |
+| `\textsuperscript{\textregistered}`                                    | ®              | Registered Trade Mark Sign           |
+| `\texttrademark`                                                       | ™              | Trade Mark Sign                      |
+| `\%`                                                                   | %              | Percent Sign                         |
 
 
 
