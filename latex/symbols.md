@@ -60,11 +60,11 @@
 | `Mr.~Smith` | $\text{Mr.~Smith}$ | suppress bigger sentence spacing |
 
 ## Degree Symbols
-| Command           | Rendering              | Dependency |     |
-| ----------------- | ---------------------- | ---------- | --- |
-| `^\circ`          | $^\circ$ <br> $^\circ$ |            |     |
-| `\unit{\degree}`  | $^\circ$               | siunitx    |     |
-| `\unit{\celsius}` | $^\circ$C              | siunitx    |     |
+| Command           | Rendering              | Dependency |
+| ----------------- | ---------------------- | ---------- |
+| `^\circ`          | $^\circ$ <br> $^\circ$ |            |
+| `\unit{\degree}`  | $^\circ$               | siunitx    |
+| `\unit{\celsius}` | $^\circ$C              | siunitx    |
 
 ## Math Mode Accents
 | Command           | Rendering         |

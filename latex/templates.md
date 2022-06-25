@@ -29,7 +29,6 @@ Main document at **`main.tex`**
         \maketitle % print title, author, date information
         \input{setup/titlepage}
         \pagestyle{empty}
-        \input{setup/eidesstattlicheErklaerung}
         \tableofcontents
         %%%%%%%%%% HEADINGS %%%%%%%%%%
         \newpage
