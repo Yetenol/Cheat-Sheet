@@ -48,16 +48,16 @@
 ## Text Symbols
 > These commands work outside mathmode.
 
-| Command     | Rendering          | Name or _Function_                   | Usage Example            |
-| ----------- | ------------------ | ------------------------------------ | ------------------------ |
-| `-`         | -                  | hyphen                               | daughter-in-law, X-rated |
-| `--`        | –                  | en-dash                              | pages 13–67              |
-| `---`       | —                  | em-dash                              | yes—or no?               |
-| `$-1$`      | −                  | minus-sign                           | 0, 1 and −1              |
-| `/`         | /                  | _prevents hyphenation_               | 5 MB/s                   |
-| `\slash`    | /                  | _supports hyphenation_               | read\slash write         |
-| `\ldots`    | …                  | ellipsis                             |                          |
-| `Mr.~Smith` | $\text{Mr.~Smith}$ | _suppresses bigger sentence spacing_ |
+| Command     | Rendering          | Name or _Function_                   | Usage Example                    |
+| ----------- | ------------------ | ------------------------------------ | -------------------------------- |
+| `-`         | -                  | hyphen                               | daughter-in-law, X-rated         |
+| `--`        | –                  | en-dash                              | pages 13–67                      |
+| `---`       | —                  | em-dash                              | yes—or no?                       |
+| `$-1$`      | −                  | minus-sign                           | 0, 1 and −1                      |
+| `/`         | /                  | _prevents hyphenation_               | 5 MB/s                           |
+| `\slash`    | /                  | _supports hyphenation_               | read/write                       |
+| `\ldots`    | …                  | ellipsis                             | a, b, c, …                       |
+| `Mr.~Smith` | $\text{Mr.~Smith}$ | _suppresses bigger sentence spacing_ | Did ⠀Mr.&#160;Smith⠀⠀win⠀⠀today? |
 
 ## Degree Symbols
 | Command           | Rendering        | Dependency |
