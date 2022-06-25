@@ -4,7 +4,7 @@
 - [Add Images](#add-images)
 - [Add List Of Figures](#add-list-of-figures)
 
-## Positioning
+## Placement Specifiers
 
 ```latex
 \begin{figure}[htbp] % or table
@@ -21,29 +21,44 @@
 | `b` | bottom | Put it at the bottom of the _next available_ page.                               |
 | `p` | page   | Put it on a special page containing only floats.                                 |
 
+## [Tables ›](tables.md)
 
-## Add Images
+## Images
 
 ```latex
-\begin{figure}[POSITIONING]
+\begin{figure}  % or \begin{figure}[PLACEMENT]
     \centering
-    \caption[SHORT-CAPTION]{CAPTION}
-    \label{fig:IMAGE_LABEL}
-    \includegraphics[width=0.75\columnwidth]{FILE_NAME}
+    \caption{CAPTION}  % or \caption[LISTOFTABLES-CAPTION]{CAPTION}
+    \label{fig:LABEL}
+    \includegraphics[width=0.75\columnwidth]{FILENAME}
 \end{figure}
 ```
 
-- `POSITIONING` := see [Positioning](#positioning)
-- `FILE_NAME` := path (without extension) of the image 
-- `SHORT-CAPTION` := (optional) replaced the entry in the list of figures with a summary
+- `PLACEMENT` := see [Placement Specifiers](#placement-specifiers)
 - `CAPTION` := displayed name of the figure
-- `IMAGE_LABEL` := label to reference the figure
+- `LISTOFTABLES-CAPTION` := (optional) replaces the entry in the list of figures with a shorter version
+- `LABEL` := label to reference the figure
+- `FILENAME` := file path (with extension) of the image 
 
+## Source Code Listings
+```latex
+\begin{figure}  % or \begin{figure}[PLACEMENT]
+    \centering
+    \lstset{caption = {CAPTION}}
+    \lstset{label = code:LABEL}
+    \lstinputlisting[language = matlab]{FILENAME}
+\end{figure}
+```
 
+- `PLACEMENT` := see [Placement Specifiers](#placement-specifiers)
+- `CAPTION` := displayed name of the source code listing
+- `LABEL` := label to reference the figure
+- `FILENAME` := file path (with extension) of the source code 
 
-## Add List Of Figures
+## Directories
 
 ```latex
-\listoffigures
-\listoftables
+\listoftables       % Tabellenverzeichnis
+\listoffigures      % Abbildungsverzeichnis
+\lstlistoflistings  % Codelistenverzeichnis
 ```

@@ -1,5 +1,20 @@
-# Floating Bodies
+# Layout
 [⌂](../README.md) › [LaTeX](../README.md#latex) ›
+
+## Document Classes
+
+```latex
+\documentclass[twocolumn]{article}
+```
+
+## File Template
+Global formatting at **`setup/layout.tex`**
+```
+\title{My Template}
+\author{Anton Pusch}
+\date{\today}
+```
+
 
 ## Table Of Contents
 

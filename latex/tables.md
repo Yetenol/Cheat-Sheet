@@ -45,10 +45,10 @@
 - **Table columns, design** in `table/auto-stretch.tex`
     ```latex
     \CatchFileDef{\inputCHILDRENLIST}{src/children-list}{}
-    \begin{table}  % or \begin{table}[FLOAT_POSITIONING]
+    \begin{table}  % or \begin{table}[FLOAT-POSITIONING]
         %%%%%%%%%% LAYOUT, META DATA %%%%%%%%%%
         \centering
-        \caption{CAPTION} % or \caption[LISTOFTABLES_CAPTION]{CAPTION}
+        \caption{CAPTION} % or \caption[LISTOFTABLES-CAPTION]{CAPTION}
         \label{tab:LABEL}
         \begin{tabularx}{\columnwidth} % total table width
         {   %%%%%%%%%% COLUMN FORMATTING %%%%%%%%%%
@@ -103,7 +103,7 @@
 - **Table columns, design** in `table/numbers.tex`
     ```latex
     CatchFileDef{\inputMEASUREDVALUES}{src/measured-values}{}
-    \begin{table}  % or \begin{table}[FLOAT_POSITIONING]
+    \begin{table}  % or \begin{table}[FLOAT-POSITIONING]
         %%%%%%%%%% LAYOUT, META DATA %%%%%%%%%%
         \centering
         \caption{CAPTION} % or \caption[LISTOFTABLES-CAPTION]{CAPTION}
@@ -154,7 +154,7 @@
 - **Table columns, design** in `table/network.tex`
     ```latex
     CatchFileDef{\inputIPADDRESSES}{src/measured-values}{}
-    \begin{table}  % or \begin{table}[FLOAT_POSITIONING]
+    \begin{table}  % or \begin{table}[FLOAT-POSITIONING]
         %%%%%%%%%% LAYOUT, META DATA %%%%%%%%%%
         \centering
         \caption{CAPTION} % or \caption[LISTOFTABLES-CAPTION]{CAPTION}

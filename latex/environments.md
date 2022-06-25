@@ -1,7 +1,5 @@
-# Modify Environments
+# Extend an existing environment
 [⌂](../README.md) › [LaTeX](../README.md#latex) ›
-
-## Extend an existing environment 
 
 ```latex
 \usepackage{etoolbox} % Append methods to environments

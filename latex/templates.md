@@ -38,16 +38,18 @@ Main document at **`main.tex`**
         %%%%%%%%%%% DIRECTORIES %%%%%%%%%%
         \clearpage
         \section{Verzeichnisse}
-        \listoftables       % Tabellenverzeichnis
-        \listoffigures      % Abbildungsverzeichnis
-        \lstlistoflistings  % Codelistenverzeichnis
+        \listoftables            % Tabellenverzeichnis
+        \listoffigures           % Abbildungsverzeichnis
+        \lstlistoflistings       % Codelistenverzeichnis
         \input{bib/bibliography} % Literaturverzeichnis
         %%%%%%%%%% APPENDICES %%%%%%%%%%
+        \input{src/appendix.tex}
     \end{document}
     ```
 
 ## Package requirements 
 Dependencies at **`setup/packages.tex`**
+- see [Document Classes](layout.md#document-classes) for `\documentclass{}`
 ```latex
 \documentclass[a4paper, 11pt]{article}
 \usepackage{syntonly} % Suppress pdf creating and check syntax only
@@ -57,14 +59,6 @@ Dependencies at **`setup/packages.tex`**
 \usepackage[margin=1.5cm]{geometry} % Set page margins
 \usepackage[ngerman]{babel} % Use German hyphenation and names like Inhaltsverzeichnis
 \usepackage{csquotes} % Use German quotation marks
-```
-
-## Layout
-Global formatting at **`setup/layout.tex`**
-```
-\title{My Template}
-\author{Anton Pusch}
-\date{\today}
 ```
 
 ## Headings
