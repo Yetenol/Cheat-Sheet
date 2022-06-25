@@ -57,7 +57,7 @@
 | `/`         | /                  | _prevents hyphenation_               | 5 MB/s                           |
 | `\slash`    | /                  | _supports hyphenation_               | read/write                       |
 | `\ldots`    | …                  | ellipsis                             | a, b, c, …                       |
-| `Mr.~Smith` | $\text{Mr.~Smith}$ | _suppresses bigger sentence spacing_ | Did ⠀Mr.&#160;Smith⠀⠀win⠀⠀today? |
+| `Mr.~Smith` | $\text{Mr.~Smith}$ | _suppresses bigger sentence spacing_ | Did ⠀Mr.&#160;Smith ⠀win ⠀today? |
 
 ## Degree Symbols
 | Command           | Rendering        | Dependency |
