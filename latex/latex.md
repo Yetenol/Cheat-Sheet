@@ -10,49 +10,98 @@ texdoc PACKAGE_NAME
 
 ## File Structure
 
-- `config`
-  - `packages.tex` only \usepackage commands
-  - `definitions.tex` new commands, environments, columns
-  - `layout.tex` global formatting, spacing, margins
-- `figures` floating bodies: tables and figures
-- `references`
-  - `bibliography.tex`
-  - ...`.bib`
-- `texts`
-  - _section_`.tex` continuous section paragraphs
+- **`setup/`**
+	- **`packages.tex`**  
+        Required packages | `\usepackage{}`
+	- **`definitions.tex`**  
+        new commands, environments, columntypes | `\newcommand{}{}`
+	- **`layout.tex`**  
+        global formatting, spacing, margins | `\hypersetup{colorlinks=true}`
+- **`table/`**  
+    - **_table name_`.tex`**  
+        one table float | `\begin{table}`
+- **`figure/`**  
+    - **_figure name_`.tex`**  
+        one figure float | `\begin{figure}`
+- **`listing/`**  
+    for source code typesetting 
+    - **_listing name_`.tex`**  
+        one source code floats | `\lstinputlisting{}`
+- **`bib/`**  
+    for external references
+	- **`bibliography.tex`**  
+        Structure of the bibliography | `\printbibliography{}`
+	- **_reference type_`.bib`**  
+        letters or annex
+- **`text/`**  
+    - **`headings.tex`** structure of the headings  
+        Text headings | `\section{}`
+	- **_heading name_`.tex`**  
+        continuous text paragraphs | `\subsection{}`
 
 
 ### Preamble
 
-- `main.tex`
-```latex
-\documentclass[a4paper, 11pt]{article}
+- **Main document** in `main.tex`
+	```latex
+	%%%%%%%%%% PREAMBLE %%%%%%%%%%
+	\input{setup/packages}
+	\input{setup/definitions}
+	\input{setup/layout}
+	\begin{document} 
+        %%%%%%%%%% HEADINGS %%%%%%%%%%
+	\end{document}
+	```
+	```latex
+	%%%%%%%%%% PREAMBLE %%%%%%%%%%
+	\input{setup/packages}
+	\input{setup/definitions}
+	\input{setup/layout}
+	\begin{document} 
+	    %%%%%%%%%% TITLE PAGES %%%%%%%%%%
+	    \maketitle % print title, author, date information
+        \input{setup/titlepage}
+        \pagestyle{empty}
+        \input{setup/eidesstattlicheErklaerung}
+        \tableofcontents
+        \newpage
+        \pagestyle{headings}
+        %%%%%%%%%% HEADINGS %%%%%%%%%%
+        \section{Introduction}
+        \label{sec:introduction}
+        \input{text/introduction}
 
-\input{config/packages}
-\input{config/definitions}
-\input{config/layout}
+        \section{Capter 1}
+        \label{sec:capter-1}
+        \input{text/capter-1}
+        %%%%%%%%%%% DIRECTORIES %%%%%%%%%%
+	    \clearpage
+	    \section{Verzeichnisse}
+	    \listoftables       % Tabellenverzeichnis
+	    \listoffigures      % Abbildungsverzeichnis
+	    \lstlistoflistings  % Codelistenverzeichnis
+	    \input{bib/bibliography} % Literaturverzeichnis
+	    %%%%%%%%%% APPENDICES %%%%%%%%%%
+	\end{document}
+	```
 
-\begin{document}
-  \maketitle % print title, author, date information
-\end{document}
-```
+- **Package requirements** in `setup/packages.tex`
+	```latex
+	\documentclass[a4paper, 11pt]{article}
+	\usepackage{syntonly} % Suppress pdf creating and check syntax only
 
-- `packages.tex`
-```latex
-\usepackage{syntonly} % Suppress pdf creating and check syntax only
+	\usepackage[T1]{fontenc} % Use Latin Modern font encoding, e.g. accents, greek letters
+	\usepackage[utf8]{inputenc} % Use unicode as input encoding 
+	\usepackage[margin=1.5cm]{geometry} % Set page margins
+	\usepackage[ngerman]{babel} % Use German hyphenation and names like Inhaltsverzeichnis
+	\usepackage{csquotes} % Use German quotation marks
+	```
 
-\usepackage[T1]{fontenc} % Use Latin Modern font encoding, e.g. accents, greek letters
-\usepackage[utf8]{inputenc} % Use unicode as input encoding 
-\usepackage[margin=1.5cm]{geometry} % Set page margins
-\usepackage[ngerman]{babel} % Use German hyphenation and names like Inhaltsverzeichnis
-\usepackage{csquotes} % Use German quotation marks
-```
-
-- `layout.tex`
-```
-\title{My Template}
-\author{Anton Pusch}
-\date{\today}
+- **Layout** in `setup/layout.tex`
+	```
+	\title{My Template}
+	\author{Anton Pusch}
+	\date{\today}
 ```
 
 
