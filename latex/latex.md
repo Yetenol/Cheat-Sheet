@@ -69,10 +69,10 @@
     | `\num{3.45e-4}`    | $3.45 \times 10^{-4}$ |
 
 - **Angles**  
-    | Example Command | Rendering |
-    | --------------- | --------- |
-    | `\ang{10}`      | $10°$     |
-    | `\ang{1;2;3}`   | $1°2'3''$ |
+    | Example Command | Rendering      |
+    | --------------- | -------------- |
+    | `\ang{10}`      | $10^\circ$     |
+    | `\ang{1;2;3}`   | $1^\circ2'3''$ |
 
 - **Units**  
     | Example Command                                           | Rendering                 |
