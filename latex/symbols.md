@@ -632,44 +632,68 @@
 | `\rmoustache` | $\rmoustache$ |
 
 ## Miscellaneous Symbols
-| Command             | Rendering           | Variants       | Dependency |
-| ------------------- | ------------------- | -------------- | ---------- |
-| `\dots`             | $\dots$             |
-| `\cdots`            | $\cdots$            |
-| `\vdots`            | $\vdots$            |
-| `\ddots`            | $\ddots$            |
-| `\hbar`             | $\hbar$             |
-| `\imath`            | $\imath$            |
-| `\jmath`            | $\jmath$            |
-| `\ell`              | $\ell$              |
-| `\Re`               | $\Re$               |
-| `\Im`               | $\Im$               |
-| `\aleph`            | $\aleph$            |
-| `\wp`               | $\wp$               |
-| `\forall`           | $\forall$           |
-| `\exists`           | $\exists$           |
-| `\mho`              | $\mho$              |                | latexsym   |
-| `\partial`          | $\partial$          |
-| `'`                 | $'$                 |
-| `\prime`            | $\prime$            |
-| `\emptyset`         | $\emptyset$         |
-| `\infty`            | $\infty$            |
-| `\nabla`            | $\nabla$            |
-| `\triangle`         | $\triangle$         | $\vartriangle$ | amssymb    |
-| `\Box`              | $\Box$              |                | latexsym   |
-| `\Diamond`          | $\Diamond$          |                | latexsym   |
-| `\bot`              | $\bot$              |
-| `\top`              | $\top$              |
-| `\angle`            | $\angle$            |
-| `\surd`             | $\surd$             |
-| `\diamondsuit`      | $\diamondsuit$      |
-| `\heartsuit`        | $\heartsuit$        |
-| `\clubsuit`         | $\clubsuit$         |
-| `\spadesuit`        | $\spadesuit$        |
-| `\neg` <br> `\lnot` | $\neg$ <br> $\lnot$ |
-| `\flat`             | $\flat$             |
-| `\natural`          | $\natural$          |
-| `\sharp`            | $\sharp$            |
+| Command              | Rendering            | Variants       | Dependency |
+| -------------------- | -------------------- | -------------- | ---------- |
+| `\dots`              | $\dots$              |
+| `\cdots`             | $\cdots$             |
+| `\vdots`             | $\vdots$             |
+| `\ddots`             | $\ddots$             |
+| `\hbar`              | $\hbar$              |
+| `\imath`             | $\imath$             |
+| `\jmath`             | $\jmath$             |
+| `\ell`               | $\ell$               |
+| `\Re`                | $\Re$                |
+| `\Im`                | $\Im$                |
+| `\aleph`             | $\aleph$             |
+| `\wp`                | $\wp$                |
+| `\forall`            | $\forall$            |
+| `\exists`            | $\exists$            |
+| `\mho`               | $\mho$               |                | latexsym   |
+| `\partial`           | $\partial$           |
+| `'`                  | $'$                  |
+| `\prime`             | $\prime$             |
+| `\emptyset`          | $\emptyset$          |
+| `\infty`             | $\infty$             |
+| `\nabla`             | $\nabla$             |
+| `\triangle`          | $\triangle$          | $\vartriangle$ | amssymb    |
+| `\Box`               | $\Box$               |                | latexsym   |
+| `\Diamond`           | $\Diamond$           |                | latexsym   |
+| `\bot`               | $\bot$               |
+| `\top`               | $\top$               |
+| `\angle`             | $\angle$             |
+| `\surd`              | $\surd$              |
+| `\diamondsuit`       | $\diamondsuit$       |
+| `\heartsuit`         | $\heartsuit$         |
+| `\clubsuit`          | $\clubsuit$          |
+| `\spadesuit`         | $\spadesuit$         |
+| `\neg` <br> `\lnot`  | $\neg$ <br> $\lnot$  |
+| `\flat`              | $\flat$              |
+| `\natural`           | $\natural$           |
+| `\sharp`             | $\sharp$             |
+| `\square`            | $\square$            |                | amssymb    |
+| `\vartriangle`       | $\vartriangle$       |                | amssymb    |
+| `\triangledown`      | $\triangledown$      |                | amssymb    |
+| `\lozenge`           | $\lozenge$           |                | amssymb    |
+| `\diagup`            | $\diagup$            |                | amssymb    |
+| `\hslash`            | $\hslash$            |                | amssymb    |
+| `\blacksquare`       | $\blacksquare$       |                | amssymb    |
+| `\blacktriangle`     | $\blacktriangle$     |                | amssymb    |
+| `\blacktriangledown` | $\blacktriangledown$ |                | amssymb    |
+| `\blacklozenge`      | $\blacklozenge$      |                | amssymb    |
+| `\measuredangle`     | $\measuredangle$     |                | amssymb    |
+| `\diagdown`          | $\diagdown$          |                | amssymb    |
+| `\nexists`           | $\nexists$           |                | amssymb    |
+| `\Finv`              | $\Finv$              |                | amssymb    |
+| `\eth`               | $\eth$               |                | amssymb    |
+| `\sphericalangle`    | $\sphericalangle$    |                | amssymb    |
+| `\Bbbk`              | $\Bbbk$              |                | amssymb    |
+| `\circledS`          | $\circledS$          |                | amssymb    |
+| `\complement`        | $\complement$        |                | amssymb    |
+| `\Game`              | $\Game$              |                | amssymb    |
+| `\bigstar`           | $\bigstar$           |                | amssymb    |
+| `\backprime`         | $\backprime$         |                | amssymb    |
+| `\varnothing`        | $\varnothing$        |                | amssymb    |
+| `\mho`               | $\mho$               |                | amssymb    |
 
 - **Change** symbol **style**
   | Preamble Command                         | Rendering      | Original    | Dependency |
@@ -709,36 +733,6 @@
 | `\mathscr{TEXT}`    | $\mathscr{ABCDE}$             | mathrsfs            |
 | `\mathfrak{TEXT}`   | $\mathfrak{ABCDEabcde1234}$   | amsfonts or amssymb |
 | `\mathbb{TEXT}`     | $\mathbb{ABCDE}$              | amsfonts or amssymb |
-
-## AMS Miscellaneous
-| Command              | Rendering            |
-| -------------------- | -------------------- |
-| `\hbar`              | $\hbar$              |
-| `\square`            | $\square$            |
-| `\vartriangle`       | $\vartriangle$       |
-| `\triangledown`      | $\triangledown$      |
-| `\lozenge`           | $\lozenge$           |
-| `\angle`             | $\angle$             |
-| `\diagup`            | $\diagup$            |
-| `\hslash`            | $\hslash$            |
-| `\blacksquare`       | $\blacksquare$       |
-| `\blacktriangle`     | $\blacktriangle$     |
-| `\blacktriangledown` | $\blacktriangledown$ |
-| `\blacklozenge`      | $\blacklozenge$      |
-| `\measuredangle`     | $\measuredangle$     |
-| `\diagdown`          | $\diagdown$          |
-| `\nexists`           | $\nexists$           |
-| `\Finv`              | $\Finv$              |
-| `\eth`               | $\eth$               |
-| `\sphericalangle`    | $\sphericalangle$    |
-| `\Bbbk`              | $\Bbbk$              |
-| `\circledS`          | $\circledS$          |
-| `\complement`        | $\complement$        |
-| `\Game`              | $\Game$              |
-| `\bigstar`           | $\bigstar$           |
-| `\backprime`         | $\backprime$         |
-| `\varnothing`        | $\varnothing$        |
-| `\mho`               | $\mho$               |
 
 
 # Sources
