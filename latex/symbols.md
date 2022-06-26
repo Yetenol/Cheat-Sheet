@@ -132,32 +132,34 @@
 | `\widetilde{AAA}` | $\widetilde{AAA}$ |
 
 ## Greek Letters (lowercase)
-| Command    | Rendering  | Variants      |
-| ---------- | ---------- | ------------- |
-| `\alpha`   | $\alpha$   |
-| `\beta`    | $\beta$    |
-| `\gamma`   | $\gamma$   |
-| `\delta`   | $\delta$   |
-| `\epsilon` | $\epsilon$ | $\varepsilon$ |
-| `\zeta`    | $\zeta$    |
-| `\eta`     | $\eta$     |
-| `\theta`   | $\theta$   | $\vartheta$   |
-| `\iota`    | $\iota$    |
-| `\kappa`   | $\kappa$   | $\varkappa$   |
-| `\lambda`  | $\lambda$  |
-| `\mu`      | $\mu$      |
-| `\nu`      | $\nu$      |
-| `\xi`      | $\xi$      |
-| `o`        | $o$        |
-| `\pi`      | $\pi$      | $\varpi$      |
-| `\rho`     | $\rho$     | $\varrho$     |
-| `\sigma`   | $\sigma$   | $\varsigma$   |
-| `\tau`     | $\tau$     |
-| `\upsilon` | $\upsilon$ |
-| `\phi`     | $\phi$     | $\varphi$     |
-| `\chi`     | $\chi$     |
-| `\psi`     | $\psi$     |
-| `\omega`   | $\omega$   |
+| Command     | Rendering   | Variants      |
+| ----------- | ----------- | ------------- |
+| `\alpha`    | $\alpha$    |
+| `\beta`     | $\beta$     |
+| `\gamma`    | $\gamma$    |
+| `\delta`    | $\delta$    |
+| `\epsilon`  | $\epsilon$  | $\varepsilon$ |
+| `\zeta`     | $\zeta$     |
+| `\eta`      | $\eta$      |
+| `\theta`    | $\theta$    | $\vartheta$   |
+| `\iota`     | $\iota$     |
+| `\kappa`    | $\kappa$    | $\varkappa$   |
+| `\lambda`   | $\lambda$   |
+| `\mu`       | $\mu$       |
+| `\nu`       | $\nu$       |
+| `\xi`       | $\xi$       |
+| `o`         | $o$         |
+| `\pi`       | $\pi$       | $\varpi$      |
+| `\rho`      | $\rho$      | $\varrho$     |
+| `\sigma`    | $\sigma$    | $\varsigma$   |
+| `\tau`      | $\tau$      |
+| `\upsilon`  | $\upsilon$  |
+| `\phi`      | $\phi$      | $\varphi$     |
+| `\chi`      | $\chi$      |
+| `\psi`      | $\psi$      |
+| `\omega`    | $\omega$    |
+| `\digamma`  | $\digamma$  |               | amssymb |
+| `\varkappa` | $\varkappa$ |               | amssymb |
 
 - Change letter style
     | Preamble Command                       | Rendering     | Original   | Dependency |
@@ -184,6 +186,13 @@
 | `\Phi`     | $\Phi$     |
 | `\Psi`     | $\Psi$     |
 | `\Omega`   | $\Omega$   |
+
+## Hebrew Letters
+| Command   | Rendering | Dependency |
+| --------- | --------- | ---------- |
+| `\beth`   | $\beth$   | amssymb    |
+| `\gimel`  | $\gimel$  | amssymb    |
+| `\daleth` | $\daleth$ | amssymb    |
 
 ## Number sets
 | Command      | Rendering    |
@@ -707,15 +716,6 @@
   | Preamble Command                         | Rendering      | Original    | Dependency |
   | ---------------------------------------- | -------------- | ----------- | ---------- |
   | `\renewcommand{\triangle}{\vartriangle}` | $\vartriangle$ | $\triangle$ | amssymb    |
-
-## AMS Greek and Hebrew
-| Command     | Rendering   |
-| ----------- | ----------- |
-| `\digamma`  | $\digamma$  |
-| `\varkappa` | $\varkappa$ |
-| `\beth`     | $\beth$     |
-| `\gimel`    | $\gimel$    |
-| `\daleth`   | $\daleth$   |
 
 ## Math Alphabets
 > example TEXT: `ABCDEabcde1234`
