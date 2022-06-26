@@ -463,40 +463,36 @@
 | `\swarrow`                | $\swarrow$                |
 | `\nwarrow`                | $\nwarrow$                |
 | `\leadsto`                | $\leadsto$                | latexsym   |
-
-## AMS Arrows
-| Command                | Rendering              |
-| ---------------------- | ---------------------- |
-| `\dashleftarrow`       | $\dashleftarrow$       |
-| `\dashrightarrow`      | $\dashrightarrow$      |
-| `\leftleftarrows`      | $\leftleftarrows$      |
-| `\rightrightarrows`    | $\rightrightarrows$    |
-| `\leftrightarrows`     | $\leftrightarrows$     |
-| `\rightleftarrows`     | $\rightleftarrows$     |
-| `\Lleftarrow`          | $\Lleftarrow$          |
-| `\Rrightarrow`         | $\Rrightarrow$         |
-| `\twoheadleftarrow`    | $\twoheadleftarrow$    |
-| `\twoheadrightarrow`   | $\twoheadrightarrow$   |
-| `\leftarrowtail`       | $\leftarrowtail$       |
-| `\rightarrowtail`      | $\rightarrowtail$      |
-| `\leftrightharpoons`   | $\leftrightharpoons$   |
-| `\rightleftharpoons`   | $\rightleftharpoons$   |
-| `\Lsh`                 | $\Lsh$                 |
-| `\Rsh`                 | $\Rsh$                 |
-| `\looparrowleft`       | $\looparrowleft$       |
-| `\looparrowright`      | $\looparrowright$      |
-| `\curvearrowleft`      | $\curvearrowleft$      |
-| `\curvearrowright`     | $\curvearrowright$     |
-| `\circlearrowleft`     | $\circlearrowleft$     |
-| `\circlearrowright`    | $\circlearrowright$    |
-| `\multimap`            | $\multimap$            |
-| `\upuparrows`          | $\upuparrows$          |
-| `\downdownarrows`      | $\downdownarrows$      |
-| `\upharpoonleft`       | $\upharpoonleft$       |
-| `\upharpoonright`      | $\upharpoonright$      |
-| `\downharpoonright`    | $\downharpoonright$    |
-| `\rightsquigarrow`     | $\rightsquigarrow$     |
-| `\leftrightsquigarrow` | $\leftrightsquigarrow$ |
+| `\dashleftarrow`          | $\dashleftarrow$          | amssymb    |
+| `\dashrightarrow`         | $\dashrightarrow$         | amssymb    |
+| `\leftleftarrows`         | $\leftleftarrows$         | amssymb    |
+| `\rightrightarrows`       | $\rightrightarrows$       | amssymb    |
+| `\leftrightarrows`        | $\leftrightarrows$        | amssymb    |
+| `\rightleftarrows`        | $\rightleftarrows$        | amssymb    |
+| `\Lleftarrow`             | $\Lleftarrow$             | amssymb    |
+| `\Rrightarrow`            | $\Rrightarrow$            | amssymb    |
+| `\twoheadleftarrow`       | $\twoheadleftarrow$       | amssymb    |
+| `\twoheadrightarrow`      | $\twoheadrightarrow$      | amssymb    |
+| `\leftarrowtail`          | $\leftarrowtail$          | amssymb    |
+| `\rightarrowtail`         | $\rightarrowtail$         | amssymb    |
+| `\leftrightharpoons`      | $\leftrightharpoons$      | amssymb    |
+| `\rightleftharpoons`      | $\rightleftharpoons$      | amssymb    |
+| `\Lsh`                    | $\Lsh$                    | amssymb    |
+| `\Rsh`                    | $\Rsh$                    | amssymb    |
+| `\looparrowleft`          | $\looparrowleft$          | amssymb    |
+| `\looparrowright`         | $\looparrowright$         | amssymb    |
+| `\curvearrowleft`         | $\curvearrowleft$         | amssymb    |
+| `\curvearrowright`        | $\curvearrowright$        | amssymb    |
+| `\circlearrowleft`        | $\circlearrowleft$        | amssymb    |
+| `\circlearrowright`       | $\circlearrowright$       | amssymb    |
+| `\multimap`               | $\multimap$               | amssymb    |
+| `\upuparrows`             | $\upuparrows$             | amssymb    |
+| `\downdownarrows`         | $\downdownarrows$         | amssymb    |
+| `\upharpoonleft`          | $\upharpoonleft$          | amssymb    |
+| `\upharpoonright`         | $\upharpoonright$         | amssymb    |
+| `\downharpoonright`       | $\downharpoonright$       | amssymb    |
+| `\rightsquigarrow`        | $\rightsquigarrow$        | amssymb    |
+| `\leftrightsquigarrow`    | $\leftrightsquigarrow$    | amssymb    |
 
 ## Arrows as Accents
 | Command                    | Rendering                  |
