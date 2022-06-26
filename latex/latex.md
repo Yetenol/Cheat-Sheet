@@ -64,8 +64,8 @@
 - **Number**  
     | Example Command    | Rendering             |
     | ------------------ | --------------------- |
-    | `\num{12345.2}`    | $12$ $345.2$          |
-    | `\num{1\,234 5,2}` | $12$ $345.2$          |
+    | `\num{12345.2}`    | $12\ 345.2$           |
+    | `\num{1\,234 5,2}` | $12\ 345.2$           |
     | `\num{3.45e-4}`    | $3.45 \times 10^{-4}$ |
 
 - **Angles**  
@@ -83,6 +83,6 @@
     | `\unit[per-mode = fraction]{\gram\per\cubic\centi\metre}` | $\mathrm{\frac{g}{cm^3}}$ |
 
 - **Physicial quantities**  
-    | Example Command     | Rendering               |
-    | ------------------- | ----------------------- |
-    | `\qty{3}{\celsius}` | $3$ $\mathrm{^\circ C}$ |
+    | Example Command     | Rendering              |
+    | ------------------- | ---------------------- |
+    | `\qty{3}{\celsius}` | $3\ \mathrm{^\circ C}$ |
