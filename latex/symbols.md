@@ -47,28 +47,28 @@
 ## Non-Mathematical Symbols
 > These symbols can also be used in text mode.
 
-| Command                                                                | Rendering      | Name or _Function_                   | Usage Example                    |
-| ---------------------------------------------------------------------- | -------------- | ------------------------------------ | -------------------------------- |
-| `-`                                                                    | -              | hyphen                               | daughter-in-law, X-rated         |
-| `--`                                                                   | –              | en-dash                              | pages 13–67                      |
-| `---`                                                                  | —              | em-dash                              | yes—or no?                       |
-| `$-1$`                                                                 | −              | minus-sign                           | 0, 1 and −1                      |
-| `/`                                                                    | /              | _prevents hyphenation_               | 5 MB/s                           |
-| `\slash{}`                                                             | /              | _supports hyphenation_               | read/write                       |
-| `\ldots{}`                                                             | …              | ellipsis                             | a, b, c, …                       |
-| `Mr.~Smith`                                                            | Mr.&#160;Smith | _suppresses bigger sentence spacing_ | Did ⠀Mr.&#160;Smith ⠀win ⠀today? |
-| `\dag{}`                                                               | †              | Dagger                               |
-| `\ddag{}`                                                              | ‡              | Double Dagger                        |
-| `\S{}`                                                                 | §              | Section Sign                         |
-| `\P{}`                                                                 | ¶              | Pilcrow Sign                         |
-| `\%{}`                                                                 | %              | Percent Sign                         |
-| `\textsuperscript{\copyright}` <br> `\textsuperscript{\textcopyright}` | © <br> ©       | Copyright Sign                       |
-| `\textsuperscript{\textregistered}`                                    | ®              | Registered Trade Mark Sign           |
-| `\texttrademark{}`                                                     | ™              | Trade Mark Sign                      |
-| `\unit{\degree}` <br> `\textdegree{}`                                  | °              | Degree Sign                          | siunitx <br> _built in_          |
-| `\ang{5}`                                                              | 5°             | Angle                                | siunitx                          |
-| `\unit{\celsius}` <br> `\textcelsius{}`                                | ℃              | Degree Celsius                       | siunitx <br> _built in_          |
-| `\qty{5}{\celsius}`                                                    | $5\,℃$         |                                      | siunitx                          |
+| Command                                 | Rendering      | Name or _Function_                   | Usage Example                    |
+| --------------------------------------- | -------------- | ------------------------------------ | -------------------------------- |
+| `-`                                     | -              | hyphen                               | daughter-in-law, X-rated         |
+| `--`                                    | –              | en-dash                              | pages 13–67                      |
+| `---`                                   | —              | em-dash                              | yes—or no?                       |
+| `$-1$`                                  | −              | minus-sign                           | 0, 1 and −1                      |
+| `/`                                     | /              | _prevents hyphenation_               | 5 MB/s                           |
+| `\slash{}`                              | /              | _supports hyphenation_               | read/write                       |
+| `\ldots{}`                              | …              | ellipsis                             | a, b, c, …                       |
+| `Mr.~Smith`                             | Mr.&#160;Smith | _suppresses bigger sentence spacing_ | Did ⠀Mr.&#160;Smith ⠀win ⠀today? |
+| `\dag{}`                                | †              | Dagger                               |
+| `\ddag{}`                               | ‡              | Double Dagger                        |
+| `\S{}`                                  | §              | Section Sign                         |
+| `\P{}`                                  | ¶              | Pilcrow Sign                         |
+| `\%{}`                                  | %              | Percent Sign                         |
+| `\textsuperscript{\textcopyright}`      | ©              | Copyright Sign                       |
+| `\textsuperscript{\textregistered}`     | ®              | Registered Trade Mark Sign           |
+| `\texttrademark{}`                      | ™              | Trade Mark Sign                      |
+| `\unit{\degree}` <br> `\textdegree{}`   | °              | Degree Sign                          | siunitx <br> _built in_          |
+| `\ang{5}`                               | 5°             | Angle                                | siunitx                          |
+| `\unit{\celsius}` <br> `\textcelsius{}` | ℃              | Degree Celsius                       | siunitx <br> _built in_          |
+| `\qty{5}{\celsius}`                     | $5\,℃$         |                                      | siunitx                          |
 
 
 ## Currencies
