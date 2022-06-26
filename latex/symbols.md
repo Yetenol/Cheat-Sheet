@@ -47,41 +47,43 @@
 ## Non-Mathematical Symbols
 > These symbols can also be used in text mode.
 
-| Command     | Rendering      | Name or _Function_                   | Usage Example                    |
-| ----------- | -------------- | ------------------------------------ | -------------------------------- |
-| `-`         | -              | hyphen                               | daughter-in-law, X-rated         |
-| `--`        | –              | en-dash                              | pages 13–67                      |
-| `---`       | —              | em-dash                              | yes—or no?                       |
-| `$-1$`      | −              | minus-sign                           | 0, 1 and −1                      |
-| `/`         | /              | _prevents hyphenation_               | 5 MB/s                           |
-| `\slash{}`  | /              | _supports hyphenation_               | read/write                       |
-| `\ldots{}`  | …              | ellipsis                             | a, b, c, …                       |
-| `Mr.~Smith` | Mr.&#160;Smith | _suppresses bigger sentence spacing_ | Did ⠀Mr.&#160;Smith ⠀win ⠀today? |
-| `\dag{}`    | †              | Dagger                               |
-| `\ddag{}`   | ‡              | Double Dagger                        |
-| `\S{}`      | §              | Section Sign                         |
-| `\P{}`      | ¶              | Pilcrow Sign                         |
-| `\%{}`      | %              | Percent Sign                         |
-`\textdegree{}`
+| Command                                                                | Rendering      | Name or _Function_                   | Usage Example                    |
+| ---------------------------------------------------------------------- | -------------- | ------------------------------------ | -------------------------------- |
+| `-`                                                                    | -              | hyphen                               | daughter-in-law, X-rated         |
+| `--`                                                                   | –              | en-dash                              | pages 13–67                      |
+| `---`                                                                  | —              | em-dash                              | yes—or no?                       |
+| `$-1$`                                                                 | −              | minus-sign                           | 0, 1 and −1                      |
+| `/`                                                                    | /              | _prevents hyphenation_               | 5 MB/s                           |
+| `\slash{}`                                                             | /              | _supports hyphenation_               | read/write                       |
+| `\ldots{}`                                                             | …              | ellipsis                             | a, b, c, …                       |
+| `Mr.~Smith`                                                            | Mr.&#160;Smith | _suppresses bigger sentence spacing_ | Did ⠀Mr.&#160;Smith ⠀win ⠀today? |
+| `\dag{}`                                                               | †              | Dagger                               |
+| `\ddag{}`                                                              | ‡              | Double Dagger                        |
+| `\S{}`                                                                 | §              | Section Sign                         |
+| `\P{}`                                                                 | ¶              | Pilcrow Sign                         |
+| `\%{}`                                                                 | %              | Percent Sign                         |
 | `\textsuperscript{\copyright}` <br> `\textsuperscript{\textcopyright}` | © <br> ©       | Copyright Sign                       |
 | `\textsuperscript{\textregistered}`                                    | ®              | Registered Trade Mark Sign           |
 | `\texttrademark{}`                                                     | ™              | Trade Mark Sign                      |
-| `\textdegree{}`                                                        | °              |
+| `\unit{\degree}` <br> `\textdegree{}`                                  | °              | Degree Sign                          | siunitx <br> _built in_          |
+| `\ang{5}`                                                              | 5°             | Angle                                | siunitx                          |
+| `\unit{\celsius}` <br> `\textcelsius{}`                                | ℃              | Degree Celsius                       | siunitx <br> _built in_          |
+| `\qty{5}{\celsius}`                                                    | $5\,℃$         |                                      | siunitx                          |
 
 
 ## Currencies
 > `€`, `\$`, `pounds` and `\yen` are not recommended
 
-| Command                         | Rendering | Variants | Dependency |
-| ------------------------------- | --------- | -------- | ---------- |
-| `\texteuro{}`                   | $€$       | €€€€     |
-| `\textdollar{}`                 | $\$$      |
-| `\textsterling{}`               | $£$       |
-| `\textyen{}`                    | $¥$       |
-| `\SI{5}{\text\texteuro}`        | $15\,€$   |          | siunitx    |
-| `\SI{15}[\text\textdollar]{}`   | $\$15$    |          | siunitx    |
-| `\SI{15}[\text\textsterling]{}` | $£15$     |          | siunitx    |
-| `\SI{15}[\text\textyen]{}`      | $¥15$     |          | siunitx    |
+| Command                          | Rendering | Variants | Dependency |
+| -------------------------------- | --------- | -------- | ---------- |
+| `\texteuro{}`                    | $€$       | €€€€     |
+| `\textdollar{}`                  | $\$$      |
+| `\textsterling{}`                | $£$       |
+| `\textyen{}`                     | $¥$       |
+| `\qty{5}{\text\texteuro}`        | $15\,€$   |          | siunitx    |
+| `\qty{15}[\text\textdollar]{}`   | $\$15$    |          | siunitx    |
+| `\qty{15}[\text\textsterling]{}` | $£15$     |          | siunitx    |
+| `\qty{15}[\text\textyen]{}`      | $¥15$     |          | siunitx    |
 
 
 - **Simplify Currencies**  
@@ -92,12 +94,12 @@
     \DeclareSIUnit{\sterling}{\text{\textsterling}}
     \DeclareSIUnit{\yen}{\text{\textyen}}
     ```
-    | Command                | Rendering | Dependency |
-    | ---------------------- | --------- | ---------- |
-    | `\SI{5}{\euro}`        | $15\,€$   | siunitx    |
-    | `\SI{15}[\dollar]{}`   | $\$15$    | siunitx    |
-    | `\SI{15}[\sterling]{}` | $£15$     | siunitx    |
-    | `\SI{15}[\yen]{}`      | $¥15$     | siunitx    |
+    | Command                 | Rendering | Dependency |
+    | ----------------------- | --------- | ---------- |
+    | `\qty{5}{\euro}`        | $15\,€$   | siunitx    |
+    | `\qty{15}[\dollar]{}`   | $\$15$    | siunitx    |
+    | `\qty{15}[\sterling]{}` | $£15$     | siunitx    |
+    | `\qty{15}[\yen]{}`      | $¥15$     | siunitx    |
 - **Change** euro symbol **style**.  
     Choose the official style or for special fonts one of the latter three
     | Preamble Command                                  | Rendering                  | Original | Dependency |
