@@ -402,6 +402,29 @@
 | `\unlhd`              | $\unlhd$              |                     | latexsym   |
 | `\unrhd`              | $\unrhd$              |                     | latexsym   |
 | `\wr`                 | $\wr$                 |
+| `\dotplus`            | $\dotplus$            |                     | amssymb    |
+| `\centerdot`          | $\centerdot$          |                     | amssymb    |
+| `\ltimes`             | $\ltimes$             |                     | amssymb    |
+| `\rtimes`             | $\rtimes$             |                     | amssymb    |
+| `\divideontimes`      | $\divideontimes$      |                     | amssymb    |
+| `\doublecup`          | $\doublecup$          |                     | amssymb    |
+| `\doublecap`          | $\doublecap$          |                     | amssymb    |
+| `\smallsetminus`      | $\smallsetminus$      |                     | amssymb    |
+| `\veebar`             | $\veebar$             |                     | amssymb    |
+| `\barwedge`           | $\barwedge$           |                     | amssymb    |
+| `\doublebarwedge`     | $\doublebarwedge$     |                     | amssymb    |
+| `\boxplus`            | $\boxplus$            |                     | amssymb    |
+| `\boxminus`           | $\boxminus$           |                     | amssymb    |
+| `\circleddash`        | $\circleddash$        |                     | amssymb    |
+| `\boxtimes`           | $\boxtimes$           |                     | amssymb    |
+| `\boxdot`             | $\boxdot$             |                     | amssymb    |
+| `\circledcirc`        | $\circledcirc$        |                     | amssymb    |
+| `\intercal`           | $\intercal$           |                     | amssymb    |
+| `\circledast`         | $\circledast$         |                     | amssymb    |
+| `\rightthreetimes`    | $\rightthreetimes$    |                     | amssymb    |
+| `\curlyvee`           | $\curlyvee$           |                     | amssymb    |
+| `\curlywedge`         | $\curlywedge$         |                     | amssymb    |
+| `\leftthreetimes`     | $\leftthreetimes$     |                     | amssymb    |
 
 - **Change** symbol **style**
   | Preamble Command                                   | Rendering           | Original         | Dependency |
@@ -619,33 +642,6 @@
 | `\mathscr{TEXT}`    | $\mathscr{ABCDE}$             | mathrsfs            |
 | `\mathfrak{TEXT}`   | $\mathfrak{ABCDEabcde1234}$   | amsfonts or amssymb |
 | `\mathbb{TEXT}`     | $\mathbb{ABCDE}$              | amsfonts or amssymb |
-
-## AMS Binary Operators
-| Command            | Rendering          |
-| ------------------ | ------------------ |
-| `\dotplus`         | $\dotplus$         |
-| `\centerdot`       | $\centerdot$       |
-| `\ltimes`          | $\ltimes$          |
-| `\rtimes`          | $\rtimes$          |
-| `\divideontimes`   | $\divideontimes$   |
-| `\doublecup`       | $\doublecup$       |
-| `\doublecap`       | $\doublecap$       |
-| `\smallsetminus`   | $\smallsetminus$   |
-| `\veebar`          | $\veebar$          |
-| `\barwedge`        | $\barwedge$        |
-| `\doublebarwedge`  | $\doublebarwedge$  |
-| `\boxplus`         | $\boxplus$         |
-| `\boxminus`        | $\boxminus$        |
-| `\circleddash`     | $\circleddash$     |
-| `\boxtimes`        | $\boxtimes$        |
-| `\boxdot`          | $\boxdot$          |
-| `\circledcirc`     | $\circledcirc$     |
-| `\intercal`        | $\intercal$        |
-| `\circledast`      | $\circledast$      |
-| `\rightthreetimes` | $\rightthreetimes$ |
-| `\curlyvee`        | $\curlyvee$        |
-| `\curlywedge`      | $\curlywedge$      |
-| `\leftthreetimes`  | $\leftthreetimes$  |
 
 ## AMS Binary Relations
 | Command               | Rendering             |
