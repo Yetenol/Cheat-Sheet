@@ -77,13 +77,13 @@
 | Command                          | Rendering | Variants | Dependency |
 | -------------------------------- | --------- | -------- | ---------- |
 | `\texteuro{}`                    | $€$       | €€€€     |
-| `\textdollar{}`                  | $\$$      |
-| `\textsterling{}`                | $£$       |
-| `\textyen{}`                     | $¥$       |
-| `\qty{5}{\text\texteuro}`        | $15\,€$   |          | siunitx    |
-| `\qty{15}[\text\textdollar]{}`   | $\$15$    |          | siunitx    |
-| `\qty{15}[\text\textsterling]{}` | $£15$     |          | siunitx    |
-| `\qty{15}[\text\textyen]{}`      | $¥15$     |          | siunitx    |
+| `\textdollar{}`                  | $         |
+| `\textsterling{}`                | £         |
+| `\textyen{}`                     | ¥         |
+| `\qty{5}{\text\texteuro}`        | 15 €      |          | siunitx    |
+| `\qty{15}[\text\textdollar]{}`   | $15       |          | siunitx    |
+| `\qty{15}[\text\textsterling]{}` | £15       |          | siunitx    |
+| `\qty{15}[\text\textyen]{}`      | ¥15       |          | siunitx    |
 
 
 - **Simplify Currencies**  
@@ -96,10 +96,10 @@
     ```
     | Command                 | Rendering | Dependency |
     | ----------------------- | --------- | ---------- |
-    | `\qty{5}{\euro}`        | $15\,€$   | siunitx    |
-    | `\qty{15}[\dollar]{}`   | $\$15$    | siunitx    |
-    | `\qty{15}[\sterling]{}` | $£15$     | siunitx    |
-    | `\qty{15}[\yen]{}`      | $¥15$     | siunitx    |
+    | `\qty{5}{\euro}`        | 15 €      | siunitx    |
+    | `\qty{15}[\dollar]{}`   | $15       | siunitx    |
+    | `\qty{15}[\sterling]{}` | £15       | siunitx    |
+    | `\qty{15}[\yen]{}`      | ¥15       | siunitx    |
 - **Change** euro symbol **style**.  
     Choose the official style or for special fonts one of the latter three
     | Preamble Command                                  | Rendering                  | Original | Dependency |
