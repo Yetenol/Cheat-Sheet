@@ -595,8 +595,8 @@
 | `\underleftrightarrow{AB}` | $\underleftrightarrow{AB}$ |
 
 ## Delimiters
-| Command             | Rendering             |
-| ------------------- | --------------------- |
+| Command             | Rendering             | Dependency       |
+| ------------------- | --------------------- | ---------------- |
 | `(`                 | $($                   |
 | `)`                 | $)$                   |
 | `\uparrow`          | $\uparrow$            |
@@ -619,6 +619,14 @@
 | `\rfloor`           | $\rfloor$             |
 | `\rceil`            | $\rceil$              |
 | `\lceil`            | $\lceil$              |
+| `\ulcorner`         | $\ulcorner$           | amssymb          |
+| `\urcorner`         | $\urcorner$           | amssymb          |
+| `\llcorner`         | $\llcorner$           | amssymb          |
+| `\lrcorner`         | $\lrcorner$           | amssymb          |
+| `\lvert`            | $\lvert$              | amssymb, amsmath |
+| `\rvert`            | $\rvert$              | amssymb, amsmath |
+| `\lVert`            | $\lVert$              | amssymb, amsmath |
+| `\rVert`            | $\rVert$              | amssymb, amsmath |
 
 ## Large Delimiters
 | Command       | Rendering     |
@@ -699,18 +707,6 @@
   | Preamble Command                         | Rendering      | Original    | Dependency |
   | ---------------------------------------- | -------------- | ----------- | ---------- |
   | `\renewcommand{\triangle}{\vartriangle}` | $\vartriangle$ | $\triangle$ | amssymb    |
-
-## AMS Delimiters
-| Command     | Rendering   |
-| ----------- | ----------- |
-| `\ulcorner` | $\ulcorner$ |
-| `\urcorner` | $\urcorner$ |
-| `\llcorner` | $\llcorner$ |
-| `\lrcorner` | $\lrcorner$ |
-| `\lvert`    | $\lvert$    |
-| `\rvert`    | $\rvert$    |
-| `\lVert`    | $\lVert$    |
-| `\rVert`    | $\rVert$    |
 
 ## AMS Greek and Hebrew
 | Command     | Rendering   |
