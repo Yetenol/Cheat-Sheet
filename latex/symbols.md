@@ -72,19 +72,20 @@
 ## Currencies
 > `€`, `\$`, `pounds` and `\yen` are not recommended
 
-| Command                         | Rendering | Dependency |
-| ------------------------------- | --------- | ---------- |
-| `\texteuro{}`                   | €         |
-| `\textdollar{}`                 | $         |
-| `\textsterling{}`               | £         |
-| `\textyen{}`                    | ¥         |
-| `\SI{5}{\text\texteuro}`        | 15 €      | siunitx    |
-| `\SI{15}[\text\textdollar]{}`   | $15       | siunitx    |
-| `\SI{15}[\text\textsterling]{}` | £15       | siunitx    |
-| `\SI{15}[\text\textyen]{}`      | £15       | siunitx    |
+| Command                         | Rendering | Variants | Dependency |
+| ------------------------------- | --------- | -------- | ---------- |
+| `\texteuro{}`                   | $€$       | €€€€     |
+| `\textdollar{}`                 | $\$$      |
+| `\textsterling{}`               | $£$       |
+| `\textyen{}`                    | $¥$       |
+| `\SI{5}{\text\texteuro}`        | $15\,€$   |          | siunitx    |
+| `\SI{15}[\text\textdollar]{}`   | $\$15$    |          | siunitx    |
+| `\SI{15}[\text\textsterling]{}` | $£15$     |          | siunitx    |
+| `\SI{15}[\text\textyen]{}`      | $¥15$     |          | siunitx    |
 
 
-- Simplified Currencies
+- **Simplify Currencies**  
+    Preamble Command:
     ```latex
     \DeclareSIUnit{\euro}{\text{\texteuro}}
     \DeclareSIUnit{\dollar}{\text{\textdollar}}
@@ -93,17 +94,18 @@
     ```
     | Command                | Rendering | Dependency |
     | ---------------------- | --------- | ---------- |
-    | `\SI{5}{\euro}`        | 15 €      | siunitx    |
-    | `\SI{15}[\dollar]{}`   | $15       | siunitx    |
-    | `\SI{15}[\sterling]{}` | £15       | siunitx    |
-    | `\SI{15}[\yen]{}`      | ¥15       | siunitx    |
-- Change EURO symbol
-    ```latex
-    \usepackage{eurosym} % provide different euro symbol style
-    ```
-    ```latex
-    \renewcommand{\texteuro}{\text{\officialeuro}}
-    ```
+    | `\SI{5}{\euro}`        | $15\,€$   | siunitx    |
+    | `\SI{15}[\dollar]{}`   | $\$15$    | siunitx    |
+    | `\SI{15}[\sterling]{}` | $£15$     | siunitx    |
+    | `\SI{15}[\yen]{}`      | $¥15$     | siunitx    |
+- **Change** euro symbol **style**.  
+    Choose the official style or for special fonts one of the latter three
+    | Preamble Command                                  | Rendering                  | Original | Dependency |
+    | ------------------------------------------------- | -------------------------- | -------- | ---------- |
+    | `\renewcommand{\texteuro}{\text{\officialeuro}}`  | € _(official symbol)_      | $€$      | eurosym    |
+    | `\renewcommand{\texteuro}{\text{\geneuro}}`       | _overlay current font's C_ | $€$      | eurosym    |
+    | `\renewcommand{\texteuro}{\text{\geneuronarrow}}` | _overlay current font's C_ | $€$      | eurosym    |
+    | `\renewcommand{\texteuro}{\text{\geneurowide}}`   | _overlay current font's C_ | $€$      | eurosym    |
 
 ## Degree Symbols
 | Command           | Rendering        | Dependency |
@@ -130,39 +132,44 @@
 | `\widetilde{AAA}` | $\widetilde{AAA}$ |
 
 ## Greek Letters (lowercase)
-| Command       | Rendering     |
-| ------------- | ------------- |
-| `\alpha`      | $\alpha$      |
-| `\beta`       | $\beta$       |
-| `\gamma`      | $\gamma$      |
-| `\delta`      | $\delta$      |
-| `\epsilon`    | $\epsilon$    |
-| `\varepsilon` | $\varepsilon$ |
-| `\zeta`       | $\zeta$       |
-| `\eta`        | $\eta$        |
-| `\theta`      | $\theta$      |
-| `\vartheta`   | $\vartheta$   |
-| `\iota`       | $\iota$       |
-| `\kappa`      | $\kappa$      |
-| `\lambda`     | $\lambda$     |
-| `\mu`         | $\mu$         |
-| `\nu`         | $\nu$         |
-| `\xi`         | $\xi$         |
-| `o`           | $o$           |
-| `\pi`         | $\pi$         |
-| `\varpi`      | $\varpi$      |
-| `\rho`        | $\rho$        |
-| `\varrho`     | $\varrho$     |
-| `\sigma`      | $\sigma$      |
-| `\varsigma`   | $\varsigma$   |
-| `\tau`        | $\tau$        |
-| `\upsilon`    | $\upsilon$    |
-| `\phi`        | $\phi$        |
-| `\varphi`     | $\varphi$     |
-| `\chi`        | $\chi$        |
-| `\psi`        | $\psi$        |
-| `\omega`      | $\omega$      |
+| Command    | Rendering  | Variants      |
+| ---------- | ---------- | ------------- |
+| `\alpha`   | $\alpha$   |
+| `\beta`    | $\beta$    |
+| `\gamma`   | $\gamma$   |
+| `\delta`   | $\delta$   |
+| `\epsilon` | $\epsilon$ | $\varepsilon$ |
+| `\zeta`    | $\zeta$    |
+| `\eta`     | $\eta$     |
+| `\theta`   | $\theta$   | $\vartheta$   |
+| `\iota`    | $\iota$    |
+| `\kappa`   | $\kappa$   | $\varkappa$   |
+| `\lambda`  | $\lambda$  |
+| `\mu`      | $\mu$      |
+| `\nu`      | $\nu$      |
+| `\xi`      | $\xi$      |
+| `o`        | $o$        |
+| `\pi`      | $\pi$      | $\varpi$      |
+| `\rho`     | $\rho$     | $\varrho$     |
+| `\sigma`   | $\sigma$   | $\varsigma$   |
+| `\tau`     | $\tau$     |
+| `\upsilon` | $\upsilon$ |
+| `\phi`     | $\phi$     | $\varphi$     |
+| `\chi`     | $\chi$     |
+| `\psi`     | $\psi$     |
+| `\omega`   | $\omega$   |
 
+- Change letter style
+    | Preamble Command                       | Rendering     | Original   | Dependency |
+    | -------------------------------------- | ------------- | ---------- | ---------- |
+    | `\renewcommand{\epsilon}{\varepsilon}` | $\varepsilon$ | $\epsilon$ |
+    | `\renewcommand{\theta}{\vartheta}`     | $\vartheta$   | $\theta$   |
+    | `\renewcommand{\kappa}{\varkappa}`     | $\varkappa$   | $\kappa$   | amssymb    |
+    | `\renewcommand{\pi}{\varpi}`           | $\varpi$      | $\pi$      |
+    | `\renewcommand{\rho}{\varrho}`         | $\varrho$     | $\rho$     |
+    | `\renewcommand{\sigma}{\varsigma}`     | $\varsigma$   | $\sigma$   |
+    | `\renewcommand{\phi}{\varphi}`         | $\varphi$     | $\phi$     |
+    
 ## Greek Letters (uppercase)
 | Command    | Rendering  |
 | ---------- | ---------- |
@@ -193,8 +200,8 @@
 
 ## Binary Relations
 
-| Command            | Rendering          | Dependency |
-| ------------------ | ------------------ | ---------- |
+| Command            | Rendering          | Variants     | Dependency |
+| ------------------ | ------------------ | ------------ | ---------- |
 | `<`                | $<$                |
 | `>`                | $>$                |
 | `=`                | $=$                |
@@ -216,15 +223,15 @@
 | `\subseteq`        | $\subseteq$        |
 | `\supseteq`        | $\supseteq$        |
 | `\cong`            | $\cong$            |
-| `\sqsubset`        | $\sqsubset$        | latexsym   |
-| `\sqsupset`        | $\sqsupset$        | latexsym   |
-| `\Join`            | $\Join$            | latexsym   |
+| `\sqsubset`        | $\sqsubset$        |              | latexsym   |
+| `\sqsupset`        | $\sqsupset$        |              | latexsym   |
+| `\Join`            | $\Join$            |              | latexsym   |
 | `\sqsubseteq`      | $\sqsubseteq$      |
 | `\sqsupseteq`      | $\sqsupseteq$      |
 | `\bowtie`          | $\bowtie$          |
 | `\in`              | $\in$              |
 | `\ni` <br> `\owns` | $\ni$ <br> $\owns$ |
-| `\propto`          | $\propto$          |
+| `\propto`          | $\propto$          | $\varpropto$ |
 | `\vdash`           | $\vdash$           |
 | `\dashv`           | $\dashv$           |
 | `\models`          | $\models$          |
@@ -238,9 +245,14 @@
 | `\notin`           | $\notin$           |
 | `\neq` <br> `\ne`  | $\neq$ <br> $\ne$  |
 
+- **Change** symbol **style**
+  | Preamble Command                     | Rendering    | Original  | Dependency |
+  | ------------------------------------ | ------------ | --------- | ---------- |
+  | `\renewcommand{\propto}{\varpropto}` | $\varpropto$ | $\propto$ | amssymb    |
+
 ## AMS Negated Binary Relations and Arrows
-| Command             | Rendering           |
-| ------------------- | ------------------- |
+| Command             | Rendering           | Variants         |
+| ------------------- | ------------------- | ---------------- |
 | `\nless`            | $\nless$            |
 | `\ngtr`             | $\ngtr$             |
 | `\lneq`             | $\lneq$             |
@@ -269,16 +281,12 @@
 | `\succnsim`         | $\succnsim$         |
 | `\precnapprox`      | $\precnapprox$      |
 | `\succnapprox`      | $\succnapprox$      |
-| `\subsetneq`        | $\subsetneq$        |
-| `\supsetneq`        | $\supsetneq$        |
-| `\varsubsetneq`     | $\varsubsetneq$     |
-| `\varsupsetneq`     | $\varsupsetneq$     |
+| `\subsetneq`        | $\subsetneq$        | $\varsubsetneq$  |
+| `\supsetneq`        | $\supsetneq$        | $\varsupsetneq$  |
 | `\nsubseteq`        | $\nsubseteq$        |
 | `\nsupseteq`        | $\nsupseteq$        |
-| `\subsetneqq`       | $\subsetneqq$       |
-| `\supsetneqq`       | $\supsetneqq$       |
-| `\varsubsetneqq`    | $\varsubsetneqq$    |
-| `\varsupsetneqq`    | $\varsupsetneqq$    |
+| `\subsetneqq`       | $\subsetneqq$       | $\varsubsetneqq$ |
+| `\supsetneqq`       | $\supsetneqq$       | $\varsupsetneqq$ |
 | `\nsubseteqq`       | $\nsubseteqq$       |
 | `\nsupseteqq`       | $\nsupseteqq$       |
 | `\nmid`             | $\nmid$             |
@@ -301,6 +309,14 @@
 | `\nLeftarrow`       | $\nLeftarrow$       |
 | `\nRightarrow`      | $\nRightarrow$      |
 | `\nLeftrightarrow`  | $\nLeftrightarrow$  |
+
+- **Change** symbol **style**
+  | Preamble Command                             | Rendering        | Original      |
+  | -------------------------------------------- | ---------------- | ------------- |
+  | `\renewcommand{\subsetneq}{\varsubsetneq}`   | $\varsubsetneq$  | $\subsetneq$  |
+  | `\renewcommand{\supsetneq}{\varsupsetneq}`   | $\varsupsetneq$  | $\supsetneq$  |
+  | `\renewcommand{\subsetneqq}{\varsubsetneqq}` | $\varsubsetneqq$ | $\subsetneqq$ |
+  | `\renewcommand{\supsetneqq}{\varsupsetneqq}` | $\varsupsetneqq$ | $\supsetneqq$ |
 
 ## Primitively Negated Binary Relations
 | Command                    | Rendering                  | Dependency |
@@ -346,16 +362,16 @@
 | `\not\asymp`               | $\not\asymp$               |
 
 ## Binary Operators
-| Command               | Rendering             | Dependency |
-| --------------------- | --------------------- | ---------- |
+| Command               | Rendering             | Variants            | Dependency |
+| --------------------- | --------------------- | ------------------- | ---------- |
 | `+`                   | $+$                   |
 | `-`                   | $-$                   |
 | `\pm`                 | $\pm$                 |
 | `\mp`                 | $\mp$                 |
-| `\triangleleft`       | $\triangleleft$       |
+| `\triangleleft`       | $\triangleleft$       | $\vartriangleleft$  |
 | `\cdot`               | $\cdot$               |
 | `\div`                | $\div$                |
-| `\triangleright`      | $\triangleright$      |
+| `\triangleright`      | $\triangleright$      | $\vartriangleright$ |
 | `\times`              | $\times$              |
 | `\setminus`           | $\setminus$           |
 | `\star`               | $\star$               |
@@ -380,12 +396,18 @@
 | `\bigtriangleup`      | $\bigtriangleup$      |
 | `\bigtriangledown`    | $\bigtriangledown$    |
 | `\dagger`             | $\dagger$             |
-| `\lhd`                | $\lhd$                | latexsym   |
-| `\rhd`                | $\rhd$                | latexsym   |
-| `\ddagger`            | $\ddagger$            |
-| `\unlhd`              | $\unlhd$              | latexsym   |
-| `\unrhd`              | $\unrhd$              | latexsym   |
+| `\lhd`                | $\lhd$                |                     | latexsym   |
+| `\rhd`                | $\rhd$                |                     | latexsym   |
+| `\ddagger`            | $\ddagger$            |                     |
+| `\unlhd`              | $\unlhd$              |                     | latexsym   |
+| `\unrhd`              | $\unrhd$              |                     | latexsym   |
 | `\wr`                 | $\wr$                 |
+
+- **Change** symbol **style**
+  | Preamble Command                                   | Rendering           | Original         | Dependency |
+  | -------------------------------------------------- | ------------------- | ---------------- | ---------- |
+  | `\renewcommand{\triangleleft}{\vartriangleleft}`   | $\vartriangleleft$  | $\triangleleft$  | amssymb    |
+  | `\renewcommand{\triangleright}{\vartriangleright}` | $\vartriangleright$ | $\triangleright$ | amssymb    |
 
 ## Big Operators
 | Command      | Rendering    |
@@ -524,8 +546,8 @@
 | `\rmoustache` | $\rmoustache$ |
 
 ## Miscellaneous Symbols
-| Command             | Rendering           | Dependency |
-| ------------------- | ------------------- | ---------- |
+| Command             | Rendering           | Variants       | Dependency |
+| ------------------- | ------------------- | -------------- | ---------- |
 | `\dots`             | $\dots$             |
 | `\cdots`            | $\cdots$            |
 | `\vdots`            | $\vdots$            |
@@ -540,16 +562,16 @@
 | `\wp`               | $\wp$               |
 | `\forall`           | $\forall$           |
 | `\exists`           | $\exists$           |
-| `\mho`              | $\mho$              | latexsym   |
+| `\mho`              | $\mho$              |                | latexsym   |
 | `\partial`          | $\partial$          |
 | `'`                 | $'$                 |
 | `\prime`            | $\prime$            |
 | `\emptyset`         | $\emptyset$         |
 | `\infty`            | $\infty$            |
 | `\nabla`            | $\nabla$            |
-| `\triangle`         | $\triangle$         |
-| `\Box`              | $\Box$              | latexsym   |
-| `\Diamond`          | $\Diamond$          | latexsym   |
+| `\triangle`         | $\triangle$         | $\vartriangle$ | amssymb    |
+| `\Box`              | $\Box$              |                | latexsym   |
+| `\Diamond`          | $\Diamond$          |                | latexsym   |
 | `\bot`              | $\bot$              |
 | `\top`              | $\top$              |
 | `\angle`            | $\angle$            |
@@ -562,6 +584,11 @@
 | `\flat`             | $\flat$             |
 | `\natural`          | $\natural$          |
 | `\sharp`            | $\sharp$            |
+
+- **Change** symbol **style**
+  | Preamble Command                         | Rendering      | Original    | Dependency |
+  | ---------------------------------------- | -------------- | ----------- | ---------- |
+  | `\renewcommand{\triangle}{\vartriangle}` | $\vartriangle$ | $\triangle$ | amssymb    |
 
 ## AMS Delimiters
 | Command     | Rendering   |
