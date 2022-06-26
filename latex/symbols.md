@@ -63,7 +63,7 @@
 | `\unit{\degree}` <br> `\textdegree{}`   | °              | Degree Sign                          | siunitx <br> _built in_          |
 | `\ang{5}`                               | 5°             | Angle                                | siunitx                          |
 | `\unit{\celsius}` <br> `\textcelsius{}` | ℃              | Degree Celsius                       | siunitx <br> _built in_          |
-| `\qty{5}{\celsius}`                     | $5\,℃$         |                                      | siunitx                          |
+| `\qty{5}{\celsius}`                     | 5 ℃            |                                      | siunitx                          |
 
 
 ## Currencies
