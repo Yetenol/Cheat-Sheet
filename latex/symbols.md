@@ -102,7 +102,7 @@
     \usepackage{eurosym} % provide different euro symbol style
     ```
     ```latex
-    \renewcommand{\texteuro}{\text{\officialeuro{}}}
+    \renewcommand{\texteuro}{\text{\officialeuro}}
     ```
 
 ## Degree Symbols
