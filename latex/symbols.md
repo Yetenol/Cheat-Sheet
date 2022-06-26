@@ -200,50 +200,117 @@
 
 ## Binary Relations
 
-| Command            | Rendering          | Variants     | Dependency |
-| ------------------ | ------------------ | ------------ | ---------- |
-| `<`                | $<$                |
-| `>`                | $>$                |
-| `=`                | $=$                |
-| `\leq` <br> `\le`  | $\leq$ <br> $\le$  |
-| `\geq` <br> `\ge`  | $\geq$ <br> $\ge$  |
-| `\equiv`           | $\equiv$           |
-| `\ll`              | $\ll$              |
-| `\gg`              | $\gg$              |
-| `\doteq`           | $\doteq$           |
-| `\prec`            | $\prec$            |
-| `\succ`            | $\succ$            |
-| `\sim`             | $\sim$             |
-| `\preceq`          | $\preceq$          |
-| `\succeq`          | $\succeq$          |
-| `\simeq`           | $\simeq$           |
-| `\subset`          | $\subset$          |
-| `\supset`          | $\supset$          |
-| `\approx`          | $\approx$          |
-| `\subseteq`        | $\subseteq$        |
-| `\supseteq`        | $\supseteq$        |
-| `\cong`            | $\cong$            |
-| `\sqsubset`        | $\sqsubset$        |              | latexsym   |
-| `\sqsupset`        | $\sqsupset$        |              | latexsym   |
-| `\Join`            | $\Join$            |              | latexsym   |
-| `\sqsubseteq`      | $\sqsubseteq$      |
-| `\sqsupseteq`      | $\sqsupseteq$      |
-| `\bowtie`          | $\bowtie$          |
-| `\in`              | $\in$              |
-| `\ni` <br> `\owns` | $\ni$ <br> $\owns$ |
-| `\propto`          | $\propto$          | $\varpropto$ |
-| `\vdash`           | $\vdash$           |
-| `\dashv`           | $\dashv$           |
-| `\models`          | $\models$          |
-| `\mid`             | $\mid$             |
-| `\parallel`        | $\parallel$        |
-| `\perp`            | $\perp$            |
-| `\smile`           | $\smile$           |
-| `\frown`           | $\frown$           |
-| `\asymp`           | $\asymp$           |
-| `:`                | $:$                |
-| `\notin`           | $\notin$           |
-| `\neq` <br> `\ne`  | $\neq$ <br> $\ne$  |
+| Command               | Rendering             | Variants     | Dependency |
+| --------------------- | --------------------- | ------------ | ---------- |
+| `<`                   | $<$                   |
+| `>`                   | $>$                   |
+| `=`                   | $=$                   |
+| `\leq` <br> `\le`     | $\leq$ <br> $\le$     |
+| `\geq` <br> `\ge`     | $\geq$ <br> $\ge$     |
+| `\equiv`              | $\equiv$              |
+| `\ll`                 | $\ll$                 |
+| `\gg`                 | $\gg$                 |
+| `\doteq`              | $\doteq$              |
+| `\prec`               | $\prec$               |
+| `\succ`               | $\succ$               |
+| `\sim`                | $\sim$                |
+| `\preceq`             | $\preceq$             |
+| `\succeq`             | $\succeq$             |
+| `\simeq`              | $\simeq$              |
+| `\subset`             | $\subset$             |
+| `\supset`             | $\supset$             |
+| `\approx`             | $\approx$             |
+| `\subseteq`           | $\subseteq$           |
+| `\supseteq`           | $\supseteq$           |
+| `\cong`               | $\cong$               |
+| `\sqsubset`           | $\sqsubset$           |              | latexsym   |
+| `\sqsupset`           | $\sqsupset$           |              | latexsym   |
+| `\Join`               | $\Join$               |              | latexsym   |
+| `\sqsubseteq`         | $\sqsubseteq$         |
+| `\sqsupseteq`         | $\sqsupseteq$         |
+| `\bowtie`             | $\bowtie$             |
+| `\in`                 | $\in$                 |
+| `\ni` <br> `\owns`    | $\ni$ <br> $\owns$    |
+| `\propto`             | $\propto$             | $\varpropto$ |
+| `\vdash`              | $\vdash$              |
+| `\dashv`              | $\dashv$              |
+| `\models`             | $\models$             |
+| `\mid`                | $\mid$                |
+| `\parallel`           | $\parallel$           |
+| `\perp`               | $\perp$               |
+| `\smile`              | $\smile$              |
+| `\frown`              | $\frown$              |
+| `\asymp`              | $\asymp$              |
+| `:`                   | $:$                   |
+| `\notin`              | $\notin$              |
+| `\neq` <br> `\ne`     | $\neq$ <br> $\ne$     |
+| `\lessdot`            | $\lessdot$            |              | amssymb    |
+| `\gtrdot`             | $\gtrdot$             |              | amssymb    |
+| `\doteqdot`           | $\doteqdot$           |              | amssymb    |
+| `\leqslant`           | $\leqslant$           |              | amssymb    |
+| `\geqslant`           | $\geqslant$           |              | amssymb    |
+| `\risingdotseq`       | $\risingdotseq$       |              | amssymb    |
+| `\eqslantless`        | $\eqslantless$        |              | amssymb    |
+| `\eqslantgtr`         | $\eqslantgtr$         |              | amssymb    |
+| `\fallingdotseq`      | $\fallingdotseq$      |              | amssymb    |
+| `\leqq`               | $\leqq$               |              | amssymb    |
+| `\geqq`               | $\geqq$               |              | amssymb    |
+| `\eqcirc`             | $\eqcirc$             |              | amssymb    |
+| `\lll`                | $\lll$                |              | amssymb    |
+| `\llless`             | $\llless$             |              | amssymb    |
+| `\ggg`                | $\ggg$                |              | amssymb    |
+| `\circeq`             | $\circeq$             |              | amssymb    |
+| `\lesssim`            | $\lesssim$            |              | amssymb    |
+| `\gtrsim`             | $\gtrsim$             |              | amssymb    |
+| `\triangleq`          | $\triangleq$          |              | amssymb    |
+| `\lessapprox`         | $\lessapprox$         |              | amssymb    |
+| `\gtrapprox`          | $\gtrapprox$          |              | amssymb    |
+| `\bumpeq`             | $\bumpeq$             |              | amssymb    |
+| `\lessgtr`            | $\lessgtr$            |              | amssymb    |
+| `\gtrless`            | $\gtrless$            |              | amssymb    |
+| `\Bumpeq`             | $\Bumpeq$             |              | amssymb    |
+| `\lesseqgtr`          | $\lesseqgtr$          |              | amssymb    |
+| `\gtreqless`          | $\gtreqless$          |              | amssymb    |
+| `\thicksim`           | $\thicksim$           |              | amssymb    |
+| `\lesseqqgtr`         | $\lesseqqgtr$         |              | amssymb    |
+| `\gtreqqless`         | $\gtreqqless$         |              | amssymb    |
+| `\thickapprox`        | $\thickapprox$        |              | amssymb    |
+| `\preccurlyeq`        | $\preccurlyeq$        |              | amssymb    |
+| `\succcurlyeq`        | $\succcurlyeq$        |              | amssymb    |
+| `\approxeq`           | $\approxeq$           |              | amssymb    |
+| `\curlyeqprec`        | $\curlyeqprec$        |              | amssymb    |
+| `\curlyeqsucc`        | $\curlyeqsucc$        |              | amssymb    |
+| `\backsim`            | $\backsim$            |              | amssymb    |
+| `\precsim`            | $\precsim$            |              | amssymb    |
+| `\succsim`            | $\succsim$            |              | amssymb    |
+| `\backsimeq`          | $\backsimeq$          |              | amssymb    |
+| `\precapprox`         | $\precapprox$         |              | amssymb    |
+| `\succapprox`         | $\succapprox$         |              | amssymb    |
+| `\vDash`              | $\vDash$              |              | amssymb    |
+| `\subseteqq`          | $\subseteqq$          |              | amssymb    |
+| `\supseteqq`          | $\supseteqq$          |              | amssymb    |
+| `\Vdash`              | $\Vdash$              |              | amssymb    |
+| `\shortparallel`      | $\shortparallel$      |              | amssymb    |
+| `\Supset`             | $\Supset$             |              | amssymb    |
+| `\Vvdash`             | $\Vvdash$             |              | amssymb    |
+| `\blacktriangleleft`  | $\blacktriangleleft$  |              | amssymb    |
+| `\sqsupset`           | $\sqsupset$           |              | amssymb    |
+| `\backepsilon`        | $\backepsilon$        |              | amssymb    |
+| `\vartriangleright`   | $\vartriangleright$   |              | amssymb    |
+| `\because`            | $\because$            |              | amssymb    |
+| `\varpropto`          | $\varpropto$          |              | amssymb    |
+| `\blacktriangleright` | $\blacktriangleright$ |              | amssymb    |
+| `\Subset`             | $\Subset$             |              | amssymb    |
+| `\between`            | $\between$            |              | amssymb    |
+| `\trianglerighteq`    | $\trianglerighteq$    |              | amssymb    |
+| `\smallfrown`         | $\smallfrown$         |              | amssymb    |
+| `\pitchfork`          | $\pitchfork$          |              | amssymb    |
+| `\vartriangleleft`    | $\vartriangleleft$    |              | amssymb    |
+| `\shortmid`           | $\shortmid$           |              | amssymb    |
+| `\smallsmile`         | $\smallsmile$         |              | amssymb    |
+| `\trianglelefteq`     | $\trianglelefteq$     |              | amssymb    |
+| `\therefore`          | $\therefore$          |              | amssymb    |
+| `\sqsubset`           | $\sqsubset$           |              | amssymb    |
 
 - **Change** symbol **style**
   | Preamble Command                     | Rendering    | Original  | Dependency |
@@ -642,77 +709,6 @@
 | `\mathscr{TEXT}`    | $\mathscr{ABCDE}$             | mathrsfs            |
 | `\mathfrak{TEXT}`   | $\mathfrak{ABCDEabcde1234}$   | amsfonts or amssymb |
 | `\mathbb{TEXT}`     | $\mathbb{ABCDE}$              | amsfonts or amssymb |
-
-## AMS Binary Relations
-| Command               | Rendering             |
-| --------------------- | --------------------- |
-| `\lessdot`            | $\lessdot$            |
-| `\gtrdot`             | $\gtrdot$             |
-| `\doteqdot`           | $\doteqdot$           |
-| `\leqslant`           | $\leqslant$           |
-| `\geqslant`           | $\geqslant$           |
-| `\risingdotseq`       | $\risingdotseq$       |
-| `\eqslantless`        | $\eqslantless$        |
-| `\eqslantgtr`         | $\eqslantgtr$         |
-| `\fallingdotseq`      | $\fallingdotseq$      |
-| `\leqq`               | $\leqq$               |
-| `\geqq`               | $\geqq$               |
-| `\eqcirc`             | $\eqcirc$             |
-| `\lll`                | $\lll$                |
-| `\llless`             | $\llless$             |
-| `\ggg`                | $\ggg$                |
-| `\circeq`             | $\circeq$             |
-| `\lesssim`            | $\lesssim$            |
-| `\gtrsim`             | $\gtrsim$             |
-| `\triangleq`          | $\triangleq$          |
-| `\lessapprox`         | $\lessapprox$         |
-| `\gtrapprox`          | $\gtrapprox$          |
-| `\bumpeq`             | $\bumpeq$             |
-| `\lessgtr`            | $\lessgtr$            |
-| `\gtrless`            | $\gtrless$            |
-| `\Bumpeq`             | $\Bumpeq$             |
-| `\lesseqgtr`          | $\lesseqgtr$          |
-| `\gtreqless`          | $\gtreqless$          |
-| `\thicksim`           | $\thicksim$           |
-| `\lesseqqgtr`         | $\lesseqqgtr$         |
-| `\gtreqqless`         | $\gtreqqless$         |
-| `\thickapprox`        | $\thickapprox$        |
-| `\preccurlyeq`        | $\preccurlyeq$        |
-| `\succcurlyeq`        | $\succcurlyeq$        |
-| `\approxeq`           | $\approxeq$           |
-| `\curlyeqprec`        | $\curlyeqprec$        |
-| `\curlyeqsucc`        | $\curlyeqsucc$        |
-| `\backsim`            | $\backsim$            |
-| `\precsim`            | $\precsim$            |
-| `\succsim`            | $\succsim$            |
-| `\backsimeq`          | $\backsimeq$          |
-| `\precapprox`         | $\precapprox$         |
-| `\succapprox`         | $\succapprox$         |
-| `\vDash`              | $\vDash$              |
-| `\subseteqq`          | $\subseteqq$          |
-| `\supseteqq`          | $\supseteqq$          |
-| `\Vdash`              | $\Vdash$              |
-| `\shortparallel`      | $\shortparallel$      |
-| `\Supset`             | $\Supset$             |
-| `\Vvdash`             | $\Vvdash$             |
-| `\blacktriangleleft`  | $\blacktriangleleft$  |
-| `\sqsupset`           | $\sqsupset$           |
-| `\backepsilon`        | $\backepsilon$        |
-| `\vartriangleright`   | $\vartriangleright$   |
-| `\because`            | $\because$            |
-| `\varpropto`          | $\varpropto$          |
-| `\blacktriangleright` | $\blacktriangleright$ |
-| `\Subset`             | $\Subset$             |
-| `\between`            | $\between$            |
-| `\trianglerighteq`    | $\trianglerighteq$    |
-| `\smallfrown`         | $\smallfrown$         |
-| `\pitchfork`          | $\pitchfork$          |
-| `\vartriangleleft`    | $\vartriangleleft$    |
-| `\shortmid`           | $\shortmid$           |
-| `\smallsmile`         | $\smallsmile$         |
-| `\trianglelefteq`     | $\trianglelefteq$     |
-| `\therefore`          | $\therefore$          |
-| `\sqsubset`           | $\sqsubset$           |
 
 ## AMS Miscellaneous
 | Command              | Rendering            |
