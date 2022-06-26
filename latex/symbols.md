@@ -326,65 +326,65 @@
   | ------------------------------------ | ------------ | --------- | ---------- |
   | `\renewcommand{\propto}{\varpropto}` | $\varpropto$ | $\propto$ | amssymb    |
 
-## AMS Negated Binary Relations and Arrows
-| Command             | Rendering           | Variants         |
-| ------------------- | ------------------- | ---------------- |
-| `\nless`            | $\nless$            |
-| `\ngtr`             | $\ngtr$             |
-| `\lneq`             | $\lneq$             |
-| `\gneq`             | $\gneq$             |
-| `\nleq`             | $\nleq$             |
-| `\ngeq`             | $\ngeq$             |
-| `\nleqslant`        | $\nleqslant$        |
-| `\ngeqslant`        | $\ngeqslant$        |
-| `\lneqq`            | $\lneqq$            |
-| `\gneqq`            | $\gneqq$            |
-| `\lvertneqq`        | $\lvertneqq$        |
-| `\gvertneqq`        | $\gvertneqq$        |
-| `\nleqq`            | $\nleqq$            |
-| `\ngeqq`            | $\ngeqq$            |
-| `\lnsim`            | $\lnsim$            |
-| `\gnsim`            | $\gnsim$            |
-| `\lnapprox`         | $\lnapprox$         |
-| `\gnapprox`         | $\gnapprox$         |
-| `\nprec`            | $\nprec$            |
-| `\nsucc`            | $\nsucc$            |
-| `\npreceq`          | $\npreceq$          |
-| `\nsucceq`          | $\nsucceq$          |
-| `\precneqq`         | $\precneqq$         |
-| `\succneqq`         | $\succneqq$         |
-| `\precnsim`         | $\precnsim$         |
-| `\succnsim`         | $\succnsim$         |
-| `\precnapprox`      | $\precnapprox$      |
-| `\succnapprox`      | $\succnapprox$      |
-| `\subsetneq`        | $\subsetneq$        | $\varsubsetneq$  |
-| `\supsetneq`        | $\supsetneq$        | $\varsupsetneq$  |
-| `\nsubseteq`        | $\nsubseteq$        |
-| `\nsupseteq`        | $\nsupseteq$        |
-| `\subsetneqq`       | $\subsetneqq$       | $\varsubsetneqq$ |
-| `\supsetneqq`       | $\supsetneqq$       | $\varsupsetneqq$ |
-| `\nsubseteqq`       | $\nsubseteqq$       |
-| `\nsupseteqq`       | $\nsupseteqq$       |
-| `\nmid`             | $\nmid$             |
-| `\nparallel`        | $\nparallel$        |
-| `\nshortmid`        | $\nshortmid$        |
-| `\nshortparallel`   | $\nshortparallel$   |
-| `\nsim`             | $\nsim$             |
-| `\ncong`            | $\ncong$            |
-| `\nvdash`           | $\nvdash$           |
-| `\nvDash`           | $\nvDash$           |
-| `\nVdash`           | $\nVdash$           |
-| `\nVDash`           | $\nVDash$           |
-| `\ntriangleleft`    | $\ntriangleleft$    |
-| `\ntriangleright`   | $\ntriangleright$   |
-| `\ntrianglelefteq`  | $\ntrianglelefteq$  |
-| `\ntrianglerighteq` | $\ntrianglerighteq$ |
-| `\nleftarrow`       | $\nleftarrow$       |
-| `\nrightarrow`      | $\nrightarrow$      |
-| `\nleftrightarrow`  | $\nleftrightarrow$  |
-| `\nLeftarrow`       | $\nLeftarrow$       |
-| `\nRightarrow`      | $\nRightarrow$      |
-| `\nLeftrightarrow`  | $\nLeftrightarrow$  |
+## Negated Binary Relations and Arrows
+| Command             | Rendering           | Variants         | Dependency |
+| ------------------- | ------------------- | ---------------- | ---------- |
+| `\nless`            | $\nless$            |                  | amssymb    |
+| `\ngtr`             | $\ngtr$             |                  | amssymb    |
+| `\lneq`             | $\lneq$             |                  | amssymb    |
+| `\gneq`             | $\gneq$             |                  | amssymb    |
+| `\nleq`             | $\nleq$             |                  | amssymb    |
+| `\ngeq`             | $\ngeq$             |                  | amssymb    |
+| `\nleqslant`        | $\nleqslant$        |                  | amssymb    |
+| `\ngeqslant`        | $\ngeqslant$        |                  | amssymb    |
+| `\lneqq`            | $\lneqq$            |                  | amssymb    |
+| `\gneqq`            | $\gneqq$            |                  | amssymb    |
+| `\lvertneqq`        | $\lvertneqq$        |                  | amssymb    |
+| `\gvertneqq`        | $\gvertneqq$        |                  | amssymb    |
+| `\nleqq`            | $\nleqq$            |                  | amssymb    |
+| `\ngeqq`            | $\ngeqq$            |                  | amssymb    |
+| `\lnsim`            | $\lnsim$            |                  | amssymb    |
+| `\gnsim`            | $\gnsim$            |                  | amssymb    |
+| `\lnapprox`         | $\lnapprox$         |                  | amssymb    |
+| `\gnapprox`         | $\gnapprox$         |                  | amssymb    |
+| `\nprec`            | $\nprec$            |                  | amssymb    |
+| `\nsucc`            | $\nsucc$            |                  | amssymb    |
+| `\npreceq`          | $\npreceq$          |                  | amssymb    |
+| `\nsucceq`          | $\nsucceq$          |                  | amssymb    |
+| `\precneqq`         | $\precneqq$         |                  | amssymb    |
+| `\succneqq`         | $\succneqq$         |                  | amssymb    |
+| `\precnsim`         | $\precnsim$         |                  | amssymb    |
+| `\succnsim`         | $\succnsim$         |                  | amssymb    |
+| `\precnapprox`      | $\precnapprox$      |                  | amssymb    |
+| `\succnapprox`      | $\succnapprox$      |                  | amssymb    |
+| `\subsetneq`        | $\subsetneq$        | $\varsubsetneq$  | amssymb    |
+| `\supsetneq`        | $\supsetneq$        | $\varsupsetneq$  | amssymb    |
+| `\nsubseteq`        | $\nsubseteq$        |                  | amssymb    |
+| `\nsupseteq`        | $\nsupseteq$        |                  | amssymb    |
+| `\subsetneqq`       | $\subsetneqq$       | $\varsubsetneqq$ | amssymb    |
+| `\supsetneqq`       | $\supsetneqq$       | $\varsupsetneqq$ | amssymb    |
+| `\nsubseteqq`       | $\nsubseteqq$       |                  | amssymb    |
+| `\nsupseteqq`       | $\nsupseteqq$       |                  | amssymb    |
+| `\nmid`             | $\nmid$             |                  | amssymb    |
+| `\nparallel`        | $\nparallel$        |                  | amssymb    |
+| `\nshortmid`        | $\nshortmid$        |                  | amssymb    |
+| `\nshortparallel`   | $\nshortparallel$   |                  | amssymb    |
+| `\nsim`             | $\nsim$             |                  | amssymb    |
+| `\ncong`            | $\ncong$            |                  | amssymb    |
+| `\nvdash`           | $\nvdash$           |                  | amssymb    |
+| `\nvDash`           | $\nvDash$           |                  | amssymb    |
+| `\nVdash`           | $\nVdash$           |                  | amssymb    |
+| `\nVDash`           | $\nVDash$           |                  | amssymb    |
+| `\ntriangleleft`    | $\ntriangleleft$    |                  | amssymb    |
+| `\ntriangleright`   | $\ntriangleright$   |                  | amssymb    |
+| `\ntrianglelefteq`  | $\ntrianglelefteq$  |                  | amssymb    |
+| `\ntrianglerighteq` | $\ntrianglerighteq$ |                  | amssymb    |
+| `\nleftarrow`       | $\nleftarrow$       |                  | amssymb    |
+| `\nrightarrow`      | $\nrightarrow$      |                  | amssymb    |
+| `\nleftrightarrow`  | $\nleftrightarrow$  |                  | amssymb    |
+| `\nLeftarrow`       | $\nLeftarrow$       |                  | amssymb    |
+| `\nRightarrow`      | $\nRightarrow$      |                  | amssymb    |
+| `\nLeftrightarrow`  | $\nLeftrightarrow$  |                  | amssymb    |
 
 - **Change** symbol **style**
   | Preamble Command                             | Rendering        | Original      |
