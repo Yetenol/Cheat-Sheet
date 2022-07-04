@@ -1,9 +1,18 @@
 # Microsoft OneNote
 [⌂](../README.md) ([Apps](../README.md#applications)) ›
+- **[Keyboard Shortcuts](#keyboard-shortcuts)**  
+    Links to Keyboard Shortcut Lists  
+    Apply _Heading 1_ | `[Ctrl + Alt + 2]`
+  - [Windows 10 App ›](https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-onenote-44b8b3f4-c274-4bcc-a089-e80fdcc87950#PickTab=Windows_10_app)
+  - [Windows ›](https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-onenote-44b8b3f4-c274-4bcc-a089-e80fdcc87950#PickTab=Windows)
+- [Mathematical Typesetting](#mathematical-typesetting)
+  - [Basics](#basics)
+  - [Number sets](#number-sets)
+  - [Derivatives](#derivatives)
+  - [Integral](#integral)
+  - [Arrays and Matrices](#arrays-and-matrices)
+- [Sources](#sources)
 
-## Keyboard Shortcuts
-- [Windows 10 App](https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-onenote-44b8b3f4-c274-4bcc-a089-e80fdcc87950#PickTab=Windows_10_app)
-- [Windows](https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-onenote-44b8b3f4-c274-4bcc-a089-e80fdcc87950#PickTab=Windows)
 
 # Mathematical Typesetting
 
@@ -20,6 +29,15 @@
     To write next to the square root again, press `[Space]` which leaves the scope.
 
     Type: `\sqrt a+b -c\cdot \alpha ` to render $\sqrt{a+b}-c\cdot\alpha$
+
+## Number sets
+| Command    | Rendering    |
+| ---------- | ------------ |
+| `\doubleC` | $\mathbb{C}$ |
+| `\doubleN` | $\mathbb{N}$ |
+| `\doubleQ` | $\mathbb{Q}$ |
+| `\doubleR` | $\mathbb{R}$ |
+| `\doubleZ` | $\mathbb{Z}$ |
 
 ## Derivatives
 - derivates don't require a command, just type `/`
