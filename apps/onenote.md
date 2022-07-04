@@ -21,10 +21,10 @@
 
 - `→` 
 
-## Input formats
-To typing equations in linear format use the following input styles:
-- UnicodeMath
-- LaTeX
+## Supported input languages
+To typing equations in linear format use the following input language:
+- [UnicodeMath](https://www.unicode.org/notes/tn28/UTN28-PlainTextMath-v3.1.pdf)
+- [LaTeX](http://tug.ctan.org/info/short-math-guide/short-math-guide.pdf)
   - Symbol integration in all Office applications
   - Environments integration only supported in Word
 
@@ -73,20 +73,36 @@ To typing equations in linear format use the following input styles:
     _Github cannot yet display inline matrices correctly_
     | Delimiter                         | OneNote markup                 | Renders as                                               |
     | --------------------------------- | ------------------------------ | -------------------------------------------------------- |
-    | Plain                             | `\matrix(1&2@a&b) `            | $\begin{matrix}1&2\\a&b\end{matrix}$                     |
-    | Parentheses <br> _round brackets_ | `\pmatrix(1&2@a&b) `           | $\begin{pmatrix}1&2\\a&b\end{pmatrix}$                   |
-    | Brackets <br> _square brackets_   | `\bmatrix(1&2@a&b) `           | $\begin{bmatrix}1&2\\a&b\end{bmatrix}$                   |
-    | Braces <br> _curly brackets_      | `\Bmatrix(1&2@a&b) `           | $\begin{Bmatrix}1&2\\a&b\end{Bmatrix}$                   |
-    | Absolute Value <br> _pipes_       | `\vmatrix(1&2@a&b) `           | $\begin{vmatrix}1&2\\a&b\end{vmatrix}$                   |
-    | Norm <br> _double pipes_          | `\Vmatrix(1&2@a&b) `           | $\begin{Vmatrix}1&2\\a&b\end{Vmatrix}$                   |
-    | Custom Delimiter                  | `\langle \matrix(1&2@a&b) \| ` | $\left\langle\begin{matrix}1&2\\a&b\end{matrix}\right\|$ |
+    | Plain                             | `\matrix(1&2@a&b)·`            | $\begin{matrix}1&2\\a&b\end{matrix}$                     |
+    | Parentheses <br> _round brackets_ | `\pmatrix(1&2@a&b)·`           | $\begin{pmatrix}1&2\\a&b\end{pmatrix}$                   |
+    | Brackets <br> _square brackets_   | `\bmatrix(1&2@a&b)·`           | $\begin{bmatrix}1&2\\a&b\end{bmatrix}$                   |
+    | Braces <br> _curly brackets_      | `\Bmatrix(1&2@a&b)·`           | $\begin{Bmatrix}1&2\\a&b\end{Bmatrix}$                   |
+    | Absolute Value <br> _pipes_       | `\vmatrix(1&2@a&b)·`           | $\begin{vmatrix}1&2\\a&b\end{vmatrix}$                   |
+    | Norm <br> _double pipes_          | `\Vmatrix(1&2@a&b)·`           | $\begin{Vmatrix}1&2\\a&b\end{Vmatrix}$                   |
+    | Custom Delimiter                  | `\langle·\matrix(1&2@a&b)·\|·` | $\left\langle\begin{matrix}1&2\\a&b\end{matrix}\right\|$ |
 - Display Style:
     | Style                                    | OneNote markup              | Renders as                         |
     | ---------------------------------------- | --------------------------- | ---------------------------------- |
-    | typeset in **paragraphs**                | `\textstyle a=1/2 `         | $\textstyle a=\frac{1}{2}$ Text    |
-    | typeset on lines by **themselves**       | `\displaystyle a=1/2 `      | $\displaystyle a=\frac{1}{2}$      |
-    | **sub**scripts or **sup**erscripts       | `\scriptstyle a=1/2 `       | $\scriptstyle a=\frac{1}{2}$       |
-    | **2nd-order** subscripts or superscripts | `\scriptscriptstyle a=1/2 ` | $\scriptscriptstyle a=\frac{1}{2}$ |
+    | typeset in **paragraphs**                | `\textstyle·a=1/2·`         | $\textstyle a=\frac{1}{2}$ Text    |
+    | typeset on lines by **themselves**       | `\displaystyle·a=1/2·`      | $\displaystyle a=\frac{1}{2}$      |
+    | **sub**scripts or **sup**erscripts       | `\scriptstyle·a=1/2·`       | $\scriptstyle a=\frac{1}{2}$       |
+    | **2nd-order** subscripts or superscripts | `\scriptscriptstyle·a=1/2·` | $\scriptscriptstyle a=\frac{1}{2}$ |
+
+## Multiple equations
+- `&` separates alignment columns
+- `@` starts a new line
+
+- `\eqarray(x+1&=2@1+2+3+y&=z@3/x&=6-1)·` renders as
+  $$
+  \begin{align*}
+  x+1         &=2 \\
+  1+2+3+y     &=z \\
+  \frac{3}{x} &=6-1
+  \end{align*}
+  $$
+
+
+
 
 # Sources
 - 2022-06-10: [Using OneNote to Write Equations – Blake Margolis](https://sites.utexas.edu/margolis/2019/04/09/using-onenote/)
