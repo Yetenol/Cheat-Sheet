@@ -19,6 +19,8 @@
 
 > Microsoft Office uses MS Equation 3.0 (_MathType Equation Editor_)  
 
+- `→` 
+
 ## Input formats
 To typing equations in linear format use the following input styles:
 - UnicodeMath
@@ -31,12 +33,14 @@ To typing equations in linear format use the following input styles:
     - `[Alt + +]` in _OneNote for Windows 10_ (UWP) or 
     - `[Alt + =]` in _OneNote_ and other _Office Suite_ applications
 - To leave math mode press `[Right]` until the surrounding box disappears
+  - The character `→` indicates to press `[Right]`
 - To evaluate an expression or close a scope press a `[Space]`.
-  - E.g: Typing `\sqrt` and **one** `[Space]` opens a scope (the radicand). 
+  - The character `·` indicates to press `[Space]`
+  - E.g: Typing `\sqrt` and pressing `[Space]` **once** opens a scope (the radicand). 
     Everything you type now will be displayed under the square root.
     To write next to the square root again, press `[Space]` which leaves the scope.
 
-    Type: `\sqrt a+b -c\cdot \alpha ` to render $\sqrt{a+b}-c\cdot\alpha$
+    Type: `\sqrt·a+b·-c\cdot·\alpha·` to render $\sqrt{a+b}-c\cdot\alpha$
 
 ## Number sets
 | Command    | Rendering    |
@@ -50,17 +54,17 @@ To typing equations in linear format use the following input styles:
 ## Derivatives
 | Example Input      | Renders as                            | Format      |
 | ------------------ | ------------------------------------- | ----------- |
-| `dx/a+b `          | $\displaystyle\frac{dx}{a+b}$         | UnicodeMath |
-| `y^2 /\partial x ` | $\displaystyle\frac{y^2}{\partial x}$ | UnicodeMath |
-| `\frac {dx}{a+b}`  | $\displaystyle\frac{dx}{a+b}$         | LaTeX       |
+| `dx/a+b·`          | $\displaystyle\frac{dx}{a+b}$         | UnicodeMath |
+| `y^2·/\partial·x·` | $\displaystyle\frac{y^2}{\partial x}$ | UnicodeMath |
+| `\frac{dx}{a+b}`   | $\displaystyle\frac{dx}{a+b}$         | LaTeX       |
 
 ## Integral
 - Press `[Space]` twice for indefinite integrals, to make sure you are inside the integral
 - Press `[Right]` (indicated by →) to leave the inside of the integral to write the differential
     | Example Input        | Renders as                        |
     | -------------------- | --------------------------------- |
-    | `\int _a^b f(x) →dx` | $\displaystyle\int_a^b{f(x)}\ dx$ |
-    | `\int  f(x) →dx`     | $\displaystyle\int{f(x)}\ dx$     |
+    | `\int·_a^b·f(x)·→dx` | $\displaystyle\int_a^b{f(x)}\ dx$ |
+    | `\int··f(x)·→dx`     | $\displaystyle\int{f(x)}\ dx$     |
 
 ## Arrays and Matrices
 - `&` separates cells within a row
