@@ -6,6 +6,7 @@
   - [Windows 10 App ›](https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-onenote-44b8b3f4-c274-4bcc-a089-e80fdcc87950#PickTab=Windows_10_app)
   - [Windows ›](https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-onenote-44b8b3f4-c274-4bcc-a089-e80fdcc87950#PickTab=Windows)
 - [Mathematical Typesetting](#mathematical-typesetting)
+  - [Input formats](#input-formats)
   - [Basics](#basics)
   - [Number sets](#number-sets)
   - [Derivatives](#derivatives)
@@ -16,12 +17,19 @@
 
 # Mathematical Typesetting
 
-> Microsoft Office uses MS Equation 3.0 (_MathType Equation Editor_)
+> Microsoft Office uses MS Equation 3.0 (_MathType Equation Editor_)  
+
+## Input formats
+To typing equations in linear format use the following input styles:
+- UnicodeMath
+- LaTeX
+  - Symbol integration in all Office applications
+  - Environments integration only supported in Word
 
 ## Basics
 - To enter math mode press
     - `[Alt + +]` in _OneNote for Windows 10_ (UWP) or 
-    - `[Alt + =]` in _OneNote_ (Office Suite)
+    - `[Alt + =]` in _OneNote_ and other _Office Suite_ applications
 - To leave math mode press `[Right]` until the surrounding box disappears
 - To evaluate an expression or close a scope press a `[Space]`.
   - E.g: Typing `\sqrt` and **one** `[Space]` opens a scope (the radicand). 
@@ -40,12 +48,11 @@
 | `\doubleZ` | $\mathbb{Z}$ |
 
 ## Derivatives
-- derivates don't require a command, just type `/`
-    | Example Input      | Renders as                            |
-    | ------------------ | ------------------------------------- |
-    | `dy/dx `           | $\displaystyle\frac{dy}{dx}$          |
-    | `y^2 /\partial x ` | $\displaystyle\frac{y^2}{\partial x}$ |
-- regular LaTeX like `\frac {1}{2}` renders as $\displaystyle\frac{1}{2}$
+| Example Input      | Renders as                            | Format      |
+| ------------------ | ------------------------------------- | ----------- |
+| `dx/a+b `          | $\displaystyle\frac{dx}{a+b}$         | UnicodeMath |
+| `y^2 /\partial x ` | $\displaystyle\frac{y^2}{\partial x}$ | UnicodeMath |
+| `\frac {dx}{a+b}`  | $\displaystyle\frac{dx}{a+b}$         | LaTeX       |
 
 ## Integral
 - Press `[Space]` twice for indefinite integrals, to make sure you are inside the integral
@@ -80,3 +87,5 @@
 # Sources
 - 2022-06-10: [Using OneNote to Write Equations – Blake Margolis](https://sites.utexas.edu/margolis/2019/04/09/using-onenote/)
 - 2022-06-14: [Keyboard shortcuts in OneNote](https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-onenote-44b8b3f4-c274-4bcc-a089-e80fdcc87950)
+- 2022-07-04: [Linear format equations using UnicodeMath and LaTeX in Word](https://support.microsoft.com/en-us/office/linear-format-equations-using-unicodemath-and-latex-in-word-2e00618d-b1fd-49d8-8cb4-8d17f25754f8)
+- 2022-07-04: [What's the difference between the OneNote versions-](https://support.microsoft.com/en-us/office/what-s-the-difference-between-the-onenote-versions-a624e692-b78b-4c09-b07f-46181958118f)
