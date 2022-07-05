@@ -1,4 +1,15 @@
-# [⌂](../README.md) › [LaTeX](../README.md#latex) › **Packages**
+# Packages
+[⌂](../README.md) › [LaTeX](../README.md#latex) ›
+
+## Documentation
+
+View package documentation
+- visit [TeX and LaTeX documentation lookup system](https://texdoc.org/)  
+    `http://texdoc.org/serve/%s/0`
+- if LaTeX is installed on your system, run:  
+    `texdoc PACKAGE_NAME`
+- or visit [CTAN Comprehensive TEX Archive Network](https://ctan.org/)  
+    `https://ctan.org/pkg/%s`
 
 ## Set Encoding
 

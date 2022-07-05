@@ -1,6 +1,6 @@
 # [⌂](../README.md) › [LaTeX](../README.md#latex) › **Environment**
 
-> CAPITAL letter are ⟨placeholders⟩
+> CAPITAL letters are ⟨placeholders⟩
 
 ## Extend an existing environment 
 

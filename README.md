@@ -1,77 +1,157 @@
-# [⌂](README.md) Documentation ![GitHub last commit](https://img.shields.io/github/last-commit/yetenol/doc?color=white)
+# Documentation ![GitHub last commit](https://img.shields.io/github/last-commit/yetenol/doc?color=white)
+[⌂](README.md) Home
+> This project contains all my documentations of my developer life. 
+> This includes code templates, tips and tricks, cheat sheets and glossaries.
+- [Windows](#windows)
+- [Powershell](#powershell)
+- [LaTeX](#latex)
+- [Languages, Encodings](#languages-encodings)
+- [Applications](#applications)
+- [Discussions](#discussions)
 
-- Various documentations and tips I have accumulated over the years
-- Cheat sheets
+## Windows
 
-### Windows
+- **[Components ›](windows/components.md)**  
+    Certificates | `certmgr.msc`
 
-| Topic                                                     | Example Component        | Example Code                      |
-| --------------------------------------------------------- | ------------------------ | --------------------------------- |
-| [Components](windows/components.md)                       | Certificates             | `certmgr.msc`                     |
-| [Settings app pages](windows/settings.md)                 | Display                  | `ms-settings:display`             |
-| [Known Folders](windows/known-folders/known-folders.md)   |                          |                                   |
-| ⮱ [User Folders](windows/known-folders/user-folders.md)   | Downloads Folder         | `shell:My Pictures`               |
-| ⮱ [OS Panels, Folders](windows/known-folders/guids.md)    | Recycle Bin              | `shell:::{�}`                     |
-| ⮱ [GUIDs Archive](windows/known-folders/guids-archive.md) | 3D Objects               | `shell:::{�}`                     |
-| [Dll commands](windows/dll.md)                            | Neue Verknüpfung anlegen | `rundll32 appwiz.cpl,NewLinkHere` |
-| [Troubleshooters](windows/troubleshooters.md)             | Printer Troubleshooter   | `msdt -id PrinterDiagnosticmsdt`  |
-| [Icon libraries](windows/icons.md)                        | Imageres Library         | `shell32.dll`                     |
-| [Context menu](windows/context-menu.md)                   | Open in VS Code          |
+- **[Settings app pages ›](windows/settings.md)**  
+    Display | `ms-settings:display`
 
+- **[Known Folders ›](windows/known-folders/known-folders.md)**  
 
-### Powershell
+    - **[User Folders ›](windows/known-folders/user-folders.md)**  
+        Downloads Folder | `shell:My Pictures`
 
-| Topic                                                          | Example Component       | Example Code                                        |
-| -------------------------------------------------------------- | ----------------------- | --------------------------------------------------- |
-| [Getting Started](powershell/powershell.md)                    | Help Cmdlets            | `script.ps1.bat`                                    |
-| ⮱ [Data Types](powershell/data-types.md)                       | Hashtable               | `[DateTime]::Now`                                   |
-| ⮱ [Modify data](powershell/filesystem/modify.md)               | Add calculated property | `$list[@(0..1;-3..-1)]`                             |
-| ⮱ [Bash equivalents](powershell/bash-equivalents.md)           | While Loop              | `read name` <-> `$name = Read-Host -Prompt "Name"`  |
-| [FileSystem Interactions](powershell/filesystem/filesystem.md) | Run as administrator    | ``explorer "/select,`"$(Resolve-Path $file)`""``    |
-| ⮱ [Import](powershell/filesystem/import.md)                    | File Parsing            | `[RegEx]::Match(�, $pattern).Groups[1].value`       |
-| ⮱ [Export](powershell/filesystem/export.md)                    | Export spreadsheet      | `Export-Clixml`                                     |
-| ⮱ [Links](powershell/filesystem/links.md)                      | Create symbolic link    | `New-Item -ItemType SymbolicLink -Name � -Target �` |
-| ⮱ [Attributes](powershell/filesystem/file-attributes.md)       | Make ReadOnly           | `$item.Attributes = $item.Attributes -bor 0x080000` |
-| ⮱ [Meta data](powershell/filesystem/metadata.md)               | Get meta data           | _Function_                                          |
-| ⮱ [Web](powershell/filesystem/web.md)                          | Download, extract ZIPs  | `Invoke-WebRequest -Uri $url -OutFile $file`        |
-| [Applications](powershell/applications.md)                     | Update Store Apps       | `$wmiObj.UpdateScanMethod()`                        |
-| [Interactive Menu](powershell/menu.md)                         | Select option 1, 2, 3   | `$Choice = Read-Host -Prompt "Select ..."`          |
-| [Encryption](powershell/encryption.md)                         | Passwords               | `ConvertTo-SecureString`                            |
-| [Bluetooth](powershell/bluetooth.md)                           | List Devices            | `Get-PnpDevice -Class Bluetooth`                    |
-| [Win+X Menu](windows/win-x.md)                                 | Add Win+X entries       |                                                     |
+    - **[OS Panels, Folders ›](windows/known-folders/guids.md)**  
+        Recycle Bin | `shell:::{�}`
 
+    - **[GUIDs Archive ›](windows/known-folders/guids-archive.md)**  
+        3D Objects | `shell:::{�}`
 
-### LaTeX
+- **[Dll commands ›](windows/dll.md)**  
+    Neue Verknüpfung anlegen | `rundll32 appwiz.cpl,NewLinkHere`
 
-| Topic                                 | Example Component            | Example Code                                       |
-| ------------------------------------- | ---------------------------- | -------------------------------------------------- |
-| [Getting Started](latex/latex.md)     | Page Margins                 | `texdoc PACKAGE_NAME`                              |
-| [Debugging](latex/debugging.md)       | Syntax Only                  | `\documentclass[draft]{article}`                   |
-| [Environments](latex/environments.md) | Modify Existing Environments | `\usepackage{etoolbox}`                            |
-| [Floats](latex/floats.md)             | Images                       | `\begin{figure}[htbp]`                             |
-| [Useful Packages](latex/packages.md)  | Lipsum Text                  | `\usepackage[utf8]{inputenc}`                      |
-| [Spacing](latex/spacing.md)           | Hyphenation                  | `\!` `\,` `\:` `\;` `\quad` `\qquad`               |
-| [Tables](latex/tables.md)             | TABULARX                     | `\begin{tabularx}{\columnwidth}{X\|p{1.7cm}\|C\|}` |
+- **[Troubleshooters ›](windows/troubleshooters.md)**  
+    Printer Troubleshooter | `msdt -id PrinterDiagnosticmsdt`
+
+- **[Icon libraries ›](windows/icons.md)**  
+    Images Library | `shell32.dll`
+
+- **[Context menu ›](windows/context-menu.md)**  
+    Open in VS Code
 
 
+## Powershell
+
+- **[Getting Started ›](powershell/basics/basics.md)**  
+    Help Cmdlets | `script.ps1.bat`
+
+    - **[Data Types ›](powershell/basics/data-types.md)**  
+        Hashtable | `[DateTime]::Now`
+
+    - **[Modify data ›](powershell/basics/modify.md)**  
+        Add calculated property | `$list[	(0..1;-3..-1)]`
+
+    - **[CMD equivalents ›](powershell/basics/cmd-equivalents.md)**  
+        While Loop | `read name` ⟷ `$name = Read-Host -Prompt "Name"`
+
+- **[FileSystem Interactions ›](powershell/filesystem/filesystem.md)**  
+    Run as administrator | ``explorer "/select,`"$(Resolve-Path $file)`""``
+
+    - **[Import ›](powershell/filesystem/import.md)**  
+        File Parsing | `[RegEx]::Match(�, $pattern).Groups[1].value`
+
+    - **[Export ›](powershell/filesystem/export.md)**  
+        Export spreadsheet | `Export-Clixml`
+
+    - **[Links ›](powershell/filesystem/links.md)**  
+        Create symbolic link | `New-Item -ItemType SymbolicLink -Name � -Target �`
+
+    - **[Attributes ›](powershell/filesystem/attributes.md)**  
+        Make ReadOnly | `$item.Attributes = $item.Attributes -bor 0x080000`
+
+    - **[Meta data ›](powershell/filesystem/metadata.md)**  
+        Get meta data | _Function_
+
+    - **[Web ›](powershell/filesystem/web.md)**  
+        Download, extract ZIPs | `Invoke-WebRequest -Uri $url -OutFile $file`
+
+- **[Applications ›](powershell/applications.md)**  
+    Update Store Apps | `$wmiObj.UpdateScanMethod()`
+
+- **[Interactive Menu ›](powershell/menu.md)**  
+    Select option 1, 2, 3 | `$Choice = Read-Host -Prompt "Select ..."`
+
+- **[Encryption ›](powershell/encryption.md)**  
+    Passwords | `ConvertTo-SecureString`
+
+- **[Bluetooth ›](powershell/bluetooth.md)**  
+    List Devices | `Get-PnpDevice -Class Bluetooth`
+
+- **[Win+X Menu ›](windows/win-x.md)**  
+    Add Win+X entries
 
 
-### Languages, Encodings
+## LaTeX
 
-| Topic                                           | Example Component           | Example Code                                                                      |
-| ----------------------------------------------- | --------------------------- | --------------------------------------------------------------------------------- |
-| [RegEx: Regular Expression](languages/regex.md) | Quantifiers                 | `(?in)user:(?<name>\S*)\s*key:(?<pwd>\S*)`                                        |
-| [Git](languages/git.md)                         | Commit History: Delete File | `git clone https://yetenol@github.com/yetenol/`                                   |
-| [Unicode](languages/unicode.md)                 | Character Sorting           | `!` `+` `Ξ`                                                                       |
-| [Markdown](languages/markdown.md)               | LaTeX Render                | <img src="https://render.githubusercontent.com/render/math?math=\int_0^1{\pi^2}"> |
-| C › [GNU Debugger](languages/gdb.md)            | Examinate Variables         | `break`                                                                           |
-| [Java](languages/java.md)                       |
-| [AutoHotkey v1](languages/autohotkey.md)        | Get Program stdout          | `Shell := ComObjCreate("WScript.Shell")`                                          |
-| Minecraft › [Datapacks](languages/minecraft.md) | Leash Decorations           | `kill @e[type=item,nbt={Item:{id:"minecraft:wool"}}]`                             |
+- **[Getting Started ›](latex/latex.md)**  
+    Project Structure | `texdoc PACKAGE_NAME`
+
+- **[Floating Bodies ›](latex/floats.md)**  
+    Images | `\begin{figure}[htbp]`
+
+    - **[Tables ›](latex/tables.md)**  
+        Auto-Stretching Columns | `S[table-format = -3.0e-1]`
+
+- **[Symbols ›](latex/symbols.md)**  
+    Arrows | `\mathbb{NR}` → ℕℝ
+
+- **[Layout ›](latex/layout.md)**  
+    Hyphenation | `\!` `\,` `\:` `\;` `\quad` `\qquad`
+
+- **[Useful Packages ›](latex/packages.md)**  
+    Lipsum Text | `\usepackage[utf8]{inputenc}`
+
+- **[Modify Environments ›](latex/environments.md)**  
+    Modify Existing Environments | `\usepackage{etoolbox}`
 
 
-### Applications
+## Languages, Encodings
 
-| Topic                  | Example Component | Example Code                                            |
-| ---------------------- | ----------------- | ------------------------------------------------------- |
-| [Excel](apps/excel.md) | Empty Range?      | `=IF(SUMPRODUCT(--(A1:C4<>""))<>0,"not empty","empty")` |
+- **[Regular Expression ›](languages/regex.md)**  
+    Quantifiers | `(?in)user:(?<name>\S*)\s*key:(?<pwd>\S*)`
+
+- **[Java ›](languages/java.md)**  
+
+- **[Git ›](languages/git.md)**  
+    Commit History: Delete File | `git clone https://yetenol	github.com/yetenol/`
+
+- **[Unicode ›](languages/unicode.md)**  
+    Character Sorting | `!` `+` `Ξ`
+
+- **[Markdown ›](languages/markdown.md)**  
+    LaTeX Render | `$e^{i\pi}=-1$` → <img src="https://render.githubusercontent.com/render/math?math=e^{i\pi}=-1">
+
+- **C › [GNU Debugger ›](languages/gdb.md)**  
+    Examinate Variables | `break`
+
+
+- **[AutoHotkey v1 ›](languages/autohotkey.md)**  
+    Get Program stdout | `Shell := ComObjCreate("WScript.Shell")`
+
+- **Minecraft › [Datapacks ›](languages/minecraft.md)**  
+    Leash Decorations | `kill 	e[type=item,nbt={Item:{id:"minecraft:wool"}}]`
+
+
+## Applications
+
+- **[Excel ›](apps/excel.md)**  
+    Empty Range? | `=IF(SUMPRODUCT(--(A1:C4<>""))<>0,"not empty","empty")`
+
+- **[OneNote ›](apps/onenote.md)**  
+    Mathematical Typesetting | `\displaystyle\bmatrix(1&2@a&b) `
+
+
+## Discussions
+
+- **[Indentation: Tabs vs Spaces ›](discussion/indentation.md)**  

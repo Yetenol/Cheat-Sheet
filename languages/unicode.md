@@ -1,4 +1,5 @@
-# [⌂](../README.md) ([Languages](../README.md#languages-encodings)) › **Unicode**
+# Unicode
+[⌂](../README.md) ([Languages](../README.md#languages-encodings)) ›
 
 ## Useful characters
 | .   | Name           | Unicode | Alt code              |

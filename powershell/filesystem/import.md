@@ -1,5 +1,5 @@
-# [⌂](../../README.md) › [PowerShell](../../README.md) › [FileSystem](filesystem.md) › Import data
-
+# Import data
+[⌂](../../README.md) › [PowerShell](../../README.md) › [FileSystem](filesystem.md) ›
 
 # Type an input with the keyboard
 
@@ -124,7 +124,7 @@ $pattern = "(?i)^user"
 > `\s*` Any whitespace;  `(.*)` Unnamed group;     `(?<user>.*)` Named group called user
 
 - Extract a **single** datum from the **first** occurrence of the pattern.
-  
+
   Get the username from lines that start with the listing of a user name:
 
   ```powershell

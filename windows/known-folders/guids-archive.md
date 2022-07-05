@@ -1,11 +1,11 @@
-# [⌂](../../README.md) › [Windows](../../README.md#windows) › [Known Folders](known-folders.md) › GUIDs Archive
+# GUIDs Archive
+[⌂](../../README.md) › [Windows](../../README.md#windows) › [Known Folders](known-folders.md) ›
+> - archive of GUID shortcuts that might still work
+> - shortcuts to special OS folders or panels
+> - referenced using a [**CLSID keys**](https://docs.microsoft.com/de-de/windows/win32/com/clsid-key-hklm?redirectedfrom=MSDN) 
+>   (globally unique identifier that identifies a COM class object)
 
-- archive of GUID shortcuts that might still work
-- shortcuts to special OS folders
-- referenced using a [**CLSID keys**](https://docs.microsoft.com/de-de/windows/win32/com/clsid-key-hklm?redirectedfrom=MSDN) 
-    - globally unique identifier that identifies a COM class object
-
-
+## List of deprecated GUIDs
 | Description              | GUID                                             | Default location                                                                      |
 | ------------------------ | ------------------------------------------------ | ------------------------------------------------------------------------------------- |
 | 3D Objects               | `shell:::{31C0DD25-9439-4F12-BF41-7FF4EDA38722}` | `%USERPROFILE%\3D Objects`                                                            |
@@ -135,5 +135,4 @@
 
 
 # Sources
-
 - 2022-04-23: [Windows- known folders](https://renenyffenegger.ch/notes/Windows/dirs/_known-folders)

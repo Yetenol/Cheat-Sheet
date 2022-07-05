@@ -1,6 +1,6 @@
-# [⌂](../README.md) ([Languages](../README.md#languages-encodings)) › Minecraft › **Datapacks**
-
-- usefull mcfunction commands
+# Datapacks
+[⌂](../README.md) ([Languages](../README.md#languages-encodings)) › Minecraft ›
+> usefull mcfunction commands
 
 ### Create leash between two entities
 ```
