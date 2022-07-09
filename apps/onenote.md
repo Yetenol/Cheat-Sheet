@@ -3,8 +3,8 @@
 - **[Keyboard Shortcuts](#keyboard-shortcuts)**  
     Links to Keyboard Shortcut Lists  
     Apply _Heading 1_ | `[Ctrl + Alt + 2]`
-  - [Windows 10 App ›](https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-onenote-44b8b3f4-c274-4bcc-a089-e80fdcc87950#PickTab=Windows_10_app)
-  - [Windows ›](https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-onenote-44b8b3f4-c274-4bcc-a089-e80fdcc87950#PickTab=Windows)
+  - [Windows 10 App 🔗](https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-onenote-44b8b3f4-c274-4bcc-a089-e80fdcc87950#PickTab=Windows_10_app)
+  - [Windows 🔗](https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-onenote-44b8b3f4-c274-4bcc-a089-e80fdcc87950#PickTab=Windows)
 - [Mathematical Typesetting](#mathematical-typesetting)
   - [Input formats](#input-formats)
   - [Basics](#basics)
@@ -18,30 +18,43 @@
 # Mathematical Typesetting
 
 > Microsoft Office uses MS Equation 3.0 (_MathType Equation Editor_)  
-
-- `→` 
+> The character `·` indicated to press `[Space]` and  
+> the character `→` indicated to press `[Right]`.  
+> `[Ctrl + Alt + 0]` clears the formatting of the selection or current line.
 
 ## Supported input languages
 To typing equations in linear format use the following input language:
 - [UnicodeMath](https://www.unicode.org/notes/tn28/UTN28-PlainTextMath-v3.1.pdf)
 - [LaTeX](http://tug.ctan.org/info/short-math-guide/short-math-guide.pdf)
-  - Symbol integration in all Office applications
+  - Symbol integration in all Office applications<>
   - Environments integration only supported in Word
 
 ## Basics
-- To enter math mode press
-    - `[Alt + +]` in _OneNote for Windows 10_ (UWP) or 
-    - `[Alt + =]` in _OneNote_ and other _Office Suite_ applications
-- To leave math mode press `[Right]` until the surrounding box disappears
-  - The character `→` indicates to press `[Right]`
-- To evaluate an expression or close a scope press a `[Space]`.
-  - The character `·` indicates to press `[Space]`
-  - E.g: Typing `\sqrt` and pressing `[Space]` **once** opens a scope (the radicand). 
-    Everything you type now will be displayed under the square root.
-    To write next to the square root again, press `[Space]` which leaves the scope.
+- **Enter math mode** by pressing  
+  `[Alt + +]` in _OneNote for Windows 10_ (UWP) or  
+  `[Alt + =]` in _OneNote_ and other _Office Suite_ applications.  
 
-    Type: `\sqrt·a+b·-c\cdot·\alpha·` to render $\sqrt{a+b}-c\cdot\alpha$
+  Example: `[Alt + +]` `\iff·` `[Alt + +]` renders as $\iff$
 
+- **Evaluate a symbol** (expression without parameters) by pressing  
+  `[Space]` once or by pressing  
+  `\` to start a new expression.  
+
+  Example: `\alpha\cdot\beta·` renders as $\alpha\cdot\beta$
+
+- **Enter a function** (expression with parameters) by pressing  
+  `[Space]` once to enter the first parameter and pressing  
+  `[Space]` again to evaluate the function.  
+
+  Example: `\sqrt·a+b·+c` renders as $\sqrt{a+b}+c$
+
+- **Leave math mode** by  
+  pressing `[Space]` until all commands are evaluated and  
+  then close math mode by pressing  
+  `[Alt + +]` in _OneNote for Windows 10_ (UWP) or  
+  `[Alt + =]` in _OneNote_ and other _Office Suite_ applications.  
+
+Example: `[Alt + +]` `\sqrt·a+b·-c\cdot\alpha·` `[Alt + +]` renders as $\sqrt{a+b}-c\cdot\alpha$
 ## Number sets
 | Command    | Rendering    |
 | ---------- | ------------ |
@@ -51,7 +64,9 @@ To typing equations in linear format use the following input language:
 | `\doubleR` | $\mathbb{R}$ |
 | `\doubleZ` | $\mathbb{Z}$ |
 
-## Derivatives
+## Quotient
+> ⟨dividend⟩`/`⟨divisor⟩
+
 | Example Input      | Renders as                            | Format      |
 | ------------------ | ------------------------------------- | ----------- |
 | `dx/a+b·`          | $\displaystyle\frac{dx}{a+b}$         | UnicodeMath |
@@ -59,16 +74,18 @@ To typing equations in linear format use the following input language:
 | `\frac{dx}{a+b}`   | $\displaystyle\frac{dx}{a+b}$         | LaTeX       |
 
 ## Integral
-- Press `[Space]` twice for indefinite integrals, to make sure you are inside the integral
-- Press `[Right]` (indicated by →) to leave the inside of the integral to write the differential
+> `\int`⟨interval⟩⟨integrand⟩ [⟨with respect to⟩]
+- Press `[Right]` to leave the ⟨integrand⟩ as it opens a new scope
+- Type `\int··` for indefinite integral which skips the ⟨interval⟩
     | Example Input        | Renders as                        |
     | -------------------- | --------------------------------- |
     | `\int·_a^b·f(x)·→dx` | $\displaystyle\int_a^b{f(x)}\ dx$ |
     | `\int··f(x)·→dx`     | $\displaystyle\int{f(x)}\ dx$     |
 
 ## Arrays and Matrices
-- `&` separates cells within a row
-- `@` starts a new row    
+> `\bmatrix(`⟨entries⟩`)`  
+> `&` separates cells within a row  
+> `@` starts a new row    
 - Enclosing Delimiter:  
     _Github cannot yet display inline matrices correctly_
     | Delimiter                         | OneNote markup                 | Renders as                                               |
@@ -83,20 +100,20 @@ To typing equations in linear format use the following input language:
 - Display Style:
     | Style                                    | OneNote markup              | Renders as                         |
     | ---------------------------------------- | --------------------------- | ---------------------------------- |
-    | typeset in **paragraphs**                | `\textstyle·a=1/2·`         | $\textstyle a=\frac{1}{2}$ Text    |
+    | typeset in **paragraphs**                | `\textstyle·a=1/2·`         | $\textstyle a=\frac{1}{2}$         |
     | typeset on lines by **themselves**       | `\displaystyle·a=1/2·`      | $\displaystyle a=\frac{1}{2}$      |
     | **sub**scripts or **sup**erscripts       | `\scriptstyle·a=1/2·`       | $\scriptstyle a=\frac{1}{2}$       |
     | **2nd-order** subscripts or superscripts | `\scriptscriptstyle·a=1/2·` | $\scriptscriptstyle a=\frac{1}{2}$ |
 
 ## Multiple equations
-- `&` separates alignment columns
-- `@` starts a new line
-
-- `\eqarray(x+1&=2@1+2+3+y&=z@3/x&=6-1)·` renders as
+> `\eqarray(`⟨equations⟩`)`  
+> `&` separates alignment columns  
+> `@` starts a new line  
+- `\eqarray(x&=102@a+b&=x@3/x&=6-1)·` renders as
   $$
   \begin{align*}
-  x+1         &=2 \\
-  1+2+3+y     &=z \\
+  x &= 102 \\
+  a+b &= x \\
   \frac{3}{x} &=6-1
   \end{align*}
   $$

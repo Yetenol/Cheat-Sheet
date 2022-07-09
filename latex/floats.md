@@ -10,8 +10,8 @@
 ## Placement Specifiers
 
 ```latex
-\begin{⟨float environment⟩}[⟨positioning⟩]
-\end{⟨float environment⟩}
+\begin{FLOAT-ENVIRONMENT}[PLACEMENT-SPECIFIERS]
+\end{FLOAT-ENVIRONMENT}
 ```
 
 
