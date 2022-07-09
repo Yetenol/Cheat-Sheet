@@ -56,18 +56,18 @@ To typing equations in linear format use the following input language:
 
 Example: `[Alt + +]` `\sqrt·a+b·-c\cdot\alpha·` `[Alt + +]` renders as $\sqrt{a+b}-c\cdot\alpha$
 ## Number sets
-| Command    | Renders as   |
-| ---------- | ------------ |
-| `\doubleC` | $\mathbb{C}$ |
-| `\doubleN` | $\mathbb{N}$ |
-| `\doubleQ` | $\mathbb{Q}$ |
-| `\doubleR` | $\mathbb{R}$ |
-| `\doubleZ` | $\mathbb{Z}$ |
+| Example input | Renders as   |
+| ------------- | ------------ |
+| `\doubleC`    | $\mathbb{C}$ |
+| `\doubleN`    | $\mathbb{N}$ |
+| `\doubleQ`    | $\mathbb{Q}$ |
+| `\doubleR`    | $\mathbb{R}$ |
+| `\doubleZ`    | $\mathbb{Z}$ |
 
 ## Quotient
 > ⟨dividend⟩`/`⟨divisor⟩
 
-| Example Input      | Renders as                            | Format      |
+| Example input      | Renders as                            | Format      |
 | ------------------ | ------------------------------------- | ----------- |
 | `dx/a+b·`          | $\displaystyle\frac{dx}{a+b}$         | UnicodeMath |
 | `y^2·/\partial·x·` | $\displaystyle\frac{y^2}{\partial x}$ | UnicodeMath |
@@ -77,7 +77,7 @@ Example: `[Alt + +]` `\sqrt·a+b·-c\cdot\alpha·` `[Alt + +]` renders as $\sqrt
 > `\int`⟨interval⟩⟨integrand⟩ [⟨with respect to⟩]
 - Press `[Right]` to leave the ⟨integrand⟩ as it opens a new scope
 - Type `\int··` for indefinite integral which skips the ⟨interval⟩
-    | Example Input        | Renders as                        |
+    | Example input        | Renders as                        |
     | -------------------- | --------------------------------- |
     | `\int·_a^b·f(x)·→dx` | $\displaystyle\int_a^b{f(x)}\ dx$ |
     | `\int··f(x)·→dx`     | $\displaystyle\int{f(x)}\ dx$     |
@@ -88,7 +88,7 @@ Example: `[Alt + +]` `\sqrt·a+b·-c\cdot\alpha·` `[Alt + +]` renders as $\sqrt
 > `@` starts a new row    
 - Enclosing Delimiter:  
     _Github cannot yet display inline matrices correctly_
-    | Delimiter                         | OneNote markup                 | Renders as                                               |
+    | Delimiter                         | Example input                  | Renders as                                               |
     | --------------------------------- | ------------------------------ | -------------------------------------------------------- |
     | Plain                             | `\matrix(1&2@a&b)·`            | $\begin{matrix}1&2\\a&b\end{matrix}$                     |
     | Parentheses <br> _round brackets_ | `\pmatrix(1&2@a&b)·`           | $\begin{pmatrix}1&2\\a&b\end{pmatrix}$                   |
@@ -98,7 +98,7 @@ Example: `[Alt + +]` `\sqrt·a+b·-c\cdot\alpha·` `[Alt + +]` renders as $\sqrt
     | Norm <br> _double pipes_          | `\Vmatrix(1&2@a&b)·`           | $\begin{Vmatrix}1&2\\a&b\end{Vmatrix}$                   |
     | Custom Delimiter                  | `\langle·\matrix(1&2@a&b)·\|·` | $\left\langle\begin{matrix}1&2\\a&b\end{matrix}\right\|$ |
 - Display Style:
-    | Style                                    | OneNote markup              | Renders as                         |
+    | Style                                    | Example input               | Renders as                         |
     | ---------------------------------------- | --------------------------- | ---------------------------------- |
     | typeset in **paragraphs**                | `\textstyle·a=1/2·`         | $\textstyle a=\frac{1}{2}$         |
     | typeset on lines by **themselves**       | `\displaystyle·a=1/2·`      | $\displaystyle a=\frac{1}{2}$      |
