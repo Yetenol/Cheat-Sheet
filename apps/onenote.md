@@ -56,7 +56,7 @@ To typing equations in linear format use the following input language:
 
 Example: `[Alt + +]` `\sqrt·a+b·-c\cdot\alpha·` `[Alt + +]` renders as $\sqrt{a+b}-c\cdot\alpha$
 ## Number sets
-| Command    | Rendering    |
+| Command    | Renders as   |
 | ---------- | ------------ |
 | `\doubleC` | $\mathbb{C}$ |
 | `\doubleN` | $\mathbb{N}$ |
