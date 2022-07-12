@@ -1,6 +1,10 @@
-# Symbols
+<h1> Symbols </h1>
+
 [⌂](../README.md) › [LaTeX](../README.md#latex) ›
+
 > Commands for Mathematical Expressions, Symbols, Operators and Relations
+
+Table of Contens
 - [Favorites](#favorites)
 - [Non-Mathematical Symbols](#non-mathematical-symbols)
 - [Currencies](#currencies)

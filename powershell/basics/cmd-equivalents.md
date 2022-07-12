@@ -1,6 +1,10 @@
-# CMD (Batch) equivalents
+<h1> CMD (Batch) equivalents </h1>
+
 [⌂](../../README.md) › [PowerShell](../../README.md#powershell) ›
+
 > examples of bash commands and how to do the same thing in PowerShell
+
+Table of Contens
 - [Echo](#echo)
 - [Execute a Script](#execute-a-script)
 - [Comments](#comments)

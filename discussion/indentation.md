@@ -1,6 +1,10 @@
-# Indentation: Tabs vs Spaces
+<h1> Indentation: Tabs vs Spaces </h1>
+
 [⌂](../README.md) ([Discussions](../README.md#discussions)) ›  
+
 > GDB Command Line Arguments
+
+Table of Contens
 - [Spaces](#spaces)
 - [Tabs](#tabs)
 - [Sources](#sources)
