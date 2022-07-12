@@ -1,6 +1,8 @@
-# Microsoft OneNote
+<h1> Microsoft OneNote </h1>
+
 [⌂](../README.md) ([Apps](../README.md#applications)) ›
 
+Table of Contents
 - **[Keyboard Shortcuts](#keyboard-shortcuts)**  
     Links to Keyboard Shortcut Lists  
     Apply _Heading 1_ | `[Ctrl + Alt + 2]`

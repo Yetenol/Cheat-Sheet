@@ -1,5 +1,8 @@
-# Floating Bodies
+<h1> Floating Bodies </h1>
+
 [⌂](../README.md) › [LaTeX](../README.md#latex) ›
+
+Table of Contents
 - **[Tables ›](tables.md)**  
     Auto-Stretching Columns | `S[table-format = -3.0e-1]`
 - [Placement Specifiers](#placement-specifiers)

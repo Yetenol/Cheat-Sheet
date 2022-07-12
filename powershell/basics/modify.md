@@ -1,7 +1,15 @@
-# Data modifications
+<h1> Data modifications </h1>
+
 [⌂](../../README.md) › [PowerShell](../../README.md#powershell) ›
 
-- Knowledge requirements: [Pipeline](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_pipelines)
+> Knowledge requirements: [Pipeline](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_pipelines)
+
+Table of Contents
+- [Diagnose](#diagnose)
+- [Limit data set](#limit-data-set)
+- [Properties (columns)](#properties-columns)
+- [Sort](#sort)
+
 
 Everything in PowerShell is already or becomes a .NET object. Therefore, you should be familiar with how to handle and analyze them. Objects are easiest to visualize as text tables, but keep in mind that the entries themselves can also be objects.
 

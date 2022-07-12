@@ -1,5 +1,8 @@
-# File Templates
+<h1> File Templates </h1>
+
 [⌂](../README.md) › [LaTeX](../README.md#latex) ›
+
+Table of Contents
 - [Preamble](#preamble)
 - [Package requirements](#package-requirements)
 - [Layout](#layout)

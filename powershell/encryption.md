@@ -1,4 +1,5 @@
-# Encryption
+<h1> Encryption </h1>
+
 [⌂](../README.md) › [PowerShell](../README.md#powershell) ›
 
 - The data is encrypted using the Windows Data Protection API (DPAPI).

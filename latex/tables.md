@@ -1,5 +1,8 @@
-# Tables
+<h1> Tables </h1>
+
 [⌂](../README.md) › [LaTeX](../README.md#latex) › [Floating Bodies](floats.md) ›
+
+Table of Contents
 - [Column types](#column-types)
 - [Auto-stretching columns table](#auto-stretching-columns-table)
 - [Number table](#number-table)

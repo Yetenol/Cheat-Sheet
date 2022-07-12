@@ -1,6 +1,10 @@
-# Settings app pages
+<h1> Settings app pages </h1>
+
 [⌂](../README.md) › [Windows](../README.md#windows) ›
+
 > ms-settings URIs used to open various pages of the Settings app
+
+Table of Contents
 - [Settings home page](#settings-home-page)
 - [System](#system)
 - [Devices](#devices)

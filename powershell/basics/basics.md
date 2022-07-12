@@ -1,6 +1,8 @@
-# Getting Started
+<h1> Getting Started </h1>
+
 [⌂](../../README.md) › [PowerShell](../../README.md#powershell) ›
 
+Table of Contents
 - **[Data Types ›](data-types.md)**  
     Hashtable | `[DateTime]::Now`
 
