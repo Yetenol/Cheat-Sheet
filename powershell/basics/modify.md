@@ -2,7 +2,6 @@
 
 [⌂](../../README.md) › [PowerShell](../../README.md#powershell) ›
 
-> Knowledge requirements: [Pipeline](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_pipelines)
 
 Table of Contents
 - [Diagnose](#diagnose)
@@ -10,6 +9,9 @@ Table of Contents
 - [Properties (columns)](#properties-columns)
 - [Sort](#sort)
 
+
+An understanding of [pipelines](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_pipelines)
+is required. 
 
 Everything in PowerShell is already or becomes a .NET object. Therefore, you should be familiar with how to handle and analyze them. Objects are easiest to visualize as text tables, but keep in mind that the entries themselves can also be objects.
 
