@@ -1,4 +1,5 @@
-# Java
+<h1> Java </h1>
+
 [⌂](../README.md) ([Languages](../README.md#languages-encodings)) ›
 
 # Datentypen

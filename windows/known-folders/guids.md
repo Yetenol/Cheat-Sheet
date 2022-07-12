@@ -2,10 +2,17 @@
 
 [⌂](../../README.md) › [Windows](../../README.md#windows) › [Known Folders](known-folders.md) ›
 
-> - shortcuts to special OS folders or panels
-> - referenced using a [**CLSID keys**](https://docs.microsoft.com/de-de/windows/win32/com/clsid-key-hklm?redirectedfrom=MSDN) 
+> Referenced using a [**CLSID keys**](https://docs.microsoft.com/de-de/windows/win32/com/clsid-key-hklm?redirectedfrom=MSDN) 
 >   (globally unique identifier that identifies a COM class object)
-> - [Archive of old GUIDs ❯](guids-archive.md)
+
+Table of Contents
+- **[Archive of old GUIDs](guids-archive.md)**  
+  3D Objects | `shell:::{�}`
+- [Usage](#usage)
+- [List of GUIDS](#list-of-guids)
+- [Sources](#sources)
+
+## Usage
 
 - **Open a shortcut**  
   run one of the following:
@@ -198,7 +205,7 @@
 | Work Folders                                                           | `shell:::{ECDB0924-4208-451E-8EE0-373C0956DE16}`                                                                |
 
 
-# Sources
+## Sources
 
 - 2021-08-13: [CLSID Key (GUID) Shortcuts List for Windows 10 - Tutorials](https://www.tenforums.com/tutorials/3123-clsid-key-guid-shortcuts-list-windows-10-a.html)
 - 2021-08-13: [Windows 10 User Shell Folders Restore Default Paths - Winhelponline](https://www.winhelponline.com/blog/windows-10-shell-folders-paths-defaults-restore/)

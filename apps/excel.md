@@ -1,4 +1,5 @@
-# Microsoft Excel
+<h1> Microsoft Excel </h1>
+
 [⌂](../README.md) ([Apps](../README.md#applications)) ›
 
 ## Set common names

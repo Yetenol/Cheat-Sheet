@@ -1,7 +1,11 @@
-# Dll commands
+<h1> Dll commands </h1>
+
 [⌂](../README.md) › [Windows](../README.md#windows) ›
--[Control Panels and their Tabs](#control-panels-and-their-tabs)
--[Other Dynamic Link Libraries](#other-dynamic-link-libraries)
+
+Table of Contents
+- [Control Panels and their Tabs](#control-panels-and-their-tabs)
+- [Other Dynamic Link Libraries](#other-dynamic-link-libraries)
+- [Sources](#sources)
 
 ## Control Panels and their Tabs
 
@@ -69,5 +73,5 @@
 | Netzwerklaufwerk verbinden, Dialog öffnen                                                                                                      | `rundll32 shell32.dll,SHHelpShortcuts_RunDLL Connect`                                           |
 
 
-# Sources
+## Sources
 - 2021-09-02: [Funktionen-Befehle der Dateien RUNDLL.EXE und RUNDLL32.EXE](http://www.winfaq.de/faq_html/Content/tip0500/onlinefaq.php?h=tip0564.htm)

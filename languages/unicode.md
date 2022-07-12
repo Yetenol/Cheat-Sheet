@@ -1,4 +1,5 @@
-# Unicode
+<h1> Unicode </h1>
+
 [⌂](../README.md) ([Languages](../README.md#languages-encodings)) ›
 
 ## Useful characters

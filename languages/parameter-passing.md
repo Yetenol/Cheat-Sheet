@@ -1,4 +1,5 @@
-# Passing Parameters to Functions
+<h1> Passing Parameters to Functions </h1>
+
 [⌂](../README.md) ([Languages](../README.md#languages-encodings)) ›
 
 ## Pass-by-Value

@@ -4,7 +4,7 @@
 
 > GDB Command Line Arguments
 
-Table of Contens
+Table of Contents
 - [Spaces](#spaces)
 - [Tabs](#tabs)
 - [Sources](#sources)

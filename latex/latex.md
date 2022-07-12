@@ -1,4 +1,5 @@
-# Getting Started
+<h1> Getting Started </h1>
+
 [⌂](../README.md) › [LaTeX](../README.md#latex) ›
 
 ## Project Structure

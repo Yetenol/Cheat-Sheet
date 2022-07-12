@@ -4,7 +4,7 @@
 
 > Commands for Mathematical Expressions, Symbols, Operators and Relations
 
-Table of Contens
+Table of Contents
 - [Favorites](#favorites)
 - [Non-Mathematical Symbols](#non-mathematical-symbols)
 - [Currencies](#currencies)

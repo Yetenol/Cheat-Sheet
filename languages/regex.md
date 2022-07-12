@@ -4,7 +4,7 @@
 
 > .Net Implementation
 
-Table of Contens
+Table of Contents
 - [☟ Miscellaneous Constructs](#miscellaneous-constructs)
 - [☟ Engine Interpretation Options](#engine-interpretation-options)
 - [☟ Single Characters](#single-characters)
