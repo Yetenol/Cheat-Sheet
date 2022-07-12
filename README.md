@@ -1,7 +1,11 @@
-# Documentation ![GitHub last commit](https://img.shields.io/github/last-commit/yetenol/doc?color=white)
+<h1> Documentation <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/yetenol/doc?color=white"></h1>
+
 [⌂](README.md) Home
+
 > This project contains all my documentations of my developer life. 
 > This includes code templates, tips and tricks, cheat sheets and glossaries.
+
+Table of Contents
 - [Windows](#windows)
 - [Powershell](#powershell)
 - [LaTeX](#latex)
