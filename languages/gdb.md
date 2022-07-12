@@ -1,5 +1,7 @@
-# GNU Debugger
+<h1> GNU Debugger </h1>
+
 [⌂](../README.md) ([Languages](../README.md#languages-encodings)) › C ›
+
 > GDB Command Line Arguments
 
 ## Help

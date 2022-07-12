@@ -1,5 +1,7 @@
-# OS Panels, Folders
+<h1> OS Panels, Folders </h1>
+
 [⌂](../../README.md) › [Windows](../../README.md#windows) › [Known Folders](known-folders.md) ›
+
 > - shortcuts to special OS folders or panels
 > - referenced using a [**CLSID keys**](https://docs.microsoft.com/de-de/windows/win32/com/clsid-key-hklm?redirectedfrom=MSDN) 
 >   (globally unique identifier that identifies a COM class object)

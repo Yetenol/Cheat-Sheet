@@ -1,5 +1,7 @@
-# Datapacks
+<h1> Datapacks </h1>
+
 [⌂](../README.md) ([Languages](../README.md#languages-encodings)) › Minecraft ›
+
 > usefull mcfunction commands
 
 ### Create leash between two entities

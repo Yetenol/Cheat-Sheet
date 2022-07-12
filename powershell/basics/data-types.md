@@ -1,5 +1,7 @@
-# Data types
+<h1> Data types </h1>
+
 [⌂](../../README.md) › [PowerShell](../../README.md#powershell) ›
+
 > examples for common data types
 
 | Examples                                                                                                                    | .GetType()-Names                                                                                                                                      |

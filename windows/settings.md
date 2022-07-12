@@ -23,7 +23,7 @@ Table of Contents
 - [Update & security](#update--security)
 - [Mixed reality](#mixed-reality)
 - [Surface Hub](#surface-hub)
-
+- [Sources](#sources)
 
 
 ## Settings home page
@@ -320,7 +320,7 @@ Table of Contents
 | Session cleanup        | `ms-settings:surfacehub-sessioncleanup`   |
 | Welcome screen         | `ms-settings:surfacehub-welcome`          |
 
-# Sources
+## Sources
 
 - 2021-08-13: [List of `ms-settings` URI commands to open specific settings in Windows 10 – 4sysops](https://4sysops.com/wiki/list-of-ms-settings-uri-commands-to-open-specific-settings-in-windows-10/history/?revision=1555539)
 - 2021-11-19: [ms-settings: URI scheme reference](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference)

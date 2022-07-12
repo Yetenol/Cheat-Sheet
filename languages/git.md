@@ -1,5 +1,7 @@
-# Git
+<h1> Git </h1>
+
 [⌂](../README.md) ([Languages](../README.md#languages-encodings)) ›
+
 > - software for tracking changes in any set of files
 > - works best for non-binary text files
 

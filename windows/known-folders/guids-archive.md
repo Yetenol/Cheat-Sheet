@@ -1,5 +1,7 @@
-# GUIDs Archive
+<h1> GUIDs Archive </h1>
+
 [⌂](../../README.md) › [Windows](../../README.md#windows) › [Known Folders](known-folders.md) ›
+
 > - archive of GUID shortcuts that might still work
 > - shortcuts to special OS folders or panels
 > - referenced using a [**CLSID keys**](https://docs.microsoft.com/de-de/windows/win32/com/clsid-key-hklm?redirectedfrom=MSDN) 
