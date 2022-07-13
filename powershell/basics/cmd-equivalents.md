@@ -39,54 +39,43 @@ Table of Contents
 ## Echo
 Write text to the screen.
 
-### Bash
-
-```bash
-echo "Hello, World!"
-echo -e "Hello, \t World!"
-```
-
-### PowerShell
-
-```powershell
-Write-Output 'Hello, World!'
-Write-Output "Hello, `t World!"
-# Alias is also echo
-echo 'Hello, World!'
-```
-
+- **Bash**
+    ```bash
+    echo "Hello, World!"
+    echo -e "Hello, \t World!"
+    ```
+- **PowerShell**
+    ```powershell
+    Write-Output 'Hello, World!'
+    Write-Output "Hello, `t World!"
+    # Alias is also echo
+    echo 'Hello, World!'
+    ```
 
 ## Execute a Script
 Save and execute a script with bash and PowerShell.
 
-### Bash
+- **Bash**
+    Assume that `echo1.sh` has the following contents.
+    ```bash
+    echo "Hello, World!"
+    ```
 
-Assume that `echo1.sh` has the following contents.
+    You would the execute it with the following command line.
+    ```bash
+    bash echo1.sh
+    ```
 
-```bash
-echo "Hello, World!"
-```
+- **PowerShell**
+    Assume `echo1.ps1` has the following contents.
+    ```powershell
+    Write-Output "Hello, World!"
+    ```
 
-You would the execute it with the following command line.
-
-```bash
-bash echo1.sh
-```
-
-### PowerShell
-
-Assume `echo1.ps1` has the following contents.
-
-```powershell
-Write-Output "Hello, World!"
-```
-
-You would then execute it with the following command line.
-
-```bash
-pwsh echo1.ps1
-```
-
+    You would then execute it with the following command line.
+    ```bash
+    pwsh echo1.ps1
+    ```
 
 ## Comments
 Comments are the same in PowerShell and bash.
