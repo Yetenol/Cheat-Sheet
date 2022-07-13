@@ -1,30 +1,30 @@
-<h1> FileSystem - Interactions </h1>
+<h1> File System Interactions </h1>
 
 [⌂](../../README.md) › [PowerShell](../../README.md) ›
 
 Table of Contents
-- **[Import ›](import.md)**  
+- **[Import](import.md)**  
     extract data from files  
     parse using regular expressions  
-
-- **[Export ›](export.md)**  
+- **[Export](export.md)**  
     visualize date  
     export to different filetypes  
-
-- **[Links ›](links.md)**  
+- **[Links](links.md)**  
     create shell, symbolic or hard links and junctions  
-
-- **[Attributes ›](attributes.md)**  
+- **[Attributes](attributes.md)**  
     get, set and test file, folder attributes  
     set ReadOnly, Archived, OneDrive AlwaysOnDevice, ...  
-
-- **[Meta data ›](metadata.md)**  
+- **[Meta data](metadata.md)**  
     get additional file metadata  
-
-- **[Web ›](web.md)**  
+- **[Web](web.md)**  
     download files, archives  
-----------
+- [Windows Explorer](#windows-explorer)
+- [File modification](#file-modification)
+  - [Set _Run as Administrator_ flag](#set-run-as-administrator-flag)
+- [File Information](#file-information)
+- [Sources](#sources)
 
+Example content:
 ```powershell
 $file = ".\example.txt"
 $tool = "$env:SystemRoot\System32\notepad.exe"
@@ -32,16 +32,17 @@ $tool = "$env:SystemRoot\System32\notepad.exe"
 
 # Windows Explorer
 
-- Open current folder
+- **Open current folder**
     ```powershell
     Invoke-Item -Path .
     ```
     ```powershell
     explorer (Resolve-Path .) # can only open one folder
     ```
-    > DIRTY CODE: `ii .`
+    > Dirty version:  
+    > `ii .`
 
-- Select one file or folder
+- **Select** one **file** or **folder**
     ```powershell
     explorer "/select,`"$(Resolve-Path $file)`""
     ```
@@ -49,26 +50,26 @@ $tool = "$env:SystemRoot\System32\notepad.exe"
 
 # File modification
 
-## Set 0 KB or Create empty file
+- Set 0 KB or create **empty file**
+    ```powershell
+    Out-File -FilePath $file
+    ```
+    > Dirty version:  
+    > `Out-File $file`
 
-```powershell
-Out-File -FilePath $file
-```
-> DIRTY CODE: `Out-File $file`
 
+## Set _Run as Administrator_ flag
 
-## Run as administrator
+The flag is stored in byte `0x15` (= 21) at bit `0x20` (= 6).
 
-Flag is stored in byte `0x15` (= 21) at bit `0x20` (= 6).
-
-- Enable elevated execution
+- **Enable** elevated execution
     ```powershell
     $bytes = [System.IO.File]::ReadAllBytes((Resolve-Path $file))
     $bytes[0x15] = $bytes[0x15] -bor 0x20 
     [System.IO.File]::WriteAllBytes((Resolve-Path $file), $bytes)
     ```
 
-- Disable elevated execution
+- **Disable** elevated execution
     ```powershell
     $bytes = [System.IO.File]::ReadAllBytes((Resolve-Path $file))
     $bytes[0x15] = $bytes[0x15] -bxor 0x20
@@ -78,10 +79,10 @@ Flag is stored in byte `0x15` (= 21) at bit `0x20` (= 6).
 
 # File Information
 
-- [Get attributes](attributes.md)
-- [Get meta data](metadata.md)
+- [Get **attributes**](attributes.md)
+- [Get **meta data**](metadata.md)
 
-- Get version data of Windows components
+- Get **version data** of Windows components
     ```powershell
     [System.Diagnostics.FileVersionInfo]::GetVersionInfo($tool) | select *
     ```

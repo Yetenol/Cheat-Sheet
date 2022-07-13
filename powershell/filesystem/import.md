@@ -2,7 +2,16 @@
 
 [⌂](../../README.md) › [PowerShell](../../README.md) › [FileSystem](filesystem.md) ›
 
-# Type an input with the keyboard
+Table of Contents
+- [User Input](#user-input)
+- [.Net formatted file](#net-formatted-file)
+- [Plain text file](#plain-text-file)
+  - [Find Occurrences Of A Pattern](#find-occurrences-of-a-pattern)
+  - [Extract Data Using A Pattern](#extract-data-using-a-pattern)
+- [Sensitive input](#sensitive-input)
+  - [Decrypt locally](#decrypt-locally)
+
+# User Input
 
 ```powershell
 $User = Get-Host "Username"
@@ -10,7 +19,7 @@ $User = Get-Host "Username"
 
 # .Net formatted file
 
-> _Use xml files to keep the PowerShells Object formatting._
+> Use `.xml` files to preserve the PowerShells Object information.
 
 - Import an **object** from an .xml file:
 
@@ -65,7 +74,7 @@ $User = Get-Host "Username"
 
 ## Find Occurrences Of A Pattern
 
-> Quick [**Regular Expression**](../languages/regex.md) Reference for `-match` and `[RegEx]::`  
+> Quick [**Regular Expression**](../../languages/regex.md) Reference for `-match` and `[RegEx]::`  
 > `(?ENABLE-DISABLE)` [Interpretation Options](../languages/regex.md#engine-interpretation-options):  `i` IgnoreCase;  `n` ExplicitCapture;  `x` IgnorePatternWhitespace;  `m` Multiline;  `s` Singleline;  
 > `^` Start of line;  `$` End of line;  `.*` ≥0 character(s);  `.+` ≥0 character(s);  `\w*` Any word;  `\S*` Any non-whitespace;
 > `\s*` Any whitespace;  `(.*)` Unnamed group;     `(?<user>.*)` Named group called user
@@ -119,7 +128,7 @@ $pattern = "(?i)^user"
 
 ## Extract Data Using A Pattern
 
-> Quick [**Regular Expression**](../languages/regex.md) Reference for `-match` and `[RegEx]::`  
+> Quick [**Regular Expression**](../../languages/regex.md) Reference for `-match` and `[RegEx]::`  
 > `(?ENABLE-DISABLE)` [Interpretation Options](../languages/regex.md#engine-interpretation-options):  `i` IgnoreCase;  `n` ExplicitCapture;  `x` IgnorePatternWhitespace;  `m` Multiline;  `s` Singleline;  
 > `^` Start of line;  `$` End of line;  `.*` ≥0 character(s);  `.+` ≥0 character(s);  `\w*` Any word;  `\S*` Any non-whitespace;
 > `\s*` Any whitespace;  `(.*)` Unnamed group;     `(?<user>.*)` Named group called user
@@ -199,56 +208,61 @@ $pattern = "(?i)^user"
 
 # Sensitive input
 
-- <b> Don't save passwords as plain text </b>
-- Instead save them as a secure string and encrypt them locally.
+Don't save passwords as plain text.   
+Instead save them as a secure string and **encrypt** them **locally**.
 
-## Enter Sensitive Input Into The Console
+- **Input sensitive data** into the console
+  ```powershell
+  $securePassword = Read-Host "Password" -AsSecureString
+  ```
 
-```powershell
-$securePassword = Read-Host "Password" -AsSecureString
-```
+- Don't convert _plain text_ into _secure string_  
+  as the commands get logged.
+  ```powershell
+  $SecurePassword = ConvertTo-SecureString $PlainPassword -AsPlainText -Force
+  ```
 
 ## Decrypt locally
 
-- Only the <b>SAME INSTANCE</b> can decrypt. 
+Only the **same PowerShell instance** can decrypt. 
 
-> _The last line prevents memory leaks._
-$SecurePassword = ConvertTo-SecureString $PlainPassword -AsPlainText -Force
-```powershell
-function Decrypt-SecureString {
-  [CmdletBinding()]
-  param(
-    [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
-    $SecureObject
-  )
-  $type = ($SecureObject).getType()
-  if ($type -eq [System.Security.SecureString]) {
-    Write-Output ([System.Net.NetworkCredential]::new("", $SecureObject).Password)
-  } elseif ($type -eq [System.Management.Automation.PSCredential]) {
-    Decrypt-SecureString -SecureObject $SecureObject.Password
-  } else {
-    Write-Error ("A positional parameter cannot be found that accepts type [" + [string]$($SecureObject.GetType().FullName) + "]")
-  }
-}
-```
-
-```powershell
-function Decrypt-SecureString {
-  [CmdletBinding()]
-  param(
-    [Parameter(ParameterSetName='secureString', Position=0, ValueFromPipeline=$true)]
-    [System.Security.SecureString] $secureString
-    ,
-    [Parameter(ParameterSetName='credential', Position=0)]
-    [System.Management.Automation.PSCredential] $credential
-  )
-  switch ($PSCmdlet.ParameterSetName) {
-    'secureString' {
-      Write-Output ([System.Net.NetworkCredential]::new("", $secureString).Password)
-    }
-    'credential' {
-      Decrypt-SecureString -secureString $credential.Password
+- **Decrypt** a secure string
+  ```powershell
+  function Decrypt-SecureString {
+    [CmdletBinding()]
+    param(
+      [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
+      $SecureObject
+    )
+    $type = ($SecureObject).getType()
+    if ($type -eq [System.Security.SecureString]) {
+      Write-Output ([System.Net.NetworkCredential]::new("", $SecureObject).Password)
+    } elseif ($type -eq [System.Management.Automation.PSCredential]) {
+      Decrypt-SecureString -SecureObject $SecureObject.Password
+    } else {
+      Write-Error ("A positional parameter cannot be found that accepts type [" + [string]$($SecureObject.GetType().FullName) + "]")
     }
   }
-}
-```
+  ```
+
+- **Decrypt** a secure string or credential
+  ```powershell
+  function Decrypt-SecureString {
+    [CmdletBinding()]
+    param(
+      [Parameter(ParameterSetName='secureString', Position=0, ValueFromPipeline=$true)]
+      [System.Security.SecureString] $secureString
+      ,
+      [Parameter(ParameterSetName='credential', Position=0)]
+      [System.Management.Automation.PSCredential] $credential
+    )
+    switch ($PSCmdlet.ParameterSetName) {
+      'secureString' {
+        Write-Output ([System.Net.NetworkCredential]::new("", $secureString).Password)
+      }
+      'credential' {
+        Decrypt-SecureString -secureString $credential.Password
+      }
+    }
+  }
+  ```

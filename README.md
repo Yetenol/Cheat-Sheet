@@ -59,7 +59,7 @@ Table of Contents
     - **[Bash equivalents ›](powershell/basics/bash-equivalents.md)**  
         While Loop | `read name` ⟷ `$name = Read-Host -Prompt "Name"`
 
-- **[FileSystem Interactions ›](powershell/filesystem/filesystem.md)**  
+- **[File System Interactions ›](powershell/filesystem/filesystem.md)**  
     Run as administrator | ``explorer "/select,`"$(Resolve-Path $file)`""``
 
     - **[Import ›](powershell/filesystem/import.md)**  
