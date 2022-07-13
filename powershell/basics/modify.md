@@ -1,6 +1,6 @@
 <h1> Data modifications </h1>
 
-[⌂](../../README.md) › [PowerShell](../../README.md#powershell) ›
+[⌂](../../README.md) › [PowerShell](../../README.md#powershell) › [Getting Started](basics.md) ›
 
 
 Table of Contents

@@ -1,6 +1,6 @@
 <h1> Data types </h1>
 
-[⌂](../../README.md) › [PowerShell](../../README.md#powershell) ›
+[⌂](../../README.md) › [PowerShell](../../README.md#powershell) › [Getting Started](basics.md) ›
 
 > examples for common data types
 

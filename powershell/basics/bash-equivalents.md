@@ -1,6 +1,6 @@
 <h1> Bash equivalents </h1>
 
-[⌂](../../README.md) › [PowerShell](../../README.md#powershell) ›
+[⌂](../../README.md) › [PowerShell](../../README.md#powershell) › [Getting Started](basics.md) ›
 
 > examples of bash commands and how to do the same thing in PowerShell
 
