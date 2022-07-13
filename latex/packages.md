@@ -2,6 +2,12 @@
 
 [⌂](../README.md) › [LaTeX](../README.md#latex) ›
 
+Table of Contents
+- [Documentation](#documentation)
+- [Set Encoding](#set-encoding)
+- [Generate Placeholder Text](#generate-placeholder-text)
+- [Multiline comments](#multiline-comments)
+
 ## Documentation
 
 View package documentation

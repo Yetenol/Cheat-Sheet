@@ -2,6 +2,14 @@
 
 [⌂](../README.md) › [LaTeX](../README.md#latex) ›
 
+Table of Contents
+- [Document Classes](#document-classes)
+- [File Template](#file-template)
+- [Table Of Contents](#table-of-contents)
+- [Page Margins](#page-margins)
+- [Math Spacing](#math-spacing)
+- [Hyphenation](#hyphenation)
+
 ## Document Classes
 
 ```latex
@@ -35,8 +43,6 @@ Global formatting at **`setup/layout.tex`**
 \usepackage[margin=1.5cm]{geometry} % Set page margins
 \usepackage[top=2cm, bottom=2cm, left=3cm, right=1cm]{geometry} % Set page margins
 ```
-
-# Spacing
 
 ## Math Spacing
 

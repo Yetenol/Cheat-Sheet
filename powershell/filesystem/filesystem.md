@@ -3,20 +3,20 @@
 [⌂](../../README.md) › [PowerShell](../../README.md) ›
 
 Table of Contents
-- **[Import](import.md)**  
+- **[Import ›](import.md)**  
     extract data from files  
     parse using regular expressions  
-- **[Export](export.md)**  
+- **[Export ›](export.md)**  
     visualize date  
     export to different filetypes  
-- **[Links](links.md)**  
+- **[Links ›](links.md)**  
     create shell, symbolic or hard links and junctions  
 - **[Attributes](attributes.md)**  
     get, set and test file, folder attributes  
     set ReadOnly, Archived, OneDrive AlwaysOnDevice, ...  
-- **[Meta data](metadata.md)**  
+- **[Meta data ›](metadata.md)**  
     get additional file metadata  
-- **[Web](web.md)**  
+- **[Web ›](web.md)**  
     download files, archives  
 - [Windows Explorer](#windows-explorer)
 - [File modification](#file-modification)
@@ -24,7 +24,7 @@ Table of Contents
 - [File Information](#file-information)
 - [Sources](#sources)
 
-Example content:
+Example content
 ```powershell
 $file = ".\example.txt"
 $tool = "$env:SystemRoot\System32\notepad.exe"

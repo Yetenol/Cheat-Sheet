@@ -2,28 +2,33 @@
 
 [⌂](../README.md) › [LaTeX](../README.md#latex) ›
 
+Table of Contents
+- [Project Structure](#project-structure)
+- [Debugging](#debugging)
+- [Numbers and quantities](#numbers-and-quantities)
+
 ## Project Structure
 
 - **`setup/`**
-	- **[`packages.tex`](templates.md#package-requirements)**  
+	- **[`packages.tex` ›](templates.md#package-requirements)**  
         Required packages | `\usepackage{}`
 	- **`definitions.tex`**  
         new commands, environments, columntypes | `\newcommand{}{}`
-	- **[`layout.tex`](templates.md#layout)**  
+	- **[`layout.tex` ›](templates.md#layout)**  
         global formatting, spacing, margins | `\hypersetup{colorlinks=true}`
 - **`src/`**  
     Resources, Image File, Table Content Files, Source Code Files, Attachments, Appendices
 - **`table/`**  
     Tables
-    - **[_table name_`.tex`](tables.md)**  
+    - **[_table name_`.tex` ›](tables.md)**  
         one table [float](floats.md) | `\begin{table}`
 - **`figure/`**  
     Images, Graphics
-    - **[_figure name_`.tex`](floats.md#images)**  
+    - **[_figure name_`.tex` ›](floats.md#images)**  
         one figure [float](floats.md) | `\begin{figure}`
 - **`listing/`**  
     Source Code Typesetting 
-    - **[_listing name_`.tex`](floats.md#source-code-listings)**  
+    - **[_listing name_`.tex` ›](floats.md#source-code-listings)**  
         one source code [float](floats.md) | `\lstinputlisting{}`
 - **`bib/`**  
     External References
@@ -32,10 +37,10 @@
 	- **_reference type_`.bib`**  
         letters or annex
 - **`text/`**  
-    - **[`headings.tex`](templates.md#headings)** structure of the headings  
-        Text headings | `\section{}`
+    - **[`headings.tex` ›](templates.md#headings)**  
+        Structure of the headings  | `\section{}`
 	- **_heading name_`.tex`**  
-        continuous text paragraphs | `\subsection{}`
+        Continuous text paragraphs | `\subsection{}`
 - **`sty/`**  
     Own Packages
   - **_package name_`.sty`**  

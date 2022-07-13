@@ -2,6 +2,11 @@
 
 [⌂](../../README.md) › [PowerShell](../../README.md) › [FileSystem](filesystem.md) ›
 
+Table of Contents
+- [Visualize](#visualize)
+- [File export](#file-export)
+
+Example content
 ```powershell
 $c = Get-Command
 ```

@@ -4,11 +4,12 @@
 
 Table of Contents
 - [Column types](#column-types)
-- [Auto-stretching columns table](#auto-stretching-columns-table)
-- [Number table](#number-table)
-- [Align custom delimiter tables](#align-custom-delimiter-tables)
+- [Table types](#table-types)
+  - [Auto-stretching columns table](#auto-stretching-columns-table)
+  - [Number table](#number-table)
+  - [Align custom delimiter tables](#align-custom-delimiter-tables)
 
-## Column types
+# Column types
 
 > Requirement [LaTeX.table](https://github.com/Yetenol/latex.table)
 

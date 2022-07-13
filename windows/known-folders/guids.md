@@ -6,7 +6,7 @@
 >   (globally unique identifier that identifies a COM class object)
 
 Table of Contents
-- **[Archive of old GUIDs](guids-archive.md)**  
+- **[Archive of old GUIDs ›](guids-archive.md)**  
   3D Objects | `shell:::{�}`
 - [Usage](#usage)
 - [List of GUIDS](#list-of-guids)

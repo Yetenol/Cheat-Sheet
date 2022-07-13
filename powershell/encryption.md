@@ -50,9 +50,6 @@
     $object
     ```
 
-
-
-
     ```
 	| ConvertTo-SecureString -AsPlainText -Force `
 	| ConvertFrom-SecureString `

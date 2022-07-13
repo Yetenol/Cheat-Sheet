@@ -2,9 +2,14 @@
 
 [⌂](../../README.md) › [PowerShell](../../README.md) › [FileSystem](filesystem.md) ›
 
+Table of Contents
+- [Create a shell link (shortcut)](#create-a-shell-link-shortcut)
+- [Symbolic links](#symbolic-links)
+- [Sources](#sources)
+
 ## Create a shell link (shortcut)
 
-- Create a shortcut in Startup
+- Create a shortcut in _Startup_
     ```powershell
     $env:Startup = (New-Object -ComObject Shell.Application).NameSpace('shell:Startup').Self.Path
 
@@ -45,6 +50,5 @@
     ```
 
 
-# Sources
-
+## Sources
 - 2022-04-25: [Create a desktop shortcut with Windows Script Host - Windows Client - Microsoft Docs](https://docs.microsoft.com/en-us/troubleshoot/windows-client/admin-development/create-desktop-shortcut-with-wsh)

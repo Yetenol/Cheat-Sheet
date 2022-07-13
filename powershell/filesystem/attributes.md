@@ -2,6 +2,13 @@
 
 [⌂](../../README.md) › [PowerShell](../../README.md) › [FileSystem](filesystem.md) ›
 
+Table of Contents
+- [.Net Attribute Flags](#net-attribute-flags)
+- [Modify Attributes](#modify-attributes)
+- [Examples](#examples)
+- [Other](#other)
+- [Sources](#sources)
+
 ## .Net Attribute Flags
 
 Attributes are bitwise combination of the following `[System.IO.FileAttributes]` fields:
@@ -112,7 +119,6 @@ $item = Get-Item -Path ".\example.txt"
     }
     ```
 
-# Sources
-
+## Sources
 - 2022-04-05 [FileAttributes Enum (System.IO) - Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/api/system.io.fileattributes?view=net-6.0)
 - 2022-04-05 [What does Directory and file Attributes - 525328, 525344 ,5248544 mean- - PowerShell](https://www.reddit.com/r/PowerShell/comments/sgsgpr/what_does_directory_and_file_attributes_525328/)

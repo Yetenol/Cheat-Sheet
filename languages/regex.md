@@ -5,22 +5,23 @@
 > .Net Implementation
 
 Table of Contents
-- [☟ Miscellaneous Constructs](#miscellaneous-constructs)
-- [☟ Engine Interpretation Options](#engine-interpretation-options)
-- [☟ Single Characters](#single-characters)
-- [☟ Control Characters](#control-characters)
-- [☟ Non-ASCII Codes](#non-ascii-codes)
-- [☟ Character Classes](#character-classes)
-- [☟ Quantifiers](#quantifiers)
-- [☟ Anchors](#anchors)
-- [☟ Groups](#groups)
-- [☟ Inline Options](#inline-options)
-- [☟ Backreferences](#backreferences)
-- [☟ Alternation](#alternation)
-- [☟ Substitution](#substitution)
-- [☟ Comments](#comments)
-- [☟ Supported Unicode Categories](#supported-unicode-categories)
-- [☟ .Net Operations](#net-operations)
+- [Miscellaneous Constructs](#miscellaneous-constructs)
+- [Engine Interpretation Options](#engine-interpretation-options)
+- [Single Characters](#single-characters)
+- [Control Characters](#control-characters)
+- [Non-ASCII Codes](#non-ascii-codes)
+- [Character Classes](#character-classes)
+- [Quantifiers](#quantifiers)
+- [Anchors](#anchors)
+- [Groups](#groups)
+- [Inline Options](#inline-options)
+- [Backreferences](#backreferences)
+- [Alternation](#alternation)
+- [Substitution](#substitution)
+- [Comments](#comments)
+- [Supported Unicode Categories](#supported-unicode-categories)
+- [.Net Operations](#net-operations)
+- [Sources](#sources)
 
 
 ## Miscellaneous Constructs
@@ -242,8 +243,7 @@ Table of Contents
 ## [.Net Operations](regex-dot-net.md)
 
 
-# Sources 
-
+## Sources 
 - 2022-01-26: [Quick Reference (MS Docs)](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference)
 - 2022-04-04: [Regular Expression Language - Quick Reference - Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference#regular-expression-options)
 - 2022-01-26: [Visual Studio (MS Docs)](https://docs.microsoft.com/en-us/visualstudio/ide/using-regular-expressions-in-visual-studio)

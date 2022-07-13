@@ -2,7 +2,7 @@
 
 [⌂](../../README.md) › [PowerShell](../../README.md) › [FileSystem](filesystem.md) ›
 
-```
+```powershell
 function Get-FileMetaData {
     <#
     .SYNOPSIS

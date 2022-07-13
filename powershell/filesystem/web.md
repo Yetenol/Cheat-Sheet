@@ -15,7 +15,7 @@ Invoke-WebRequest -Uri $url -OutFile $file -ErrorAction Stop
 explorer "/select,""$(Get-Item -Path $file)""" # suggest file
 ```
 
-## Download a file into %TEMP%
+## Download a file into _%TEMP%_
 
 ```powershell
 $url = "https://newsfeed.zeit.de"

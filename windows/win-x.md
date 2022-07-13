@@ -20,7 +20,6 @@ Vertical lines separate the context menu into 3 groups starting at the bottom.
 - 
 
 
-# Sources
-
+## Sources
 - 2022-04-25: [Totally unsupported hacks - Add Windows Terminal to the Win+X Shortcut menu - Scott Hanselman's Blog](https://www.hanselman.com/blog/totally-unsupported-hacks-add-windows-terminal-to-the-winx-shortcut-menu)
 - 2022-04-25: [The WinX Menu and its hashing algorithm - Rafael Rivera](https://www.withinrafael.com/2014/04/05/the-winx-menu-and-its-hashing-algorithm/)
