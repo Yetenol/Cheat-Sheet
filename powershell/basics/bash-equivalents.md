@@ -1,4 +1,4 @@
-<h1> CMD (Batch) equivalents </h1>
+<h1> Bash equivalents </h1>
 
 [⌂](../../README.md) › [PowerShell](../../README.md#powershell) ›
 

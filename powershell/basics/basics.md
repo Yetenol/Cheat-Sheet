@@ -9,7 +9,7 @@ Table of Contents
 - **[Modify data ›](modify.md)**  
     Add calculated property | `$list[	(0..1;-3..-1)]`
 
-- **[CMD equivalents ›](cmd-equivalents.md)**  
+- **[Bash equivalents ›](bash-equivalents.md)**  
     While Loop | `read name` <-> `$name = Read-Host -Prompt "Name"`
 
 ## Executable Scripts

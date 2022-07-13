@@ -56,7 +56,7 @@ Table of Contents
     - **[Modify data ›](powershell/basics/modify.md)**  
         Add calculated property | `$list[	(0..1;-3..-1)]`
 
-    - **[CMD equivalents ›](powershell/basics/cmd-equivalents.md)**  
+    - **[Bash equivalents ›](powershell/basics/bash-equivalents.md)**  
         While Loop | `read name` ⟷ `$name = Read-Host -Prompt "Name"`
 
 - **[FileSystem Interactions ›](powershell/filesystem/filesystem.md)**  
