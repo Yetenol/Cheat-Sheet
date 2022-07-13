@@ -2,6 +2,20 @@
 
 [⌂](../README.md) ([Languages](../README.md#languages-encodings)) ›
 
+Table of Contents
+- [Datentypen](#datentypen)
+  - [Typecasting](#typecasting)
+- [Functions](#functions)
+  - [Parameter Passing](#parameter-passing)
+    - [Method invocation](#method-invocation)
+- [Klassen](#klassen)
+  - [Konstructor](#konstructor)
+  - [Statische Methoden](#statische-methoden)
+  - [Datenübergabe](#datenübergabe)
+- [Objekte](#objekte)
+    - [Objekte kopieren](#objekte-kopieren)
+- [Sources](#sources)
+
 # Datentypen
 
 ## Typecasting

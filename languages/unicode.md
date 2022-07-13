@@ -2,6 +2,15 @@
 
 [⌂](../README.md) ([Languages](../README.md#languages-encodings)) ›
 
+Table of Contents
+- [Useful characters](#useful-characters)
+- [Character sorting](#character-sorting)
+  - [Top character choices](#top-character-choices)
+  - [Sorting differences](#sorting-differences)
+  - [Special sorting characters](#special-sorting-characters)
+- [Greek letters](#greek-letters)
+- [Sources](#sources)
+
 ## Useful characters
 | .   | Name           | Unicode | Alt code              |
 | --- | -------------- | ------- | --------------------- |
@@ -75,6 +84,5 @@
 | `Ω` | Omega       | U+03A9  | Alt 234  |
 
 
-# Sources
-
--2022-01-25 [Unicode Character Table](https://unicode-table.com/en/)
+## Sources
+- 2022-01-25 [Unicode Character Table](https://unicode-table.com/en/)

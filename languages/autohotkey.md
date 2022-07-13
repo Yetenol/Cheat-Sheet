@@ -4,6 +4,15 @@
 
 > Windows Automation scripting language
 
+Table of Contents
+- [1. Generell code structure](#1-generell-code-structure)
+- [1.1 Hotkeys](#11-hotkeys)
+- [Legacy syntax](#legacy-syntax)
+- [Expression syntax](#expression-syntax)
+- [Override existing instance when launched again](#override-existing-instance-when-launched-again)
+- [Set a windows taskbar icon](#set-a-windows-taskbar-icon)
+- [Get program stdout, stderr](#get-program-stdout-stderr)
+
 ## 1. Generell code structure
 ```ahk
 ^j::                    ; :: indicates a hotkey

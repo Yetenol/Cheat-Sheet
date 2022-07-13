@@ -4,6 +4,18 @@
 
 > GDB Command Line Arguments
 
+Table of Contents
+- [Help](#help)
+- [Break and Watch](#break-and-watch)
+- [Line Execution](#line-execution)
+- [Stack](#stack)
+- [Source Code](#source-code)
+- [Machine Language](#machine-language)
+- [Examine Variables](#examine-variables)
+- [GDB Modes](#gdb-modes)
+- [Start and Stop](#start-and-stop)
+- [Sources](#sources)
+
 ## Help
 
 | Option                         | Description                                                        |
@@ -129,6 +141,5 @@
 | `quit` <br> `q`                                                                | Exit GDB debugger.                                                                                                                               |
 
 
-# Sources
-
+## Sources
 - 2022-04-06 [Linux Tutorial - GNU GDB Debugger Command Cheat Sheet](http://www.yolinux.com/TUTORIALS/GDB-Commands.html)

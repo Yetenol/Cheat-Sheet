@@ -9,12 +9,12 @@ Table of Contents
 - [Tabs](#tabs)
 - [Sources](#sources)
 
-# Spaces
+## Spaces
 - A tab could be a different number of columns depending on your environment, but a space is always one column.
 - In terms of how many spaces (or tabs) constitutes indentation, it's more important to be consistent throughout your code than to use any specific tab stop value.
 
 
-# Tabs
+## Tabs
 
 - They're a character specifically meant for indentation
 - They allow developers with different preferences in indentation size to change how it's the code looks without changing the code (separation of data and presentation for the proverbial win!)
@@ -28,7 +28,7 @@ Table of Contents
 - take less time to go through.
 - tend to work better in IDEs.
 
-# Sources
+## Sources
 - 2022-06-14: [Style Guide for Python Code (PEP8)](https://peps.python.org/pep-0008/#indentation)
 - 2022-06-14: [Death to the Space Infidels!](https://blog.codinghorror.com/death-to-the-space-infidels/)
 - 2022-06-14: [Tabs versus Spaces: An Eternal Holy War](https://www.jwz.org/doc/tabs-vs-spaces.html)

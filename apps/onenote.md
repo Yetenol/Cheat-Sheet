@@ -9,12 +9,13 @@ Table of Contents
   - [Windows 10 App 🔗](https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-onenote-44b8b3f4-c274-4bcc-a089-e80fdcc87950#PickTab=Windows_10_app)
   - [Windows 🔗](https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-onenote-44b8b3f4-c274-4bcc-a089-e80fdcc87950#PickTab=Windows)
 - [Mathematical Typesetting](#mathematical-typesetting)
-  - [Input formats](#input-formats)
+  - [Supported input languages](#supported-input-languages)
   - [Basics](#basics)
   - [Number sets](#number-sets)
-  - [Derivatives](#derivatives)
+  - [Quotient](#quotient)
   - [Integral](#integral)
   - [Arrays and Matrices](#arrays-and-matrices)
+  - [Multiple equations](#multiple-equations)
 - [Sources](#sources)
 
 
@@ -120,8 +121,6 @@ Example: `[Alt + +]` `\sqrt·a+b·-c\cdot\alpha·` `[Alt + +]` renders as $\sqrt
   \frac{3}{x} &=6-1
   \end{align*}
   $$
-
-
 
 
 # Sources
