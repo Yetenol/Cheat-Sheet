@@ -7,7 +7,7 @@
 > (globally unique identifier that identifies a COM class object)
 
 Table of Contents
-- **[Current GUIDs ›](windows/known-folders/guids.md)**  
+- **[Current GUIDs ›](guids.md)**  
         Recycle Bin | `shell:::{�}`
 - [List of deprecated GUIDs](#list-of-deprecated-guids)
 - [Sources](#sources)

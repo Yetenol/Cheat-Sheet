@@ -34,7 +34,7 @@ Table of Contents
     Update-Help
     ```
 
-- Discover **available commands**[ᴰ](glossary.md#command)
+- Discover **available commands**
 	```powershell
 	Get-Command | where {$_.Name -Match "vpn"}
 	```

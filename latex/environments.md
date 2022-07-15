@@ -1,4 +1,6 @@
-# [⌂](../README.md) › [LaTeX](../README.md#latex) › **Environment**
+<h1> Environment </h1>
+
+[⌂](../README.md) › [LaTeX](../README.md#latex) › 
 
 > CAPITAL letters are ⟨placeholders⟩
 
