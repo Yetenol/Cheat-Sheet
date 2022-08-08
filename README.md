@@ -110,6 +110,9 @@ Table of Contents
 - **[Symbols ›](latex/symbols.md)**  
     Arrows | `\mathbb{NR}` → ℕℝ
 
+- **[Mathematics ›](latex/math.md)**  
+    Norm | 
+
 - **[Layout ›](latex/layout.md)**  
     Hyphenation | `\!` `\,` `\:` `\;` `\quad` `\qquad`
 
