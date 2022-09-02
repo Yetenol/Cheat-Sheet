@@ -19,8 +19,8 @@ Table of Contents
 - **[Web ›](web.md)**  
     download files, archives  
 - [Windows Explorer](#windows-explorer)
+- [Resolve path for external programs](#resolve-path-for-external-programs)
 - [File modification](#file-modification)
-  - [_Windows Explorer_ Copying UI](#windows-explorer-copying-ui)
   - [Set _Run as Administrator_ flag](#set-run-as-administrator-flag)
 - [File Information](#file-information)
 - [Sources](#sources)
@@ -48,24 +48,12 @@ $tool = "$env:SystemRoot\System32\notepad.exe"
     explorer "/select,`"$(Resolve-Path $file)`""
     ```
 
-
-# File modification
-
-- Set 0 KB or create **empty file**
-    ```powershell
-    Out-File -FilePath $file
-    ```
-    > Dirty version:  
-    > `Out-File $file`
-
-## _Windows Explorer_ Copying UI
-
 - **Copy** using _Windows Explorer_ UI  
     from `$source` to `$destination` with `$copyFlags`
 	```powershell
 	$objShell = New-Object -ComObject 'Shell.Application'    
-	$objFolder = $objShell.NameSpace((Get-Item $destination).FullName)
-	$objFolder.CopyHere((Get-Item $source).FullName, $copyFlags)
+	$objFolder = $objShell.NameSpace((Resolve-Path $destination).Path)
+	$objFolder.CopyHere((Resolve-Path $source).Path, $copyFlags)
 	```
 
     The `$copyFlags` are a bitwise combination of the following `vOptions` flags:
@@ -91,6 +79,27 @@ $tool = "$env:SystemRoot\System32\notepad.exe"
         ```powershell
         $copyFlags = 0x608
         ```
+
+# Resolve path for external programs
+
+- **Resolve** path for **existing** files or folders
+    ```powershell
+    Resolve-Path $file
+    ```
+
+- **Resolve** path files and folders that might **not exist**
+    ```powershell
+    $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath($file)
+    ```
+
+# File modification
+
+- Set 0 KB or create **empty file**
+    ```powershell
+    Out-File -FilePath $file
+    ```
+    > Dirty version:  
+    > `Out-File $file`
 
 ## Set _Run as Administrator_ flag
 
