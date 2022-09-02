@@ -74,7 +74,6 @@ Table of Contents
 ## Apps in PATH locations
 
 - List **all applications** in the **PATH** locations
-
     ```powershell
     $paths = [String[]] @($env:path -split ";") 
     $paths = $paths[0..($paths.Length-2)]

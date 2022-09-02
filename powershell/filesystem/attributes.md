@@ -37,6 +37,11 @@ Attributes are bitwise combination of the following `[System.IO.FileAttributes]`
 
 > ¹⁾ Non part of the official .Net documentation but official Windows behavior.
 
+- Example: combine _read only_ and _temporary_
+    ```powershell
+    $flags = [System.IO.FileAttributes]::ReadOnly + [System.IO.FileAttributes]::Temporary
+    ```
+
 ## Modify Attributes
 ```powershell
 $item = Get-Item -Path ".\example.txt"
