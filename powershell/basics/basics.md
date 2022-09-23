@@ -23,12 +23,12 @@ This bypasses the _Execution Policy_ for PowerShell scripts.
 
 - **Make** script executable  
     ```cmd
-    # & cls & powershell -Command "Invoke-Command -ScriptBlock ([ScriptBlock]::Create(((Get-Content """%0""") -join """`n""")))" & exit
+    # & cls & powershell -Command "Invoke-Command -ScriptBlock ([ScriptBlock]::Create(((Get-Content """%0""") -join [Environment]::NewLine)))" & exit
     # Script is executable when renamed *.cmd or *.bat
     ```
 - **Make** script executable and **persistent**
     ```cmd
-    # & cls & powershell -NoExit -Command "Invoke-Command -ScriptBlock ([ScriptBlock]::Create(((Get-Content """%0""") -join """`n""")))" & exit
+    # & cls & powershell -NoExit -Command "Invoke-Command -ScriptBlock ([ScriptBlock]::Create(((Get-Content """%0""") -join [Environment]::NewLine)))" & exit
     # Script is executable and persistent when renamed *.cmd or *.bat
     ```
 
