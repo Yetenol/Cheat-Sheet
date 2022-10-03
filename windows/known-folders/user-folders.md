@@ -16,10 +16,11 @@ Table of Contents
 
 - **Resolve one location**  
   return the location as a string
-
-    ```powershell
-    (Get-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders")."{374DE290-123F-4565-9164-39C4925E467B}"
-    ```
+  ```powershell
+  $env:Pictures = (New-Object -ComObject Shell.Application).NameSpace('shell:My Pictures').Self.Path
+  $env:Downloads = (New-Object -ComObject Shell.Application).NameSpace('shell:::{374DE290-123F-4565-9164-39C4925E467B}').Self.Path
+  ```
+  `$env:Pictures = (Get-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders")."My Pictures"`
 
 
 - **Default locations**  
@@ -74,10 +75,11 @@ Table of Contents
 
 - **Resolve one location**  
   return the location as a string:
-
-    ```powershell
-    (Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders")."Common AppData"
-    ```
+  ```powershell
+  $env:CommonStartMenu = (New-Object -ComObject Shell.Application).NameSpace('shell:Common Start Menu').Self.Path
+  $env:CommonDownloads = (New-Object -ComObject Shell.Application).NameSpace('shell:::{3D644C9B-1FB8-4f30-9B45-F670235F79C0}').Self.Path
+  ```
+  `$env:CommonStartMenu = (Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders")."Common Start Menu"`
 
 
 - **Default locations**

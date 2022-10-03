@@ -14,7 +14,7 @@ Table of Contents
 
 ## Usage
 
-- **Open a shortcut**  
+- **Open a location**  
   run one of the following:
   
     ```powershell
@@ -25,18 +25,11 @@ Table of Contents
     explorer /e,::{088e3905-0323-4b02-9826-5d99428e115f}
     ```
 
-- **Import a shortcut**  
+- **Resolve a location**  
   save the location as an environmental variable
   ```powershell
-  [Environment]::SetEnvironmentVariable("Desktop", (New-Object -ComObject Shell.Application).NameSpace('shell:Desktop').Self.Path)
-  $env:Desktop
+  $env:Downloads = (New-Object -ComObject Shell.Application).NameSpace('shell:::{088e3905-0323-4b02-9826-5d99428e115f}').Self.Path
   ```
-
-- **Resolve a shortcut**  
-  return the location as a string
-    ```powershell
-    (New-Object -ComObject Shell.Application).NameSpace('shell:::{088e3905-0323-4b02-9826-5d99428e115f}').Self.Path
-    ```
 
 ## List of GUIDS
 | Target                                                                 | GUID shortcut                                                                                                   |
