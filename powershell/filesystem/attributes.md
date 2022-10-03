@@ -92,18 +92,20 @@ $item = Get-Item -Path ".\example.txt"
   
     > `(Get-ChildItem).Attributes` doesn't work with ¹⁾ attributes
 
+
     ```powershell
-    Get-ChildItem `
-    | select -Property Name, `
-        @{Label="Value"; Expression={[int]$_.Attributes}}, `
-        @{Label="Attributes"; Expression={
-            foreach ($n in 0..30) {
-                [int]$value = [Math]::Pow(2, $n)
-                if ([bool]($_.Attributes -band $value)) {
-                    Write-Output ([Enum]::Parse([System.IO.FileAttributes], $value))
-                }
-            }
-        }}
+    Get-ChildItem | 
+    % { $value = [int]$_.Attributes
+        [PSCustomObject]@{
+        Name = $_.Name;
+        Value = $value;
+        Attributes = $(
+            0..30 | 
+            % { [Math]::Pow(2, $_) } |
+            ? { ($_ -band $value) -ne $false } | 
+            % { [Enum]::Parse([System.IO.FileAttributes], $_) }
+        )
+    }}
     ```
 
 ## Other
