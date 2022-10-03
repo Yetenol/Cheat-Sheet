@@ -25,9 +25,15 @@ Table of Contents
     explorer /e,::{088e3905-0323-4b02-9826-5d99428e115f}
     ```
 
+- **Import a shortcut**  
+  save the location as an environmental variable
+  ```powershell
+  [Environment]::SetEnvironmentVariable("Desktop", (New-Object -ComObject Shell.Application).NameSpace('shell:Desktop').Self.Path)
+  $env:Desktop
+  ```
+
 - **Resolve a shortcut**  
   return the location as a string
-
     ```powershell
     (New-Object -ComObject Shell.Application).NameSpace('shell:::{088e3905-0323-4b02-9826-5d99428e115f}').Self.Path
     ```
