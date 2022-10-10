@@ -131,7 +131,7 @@ Table of Contents
 - **[Java ›](languages/java.md)**  
 
 - **[Git ›](languages/git.md)**  
-    Commit History: Delete File | `git clone https://yetenol	github.com/yetenol/`
+    Delete binary from history | `git clone git@github.com:Yetenol/�.git`
 
 - **[Unicode ›](languages/unicode.md)**  
     Character Sorting | `!` `+` `Ξ`
