@@ -26,6 +26,40 @@
     }
     ```
 
+## Workflow
+
+- **squash** multiple commits into one before pushing
+    ```powershell
+    git rebase --interactive origin/HEAD
+    ```
+    
+- **push** my branch to remote's **main** branch
+    ```powershell
+    $currentBranch = (git branch --show-current).trim()
+    $mainBranch = (git symbolic-ref --short refs/remotes/origin/HEAD).replace("origin/","").trim()
+    git push origin $currentBranch":"$mainBranch
+    git fetch origin $mainBranch":"$mainBranch
+    ```
+    ```powershell
+    git push origin current:main
+    git fetch origin main:main
+    ```
+    > Dirty one-liner:  
+    > `git push origin $($(git branch --show-current).trim()+":"+(git symbolic-ref --short refs/remotes/origin/HEAD).replace("origin/",""))`
+
+- **push** current branch to remote's **current** and **main** branch
+    ```powershell
+    $currentBranch = (git branch --show-current).trim()
+    $mainBranch = (git symbolic-ref --short refs/remotes/origin/HEAD).replace("origin/","").trim()
+    git push origin $currentBranch":"$mainBranch $currentBranch
+    git fetch origin $mainBranch":"$mainBranch
+    ```
+    ```powershell
+    git push origin current:main current
+    git fetch origin main:main
+    ```
+
+
 ## Remove binaries from history
 > **Shrinks** the **repository size** by excluding files or folders from the commit history.  
 > **Rewrites** all **effected** commits and their children to erase a folder/file from their changes.  
