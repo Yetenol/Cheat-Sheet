@@ -61,18 +61,6 @@ git fetch origin $mainBranch":"$mainBranch
     > Dirty one-liner:  
     > `git push origin $($(git branch --show-current).trim()+":"+(git symbolic-ref --short refs/remotes/origin/HEAD).replace("origin/",""))`
 
-- **push** current branch to remote's **current** and **main** branch
-    ```powershell
-    $currentBranch = (git branch --show-current).trim()
-    $mainBranch = (git symbolic-ref --short refs/remotes/origin/HEAD).replace("origin/","").trim()
-    git push origin $currentBranch":"$mainBranch $currentBranch
-    git fetch origin $mainBranch":"$mainBranch
-    ```
-    ```powershell
-    git push origin current:main current
-    git fetch origin main:main
-    ```
-
 
 ## Remove binaries from history
 > **Shrinks** the **repository size** by excluding files or folders from the commit history.  
