@@ -26,8 +26,22 @@
     }
     ```
 
-## Workflow
+## Upload feature
+- `rebase`: review all feature commits 
+  - `reword`: rename commits
+  - `fixup`: combine commits into a single one
+- `push`: upload current branch to remote
+- `push`: integrate current branch into remote's main branch
+- `fetch`: download remote branches
+```powershell
+git rebase --interactive origin/main
+$currentBranch = (git branch --show-current).trim()
+$mainBranch = (git symbolic-ref --short refs/remotes/origin/HEAD).replace("origin/","").trim()
+git push origin $currentBranch":"$mainBranch $currentBranch
+git fetch origin $mainBranch":"$mainBranch
+```
 
+## Branch handling
 - **squash** multiple commits into one before pushing
     ```powershell
     git rebase --interactive origin/HEAD
