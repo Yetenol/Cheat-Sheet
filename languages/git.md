@@ -34,11 +34,11 @@
 - `push`: integrate current branch into remote's main branch
 - `fetch`: download remote branches
 ```powershell
-git rebase --interactive origin/main
 $currentBranch = (git branch --show-current).trim()
 $mainBranch = (git symbolic-ref --short refs/remotes/origin/HEAD).replace("origin/","").trim()
-git push origin $currentBranch":"$mainBranch $currentBranch
-git fetch origin $mainBranch":"$mainBranch
+git rebase --interactive origin/$mainBranch
+git push origin $currentBranch":"$mainBranch
+git pull origin $mainBranch":"$mainBranch
 ```
 
 ## Branch handling
@@ -51,8 +51,9 @@ git fetch origin $mainBranch":"$mainBranch
     ```powershell
     $currentBranch = (git branch --show-current).trim()
     $mainBranch = (git symbolic-ref --short refs/remotes/origin/HEAD).replace("origin/","").trim()
+    git rebase --interactive origin/$mainBranch
     git push origin $currentBranch":"$mainBranch
-    git fetch origin $mainBranch":"$mainBranch
+    git pull origin $mainBranch":"$mainBranch
     ```
     ```powershell
     git push origin current:main
