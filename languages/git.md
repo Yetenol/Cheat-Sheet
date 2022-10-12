@@ -40,6 +40,13 @@ git rebase --interactive origin/$mainBranch
 git push origin $currentBranch":"$mainBranch
 git pull origin $mainBranch":"$mainBranch
 ```
+In case main changed and changes have to be merged, do so and run
+```powershell
+git rebase --continue
+git push origin $currentBranch":"$mainBranch
+git pull origin $mainBranch":"$mainBranch
+```
+
 
 ## Branch handling
 - **squash** multiple commits into one before pushing
