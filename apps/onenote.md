@@ -3,7 +3,7 @@
 [⌂](../README.md) ([Apps](../README.md#applications)) ›
 
 Table of Contents
-- **[Keyboard Shortcuts](#keyboard-shortcuts)**  
+- **[Keyboard Shortcuts 🔗](https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-onenote-44b8b3f4-c274-4bcc-a089-e80fdcc87950)**  
     Links to Keyboard Shortcut Lists  
     Apply _Heading 1_ | `[Ctrl + Alt + 2]`
   - [Windows 10 App 🔗](https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-onenote-44b8b3f4-c274-4bcc-a089-e80fdcc87950#PickTab=Windows_10_app)
