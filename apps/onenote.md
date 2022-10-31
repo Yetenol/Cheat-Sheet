@@ -15,6 +15,7 @@ Table of Contents
   - [Quotient](#quotient)
   - [Integral](#integral)
   - [Arrays and Matrices](#arrays-and-matrices)
+  - [Cases](#cases)
   - [Multiple equations](#multiple-equations)
 - [Sources](#sources)
 
@@ -108,6 +109,11 @@ Example: `[Alt + +]` `\sqrt·a+b·-c\cdot\alpha·` `[Alt + +]` renders as $\sqrt
     | typeset on lines by **themselves**       | `\displaystyle·a=1/2·`      | $\displaystyle a=\frac{1}{2}$      |
     | **sub**scripts or **sup**erscripts       | `\scriptstyle·a=1/2·`       | $\scriptstyle a=\frac{1}{2}$       |
     | **2nd-order** subscripts or superscripts | `\scriptscriptstyle·a=1/2·` | $\scriptscriptstyle a=\frac{1}{2}$ |
+
+## Cases
+
+- type `\left·{\matrix(0&t>0@1&t=0)·\right·`
+- delete the \left character
 
 ## Multiple equations
 > `\eqarray(`⟨equations⟩`)`  
