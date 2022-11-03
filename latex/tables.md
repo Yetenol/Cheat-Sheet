@@ -102,9 +102,9 @@ Table of Contents
     Globally define column titles as macros to ensure consistent symbols throughout the document.  
     `\input` the file into the [document preamble](latex.md#preamble).
     ```latex
-    \newmathsymbol{\SYMBOLA}{f_\mathrm{E}}
-    \newmathsymbol{\SYMBOLB}{U_\mathrm{E}}
-    \newmathsymbol{\SYMBOLC}{U_\mathrm{R,pp}}
+    \newmathsnippet{\SYMBOLA}{f_\mathrm{E}}
+    \newmathsnippet{\SYMBOLB}{U_\mathrm{E}}
+    \newmathsnippet{\SYMBOLC}{U_\mathrm{R,pp}}
     ```
 
 - **Table body** in `src/measured-values.tex`  
