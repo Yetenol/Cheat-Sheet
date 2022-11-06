@@ -73,40 +73,26 @@ Table of Contents
 ## Currencies
 > `€`, `\$`, `pounds` and `\yen` are not recommended
 
-| Command                          | Rendering | Variants | Dependency |
-| -------------------------------- | --------- | -------- | ---------- |
-| `\texteuro{}`                    | $€$       | €€€€     |
-| `\textdollar{}`                  | $         |
-| `\textsterling{}`                | £         |
-| `\textyen{}`                     | ¥         |
-| `\qty{5}{\text\texteuro}`        | 15 €      |          | siunitx    |
-| `\qty{15}[\text\textdollar]{}`   | $15       |          | siunitx    |
-| `\qty{15}[\text\textsterling]{}` | £15       |          | siunitx    |
-| `\qty{15}[\text\textyen]{}`      | ¥15       |          | siunitx    |
+- **Define currencies** in the preamble  
+  ```latex
+  \DefineCurrency{EUR}{name={euro}, plural={euros}, symbol={\euro}, iso={EUR}}
+  \DefineCurrency{USD}{name={dollar}, plural={dollars}, symbol={\$}, iso={USD}, pre=true}
+  \DefineCurrency{JPY}{name={yen}, plural={yens}, symbol={\textyen}, iso={JPY}, cents=false}
+  \DefineCurrency{GBP}{name={pound}, plural={pounds}, symbol={\pounds}, iso={GBP}, pre=true}
+  \CurrencySetup{kind=symbol}
+  ```
+  See further [options](https://texdoc.org/serve/currency/0) or set decimal marker inside `\sisetup{locale=DE}`
 
-
-- **Simplify Currencies**  
-    Preamble Command:
-    ```latex
-    \DeclareSIUnit{\euro}{\text{\texteuro}}
-    \DeclareSIUnit{\dollar}{\text{\textdollar}}
-    \DeclareSIUnit{\sterling}{\text{\textsterling}}
-    \DeclareSIUnit{\yen}{\text{\textyen}}
-    ```
-    | Command                 | Rendering | Dependency |
-    | ----------------------- | --------- | ---------- |
-    | `\qty{5}{\euro}`        | 15 €      | siunitx    |
-    | `\qty{15}[\dollar]{}`   | $15       | siunitx    |
-    | `\qty{15}[\sterling]{}` | £15       | siunitx    |
-    | `\qty{15}[\yen]{}`      | ¥15       | siunitx    |
-- **Change** euro symbol **style**.  
-    Choose the official style or for special fonts one of the latter three
-    | Preamble Command                                  | Rendering                  | Original | Dependency |
-    | ------------------------------------------------- | -------------------------- | -------- | ---------- |
-    | `\renewcommand{\texteuro}{\text{\officialeuro}}`  | € _(official symbol)_      | $€$      | eurosym    |
-    | `\renewcommand{\texteuro}{\text{\geneuro}}`       | _overlay current font's C_ | $€$      | eurosym    |
-    | `\renewcommand{\texteuro}{\text{\geneuronarrow}}` | _overlay current font's C_ | $€$      | eurosym    |
-    | `\renewcommand{\texteuro}{\text{\geneurowide}}`   | _overlay current font's C_ | $€$      | eurosym    |
+| Command                        | Rendering | Dependency                       |
+| ------------------------------ | --------- | -------------------------------- |
+| `\cEUR{}`                      | €         | currency + setup                 |
+| `\cUSD{}` <br> `\textdollar{}` | $         | currency + setup <br> _built in_ |
+| `\cJPY{}` <br> `\textyen{}`    | ¥         | currency + setup <br> _built in_ |
+| `\cGBP{}` <br>                 | £         | currency + setup                 |
+| `\dEUR{15}`                    | 1.50 €    | currency + setup                 |
+| `\dUSD{15}`                    | $ 1.50    | currency + setup                 |
+| `\dJPY{15}`                    | 2 ¥       | currency + setup                 |
+| `\dGBP{15}`                    | £ 1.50    | currency + setup                 |
 
 ## Degree Symbols
 | Command           | Rendering        | Dependency |
