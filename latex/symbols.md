@@ -7,7 +7,7 @@
 Table of Contents
 - [Favorites](#favorites)
 - [Non-Mathematical Symbols](#non-mathematical-symbols)
-- [Currencies](#currencies)
+- [Money and currencies](#money-and-currencies)
 - [Degree Symbols](#degree-symbols)
 - [Math Mode Accents](#math-mode-accents)
 - [Greek Letters (lowercase)](#greek-letters-lowercase)
@@ -70,29 +70,37 @@ Table of Contents
 | `\qty{5}{\celsius}`                     | 5 ℃            |                                      | siunitx                          |
 
 
-## Currencies
+## Money and currencies
 > `€`, `\$`, `pounds` and `\yen` are not recommended
+
+| Command      | Rendering | Dependency                                                          |
+| ------------ | --------- | ------------------------------------------------------------------- |
+| `\cEUR{}`    | €         | [currency](https://texdoc.org/serve/currency/0) + `\DefineCurrency` |
+| `\cUSD{}`    | $         | [currency](https://texdoc.org/serve/currency/0) + `\DefineCurrency` |
+| `\cJPY{}`    | ¥         | [currency](https://texdoc.org/serve/currency/0) + `\DefineCurrency` |
+| `\cGBP{}`    | £         | [currency](https://texdoc.org/serve/currency/0) + `\DefineCurrency` |
+| `\dEUR{1.5}` | 1.50 €    | [currency](https://texdoc.org/serve/currency/0) + `\DefineCurrency` |
+| `\dUSD{1.5}` | $ 1.50    | [currency](https://texdoc.org/serve/currency/0) + `\DefineCurrency` |
+| `\dJPY{1.5}` | 2 ¥       | [currency](https://texdoc.org/serve/currency/0) + `\DefineCurrency` |
+| `\dGBP{1.5}` | £ 1.50    | [currency](https://texdoc.org/serve/currency/0) + `\DefineCurrency` |
 
 - **Define currencies** in the preamble  
   ```latex
   \DefineCurrency{EUR}{name={euro}, plural={euros}, symbol={\euro}, iso={EUR}}
   \DefineCurrency{USD}{name={dollar}, plural={dollars}, symbol={\$}, iso={USD}, pre=true}
-  \DefineCurrency{JPY}{name={yen}, plural={yens}, symbol={\textyen}, iso={JPY}, cents=false}
+  \DefineCurrency{JPY}{name={yen}, plural={yens}, symbol={\yen}, iso={JPY}, cents=false}
   \DefineCurrency{GBP}{name={pound}, plural={pounds}, symbol={\pounds}, iso={GBP}, pre=true}
   \CurrencySetup{kind=symbol}
   ```
-  See further [options](https://texdoc.org/serve/currency/0) or set decimal marker inside `\sisetup{locale=DE}`
+- **Format** money by calling `\CurrencySetup{�}` with
+  | Key=Default  | Options                           | Affect                                |
+  | ------------ | --------------------------------- | ------------------------------------- |
+  | `kind=`iso   | `iso`, `plural`, `name`, `symbol` | Representation of the monetary unit   |
+  | `pre=`false  | `true`, `false`                   | Print currency before the value?      |
+  | `cents=`true | `true`, `false`, `always`         | Control the way the cents are printed |
+  
+  See [further options](https://texdoc.org/serve/currency/0) or set decimal marker inside `\sisetup{locale=DE}`
 
-| Command                        | Rendering | Dependency                       |
-| ------------------------------ | --------- | -------------------------------- |
-| `\cEUR{}`                      | €         | currency + setup                 |
-| `\cUSD{}` <br> `\textdollar{}` | $         | currency + setup <br> _built in_ |
-| `\cJPY{}` <br> `\textyen{}`    | ¥         | currency + setup <br> _built in_ |
-| `\cGBP{}` <br>                 | £         | currency + setup                 |
-| `\dEUR{15}`                    | 1.50 €    | currency + setup                 |
-| `\dUSD{15}`                    | $ 1.50    | currency + setup                 |
-| `\dJPY{15}`                    | 2 ¥       | currency + setup                 |
-| `\dGBP{15}`                    | £ 1.50    | currency + setup                 |
 
 ## Degree Symbols
 | Command           | Rendering        | Dependency |

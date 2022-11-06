@@ -5,7 +5,8 @@
 Table of Contents
 - [Project Structure](#project-structure)
 - [Debugging](#debugging)
-- [Numbers and quantities](#numbers-and-quantities)
+- [Numeric values](#numeric-values)
+- [Money](#money)
 
 ## Project Structure
 
@@ -16,64 +17,60 @@ Table of Contents
         new commands, environments, columntypes | `\newcommand{}{}`
 	- **[`layout.tex` ›](templates.md#layout)**  
         global formatting, spacing, margins | `\hypersetup{colorlinks=true}`
-- **`src/`**  
-    Resources, Image File, Table Content Files, Source Code Files, Attachments, Appendices
-- **`table/`**  
-    Tables
+- **`src/`** for resources, images, table values, sourcecode files, attachments, appendices
+- **`table/`** for table floats
     - **[_table name_`.tex` ›](tables.md)**  
         one table [float](floats.md) | `\begin{table}`
-- **`figure/`**  
-    Images, Graphics
+- **`figure/`** for image or graphic floats
     - **[_figure name_`.tex` ›](floats.md#images)**  
         one figure [float](floats.md) | `\begin{figure}`
-- **`listing/`**  
-    Source Code Typesetting 
+- **`listing/`** for sourcecode typesetting floats
     - **[_listing name_`.tex` ›](floats.md#source-code-listings)**  
         one source code [float](floats.md) | `\lstinputlisting{}`
-- **`bib/`**  
-    External References
+- **`bib/`** for external references
 	- **`bibliography.tex`**  
         Structure of the bibliography | `\printbibliography{}`
 	- **_reference type_`.bib`**  
         letters or annex
-- **`text/`**  
+- **`text/`** for continues text
     - **[`headings.tex` ›](templates.md#headings)**  
         Structure of the headings  | `\section{}`
 	- **_heading name_`.tex`**  
         Continuous text paragraphs | `\subsection{}`
-- **`sty/`**  
-    Own Packages
+- **`sty/`** for own packages
   - **_package name_`.sty`**  
     self-written package | `\ProvidesPackage{sty/PACKAGENAME}`
 
 ## Debugging
 
-**[READ PACKAGE DOCUMENTATIONS ›](packages.md#documentation)**
-> **Debugging only, don't enable while exporting**
-
-- **Draft Mode**  
-    highlight overfull conflicts
+- **view user guide** of a specific packages  
+    - by adding a custom search engine to your browser  
+    `http://texdoc.org/serve/%s/0`
+    - by visiting **[texdoc.org](https://texdoc.org/index.html)**
+    - by running the following as long as LaTeX is installed  
+        `texdoc ⟨package name⟩`
+    - by visiting **[ctan.org](https://ctan.org/)**
+- **highlight overfull conflicts**  
+    by enabling draft mode in the preamble
     ```latex
     \documentclass[draft]{article}
     ```
-
-- **Syntax only**  
-    Suppress PDF output and only check syntax.  
+- only **check syntax**  
+    by supressing the PDF creation in the preamble
     > Dependency: syntonly
     ```latex
     \syntaxonly
     ```
-- **Throw Errors**
-    Throw an error for a specific package
+- **throw an error** for a specific package
     ```latex
-    \PackageError {⟨package-name⟩} {⟨error-text⟩} {⟨help-text⟩}
+    \PackageError {⟨package name⟩} {⟨error text⟩} {}
     ```
 
 
-## Numbers and quantities
+## Numeric values
 > Dependecy: siunitx
 
-- **Number**  
+- **Numbers**  
     | Example Command    | Rendering             |
     | ------------------ | --------------------- |
     | `\num{12345.2}`    | $12\ 345.2$           |
@@ -98,3 +95,22 @@ Table of Contents
     | Example Command     | Rendering              |
     | ------------------- | ---------------------- |
     | `\qty{3}{\celsius}` | $3\ \mathrm{^\circ C}$ |
+
+## Money 
+> Dependencies: currency + [`\DefineCurrency`](symbols.md#currencies)
+
+- **Currency**  
+    | Command   | Rendering |
+    | --------- | --------- |
+    | `\cEUR{}` | €         |
+    | `\cUSD{}` | $         |
+    | `\cJPY{}` | ¥         |
+    | `\cGBP{}` | £         |
+
+- **Amount of money**  
+    | Command      | Rendering |
+    | ------------ | --------- |
+    | `\dEUR{1.5}` | 1.50 €    |
+    | `\dUSD{1.5}` | $ 1.50    |
+    | `\dJPY{1.5}` | 2 ¥       |
+    | `\dGBP{1.5}` | £ 1.50    |
