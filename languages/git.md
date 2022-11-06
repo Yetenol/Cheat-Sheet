@@ -37,8 +37,12 @@
 $currentBranch = (git branch --show-current).trim()
 $mainBranch = (git symbolic-ref --short refs/remotes/origin/HEAD).replace("origin/","").trim()
 git rebase --interactive origin/$mainBranch
-git push origin $currentBranch":"$mainBranch
-git pull origin $mainBranch":"$mainBranch
+if ($LASTEXITCODE -ne 0) {
+    git rebase --abort
+} else {
+    git push origin $currentBranch":"$mainBranch
+    git pull origin $mainBranch":"$mainBranch
+}
 ```
 In case main changed and changes have to be merged, do so and run
 ```powershell
