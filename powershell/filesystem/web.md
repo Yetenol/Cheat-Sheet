@@ -1,11 +1,35 @@
-<h1> Web </h1>
+<h1> Web Interactions</h1>
 
 [⌂](../../README.md) › [PowerShell](../../README.md) › [FileSystem](filesystem.md) ›
 
 Table of Contents
-- [Download like a browser](#download-like-a-browser)
-- [Download to disk](#download-to-disk)
-- [Download and unzip an archive](#download-and-unzip-an-archive)
+- [Execute web script](#execute-web-script)
+- [Download files](#download-files)
+  - [Download like a browser](#download-like-a-browser)
+  - [Download to disk](#download-to-disk)
+  - [Download and unzip an archive](#download-and-unzip-an-archive)
+
+# Execute web script
+
+Example web script
+```powershell
+$url = "https://raw.githubusercontent.com/Yetenol/Setup-Computer/main/script/test.ps1.bat"
+```
+
+- **execute** remote script  
+    Download script and run in current console.
+    ```powershell
+    Invoke-Command -ScriptBlock ([ScriptBlock]::Create((Invoke-WebRequest -Uri $url)))
+    ```
+
+- **execute** remote script **elevated**  
+    Download script and run in new elevated console.
+    ```powershell
+    $command = "Invoke-Command -ScriptBlock ([ScriptBlock]::Create((Invoke-WebRequest -Uri $url)))"
+    Start-Process wt -Verb RunAs -ArgumentList "PowerShell.exe -NoExit -Command $command"
+    ```
+
+# Download files
 
 Example web content
 ```powershell
