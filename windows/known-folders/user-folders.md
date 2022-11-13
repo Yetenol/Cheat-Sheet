@@ -3,11 +3,11 @@
 [⌂](../../README.md) › [Windows](../../README.md#windows) › [Known Folders](known-folders.md) ›
 
 Table of Contents
-- [Per-User Folders](#per-user-folders)
-- [Commom-Users Folders](#commom-users-folders)
+- [User-Specific Folders](#user-specific-folders)
+- [Common-User Folders](#common-user-folders)
 - [Sources](#sources)
 
-## Per-User Folders
+## User-Specific Folders
 
 - **List all locations**
     ```powershell
@@ -66,7 +66,7 @@ Table of Contents
     | `{35286A68-3C57-41A1-BBB1-0EAE73D76C95}` | _Local Videos_    |
 
 
-## Commom-Users Folders
+## Common-User Folders
 
 - **List all locations**  
     ```powershell

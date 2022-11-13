@@ -2,43 +2,70 @@
 
 [⌂](../../README.md) › [PowerShell](../../README.md) › [FileSystem](filesystem.md) ›
 
-## Download a file
+Table of Contents
+- [Download like a browser](#download-like-a-browser)
+- [Download to disk](#download-to-disk)
+- [Download and unzip an archive](#download-and-unzip-an-archive)
 
-```powershell
-$env:Downloads = (New-Object -ComObject Shell.Application).NameSpace('shell:::{374DE290-123F-4565-9164-39C4925E467B}').Self.Path
-if (-not $env:Downloads) {throw "Cannot find Downloads folder!"}
-
-$url = "https://newsfeed.zeit.de"
-$file = "$env:Downloads\Zeit RSS.xml"
-Invoke-WebRequest -Uri $url -OutFile $file -ErrorAction Stop
-
-explorer "/select,""$(Get-Item -Path $file)""" # suggest file
-```
-
-## Download a file into _%TEMP%_
-
+Example web content
 ```powershell
 $url = "https://newsfeed.zeit.de"
-$file = "$env:Temp\Zeit RSS.xml"
-Invoke-WebRequest -Uri $url -OutFile $file -ErrorAction Stop
-
-explorer "/select,`"$(Resolve-Path $file)`"" # suggest file
+$filename = "example.xml"
 ```
+
+## Download like a browser
+- **download and reveal** a file to _Downloads_  
+    _Downloads_ is a [user-specific folder](../../windows/known-folders/user-folders.md). 
+    Aborts on failure or reveals in _File Explorer_.
+    ```powershell
+    $env:Downloads = (New-Object -ComObject Shell.Application).NameSpace('shell:::{374DE290-123F-4565-9164-39C4925E467B}').Self.Path
+    if (-not $env:Downloads) {throw "Cannot find Downloads folder!"}
+    $path = "$env:Downloads\$filename"
+    
+    # download and reveal a file
+    Invoke-WebRequest -Uri $url -OutFile $path -ErrorAction Stop
+    explorer "/select,`"$(Resolve-Path $path)`""
+    ```
+
+## Download to disk
+- **download** a file to a **specific location**  
+    ```powershell
+    $path = ".\$filename"
+    Invoke-WebRequest -Uri $url -OutFile $path -ErrorAction Stop
+    ```
+
+- **download** a file to _Temp_  
+    _Temp_ is a [common-user folder](../../windows/known-folders/user-folders.md). 
+    Aborts on failure.
+    ```powershell
+    $path = "$env:Temp\$filename"
+    Invoke-WebRequest -Uri $url -OutFile $path -ErrorAction Stop
+    ```
+- **reveal** in _File Explorer_
+    ```powershell
+    explorer "/select,`"$(Resolve-Path $path)`""
+    ```
 
 
 ## Download and unzip an archive
 
+Example web archive
 ```powershell
-$env:Downloads = (New-Object -ComObject Shell.Application).NameSpace('shell:::{374DE290-123F-4565-9164-39C4925E467B}').Self.Path
-if (-not $env:Downloads) {throw "Cannot find Downloads folder!"}
-
 $url = "https://www.autohotkey.com/download/ahk-v2.zip"
-$folder = "$env:Downloads\AutoHotkey 2"
-$archive = "$folder.zip"
-Invoke-WebRequest -Uri $url -OutFile $archive -ErrorAction Stop
-
-Remove-Item -Path $folder -Recurse -ErrorAction SilentlyContinue
-Expand-Archive -Path $archive -DestinationPath $folder -Force
-
-Invoke-Item -Path $folder # open folder
+$foldername = "AutoHotkey 2"
 ```
+
+- **download and extract** an **archive** to _Downloads_  
+    _Downloads_ is a [user-specific folder](../../windows/known-folders/user-folders.md). 
+    Aborts on failure or reveals in _File Explorer_.
+    ```powershell
+    $env:Downloads = (New-Object -ComObject Shell.Application).NameSpace('shell:::{374DE290-123F-4565-9164-39C4925E467B}').Self.Path
+    if (-not $env:Downloads) {throw "Cannot find Downloads folder!"}
+    $archive = "$env:Downloads\$foldername.zip"
+    $folder = "$env:Downloads\$foldername"
+
+    # download, extract and reveal an archive
+    Invoke-WebRequest -Uri $url -OutFile $archive -ErrorAction Stop
+    Expand-Archive -Path $archive -DestinationPath $folder -Force -ErrorAction Stop
+    Invoke-Item -Path $folder
+    ```
