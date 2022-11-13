@@ -9,10 +9,21 @@ Table of Contents
 
 ## Create a shell link (shortcut)
 
+- **Enable** _run at startup_
+    ```powershell
+    $path = "C:\Windows\system32\notepad.exe"
+    $shortcutName = "example.lnk"
+
+    $env:Startup = (New-Object -ComObject Shell.Application).NameSpace('shell:Startup').Self.Path
+    $WshShell = New-Object -comObject WScript.Shell
+    $Shortcut = $WshShell.CreateShortcut("$env:Startup\$shortcutName")
+    $Shortcut.TargetPath = $path
+    $Shortcut.Save()
+    ```
+
 - Create a shortcut in _Startup_
     ```powershell
     $env:Startup = (New-Object -ComObject Shell.Application).NameSpace('shell:Startup').Self.Path
-
     $WshShell = New-Object -comObject WScript.Shell
     $Shortcut = $WshShell.CreateShortcut("$env:Startup\example.lnk")
     $Shortcut.TargetPath = "powershell.exe"
