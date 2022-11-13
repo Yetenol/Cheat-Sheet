@@ -53,8 +53,10 @@ $filename = "example.xml"
 
 ## Download to disk
 - **download** a file to a **specific location**  
+    Create destination if it does not exist yet.
     ```powershell
     $path = ".\$filename"
+    New-Item -Path $path -Force -ErrorAction Stop
     Invoke-WebRequest -Uri $url -OutFile $path -ErrorAction Stop
     ```
 
