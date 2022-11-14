@@ -9,9 +9,10 @@ Table of Contents
     Add calculated property | `$list[	(0..1;-3..-1)]`
 - **[Bash equivalents ›](bash-equivalents.md)**  
     While Loop | `read name` <-> `$name = Read-Host -Prompt "Name"`
+- **[Parameter ›](powershell/parameter.md)**  
+    AutoComplete | `[Parameter(Mandatory = $true)]`
 - [Make executable](#make-executable)
 - [Help yourself](#help-yourself)
-- [Parameter AutoComplete](#parameter-autocomplete)
 - [Apps in PATH locations](#apps-in-path-locations)
 
 ## Make executable
@@ -70,23 +71,6 @@ This bypasses the _Execution Policy_ for PowerShell scripts.
 	```
 	> Dirty version:  
 	> `help Get-Process -Online`
-
-
-## Parameter AutoComplete
-
-- **Valide a parameter** to a specific list of option  
-    Define a list of possibilities. This enables AutoComplete as well.
-
-    ```powershell
-    function Show-Hello {
-        param (
-            [ValidateSet("World", "Galaxy", "Universe")]
-            [String]$noun
-        )
-        $greetingString = "Hello, " + $noun + "!"
-        Write-Host "`t=>`t" $greetingString "`t<="
-    }
-    ```
 
 ## Apps in PATH locations
 

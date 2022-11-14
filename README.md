@@ -59,6 +59,9 @@ Table of Contents
     - **[Bash equivalents ›](powershell/basics/bash-equivalents.md)**  
         While Loop | `read name` ⟷ `$name = Read-Host -Prompt "Name"`
 
+    - **[Parameter ›](powershell/parameter.md)**  
+        AutoComplete | `[Parameter(Mandatory = $true)]`
+
 - **[File System Interactions ›](powershell/filesystem/filesystem.md)**  
     Run as administrator | ``explorer "/select,`"$(Resolve-Path $file)`""``
 
