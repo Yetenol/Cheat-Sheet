@@ -161,6 +161,8 @@ Table of Contents
 - **[OneNote ›](apps/onenote.md)**  
     Mathematical Typesetting | `\displaystyle\bmatrix(1&2@a&b) `
 
+- **[Obsidian ›](apps/obsidian.md)**  
+    Convert wikilinks to markdown
 
 ## Discussions
 
