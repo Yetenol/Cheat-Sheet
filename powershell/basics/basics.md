@@ -35,12 +35,12 @@ This bypasses the _Execution Policy_ for PowerShell scripts.
 
 - **Make** script executable and **self-elevating**  
     ```cmd
-    # & cls & powershell -Command Start-Process wt -Verb RunAs -ArgumentList """PowerShell.exe -Command Invoke-Command -ScriptBlock ([ScriptBlock]::Create(((Get-Content %0) -join [Environment]::NewLine)))""" & exit
+    # & cls & powershell -Command Start-Process wt -Verb RunAs -ArgumentList """PowerShell.exe -Command cd "%CD%" `n Invoke-Command -ScriptBlock ([ScriptBlock]::Create(((Get-Content %0) -join [Environment]::NewLine)))""" & exit
     # Script is executable and self-elevating when renamed *.cmd or *.bat
     ```
 - **Make** script executable, **self-elevating** and **persistent**
     ```cmd
-    # & cls & powershell -Command Start-Process wt -Verb RunAs -ArgumentList """PowerShell.exe -NoExit -Command Invoke-Command -ScriptBlock ([ScriptBlock]::Create(((Get-Content %0) -join [Environment]::NewLine)))""" & exit
+    # & cls & powershell -Command Start-Process wt -Verb RunAs -ArgumentList """PowerShell.exe -NoExit -Command cd "%CD%" `n Invoke-Command -ScriptBlock ([ScriptBlock]::Create(((Get-Content %0) -join [Environment]::NewLine)))""" & exit
     # Script is executable, self-elevating and persistent when renamed *.cmd or *.bat
     ```
 
