@@ -65,6 +65,9 @@ Table of Contents
 - **[File System Interactions ›](powershell/filesystem/filesystem.md)**  
     Run as administrator | ``explorer "/select,`"$(Resolve-Path $file)`""``
 
+    - **[Path ›](powershell/filesystem/path.md)**    
+        Validate, format path | `Convert-Path .`
+
     - **[Import ›](powershell/filesystem/import.md)**  
         File Parsing | `[RegEx]::Match(�, $pattern).Groups[1].value`
 

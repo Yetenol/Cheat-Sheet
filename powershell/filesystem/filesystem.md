@@ -3,6 +3,8 @@
 [⌂](../../README.md) › [PowerShell](../../README.md) ›
 
 Table of Contents
+- **[Path ›](powershell/filesystem/path.md)**    
+    retrieve filesystem information
 - **[Import ›](import.md)**  
     extract data from files  
     parse using regular expressions  
