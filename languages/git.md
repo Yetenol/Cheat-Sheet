@@ -86,3 +86,41 @@ git pull origin $mainBranch":"$mainBranch
     ```bash
     git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch -r \"PATH/TO_ITEM\"' --prune-empty --tag-name-filter cat -- --all
     ```
+
+# Native git graph
+
+- **Amend all changes** to previous commit
+	```bash
+	alias gitamend='git commit --amend --no-edit'
+	``` 
+
+- Show git graph  
+
+```
+git log --graph \
+	--abbrev-commit \
+	--pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+```
+
+
+# Alias
+
+- alias **internal command**  
+	```bash
+	git config --global alias.<shortcut> <command>
+	```
+	and call it using `git amend`
+
+- alias **external command**    
+	```shell
+	git config --global alias.sourcetree '!/executable'
+	```
+
+
+---
+Sources:
+- 2022-12-14: [Creating Git shortcuts](https://blog.frankel.ch/creating-git-shortcuts/)
+
+Related:
+
+Tags:
