@@ -167,6 +167,10 @@ Table of Contents
 - **[Obsidian ›](apps/obsidian.md)**  
     Convert wikilinks to markdown
 
+- **[Visual Studio Code ›](apps/vscode.md)**    
+	Shell command keybindung
+
+
 ## Discussions
 
 - **[Indentation: Tabs vs Spaces ›](discussion/indentation.md)**  
