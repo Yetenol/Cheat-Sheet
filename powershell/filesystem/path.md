@@ -63,17 +63,17 @@ Folders also contain `Parent`, `Root`.
 
 - **retrieve** information of **existing** file or folder      
   or **fake** information of **non-existing** file or folder    
-	```powershell
+    ```powershell
     [IO.FileInfo] $file = $Path | foreach {
         $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath($_)
     } | foreach { 
         [IO.FileInfo]::new($_)
     }
-	```
-	```powershell
+    ```
+    ```powershell
     [IO.DirectoryInfo] $folder = $Path -replace '[\\/]$', '' | foreach {
         $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath($_)
     } | foreach { 
         [IO.DirectoryInfo]::new($_)
     }
-	```
+    ```
