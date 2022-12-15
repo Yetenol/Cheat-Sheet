@@ -1,4 +1,4 @@
-<h1> _Win + X_ Menu </h1>
+<h1> Win + X Menu </h1>
 
 [⌂](../README.md) › [Windows](../README.md#windows) ›
 
@@ -17,7 +17,6 @@ Vertical lines separate the context menu into 3 groups starting at the bottom.
     %LocalAppData%\Microsoft\Windows\WinX
     ```
 - download [Hashlink](https://github.com/riverar/hashlnk) from [Github](https://raw.githubusercontent.com/riverar/hashlnk/master/bin/hashlnk_0.2.0.0.zip)
-- 
 
 
 ## Sources
