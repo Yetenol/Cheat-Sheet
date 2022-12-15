@@ -58,7 +58,8 @@ git pull origin $mainBranch":"$mainBranch
     git rebase --interactive origin/HEAD
     ```
     
-- **push** my branch to remote's **main** branch
+- **push** my branch to remote's **main** branch    
+    see [git publish script](https://github.com/Yetenol/alias/blob/main/git-publish.ps1)
     ```powershell
     $currentBranch = (git branch --show-current).trim()
     $mainBranch = (git symbolic-ref --short refs/remotes/origin/HEAD).replace("origin/","").trim()
@@ -87,7 +88,7 @@ git pull origin $mainBranch":"$mainBranch
     git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch -r \"PATH/TO_ITEM\"' --prune-empty --tag-name-filter cat -- --all
     ```
 
-# Native git graph
+# Useful commands
 
 - **Amend all changes** to previous commit
 	```bash
@@ -95,12 +96,11 @@ git pull origin $mainBranch":"$mainBranch
 	``` 
 
 - Show git graph  
-
-```
-git log --graph \
-	--abbrev-commit \
-	--pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
-```
+    ```
+    git log --graph \
+    	--abbrev-commit \
+    	--pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+    ```
 
 
 # Alias
