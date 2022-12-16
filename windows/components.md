@@ -23,20 +23,20 @@ Table of Contents
 | Open Pictures Folder  | `pictures`  |
 
 ## Apps
-| Description        | `Command`                             |
-| ------------------ | ------------------------------------- |
-| Calculator         | `calc`                                |
-| Command Prompt     | `cmd`                                 |
-| Control Panel      | `control`                             |
-| Device Manager     | `devmgmt.msc` <br>or<br> `hdwwiz.cpl` |
-| Internet Explorer  | `iexplore`                            |
-| Paint              | `mspaint`                             |
-| Registry Editor    | `regedit`                             |
-| Registry Editor 32 | `regedt32`                            |
-| Task Manager       | `taskmgr`                             |
-| Notepad            | `notepad`                             |
-| Magnifier          | `magnify`                             |
-| Narrator           | `narrator`                            |
+| Description        | `Command`                         |
+| ------------------ | --------------------------------- |
+| Calculator         | `calc`                            |
+| Command Prompt     | `cmd`                             |
+| Control Panel      | `control`                         |
+| Device Manager     | `devmgmt.msc` or<br> `hdwwiz.cpl` |
+| Internet Explorer  | `iexplore`                        |
+| Paint              | `mspaint`                         |
+| Registry Editor    | `regedit`                         |
+| Registry Editor 32 | `regedt32`                        |
+| Task Manager       | `taskmgr`                         |
+| Notepad            | `notepad`                         |
+| Magnifier          | `magnify`                         |
+| Narrator           | `narrator`                        |
 
 ## Control panels
 | Description                          | `Command`                     |
@@ -61,29 +61,29 @@ Table of Contents
 | Change Computer Performance Settings | `systempropertiesperformance` |
 
 ## Managment Consoles
-| Description                              | `Command`                             |
-| :--------------------------------------- | :------------------------------------ |
-| Microsoft Management Console             | `mmc`                                 |
-| Advanced User Accounts                   | `azman.msc`                           |
-| Certificates                             | `certmgr.msc`                         |
-| Computer Management                      | `compmgmt.msc`                        |
-| Component Services                       | `comexp.msc`                          |
-| Device Manager                           | `devmgmt.msc` <br>or<br> `hdwwiz.cpl` |
-| Event Viewer                             | `eventvwr.msc`                        |
-| Disk Management                          | `diskmgmt.msc`                        |
-| Local Group Policy Editor                | `gpedit.msc`                          |
-| Local Security Policy                    | `secpol.msc`                          |
-| Local Users and Groups                   | `lusrmgr.msc`                         |
-| NAP Client Configuration                 | `napclcfg.msc`                        |
-| Performance Monitor                      | `perfmon.msc`                         |
-| Print Management                         | `printmanagement.msc`                 |
-| Resultant Set of Policy                  | `rsop.msc`                            |
-| Services                                 | `services.msc`                        |
-| Shared Folders                           | `fsmgmt.msc`                          |
-| Task Scheduler                           | `taskschd.msc`                        |
-| Trusted Platform Module (TPM) Management | `tpm.msc`                             |
-| Windows Firewall with Advanced Security  | `wf.msc`                              |
-| WMI Management                           | `wmimgmt.msc`                         |
+| Description                              | `Command`                         |
+| :--------------------------------------- | :-------------------------------- |
+| Microsoft Management Console             | `mmc`                             |
+| Advanced User Accounts                   | `azman.msc`                       |
+| Certificates                             | `certmgr.msc`                     |
+| Computer Management                      | `compmgmt.msc`                    |
+| Component Services                       | `comexp.msc`                      |
+| Device Manager                           | `devmgmt.msc` or<br> `hdwwiz.cpl` |
+| Event Viewer                             | `eventvwr.msc`                    |
+| Disk Management                          | `diskmgmt.msc`                    |
+| Local Group Policy Editor                | `gpedit.msc`                      |
+| Local Security Policy                    | `secpol.msc`                      |
+| Local Users and Groups                   | `lusrmgr.msc`                     |
+| NAP Client Configuration                 | `napclcfg.msc`                    |
+| Performance Monitor                      | `perfmon.msc`                     |
+| Print Management                         | `printmanagement.msc`             |
+| Resultant Set of Policy                  | `rsop.msc`                        |
+| Services                                 | `services.msc`                    |
+| Shared Folders                           | `fsmgmt.msc`                      |
+| Task Scheduler                           | `taskschd.msc`                    |
+| Trusted Platform Module (TPM) Management | `tpm.msc`                         |
+| Windows Firewall with Advanced Security  | `wf.msc`                          |
+| WMI Management                           | `wmimgmt.msc`                     |
 
 ## Commands
 | Description                        | `Command`  |
