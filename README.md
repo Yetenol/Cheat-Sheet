@@ -5,6 +5,7 @@
 This project contains all my documentations of my developer life including code templates, tips and tricks, cheat sheets and glossaries.
 
 # Windows
+
 - **[Components](windows/components.md)** ›
     Certificates | `certmgr.msc`
 - **[Settings app pages](windows/settings.md)** ›
@@ -19,6 +20,7 @@ This project contains all my documentations of my developer life including code 
     Open in VS Code
 
 ## [Known Folders](windows/known-folders/known-folders.md)
+
 - **[User Folders](windows/known-folders/user-folders.md)** ›
     Downloads Folder | `shell:My Pictures`
 - **[OS Panels, Folders](windows/known-folders/guids.md)** ›
@@ -27,6 +29,7 @@ This project contains all my documentations of my developer life including code 
     3D Objects | `shell:::{�}`
 
 # Powershell
+
 - **[Applications](powershell/applications.md)** ›
     Update Store Apps | `$wmiObj.UpdateScanMethod()`
 - **[Interactive Menu](powershell/menu.md)** ›
@@ -38,7 +41,8 @@ This project contains all my documentations of my developer life including code 
 - **[Win+X Menu](windows/win-x.md)** ›
     Add Win+X entries
 
-## [Getting started](powershell/basics/basics.md)    
+## [Getting started](powershell/basics/basics.md)
+
 › Help Cmdlets | `script.ps1.bat`
 - **[Data Types](powershell/basics/data-types.md)** ›
     Hashtable | `[DateTime]::Now`
@@ -50,6 +54,7 @@ This project contains all my documentations of my developer life including code 
     AutoComplete | `[Parameter(Mandatory = $true)]`
 
 ## [File System Interactions](powershell/filesystem/filesystem.md)
+
 › Run as administrator | ``explorer "/select,`"$(Resolve-Path $file)`""``
 - **[Path](powershell/filesystem/path.md)** ›
     Validate, format path | `Convert-Path .`
@@ -67,6 +72,7 @@ This project contains all my documentations of my developer life including code 
     Download, extract ZIPs | `Invoke-WebRequest -Uri $url -OutFile $file`
 
 # LaTeX
+
 - **[Getting Started](latex/latex.md)** ›
     Project Structure | `texdoc PACKAGE_NAME`
 - **[Symbols](latex/symbols.md)** ›
@@ -87,6 +93,7 @@ This project contains all my documentations of my developer life including code 
     Auto-Stretching Columns | `S[table-format = -3.0e-1]`
 
 # Languages, Encodings
+
 - **[Regular Expression](languages/regex.md)** ›
     Quantifiers | `(?in)user:(?<name>\S*)\s*key:(?<pwd>\S*)`
 - **[Java](languages/java.md)** ›
@@ -104,6 +111,7 @@ This project contains all my documentations of my developer life including code 
     Leash Decorations | `kill 	e[type=item,nbt={Item:{id:"minecraft:wool"}}]`
 
 # Applications
+
 - **[Excel](apps/excel.md)** ›
     Empty Range? | `=IF(SUMPRODUCT(--(A1:C4<>""))<>0,"not empty","empty")`
 - **[OneNote](apps/onenote.md)** ›
@@ -114,4 +122,5 @@ This project contains all my documentations of my developer life including code 
 	Shell command keybindung
 
 # Discussions
+
 - **[Indentation: Tabs vs Spaces](discussion/indentation.md)**  
