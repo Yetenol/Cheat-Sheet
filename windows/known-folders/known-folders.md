@@ -1,13 +1,13 @@
 <h1> Known Folders </h1>
 
-[⌂](../../README.md) › [Windows](../../README.md#windows) ›
+
 
 Table of Contents
 - **[User Folders ›](user-folders.md)**  
   _This PC_-Folders, Per-user folders & Common-user folders  
   Downloads | `shell:My Pictures`
 
-- **[OS Panels, Folders ›](guids.md)**  
+- **[OS Panels, Folders ›](GUID%20shortcuts.md)**  
   Known folders and panels specified by a [GUID](https://docs.microsoft.com/en-us/dotnet/api/system.guid)  
   Recycle Bin | `shell:::{�}`
 

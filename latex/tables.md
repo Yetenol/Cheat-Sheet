@@ -1,6 +1,6 @@
 <h1> Tables </h1>
 
-[⌂](../README.md) › [LaTeX](../README.md#latex) › [Floating Bodies](floats.md) ›
+
 
 Table of Contents
 - [Column types](#column-types)
@@ -37,7 +37,7 @@ Table of Contents
 ## Auto-stretching columns table
 
 - **Package requirements** in `setup/packages.tex`  
-    `\input` the file into the [document preamble](latex.md#preamble).
+    `\input` the file into the [document preamble](Getting%20started.md#preamble).
     - fetch or download [LaTeX.table](https://github.com/Yetenol/latex.table)
     ```latex
     \usepackage{sty/table}
@@ -89,7 +89,7 @@ Table of Contents
 
 
 - **Package requirements** in `setup/packages.tex`  
-    `\input` the file into the [document preamble](latex.md#preamble).
+    `\input` the file into the [document preamble](Getting%20started.md#preamble).
     ```latex
     \usepackage{siunitx}  % Aligning numbers by decimal points in table columns
     \usepackage{booktabs} % To thicken table lines
@@ -100,7 +100,7 @@ Table of Contents
 
 - **Mathematical symbols** in `math/symbols.tex`  
     Globally define column titles as macros to ensure consistent symbols throughout the document.  
-    `\input` the file into the [document preamble](latex.md#preamble).
+    `\input` the file into the [document preamble](Getting%20started.md#preamble).
     ```latex
     \newmathsnippet{\SYMBOLA}{f_\mathrm{E}}
     \newmathsnippet{\SYMBOLB}{U_\mathrm{E}}
@@ -153,7 +153,7 @@ Table of Contents
 ## Align custom delimiter tables
 
 - **Package requirements** in `setup/packages.tex`  
-    `\input` the file into the [document preamble](latex.md#preamble).
+    `\input` the file into the [document preamble](Getting%20started.md#preamble).
     ```latex
     \usepackage{booktabs} % To thicken table lines
     ```

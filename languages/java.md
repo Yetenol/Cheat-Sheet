@@ -1,6 +1,4 @@
-<h1> Java </h1>
-
-[⌂](../README.md) ([Languages](../README.md#languages-encodings)) ›
+#obsidian/translate #languages/todo
 
 Table of Contents
 - [Datentypen](#datentypen)

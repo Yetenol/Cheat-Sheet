@@ -1,11 +1,8 @@
-<h1> Git </h1>
-
-[⌂](../README.md) ([Languages](../README.md#languages-encodings)) ›
-
-> - software for tracking changes in any set of files
-> - works best for non-binary text files
+Git is a software for tracking changes in any set of files.
+It works best for non-binary text files
 
 ## Manage multiple repositories
+
 - **find** all child repositories
     ```powershell
     Get-ChildItem -Path "." -Directory -Recurse | 
@@ -27,6 +24,7 @@
     ```
 
 ## Upload feature
+
 - `rebase`: review all feature commits 
   - `reword`: rename commits
   - `fixup`: combine commits into a single one
@@ -51,8 +49,8 @@ git push origin $currentBranch":"$mainBranch
 git pull origin $mainBranch":"$mainBranch
 ```
 
-
 ## Branch handling
+
 - **squash** multiple commits into one before pushing
     ```powershell
     git rebase --interactive origin/HEAD

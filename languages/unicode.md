@@ -1,6 +1,6 @@
 <h1> Unicode </h1>
 
-[⌂](../README.md) ([Languages](../README.md#languages-encodings)) ›
+
 
 Table of Contents
 - [Useful characters](#useful-characters)

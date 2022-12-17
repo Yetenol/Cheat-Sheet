@@ -1,6 +1,6 @@
 <h1> Floating Bodies </h1>
 
-[⌂](../README.md) › [LaTeX](../README.md#latex) ›
+
 
 Table of Contents
 - **[Tables ›](tables.md)**  

@@ -1,8 +1,4 @@
-<h1> Troubleshooters </h1>
-
-[⌂](../README.md) › [Windows](../README.md#windows) ›
-
-> run Microsoft's troubleshootings wizzard
+Run Microsoft's troubleshootings wizzard
 
 | Title                                        | Description                                                                                                            | Command                                   |
 | -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |

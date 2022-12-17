@@ -1,6 +1,6 @@
 <h1> Markdown </h1>
 
-[⌂](../README.md) ([Languages](../README.md#languages-encodings)) ›
+
 
 Table of Contents
 - [LaTeX Rendering](#latex-rendering)

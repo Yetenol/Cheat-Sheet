@@ -1,6 +1,6 @@
 <h1> Attributes </h1>
 
-[⌂](../../README.md) › [PowerShell](../../README.md) › [FileSystem](File%20system.md) ›
+
 
 Table of Contents
 - [.Net Attribute Flags](#net-attribute-flags)

@@ -1,6 +1,6 @@
 <h1> File System Interactions </h1>
 
-[⌂](../../README.md) › [PowerShell](../../README.md) ›
+
 
 Table of Contents
 - **[Path ›](../File%20system%20path.md)**    
@@ -11,14 +11,14 @@ Table of Contents
 - **[Export ›](export.md)**  
     visualize date  
     export to different filetypes  
-- **[Links ›](links.md)**  
+- **[Links ›](Create%20shortcuts%20and%20symbolic%20links.md)**  
     create shell, symbolic or hard links and junctions  
 - **[Attributes](attributes.md)**  
     get, set and test file, folder attributes  
     set ReadOnly, Archived, OneDrive AlwaysOnDevice, ...  
 - **[Meta data ›](../File%20system%20metadata.md)**  
     get additional file metadata  
-- **[Web ›](web.md)**  
+- **[Web ›](Download%20or%20invoke%20files%20from%20the%20internet.md)**  
     download files, archives  
 - [Windows Explorer](#windows-explorer)
 - [Resolve path for external programs](#resolve-path-for-external-programs)

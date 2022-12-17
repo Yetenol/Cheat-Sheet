@@ -1,12 +1,3 @@
-<h1> Web Interactions</h1>
-
-[⌂](../../README.md) › [PowerShell](../../README.md) › [FileSystem](File%20system.md) ›
-
-Table of Contents
-- [Download files](#download-files)
-  - [Extract zip archive](#extract-zip-archive)
-- [Execute web script](#execute-web-script)
-
 # Download files
 
 Example web content

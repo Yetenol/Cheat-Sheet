@@ -1,13 +1,13 @@
 <h1> Deprecated / archived GUID shortcuts </h1>
 
-[⌂](../../README.md) › [Windows](../../README.md#windows) › [Known Folders](known-folders.md) ›
+
 
 > Shortcuts to special OS folders or panels.  
 > Referenced using a [**CLSID keys**](https://docs.microsoft.com/de-de/windows/win32/com/clsid-key-hklm?redirectedfrom=MSDN) 
 > (globally unique identifier that identifies a COM class object)
 
 Table of Contents
-- **[Current GUIDs ›](guids.md)**  
+- **[Current GUIDs ›](GUID%20shortcuts.md)**  
         Recycle Bin | `shell:::{�}`
 - [List of deprecated GUIDs](#list-of-deprecated-guids)
 - [Sources](#sources)

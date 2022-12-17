@@ -1,6 +1,6 @@
 <h1> Layout </h1>
 
-[⌂](../README.md) › [LaTeX](../README.md#latex) ›
+
 
 Table of Contents
 - [Document Classes](#document-classes)

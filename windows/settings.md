@@ -1,6 +1,6 @@
 <h1> Settings app pages </h1>
 
-[⌂](../README.md) › [Windows](../README.md#windows) ›
+
 
 > ms-settings URIs used to open various pages of the Settings app
 

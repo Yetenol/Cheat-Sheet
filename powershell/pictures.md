@@ -1,6 +1,6 @@
 <h1> Image Meta Data </h1>
 
-[⌂](../README.md) › [PowerShell](../README.md#powershell) ›
+
 
 - [Naming convention](#naming-convention)
 - [Standardize file name](#standardize-file-name)

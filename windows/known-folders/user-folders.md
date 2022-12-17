@@ -1,6 +1,6 @@
 <h1> User Folders </h1>
 
-[⌂](../../README.md) › [Windows](../../README.md#windows) › [Known Folders](known-folders.md) ›
+
 
 Table of Contents
 - [User-Specific Folders](#user-specific-folders)

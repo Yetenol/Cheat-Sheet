@@ -1,7 +1,3 @@
-<h1> Glossary </h1>
-
-[⌂](../README.md) › [PowerShell](../README.md#powershell) ›
-
 ## Command
 
 - scripts that are only available in the Windows PowerShell environment

@@ -1,6 +1,6 @@
 <h1> Dll commands </h1>
 
-[⌂](../README.md) › [Windows](../README.md#windows) ›
+
 
 Table of Contents
 - [Control Panels and their Tabs](#control-panels-and-their-tabs)

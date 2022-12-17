@@ -1,6 +1,6 @@
 <h1> Mathematics </h1>
 
-[⌂](../README.md) › [LaTeX](../README.md#latex) ›
+
 
 Table of Contents
 - [Custom symbols](#custom-symbols)

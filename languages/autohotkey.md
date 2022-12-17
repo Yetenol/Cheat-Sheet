@@ -1,6 +1,6 @@
 <h1> AutoHotkey </h1>
 
-[⌂](../README.md) ([Languages](../README.md#languages-encodings)) ›
+
 
 > Windows Automation scripting language
 

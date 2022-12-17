@@ -1,12 +1,3 @@
-<h1> Links </h1>
-
-[⌂](../../README.md) › [PowerShell](../../README.md) › [FileSystem](File%20system.md) ›
-
-Table of Contents
-- [Create a shell link (shortcut)](#create-a-shell-link-shortcut)
-- [Symbolic links](#symbolic-links)
-- [Sources](#sources)
-
 ## Create a shell link (shortcut)
 
 - **Enable** _run at startup_
@@ -61,5 +52,11 @@ Table of Contents
     ```
 
 
-## Sources
+---
+Sources:
 - 2022-04-25: [Create a desktop shortcut with Windows Script Host - Windows Client - Microsoft Docs](https://docs.microsoft.com/en-us/troubleshoot/windows-client/admin-development/create-desktop-shortcut-with-wsh)
+
+Related:
+[File system](File%20system.md)
+
+Tags:

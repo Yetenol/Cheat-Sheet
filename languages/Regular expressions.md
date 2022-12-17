@@ -1,8 +1,4 @@
-<h1> Regular Expressions </h1>
-
-[⌂](../README.md) ([Languages](../README.md#languages-encodings)) ›
-
-> .Net Implementation
+The following definitions use the .Net Implementation
 
 Table of Contents
 - [Miscellaneous Constructs](#miscellaneous-constructs)
@@ -243,8 +239,13 @@ Table of Contents
 ## [.Net Operations](regex-dot-net.md)
 
 
-## Sources 
+---
+Sources:
 - 2022-01-26: [Quick Reference (MS Docs)](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference)
 - 2022-04-04: [Regular Expression Language - Quick Reference - Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference#regular-expression-options)
 - 2022-01-26: [Visual Studio (MS Docs)](https://docs.microsoft.com/en-us/visualstudio/ide/using-regular-expressions-in-visual-studio)
-- 2022-01-26: [🗎 .NET Framework Regular Expressions](regex.pdf)
+- 2022-01-26: [.NET Framework Regular Expressions](regex.pdf)
+
+Related:
+
+Tags:

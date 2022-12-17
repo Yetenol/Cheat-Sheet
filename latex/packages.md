@@ -1,6 +1,6 @@
 <h1> Packages </h1>
 
-[⌂](../README.md) › [LaTeX](../README.md#latex) ›
+
 
 Table of Contents
 - [Documentation](#documentation)

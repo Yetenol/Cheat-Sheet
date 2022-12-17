@@ -1,12 +1,3 @@
-<h1> Microsoft Excel </h1>
-
-[⌂](../README.md) ([Apps](../README.md#applications)) ›
-
-Table of Contents
-- [Set common names](#set-common-names)
-  - [Get cell information](#get-cell-information)
-  - [Get neighboring cells](#get-neighboring-cells)
-
 ## Set common names
 
 - **SELECT** `A1`
