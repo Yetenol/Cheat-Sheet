@@ -1,11 +1,3 @@
-<h1> Dll commands </h1>
-
-
-
-Table of Contents
-- [Control Panels and their Tabs](#control-panels-and-their-tabs)
-- [Other Dynamic Link Libraries](#other-dynamic-link-libraries)
-
 ## Control Panels and their Tabs
 
 - **Control Panel**  

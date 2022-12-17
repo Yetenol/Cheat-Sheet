@@ -5,10 +5,9 @@
 - **[Unicode](languages/unicode.md)** ›
     Character Sorting | `!` `+` `Ξ`
 - **[Markdown](languages/markdown.md)** ›
-    LaTeX Render | `$e^{i\pi}=-1$` → <img src="https://render.githubusercontent.com/render/math?math=e^{i\pi}=-1">
-- **C › [GNU Debugger](languages/gdb.md)** ›
+    LaTeX Render | `$e^{i\pi}=-1$` → <img src="https://render.githubusercontent.com/render/math?math=e^{i\pi}=[GNU Debugger][GNU Debugger](GDB%20Command%20Line%20Arguments.md)ne%20Arguments.md)guages/gdb.md)** ›
     Examinate Variables | `break`
 - **[AutoHotkey v1](languages/autohotkey.md)** ›
     Get Program stdout | `Shell := ComObjCreate("WScript.Shell")`
-- **Minecraft › [Datapacks](languages/minecraft.md)** ›
+- **Mine[Datapac[Datapacks](Useful%20functions%20for%20Minecraft%20datapacks%20and%20mcfunctions.md)%20and%20mcfunctions.md)apacks%20and%20mcfunctions.md)raft.md)** ›
     Leash Decorations | `kill 	e[type=item,nbt={Item:{id:"minecraft:wool"}}]`

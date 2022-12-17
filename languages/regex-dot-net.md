@@ -1,8 +1,4 @@
-<h1> .Net Operations </h1>
-
-
-
-> Class: System.Text.RegularExpressions.Regex 
+Class: `[System.Text.RegularExpressions.Regex]`
 
 ## Pattern matching with Regex objects
 

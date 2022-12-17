@@ -6,5 +6,5 @@
     Mathematical Typesetting | `\displaystyle\bmatrix(1&2@a&b) `
 - **[Obsidian](apps/obsidian.md)** ›
     Convert wikilinks to markdown
-- **[Visual Studio Code](apps/vscode.md)** 
+- **[Visual Studio Code](../apps/Visual%20Studio%20Code.md)** 
 	Shell command keybindung

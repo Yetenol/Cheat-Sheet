@@ -1,7 +1,3 @@
-<h1> Getting Started </h1>
-
-
-
 Table of Contents
 - [Project Structure](#project-structure)
 - [Debugging](#debugging)
@@ -20,13 +16,13 @@ Table of Contents
 - **`src/`** for resources, images, table values, sourcecode files, attachments, appendices
 - **`table/`** for table floats
     - **[_table name_`.tex` ›](tables.md)**  
-        one table [float](floats.md) | `\begin{table}`
+        one table [float](Floating%20Bodies.md) | `\begin{table}`
 - **`figure/`** for image or graphic floats
-    - **[_figure name_`.tex` ›](floats.md#images)**  
-        one figure [float](floats.md) | `\begin{figure}`
+    - **[_figure name_`.tex` ›](Floating%20Bodies.md#images)**  
+        one figure [float](Floating%20Bodies.md) | `\begin{figure}`
 - **`listing/`** for sourcecode typesetting floats
-    - **[_listing name_`.tex` ›](floats.md#source-code-listings)**  
-        one source code [float](floats.md) | `\lstinputlisting{}`
+    - **[_listing name_`.tex` ›](Floating%20Bodies.md#source-code-listings)**  
+        one source code [float](Floating%20Bodies.md) | `\lstinputlisting{}`
 - **`bib/`** for external references
 	- **`bibliography.tex`**  
         Structure of the bibliography | `\printbibliography{}`

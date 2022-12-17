@@ -1,8 +1,4 @@
-<h1> Settings app pages </h1>
-
-
-
-> ms-settings URIs used to open various pages of the Settings app
+`ms-setting` URIs used to open various pages of the Settings app
 
 Table of Contents
 - [Settings home page](#settings-home-page)

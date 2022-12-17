@@ -1,5 +1,3 @@
-# Visual Studio Code
-
 ## Keybindings
 
 - paste and execute **shell command**    

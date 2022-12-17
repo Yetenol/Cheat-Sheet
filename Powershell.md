@@ -16,7 +16,7 @@
     Add calculated property | `$list[	(0..1;-3..-1)]`
 - **[Bash equivalents](Powershell/basics/bash-equivalents.md)** ›
     While Loop | `read name` ⟷ `$name = Read-Host -Prompt "Name"`
-- **[Parameter](Powershell/parameter.md)** ›
+- **[Parameter](Powershell/Specify%20parameters%20for%20functions%20and%20scripts.md)** ›
     AutoComplete | `[Parameter(Mandatory = $true)]`
 - **[File system](Powershell/filesystem/File%20system.md)**    
     Run as administrator | ``explorer "/select,`"$(Resolve-Path $file)`""``

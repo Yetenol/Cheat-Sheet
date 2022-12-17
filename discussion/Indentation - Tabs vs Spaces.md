@@ -1,14 +1,3 @@
-<h1> Indentation: Tabs vs Spaces </h1>
-
-
-
-> GDB Command Line Arguments
-
-Table of Contents
-- [Spaces](#spaces)
-- [Tabs](#tabs)
-- [Sources](#sources)
-
 ## Spaces
 - A tab could be a different number of columns depending on your environment, but a space is always one column.
 - In terms of how many spaces (or tabs) constitutes indentation, it's more important to be consistent throughout your code than to use any specific tab stop value.
@@ -28,8 +17,14 @@ Table of Contents
 - take less time to go through.
 - tend to work better in IDEs.
 
-## Sources
+
+---
+Sources:
 - 2022-06-14: [Style Guide for Python Code (PEP8)](https://peps.python.org/pep-0008/#indentation)
 - 2022-06-14: [Death to the Space Infidels!](https://blog.codinghorror.com/death-to-the-space-infidels/)
 - 2022-06-14: [Tabs versus Spaces: An Eternal Holy War](https://www.jwz.org/doc/tabs-vs-spaces.html)
 - 2022-06-14: [Tabs versus spaces — What is the proper indentation character?](https://softwareengineering.stackexchange.com/questions/57/tabs-versus-spaces-what-is-the-proper-indentation-character-for-everything-in-e)
+
+Related:
+
+Tags:

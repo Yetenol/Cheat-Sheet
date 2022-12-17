@@ -1,16 +1,11 @@
-<h1> Mathematics </h1>
-
-
-
 Table of Contents
 - [Custom symbols](#custom-symbols)
 - [Custom functions](#custom-functions)
 - [Better vectors](#better-vectors)
 - [Change symbol style](#change-symbol-style)
 
-
-
 ## Custom symbols
+
 > Dependecy: siunitx
 
 - Custom **symbol**

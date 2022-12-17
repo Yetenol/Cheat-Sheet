@@ -1,7 +1,3 @@
-<h1> Microsoft OneNote </h1>
-
-
-
 Table of Contents
 - **[Keyboard Shortcuts 🔗](https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-onenote-44b8b3f4-c274-4bcc-a089-e80fdcc87950)**  
     Links to Keyboard Shortcut Lists  

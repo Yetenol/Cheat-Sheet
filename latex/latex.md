@@ -1,20 +1,17 @@
-# LaTeX
-
-- **[Getting Started](latex/Getting%20started.md)** ›
+- **[Getting Started](Getting%20started.md)** ›
     Project Structure | `texdoc PACKAGE_NAME`
-- **[Symbols](latex/symbols.md)** ›
+- **[Symbols](symbols.md)** ›
     Arrows | `\mathbb{NR}` → ℕℝ
-- **[Mathematics](latex/math.md)** ›
+- **[Mathematical typesetting](Mathematical%20typesetting.md)** ›
     Norm | 
-- **[Layout](latex/layout.md)** ›
+- **[Layout](layout.md)** ›
     Hyphenation | `\!` `\,` `\:` `\;` `\quad` `\qquad`
-- **[Useful Packages](latex/packages.md)** ›
+- **[Useful Packages](packages.md)** ›
     Lipsum Text | `\usepackage[utf8]{inputenc}`
-- **[Modify Environments](latex/environments.md)** ›
+- **[Modify Environments](environments.md)** ›
     Modify Existing Environments | `\usepackage{etoolbox}`
 
-## [Floating Bodies](latex/floats.md)
-› Images | `\begin{figure}[htbp]`
+[Floating Bodies](Floating%20Bodies.md) | `\begin{figure}[htbp]`
 
-- **[Tables](latex/tables.md)** ›
+- **[Tables](tables.md)** ›
     Auto-Stretching Columns | `S[table-format = -3.0e-1]`

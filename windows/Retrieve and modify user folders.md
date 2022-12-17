@@ -1,7 +1,3 @@
-<h1> User Folders </h1>
-
-
-
 Table of Contents
 - [User-Specific Folders](#user-specific-folders)
 - [Common-User Folders](#common-user-folders)
@@ -100,5 +96,11 @@ Table of Contents
     | `CommonVideo`                                                    | `%PUBLIC%\Videos`                                             |
 
 
-## Sources
+
+---
+Sources:
 - 2022-04-23: [Windows 10-11 User Shell Folders Restore Default Paths » Winhelponline](https://www.winhelponline.com/blog/windows-10-shell-folders-paths-defaults-restore/)
+
+Related:
+
+Tags:

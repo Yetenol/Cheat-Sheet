@@ -1,9 +1,3 @@
-<h1> GNU Debugger </h1>
-
-
-
-> GDB Command Line Arguments
-
 Table of Contents
 - [Help](#help)
 - [Break and Watch](#break-and-watch)

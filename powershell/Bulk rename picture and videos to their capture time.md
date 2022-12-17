@@ -1,10 +1,3 @@
-<h1> Image Meta Data </h1>
-
-
-
-- [Naming convention](#naming-convention)
-- [Standardize file name](#standardize-file-name)
-
 ## Naming convention
 
 - `yyyyMMdd_HHmmss` for original media

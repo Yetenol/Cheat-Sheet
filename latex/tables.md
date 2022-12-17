@@ -1,7 +1,3 @@
-<h1> Tables </h1>
-
-
-
 Table of Contents
 - [Column types](#column-types)
 - [Table types](#table-types)
@@ -192,3 +188,12 @@ Table of Contents
     ```
 
 - alternatively use `\usepackage{dcolumn}`
+
+
+---
+Sources:
+
+Related:
+[Floating Bodies](Floating%20Bodies.md)
+
+Tags:

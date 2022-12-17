@@ -1,9 +1,5 @@
-<h1> Known Folders </h1>
-
-
-
 Table of Contents
-- **[User Folders ›](user-folders.md)**  
+- **[User Folders ›](Retrieve%20and%20modify%20user%20folders.md)**  
   _This PC_-Folders, Per-user folders & Common-user folders  
   Downloads | `shell:My Pictures`
 
@@ -11,7 +7,7 @@ Table of Contents
   Known folders and panels specified by a [GUID](https://docs.microsoft.com/en-us/dotnet/api/system.guid)  
   Recycle Bin | `shell:::{�}`
 
-- **[GUIDs Archive ›](guids-archive.md)**  
+- **[GUIDs Archive ›](GUID%20archive.md)**  
   Deprecated GUIDs (usually nonfunctional in current versions)  
   3D Objects | `shell:::{�}`
 
