@@ -1,8 +1,7 @@
-<h1> Parameter </h1>
-
-Table of Contents
-- [Attributes](#attributes)
-- [Sources](#sources)
+---
+teaser: AutoComplete
+command: [Parameter(Mandatory = $true)]
+---
 
 Parameters are defined at the first non-comment line within a script of function.
 ```powershell

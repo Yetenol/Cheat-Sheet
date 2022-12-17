@@ -1,6 +1,6 @@
 <h1> Export data </h1>
 
-[⌂](../../README.md) › [PowerShell](../../README.md) › [FileSystem](filesystem.md) ›
+[⌂](../../README.md) › [PowerShell](../../README.md) › [FileSystem](File%20system.md) ›
 
 Table of Contents
 - [Visualize](#visualize)
@@ -61,7 +61,7 @@ $c = Get-Command
 	```
 
 - **Encrypted standard string**  
-  read further [Encryption](../encryption.md)
+  read further [Encryption](../Encryption.md)
 	```powershell
 	$c | ConvertTo-SecureString -AsPlainText -Force |
 		ConvertFrom-SecureString |

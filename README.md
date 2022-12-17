@@ -26,50 +26,9 @@ This project contains all my documentations of my developer life including code 
 - **[OS Panels, Folders](windows/known-folders/guids.md)** ›
     Recycle Bin | `shell:::{}`
 - **[GUIDs Archive](windows/known-folders/guids-archive.md)** ›
-    3D Objects | `shell:::{�}`
+    3D Objects | `shell:::{}`
 
-# Powershell
-
-- **[Applications](powershell/applications.md)** ›
-    Update Store Apps | `$wmiObj.UpdateScanMethod()`
-- **[Interactive Menu](powershell/menu.md)** ›
-    Select option 1, 2, 3 | `$Choice = Read-Host -Prompt "Select ..."`
-- **[Encryption](powershell/encryption.md)** ›
-    Passwords | `ConvertTo-SecureString`
-- **[Bluetooth](powershell/bluetooth.md)** ›
-    List Devices | `Get-PnpDevice -Class Bluetooth`
-- **[Win+X Menu](windows/win-x.md)** ›
-    Add Win+X entries
-
-## [Getting started](powershell/basics/basics.md)
-
-› Help Cmdlets | `script.ps1.bat`
-- **[Data Types](powershell/basics/data-types.md)** ›
-    Hashtable | `[DateTime]::Now`
-- **[Modify data](powershell/basics/modify.md)** ›
-    Add calculated property | `$list[	(0..1;-3..-1)]`
-- **[Bash equivalents](powershell/basics/bash-equivalents.md)** ›
-    While Loop | `read name` ⟷ `$name = Read-Host -Prompt "Name"`
-- **[Parameter](powershell/parameter.md)** ›
-    AutoComplete | `[Parameter(Mandatory = $true)]`
-
-## [File System Interactions](powershell/filesystem/filesystem.md)
-
-› Run as administrator | ``explorer "/select,`"$(Resolve-Path $file)`""``
-- **[Path](powershell/filesystem/path.md)** ›
-    Validate, format path | `Convert-Path .`
-- **[Import](powershell/filesystem/import.md)** ›
-    File Parsing | `[RegEx]::Match(�, $pattern).Groups[1].value`
-- **[Export](powershell/filesystem/export.md)** ›
-    Export spreadsheet | `Export-Clixml`
-- **[Links](powershell/filesystem/links.md)** ›
-    Create symbolic link | `New-Item -ItemType SymbolicLink -Name � -Target �`
-- **[Attributes](powershell/filesystem/attributes.md)** ›
-    Make ReadOnly | `$item.Attributes = $item.Attributes -bor 0x080000`
-- **[Meta data](powershell/filesystem/metadata.md)** ›
-    Get meta data | _Function_
-- **[Web](powershell/filesystem/web.md)** ›
-    Download, extract ZIPs | `Invoke-WebRequest -Uri $url -OutFile $file`
+# [Powershell](Powershell.md)
 
 # LaTeX
 
@@ -98,7 +57,7 @@ This project contains all my documentations of my developer life including code 
     Quantifiers | `(?in)user:(?<name>\S*)\s*key:(?<pwd>\S*)`
 - **[Java](languages/java.md)** ›
 - **[Git](languages/git.md)** ›
-    Delete binary from history | `git clone git@github.com:Yetenol/�.git`
+    Delete binary from history | `git clone git@github.com:Yetenol/$repo.git`
 - **[Unicode](languages/unicode.md)** ›
     Character Sorting | `!` `+` `Ξ`
 - **[Markdown](languages/markdown.md)** ›

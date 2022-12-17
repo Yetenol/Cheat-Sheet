@@ -1,8 +1,5 @@
-<h1> Interactive Menu </h1>
+# Ask a question once / until answered
 
-[⌂](../README.md) › [PowerShell](../README.md#powershell) ›
-
-## Ask a question once / until answered
 ```powershell
 do {
   $Choice = Read-Host -Prompt "=== Select from: ===`n0 blue`ny yellow`n"
@@ -24,7 +21,8 @@ do {
 } while ($Choice -eq $null)
 ```
 
-## Ask a question repeatedly until canceled
+# Ask a question repeatedly until canceled
+
 ```powershell
 while ($true) {
   $Choice = Read-Host -Prompt "=== Select from: ===`n0  Sleep`n9+ Shutdown in _s`nq  Quit`n"

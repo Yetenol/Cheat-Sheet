@@ -1,8 +1,9 @@
-<h1> Bash equivalents </h1>
+---
+teaser: While Loop
+command: read name <-> $name = Read-Host -Prompt "Name"
+---
 
-[⌂](../../README.md) › [PowerShell](../../README.md#powershell) › [Getting Started](basics.md) ›
-
-> examples of bash commands and how to do the same thing in PowerShell
+Examples of bash commands and how to do the same thing in PowerShell
 
 Table of Contents
 - [Echo](#echo)

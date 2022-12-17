@@ -1,7 +1,3 @@
-<h1> Path </h1>
-
-[⌂](../../README.md) › [PowerShell](../../README.md) › [FileSystem](filesystem.md) ›
-
 Example input
 ```powershell
 $Path = ".\README.md"
@@ -77,3 +73,11 @@ Folders also contain `Parent`, `Root`.
         [IO.DirectoryInfo]::new($_)
     }
     ```
+
+---
+Sources:
+
+Related:
+[File system](filesystem/File%20system.md)
+
+Tags:

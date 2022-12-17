@@ -3,9 +3,9 @@
 [⌂](../../README.md) › [PowerShell](../../README.md) ›
 
 Table of Contents
-- **[Path ›](powershell/filesystem/path.md)**    
+- **[Path ›](../File%20system%20path.md)**    
     retrieve filesystem information
-- **[Import ›](import.md)**  
+- **[Import ›](../Input%20information.md)**  
     extract data from files  
     parse using regular expressions  
 - **[Export ›](export.md)**  
@@ -16,7 +16,7 @@ Table of Contents
 - **[Attributes](attributes.md)**  
     get, set and test file, folder attributes  
     set ReadOnly, Archived, OneDrive AlwaysOnDevice, ...  
-- **[Meta data ›](metadata.md)**  
+- **[Meta data ›](../File%20system%20metadata.md)**  
     get additional file metadata  
 - **[Web ›](web.md)**  
     download files, archives  
@@ -125,7 +125,7 @@ The flag is stored in byte `0x15` (= 21) at bit `0x20` (= 6).
 # File Information
 
 - [Get **attributes**](attributes.md)
-- [Get **meta data**](metadata.md)
+- [Get **meta data**](../File%20system%20metadata.md)
 
 - Get **version data** of Windows components
     ```powershell

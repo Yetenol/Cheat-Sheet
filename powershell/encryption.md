@@ -1,11 +1,10 @@
-<h1> Encryption </h1>
+#obsidian/translate #powershell/test
 
-[⌂](../README.md) › [PowerShell](../README.md#powershell) ›
-
-- The data is encrypted using the Windows Data Protection API (DPAPI).
-- Only the **SAME USER ON THE SAME MASHINE** can decrypt.
+The data is encrypted using the Windows Data Protection API (DPAPI). 
+Only the **SAME USER ON THE SAME MASHINE** can decrypt.
 
 # Eingabe eines sicheren Texts
+
 1. Consoleneingabe
     ```powershell
     Read-Host "Password" -AsSecureString # secure string
@@ -26,6 +25,7 @@
     ```
 
 # Dateispeicherung
+
 1. XML-Objekt verschlüsselt speichern
     ```powershell
     | Export-Clixml ".\temp.xml"
@@ -65,10 +65,19 @@
 	$plaintext
     ```
 
-
-
 ## Import from file
+
 Only the <b>SAME USER ON THE SAME MASHINE</b> can decrypt.
+
 ```powershell
 $Secure = Get-Content "${Env:AppData}\Sec.bin" | ConvertTo-SecureString
 ```
+
+
+---
+Sources:
+
+Related:
+[Sensitive input](Sensitive%20input.md)
+
+Tags:

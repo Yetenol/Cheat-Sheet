@@ -1,6 +1,5 @@
-<h1> Meta data </h1>
-
-[⌂](../../README.md) › [PowerShell](../../README.md) › [FileSystem](filesystem.md) ›
+- get **advanced meta data**    
+  ` Attributes `, ` Computer `, ` DateAccessed `, ` DateCreated `, ` DateModified `, ` Debug `, ` File `, ` FileExtension `, ` FileLocation `, ` Filename `, ` FolderName `, ` IsHidden `, ` IsReadOnly `, ` IsSystem `, ` ItemType `, ` LinkStatus `, ` Name `, ` Owner `, ` Patched `, ` Path `, ` PerceivedType `, ` PreRelease `, ` PrivateBuild `, ` Rating `, ` Shared `, ` SharingStatus `, ` Size `, ` SpecialBuild `
 
 ```powershell
 function Get-FileMetaData {
@@ -86,3 +85,13 @@ function Get-FileMetaData {
     }
 }
 ```
+
+
+---
+Sources:
+- 2022-12-17: [Getting file metadata with PowerShell similar to what Windows Explorer provides - Evotec](https://evotec.xyz/getting-file-metadata-with-powershell-similar-to-what-windows-explorer-provides/)
+
+Related:
+[File system](filesystem/File%20system.md)
+
+Tags:

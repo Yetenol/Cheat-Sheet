@@ -1,8 +1,4 @@
-<h1> Applications </h1>
-
-[⌂](../README.md) › [PowerShell](../README.md#powershell) ›
-
-## Update all Microsoft Store apps
+# Update all Microsoft Store apps
 
 ```powershell
 $namespaceName = "root\cimv2\mdm\dmmap"
@@ -12,8 +8,12 @@ $result = $wmiObj.UpdateScanMethod()
 ```
 
 
-## Upgrade all winget apps
+# Upgrade all winget apps
 
 ```powershell
 winget upgrade --all
 ```
+
+# Update all git repositories
+
+- [shortcutFox-gitUpdateAll.ps1 at main · Yetenol-shortcutFox](https://github.com/Yetenol/shortcutFox/blob/main/source/scripts/gitUpdateAll.ps1)
