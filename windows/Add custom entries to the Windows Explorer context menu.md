@@ -1,6 +1,7 @@
-<h1> Context menu </h1>
-
-
+---
+example: Open in VS Code
+command: `HKEY_CLASSES_ROOT\Directory\shell\
+---
 
 ```powershell
 regedit
@@ -23,5 +24,12 @@ regedit
     - Right Click > Modify...
     - Set Data Value to Intellij IDEA exe file
 
-## Sources
+
+---
+Sources:
 - 2022-05-02: [Open a project in IntelliJ from folder - Stack Overflow](https://stackoverflow.com/questions/49733733/open-a-project-in-intellij-from-folder)
+
+Related:
+[[Registry]]
+
+Tags:

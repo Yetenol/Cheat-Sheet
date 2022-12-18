@@ -1,3 +1,8 @@
+---
+teaser: Display
+command: ms-settings:display
+---
+
 `ms-setting` URIs used to open various pages of the Settings app
 
 Table of Contents

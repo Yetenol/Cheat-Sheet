@@ -1,3 +1,8 @@
+---
+example: Neue Verknüpfung anlegen
+command: rundll32 appwiz.cpl,NewLinkHere
+---
+
 ## Control Panels and their Tabs
 
 - **Control Panel**  

@@ -1,4 +1,7 @@
-Run Microsoft's troubleshootings wizzard
+---
+example: Printer Troubleshooter
+command: msdt -id PrinterDiagnosticmsdt
+---
 
 | Title                                        | Description                                                                                                            | Command                                   |
 | -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
