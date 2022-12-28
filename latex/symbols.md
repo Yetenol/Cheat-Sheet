@@ -1,32 +1,7 @@
-<h1> Symbols </h1>
+Commands for Mathematical Expressions, Symbols, Operators and Relations
 
+# Favorites
 
-
-> Commands for Mathematical Expressions, Symbols, Operators and Relations
-
-Table of Contents
-- [Favorites](#favorites)
-- [Non-Mathematical Symbols](#non-mathematical-symbols)
-- [Money and currencies](#money-and-currencies)
-- [Degree Symbols](#degree-symbols)
-- [Math Mode Accents](#math-mode-accents)
-- [Greek Letters (lowercase)](#greek-letters-lowercase)
-- [Greek Letters (uppercase)](#greek-letters-uppercase)
-- [Hebrew Letters](#hebrew-letters)
-- [Number sets](#number-sets)
-- [Binary Relations](#binary-relations)
-- [Negated Binary Relations and Arrows](#negated-binary-relations-and-arrows)
-- [Binary Operators](#binary-operators)
-- [Big Operators](#big-operators)
-- [Arrows](#arrows)
-- [Arrows as Accents](#arrows-as-accents)
-- [Delimiters](#delimiters)
-- [Large Delimiters](#large-delimiters)
-- [Miscellaneous Symbols](#miscellaneous-symbols)
-- [Math Alphabets](#math-alphabets)
-- [Sources](#sources)
-
-## Favorites
 | Command           | Rendering         |
 | ----------------- | ----------------- |
 | `\lnot`           | $\lnot$           |
@@ -43,8 +18,9 @@ Table of Contents
 | `\cap`            | $\cap$            |
 | `\cup`            | $\cup$            |
 
-## Non-Mathematical Symbols
-> These symbols can also be used in text mode.
+# Non-Mathematical Symbols
+
+These symbols can also be used in text mode.
 
 | Command                                 | Rendering      | Name or _Function_                   | Usage Example                      |
 | --------------------------------------- | -------------- | ------------------------------------ | ---------------------------------- |
@@ -70,8 +46,9 @@ Table of Contents
 | `\qty{5}{\celsius}`                     | 5 ℃            |                                      | [siunitx][siunitx]                 |
 
 
-## Money and currencies
-> `€`, `\$`, `pounds` and `\yen` are not recommended
+# Money and currencies
+
+`€`, `\$`, `pounds` and `\yen` are not recommended
 
 | Command      | Rendering | Dependency                               |
 | ------------ | --------- | ---------------------------------------- |
@@ -102,14 +79,16 @@ Table of Contents
   See [further options][currency] or set decimal marker inside `\sisetup{locale=DE}`
 
 
-## Degree Symbols
+# Degree Symbols
+
 | Command           | Rendering        | Dependency         |
 | ----------------- | ---------------- | ------------------ |
 | `^\circ`          | $^\circ$         |                    |
 | `\unit{\degree}`  | $^\circ$         | [siunitx][siunitx] |
 | `\unit{\celsius}` | $^\circ\text{C}$ | [siunitx][siunitx] |
 
-## Math Mode Accents
+# Math Mode Accents
+
 | Command           | Rendering         |
 | ----------------- | ----------------- |
 | `\acute{a}`       | $\acute{a}$       |
@@ -126,7 +105,8 @@ Table of Contents
 | `\widehat{AAA}`   | $\widehat{AAA}$   |
 | `\widetilde{AAA}` | $\widetilde{AAA}$ |
 
-## Greek Letters (lowercase)
+# Greek Letters (lowercase)
+
 | Command     | Rendering   | Variants      |
 | ----------- | ----------- | ------------- |
 | `\alpha`    | $\alpha$    |
@@ -167,7 +147,8 @@ Table of Contents
     | `\renewcommand{\sigma}{\varsigma}`     | $\varsigma$   | $\sigma$   |
     | `\renewcommand{\phi}{\varphi}`         | $\varphi$     | $\phi$     |
     
-## Greek Letters (uppercase)
+# Greek Letters (uppercase)
+
 | Command    | Rendering  |
 | ---------- | ---------- |
 | `\Gamma`   | $\Gamma$   |
@@ -182,14 +163,16 @@ Table of Contents
 | `\Psi`     | $\Psi$     |
 | `\Omega`   | $\Omega$   |
 
-## Hebrew Letters
+# Hebrew Letters
+
 | Command   | Rendering | Dependency         |
 | --------- | --------- | ------------------ |
 | `\beth`   | $\beth$   | [amssymb][amssymb] |
 | `\gimel`  | $\gimel$  | [amssymb][amssymb] |
 | `\daleth` | $\daleth$ | [amssymb][amssymb] |
 
-## Number sets
+# Number sets
+
 | Command      | Rendering    |
 | ------------ | ------------ |
 | `\mathbb{A}` | $\mathbb{A}$ |
@@ -202,7 +185,8 @@ Table of Contents
 | `\mathbb{S}` | $\mathbb{S}$ |
 | `\mathbb{Z}` | $\mathbb{Z}$ |
 
-## Binary Relations
+# Binary Relations
+
 
 | Command               | Rendering             | Variants                                    | Dependency           |
 | --------------------- | --------------------- | ------------------------------------------- | -------------------- |
@@ -323,7 +307,8 @@ Table of Contents
   | ------------------------------------ | ------------ | --------- | ------------------ |
   | `\renewcommand{\propto}{\varpropto}` | $\varpropto$ | $\propto$ | [amssymb][amssymb] |
 
-## Negated Binary Relations and Arrows
+# Negated Binary Relations and Arrows
+
 | Command             | Rendering           | Variants         | Dependency         |
 | ------------------- | ------------------- | ---------------- | ------------------ |
 | `\neq` <br> `\ne`   | $\neq$ <br> $\ne$   |                  |
@@ -393,7 +378,8 @@ Table of Contents
   | `\renewcommand{\subsetneqq}{\varsubsetneqq}` | $\varsubsetneqq$ | $\subsetneqq$ |
   | `\renewcommand{\supsetneqq}{\varsupsetneqq}` | $\varsupsetneqq$ | $\supsetneqq$ |
 
-## Binary Operators
+# Binary Operators
+
 | Command               | Rendering             | Variants            | Dependency           |
 | --------------------- | --------------------- | ------------------- | -------------------- |
 | `+`                   | $+$                   |
@@ -464,7 +450,8 @@ Table of Contents
   | `\renewcommand{\triangleleft}{\vartriangleleft}`   | $\vartriangleleft$  | $\triangleleft$  | [amssymb][amssymb] |
   | `\renewcommand{\triangleright}{\vartriangleright}` | $\vartriangleright$ | $\triangleright$ | [amssymb][amssymb] |
 
-## Big Operators
+# Big Operators
+
 | Command      | Rendering    |
 | ------------ | ------------ |
 | `\sum`       | $\sum$       |
@@ -482,7 +469,8 @@ Table of Contents
 | `\bigoplus`  | $\bigoplus$  |
 | `\bigotimes` | $\bigotimes$ |
 
-## Arrows
+# Arrows
+
 | Command                   | Rendering                 | Dependency           |
 | ------------------------- | ------------------------- | -------------------- |
 | `\leftarrow` <br> `\gets` | $\leftarrow$ <br> $\gets$ |
@@ -549,7 +537,8 @@ Table of Contents
 | `\rightsquigarrow`        | $\rightsquigarrow$        | [amssymb][amssymb]   |
 | `\leftrightsquigarrow`    | $\leftrightsquigarrow$    | [amssymb][amssymb]   |
 
-## Arrows as Accents
+# Arrows as Accents
+
 | Command                    | Rendering                  |
 | -------------------------- | -------------------------- |
 | `\overrightarrow{AB}`      | $\overrightarrow{AB}$      |
@@ -559,7 +548,8 @@ Table of Contents
 | `\overleftrightarrow{AB}`  | $\overleftrightarrow{AB}$  |
 | `\underleftrightarrow{AB}` | $\underleftrightarrow{AB}$ |
 
-## Delimiters
+# Delimiters
+
 | Command             | Rendering             | Dependency                             |
 | ------------------- | --------------------- | -------------------------------------- |
 | `(`                 | $($                   |
@@ -593,7 +583,8 @@ Table of Contents
 | `\lVert`            | $\lVert$              | [amssymb][amssymb], [amsmath][amsmath] |
 | `\rVert`            | $\rVert$              | [amssymb][amssymb], [amsmath][amsmath] |
 
-## Large Delimiters
+# Large Delimiters
+
 | Command       | Rendering     |
 | ------------- | ------------- |
 | `\lgroup`     | $\lgroup$     |
@@ -604,7 +595,8 @@ Table of Contents
 | `\bracevert`  | $\bracevert$  |
 | `\rmoustache` | $\rmoustache$ |
 
-## Miscellaneous Symbols
+# Miscellaneous Symbols
+
 | Command              | Rendering            | Variants       | Dependency           |
 | -------------------- | -------------------- | -------------- | -------------------- |
 | `\dots`              | $\dots$              |
@@ -673,8 +665,9 @@ Table of Contents
   | ---------------------------------------- | -------------- | ----------- | ------------------ |
   | `\renewcommand{\triangle}{\vartriangle}` | $\vartriangle$ | $\triangle$ | [amssymb][amssymb] |
 
-## Math Alphabets
-> example TEXT: `ABCDEabcde1234`
+# Math Alphabets
+
+example TEXT: `ABCDEabcde1234`
 
 | Command             | Rendering                     | Dependency                                 |
 | ------------------- | ----------------------------- | ------------------------------------------ |
@@ -687,11 +680,17 @@ Table of Contents
 | `\mathbb{TEXT}`     | $\mathbb{ABCDE}$              | [amsfonts][amsfonts] or [amssymb][amssymb] |
 
 
-## Sources
+
+---
+Sources:
 - 2022-06-10: [The Not So Short Introduction to LaTeX2e](https://tobi.oetiker.ch/lshort/lshort.pdf)
 - 2022-06-10: [LaTeX Math Symbols Cheat Sheet - Kapeli](https://kapeli.com/cheat_sheets/LaTeX_Math_Symbols.docset/Contents/Resources/Documents/index)
 - 2022-06-10: [LaTeX Math for Undergrads](http://tug.ctan.org/info/undergradmath/undergradmath.pdf)
 - 2022-06-10: [List of mathematical symbols by subject - Wikipedia](https://en.wikipedia.org/wiki/List_of_mathematical_symbols_by_subject)
+
+Related:
+
+Tags:
 
 [currency]: https://texdoc.org/serve/currency/0
 [siunitx]: https://texdoc.org/serve/siunitx/0
