@@ -40,10 +40,10 @@ These symbols can also be used in text mode.
 | `\textsuperscript{\textcopyright}`      | ©              | Copyright Sign                       |
 | `\textsuperscript{\textregistered}`     | ®              | Registered Trade Mark Sign           |
 | `\texttrademark{}`                      | ™              | Trade Mark Sign                      |
-| `\unit{\degree}` <br> `\textdegree{}`   | °              | Degree Sign                          | [siunitx][siunitx] <br> _built in_ |
-| `\ang{5}`                               | 5°             | Angle                                | [siunitx][siunitx]                 |
-| `\unit{\celsius}` <br> `\textcelsius{}` | ℃              | Degree Celsius                       | [siunitx][siunitx] <br> _built in_ |
-| `\qty{5}{\celsius}`                     | 5 ℃            |                                      | [siunitx][siunitx]                 |
+| `\unit{\degree}` <br> `\textdegree{}`   | °              | Degree Sign                          | [siunitx](https://texdoc.org/serve/siunitx/0) <br> _built in_ |
+| `\ang{5}`                               | 5°             | Angle                                | [siunitx](https://texdoc.org/serve/siunitx/0)                 |
+| `\unit{\celsius}` <br> `\textcelsius{}` | ℃              | Degree Celsius                       | [siunitx](https://texdoc.org/serve/siunitx/0) <br> _built in_ |
+| `\qty{5}{\celsius}`                     | 5 ℃            |                                      | [siunitx](https://texdoc.org/serve/siunitx/0)                 |
 
 
 # Money and currencies
@@ -52,14 +52,14 @@ These symbols can also be used in text mode.
 
 | Command      | Rendering | Dependency                               |
 | ------------ | --------- | ---------------------------------------- |
-| `\cEUR{}`    | €         | [currency][currency] + `\DefineCurrency` |
-| `\cUSD{}`    | $         | [currency][currency] + `\DefineCurrency` |
-| `\cJPY{}`    | ¥         | [currency][currency] + `\DefineCurrency` |
-| `\cGBP{}`    | £         | [currency][currency] + `\DefineCurrency` |
-| `\dEUR{1.5}` | 1.50 €    | [currency][currency] + `\DefineCurrency` |
-| `\dUSD{1.5}` | $ 1.50    | [currency][currency] + `\DefineCurrency` |
-| `\dJPY{1.5}` | 2 ¥       | [currency][currency] + `\DefineCurrency` |
-| `\dGBP{1.5}` | £ 1.50    | [currency][currency] + `\DefineCurrency` |
+| `\cEUR{}`    | €         | [currency](https://texdoc.org/serve/currency/0) + `\DefineCurrency` |
+| `\cUSD{}`    | $         | [currency](https://texdoc.org/serve/currency/0) + `\DefineCurrency` |
+| `\cJPY{}`    | ¥         | [currency](https://texdoc.org/serve/currency/0) + `\DefineCurrency` |
+| `\cGBP{}`    | £         | [currency](https://texdoc.org/serve/currency/0) + `\DefineCurrency` |
+| `\dEUR{1.5}` | 1.50 €    | [currency](https://texdoc.org/serve/currency/0) + `\DefineCurrency` |
+| `\dUSD{1.5}` | $ 1.50    | [currency](https://texdoc.org/serve/currency/0) + `\DefineCurrency` |
+| `\dJPY{1.5}` | 2 ¥       | [currency](https://texdoc.org/serve/currency/0) + `\DefineCurrency` |
+| `\dGBP{1.5}` | £ 1.50    | [currency](https://texdoc.org/serve/currency/0) + `\DefineCurrency` |
 
 - **Define currencies** in the preamble  
   ```latex
@@ -76,7 +76,7 @@ These symbols can also be used in text mode.
   | `pre=`false  | `true`, `false`                   | Print currency before the value?      |
   | `cents=`true | `true`, `false`, `always`         | Control the way the cents are printed |
   
-  See [further options][currency] or set decimal marker inside `\sisetup{locale=DE}`
+  See [further options](https://texdoc.org/serve/$1/0) or set decimal marker inside `\sisetup{locale=DE}`
 
 
 # Degree Symbols
@@ -84,8 +84,8 @@ These symbols can also be used in text mode.
 | Command           | Rendering        | Dependency         |
 | ----------------- | ---------------- | ------------------ |
 | `^\circ`          | $^\circ$         |                    |
-| `\unit{\degree}`  | $^\circ$         | [siunitx][siunitx] |
-| `\unit{\celsius}` | $^\circ\text{C}$ | [siunitx][siunitx] |
+| `\unit{\degree}`  | $^\circ$         | [siunitx](https://texdoc.org/serve/siunitx/0) |
+| `\unit{\celsius}` | $^\circ\text{C}$ | [siunitx](https://texdoc.org/serve/siunitx/0) |
 
 # Math Mode Accents
 
@@ -133,15 +133,15 @@ These symbols can also be used in text mode.
 | `\chi`      | $\chi$      |
 | `\psi`      | $\psi$      |
 | `\omega`    | $\omega$    |
-| `\digamma`  | $\digamma$  |               | [amssymb][amssymb] |
-| `\varkappa` | $\varkappa$ |               | [amssymb][amssymb] |
+| `\digamma`  | $\digamma$  |               | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\varkappa` | $\varkappa$ |               | [amssymb](https://texdoc.org/serve/amssymb/0) |
 
 - Change letter style
     | Preamble Command                       | Rendering     | Original   | Dependency         |
     | -------------------------------------- | ------------- | ---------- | ------------------ |
     | `\renewcommand{\epsilon}{\varepsilon}` | $\varepsilon$ | $\epsilon$ |
     | `\renewcommand{\theta}{\vartheta}`     | $\vartheta$   | $\theta$   |
-    | `\renewcommand{\kappa}{\varkappa}`     | $\varkappa$   | $\kappa$   | [amssymb][amssymb] |
+    | `\renewcommand{\kappa}{\varkappa}`     | $\varkappa$   | $\kappa$   | [amssymb](https://texdoc.org/serve/amssymb/0) |
     | `\renewcommand{\pi}{\varpi}`           | $\varpi$      | $\pi$      |
     | `\renewcommand{\rho}{\varrho}`         | $\varrho$     | $\rho$     |
     | `\renewcommand{\sigma}{\varsigma}`     | $\varsigma$   | $\sigma$   |
@@ -167,9 +167,9 @@ These symbols can also be used in text mode.
 
 | Command   | Rendering | Dependency         |
 | --------- | --------- | ------------------ |
-| `\beth`   | $\beth$   | [amssymb][amssymb] |
-| `\gimel`  | $\gimel$  | [amssymb][amssymb] |
-| `\daleth` | $\daleth$ | [amssymb][amssymb] |
+| `\beth`   | $\beth$   | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\gimel`  | $\gimel$  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\daleth` | $\daleth$ | [amssymb](https://texdoc.org/serve/amssymb/0) |
 
 # Number sets
 
@@ -211,9 +211,9 @@ These symbols can also be used in text mode.
 | `\subseteq`           | $\subseteq$           | $\not\subseteq$                             |
 | `\supseteq`           | $\supseteq$           | $\not\supseteq$                             |
 | `\cong`               | $\cong$               | $\not\cong$                                 |
-| `\sqsubset`           | $\sqsubset$           | $\not\sqsubset$                             | [latexsym][latexsym] |
-| `\sqsupset`           | $\sqsupset$           | $\not\sqsupset$                             | [latexsym][latexsym] |
-| `\Join`               | $\Join$               | $\not\Join$                                 | [latexsym][latexsym] |
+| `\sqsubset`           | $\sqsubset$           | $\not\sqsubset$                             | [latexsym](https://texdoc.org/serve/latexsym/0) |
+| `\sqsupset`           | $\sqsupset$           | $\not\sqsupset$                             | [latexsym](https://texdoc.org/serve/latexsym/0) |
+| `\Join`               | $\Join$               | $\not\Join$                                 | [latexsym](https://texdoc.org/serve/latexsym/0) |
 | `\sqsubseteq`         | $\sqsubseteq$         | $\not\sqsubseteq$                           |
 | `\sqsupseteq`         | $\sqsupseteq$         | $\not\sqsupseteq$                           |
 | `\bowtie`             | $\bowtie$             | $\not\bowtie$                               |
@@ -230,73 +230,73 @@ These symbols can also be used in text mode.
 | `\frown`              | $\frown$              | $\not\frown$                                |
 | `\asymp`              | $\asymp$              | $\not\asymp$                                |
 | `:`                   | $:$                   | $\not:$                                     |
-| `\lessdot`            | $\lessdot$            | $\not\lessdot$                              | [amssymb][amssymb]   |
-| `\gtrdot`             | $\gtrdot$             | $\not\gtrdot$                               | [amssymb][amssymb]   |
-| `\doteqdot`           | $\doteqdot$           | $\not\doteqdot$                             | [amssymb][amssymb]   |
-| `\leqslant`           | $\leqslant$           | $\not\leqslant$                             | [amssymb][amssymb]   |
-| `\geqslant`           | $\geqslant$           | $\not\geqslant$                             | [amssymb][amssymb]   |
-| `\risingdotseq`       | $\risingdotseq$       | $\not\risingdotseq$                         | [amssymb][amssymb]   |
-| `\eqslantless`        | $\eqslantless$        | $\not\eqslantless$                          | [amssymb][amssymb]   |
-| `\eqslantgtr`         | $\eqslantgtr$         | $\not\eqslantgtr$                           | [amssymb][amssymb]   |
-| `\fallingdotseq`      | $\fallingdotseq$      | $\not\fallingdotseq$                        | [amssymb][amssymb]   |
-| `\leqq`               | $\leqq$               | $\not\leqq$                                 | [amssymb][amssymb]   |
-| `\geqq`               | $\geqq$               | $\not\geqq$                                 | [amssymb][amssymb]   |
-| `\eqcirc`             | $\eqcirc$             | $\not\eqcirc$                               | [amssymb][amssymb]   |
-| `\lll`                | $\lll$                | $\not\lll$                                  | [amssymb][amssymb]   |
-| `\llless`             | $\llless$             | $\not\llless$                               | [amssymb][amssymb]   |
-| `\ggg`                | $\ggg$                | $\not\ggg$                                  | [amssymb][amssymb]   |
-| `\circeq`             | $\circeq$             | $\not\circeq$                               | [amssymb][amssymb]   |
-| `\lesssim`            | $\lesssim$            | $\not\lesssim$                              | [amssymb][amssymb]   |
-| `\gtrsim`             | $\gtrsim$             | $\not\gtrsim$                               | [amssymb][amssymb]   |
-| `\triangleq`          | $\triangleq$          | $\not\triangleq$                            | [amssymb][amssymb]   |
-| `\lessapprox`         | $\lessapprox$         | $\not\lessapprox$                           | [amssymb][amssymb]   |
-| `\gtrapprox`          | $\gtrapprox$          | $\not\gtrapprox$                            | [amssymb][amssymb]   |
-| `\bumpeq`             | $\bumpeq$             | $\not\bumpeq$                               | [amssymb][amssymb]   |
-| `\lessgtr`            | $\lessgtr$            | $\not\lessgtr$                              | [amssymb][amssymb]   |
-| `\gtrless`            | $\gtrless$            | $\not\gtrless$                              | [amssymb][amssymb]   |
-| `\Bumpeq`             | $\Bumpeq$             | $\not\Bumpeq$                               | [amssymb][amssymb]   |
-| `\lesseqgtr`          | $\lesseqgtr$          | $\not\lesseqgtr$                            | [amssymb][amssymb]   |
-| `\gtreqless`          | $\gtreqless$          | $\not\gtreqless$                            | [amssymb][amssymb]   |
-| `\thicksim`           | $\thicksim$           | $\not\thicksim$                             | [amssymb][amssymb]   |
-| `\lesseqqgtr`         | $\lesseqqgtr$         | $\not\lesseqqgtr$                           | [amssymb][amssymb]   |
-| `\gtreqqless`         | $\gtreqqless$         | $\not\gtreqqless$                           | [amssymb][amssymb]   |
-| `\thickapprox`        | $\thickapprox$        | $\not\thickapprox$                          | [amssymb][amssymb]   |
-| `\preccurlyeq`        | $\preccurlyeq$        | $\not\preccurlyeq$                          | [amssymb][amssymb]   |
-| `\succcurlyeq`        | $\succcurlyeq$        | $\not\succcurlyeq$                          | [amssymb][amssymb]   |
-| `\approxeq`           | $\approxeq$           | $\not\approxeq$                             | [amssymb][amssymb]   |
-| `\curlyeqprec`        | $\curlyeqprec$        | $\not\curlyeqprec$                          | [amssymb][amssymb]   |
-| `\curlyeqsucc`        | $\curlyeqsucc$        | $\not\curlyeqsucc$                          | [amssymb][amssymb]   |
-| `\backsim`            | $\backsim$            | $\not\backsim$                              | [amssymb][amssymb]   |
-| `\precsim`            | $\precsim$            | $\not\precsim$                              | [amssymb][amssymb]   |
-| `\succsim`            | $\succsim$            | $\not\succsim$                              | [amssymb][amssymb]   |
-| `\backsimeq`          | $\backsimeq$          | $\not\backsimeq$                            | [amssymb][amssymb]   |
-| `\precapprox`         | $\precapprox$         | $\not\precapprox$                           | [amssymb][amssymb]   |
-| `\succapprox`         | $\succapprox$         | $\not\succapprox$                           | [amssymb][amssymb]   |
-| `\vDash`              | $\vDash$              | $\not\vDash$                                | [amssymb][amssymb]   |
-| `\subseteqq`          | $\subseteqq$          | $\not\subseteqq$                            | [amssymb][amssymb]   |
-| `\supseteqq`          | $\supseteqq$          | $\not\supseteqq$                            | [amssymb][amssymb]   |
-| `\Vdash`              | $\Vdash$              | $\not\Vdash$                                | [amssymb][amssymb]   |
-| `\shortparallel`      | $\shortparallel$      | $\not\shortparallel$                        | [amssymb][amssymb]   |
-| `\Supset`             | $\Supset$             | $\not\Supset$                               | [amssymb][amssymb]   |
-| `\Vvdash`             | $\Vvdash$             | $\not\Vvdash$                               | [amssymb][amssymb]   |
-| `\blacktriangleleft`  | $\blacktriangleleft$  | $\not\blacktriangleleft$                    | [amssymb][amssymb]   |
-| `\sqsupset`           | $\sqsupset$           | $\not\sqsupset$                             | [amssymb][amssymb]   |
-| `\backepsilon`        | $\backepsilon$        | $\not\backepsilon$                          | [amssymb][amssymb]   |
-| `\vartriangleright`   | $\vartriangleright$   | $\not\vartriangleright$                     | [amssymb][amssymb]   |
-| `\because`            | $\because$            | $\not\because$                              | [amssymb][amssymb]   |
-| `\varpropto`          | $\varpropto$          | $\not\varpropto$                            | [amssymb][amssymb]   |
-| `\blacktriangleright` | $\blacktriangleright$ | $\not\blacktriangleright$                   | [amssymb][amssymb]   |
-| `\Subset`             | $\Subset$             | $\not\Subset$                               | [amssymb][amssymb]   |
-| `\between`            | $\between$            | $\not\between$                              | [amssymb][amssymb]   |
-| `\trianglerighteq`    | $\trianglerighteq$    | $\not\trianglerighteq$                      | [amssymb][amssymb]   |
-| `\smallfrown`         | $\smallfrown$         | $\not\smallfrown$                           | [amssymb][amssymb]   |
-| `\pitchfork`          | $\pitchfork$          | $\not\pitchfork$                            | [amssymb][amssymb]   |
-| `\vartriangleleft`    | $\vartriangleleft$    | $\not\vartriangleleft$                      | [amssymb][amssymb]   |
-| `\shortmid`           | $\shortmid$           | $\not\shortmid$                             | [amssymb][amssymb]   |
-| `\smallsmile`         | $\smallsmile$         | $\not\smallsmile$                           | [amssymb][amssymb]   |
-| `\trianglelefteq`     | $\trianglelefteq$     | $\not\trianglelefteq$                       | [amssymb][amssymb]   |
-| `\therefore`          | $\therefore$          | $\not\therefore$                            | [amssymb][amssymb]   |
-| `\sqsubset`           | $\sqsubset$           | $\not\sqsubset$                             | [amssymb][amssymb]   |
+| `\lessdot`            | $\lessdot$            | $\not\lessdot$                              | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\gtrdot`             | $\gtrdot$             | $\not\gtrdot$                               | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\doteqdot`           | $\doteqdot$           | $\not\doteqdot$                             | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\leqslant`           | $\leqslant$           | $\not\leqslant$                             | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\geqslant`           | $\geqslant$           | $\not\geqslant$                             | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\risingdotseq`       | $\risingdotseq$       | $\not\risingdotseq$                         | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\eqslantless`        | $\eqslantless$        | $\not\eqslantless$                          | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\eqslantgtr`         | $\eqslantgtr$         | $\not\eqslantgtr$                           | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\fallingdotseq`      | $\fallingdotseq$      | $\not\fallingdotseq$                        | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\leqq`               | $\leqq$               | $\not\leqq$                                 | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\geqq`               | $\geqq$               | $\not\geqq$                                 | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\eqcirc`             | $\eqcirc$             | $\not\eqcirc$                               | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\lll`                | $\lll$                | $\not\lll$                                  | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\llless`             | $\llless$             | $\not\llless$                               | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\ggg`                | $\ggg$                | $\not\ggg$                                  | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\circeq`             | $\circeq$             | $\not\circeq$                               | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\lesssim`            | $\lesssim$            | $\not\lesssim$                              | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\gtrsim`             | $\gtrsim$             | $\not\gtrsim$                               | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\triangleq`          | $\triangleq$          | $\not\triangleq$                            | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\lessapprox`         | $\lessapprox$         | $\not\lessapprox$                           | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\gtrapprox`          | $\gtrapprox$          | $\not\gtrapprox$                            | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\bumpeq`             | $\bumpeq$             | $\not\bumpeq$                               | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\lessgtr`            | $\lessgtr$            | $\not\lessgtr$                              | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\gtrless`            | $\gtrless$            | $\not\gtrless$                              | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\Bumpeq`             | $\Bumpeq$             | $\not\Bumpeq$                               | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\lesseqgtr`          | $\lesseqgtr$          | $\not\lesseqgtr$                            | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\gtreqless`          | $\gtreqless$          | $\not\gtreqless$                            | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\thicksim`           | $\thicksim$           | $\not\thicksim$                             | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\lesseqqgtr`         | $\lesseqqgtr$         | $\not\lesseqqgtr$                           | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\gtreqqless`         | $\gtreqqless$         | $\not\gtreqqless$                           | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\thickapprox`        | $\thickapprox$        | $\not\thickapprox$                          | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\preccurlyeq`        | $\preccurlyeq$        | $\not\preccurlyeq$                          | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\succcurlyeq`        | $\succcurlyeq$        | $\not\succcurlyeq$                          | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\approxeq`           | $\approxeq$           | $\not\approxeq$                             | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\curlyeqprec`        | $\curlyeqprec$        | $\not\curlyeqprec$                          | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\curlyeqsucc`        | $\curlyeqsucc$        | $\not\curlyeqsucc$                          | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\backsim`            | $\backsim$            | $\not\backsim$                              | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\precsim`            | $\precsim$            | $\not\precsim$                              | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\succsim`            | $\succsim$            | $\not\succsim$                              | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\backsimeq`          | $\backsimeq$          | $\not\backsimeq$                            | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\precapprox`         | $\precapprox$         | $\not\precapprox$                           | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\succapprox`         | $\succapprox$         | $\not\succapprox$                           | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\vDash`              | $\vDash$              | $\not\vDash$                                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\subseteqq`          | $\subseteqq$          | $\not\subseteqq$                            | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\supseteqq`          | $\supseteqq$          | $\not\supseteqq$                            | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\Vdash`              | $\Vdash$              | $\not\Vdash$                                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\shortparallel`      | $\shortparallel$      | $\not\shortparallel$                        | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\Supset`             | $\Supset$             | $\not\Supset$                               | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\Vvdash`             | $\Vvdash$             | $\not\Vvdash$                               | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\blacktriangleleft`  | $\blacktriangleleft$  | $\not\blacktriangleleft$                    | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\sqsupset`           | $\sqsupset$           | $\not\sqsupset$                             | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\backepsilon`        | $\backepsilon$        | $\not\backepsilon$                          | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\vartriangleright`   | $\vartriangleright$   | $\not\vartriangleright$                     | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\because`            | $\because$            | $\not\because$                              | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\varpropto`          | $\varpropto$          | $\not\varpropto$                            | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\blacktriangleright` | $\blacktriangleright$ | $\not\blacktriangleright$                   | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\Subset`             | $\Subset$             | $\not\Subset$                               | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\between`            | $\between$            | $\not\between$                              | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\trianglerighteq`    | $\trianglerighteq$    | $\not\trianglerighteq$                      | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\smallfrown`         | $\smallfrown$         | $\not\smallfrown$                           | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\pitchfork`          | $\pitchfork$          | $\not\pitchfork$                            | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\vartriangleleft`    | $\vartriangleleft$    | $\not\vartriangleleft$                      | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\shortmid`           | $\shortmid$           | $\not\shortmid$                             | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\smallsmile`         | $\smallsmile$         | $\not\smallsmile$                           | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\trianglelefteq`     | $\trianglelefteq$     | $\not\trianglelefteq$                       | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\therefore`          | $\therefore$          | $\not\therefore$                            | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\sqsubset`           | $\sqsubset$           | $\not\sqsubset$                             | [amssymb](https://texdoc.org/serve/amssymb/0)   |
 
 - **Use primitively negated symbol**  
   Not recommended, use [properly negated symbols](#negated-binary-relations-and-arrows) instead.  
@@ -305,7 +305,7 @@ These symbols can also be used in text mode.
 - **Change** symbol **style**
   | Preamble Command                     | Rendering    | Original  | Dependency         |
   | ------------------------------------ | ------------ | --------- | ------------------ |
-  | `\renewcommand{\propto}{\varpropto}` | $\varpropto$ | $\propto$ | [amssymb][amssymb] |
+  | `\renewcommand{\propto}{\varpropto}` | $\varpropto$ | $\propto$ | [amssymb](https://texdoc.org/serve/amssymb/0) |
 
 # Negated Binary Relations and Arrows
 
@@ -313,62 +313,62 @@ These symbols can also be used in text mode.
 | ------------------- | ------------------- | ---------------- | ------------------ |
 | `\neq` <br> `\ne`   | $\neq$ <br> $\ne$   |                  |
 | `\notin`            | $\notin$            |                  |
-| `\nless`            | $\nless$            |                  | [amssymb][amssymb] |
-| `\ngtr`             | $\ngtr$             |                  | [amssymb][amssymb] |
-| `\lneq`             | $\lneq$             |                  | [amssymb][amssymb] |
-| `\gneq`             | $\gneq$             |                  | [amssymb][amssymb] |
-| `\nleq`             | $\nleq$             |                  | [amssymb][amssymb] |
-| `\ngeq`             | $\ngeq$             |                  | [amssymb][amssymb] |
-| `\nleqslant`        | $\nleqslant$        |                  | [amssymb][amssymb] |
-| `\ngeqslant`        | $\ngeqslant$        |                  | [amssymb][amssymb] |
-| `\lneqq`            | $\lneqq$            |                  | [amssymb][amssymb] |
-| `\gneqq`            | $\gneqq$            |                  | [amssymb][amssymb] |
-| `\lvertneqq`        | $\lvertneqq$        |                  | [amssymb][amssymb] |
-| `\gvertneqq`        | $\gvertneqq$        |                  | [amssymb][amssymb] |
-| `\nleqq`            | $\nleqq$            |                  | [amssymb][amssymb] |
-| `\ngeqq`            | $\ngeqq$            |                  | [amssymb][amssymb] |
-| `\lnsim`            | $\lnsim$            |                  | [amssymb][amssymb] |
-| `\gnsim`            | $\gnsim$            |                  | [amssymb][amssymb] |
-| `\lnapprox`         | $\lnapprox$         |                  | [amssymb][amssymb] |
-| `\gnapprox`         | $\gnapprox$         |                  | [amssymb][amssymb] |
-| `\nprec`            | $\nprec$            |                  | [amssymb][amssymb] |
-| `\nsucc`            | $\nsucc$            |                  | [amssymb][amssymb] |
-| `\npreceq`          | $\npreceq$          |                  | [amssymb][amssymb] |
-| `\nsucceq`          | $\nsucceq$          |                  | [amssymb][amssymb] |
-| `\precneqq`         | $\precneqq$         |                  | [amssymb][amssymb] |
-| `\succneqq`         | $\succneqq$         |                  | [amssymb][amssymb] |
-| `\precnsim`         | $\precnsim$         |                  | [amssymb][amssymb] |
-| `\succnsim`         | $\succnsim$         |                  | [amssymb][amssymb] |
-| `\precnapprox`      | $\precnapprox$      |                  | [amssymb][amssymb] |
-| `\succnapprox`      | $\succnapprox$      |                  | [amssymb][amssymb] |
-| `\subsetneq`        | $\subsetneq$        | $\varsubsetneq$  | [amssymb][amssymb] |
-| `\supsetneq`        | $\supsetneq$        | $\varsupsetneq$  | [amssymb][amssymb] |
-| `\nsubseteq`        | $\nsubseteq$        |                  | [amssymb][amssymb] |
-| `\nsupseteq`        | $\nsupseteq$        |                  | [amssymb][amssymb] |
-| `\subsetneqq`       | $\subsetneqq$       | $\varsubsetneqq$ | [amssymb][amssymb] |
-| `\supsetneqq`       | $\supsetneqq$       | $\varsupsetneqq$ | [amssymb][amssymb] |
-| `\nsubseteqq`       | $\nsubseteqq$       |                  | [amssymb][amssymb] |
-| `\nsupseteqq`       | $\nsupseteqq$       |                  | [amssymb][amssymb] |
-| `\nmid`             | $\nmid$             |                  | [amssymb][amssymb] |
-| `\nparallel`        | $\nparallel$        |                  | [amssymb][amssymb] |
-| `\nshortmid`        | $\nshortmid$        |                  | [amssymb][amssymb] |
-| `\nshortparallel`   | $\nshortparallel$   |                  | [amssymb][amssymb] |
-| `\nsim`             | $\nsim$             |                  | [amssymb][amssymb] |
-| `\ncong`            | $\ncong$            |                  | [amssymb][amssymb] |
-| `\nvdash`           | $\nvdash$           |                  | [amssymb][amssymb] |
-| `\nvDash`           | $\nvDash$           |                  | [amssymb][amssymb] |
-| `\nVdash`           | $\nVdash$           |                  | [amssymb][amssymb] |
-| `\nVDash`           | $\nVDash$           |                  | [amssymb][amssymb] |
-| `\ntriangleleft`    | $\ntriangleleft$    |                  | [amssymb][amssymb] |
-| `\ntriangleright`   | $\ntriangleright$   |                  | [amssymb][amssymb] |
-| `\ntrianglelefteq`  | $\ntrianglelefteq$  |                  | [amssymb][amssymb] |
-| `\ntrianglerighteq` | $\ntrianglerighteq$ |                  | [amssymb][amssymb] |
-| `\nleftarrow`       | $\nleftarrow$       |                  | [amssymb][amssymb] |
-| `\nrightarrow`      | $\nrightarrow$      |                  | [amssymb][amssymb] |
-| `\nleftrightarrow`  | $\nleftrightarrow$  |                  | [amssymb][amssymb] |
-| `\nLeftarrow`       | $\nLeftarrow$       |                  | [amssymb][amssymb] |
-| `\nRightarrow`      | $\nRightarrow$      |                  | [amssymb][amssymb] |
-| `\nLeftrightarrow`  | $\nLeftrightarrow$  |                  | [amssymb][amssymb] |
+| `\nless`            | $\nless$            |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\ngtr`             | $\ngtr$             |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\lneq`             | $\lneq$             |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\gneq`             | $\gneq$             |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\nleq`             | $\nleq$             |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\ngeq`             | $\ngeq$             |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\nleqslant`        | $\nleqslant$        |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\ngeqslant`        | $\ngeqslant$        |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\lneqq`            | $\lneqq$            |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\gneqq`            | $\gneqq$            |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\lvertneqq`        | $\lvertneqq$        |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\gvertneqq`        | $\gvertneqq$        |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\nleqq`            | $\nleqq$            |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\ngeqq`            | $\ngeqq$            |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\lnsim`            | $\lnsim$            |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\gnsim`            | $\gnsim$            |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\lnapprox`         | $\lnapprox$         |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\gnapprox`         | $\gnapprox$         |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\nprec`            | $\nprec$            |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\nsucc`            | $\nsucc$            |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\npreceq`          | $\npreceq$          |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\nsucceq`          | $\nsucceq$          |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\precneqq`         | $\precneqq$         |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\succneqq`         | $\succneqq$         |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\precnsim`         | $\precnsim$         |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\succnsim`         | $\succnsim$         |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\precnapprox`      | $\precnapprox$      |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\succnapprox`      | $\succnapprox$      |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\subsetneq`        | $\subsetneq$        | $\varsubsetneq$  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\supsetneq`        | $\supsetneq$        | $\varsupsetneq$  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\nsubseteq`        | $\nsubseteq$        |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\nsupseteq`        | $\nsupseteq$        |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\subsetneqq`       | $\subsetneqq$       | $\varsubsetneqq$ | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\supsetneqq`       | $\supsetneqq$       | $\varsupsetneqq$ | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\nsubseteqq`       | $\nsubseteqq$       |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\nsupseteqq`       | $\nsupseteqq$       |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\nmid`             | $\nmid$             |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\nparallel`        | $\nparallel$        |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\nshortmid`        | $\nshortmid$        |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\nshortparallel`   | $\nshortparallel$   |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\nsim`             | $\nsim$             |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\ncong`            | $\ncong$            |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\nvdash`           | $\nvdash$           |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\nvDash`           | $\nvDash$           |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\nVdash`           | $\nVdash$           |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\nVDash`           | $\nVDash$           |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\ntriangleleft`    | $\ntriangleleft$    |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\ntriangleright`   | $\ntriangleright$   |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\ntrianglelefteq`  | $\ntrianglelefteq$  |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\ntrianglerighteq` | $\ntrianglerighteq$ |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\nleftarrow`       | $\nleftarrow$       |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\nrightarrow`      | $\nrightarrow$      |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\nleftrightarrow`  | $\nleftrightarrow$  |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\nLeftarrow`       | $\nLeftarrow$       |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\nRightarrow`      | $\nRightarrow$      |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+| `\nLeftrightarrow`  | $\nLeftrightarrow$  |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
 
 - **Change** symbol **style**
   | Preamble Command                             | Rendering        | Original      |
@@ -414,41 +414,41 @@ These symbols can also be used in text mode.
 | `\bigtriangleup`      | $\bigtriangleup$      |
 | `\bigtriangledown`    | $\bigtriangledown$    |
 | `\dagger`             | $\dagger$             |
-| `\lhd`                | $\lhd$                |                     | [latexsym][latexsym] |
-| `\rhd`                | $\rhd$                |                     | [latexsym][latexsym] |
+| `\lhd`                | $\lhd$                |                     | [latexsym](https://texdoc.org/serve/latexsym/0) |
+| `\rhd`                | $\rhd$                |                     | [latexsym](https://texdoc.org/serve/latexsym/0) |
 | `\ddagger`            | $\ddagger$            |                     |
-| `\unlhd`              | $\unlhd$              |                     | [latexsym][latexsym] |
-| `\unrhd`              | $\unrhd$              |                     | [latexsym][latexsym] |
+| `\unlhd`              | $\unlhd$              |                     | [latexsym](https://texdoc.org/serve/latexsym/0) |
+| `\unrhd`              | $\unrhd$              |                     | [latexsym](https://texdoc.org/serve/latexsym/0) |
 | `\wr`                 | $\wr$                 |
-| `\dotplus`            | $\dotplus$            |                     | [amssymb][amssymb]   |
-| `\centerdot`          | $\centerdot$          |                     | [amssymb][amssymb]   |
-| `\ltimes`             | $\ltimes$             |                     | [amssymb][amssymb]   |
-| `\rtimes`             | $\rtimes$             |                     | [amssymb][amssymb]   |
-| `\divideontimes`      | $\divideontimes$      |                     | [amssymb][amssymb]   |
-| `\doublecup`          | $\doublecup$          |                     | [amssymb][amssymb]   |
-| `\doublecap`          | $\doublecap$          |                     | [amssymb][amssymb]   |
-| `\smallsetminus`      | $\smallsetminus$      |                     | [amssymb][amssymb]   |
-| `\veebar`             | $\veebar$             |                     | [amssymb][amssymb]   |
-| `\barwedge`           | $\barwedge$           |                     | [amssymb][amssymb]   |
-| `\doublebarwedge`     | $\doublebarwedge$     |                     | [amssymb][amssymb]   |
-| `\boxplus`            | $\boxplus$            |                     | [amssymb][amssymb]   |
-| `\boxminus`           | $\boxminus$           |                     | [amssymb][amssymb]   |
-| `\circleddash`        | $\circleddash$        |                     | [amssymb][amssymb]   |
-| `\boxtimes`           | $\boxtimes$           |                     | [amssymb][amssymb]   |
-| `\boxdot`             | $\boxdot$             |                     | [amssymb][amssymb]   |
-| `\circledcirc`        | $\circledcirc$        |                     | [amssymb][amssymb]   |
-| `\intercal`           | $\intercal$           |                     | [amssymb][amssymb]   |
-| `\circledast`         | $\circledast$         |                     | [amssymb][amssymb]   |
-| `\rightthreetimes`    | $\rightthreetimes$    |                     | [amssymb][amssymb]   |
-| `\curlyvee`           | $\curlyvee$           |                     | [amssymb][amssymb]   |
-| `\curlywedge`         | $\curlywedge$         |                     | [amssymb][amssymb]   |
-| `\leftthreetimes`     | $\leftthreetimes$     |                     | [amssymb][amssymb]   |
+| `\dotplus`            | $\dotplus$            |                     | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\centerdot`          | $\centerdot$          |                     | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\ltimes`             | $\ltimes$             |                     | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\rtimes`             | $\rtimes$             |                     | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\divideontimes`      | $\divideontimes$      |                     | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\doublecup`          | $\doublecup$          |                     | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\doublecap`          | $\doublecap$          |                     | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\smallsetminus`      | $\smallsetminus$      |                     | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\veebar`             | $\veebar$             |                     | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\barwedge`           | $\barwedge$           |                     | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\doublebarwedge`     | $\doublebarwedge$     |                     | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\boxplus`            | $\boxplus$            |                     | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\boxminus`           | $\boxminus$           |                     | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\circleddash`        | $\circleddash$        |                     | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\boxtimes`           | $\boxtimes$           |                     | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\boxdot`             | $\boxdot$             |                     | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\circledcirc`        | $\circledcirc$        |                     | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\intercal`           | $\intercal$           |                     | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\circledast`         | $\circledast$         |                     | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\rightthreetimes`    | $\rightthreetimes$    |                     | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\curlyvee`           | $\curlyvee$           |                     | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\curlywedge`         | $\curlywedge$         |                     | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\leftthreetimes`     | $\leftthreetimes$     |                     | [amssymb](https://texdoc.org/serve/amssymb/0)   |
 
 - **Change** symbol **style**
   | Preamble Command                                   | Rendering           | Original         | Dependency         |
   | -------------------------------------------------- | ------------------- | ---------------- | ------------------ |
-  | `\renewcommand{\triangleleft}{\vartriangleleft}`   | $\vartriangleleft$  | $\triangleleft$  | [amssymb][amssymb] |
-  | `\renewcommand{\triangleright}{\vartriangleright}` | $\vartriangleright$ | $\triangleright$ | [amssymb][amssymb] |
+  | `\renewcommand{\triangleleft}{\vartriangleleft}`   | $\vartriangleleft$  | $\triangleleft$  | [amssymb](https://texdoc.org/serve/amssymb/0) |
+  | `\renewcommand{\triangleright}{\vartriangleright}` | $\vartriangleright$ | $\triangleright$ | [amssymb](https://texdoc.org/serve/amssymb/0) |
 
 # Big Operators
 
@@ -505,37 +505,37 @@ These symbols can also be used in text mode.
 | `\searrow`                | $\searrow$                |
 | `\swarrow`                | $\swarrow$                |
 | `\nwarrow`                | $\nwarrow$                |
-| `\leadsto`                | $\leadsto$                | [latexsym][latexsym] |
-| `\dashleftarrow`          | $\dashleftarrow$          | [amssymb][amssymb]   |
-| `\dashrightarrow`         | $\dashrightarrow$         | [amssymb][amssymb]   |
-| `\leftleftarrows`         | $\leftleftarrows$         | [amssymb][amssymb]   |
-| `\rightrightarrows`       | $\rightrightarrows$       | [amssymb][amssymb]   |
-| `\leftrightarrows`        | $\leftrightarrows$        | [amssymb][amssymb]   |
-| `\rightleftarrows`        | $\rightleftarrows$        | [amssymb][amssymb]   |
-| `\Lleftarrow`             | $\Lleftarrow$             | [amssymb][amssymb]   |
-| `\Rrightarrow`            | $\Rrightarrow$            | [amssymb][amssymb]   |
-| `\twoheadleftarrow`       | $\twoheadleftarrow$       | [amssymb][amssymb]   |
-| `\twoheadrightarrow`      | $\twoheadrightarrow$      | [amssymb][amssymb]   |
-| `\leftarrowtail`          | $\leftarrowtail$          | [amssymb][amssymb]   |
-| `\rightarrowtail`         | $\rightarrowtail$         | [amssymb][amssymb]   |
-| `\leftrightharpoons`      | $\leftrightharpoons$      | [amssymb][amssymb]   |
-| `\rightleftharpoons`      | $\rightleftharpoons$      | [amssymb][amssymb]   |
-| `\Lsh`                    | $\Lsh$                    | [amssymb][amssymb]   |
-| `\Rsh`                    | $\Rsh$                    | [amssymb][amssymb]   |
-| `\looparrowleft`          | $\looparrowleft$          | [amssymb][amssymb]   |
-| `\looparrowright`         | $\looparrowright$         | [amssymb][amssymb]   |
-| `\curvearrowleft`         | $\curvearrowleft$         | [amssymb][amssymb]   |
-| `\curvearrowright`        | $\curvearrowright$        | [amssymb][amssymb]   |
-| `\circlearrowleft`        | $\circlearrowleft$        | [amssymb][amssymb]   |
-| `\circlearrowright`       | $\circlearrowright$       | [amssymb][amssymb]   |
-| `\multimap`               | $\multimap$               | [amssymb][amssymb]   |
-| `\upuparrows`             | $\upuparrows$             | [amssymb][amssymb]   |
-| `\downdownarrows`         | $\downdownarrows$         | [amssymb][amssymb]   |
-| `\upharpoonleft`          | $\upharpoonleft$          | [amssymb][amssymb]   |
-| `\upharpoonright`         | $\upharpoonright$         | [amssymb][amssymb]   |
-| `\downharpoonright`       | $\downharpoonright$       | [amssymb][amssymb]   |
-| `\rightsquigarrow`        | $\rightsquigarrow$        | [amssymb][amssymb]   |
-| `\leftrightsquigarrow`    | $\leftrightsquigarrow$    | [amssymb][amssymb]   |
+| `\leadsto`                | $\leadsto$                | [latexsym](https://texdoc.org/serve/latexsym/0) |
+| `\dashleftarrow`          | $\dashleftarrow$          | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\dashrightarrow`         | $\dashrightarrow$         | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\leftleftarrows`         | $\leftleftarrows$         | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\rightrightarrows`       | $\rightrightarrows$       | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\leftrightarrows`        | $\leftrightarrows$        | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\rightleftarrows`        | $\rightleftarrows$        | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\Lleftarrow`             | $\Lleftarrow$             | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\Rrightarrow`            | $\Rrightarrow$            | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\twoheadleftarrow`       | $\twoheadleftarrow$       | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\twoheadrightarrow`      | $\twoheadrightarrow$      | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\leftarrowtail`          | $\leftarrowtail$          | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\rightarrowtail`         | $\rightarrowtail$         | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\leftrightharpoons`      | $\leftrightharpoons$      | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\rightleftharpoons`      | $\rightleftharpoons$      | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\Lsh`                    | $\Lsh$                    | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\Rsh`                    | $\Rsh$                    | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\looparrowleft`          | $\looparrowleft$          | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\looparrowright`         | $\looparrowright$         | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\curvearrowleft`         | $\curvearrowleft$         | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\curvearrowright`        | $\curvearrowright$        | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\circlearrowleft`        | $\circlearrowleft$        | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\circlearrowright`       | $\circlearrowright$       | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\multimap`               | $\multimap$               | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\upuparrows`             | $\upuparrows$             | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\downdownarrows`         | $\downdownarrows$         | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\upharpoonleft`          | $\upharpoonleft$          | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\upharpoonright`         | $\upharpoonright$         | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\downharpoonright`       | $\downharpoonright$       | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\rightsquigarrow`        | $\rightsquigarrow$        | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\leftrightsquigarrow`    | $\leftrightsquigarrow$    | [amssymb](https://texdoc.org/serve/amssymb/0)   |
 
 # Arrows as Accents
 
@@ -574,14 +574,14 @@ These symbols can also be used in text mode.
 | `\rfloor`           | $\rfloor$             |
 | `\rceil`            | $\rceil$              |
 | `\lceil`            | $\lceil$              |
-| `\ulcorner`         | $\ulcorner$           | [amssymb][amssymb]                     |
-| `\urcorner`         | $\urcorner$           | [amssymb][amssymb]                     |
-| `\llcorner`         | $\llcorner$           | [amssymb][amssymb]                     |
-| `\lrcorner`         | $\lrcorner$           | [amssymb][amssymb]                     |
-| `\lvert`            | $\lvert$              | [amssymb][amssymb], [amsmath][amsmath] |
-| `\rvert`            | $\rvert$              | [amssymb][amssymb], [amsmath][amsmath] |
-| `\lVert`            | $\lVert$              | [amssymb][amssymb], [amsmath][amsmath] |
-| `\rVert`            | $\rVert$              | [amssymb][amssymb], [amsmath][amsmath] |
+| `\ulcorner`         | $\ulcorner$           | [amssymb](https://texdoc.org/serve/amssymb/0)                     |
+| `\urcorner`         | $\urcorner$           | [amssymb](https://texdoc.org/serve/amssymb/0)                     |
+| `\llcorner`         | $\llcorner$           | [amssymb](https://texdoc.org/serve/amssymb/0)                     |
+| `\lrcorner`         | $\lrcorner$           | [amssymb](https://texdoc.org/serve/amssymb/0)                     |
+| `\lvert`            | $\lvert$              | [amssymb](https://texdoc.org/serve/amssymb/0), [amsmath](https://texdoc.org/serve/amssymb](https://texdoc.org/serve/amssymb/0), [amsmath/0) |
+| `\rvert`            | $\rvert$              | [amssymb](https://texdoc.org/serve/amssymb/0), [amsmath](https://texdoc.org/serve/amssymb](https://texdoc.org/serve/amssymb/0), [amsmath/0) |
+| `\lVert`            | $\lVert$              | [amssymb](https://texdoc.org/serve/amssymb/0), [amsmath](https://texdoc.org/serve/amssymb](https://texdoc.org/serve/amssymb/0), [amsmath/0) |
+| `\rVert`            | $\rVert$              | [amssymb](https://texdoc.org/serve/amssymb/0), [amsmath](https://texdoc.org/serve/amssymb](https://texdoc.org/serve/amssymb/0), [amsmath/0) |
 
 # Large Delimiters
 
@@ -613,16 +613,16 @@ These symbols can also be used in text mode.
 | `\wp`                | $\wp$                |
 | `\forall`            | $\forall$            |
 | `\exists`            | $\exists$            |
-| `\mho`               | $\mho$               |                | [latexsym][latexsym] |
+| `\mho`               | $\mho$               |                | [latexsym](https://texdoc.org/serve/latexsym/0) |
 | `\partial`           | $\partial$           |
 | `'`                  | $'$                  |
 | `\prime`             | $\prime$             |
 | `\emptyset`          | $\emptyset$          |
 | `\infty`             | $\infty$             |
 | `\nabla`             | $\nabla$             |
-| `\triangle`          | $\triangle$          | $\vartriangle$ | [amssymb][amssymb]   |
-| `\Box`               | $\Box$               |                | [latexsym][latexsym] |
-| `\Diamond`           | $\Diamond$           |                | [latexsym][latexsym] |
+| `\triangle`          | $\triangle$          | $\vartriangle$ | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\Box`               | $\Box$               |                | [latexsym](https://texdoc.org/serve/latexsym/0) |
+| `\Diamond`           | $\Diamond$           |                | [latexsym](https://texdoc.org/serve/latexsym/0) |
 | `\bot`               | $\bot$               |
 | `\top`               | $\top$               |
 | `\angle`             | $\angle$             |
@@ -635,35 +635,35 @@ These symbols can also be used in text mode.
 | `\flat`              | $\flat$              |
 | `\natural`           | $\natural$           |
 | `\sharp`             | $\sharp$             |
-| `\square`            | $\square$            |                | [amssymb][amssymb]   |
-| `\vartriangle`       | $\vartriangle$       |                | [amssymb][amssymb]   |
-| `\triangledown`      | $\triangledown$      |                | [amssymb][amssymb]   |
-| `\lozenge`           | $\lozenge$           |                | [amssymb][amssymb]   |
-| `\diagup`            | $\diagup$            |                | [amssymb][amssymb]   |
-| `\hslash`            | $\hslash$            |                | [amssymb][amssymb]   |
-| `\blacksquare`       | $\blacksquare$       |                | [amssymb][amssymb]   |
-| `\blacktriangle`     | $\blacktriangle$     |                | [amssymb][amssymb]   |
-| `\blacktriangledown` | $\blacktriangledown$ |                | [amssymb][amssymb]   |
-| `\blacklozenge`      | $\blacklozenge$      |                | [amssymb][amssymb]   |
-| `\measuredangle`     | $\measuredangle$     |                | [amssymb][amssymb]   |
-| `\diagdown`          | $\diagdown$          |                | [amssymb][amssymb]   |
-| `\nexists`           | $\nexists$           |                | [amssymb][amssymb]   |
-| `\Finv`              | $\Finv$              |                | [amssymb][amssymb]   |
-| `\eth`               | $\eth$               |                | [amssymb][amssymb]   |
-| `\sphericalangle`    | $\sphericalangle$    |                | [amssymb][amssymb]   |
-| `\Bbbk`              | $\Bbbk$              |                | [amssymb][amssymb]   |
-| `\circledS`          | $\circledS$          |                | [amssymb][amssymb]   |
-| `\complement`        | $\complement$        |                | [amssymb][amssymb]   |
-| `\Game`              | $\Game$              |                | [amssymb][amssymb]   |
-| `\bigstar`           | $\bigstar$           |                | [amssymb][amssymb]   |
-| `\backprime`         | $\backprime$         |                | [amssymb][amssymb]   |
-| `\varnothing`        | $\varnothing$        |                | [amssymb][amssymb]   |
-| `\mho`               | $\mho$               |                | [amssymb][amssymb]   |
+| `\square`            | $\square$            |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\vartriangle`       | $\vartriangle$       |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\triangledown`      | $\triangledown$      |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\lozenge`           | $\lozenge$           |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\diagup`            | $\diagup$            |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\hslash`            | $\hslash$            |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\blacksquare`       | $\blacksquare$       |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\blacktriangle`     | $\blacktriangle$     |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\blacktriangledown` | $\blacktriangledown$ |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\blacklozenge`      | $\blacklozenge$      |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\measuredangle`     | $\measuredangle$     |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\diagdown`          | $\diagdown$          |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\nexists`           | $\nexists$           |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\Finv`              | $\Finv$              |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\eth`               | $\eth$               |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\sphericalangle`    | $\sphericalangle$    |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\Bbbk`              | $\Bbbk$              |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\circledS`          | $\circledS$          |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\complement`        | $\complement$        |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\Game`              | $\Game$              |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\bigstar`           | $\bigstar$           |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\backprime`         | $\backprime$         |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\varnothing`        | $\varnothing$        |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
+| `\mho`               | $\mho$               |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
 
 - **Change** symbol **style**
   | Preamble Command                         | Rendering      | Original    | Dependency         |
   | ---------------------------------------- | -------------- | ----------- | ------------------ |
-  | `\renewcommand{\triangle}{\vartriangle}` | $\vartriangle$ | $\triangle$ | [amssymb][amssymb] |
+  | `\renewcommand{\triangle}{\vartriangle}` | $\vartriangle$ | $\triangle$ | [amssymb](https://texdoc.org/serve/amssymb/0) |
 
 # Math Alphabets
 
@@ -675,9 +675,9 @@ example TEXT: `ABCDEabcde1234`
 | `\mathit{TEXT}`     | $\mathit{ABCDEabcde1234}$     |
 | `\mathnormal{TEXT}` | $\mathnormal{ABCDEabcde1234}$ |
 | `\mathcal{TEXT}`    | $\mathcal{ABCDE}$             |
-| `\mathscr{TEXT}`    | $\mathscr{ABCDE}$             | [mathrsfs][mathrsfs]                       |
-| `\mathfrak{TEXT}`   | $\mathfrak{ABCDEabcde1234}$   | [amsfonts][amsfonts] or [amssymb][amssymb] |
-| `\mathbb{TEXT}`     | $\mathbb{ABCDE}$              | [amsfonts][amsfonts] or [amssymb][amssymb] |
+| `\mathscr{TEXT}`    | $\mathscr{ABCDE}$             | [mathrsfs](https://texdoc.org/serve/mathrsfs/0)                       |
+| `\mathfrak{TEXT}`   | $\mathfrak{ABCDEabcde1234}$   | [amsfonts](https://texdoc.org/serve/amsfonts/0) or [amssymb](https://texdoc.org/serve/amsfonts](https://texdoc.org/serve/amsfonts/0) or [amssymb/0) |
+| `\mathbb{TEXT}`     | $\mathbb{ABCDE}$              | [amsfonts](https://texdoc.org/serve/amsfonts/0) or [amssymb](https://texdoc.org/serve/amsfonts](https://texdoc.org/serve/amsfonts/0) or [amssymb/0) |
 
 
 
@@ -691,11 +691,3 @@ Sources:
 Related:
 
 Tags:
-
-[currency]: https://texdoc.org/serve/currency/0
-[siunitx]: https://texdoc.org/serve/siunitx/0
-[latexsym]: https://texdoc.org/serve/latexsym/0
-[amssymb]: https://texdoc.org/serve/amssymb/0
-[amsmath]: https://texdoc.org/serve/amsmath/0
-[amsfonts]: https://texdoc.org/serve/amsfonts/0
-[mathrsfs]: https://texdoc.org/serve/mathrsfs/0
