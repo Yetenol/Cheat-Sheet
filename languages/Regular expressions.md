@@ -1,26 +1,6 @@
 The following definitions use the .Net Implementation
 
-Table of Contents
-- [Miscellaneous Constructs](#miscellaneous-constructs)
-- [Engine Interpretation Options](#engine-interpretation-options)
-- [Single Characters](#single-characters)
-- [Control Characters](#control-characters)
-- [Non-ASCII Codes](#non-ascii-codes)
-- [Character Classes](#character-classes)
-- [Quantifiers](#quantifiers)
-- [Anchors](#anchors)
-- [Groups](#groups)
-- [Inline Options](#inline-options)
-- [Backreferences](#backreferences)
-- [Alternation](#alternation)
-- [Substitution](#substitution)
-- [Comments](#comments)
-- [Supported Unicode Categories](#supported-unicode-categories)
-- [.Net Operations](#net-operations)
-- [Sources](#sources)
-
-
-## Miscellaneous Constructs
+# Miscellaneous Constructs
 
 | Construct            | Definition                                                                                                                            | Example                                                       |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
@@ -29,9 +9,9 @@ Table of Contents
 | `#` [to end of line] | X-mode comment. The comment starts at an unescaped `#` and continues to the end of the line.                                          | `(?x)\bA\w+\b#Matches words starting with A`                  |
 
 
-## Engine Interpretation Options
+# Engine Interpretation Options
 
-> Start pattern with `(?`_enabled options_`-`_disabled options_`)` e.g: `(?imnsx-imnsx)`
+Start pattern with `(?`_enabled options_`-`_disabled options_`)` e.g: `(?imnsx-imnsx)`
 
 
 | Inline character | RegexOptions member     | Effect                                                                                                                                                                                                |
@@ -44,10 +24,10 @@ Table of Contents
 | Not available    | Compiled                | Compile the regular expression to an assembly. For more information, see Compiled Regular Expressions.                                                                                                |
 | `x`              | IgnorePatternWhitespace | Exclude unescaped white space from the pattern, and enable comments after a number sign (`#`). For more information, see Ignore White Space.                                                          |
 | Not available    | RightToLeft             | Change the search direction. Search moves from right to left instead of from left to right. For more information, see Right-to-Left Mode.                                                             |
-| Not available    | ECMAScript              | Enable ECMAScript-compliant behavior for the expression. For more information, see ECMAScript Matching Behavior.                                                                                      | <tr>  |
-| Not available    | CultureInvariant        | Ignore cultural differences in language. For more information, see Comparison Using the Invariant Culture.                                                                                            | </tr> |
+| Not available    | ECMAScript              | Enable ECMAScript-compliant behavior for the expression. For more information, see ECMAScript Matching Behavior.                                                                                      |
+| Not available    | CultureInvariant        | Ignore cultural differences in language. For more information, see Comparison Using the Invariant Culture.                                                                                            |
 
-## Single Characters
+# Single Characters
 
 | Use      | To match any character    |
 | -------- | ------------------------- |
@@ -59,7 +39,7 @@ Table of Contents
 | `\char`  | Escaped special character |
 
 
-## Control Characters
+# Control Characters
 
 | Use       | To match                | Unicode |
 | --------- | ----------------------- | ------- |
@@ -74,7 +54,7 @@ Table of Contents
 | `\c char` | ASCII control character | -       |
 
 
-## Non-ASCII Codes
+# Non-ASCII Codes
 
 | Use      | To match character with        |
 | -------- | ------------------------------ |
@@ -83,7 +63,7 @@ Table of Contents
 | `\u hex` | 4-digit hex character code     |
 
 
-## Character Classes
+# Character Classes
 
 | Use         | To match character                    |
 | ----------- | ------------------------------------- |
@@ -97,7 +77,7 @@ Table of Contents
 | `\S`        | Non-white-space char                  |
 
 
-## Quantifiers
+# Quantifiers
 
 | Greedy <br> _as many as possible_ | Lazy <br> _as few as possible_ | Matches           |
 | --------------------------------- | ------------------------------ | ----------------- |
@@ -109,7 +89,7 @@ Table of Contents
 | `{n,m}`                           | {n,m}?                         | From n to m times |
 
 
-## Anchors
+# Anchors
 
 | Use  | To specify position                            |
 | ---- | ---------------------------------------------- |
@@ -123,7 +103,7 @@ Table of Contents
 | `\B` | Not on word boundary                           |
 
 
-## Groups
+# Groups
 
 | Use                   | To define                      |
 | --------------------- | ------------------------------ |
@@ -138,7 +118,7 @@ Table of Contents
 | `(?>exp)`             | Non-backtracking (greedy)      |
 
 
-## Inline Options
+# Inline Options
 
 | Option | Effect on match    |
 | ------ | ------------------ |
@@ -154,7 +134,7 @@ Table of Contents
 | `(?imnsx-imnsx:exp)` | Set or disable the specified options within the expression |
 
 
-## Backreferences
+# Backreferences
 
 | Use        | To match      |
 | ---------- | ------------- |
@@ -162,7 +142,7 @@ Table of Contents
 | `\k<name>` | Named group   |
 
 
-## Alternation
+# Alternation
 
 | Use                        | To match                                                 |
 | -------------------------- | -------------------------------------------------------- |
@@ -171,7 +151,7 @@ Table of Contents
 | `(?(name)`_yes_`\|`_no_`)` | _yes_ if name is matched <br> _no_ if name isn't matched |
 
 
-## Substitution
+# Substitution
 
 | Use       | To substitute                       |
 | --------- | ----------------------------------- |
@@ -185,7 +165,7 @@ Table of Contents
 | `$_`      | Entire input string                 |
 
 
-## Comments
+# Comments
 
 | Use            | To                 |
 | -------------- | ------------------ |
@@ -193,7 +173,7 @@ Table of Contents
 | `#`            | Add x-mode comment |
 
 
-## Supported Unicode Categories
+# Supported Unicode Categories
 
 | Category | Description                     |
 | -------- | ------------------------------- |
@@ -236,9 +216,6 @@ Table of Contents
 | `C `     | Control characters, all         |
 
 
-## [.Net Operations](regex-dot-net.md)
-
-
 ---
 Sources:
 - 2022-01-26: [Quick Reference (MS Docs)](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference)
@@ -247,5 +224,6 @@ Sources:
 - 2022-01-26: [.NET Framework Regular Expressions](regex.pdf)
 
 Related:
+[RegEx implementation in .Net](RegEx%20implementation%20in%20.Net.md)
 
 Tags:
