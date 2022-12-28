@@ -8,7 +8,6 @@ Table of Contents
 - [Examine Variables](#examine-variables)
 - [GDB Modes](#gdb-modes)
 - [Start and Stop](#start-and-stop)
-- [Sources](#sources)
 
 ## Help
 
@@ -135,5 +134,11 @@ Table of Contents
 | `quit` <br> `q`                                                                | Exit GDB debugger.                                                                                                                               |
 
 
-## Sources
+
+---
+Sources:
+
+Related:
+
+Tags:
 - 2022-04-06 [Linux Tutorial - GNU GDB Debugger Command Cheat Sheet](http://www.yolinux.com/TUTORIALS/GDB-Commands.html)

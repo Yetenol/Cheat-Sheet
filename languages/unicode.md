@@ -9,7 +9,6 @@ Table of Contents
   - [Sorting differences](#sorting-differences)
   - [Special sorting characters](#special-sorting-characters)
 - [Greek letters](#greek-letters)
-- [Sources](#sources)
 
 ## Useful characters
 | .   | Name           | Unicode | Alt code              |
@@ -84,5 +83,11 @@ Table of Contents
 | `Ω` | Omega       | U+03A9  | Alt 234  |
 
 
-## Sources
+
+---
+Sources:
 - 2022-01-25 [Unicode Character Table](https://unicode-table.com/en/)
+
+Related:
+
+Tags:
