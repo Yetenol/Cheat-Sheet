@@ -1,21 +1,47 @@
-## Spaces
-- A tab could be a different number of columns depending on your environment, but a space is always one column.
-- In terms of how many spaces (or tabs) constitutes indentation, it's more important to be consistent throughout your code than to use any specific tab stop value.
+# Conclusion
 
+- create an indentation **workflow** that works **regardless of** the indentation **style**
+    - use `[Tab]` to create indentation
+    - use `[Ctrl + Arrow right]` to skip identation
+- IDE's make **different negligible** 
+- it's a **project decision** not a developer one
+- you will have to use both
 
-## Tabs
+Nevertheless, people love to argue especially about highly controversial topics like this one. So despite it being mainly irrelevant, here are a few points for project decisions
 
-- They're a character specifically meant for indentation
-- They allow developers with different preferences in indentation size to change how it's the code looks without changing the code (separation of data and presentation for the proverbial win!)
-- It's impossible to half-indent something with tabs. So when you copy code from some website that used 3 spaces into your 4-space indented file, you don't have to deal with misalignment.
-- allow mistakes to be more noticeable, it's annoying to micro manage to spaces.
+# Default implementation
+
+Pressing `[Tab]` in different environments has different affects.
+
+Move to the right until...
+
+1. the current column is a **multiple of 8** (Unix systems, Ecams, Vim)
+3. the current column is a **multiple of 4** (Windows)
+4. the **next tab stop** (Microsoft Word)
+
+# Spaces
+
+![](../attachments/Pasted%20image%2020221230123246.png)
+
+- can be entered and pasted in **all environments** like terminals, publishings and browsers
+- **consistent cursor speed** when going through
+
+# Tabs
+
+![](../attachments/Pasted%20image%2020221230123232.png)
+
+- a character **specifically meant for indentation**
+- **customize indentation visualization** according to developer's preferences without changing the code thus seperating data and presentation
+- **seamlessly import code** without half-indenting or misalignment due to different indentation sizes
+- **noticeable mistakes** in the level of indentation
+- **don't micro manage** spaces
 - are consistent, they are only used for indentation, unless you are commenting wrong.
-- are customizable, you can specify in the options of the editor how wide they are.
-- are more productive, why type 4 spaces when ye can hit 1 tab.
-- take less size than multiple spaces.
-- take more space than a space.
-- take less time to go through.
-- tend to work better in IDEs.
+- less **storage size**
+- take less **time to go through**
+
+## Secondary indentation using spaces
+
+![](../attachments/Pasted%20image%2020221230124043.png)
 
 
 ---
