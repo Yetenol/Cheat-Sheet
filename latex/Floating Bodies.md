@@ -1,18 +1,9 @@
-Table of Contents
-- **[Tables ›](tables.md)**  
-    Auto-Stretching Columns | `S[table-format = -3.0e-1]`
-- [Placement Specifiers](#placement-specifiers)
-- [Images](#images)
-- [Source Code Listings](#source-code-listings)
-- [Directories](#directories)
-
-## Placement Specifiers
+# Placement Specifiers
 
 ```latex
 \begin{FLOAT-ENVIRONMENT}[PLACEMENT-SPECIFIERS]
 \end{FLOAT-ENVIRONMENT}
 ```
-
 
 | Specifier          | Name    | Add placement option                                                              |
 | ------------------ | ------- | --------------------------------------------------------------------------------- |
@@ -23,13 +14,14 @@ Table of Contents
 | `b`                | bottom  | Put it at the bottom of the _next available_ page.                                |
 | `p`                | page    | Put it on a special page containing only floats.                                  |
 
-e.g:
+Example
+
 ```latex
 \begin{figure}[htbp]
 \end{figure}
 ```
 
-## Images
+# Images
 
 ```latex
 \begin{figure}  % or \begin{figure}[PLACEMENT-SPECIFIERS]
@@ -45,7 +37,8 @@ e.g:
 - `LABEL` := label to reference the figure using `\ref{fig:LABEL}`
 - `FILENAME` := file path (with extension) of the image 
 
-## Source Code Listings
+# Source Code Listings
+
 ```latex
 \begin{figure}  % or \begin{figure}[PLACEMENT]
     \centering
@@ -55,7 +48,7 @@ e.g:
 \end{figure}
 ```
 
-## Directories
+# Directories
 
 ```latex
 \listoftables       % Tabellenverzeichnis

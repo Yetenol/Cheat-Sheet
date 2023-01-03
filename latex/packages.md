@@ -1,14 +1,4 @@
-<h1> Packages </h1>
-
-
-
-Table of Contents
-- [Documentation](#documentation)
-- [Set Encoding](#set-encoding)
-- [Generate Placeholder Text](#generate-placeholder-text)
-- [Multiline comments](#multiline-comments)
-
-## Documentation
+# Documentation
 
 View package documentation
 - visit [TeX and LaTeX documentation lookup system](https://texdoc.org/)  
@@ -18,27 +8,14 @@ View package documentation
 - or visit [CTAN Comprehensive TEX Archive Network](https://ctan.org/)  
     `https://ctan.org/pkg/%s`
 
-## Set Encoding
+# Set Encoding
 
 ```latex
 \usepackage[utf8]{inputenc}  % Set encoding
 ```
 
-
-## Generate Placeholder Text
+# Generate Placeholder Text
 
 ```latex
 \usepackage{lipsum} % Generate placeholder paragraphs
-```
-
-## Multiline comments
-
-```latex
-\usepackage{verbatim} % Multiline comments
-
-```
-
-```latex
-\begin{comment}
-\end{comment}
 ```

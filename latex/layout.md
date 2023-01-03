@@ -1,31 +1,20 @@
-<h1> Layout </h1>
-
-
-
-Table of Contents
-- [Document Classes](#document-classes)
-- [File Template](#file-template)
-- [Table Of Contents](#table-of-contents)
-- [Page Margins](#page-margins)
-- [Math Spacing](#math-spacing)
-- [Hyphenation](#hyphenation)
-
-## Document Classes
+# Document Classes
 
 ```latex
 \documentclass[twocolumn]{article}
 ```
 
-## File Template
-Global formatting at **`setup/layout.tex`**
+# File Template
+
+Global formatting in **`setup/layout.tex`**
+
 ```
 \title{My Template}
 \author{Anton Pusch}
 \date{\today}
 ```
 
-
-## Table Of Contents
+# Table Of Contents
 
 ```latex
 \usepackage{hyperref}
@@ -36,15 +25,14 @@ Global formatting at **`setup/layout.tex`**
 \tableofcontents
 ```
 
-
-## Page Margins
+# Page Margins
 
 ```latex
 \usepackage[margin=1.5cm]{geometry} % Set page margins
 \usepackage[top=2cm, bottom=2cm, left=3cm, right=1cm]{geometry} % Set page margins
 ```
 
-## Math Spacing
+# Math Spacing
 
 | Command  | Space Width          |
 | -------- | -------------------- |
@@ -63,12 +51,11 @@ Global formatting at **`setup/layout.tex`**
 | `newpage`                                                                                          | starts a new page                                                |
 | `\linebreak[`_n_`]` <br> `\nolinebreak[`_n_`]` <br> `\pagebreak[`_n_`]` <br> `\nopagebreak[`_n_`]` | suggest places where a break may (or may not) happen             |
 
-
-## Hyphenation
+# Hyphenation
 
 - define the hyphenation of a word list
-```latex
-\hyphenation{FORTRAN Hy-phen-a-tion}
+    ```latex
+    \hyphenation{FORTRAN Hy-phen-a-tion}
 ```
 
 | .            | Meaning                                                                                                          |
