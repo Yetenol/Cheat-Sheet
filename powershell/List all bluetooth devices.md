@@ -9,4 +9,4 @@ Sources:
 Related:
 
 Tags:
-[Powershell Examples](../Powershell%20Examples.md)
+[Powershell Examples](Powershell%20Examples.md)

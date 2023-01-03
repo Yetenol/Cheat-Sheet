@@ -1,6 +1,6 @@
 ---
 example: Open in VS Code
-command: `HKEY_CLASSES_ROOT\Directory\shell\
+command: HKEY_CLASSES_ROOT\Directory\shell\
 ---
 
 ```powershell
