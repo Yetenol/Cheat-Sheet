@@ -54,8 +54,8 @@ Use `.xml` files to preserve the PowerShells Object information.
 
 ## Find Occurrences Of A Pattern
 
-> Quick [**Regular Expression**](../languages/Regular%20expressions.md) Reference for `-match` and `[RegEx]::`  
-> `(?ENABLE-DISABLE)` [Interpretation Options](../languages/Regular%20expressions.md#engine-interpretation-options):  `i` IgnoreCase;  `n` ExplicitCapture;  `x` IgnorePatternWhitespace;  `m` Multiline;  `s` Singleline;  
+> Quick [**Regular Expression**](../Languages/Regular%20expressions.md) Reference for `-match` and `[RegEx]::`  
+> `(?ENABLE-DISABLE)` [Interpretation Options](../Languages/Regular%20expressions.md#engine-interpretation-options):  `i` IgnoreCase;  `n` ExplicitCapture;  `x` IgnorePatternWhitespace;  `m` Multiline;  `s` Singleline;  
 > `^` Start of line;  `$` End of line;  `.*` ≥0 character(s);  `.+` ≥0 character(s);  `\w*` Any word;  `\S*` Any non-whitespace;
 > `\s*` Any whitespace;  `(.*)` Unnamed group;     `(?<user>.*)` Named group called user
 
@@ -101,8 +101,8 @@ $pattern = "(?i)^user"
 
 ## Extract Data Using A Pattern
 
-> Quick [**Regular Expression**](../languages/Regular%20expressions.md) Reference for `-match` and `[RegEx]::`  
-> `(?ENABLE-DISABLE)` [Interpretation Options](../languages/Regular%20expressions.md#engine-interpretation-options):  `i` IgnoreCase;  `n` ExplicitCapture;  `x` IgnorePatternWhitespace;  `m` Multiline;  `s` Singleline;  
+> Quick [**Regular Expression**](../Languages/Regular%20expressions.md) Reference for `-match` and `[RegEx]::`  
+> `(?ENABLE-DISABLE)` [Interpretation Options](../Languages/Regular%20expressions.md#engine-interpretation-options):  `i` IgnoreCase;  `n` ExplicitCapture;  `x` IgnorePatternWhitespace;  `m` Multiline;  `s` Singleline;  
 > `^` Start of line;  `$` End of line;  `.*` ≥0 character(s);  `.+` ≥0 character(s);  `\w*` Any word;  `\S*` Any non-whitespace;
 > `\s*` Any whitespace;  `(.*)` Unnamed group;     `(?<user>.*)` Named group called user
 
