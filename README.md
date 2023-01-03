@@ -8,10 +8,10 @@ This project contains all my documentations of my developer life including code 
 
 - [Powershell](Powershell/Powershell.md)
 
-- [latex](LaTeX/latex.md)
+- [latex](latex/latex.md)
 
-- [Languages and Encodings](Languages/Languages%20and%20Encodings.md)
+- [Languages and Encodings](languages/Languages%20and%20Encodings.md)
 
-- [Applications](Applications/Applications.md)
+- [Applications](applications/Applications.md)
 
-- [Discussions](Discussions/Discussions.md)
+- [Discussions](discussions/Discussions.md)
