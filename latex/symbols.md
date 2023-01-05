@@ -52,68 +52,14 @@ These symbols can also be used in text mode.
 
 | Command      | Rendering | Dependency                               |
 | ------------ | --------- | ---------------------------------------- |
-| `\cEUR{}`    | €         | [currency](https://texdoc.org/serve/currency/0) + `\DefineCurrency` |
-| `\cUSD{}`    | $         | [currency](https://texdoc.org/serve/currency/0) + `\DefineCurrency` |
-| `\cJPY{}`    | ¥         | [currency](https://texdoc.org/serve/currency/0) + `\DefineCurrency` |
-| `\cGBP{}`    | £         | [currency](https://texdoc.org/serve/currency/0) + `\DefineCurrency` |
-| `\dEUR{1.5}` | 1.50 €    | [currency](https://texdoc.org/serve/currency/0) + `\DefineCurrency` |
-| `\dUSD{1.5}` | $ 1.50    | [currency](https://texdoc.org/serve/currency/0) + `\DefineCurrency` |
-| `\dJPY{1.5}` | 2 ¥       | [currency](https://texdoc.org/serve/currency/0) + `\DefineCurrency` |
-| `\dGBP{1.5}` | £ 1.50    | [currency](https://texdoc.org/serve/currency/0) + `\DefineCurrency` |
-
-- **Define currencies** in the preamble  
-    ```latex
-        \DefineCurrency{EUR}{
-            name={euro},
-            plural={euros},
-            symbol={\euro},
-            iso={EUR}
-        }
-        \DefineCurrency{USD}{
-            name={dollar},
-            plural={dollars},
-            symbol={\$},
-            iso={USD},
-            pre=true
-        }
-        \DefineCurrency{JPY}{
-            name={yen}, 
-            plural={yens}, 
-            symbol={\yen}, 
-            iso={JPY}, 
-            cents=false
-        }
-        \DefineCurrency{GBP}{
-            name={pound}, 
-            plural={pounds}, 
-            symbol={\pounds}, 
-            iso={GBP}, 
-            pre=true
-        }
-        
-        \CurrencySetup{
-            kind=symbol   % Representation of the monetary unit
-        }
-    ```
-
-- **Format money** using key-value pairs in the preamble  
-  First option is the default value.  
-  Supports all [siunitx](https://texdoc.org/serve/siunitx/0) key-value pairs.
-    ```latex
-    \CurrencySetup{
-        kind = iso|plural|name|symbol,   % Representation of the monetary unit
-        pre = false|true,   % Force currency before the value?
-        cents = true|false|always   % Force allow cents to be printed?
-    }
-    ```
-
-- Inherit **decimal marker** from [siunitx](https://texdoc.org/serve/siunitx/0)'s configuration
-    ```latex
-    \sisetup{
-        locale = DE   % Use culture's decimal marker
-    }
-    ```
-
+| `\cEUR{}`    | €         | [currency](https://texdoc.org/serve/currency/0) + [setup](Money%20and%20currencies.md) |
+| `\cUSD{}`    | $         | [currency](https://texdoc.org/serve/currency/0) + [setup](Money%20and%20currencies.md) |
+| `\cJPY{}`    | ¥         | [currency](https://texdoc.org/serve/currency/0) + [setup](Money%20and%20currencies.md) |
+| `\cGBP{}`    | £         | [currency](https://texdoc.org/serve/currency/0) + [setup](Money%20and%20currencies.md) |
+| `\dEUR{1.5}` | 1.50 €    | [currency](https://texdoc.org/serve/currency/0) + [setup](Money%20and%20currencies.md) |
+| `\dUSD{1.5}` | $ 1.50    | [currency](https://texdoc.org/serve/currency/0) + [setup](Money%20and%20currencies.md) |
+| `\dJPY{1.5}` | 2 ¥       | [currency](https://texdoc.org/serve/currency/0) + [setup](Money%20and%20currencies.md) |
+| `\dGBP{1.5}` | £ 1.50    | [currency](https://texdoc.org/serve/currency/0) + [setup](Money%20and%20currencies.md) |
 
 # Degree Symbols
 
