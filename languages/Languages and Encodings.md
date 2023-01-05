@@ -3,7 +3,7 @@
 - [java](java.md)  
 - [git](git.md)  
     Delete binary from history | `git clone git@github.com:Yetenol/�.git`
-- [unicode](unicode.md)  
+- [Sort or hide files using unicode characters](Sort%20or%20hide%20files%20using%20unicode%20characters.md)  
     Character Sorting | `!` `+` `Ξ`
 - [markdown](markdown.md)  
     LaTeX Render | `$e^{i\pi}=-1$` → ![](https://render.githubusercontent.com/render/math?math=e^{i\pi}=-1)

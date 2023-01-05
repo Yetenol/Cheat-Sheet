@@ -1,36 +1,30 @@
-<h1> Unicode </h1>
+# Useful characters
 
+| Purpose     | Char | Name             | Alt code    |
+| ----------- | ---- | ---------------- | ----------- |
+| Invisible   | ` `  | [No-Break Space](https://unicode-table.com/en/00A0/)   | 225 or 0160 |
+| Sort first  | `!`  | Exclamation Mark |             |
+| Sort second | `+`  | Plus Sign        |             |
+| Sort last   | `Ξ`  | [Capital Xi](https://unicode-table.com/en/039E/)       |             |
 
+# Greek letters
 
-Table of Contents
-- [Useful characters](#useful-characters)
-- [Character sorting](#character-sorting)
-  - [Top character choices](#top-character-choices)
-  - [Sorting differences](#sorting-differences)
-  - [Special sorting characters](#special-sorting-characters)
-- [Greek letters](#greek-letters)
+| .   | Name        | Unicode | Alt code |
+| --- | ----------- | ------- | -------- |
+| `α` | Alpha       | U+03B1  | Alt 224  |
+| `Γ` | Gamma       | U+0393  | Alt 226  |
+| `δ` | Delta       | U+03B4  | Alt 235  |
+| `ε` | Epsilon     | U+03B5  | Alt 238  |
+| `Θ` | Theta       | U+0398  | Alt 233  |
+| `π` | Pi          | U+03C0  | Alt 227  |
+| `Σ` | Sigma upper | U+03A3  | Alt 228  |
+| `σ` | Sigma lower | U+03C3  | Alt 229  |
+| `τ` | Tau         | U+03C4  | Alt 231  |
+| `Φ` | Phi upper   | U+03A6  | Alt 232  |
+| `φ` | Phi lower   | U+03C6  | Alt 237  |
+| `Ω` | Omega       | U+03A9  | Alt 234  |
 
-## Useful characters
-| .   | Name           | Unicode | Alt code              |
-| --- | -------------- | ------- | --------------------- |
-| ` ` | No-Break Space | U+00A0  | Alt 255 <br> Alt 0160 |
-
-
-## Character sorting
-
-### Top character choices
-
-| Position       |     | Name             |
-| -------------- | --- | ---------------- |
-| 1 first entry  | `!` | Exclamation Mark |
-| 2 second entry | `+` | Plus Sign        |
-| ∞ last entry   | `Ξ` | Capital Xi       |
-
-```
-Ξ
-```
-
-### Sorting differences
+# Sorting differences on different platforms
 
 | .   | Windows | Android <br> VS Code | Powershell <br> CMD | Bash |
 | --- | ------- | -------------------- | ------------------- | ---- |
@@ -54,7 +48,7 @@ Table of Contents
 | .   |         |                      | `Ω`                 | `π`  |
 | .   |         |                      | `␣`                 | `␣`  |
 
-### Special sorting characters
+## Special sorting characters
 
 | .   | Name                    | Unicode | Alt code |
 | --- | ----------------------- | ------- | -------- |
@@ -63,26 +57,6 @@ Table of Contents
 | `Ξ` | Xi (greek uppercase)    | U+039E  |
 | `π` | Pi (greek lowercase)    | U+03C0  | Alt 227  |
 | `Ω` | Omega (greek uppercase) | U+03A9  | Alt 234  |
-
-
-## Greek letters
-
-| .   | Name        | Unicode | Alt code |
-| --- | ----------- | ------- | -------- |
-| `α` | Alpha       | U+03B1  | Alt 224  |
-| `Γ` | Gamma       | U+0393  | Alt 226  |
-| `δ` | Delta       | U+03B4  | Alt 235  |
-| `ε` | Epsilon     | U+03B5  | Alt 238  |
-| `Θ` | Theta       | U+0398  | Alt 233  |
-| `π` | Pi          | U+03C0  | Alt 227  |
-| `Σ` | Sigma upper | U+03A3  | Alt 228  |
-| `σ` | Sigma lower | U+03C3  | Alt 229  |
-| `τ` | Tau         | U+03C4  | Alt 231  |
-| `Φ` | Phi upper   | U+03A6  | Alt 232  |
-| `φ` | Phi lower   | U+03C6  | Alt 237  |
-| `Ω` | Omega       | U+03A9  | Alt 234  |
-
-
 
 ---
 Sources:
