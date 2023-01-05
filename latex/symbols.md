@@ -62,21 +62,57 @@ These symbols can also be used in text mode.
 | `\dGBP{1.5}` | £ 1.50    | [currency](https://texdoc.org/serve/currency/0) + `\DefineCurrency` |
 
 - **Define currencies** in the preamble  
-  ```latex
-  \DefineCurrency{EUR}{name={euro}, plural={euros}, symbol={\euro}, iso={EUR}}
-  \DefineCurrency{USD}{name={dollar}, plural={dollars}, symbol={\$}, iso={USD}, pre=true}
-  \DefineCurrency{JPY}{name={yen}, plural={yens}, symbol={\yen}, iso={JPY}, cents=false}
-  \DefineCurrency{GBP}{name={pound}, plural={pounds}, symbol={\pounds}, iso={GBP}, pre=true}
-  \CurrencySetup{kind=symbol}
-  ```
-- **Format** money by calling `\CurrencySetup{�}` with
-  | Key=Default  | Options                           | Affect                                |
-  | ------------ | --------------------------------- | ------------------------------------- |
-  | `kind=`iso   | `iso`, `plural`, `name`, `symbol` | Representation of the monetary unit   |
-  | `pre=`false  | `true`, `false`                   | Print currency before the value?      |
-  | `cents=`true | `true`, `false`, `always`         | Control the way the cents are printed |
-  
-  See [further options](https://texdoc.org/serve/$1/0) or set decimal marker inside `\sisetup{locale=DE}`
+    ```latex
+        \DefineCurrency{EUR}{
+            name={euro},
+            plural={euros},
+            symbol={\euro},
+            iso={EUR}
+        }
+        \DefineCurrency{USD}{
+            name={dollar},
+            plural={dollars},
+            symbol={\$},
+            iso={USD},
+            pre=true
+        }
+        \DefineCurrency{JPY}{
+            name={yen}, 
+            plural={yens}, 
+            symbol={\yen}, 
+            iso={JPY}, 
+            cents=false
+        }
+        \DefineCurrency{GBP}{
+            name={pound}, 
+            plural={pounds}, 
+            symbol={\pounds}, 
+            iso={GBP}, 
+            pre=true
+        }
+        
+        \CurrencySetup{
+            kind=symbol   % Representation of the monetary unit
+        }
+    ```
+
+- **Format money** using key-value pairs in the preamble  
+  First option is the default value.  
+  Supports all [siunitx](https://texdoc.org/serve/siunitx/0) key-value pairs.
+    ```latex
+    \CurrencySetup{
+        kind = iso|plural|name|symbol,   % Representation of the monetary unit
+        pre = false|true,   % Force currency before the value?
+        cents = true|false|always   % Force allow cents to be printed?
+    }
+    ```
+
+- Inherit **decimal marker** from [siunitx](https://texdoc.org/serve/siunitx/0)'s configuration
+    ```latex
+    \sisetup{
+        locale = DE   % Use culture's decimal marker
+    }
+    ```
 
 
 # Degree Symbols
@@ -137,6 +173,7 @@ These symbols can also be used in text mode.
 | `\varkappa` | $\varkappa$ |               | [amssymb](https://texdoc.org/serve/amssymb/0) |
 
 - Change letter style
+
     | Preamble Command                       | Rendering     | Original   | Dependency         |
     | -------------------------------------- | ------------- | ---------- | ------------------ |
     | `\renewcommand{\epsilon}{\varepsilon}` | $\varepsilon$ | $\epsilon$ |
@@ -303,6 +340,7 @@ These symbols can also be used in text mode.
   Prefix the command with `\not` like `\not\leq`.  
 
 - **Change** symbol **style**
+  
   | Preamble Command                     | Rendering    | Original  | Dependency         |
   | ------------------------------------ | ------------ | --------- | ------------------ |
   | `\renewcommand{\propto}{\varpropto}` | $\varpropto$ | $\propto$ | [amssymb](https://texdoc.org/serve/amssymb/0) |
@@ -371,6 +409,7 @@ These symbols can also be used in text mode.
 | `\nLeftrightarrow`  | $\nLeftrightarrow$  |                  | [amssymb](https://texdoc.org/serve/amssymb/0) |
 
 - **Change** symbol **style**
+  
   | Preamble Command                             | Rendering        | Original      |
   | -------------------------------------------- | ---------------- | ------------- |
   | `\renewcommand{\subsetneq}{\varsubsetneq}`   | $\varsubsetneq$  | $\subsetneq$  |
@@ -445,6 +484,7 @@ These symbols can also be used in text mode.
 | `\leftthreetimes`     | $\leftthreetimes$     |                     | [amssymb](https://texdoc.org/serve/amssymb/0)   |
 
 - **Change** symbol **style**
+  
   | Preamble Command                                   | Rendering           | Original         | Dependency         |
   | -------------------------------------------------- | ------------------- | ---------------- | ------------------ |
   | `\renewcommand{\triangleleft}{\vartriangleleft}`   | $\vartriangleleft$  | $\triangleleft$  | [amssymb](https://texdoc.org/serve/amssymb/0) |
@@ -661,6 +701,7 @@ These symbols can also be used in text mode.
 | `\mho`               | $\mho$               |                | [amssymb](https://texdoc.org/serve/amssymb/0)   |
 
 - **Change** symbol **style**
+  
   | Preamble Command                         | Rendering      | Original    | Dependency         |
   | ---------------------------------------- | -------------- | ----------- | ------------------ |
   | `\renewcommand{\triangle}{\vartriangle}` | $\vartriangle$ | $\triangle$ | [amssymb](https://texdoc.org/serve/amssymb/0) |
