@@ -1,35 +1,4 @@
-# Project Structure
-
-- **`setup/`**
-	- **[`packages.tex` ›](templates.md#package-requirements)**  
-        Required packages | `\usepackage{}`
-	- **`definitions.tex`**  
-        new commands, environments, columntypes | `\newcommand{}{}`
-	- **[`layout.tex` ›](templates.md#layout)**  
-        global formatting, spacing, margins | `\hypersetup{colorlinks=true}`
-- **`src/`** for resources, images, table values, sourcecode files, attachments, appendices
-- **`table/`** for table floats
-    - **[_table name_`.tex` ›](tables.md)**  
-        one table [float](Floating%20Bodies.md) | `\begin{table}`
-- **`figure/`** for image or graphic floats
-    - **[_figure name_`.tex` ›](Floating%20Bodies.md#images)**  
-        one figure [float](Floating%20Bodies.md) | `\begin{figure}`
-- **`listing/`** for sourcecode typesetting floats
-    - **[_listing name_`.tex` ›](Floating%20Bodies.md#source-code-listings)**  
-        one source code [float](Floating%20Bodies.md) | `\lstinputlisting{}`
-- **`bib/`** for external references
-	- **`bibliography.tex`**  
-        Structure of the bibliography | `\printbibliography{}`
-	- **_reference type_`.bib`**  
-        letters or annex
-- **`text/`** for continues text
-    - **[`headings.tex` ›](templates.md#headings)**  
-        Structure of the headings  | `\section{}`
-	- **_heading name_`.tex`**  
-        Continuous text paragraphs | `\subsection{}`
-- **`sty/`** for own packages
-  - **_package name_`.sty`**  
-    self-written package | `\ProvidesPackage{sty/PACKAGENAME}`
+[Project Structure](Project%20Structure.md)
 
 # Debugging
 
