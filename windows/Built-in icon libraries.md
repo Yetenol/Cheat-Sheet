@@ -2,7 +2,6 @@
 example: Images Library
 command: shell32.dll
 ---
-#obsidian/writeOutTable
 
 | Path                                                                                                                                                                           | Description                                  |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------- |
@@ -31,5 +30,13 @@ command: shell32.dll
 | stores icons used for remote desktop connections.                                                                                                                              | `%systemroot%\system32\mstscax.dll`          |
 | has icons for various imaging hardware devices, like scanners and cameras.                                                                                                     | `%systemroot%\system32\wiashext.dll`         |
 
-## Sources
+
+---
+#obsidian/writeOutTable
+
+Sources:
 - 2021-11-21: [Windows 10 icons. Where are they located- In which files and folders- - Digital Citizen](https://www.digitalcitizen.life/where-find-most-windows-10s-native-icons/)
+
+Related:
+
+Tags:

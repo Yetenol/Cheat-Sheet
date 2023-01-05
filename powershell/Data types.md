@@ -2,7 +2,6 @@
 example: Hashtable
 script: "[DateTime]::Now"
 ---
-#obsidian/done
 
 Examples for common data types
 
@@ -132,6 +131,8 @@ $List[0]
 
 
 ---
+#obsidian/done
+
 Sources:
 - 2022-12-17: [PowerShell Hash Table vs. PSCustomObject- Deep Dive & Comparison - Jeff Brown Tech](https://jeffbrown.tech/powershell-hash-table-pscustomobject/)
 - 2022-12-17: [Difference between single quote (‘) and double quote (“) in PowerShell](https://www.tutorialspoint.com/difference-between-single-quote-and-double-quote-in-powershell)

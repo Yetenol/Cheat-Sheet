@@ -1,5 +1,3 @@
-#obsidian/translate #powershell/test
-
 The data is encrypted using the Windows Data Protection API (DPAPI). 
 Only the **SAME USER ON THE SAME MASHINE** can decrypt.
 
@@ -75,6 +73,8 @@ $Secure = Get-Content "${Env:AppData}\Sec.bin" | ConvertTo-SecureString
 
 
 ---
+#obsidian/translate #powershell/test
+
 Sources:
 
 Related:

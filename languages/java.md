@@ -1,19 +1,3 @@
-#obsidian/translate #languages/todo
-
-Table of Contents
-- [Datentypen](#datentypen)
-  - [Typecasting](#typecasting)
-- [Functions](#functions)
-  - [Parameter Passing](#parameter-passing)
-    - [Method invocation](#method-invocation)
-- [Klassen](#klassen)
-  - [Konstructor](#konstructor)
-  - [Statische Methoden](#statische-methoden)
-  - [Datenübergabe](#datenübergabe)
-- [Objekte](#objekte)
-    - [Objekte kopieren](#objekte-kopieren)
-- [Sources](#sources)
-
 # Datentypen
 
 ## Typecasting
@@ -89,6 +73,13 @@ Modul introprog = algodat;
 
 - nur ein Objekt wurde erzeugt
 
-# Sources
 
+---
+#obsidian/translate
+
+Sources:
 - 2022-05-04: [Pass-By-Value as a Parameter Passing Mechanism in Java - Baeldung](https://www.baeldung.com/java-pass-by-value-or-pass-by-reference)
+
+Related:
+
+Tags:
