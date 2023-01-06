@@ -1,9 +1,50 @@
-Table of Contents
-- [Column types](#column-types)
-- [Table types](#table-types)
-  - [Auto-stretching columns table](#auto-stretching-columns-table)
-  - [Number table](#number-table)
-  - [Align custom delimiter tables](#align-custom-delimiter-tables)
+CAPITAL letters are ⟨placeholders⟩
+
+# Best practices
+
+1. Tabular environments should be nested in a **floating object** called `table`. 
+    ```latex
+    \begin{table}
+        \begin{TABULAR-ENVIRONMENT}
+        \end{TABULAR-ENVIRONMENT}
+    \end{table}
+    ```
+
+2. Always provide a **caption** displayed underneath and a **label**, to cross reference in elsewhere. Horizontally center the float as well.
+    ```latex
+    \begin{table}
+        \begin{TABULAR-ENVIRONMENT}
+        \end{TABULAR-ENVIRONMENT}
+        \centering % horizontally center the float
+        \caption{CAPTION} % title displayed below the table and in the index
+        \label{tab:LABEL} % a handle to cross reference the table
+    \end{table}
+    ```
+
+3. Table floats contain many lines of text, so they are distracting in the main text. Therefore, extract each floating object into a separate file.
+
+main chapter file like `chapters/measurement.tex`  
+
+```latex
+My friends' parents \ref{tab:LABEL}
+
+\input{table-floats/values-measured}
+```
+
+floating object in `table-floats/values-measured.tex`
+
+```latex
+\begin{table}
+    \begin{tabular}[]{}
+        Child   & Mother & Father \\
+        Alysha  & Lyra   & Hans \\
+        Klaus   & Rosy   & Dieter \\
+    \end{tabular}
+    \centering
+    \caption{My friends' parents}
+    \label{tab:my-friends-parents}
+\end{table}
+```
 
 # Column types
 
@@ -20,26 +61,15 @@ Table of Contents
 | `m{}`                 | paragraph          | fixed               | vertical center | built-in                                              |
 | `S[table-format=3.1]` | number/single line | fixed               | decimal point   | [siunitx](https://texdoc.org/serve/siunitx/0)         |
 | `S`                   | number/single line | auto-fit to content | decimal point   | [siunitx](https://texdoc.org/serve/siunitx/0)         |
-
-- **place the table** into a text
-    > `text/SECTION.tex`
-    ```latex
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent maximus.
-    \input{table/simulationswerte}
-    ```
+#research/addContent 
 
 # Table types
 
 ## Auto-stretching columns table
 
-- **Package requirements** in `setup/packages.tex`  
-    `\input` the file into the [document preamble](Getting%20started.md#preamble).
-    - fetch or download [LaTeX.table](https://github.com/Yetenol/latex.table)
-    ```latex
-    \usepackage{sty/table}
-    ```
+Dependency [LaTeX.table](https://github.com/Yetenol/latex.table)
 
-- **Table body** in `src/children-list.tex`  
+- **Table body** in `resources/children-list.tex`  
     ```latex
     % Child & Mother & Father
     Alysha  & Lyra   & Hans \\
@@ -85,7 +115,7 @@ Table of Contents
 
 
 - **Package requirements** in `setup/packages.tex`  
-    `\input` the file into the [document preamble](Getting%20started.md#preamble).
+    `\input` the file into the [document preamble](Troubleshoot%20and%20get%20help.md#preamble).
     ```latex
     \usepackage{siunitx}  % Aligning numbers by decimal points in table columns
     \usepackage{booktabs} % To thicken table lines
@@ -96,7 +126,7 @@ Table of Contents
 
 - **Mathematical symbols** in `math/symbols.tex`  
     Globally define column titles as macros to ensure consistent symbols throughout the document.  
-    `\input` the file into the [document preamble](Getting%20started.md#preamble).
+    `\input` the file into the [document preamble](Troubleshoot%20and%20get%20help.md#preamble).
     ```latex
     \newmathsnippet{\SYMBOLA}{f_\mathrm{E}}
     \newmathsnippet{\SYMBOLB}{U_\mathrm{E}}
@@ -149,7 +179,7 @@ Table of Contents
 ## Align custom delimiter tables
 
 - **Package requirements** in `setup/packages.tex`  
-    `\input` the file into the [document preamble](Getting%20started.md#preamble).
+    `\input` the file into the [document preamble](Troubleshoot%20and%20get%20help.md#preamble).
     ```latex
     \usepackage{booktabs} % To thicken table lines
     ```
@@ -191,7 +221,10 @@ Table of Contents
 
 
 ---
+
+
 Sources:
+2023-01-06: [Tables - Overleaf, Online LaTeX Editor](https://www.overleaf.com/learn/latex/Tables)
 
 Related:
 [Floating Bodies](Floating%20Bodies.md)
