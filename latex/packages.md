@@ -1,3 +1,8 @@
+---
+example: Lipsum Text
+command: \usepackage[utf8]{inputenc}
+---
+
 # Documentation
 
 View package documentation

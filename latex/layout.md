@@ -1,3 +1,8 @@
+---
+example: Hyphenation
+command: '\! \, \: \; \quad \qquad'
+---
+
 # Document Classes
 
 ```latex

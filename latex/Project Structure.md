@@ -1,3 +1,8 @@
+---
+example: 
+command: table-floats/
+---
+
 Writing everything in one file reduces readability, increases compile time, and makes debugging more difficult. Therefore a logical project structure is highly recommended.
 
 - **`main.tex`** for project structure which inputs all files

@@ -1,3 +1,8 @@
+---
+example: Arrows
+command: \mathbb{NR}
+---
+
 Commands for Mathematical Expressions, Symbols, Operators and Relations
 
 # Favorites

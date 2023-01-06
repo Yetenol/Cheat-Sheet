@@ -1,3 +1,8 @@
+---
+example: Norm
+command: \renewcommand{\phi}{\varphi}
+---
+
 # Custom symbols
 
 Dependecy: siunitx

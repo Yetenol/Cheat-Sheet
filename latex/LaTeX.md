@@ -1,5 +1,18 @@
+```dataview
+LIST
+FROM "latex"
+```
+
+```dataview
+TABLE
+    without id
+    file.link as "Title",
+    example as "Topic example",
+    ("`" + command + "`") as "Command example"
+FROM "latex"
+```
+
 - [Getting Started](Getting%20started.md)    
-    Project Structure | `texdoc PACKAGE_NAME`
 - [Symbols](symbols.md)    
     Arrows | `\mathbb{NR}` → ℕℝ
 - [Mathematical typesetting](Mathematical%20typesetting.md)    
