@@ -1,3 +1,8 @@
+---
+example: [ Numbers, Physical quantities ]
+command: \qty{3}{\celsius}
+---
+
 # Numeric values
 
 Dependecy: [siunitx](https://texdoc.org/serve/siunitx/0)
