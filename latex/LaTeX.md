@@ -8,7 +8,7 @@ TABLE
 FROM "latex"
 ```
 
-- [Getting Started](Getting%20started.md)    
+- [Getting Started](Troubleshoot%20and%20get%20help.md)    
 - [Symbols](symbols.md)    
     Arrows | `\mathbb{NR}` → ℕℝ
 - [Mathematical typesetting](Mathematical%20typesetting.md)    

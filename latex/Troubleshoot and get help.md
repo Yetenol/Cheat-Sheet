@@ -1,6 +1,4 @@
-# Debugging
-
-## View user guide of a specific packages  
+# View user guide of a specific packages  
  
 - by adding a custom search engine to your browser
     ```
@@ -11,7 +9,7 @@
     `texdoc ⟨package name⟩`
 - by visiting **[ctan.org](https://ctan.org/)**
 
-## Highlight overfull conflicts
+# Highlight overfull conflicts
 
 - by enabling draft mode in the preamble
     ```latex
@@ -27,5 +25,3 @@
     ```latex
     \PackageError {⟨package name⟩} {⟨error text⟩} {}
     ```
-
-[Typeset numeric values](Typeset%20numeric%20values.md)
