@@ -17,7 +17,7 @@ FROM "latex"
     Hyphenation | `\!` `\,` `\:` `\;` `\quad` `\qquad`
 - [Useful Packages](packages.md)    
     Lipsum Text | `\usepackage[utf8]{inputenc}`
-- [Modify Environments](environments.md)    
+- [Modify Environments](Modify%20existing%20environments.md)    
     Modify Existing Environments | `\usepackage{etoolbox}`
 - [Floating Bodies](Floating%20Bodies.md)    
     Images | `\begin{figure}[htbp]`

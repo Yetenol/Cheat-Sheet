@@ -15,7 +15,7 @@
 
 ## Dependency
 
-The [currency](https://texdoc.org/serve/currency/0) package provide a conveninent, normalized way to print monetary units and values. It ensures consistency and global style changes.
+The [currency](https://texdoc.org/serve/currency/0) package provide a conveninent, standardized way to print monetary units and values. It ensures consistency and global style changes.
 
 - **Use package** in the preamble  
     ```latex
