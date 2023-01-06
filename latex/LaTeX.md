@@ -1,7 +1,3 @@
-```dataview
-LIST
-FROM "latex"
-```
 
 ```dataview
 TABLE
@@ -25,3 +21,4 @@ FROM "latex"
     Modify Existing Environments | `\usepackage{etoolbox}`
 - [Floating Bodies](Floating%20Bodies.md)    
     Images | `\begin{figure}[htbp]`
+
