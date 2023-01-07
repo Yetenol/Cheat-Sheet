@@ -246,6 +246,7 @@ All pgfkeys are stored in `pgfplots/table/`
 #research/addExamples 
 
 Sources:
+- 2023-01-07: [https://texdoc.org/serve/pgfplotstable/0](https://texdoc.org/serve/pgfplotstable/0)
 
 Related:
 [Typeset tables](Typeset%20tables.md)
