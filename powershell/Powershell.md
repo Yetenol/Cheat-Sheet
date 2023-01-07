@@ -20,5 +20,5 @@
     While Loop | `read name` ⟷ `$name = Read-Host -Prompt "Name"`
 - **[Parameter](Powershell/Specify%20parameters%20for%20functions%20and%20scripts.md)**    
     AutoComplete | `[Parameter(Mandatory = $true)]`
-- **[File system](Powershell/filesystem/File%20system.md)**    
+- **[Interact with the File System](filesystem/Interact%20with%20the%20File%20System.md)**    
     Run as administrator | ``explorer "/select,`"$(Resolve-Path $file)`""``
