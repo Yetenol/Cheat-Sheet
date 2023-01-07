@@ -1,4 +1,3 @@
-^
 Dependency: [pgfplotstable](https://texdoc.org/serve/pgfplotstable/0)
 
 # Usage
