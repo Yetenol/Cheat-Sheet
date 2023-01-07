@@ -171,7 +171,7 @@ All pgfkeys are stored in `pgfplots/table/`
     row sep = newline|\\
     ```
 
-- **ignore list of characters** (default: **empty**) by    
+- **ignore list of characters** (default: *empty*) by    
     ```latex
     ignore chars = {⟨COMMA-SEPARATED-LIST⟩}
     ```
@@ -222,12 +222,26 @@ All pgfkeys are stored in `pgfplots/table/`
     }
     ```
 
-- use **LaTeX columntype** by    
+- use **LaTeX columntype** (default: *c*) by    
     ```latex
     column type = {⟨tabular column type⟩}
     ```
 
+- **rename column name** in output (default: *`\pgfkeysnovalue`*) by    
+    ```latex
+    column name = {⟨TEX display column name⟩}
+    ```
 
+- **format column name** in output by    
+    ```latex
+    assign column name/.code = {
+        /pgfplots/table/column name = {
+            ⟨formatting macros⟩ #1
+        }
+    }
+    ```
+    - align header cells centered using `\multicolumn{1}{c}{#1}`
+    - format header cells bold using `\textbf{#1}`
 
 ---
 #research/addExamples 
