@@ -1,9 +1,5 @@
-<h1> File System Interactions </h1>
-
-
-
 Table of Contents
-- **[Path ›](../File%20system%20path.md)**    
+- **[Path ›](../Test%20paths%20and%20retrieve%20filesystem%20information.md)**    
     retrieve filesystem information
 - **[Import ›](../Input%20information.md)**  
     extract data from files  

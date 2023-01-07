@@ -22,7 +22,7 @@ Use `.xml` files to preserve the PowerShells Object information.
     ```
 
 - [Dates](filesystem/Dates.md)
-- [File system path](File%20system%20path.md)
+- [Test paths and retrieve filesystem information](Test%20paths%20and%20retrieve%20filesystem%20information.md)
 
 # Plain text file
 
