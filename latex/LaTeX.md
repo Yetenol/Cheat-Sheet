@@ -1,8 +1,6 @@
 
 ```dataview
 TABLE
-    without id
-    file.link as "Title",
     example as "Topic example",
     ("`" + command + "`") as "Command example"
 FROM "latex"

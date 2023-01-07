@@ -1,5 +1,13 @@
+
+```dataview
+TABLE
+    example as "Topic example",
+    ("`" + command + "`") as "Command example"
+FROM "powershell/filesystem"
+```
+
 Table of Contents
-- **[Path ›](../Test%20paths%20and%20retrieve%20filesystem%20information.md)**    
+- **[Path ›](Test%20paths%20and%20retrieve%20filesystem%20information.md)**    
     retrieve filesystem information
 - **[Import ›](../Input%20information.md)**  
     extract data from files  
