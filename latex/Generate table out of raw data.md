@@ -5,17 +5,17 @@ Dependency: [pgfplotstable](https://texdoc.org/serve/pgfplotstable/0)
 - generate a table as a **floating object** from a file
     ```latex
     \begin{table}
-        \pgfplotstabletypeset{resources/RAW-DATA.CSV}
+        \pgfplotstabletypeset{resources/⟨RAW-DATA.CSV⟩}
         \centering
-        \caption{CAPTION}
-        \label{tab:LABEL}
+        \caption{⟨CAPTION⟩}
+        \label{tab:⟨LABEL⟩}
     \end{table}
     ```
 
 - generate a table **in line with text** from a file
     ```latex
     \begin{center}
-    \pgfplotstabletypeset{resources/RAW-DATA.CSV}
+    \pgfplotstabletypeset{resources/⟨RAW-DATA.CSV⟩}
     \end{center}
     ```
 
@@ -80,7 +80,7 @@ Dependency: [pgfplotstable](https://texdoc.org/serve/pgfplotstable/0), [booktabs
 
 ## Format
 
-- **comment** lines USING `%` or `#`
+- **comment** lines using `%` or `#`
 
 Example file:
 ```
