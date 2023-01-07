@@ -5,28 +5,6 @@ command: ms-settings:display
 
 `ms-setting` URIs used to open various pages of the Settings app
 
-Table of Contents
-- [Settings home page](#settings-home-page)
-- [System](#system)
-- [Devices](#devices)
-- [Phone](#phone)
-- [Network & Internet](#network--internet)
-- [Personalization](#personalization)
-- [Apps](#apps)
-- [Accounts](#accounts)
-- [Time & language](#time--language)
-- [Gaming](#gaming)
-- [Extras](#extras)
-- [Ease of Access](#ease-of-access)
-- [Search (version 1903+)](#search-version-1903)
-- [Cortana](#cortana)
-- [Privacy](#privacy)
-- [Update & security](#update--security)
-- [Mixed reality](#mixed-reality)
-- [Surface Hub](#surface-hub)
-- [Sources](#sources)
-
-
 ## Settings home page
 
 | Page               | URI            |
@@ -321,7 +299,14 @@ Table of Contents
 | Session cleanup        | `ms-settings:surfacehub-sessioncleanup`   |
 | Welcome screen         | `ms-settings:surfacehub-welcome`          |
 
-## Sources
 
+---
+#obsidian/improveSectioning 
+
+Sources:
 - 2021-08-13: [List of `ms-settings` URI commands to open specific settings in Windows 10 – 4sysops](https://4sysops.com/wiki/list-of-ms-settings-uri-commands-to-open-specific-settings-in-windows-10/history/?revision=1555539)
 - 2021-11-19: [ms-settings: URI scheme reference](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference)
+
+Related:
+
+Tags:

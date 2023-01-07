@@ -38,3 +38,14 @@ regular expression and the text you want to search.
 | Time-out      | MatchTimeOut                                |
 | Cache size    | CacheSize                                   |
 | Direction     | RightToLeft                                 |
+
+
+---
+#obsidian/rename #obsidian/improveSectioning 
+
+Sources:
+
+Related:
+
+Tags:
+

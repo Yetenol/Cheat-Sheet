@@ -1,8 +1,3 @@
-Table of Contents
-- [User-Specific Folders](#user-specific-folders)
-- [Common-User Folders](#common-user-folders)
-- [Sources](#sources)
-
 ## User-Specific Folders
 
 - **List all locations**
@@ -81,6 +76,7 @@ Table of Contents
 - **Default locations**
   Value type: REG_EXPAND_SZ
 
+#obsidian/fixTable 
     | Shell Folder Name - _Description_                                | Default location                                              |
     | ---------------------------------------------------------------- | ------------------------------------------------------------- |
     | `{3D644C9B-1FB8-4f30-9B45-F670235F79C0}` <br> _Common Downloads_ | `%PUBLIC%\Downloads`                                          |
@@ -98,6 +94,8 @@ Table of Contents
 
 
 ---
+#obsidian/improveSectioning 
+
 Sources:
 - 2022-04-23: [Windows 10-11 User Shell Folders Restore Default Paths » Winhelponline](https://www.winhelponline.com/blog/windows-10-shell-folders-paths-defaults-restore/)
 

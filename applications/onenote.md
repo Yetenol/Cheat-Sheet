@@ -1,20 +1,9 @@
-Table of Contents
+#obsidian/fix 
 - **[Keyboard Shortcuts 🔗](https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-onenote-44b8b3f4-c274-4bcc-a089-e80fdcc87950)**  
     Links to Keyboard Shortcut Lists  
     Apply _Heading 1_ | `[Ctrl + Alt + 2]`
   - [Windows 10 App 🔗](https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-onenote-44b8b3f4-c274-4bcc-a089-e80fdcc87950#PickTab=Windows_10_app)
   - [Windows 🔗](https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-onenote-44b8b3f4-c274-4bcc-a089-e80fdcc87950#PickTab=Windows)
-- [Mathematical Typesetting](#mathematical-typesetting)
-  - [Supported input languages](#supported-input-languages)
-  - [Basics](#basics)
-  - [Number sets](#number-sets)
-  - [Quotient](#quotient)
-  - [Integral](#integral)
-  - [Arrays and Matrices](#arrays-and-matrices)
-  - [Cases](#cases)
-  - [Multiple equations](#multiple-equations)
-- [Sources](#sources)
-
 
 # Mathematical Typesetting
 
@@ -125,8 +114,15 @@ Example: `[Alt + +]` `\sqrt·a+b·-c\cdot\alpha·` `[Alt + +]` renders as $\sqrt
   $$
 
 
-# Sources
+---
+
+
+Sources:
 - 2022-06-10: [Using OneNote to Write Equations – Blake Margolis](https://sites.utexas.edu/margolis/2019/04/09/using-onenote/)
 - 2022-06-14: [Keyboard shortcuts in OneNote](https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-onenote-44b8b3f4-c274-4bcc-a089-e80fdcc87950)
 - 2022-07-04: [Linear format equations using UnicodeMath and LaTeX in Word](https://support.microsoft.com/en-us/office/linear-format-equations-using-unicodemath-and-latex-in-word-2e00618d-b1fd-49d8-8cb4-8d17f25754f8)
 - 2022-07-04: [What's the difference between the OneNote versions-](https://support.microsoft.com/en-us/office/what-s-the-difference-between-the-onenote-versions-a624e692-b78b-4c09-b07f-46181958118f)
+
+Related:
+
+Tags:

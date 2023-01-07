@@ -221,7 +221,7 @@ Dependency [LaTeX.table](https://github.com/Yetenol/latex.table)
 
 
 ---
-
+#latex/standardizePlaceholders
 
 Sources:
 2023-01-06: [Tables - Overleaf, Online LaTeX Editor](https://www.overleaf.com/learn/latex/Tables)

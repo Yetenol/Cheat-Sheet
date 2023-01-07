@@ -1,10 +1,8 @@
 Shortcuts to special OS folders or panels. Referenced using a [**CLSID keys**](https://docs.microsoft.com/de-de/windows/win32/com/clsid-key-hklm?redirectedfrom=MSDN) (globally unique identifier that identifies a COM class object)
 
-Table of Contents
+#obsidian/removeToc 
 - **[Current GUIDs ›](../GUID%20shortcuts.md)**  
         Recycle Bin | `shell:::{�}`
-- [List of deprecated GUIDs](#list-of-deprecated-guids)
-- [Sources](#sources)
 
 
 ## List of deprecated GUIDs
@@ -136,5 +134,12 @@ Table of Contents
 | %USERNAME%               | `shell:::{9B74B6A3-0DFD-4F11-9E78-5F7800F2E772}` | _virtual folder_                                                                      |
 
 
-## Sources
+---
+
+
+Sources:
 - 2022-04-23: [Windows- known folders](https://renenyffenegger.ch/notes/Windows/dirs/_known-folders)
+
+Related:
+
+Tags:

@@ -1,4 +1,4 @@
-Table of Contents
+#obsidian/removeToc 
 - **[User Folders ›](Retrieve%20and%20modify%20user%20folders.md)**  
   _This PC_-Folders, Per-user folders & Common-user folders  
   Downloads | `shell:My Pictures`
@@ -42,6 +42,13 @@ Table of Contents
     ```
 
 
-# Sources
 
+---
+
+
+Sources:
 - 2022-04-24: [Known Folder GUIDs for File Dialog Custom Places - Windows Forms .NET Framework - Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/desktop/winforms/controls/known-folder-guids-for-file-dialog-custom-places?view=netframeworkdesktop-4.8)
+
+Related:
+
+Tags:

@@ -180,6 +180,8 @@
 
 
 ---
+#obsidian/improveSectioning 
+
 Sources:
 - 2021-09-02: [List of ms-settings URI commands to open specific settings in Windows 10 – 4sysops](https://4sysops.com/wiki/list-of-ms-settings-uri-commands-to-open-specific-settings-in-windows-10/)
 

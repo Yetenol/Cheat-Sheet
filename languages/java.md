@@ -75,7 +75,7 @@ Modul introprog = algodat;
 
 
 ---
-#obsidian/translate
+#obsidian/translate #obsidian/rename 
 
 Sources:
 - 2022-05-04: [Pass-By-Value as a Parameter Passing Mechanism in Java - Baeldung](https://www.baeldung.com/java-pass-by-value-or-pass-by-reference)

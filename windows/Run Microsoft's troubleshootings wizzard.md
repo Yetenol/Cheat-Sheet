@@ -21,3 +21,13 @@ command: msdt -id PrinterDiagnosticmsdt
 | Shared Folders                               | Troubleshoots problems accessing shared files and folders on other computers over the network.                         | msdt -id NetworkDiagnosticsFileShare      |
 | System Maintenance                           | Helps the user perform maintenance tasks.                                                                              | msdt -id MaintenanceDiagnostic            |
 | Windows Update                               | Troubleshoots problems that prevent Windows Update from performing update tasks.                                       | msdt -id WindowsUpdateDiagnostic          |
+
+
+---
+#obsidian/done 
+
+Sources:
+
+Related:
+
+Tags:

@@ -20,3 +20,14 @@ FROM "latex"
 - [Floating Bodies](Floating%20Bodies.md)    
     Images | `\begin{figure}[htbp]`
 
+
+---
+#obsidian/removeToc 
+
+Sources:
+
+Related:
+
+Tags:
+
+

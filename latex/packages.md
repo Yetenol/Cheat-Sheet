@@ -24,3 +24,14 @@ View package documentation
 ```latex
 \usepackage{lipsum} % Generate placeholder paragraphs
 ```
+
+
+---
+#research/addExamples 
+
+Sources:
+
+Related:
+[Troubleshoot and get help](Troubleshoot%20and%20get%20help.md)
+
+Tags:

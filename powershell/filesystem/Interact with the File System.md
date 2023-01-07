@@ -5,10 +5,7 @@ TABLE
     ("`" + command + "`") as "Command example"
 FROM "powershell/filesystem"
 ```
-
-Table of Contents
-- **[Path ›](Test%20paths%20and%20retrieve%20filesystem%20information.md)**    
-    retrieve filesystem information
+#obsidian/removeToc 
 - **[Import ›](../Input%20information.md)**  
     extract data from files  
     parse using regular expressions  
@@ -29,7 +26,6 @@ Table of Contents
 - [File modification](#file-modification)
   - [Set _Run as Administrator_ flag](#set-run-as-administrator-flag)
 - [File Information](#file-information)
-- [Sources](#sources)
 
 Example content
 ```powershell
@@ -64,6 +60,7 @@ $tool = "$env:SystemRoot\System32\notepad.exe"
 
     The `$copyFlags` are a bitwise combination of the following `vOptions` flags:
 
+#obsidian/fixTable
     | Value                | Summary                | Description                                                                                                                    |
     | -------------------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
     | `0x0004` <br> = 4    | no UI                  | Do not display a progress dialog box.                                                                                          |
@@ -137,10 +134,17 @@ The flag is stored in byte `0x15` (= 21) at bit `0x20` (= 6).
     ```
 
 
-# Sources
 
+---
+
+
+Sources:
 - 2022-04-25: [windows - How to create a Run As Administrator shortcut using Powershell - Stack Overflow](https://stackoverflow.com/questions/28997799/how-to-create-a-run-as-administrator-shortcut-using-powershell)
 - 2022-04-25: [PowerShell- Running Executables - TechNet Articles - United States (English) - TechNet Wiki](https://social.technet.microsoft.com/wiki/contents/articles/7703.powershell-running-executables.aspx)
 - 2022-04-27: [Getting file metadata with PowerShell similar to what Windows Explorer provides - Evotec](https://evotec.xyz/getting-file-metadata-with-powershell-similar-to-what-windows-explorer-provides/)
 - 2022-09-02: [Copying Files In PowerShell - Using Windows Explorer UI - BackSlasher](https://blog.backslasher.net/copying-files-in-powershell-using-windows-explorer-ui.html)
 - 2022-09-02: [Folder.CopyHere method (Shldisp.h) - Win32 apps - Microsoft Docs](https://docs.microsoft.com/en-us/windows/win32/shell/folder-copyhere)
+
+Related:
+
+Tags:

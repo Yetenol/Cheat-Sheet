@@ -82,3 +82,13 @@ $url = "https://raw.githubusercontent.com/Yetenol/Setup-Computer/main/script/tes
     $command = "Invoke-Command -ScriptBlock ([ScriptBlock]::Create((Invoke-WebRequest -Uri $url)))"
     Start-Process wt -Verb RunAs -ArgumentList "PowerShell.exe -NoExit -Command $command"
     ```
+
+
+---
+#obsidian/improveSectioning 
+
+Sources:
+
+Related:
+
+Tags:
