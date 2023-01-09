@@ -1,3 +1,8 @@
+```dataview
+LIST
+    (example + " | `" + command + "`")
+FROM "powershell"
+```
 - [Make scripts executable when renamed cmd](Make%20scripts%20executable%20when%20renamed%20cmd.md)    
     Executable script | `Invoke-Command -ScriptBlock ([ScriptBlock]::Create($cmd))`
 - [Upgrade applications](Upgrade%20applications.md)    

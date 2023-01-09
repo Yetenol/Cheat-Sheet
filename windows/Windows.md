@@ -1,3 +1,10 @@
+
+```dataview
+LIST
+    (example + " | `" + command + "`")
+FROM "windows"
+```
+
 - [OS Components](OS%20Components.md)  
     Certificates | `certmgr.msc`
 - [Access pages of thee settings app using ms-setting URIs](Access%20pages%20of%20thee%20settings%20app%20using%20ms-setting%20URIs.md)  

@@ -1,8 +1,7 @@
 
 ```dataview
-TABLE
-    example as "Topic example",
-    ("`" + command + "`") as "Command example"
+LIST
+    (example + " | `" + command + "`")
 FROM "latex"
 ```
 
