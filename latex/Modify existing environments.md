@@ -41,3 +41,5 @@ CAPITAL letters are ⟨placeholders⟩
     \endoldENVIRONMENT % end{ENVIRONMENT}
 }
 ```
+
+#latex/standardizePlaceholders 

@@ -68,3 +68,13 @@ Global formatting in **`setup/layout.tex`**
 | `\-`         | inserts a discretionary hyphen into a word. This also becomes the only point hyphenation is allowed in this word |
 | `mbox{text}` | be kept together under all circumstances (e.g. phone number)                                                     |
 | `\fbox`      | is similar to `\mbox`, but in addition there will be a visible box drawn around the content.                     |
+
+
+---
+#obsidian/cleanup
+
+Sources:
+
+Related:
+
+Tags:

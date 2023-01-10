@@ -75,6 +75,8 @@ Folders also contain `Parent`, `Root`.
     ```
 
 ---
+#obsidian/done 
+
 Sources:
 
 Related:

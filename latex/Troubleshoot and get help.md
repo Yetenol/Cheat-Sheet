@@ -25,3 +25,13 @@
     ```latex
     \PackageError {⟨package name⟩} {⟨error text⟩} {}
     ```
+
+
+---
+#obsidian/done 
+
+Sources:
+
+Related:
+
+Tags:

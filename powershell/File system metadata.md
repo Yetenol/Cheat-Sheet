@@ -88,6 +88,8 @@ function Get-FileMetaData {
 
 
 ---
+#obsidian/done 
+
 Sources:
 - 2022-12-17: [Getting file metadata with PowerShell similar to what Windows Explorer provides - Evotec](https://evotec.xyz/getting-file-metadata-with-powershell-similar-to-what-windows-explorer-provides/)
 

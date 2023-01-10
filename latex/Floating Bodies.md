@@ -59,3 +59,13 @@ Example
 \listoffigures      % Abbildungsverzeichnis
 \lstlistoflistings  % Codelistenverzeichnis
 ```
+
+
+---
+#latex/standardizePlaceholders 
+
+Sources:
+
+Related:
+
+Tags:
