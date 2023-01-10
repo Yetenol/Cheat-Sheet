@@ -5,35 +5,7 @@ command: read name <-> $name = Read-Host -Prompt "Name"
 
 Examples of bash commands and how to do the same thing in PowerShell
 
-Table of Contents
-- [Echo](#echo)
-- [Multiline Comments](#multiline-comments)
-- [While Loop](#while-loop)
-- [For Loop](#for-loop)
-- [Get User Input](#get-user-input)
-- [If Statement](#if-statement)
-- [If with And Logic](#if-with-and-logic)
-- [If with Or Logic](#if-with-or-logic)
-- [If Else Statements](#if-else-statements)
-- [Case Statement](#case-statement)
-- [Command Line Arguments](#command-line-arguments)
-- [Named Command Line Arguments](#named-command-line-arguments)
-- [Concatenating Strings](#concatenating-strings)
-- [Substring of a String](#substring-of-a-string)
-- [Functions](#functions)
-- [Functions with Parameters](#functions-with-parameters)
-- [Use the Return value of a Function](#use-the-return-value-of-a-function)
-- [Make a Directory](#make-a-directory)
-- [Make Directory if it doesn’t exist](#make-directory-if-it-doesnt-exist)
-- [Read a File](#read-a-file)
-- [Delete a File](#delete-a-file)
-- [Append to a File](#append-to-a-file)
-- [Wait for a Process](#wait-for-a-process)
-- [Sleep](#sleep)
-- [Download Files](#download-files)
-- [Sources](#sources)
-
-## Echo
+# Echo
 Write text to the screen.
 
 - **Bash**
@@ -49,7 +21,7 @@ Write text to the screen.
 	```
 	> Dirty version:  
 	> `echo 'Hello, World!'`
-## Execute a Script
+# Execute a Script
 Save and execute a script with bash and PowerShell.
 
 - **Bash**  
@@ -73,7 +45,7 @@ Save and execute a script with bash and PowerShell.
     ```bash
     pwsh echo1.ps1
     ```
-## Comments
+# Comments
 Comments are the same in PowerShell and bash.
 
 - **Bash**  
@@ -86,7 +58,7 @@ Comments are the same in PowerShell and bash.
 	# My Comment!
 	```
 
-## Multiline Comments
+# Multiline Comments
 Multiline comments are different between bash and PowerShell.
 
 - **Bash**  
@@ -107,7 +79,7 @@ Multiline comments are different between bash and PowerShell.
 	Write-Output "42"
 	```
 
-## While Loop
+# While Loop
 
 - **Bash**  
 	```bash
@@ -136,7 +108,7 @@ Multiline comments are different between bash and PowerShell.
 	}
 	```
 
-## For Loop
+# For Loop
 
 - **Bash**  
 	```bash
@@ -153,7 +125,7 @@ Multiline comments are different between bash and PowerShell.
 	}
 	```
 
-## Get User Input
+# Get User Input
 
 - **Bash**  
 	```bash
@@ -168,7 +140,7 @@ Multiline comments are different between bash and PowerShell.
     Write-Host "Welcome, $name!"
     ```
 
-## If Statement
+# If Statement
 
 - **Bash**  
 	```bash
@@ -191,7 +163,7 @@ Multiline comments are different between bash and PowerShell.
 	}
 	```
 
-## If with And Logic
+# If with And Logic
 
 - **Bash**  
 	```bash
@@ -219,7 +191,7 @@ Multiline comments are different between bash and PowerShell.
 	}
 	```
 
-## If with Or Logic
+# If with Or Logic
 
 - **Bash**  
 	```bash
@@ -245,7 +217,7 @@ Multiline comments are different between bash and PowerShell.
 	}
 	```
 
-## If Else Statements
+# If Else Statements
 
 - **Bash**  
 	```bash
@@ -282,7 +254,7 @@ Multiline comments are different between bash and PowerShell.
 	}
 	```
 
-## Case Statement
+# Case Statement
 
 - **Bash**  
 	```bash
@@ -311,7 +283,7 @@ Multiline comments are different between bash and PowerShell.
 	}
 	```
 
-## Command Line Arguments
+# Command Line Arguments
 
 - **Bash**  
 	```bash
@@ -327,7 +299,7 @@ Multiline comments are different between bash and PowerShell.
 	Write-Host "2nd Argument: $($args[1])"
 	```
 
-## Named Command Line Arguments
+# Named Command Line Arguments
 
 - **Bash**  
 	```bash
@@ -355,7 +327,7 @@ Multiline comments are different between bash and PowerShell.
 	Write-Host "X+Y=$Result"
 	```
 
-## Concatenating Strings
+# Concatenating Strings
 
 - **Bash**  
 	```bash
@@ -377,7 +349,7 @@ Multiline comments are different between bash and PowerShell.
 	Write-Host $string3
 	```
 
-## Substring of a String
+# Substring of a String
 
 - **Bash**  
 	```bash
@@ -393,7 +365,7 @@ Multiline comments are different between bash and PowerShell.
 	Write-Host $subStr
 	```
 
-## Functions
+# Functions
 
 - **Bash**  
 	```bash
@@ -413,7 +385,7 @@ Multiline comments are different between bash and PowerShell.
 	F1
 	```
 
-## Functions with Parameters
+# Functions with Parameters
 
 - **Bash**  
 	```bash
@@ -434,7 +406,7 @@ Multiline comments are different between bash and PowerShell.
 	RectangleArea 10 20
 	```
 
-## Use the Return value of a Function
+# Use the Return value of a Function
 
 - **Bash**  
 	```bash
@@ -463,7 +435,7 @@ Multiline comments are different between bash and PowerShell.
 	Write-Host "Return value of the function is $val"
 	```
 
-## Make a Directory
+# Make a Directory
 
 - **Bash**  
 	```bash
@@ -479,7 +451,7 @@ Multiline comments are different between bash and PowerShell.
 	```
 	> Dirty version:  
 	> `mkdir $newdir`
-## Make Directory if it doesn’t exist
+# Make Directory if it doesn’t exist
 
 - **Bash**  
 	```bash
@@ -513,7 +485,7 @@ Multiline comments are different between bash and PowerShell.
 	> `    mkdir $newdir`  
 	> `}`  
 
-## Read a File
+# Read a File
 
 - **Bash**  
 	```bash
@@ -528,7 +500,7 @@ Multiline comments are different between bash and PowerShell.
 	Get-Content 'book.txt'
 	```
 
-## Delete a File
+# Delete a File
 
 - **Bash**  
 	```bash
@@ -546,7 +518,7 @@ Multiline comments are different between bash and PowerShell.
 	> `$fn = Read-Host "Enter a file to remove"`  
 	> `rm $fn`  
 
-## Append to a File
+# Append to a File
 
 - **Bash**  
 	```bash
@@ -568,7 +540,7 @@ Multiline comments are different between bash and PowerShell.
 	Get-Content book.txt
 	```
 
-## Wait for a Process
+# Wait for a Process
 
 - **Bash**  
 	```bash
@@ -584,7 +556,7 @@ Multiline comments are different between bash and PowerShell.
 	Get-Process -Id $ProcessId | Wait-Process
 	```
 
-## Sleep
+# Sleep
 
 - **Bash**  
 	```bash
@@ -602,7 +574,7 @@ Multiline comments are different between bash and PowerShell.
 	> `sleep 5`  
 	> `Write-Host "Completed"`  
 
-## Download Files
+# Download Files
 
 - **Bash**  
 	```bash
@@ -617,7 +589,7 @@ Multiline comments are different between bash and PowerShell.
 	> `iwr http://www.het.brown.edu/guide/UNIX-password-security.txt -o newname.txt`  
 	```
 
-## Search a File for a String
+# Search a File for a String
 
 - **Bash**
 	```bash
@@ -639,6 +611,14 @@ Multiline comments are different between bash and PowerShell.
 	Select-String error *                           # Display lines before and after
 	```
 
-## Sources
+
+---
+
+
+Sources:
 - 2021-12-09: [Bash vs PowerShell Cheat Sheet](https://blog.ironmansoftware.com/daily-powershell/bash-powershell-cheatsheet/)
 - 2021-12-09: [30 Bash Script Examples](https://linuxhint.com/30_bash_script_examples/)
+
+Related:
+
+Tags:

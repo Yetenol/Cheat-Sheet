@@ -1,4 +1,5 @@
-## User folders
+# User folders
+
 | Description           | `Command`   |
 | --------------------- | ----------- |
 | Open Documents Folder | `documents` |
@@ -8,7 +9,8 @@
 | Open Recent Folder    | `recent`    |
 | Open Pictures Folder  | `pictures`  |
 
-## Apps
+# Apps
+
 | Description        | `Command`                         |
 | ------------------ | --------------------------------- |
 | Calculator         | `calc`                            |
@@ -24,7 +26,8 @@
 | Magnifier          | `magnify`                         |
 | Narrator           | `narrator`                        |
 
-## Control panels
+# Control panels
+
 | Description                          | `Command`                     |
 | ------------------------------------ | ----------------------------- |
 | Date and Time                        | `timedate.cpl`                |
@@ -46,7 +49,8 @@
 | Backup and Restore                   | `sdclt`                       |
 | Change Computer Performance Settings | `systempropertiesperformance` |
 
-## Managment Consoles
+# Managment Consoles
+
 | Description                              | `Command`                         |
 | :--------------------------------------- | :-------------------------------- |
 | Microsoft Management Console             | `mmc`                             |
@@ -71,14 +75,16 @@
 | Windows Firewall with Advanced Security  | `wf.msc`                          |
 | WMI Management                           | `wmimgmt.msc`                     |
 
-## Commands
+# Commands
+
 | Description                        | `Command`  |
 | :--------------------------------- | :--------- |
 | Printer User Interface             | `printui`  |
 | Diagnostics Troubleshooting Wizard | `msdt`     |
 | Font Viewer                        | `fontview` |
 
-## Wizzards
+# Wizzards
+
 | Description                                                      | `Command`                                 |
 | :--------------------------------------------------------------- | :---------------------------------------- |
 | Adding a new Device                                              | `devicepairingwizard`                     |
@@ -170,7 +176,8 @@
 | WordPad                                                          | `write`                                   |
 | XPS Viewer                                                       | `xpsrchvw`                                |
 
-## Deprecated / Redirected
+# Deprecated / Redirected
+
 | Description           | `Command`               |
 | :-------------------- | :---------------------- |
 | Location Activity     | `locationnotifications` |
@@ -180,7 +187,7 @@
 
 
 ---
-#obsidian/improveSectioning 
+
 
 Sources:
 - 2021-09-02: [List of ms-settings URI commands to open specific settings in Windows 10 – 4sysops](https://4sysops.com/wiki/list-of-ms-settings-uri-commands-to-open-specific-settings-in-windows-10/)

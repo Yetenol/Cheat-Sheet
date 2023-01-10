@@ -1,4 +1,4 @@
-## Create a shell link (shortcut)
+# Create a shell link (shortcut)
 
 - **Enable** _run at startup_
     ```powershell
@@ -27,8 +27,7 @@
     $Shortcut.Save()
     ```
 
-
-## Symbolic links
+# Symbolic links
 
 - Create a symbolic link
     ```powershell

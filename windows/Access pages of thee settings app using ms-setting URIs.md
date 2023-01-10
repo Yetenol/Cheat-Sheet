@@ -5,14 +5,14 @@ command: ms-settings:display
 
 `ms-setting` URIs used to open various pages of the Settings app
 
-## Settings home page
+# Settings home page
 
 | Page               | URI            |
 | ------------------ | -------------- |
 | Settings home page | `ms-settings:` |
 
 
-## System
+# System
 
 | Page                                                     | URI                                                          |
 | -------------------------------------------------------- | ------------------------------------------------------------ |
@@ -46,8 +46,7 @@ command: ms-settings:display
 | Device Encryption (where available)                      | `ms-settings:deviceencryption`                               |
 | About                                                    | `ms-settings:about`                                          |
 
-
-## Devices
+# Devices
 
 | Page                                            | URI                                                         |
 | ----------------------------------------------- | ----------------------------------------------------------- |
@@ -63,8 +62,7 @@ command: ms-settings:display
 | AutoPlay                                        | `ms-settings:autoplay`                                      |
 | USB                                             | `ms-settings:usb`                                           |
 
-
-## Phone
+# Phone
 
 | Page                   | URI                                          |
 | ---------------------- | -------------------------------------------- |
@@ -72,8 +70,7 @@ command: ms-settings:display
 | Add a phone            | `ms-settings:mobile-devices-addphone`        |
 | Your Phone (opens app) | `ms-settings:mobile-devices-addphone-direct` |
 
-
-## Network & Internet
+# Network & Internet
 
 | Page                           | URI                                                             |
 | ------------------------------ | --------------------------------------------------------------- |
@@ -95,8 +92,7 @@ command: ms-settings:display
 | Data usage                     | `ms-settings:datausage`                                         |
 | Proxy                          | `ms-settings:network-proxy`                                     |
 
-
-## Personalization
+# Personalization
 
 | Page                                 | URI                                                            |
 | ------------------------------------ | -------------------------------------------------------------- |
@@ -110,8 +106,7 @@ command: ms-settings:display
 | Choose which folders appear on Start | `ms-settings:personalization-start-places`                     |
 | Taskbar                              | `ms-settings:taskbar`                                          |
 
-
-## Apps
+# Apps
 
 | Page                     | URI                                                            |
 | ------------------------ | -------------------------------------------------------------- |
@@ -124,8 +119,7 @@ command: ms-settings:display
 | Video playback           | `ms-settings:videoplayback`                                    |
 | Startup                  | `ms-settings:startupapps`                                      |
 
-
-## Accounts
+# Accounts
 
 | Page                            | URI                                                     |
 | ------------------------------- | ------------------------------------------------------- |
@@ -141,8 +135,7 @@ command: ms-settings:display
 | Set up a kiosk                  | `ms-settings:assignedaccess`                            |
 | Sync your settings              | `ms-settings:sync`                                      |
 
-
-## Time & language
+# Time & language
 
 | Page                                  | URI                                                                            |
 | ------------------------------------- | ------------------------------------------------------------------------------ |
@@ -158,8 +151,7 @@ command: ms-settings:display
 | Keyboard (removed in build 17083+)    | `ms-settings:keyboard`                                                         |
 | Speech                                | `ms-settings:speech`                                                           |
 
-
-## Gaming
+# Gaming
 
 | Page                                | URI                                 |
 | ----------------------------------- | ----------------------------------- |
@@ -170,15 +162,13 @@ command: ms-settings:display
 | TruePlay (removed in version 1809+) | `ms-settings:gaming-trueplay`       |
 | Xbox Networking                     | `ms-settings:gaming-xboxnetworking` |
 
-
-## Extras
+# Extras
 
 | Page                                                           | URI                  |
 | -------------------------------------------------------------- | -------------------- |
 | Extras (available only when Settings app extensions installed) | `ms-settings:extras` |
 
-
-## Ease of Access
+# Ease of Access
 
 | Page                                     | URI                                                      |
 | ---------------------------------------- | -------------------------------------------------------- |
@@ -200,8 +190,7 @@ command: ms-settings:display
 | Eye Control                              | `ms-settings:easeofaccess-eyecontrol`                    |
 | Other options (removed in version 1809+) | `ms-settings:easeofaccess-otheroptions`                  |
 
-
-## Search (version 1903+)
+# Search (version 1903+)
 
 | Page                  | URI                                 |
 | --------------------- | ----------------------------------- |
@@ -209,8 +198,7 @@ command: ms-settings:display
 | Searching Windows     | `ms-settings:cortana-windowssearch` |
 | More details          | `ms-settings:search-moredetails`    |
 
-
-## Cortana
+# Cortana
 
 | Page            | URI                                 |
 | --------------- | ----------------------------------- |
@@ -219,8 +207,7 @@ command: ms-settings:display
 | Permissions     | `ms-settings:cortana-permissions`   |
 | More details    | `ms-settings:cortana-moredetails`   |
 
-
-## Privacy
+# Privacy
 
 | Page                                       | URI                                                 |
 | ------------------------------------------ | --------------------------------------------------- |
@@ -254,8 +241,7 @@ command: ms-settings:display
 | Videos                                     | `ms-settings:privacy-documents`                     |
 | File system                                | `ms-settings:privacy-broadfilesystemaccess`         |
 
-
-## Update & security
+# Update & security
 
 | Page                                | URI                                                                                        |
 | ----------------------------------- | ------------------------------------------------------------------------------------------ |
@@ -277,8 +263,7 @@ command: ms-settings:display
 | For developers                      | `ms-settings:developers`                                                                   |
 | Windows Insider Program             | `ms-settings:windowsinsider` <br> `ms-settings:windowsinsider-optin`                       |
 
-
-## Mixed reality
+# Mixed reality
 
 | Page             | URI                                           |
 | ---------------- | --------------------------------------------- |
@@ -288,8 +273,7 @@ command: ms-settings:display
 | Headset display  | `ms-settings:holographic-headset`             |
 | Uninstall        | `ms-settings:holographic-management`          |
 
-
-## Surface Hub
+# Surface Hub
 
 | Page                   | URI                                       |
 | ---------------------- | ----------------------------------------- |
@@ -301,7 +285,7 @@ command: ms-settings:display
 
 
 ---
-#obsidian/improveSectioning 
+
 
 Sources:
 - 2021-08-13: [List of `ms-settings` URI commands to open specific settings in Windows 10 – 4sysops](https://4sysops.com/wiki/list-of-ms-settings-uri-commands-to-open-specific-settings-in-windows-10/history/?revision=1555539)

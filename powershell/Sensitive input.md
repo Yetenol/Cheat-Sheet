@@ -1,3 +1,5 @@
+# Encrypt or input data
+
 Don't save passwords as plain text. Instead save them as a secure string and **encrypt** them **locally**.
 
 - **Input sensitive data** into the console
@@ -11,7 +13,7 @@ Don't save passwords as plain text. Instead save them as a secure string and **e
     $securePassword = ConvertTo-SecureString $PlainPassword -AsPlainText -Force
     ```
 
-## Decrypt locally
+# Decrypt data locally
 
 Only the **same PowerShell instance** can decrypt. 
 
@@ -51,3 +53,13 @@ Only the **same PowerShell instance** can decrypt.
         }
     }
     ```
+
+
+---
+#obsidian/done 
+
+Sources:
+
+Related:
+
+Tags:
