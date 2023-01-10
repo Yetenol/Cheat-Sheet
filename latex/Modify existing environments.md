@@ -1,3 +1,7 @@
+---
+example: add environment specific commands
+command: \usepackage{etoolbox}
+---
 CAPITAL letters are ⟨placeholders⟩
 
 # Extend an existing environment 
