@@ -33,8 +33,10 @@ Start pattern with `(?`_enabled options_`-`_disabled options_`)` e.g: `(?imnsx-i
 | -------- | ------------------------- |
 | `[set]`  | In that set               |
 | `[^set]` | Not in that set           |
-| `[a–z]`  | In the a-z range          |
-| `[^a–z]` | Not in the a-z range      |
+| `\p{Ll}` | Letter in lowercase       |
+| `\p{Lu}` | Letter in uppercase       |
+| `[a–m]`  | In the a-m range          |
+| `[^0–5]` | Not in the 0-5 range      |
 | `.`      | Any except \n (new line)  |
 | `\char`  | Escaped special character |
 
@@ -67,8 +69,8 @@ Start pattern with `(?`_enabled options_`-`_disabled options_`)` e.g: `(?imnsx-i
 
 | Use         | To match character                    |
 | ----------- | ------------------------------------- |
-| `\p{ctgry}` | In that Unicode category or block     |
-| `\P{ctgry}` | Not in that Unicode category or block |
+| `\p{ctgry}` | In that [Unicode category](https://www.compart.com/en/unicode/category) or block     |
+| `\P{ctgry}` | Not in that [Unicode category](https://www.compart.com/en/unicode/category) or block |
 | `\w`        | Word character                        |
 | `\W`        | Non-word character                    |
 | `\d`        | Decimal digit                         |
@@ -111,11 +113,92 @@ Start pattern with `(?`_enabled options_`-`_disabled options_`)` e.g: `(?imnsx-i
 | `(?<name>exp)`        | Named group                    |
 | `(?<name1-name2>exp)` | Balancing group                |
 | `(?:exp)`             | Noncapturing group             |
-| `(?=exp)`             | Zero-width positive lookahead  |
-| `(?!exp)`             | Zero-width negative lookahead  |
-| `(?<=exp)`            | Zero-width positive lookbehind |
-| `(?<!exp)`            | Zero-width negative lookbehind |
+| `(?=exp)`             | Zero-width positive lookahead <br> the following character must match *exp*  |
+| `(?!exp)`             | Zero-width negative lookahead <br> the following character cannot match *exp*  |
+| `(?<=exp)`            | Zero-width positive lookbehind <br> the previous characters must match *exp* |
+| `(?<!exp)`            | Zero-width negative lookbehind <br> the previous characters cannot match *exp* |
 | `(?>exp)`             | Non-backtracking (greedy)      |
+
+Example:
+```
+The price of SCHLÜMPFE ice cream is 20 €.
+```
+
+- capture an **indexed group** accessible via `$1`, `$2`, `$3` etc.    
+    ```
+    (exp)
+    ```
+    e.g. `(\p{Lu}{2,})` captures the uppercase word `SCHLÜMPFE` in `$1`
+
+- capture a **named group** accessible via `$name`    
+    ```
+    (?<name>exp)
+    ```
+    e.g. `(?<price>\d+)` captures the number `20` in `$price`
+
+
+-  the following characters must match subpattern *exp* using    
+    **Zero-width positive lookahead**  
+    ```
+    (?=exp)
+    ```
+
+-  the following characters cannot match subpattern *exp* using    
+    **Zero-width negative lookahead**  
+    ```
+    (?!exp)
+    ```
+
+-  the previous characters must match subpattern *exp* using    
+    **Zero-width positive lookbehind**  
+    ```
+    (?<=exp)
+    ```
+
+-  the previous characters must match subpattern *exp* using    
+    **Zero-width negative lookbehind**  
+    ```
+    (?<!exp)
+    ```
+
+- **Non-backtracking (greedy)**  
+    ```
+    (?>exp)
+    ```
+
+## .Net regex flavor exclusive
+
+
+- capture multiple expressions into the same **repeated group**    
+    ```
+    (?<repeated>exp1).*(?<repeated>exp2)
+    ```
+    e.g. `(?<words>\w+) is (?<words>\d+)` captures `cream` and `20` in `$words`
+
+- **pop last capture** from repeated group if expression matches    
+  Only matches if *last capture* exists.
+    ```
+    (?<repeated>exp).*(?<-repeated>exp)
+    ```
+    e.g. `(?<words>\w+\s)+(?<-words>cream)` captures all words until 2nd-last word before *cream* in `$words`
+
+- capture expression and **pop repeated group**    
+    ```
+    (?<repeated>exp).*(?<name-repeated>exp)
+    ```
+
+- capture **nested content** in delimiters using **balanced group**    
+    Fails if delimiters are misbalanced.
+  - `[^{}]` ignores no delimiters
+  - `(?<Open>[{])` opening delimiter `{` pushes onto balanced group
+  - `(?<Content-Open>[}])` closing delimiter `}` pops balanced group are captures the content in between
+  - `(?(Open)(?!))` if opening delimiter left over, fail
+    ```
+    ^(?:[^{}]|(?<Open>[{])|(?<Content-Open>[}]))*(?(Open)(?!))$
+    ```
+    e.g. text `{{a}-{b}}+{c}` is balanced and captures `a`, `b`, `{a}-{b}` and `c`
+
+
 
 
 # Inline Options
@@ -222,6 +305,8 @@ Sources:
 - 2022-04-04: [Regular Expression Language - Quick Reference - Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference#regular-expression-options)
 - 2022-01-26: [Visual Studio (MS Docs)](https://docs.microsoft.com/en-us/visualstudio/ide/using-regular-expressions-in-visual-studio)
 - 2022-01-26: [.NET Framework Regular Expressions](regex.pdf)
+- 2023-01-10: [Regex Tutorial - Matching Nested Constructs with Balancing Groups](https://www.regular-expressions.info/balancing.html)
+- 2023-01-10: [c# - What are regular expression Balancing Groups? - Stack Overflow](https://stackoverflow.com/questions/17003799/what-are-regular-expression-balancing-groups)
 
 Related:
 [RegEx implementation in .Net](RegEx%20implementation%20in%20.Net.md)
