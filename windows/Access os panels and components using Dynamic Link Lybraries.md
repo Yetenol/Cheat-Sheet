@@ -1,5 +1,5 @@
 ---
-example: Neue Verknüpfung anlegen
+example: Create .lnk shortcut
 command: rundll32 appwiz.cpl,NewLinkHere
 ---
 

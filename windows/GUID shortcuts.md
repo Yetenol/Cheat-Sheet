@@ -1,3 +1,7 @@
+---
+example: Recycle Bin
+command: shell:::{}
+---
 Referenced using a [**CLSID keys**](https://docs.microsoft.com/de-de/windows/win32/com/clsid-key-hklm?redirectedfrom=MSDN) (globally unique identifier that identifies a COM class object)
 
 - **[Archive of old GUIDs ›](GUID%20archive.md)**  

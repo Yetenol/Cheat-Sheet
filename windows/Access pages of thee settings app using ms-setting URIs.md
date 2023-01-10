@@ -1,5 +1,5 @@
 ---
-teaser: Display
+example: Display
 command: ms-settings:display
 ---
 

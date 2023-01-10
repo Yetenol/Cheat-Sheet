@@ -1,3 +1,8 @@
+---
+example: Certificates
+command: certmgr.msc
+---
+
 # User folders
 
 | Description           | `Command`   |
