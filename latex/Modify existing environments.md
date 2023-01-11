@@ -2,7 +2,6 @@
 example: add environment specific commands
 command: \usepackage{etoolbox}
 ---
-CAPITAL letters are ⟨placeholders⟩
 
 # Extend an existing environment 
 
@@ -12,38 +11,43 @@ CAPITAL letters are ⟨placeholders⟩
 
 # Private environment methods
 
-1. Declare a public global placeholder _METHOD_
+1. Declare a public global placeholder method
 
-```latex
-%%%%%%%%%%%%%%%%%%%% DECLARE INTERFACE FUNCTIONS: %%%%%%%%%%%%%%%%%%%%
-\newcommand\@setATTRIBUTE{}
-```
+    ```latex
+    %%%%%%%%%%%%%%%%%%%% DECLARE INTERFACE FUNCTIONS: %%%%%%%%%%%%%%%%%%%%
+    \newcommand\@set⟨attribute name⟩{}
+    ```
+    
+    - `⟨attribute name⟩`: Name of the attribute to be  set
 
-2. Create references to the environment _ENVIRONMENT_ to be overwritten in order to access it later on
+2. Create handles to the environment to be overwritten in order to access it later on
 
-```latex
-\let\@oldENVIRONMENT\ENVIRONMENT
-\let\@endoldENVIRONMENT\endENVIRONMENT
-```
+    ```latex
+    \let\@old⟨environment name⟩\⟨environment name⟩
+    \let\@endold⟨environment name⟩\end⟨environment name⟩
+    ```
+    
+    - `⟨environment name⟩`: Environment that is extended
 
-3. Define method (private)
-
-```latex
-\renewenvironment{ENVIRONMENT}
-{
-    \oldENVIRONMENT % begin{ENVIRONMENT}
-
-    % Define setter method \setATTRIBUTE{⟨value⟩}
-    % - only accessible inside the environment (aka method)
-    \renewcommand\@setATTRIBUTE[1]
+3. Create an environment specific macro
+    
+    ```latex
+    \renewenvironment{⟨environment name⟩}
     {
-        \def\@ATTRIBUTE{##1}
+        \old⟨environment name⟩ % begin{⟨environment name⟩}
+    
+        % Define setter method \set⟨attribute name⟩{⟨value⟩}
+        % - only accessible inside the environment (aka method)
+        \renewcommand\@set⟨attribute name⟩[1]
+        {
+            \def\@⟨attribute name⟩{##1}
+        }
+        \global\let\set⟨attribute name⟩\@set⟨attribute name⟩
     }
-    \global\let\setATTRIBUTE\@setATTRIBUTE
-}
-{
-    \endoldENVIRONMENT % end{ENVIRONMENT}
-}
-```
+    {
+        \endold⟨environment name⟩ % end{⟨environment name⟩}
+    }
+    ```
 
-#latex/standardizePlaceholders 
+    - `⟨attribute name⟩`: Name of the attribute to be  set
+    - `⟨environment name⟩`: Environment that is extended

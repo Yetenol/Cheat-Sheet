@@ -5,8 +5,8 @@ command: \begin{figure}[htbp]
 # Placement Specifiers
 
 ```latex
-\begin{FLOAT-ENVIRONMENT}[PLACEMENT-SPECIFIERS]
-\end{FLOAT-ENVIRONMENT}
+\begin{⟨float environment⟩}[⟨placement specifiers⟩]
+\end{⟨float environment⟩}
 ```
 
 | Specifier          | Name    | Add placement option                                                              |
@@ -28,27 +28,27 @@ Example
 # Images
 
 ```latex
-\begin{figure}  % or \begin{figure}[PLACEMENT-SPECIFIERS]
+\begin{figure}  % or \begin{figure}[⟨placement specifiers⟩]
     \centering
-    \caption{CAPTION}  % or \caption[LISTOFTABLES-CAPTION]{CAPTION}
-    \label{fig:LABEL}
-    \includegraphics[width=0.75\columnwidth]{FILENAME}
+    \caption{⟨caption⟩}  % or \caption[⟨listoftables caption⟩]{⟨caption⟩}
+    \label{fig:⟨label⟩}
+    \includegraphics[width=0.75\columnwidth]{⟨filename⟩}
 \end{figure}
 ```
 
-- `CAPTION` := displayed name of the figure
-- `LISTOFTABLES-CAPTION` := (optional) replaces the entry in the list of figures with a shorter version
-- `LABEL` := label to reference the figure using `\ref{fig:LABEL}`
-- `FILENAME` := file path (with extension) of the image 
+- `⟨caption⟩`: displayed name of the figure
+- `⟨listoftables caption⟩`: (optional) replaces the entry in the list of figures with a shorter version
+- `⟨label⟩`: label to reference the figure using `\ref{fig:⟨label⟩}`
+- `⟨filename⟩`: file path (with extension) of the image 
 
 # Source Code Listings
 
 ```latex
-\begin{figure}  % or \begin{figure}[PLACEMENT]
+\begin{figure}  % or \begin{figure}[⟨placement⟩]
     \centering
-    \lstset{caption = {CAPTION}}
-    \lstset{label = code:LABEL}
-    \lstinputlisting[language = matlab]{FILENAME}
+    \lstset{caption = {⟨caption⟩}}
+    \lstset{label = code:⟨label⟩}
+    \lstinputlisting[language = matlab]{⟨filename⟩}
 \end{figure}
 ```
 
@@ -62,7 +62,6 @@ Example
 
 
 ---
-#latex/standardizePlaceholders 
 
 Sources:
 

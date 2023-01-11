@@ -69,8 +69,8 @@ Start pattern with `(?`_enabled options_`-`_disabled options_`)` e.g: `(?imnsx-i
 
 | Use         | To match character                    |
 | ----------- | ------------------------------------- |
-| `\p{ctgry}` | In that [Unicode category](https://www.compart.com/en/unicode/category) or block     |
-| `\P{ctgry}` | Not in that [Unicode category](https://www.compart.com/en/unicode/category) or block |
+| `\p{ctgry}` | In that [Unicode Category](#Supported%20Unicode%20Categories) or block     |
+| `\P{ctgry}` | Not in that [Unicode Category](#Supported%20Unicode%20Categories) or block |
 | `\w`        | Word character                        |
 | `\W`        | Non-word character                    |
 | `\d`        | Decimal digit                         |

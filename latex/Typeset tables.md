@@ -1,54 +1,43 @@
-CAPITAL letters are ⟨placeholders⟩
-
 # Best practices
 
-1. Tabular environments should be nested in a **floating object** called `table`. 
+1. Tabular environments should be nested in a **floating object** (aka flaot)
     ```latex
     \begin{table}
-        \begin{TABULAR-ENVIRONMENT}
-        \end{TABULAR-ENVIRONMENT}
+        \begin{⟨tabular environment⟩}
+        \end{⟨tabular environment⟩}
     \end{table}
     ```
+
+    - `⟨tabular environment⟩`: Environment defining the style and syntax of the table
 
 2. Always provide a **caption** displayed underneath and a **label**, to cross reference in elsewhere. Horizontally center the float as well.
     ```latex
     \begin{table}
-        \begin{TABULAR-ENVIRONMENT}
-        \end{TABULAR-ENVIRONMENT}
+        \begin{⟨tabular environment⟩}
+        \end{⟨tabular environment⟩}
         \centering % horizontally center the float
-        \caption{CAPTION} % title displayed below the table and in the index
-        \label{tab:LABEL} % a handle to cross reference the table
+        \caption{⟨caption⟩} % title displayed below the table and in the index
+        \label{tab:⟨table name⟩} % a handle to cross reference the table
     \end{table}
     ```
 
+    - `⟨caption⟩`: Title displayed below the table and in the index
+    - `⟨table name⟩`: Filename and handle to cross reference the table
+
 3. Table floats contain many lines of text, so they are distracting in the main text. Therefore, extract each floating object into a separate file.
 
-main chapter file like `chapters/measurement.tex`  
+    1. Extract the float into a **separate file** like `floating-tables/⟨table name⟩.tex`
+    2. **Request to place** the floating object at the next possible position considering the placement parameters
+        ```latex
+        \input{floating-tables/⟨table name⟩}
+        ```
+    3. Write a reference to the floating object, as it might not appear on the same page
+        ```latex
+        Our measurement results can be seen in Table \ref{tab:⟨table name⟩}.
+        ```
 
-```latex
-My friends' parents \ref{tab:LABEL}
-
-\input{table-floats/values-measured}
-```
-
-floating object in `table-floats/values-measured.tex`
-
-```latex
-\begin{table}
-    \begin{tabular}[]{}
-        Child   & Mother & Father \\
-        Alysha  & Lyra   & Hans \\
-        Klaus   & Rosy   & Dieter \\
-    \end{tabular}
-    \centering
-    \caption{My friends' parents}
-    \label{tab:my-friends-parents}
-\end{table}
-```
 
 # Column types
-
-> Requirement [LaTeX.table](https://github.com/Yetenol/latex.table)
 
 |                       | Content            | Width               | Alignment       | Dependency                                            |
 | --------------------- | ------------------ | ------------------- | --------------- | ----------------------------------------------------- |
@@ -78,12 +67,12 @@ Dependency [LaTeX.table](https://github.com/Yetenol/latex.table)
 
 - **Table columns, design** in `table/auto-stretch.tex`
     ```latex
-    \CatchFileDef{\inputCHILDRENLIST}{src/children-list}{}
-    \begin{table}  % or \begin{table}[FLOAT-POSITIONING]
+    \CatchFileDef{\input⟨data title⟩}{src/⟨data title⟩}{}
+    \begin{table}  % or \begin{table}[⟨placement specifiers⟩]
         %%%%%%%%%% LAYOUT, META DATA %%%%%%%%%%
         \centering
-        \caption{CAPTION} % or \caption[LISTOFTABLES-CAPTION]{CAPTION}
-        \label{tab:LABEL}
+        \caption{⟨caption⟩} % title displayed below the table and in the index
+        \label{tab:⟨table name⟩} % handle to cross reference the table
         \begin{tabularx}{\columnwidth} % total table width
         {   %%%%%%%%%% COLUMN FORMATTING %%%%%%%%%%
             p{1.75cm} % fixed-width column
@@ -92,30 +81,27 @@ Dependency [LaTeX.table](https://github.com/Yetenol/latex.table)
             X         % justify text, sketching column
         }
             \toprule     %%%%%%%%%% MULTICOLUMN HEADERS %%%%%%%%%%
-            & \multicolumn{2}{c}{Parents} 
+            & \multicolumn{2}{c}{⟨multicolumn header⟩} 
             \\ \cmidrule(lr){2-3}   %%%%%%%%%% COLUMN HEADERS %%%%%%%%%%
             {Child} &
             {Mother} &
             {Father}
             \\ \midrule     %%%%%%%%%% TABLE BODY %%%%%%%%%%
-            \inputCHILDRENLIST % body file defined in first line
+            \input⟨data title⟩ % body file defined in first line
             \bottomrule     %%%%%%%%%% END OF BODY %%%%%%%%%%
         \end{tabularx}
     \end{table}
     ```
 
-- `⟨positioning⟩` := see [Positioning](#positioning)
-- `⟨caption⟩` := displayed name of the figure
-- `⟨list of tables caption⟩` := (optional) replaced the entry in the list of figures with a summary
-- `⟨label name⟩` := label to reference the figure using `\ref{fig:⟨label name⟩}`
-- `⟨multicolumn header⟩` := column title that spans multiple columns
-- `⟨title supplement⟩` optional := short supplement like sorting order that is only displayed in the table header
+    - `⟨data title⟩`: File where the table's body is stored
+    - `⟨placement specifiers⟩` := see [Positioning](#positioning)
+    - `⟨caption⟩`: Title displayed below the table and in the index
+    - `⟨table name⟩`: Filename and handle to cross reference the table
+    - `⟨multicolumn header⟩` := column title that spans multiple columns
 
 ## Number table
 
-
-- **Package requirements** in `setup/packages.tex`  
-    `\input` the file into the [document preamble](Troubleshoot%20and%20get%20help.md#preamble).
+- Use **required packages** in `setup/packages.tex`  
     ```latex
     \usepackage{siunitx}  % Aligning numbers by decimal points in table columns
     \usepackage{booktabs} % To thicken table lines
@@ -124,13 +110,12 @@ Dependency [LaTeX.table](https://github.com/Yetenol/latex.table)
     \usepackage{array}
     ```
 
-- **Mathematical symbols** in `math/symbols.tex`  
+- Create **mathematical symbols** in `math/symbols.tex`  
     Globally define column titles as macros to ensure consistent symbols throughout the document.  
-    `\input` the file into the [document preamble](Troubleshoot%20and%20get%20help.md#preamble).
     ```latex
-    \newmathsnippet{\SYMBOLA}{f_\mathrm{E}}
-    \newmathsnippet{\SYMBOLB}{U_\mathrm{E}}
-    \newmathsnippet{\SYMBOLC}{U_\mathrm{R,pp}}
+    \newmathsnippet{\⟨symbol a⟩}{f_\mathrm{E}}
+    \newmathsnippet{\⟨symbol b⟩}{U_\mathrm{E}}
+    \newmathsnippet{\⟨symbol c⟩}{U_\mathrm{R,pp}}
     ```
 
 - **Table body** in `src/measured-values.tex`  
@@ -142,12 +127,12 @@ Dependency [LaTeX.table](https://github.com/Yetenol/latex.table)
 
 - **Table columns, design** in `table/numbers.tex`
     ```latex
-    CatchFileDef{\inputMEASUREDVALUES}{src/measured-values}{}
-    \begin{table}  % or \begin{table}[FLOAT-POSITIONING]
+    CatchFileDef{\input⟨data title⟩}{src/measured-values}{}
+    \begin{table}  % or \begin{table}[⟨placement specifiers⟩]
         %%%%%%%%%% LAYOUT, META DATA %%%%%%%%%%
         \centering
-        \caption{CAPTION} % or \caption[LISTOFTABLES-CAPTION]{CAPTION}
-        \label{tab:LABEL}
+        \caption{⟨caption⟩} % or \caption[⟨listoftables caption⟩]{⟨caption⟩}
+        \label{tab:⟨table name⟩}
         \sisetup{table-auto-round = true}
         \begin{tabular}[]
         {   %%%%%%%%%% COLUMN FORMATTING %%%%%%%%%%
@@ -156,30 +141,35 @@ Dependency [LaTeX.table](https://github.com/Yetenol/latex.table)
             S[table-format = -2.e1, color = orange] % column C
         }
             \toprule     %%%%%%%%%% MULTICOLUMN HEADERS %%%%%%%%%%
-            & \multicolumn{2}{c}{Group} 
+            & \multicolumn{2}{c}{⟨multicolumn header⟩} 
             \\ \cmidrule(lr){2-3}   %%%%%%%%%% COLUMN HEADERS %%%%%%%%%%
-            {\SYMBOLA* in \unit{V}} &
-            {\SYMBOLB* in \unit{\micro\second\per\liter}} &
-            {\SYMBOLC* in \unit{kg.\frac{m}{s}}}
+            {\⟨symbol a⟩* in \unit{V}} &
+            {\⟨symbol b⟩* in \unit{\micro\second\per\liter}} &
+            {\⟨symbol c⟩* in \unit{kg.\frac{m}{s}}}
             \\ \midrule     %%%%%%%%%% TABLE BODY %%%%%%%%%%
-            \inputMEASUREDVALUES  % body file defined in first line
+            \input⟨data title⟩  % body file defined in first line
             \bottomrule     %%%%%%%%%% END OF BODY %%%%%%%%%%
         \end{tabular}
         \begin{multicols}{2}   % number of legend columns
             \begin{itemize}     %%%%% COLUMN LEGEND %%%%%
-                \item[\SYMBOLA*] Frequenz
-                \item[\SYMBOLB*] Eingangsspannung
-                \item[\SYMBOLC*] Spannung über den Widerstand
+                \item[\⟨symbol a⟩*] Frequenz
+                \item[\⟨symbol b⟩*] Eingangsspannung
+                \item[\⟨symbol c⟩*] Spannung über den Widerstand
             \end{itemize}     %%%%% END OF LEGEND %%%%%
         \end{multicols}
     \end{table}
     ```
 
+    - `⟨symbol a⟩`, `⟨symbol b⟩`, `⟨symbol c⟩`: Column titles as mathematical expression
+    - `⟨data title⟩`: File where the table's body is stored
+    - `⟨placement specifiers⟩` := see [Positioning](#positioning)
+    - `⟨caption⟩`: Title displayed below the table and in the index
+    - `⟨table name⟩`: Filename and handle to cross reference the table
+    - `⟨multicolumn header⟩` := column title that spans multiple columns
 
 ## Align custom delimiter tables
 
-- **Package requirements** in `setup/packages.tex`  
-    `\input` the file into the [document preamble](Troubleshoot%20and%20get%20help.md#preamble).
+- Use **required packages** in `setup/packages.tex`  
     ```latex
     \usepackage{booktabs} % To thicken table lines
     ```
@@ -193,12 +183,12 @@ Dependency [LaTeX.table](https://github.com/Yetenol/latex.table)
 
 - **Table columns, design** in `table/network.tex`
     ```latex
-    CatchFileDef{\inputIPADDRESSES}{src/measured-values}{}
-    \begin{table}  % or \begin{table}[FLOAT-POSITIONING]
+    CatchFileDef{\input⟨data title⟩}{src/measured-values}{}
+    \begin{table}  % or \begin{table}[⟨placement specifiers⟩]
         %%%%%%%%%% LAYOUT, META DATA %%%%%%%%%%
         \centering
-        \caption{CAPTION} % or \caption[LISTOFTABLES-CAPTION]{CAPTION}
-        \label{tab:LABEL}
+        \caption{⟨caption⟩} % or \caption[⟨listoftables caption⟩]{⟨caption⟩}
+        \label{tab:⟨label⟩}
         \begin{tabular}
         {   %%%%%%%%%% COLUMN FORMATTING %%%%%%%%%%
             c      % Computername
@@ -211,7 +201,7 @@ Dependency [LaTeX.table](https://github.com/Yetenol/latex.table)
             Computername &
             \multicolumn{4}{c}{Ip address}
             \\ \midrule     %%%%%%%%%% TABLE BODY %%%%%%%%%%
-            \inputIPADDRESSES % body file defined in first line
+            \input⟨ipaddresses⟩ % body file defined in first line
             \bottomrule     %%%%%%%%%% END OF BODY %%%%%%%%%%
         \end{tabular}
     \end{table}
@@ -221,10 +211,12 @@ Dependency [LaTeX.table](https://github.com/Yetenol/latex.table)
 
 
 ---
-#latex/standardizePlaceholders
+
 
 Sources:
 2023-01-06: [Tables - Overleaf, Online LaTeX Editor](https://www.overleaf.com/learn/latex/Tables)
+2023-01-10: [tables - What is the difference between tabular, tabular* and tabularx environments? - TeX - LaTeX Stack Exchange](https://tex.stackexchange.com/questions/341205/what-is-the-difference-between-tabular-tabular-and-tabularx-environments)
+2023-01-10: [LaTeX tables - Tutorial with code examples - LaTeX-Tutorial.com](https://latex-tutorial.com/tutorials/tables/)
 
 Related:
 [Floating Bodies](Floating%20Bodies.md)
