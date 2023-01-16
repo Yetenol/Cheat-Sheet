@@ -1,3 +1,8 @@
+---
+example: script.ps1.bat
+command: 'Invoke-Command -ScriptBlock ([ScriptBlock]::Create($cmd))'
+---
+
 Make a PowerShell script a standalone executable script by  
 pasting the following snippets at the beginning of a script and by  
 adding `.bat` to the file extension like `script.ps1.bat`  
@@ -30,7 +35,6 @@ This bypasses the _Execution Policy_ for PowerShell scripts.
 
 
 ---
-#obsidian/done 
 
 Sources:
 

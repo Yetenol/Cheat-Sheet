@@ -1,3 +1,8 @@
+---
+example: List Devices
+command: 'Get-PnpDevice -Class Bluetooth'
+---
+
 ```powershell
 Get-PnpDevice -Class Bluetooth | where HardwareID -Match "\\DEV_"
 ```

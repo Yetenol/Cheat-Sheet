@@ -1,3 +1,8 @@
+---
+example: 'Select option 1, 2, 3'
+command: '$Choice = Read-Host -Prompt "Select ..."'
+---
+
 # Ask a question once / until answered
 
 ```powershell

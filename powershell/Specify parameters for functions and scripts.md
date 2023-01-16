@@ -1,5 +1,5 @@
 ---
-teaser: AutoComplete
+example: AutoComplete
 command: [Parameter(Mandatory = $true)]
 ---
 

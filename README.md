@@ -6,7 +6,7 @@ This project contains all my documentations of my developer life including code 
 
 - [Windows](windows/Windows.md)
 
-- [Powershell](powershell/Powershell.md) 
+- [Powershell](Powershell.md) 
 
 - [LaTeX](latex/LaTeX.md)
 

@@ -1,3 +1,8 @@
+---
+example: File Parsing
+command: '[RegEx]::Match($_, $pattern).Groups[1].value'
+---
+
 - **User Input**    
     ```powershell
     $User = Get-Host "Username"
@@ -14,4 +19,4 @@ Sources:
 Related:
 
 Tags:
-[[Powershell]]
+[[../Powershell]]

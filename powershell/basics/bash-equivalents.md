@@ -1,5 +1,5 @@
 ---
-teaser: While Loop
+example: While Loop
 command: read name <-> $name = Read-Host -Prompt "Name"
 ---
 

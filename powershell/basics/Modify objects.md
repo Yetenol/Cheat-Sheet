@@ -1,5 +1,5 @@
 ---
-teaser: Add calculated property
+example: Add calculated property
 command: $list[(0..1;-3..-1)]
 ---
 

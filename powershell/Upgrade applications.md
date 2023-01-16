@@ -1,3 +1,8 @@
+---
+example: Update Store Apps
+command: '$wmiObj.UpdateScanMethod()'
+---
+
 # Update all Microsoft Store apps
 
 ```powershell

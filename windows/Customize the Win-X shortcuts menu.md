@@ -1,3 +1,8 @@
+---
+example: replace PowerShell with Terminal
+command: '%LocalAppData%\Microsoft\Windows\WinX'
+---
+
 The context menu of the Start icon is called Win-X Menu
 
 # View shortcuts
