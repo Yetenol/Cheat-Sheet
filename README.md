@@ -14,4 +14,4 @@ This project contains all my documentations of my developer life including code 
 
 - [Applications](applications/Applications.md)
 
-- [Discussions](discussions/Discussions.md)
+- [Discussions](Discussions.md)
