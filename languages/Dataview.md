@@ -19,7 +19,9 @@ SORT <expression> [ASC/DESC]
 ... other data commands
 ```
 
+## Internal functions
 
+- [Functions - Dataview](https://blacksmithgu.github.io/obsidian-dataview/reference/functions/#choicebool-left-right)
 
 
 ---
