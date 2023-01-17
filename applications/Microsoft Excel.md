@@ -1,3 +1,8 @@
+---
+example: Empty Range?
+command: IF(SUMPRODUCT(--(A1:C4<>""))<>0,"not empty","empty")
+---
+
 ## Set common names
 
 - **SELECT** `A1`

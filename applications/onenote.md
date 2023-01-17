@@ -1,3 +1,8 @@
+---
+example: Mathematical Typesetting
+command: \displaystyle\bmatrix(1&2@a&b) 
+---
+
 #obsidian/fix 
 - **[Keyboard Shortcuts 🔗](https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-onenote-44b8b3f4-c274-4bcc-a089-e80fdcc87950)**  
     Links to Keyboard Shortcut Lists  

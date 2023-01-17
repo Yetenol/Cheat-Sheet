@@ -1,4 +1,7 @@
-<h1> Obsidian </h1>
+---
+example: Convert wikilinks to markdown
+command: 
+---
 
 - **convert** wikilinks to markdown links   
     ```powershell

@@ -1,3 +1,8 @@
+---
+example: Shell command keybindungs
+command: 
+---
+
 ## Keybindings
 
 - paste and execute **shell command**    
