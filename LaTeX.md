@@ -1,5 +1,5 @@
 
-![List LaTeX notes](../scripts/List%20LaTeX%20notes.md)
+![List LaTeX notes](scripts/List%20LaTeX%20notes.md)
 
 -   [Floating Bodies](latex/Floating%20Bodies.md):
     -   Images

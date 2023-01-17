@@ -1,5 +1,5 @@
 
-![List Languages notes](../scripts/List%20Languages%20notes.md)
+![List Languages notes](scripts/List%20Languages%20notes.md)
 
 -   [autohotkey](languages/autohotkey.md):
     -   Get Program stdout
