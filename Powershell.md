@@ -7,7 +7,7 @@ FROM "powershell"
 -   [Analyse objects and diagnose issues](powershell/Analyse%20objects%20and%20diagnose%20issues.md): - | `\-`
 -   [Bulk rename picture and videos to their capture time](powershell/Bulk%20rename%20picture%20and%20videos%20to%20their%20capture%20time.md): - | `\-`
 -   [Data types](powershell/Data%20types.md): Hashtable | `\-`
--   [Dates](powershell/filesystem/Dates.md): - | `\-`
+-   [Date and time](powershell/Date%20and%20time.md): - | `\-`
 -   [Create shortcuts and symbolic links](powershell/filesystem/Create%20shortcuts%20and%20symbolic%20links.md): - | `\-`
 -   [Download or invoke files from the internet](powershell/filesystem/Download%20or%20invoke%20files%20from%20the%20internet.md): - | `\-`
 -   [attributes](powershell/filesystem/attributes.md): - | `\-`

@@ -21,7 +21,7 @@ Use `.xml` files to preserve the PowerShells Object information.
     ? { $_.Name -match "processor" } # filter only matching objects
     ```
 
-- [Dates](filesystem/Dates.md)
+- [Date and time](Date%20and%20time.md)
 - [Test paths and retrieve filesystem information](filesystem/Test%20paths%20and%20retrieve%20filesystem%20information.md)
 
 # Plain text file

@@ -29,6 +29,7 @@ SORT <expression> [ASC/DESC]
 
 Sources:
 - 2023-01-05: [Structure of a Query - Dataview](https://blacksmithgu.github.io/obsidian-dataview/queries/structure/)
+- 2023-01-17: [Embed files - Obsidian-docs](https://jackiegeek.gitee.io/obsidian-docs/fr/How%20to/Embed%20files/)
 
 Related:
 [obsidian](../applications/obsidian.md)
