@@ -26,7 +26,6 @@
     \PackageError {⟨package name⟩} {⟨error text⟩} {}
     ```
 
-
 ---
 #obsidian/done 
 

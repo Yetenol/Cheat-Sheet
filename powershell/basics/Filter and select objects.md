@@ -3,18 +3,12 @@ example: Add calculated property
 command: $list[(0..1;-3..-1)]
 ---
 
-Table of Contents
-- [Diagnose](#diagnose)
-- [Limit data set](#limit-data-set)
-- [Properties (columns)](#properties-columns)
-- [Sort](#sort)
-
-An understanding of [pipelines](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_pipelines)is required. 
-
 Everything in PowerShell is already or becomes a .NET object. Therefore, you should be familiar with how to handle and analyze them. Objects are easiest to visualize as text tables, but keep in mind that the entries themselves can also be objects.
 
 - PowerShell modules return objects of a specific type
 - external programs return an array of lines `Object[]`  (Array von Textzeilen) zurück.
+
+An understanding of [pipelines](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_pipelines)is required. 
 
 ```powershell
 $c = Get-Command
@@ -22,9 +16,9 @@ $f = Get-ChildItem
 ```
 
 
-# Diagnose
+# Inspect result object
 
-- See object type, properties
+- See object's [type](../Data%20types.md) and properties
 	```powershell
 	$c | Get-Member -MemberType Properties
 	```
@@ -35,8 +29,7 @@ $f = Get-ChildItem
 	$c.Count
 	```
 
-
-# Limit data set
+# Narrow down a result
 
 - **List**:  
   Select the 2nd 4th and 7th item
@@ -79,8 +72,7 @@ $f = Get-ChildItem
 	}
 	```
 
-
-# Properties (columns)
+# Select specific members of a result
 
 - View all properties
 	```powershell
@@ -107,8 +99,7 @@ $f = Get-ChildItem
   	})}
 	```
 
-
-# Sort
+# Sort a result
 
 - Sort ascending / default direction
 	```powershell

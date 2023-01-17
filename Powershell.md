@@ -4,7 +4,7 @@ LIST
     (example + " | `" + command + "`")
 FROM "powershell"
 ```
--   [Analyse objects and diagnose issues](powershell/Analyse%20objects%20and%20diagnose%20issues.md): - | `\-`
+-   [Troubleshoot issues and help yourself](powershell/Troubleshoot%20issues%20and%20help%20yourself.md): - | `\-`
 -   [Bulk rename picture and videos to their capture time](powershell/Bulk%20rename%20picture%20and%20videos%20to%20their%20capture%20time.md): - | `\-`
 -   [Data types](powershell/Data%20types.md): Hashtable | `\-`
 -   [Date and time](powershell/Date%20and%20time.md): - | `\-`
@@ -15,7 +15,7 @@ FROM "powershell"
 -   [Interact with the File System](powershell/filesystem/Interact%20with%20the%20File%20System.md): Run as administrator | `\-`
 -   [Test paths and retrieve filesystem information](powershell/filesystem/Test%20paths%20and%20retrieve%20filesystem%20information.md): - | `\-`
 -   [bash-equivalents](powershell/basics/bash-equivalents.md): While Loop | `read name <-> $name = Read-Host -Prompt "Name"`
--   [Modify objects](powershell/basics/Modify%20objects.md): Add calculated property | `$list[(0..1;-3..-1)]`
+-   [Filter and select objects](powershell/basics/Filter%20and%20select%20objects.md): Add calculated property | `$list[(0..1;-3..-1)]`
 -   [Data file](powershell/Data%20file.md): - | `\-`
 -   [File system metadata](powershell/File%20system%20metadata.md): - | `\-`
 -   [List all apps in PATH locations](powershell/List%20all%20apps%20in%20PATH%20locations.md): - | `\-`
