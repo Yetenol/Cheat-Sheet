@@ -64,6 +64,5 @@ Dependecy: siunitx
 Sources:
 
 Related:
-[LaTeX](LaTeX.md)
 
 Tags:

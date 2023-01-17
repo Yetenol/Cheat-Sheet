@@ -6,7 +6,7 @@
     -   `\begin{figure}[htbp]`
 -   [Generate table out of raw data](latex/Generate%20table%20out%20of%20raw%20data.md):
     
--   [LaTeX](latex/LaTeX.md):
+-   [LaTeX](LaTeX.md):
     
 -   [layout](latex/layout.md):
     -   Hyphenation
