@@ -1,3 +1,8 @@
+---
+example: Leash Decorations
+command: kill   e[type=item,nbt={Item:{id:"minecraft:wool"}}]
+---
+
 ### Create leash between two entities
 ```
 data modify entity @e[type=chicken,sort=nearest,limit=1] Leash set from entity @e[type=bat,sort=nearest,limit=1] {}

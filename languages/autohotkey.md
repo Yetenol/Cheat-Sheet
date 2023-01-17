@@ -1,26 +1,18 @@
-<h1> AutoHotkey </h1>
+---
+example: Get Program stdout
+command: Shell := ComObjCreate("WScript.Shell")
+---
 
+Windows Automation scripting language
 
-
-> Windows Automation scripting language
-
-Table of Contents
-- [1. Generell code structure](#1-generell-code-structure)
-- [1.1 Hotkeys](#11-hotkeys)
-- [Legacy syntax](#legacy-syntax)
-- [Expression syntax](#expression-syntax)
-- [Override existing instance when launched again](#override-existing-instance-when-launched-again)
-- [Set a windows taskbar icon](#set-a-windows-taskbar-icon)
-- [Get program stdout, stderr](#get-program-stdout-stderr)
-
-## 1. Generell code structure
+## Generell code structure
 ```ahk
 ^j::                    ; :: indicates a hotkey
 Send, My First Script   ;
 return                  ;
 ```
 
-## 1.1 Hotkeys
+## Hotkeys
 - end with `::`
 - pauses current thread and starts a new one
 ```ahk

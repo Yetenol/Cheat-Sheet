@@ -1,13 +1,7 @@
-Table of Contents
-- [Help](#help)
-- [Break and Watch](#break-and-watch)
-- [Line Execution](#line-execution)
-- [Stack](#stack)
-- [Source Code](#source-code)
-- [Machine Language](#machine-language)
-- [Examine Variables](#examine-variables)
-- [GDB Modes](#gdb-modes)
-- [Start and Stop](#start-and-stop)
+---
+example: Examinate Variables
+command: break
+---
 
 ## Help
 

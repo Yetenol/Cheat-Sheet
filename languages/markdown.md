@@ -1,10 +1,7 @@
-<h1> Markdown </h1>
-
-
-
-Table of Contents
-- [LaTeX Rendering](#latex-rendering)
-- [Special Character Escaping](#special-character-escaping)
+---
+example: LaTeX Render
+command: ![](https://render.githubusercontent.com/render/math?math=e^{i\pi}=-1)
+---
 
 ## LaTeX Rendering
 

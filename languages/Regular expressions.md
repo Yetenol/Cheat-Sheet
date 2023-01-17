@@ -1,3 +1,8 @@
+---
+example: Quantifiers
+command: (?in)user:(?<name>\S*)\s*key:(?<pwd>\S*)
+---
+
 The following definitions use the .Net Implementation
 
 # Miscellaneous Constructs

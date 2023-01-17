@@ -1,3 +1,8 @@
+---
+example: Delete binary from history
+command: git clone git@github.com:Yetenol/⟨repository⟩.git
+---
+
 Git is a software for tracking changes in any set of files.
 It works best for non-binary text files
 

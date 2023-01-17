@@ -1,6 +1,6 @@
 ---
 example: Hyphenation
-command: '\! \, \: \; \quad \qquad'
+command: [ '\!', '\,', '\:', '\;', '\quad', '\qquad', ]
 ---
 
 # Document Classes

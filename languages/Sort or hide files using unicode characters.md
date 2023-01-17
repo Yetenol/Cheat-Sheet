@@ -1,3 +1,8 @@
+---
+example: Character Sorting
+command: [ '!', '+',, 'Ξ' ]
+---
+
 # Useful characters
 
 | Purpose     | Char | Name             | Alt code    |
