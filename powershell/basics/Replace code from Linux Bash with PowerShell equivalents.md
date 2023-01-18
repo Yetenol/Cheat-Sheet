@@ -1,6 +1,6 @@
 ---
 example: While Loop
-command: read name <-> $name = Read-Host -Prompt "Name"
+command: [ read name, $name = Read-Host -Prompt "Name" ]
 ---
 
 Examples of bash commands and how to do the same thing in PowerShell
@@ -620,5 +620,6 @@ Sources:
 - 2021-12-09: [30 Bash Script Examples](https://linuxhint.com/30_bash_script_examples/)
 
 Related:
+[Linux](Linux)
 
 Tags:

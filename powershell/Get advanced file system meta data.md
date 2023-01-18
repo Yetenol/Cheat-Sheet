@@ -1,3 +1,8 @@
+---
+example: [ Rating, Shared, PrivateBuild ]
+command: ''
+---
+
 - get **advanced meta data**    
   ` Attributes `, ` Computer `, ` DateAccessed `, ` DateCreated `, ` DateModified `, ` Debug `, ` File `, ` FileExtension `, ` FileLocation `, ` Filename `, ` FolderName `, ` IsHidden `, ` IsReadOnly `, ` IsSystem `, ` ItemType `, ` LinkStatus `, ` Name `, ` Owner `, ` Patched `, ` Path `, ` PerceivedType `, ` PreRelease `, ` PrivateBuild `, ` Rating `, ` Shared `, ` SharingStatus `, ` Size `, ` SpecialBuild `
 
@@ -88,12 +93,11 @@ function Get-FileMetaData {
 
 
 ---
-#obsidian/done 
 
 Sources:
 - 2022-12-17: [Getting file metadata with PowerShell similar to what Windows Explorer provides - Evotec](https://evotec.xyz/getting-file-metadata-with-powershell-similar-to-what-windows-explorer-provides/)
 
 Related:
-[Interact with the File System](filesystem/Interact%20with%20the%20File%20System.md)
+[Interact with the file system](filesystem/Interact%20with%20the%20file%20system.md)
 
 Tags:

@@ -39,6 +39,7 @@ This bypasses the _Execution Policy_ for PowerShell scripts.
 Sources:
 
 Related:
-[[Command Prompt]]
+[Command Prompt](Command%20Prompt)
 
 Tags:
+[Development](Development)

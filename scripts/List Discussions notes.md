@@ -1,11 +1,18 @@
 ```dataview
 LIST
     nonnull(list(
-        example,
+        choice(
+            any(example),
+            join(nonnull(example)),
+            null
+        ),
         choice(
             any(command),
             join(
-                map(nonnull(command), (x) => "`" + x + "`")
+                map(
+                    nonnull(command), 
+                    (x) => "`" + x + "`"
+                )
             ),
             null
         )

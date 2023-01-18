@@ -1,10 +1,7 @@
-<h1> Export data </h1>
-
-
-
-Table of Contents
-- [Visualize](#visualize)
-- [File export](#file-export)
+---
+example: [ CSV Tables, Plaintext files ]
+command: 'Export-Csv -Delimiter "," -NoTypeInformation -Path ".\text.csv"'
+---
 
 Example content
 ```powershell

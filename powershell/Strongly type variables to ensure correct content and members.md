@@ -1,6 +1,6 @@
 ---
-example: Hashtable
-script: "[DateTime]::Now"
+example: [ Hashtable, PSCustomObject ]
+command: '[PSCustomObject] @{ Name = "Karl"; ID = 45; }'
 ---
 
 Examples for common data types
@@ -62,7 +62,7 @@ Third line
 
 # Date and time
 
-![Date and time](Date%20and%20time.md#Overview)
+![Standardize the handling of temporal data, clock times and time stamps](Standardize%20the%20handling%20of%20temporal%20data,%20clock%20times%20and%20time%20stamps.md#Overview)
 
 # Containers
 
@@ -106,6 +106,7 @@ $List[0]
 ---
 
 Sources:
+- 2023-01-18: [Types - PowerShell | Microsoft Learn](https://learn.microsoft.com/en-us/powershell/scripting/lang-spec/chapter-04?view=powershell-7.3)
 - 2022-12-17: [PowerShell Hash Table vs. PSCustomObject- Deep Dive & Comparison - Jeff Brown Tech](https://jeffbrown.tech/powershell-hash-table-pscustomobject/)
 - 2022-12-17: [Difference between single quote (‘) and double quote (“) in PowerShell](https://www.tutorialspoint.com/difference-between-single-quote-and-double-quote-in-powershell)
 - 2022-12-17: [PowerShell Multiline String - Working of multiline string using her string](https://www.educba.com/powershell-multiline-string/)

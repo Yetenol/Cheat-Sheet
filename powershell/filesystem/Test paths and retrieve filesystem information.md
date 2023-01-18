@@ -1,3 +1,8 @@
+---
+example: Creation time
+command: ''
+---
+
 Example input
 ```powershell
 $Path = ".\README.md"
@@ -75,11 +80,10 @@ Folders also contain `Parent`, `Root`.
     ```
 
 ---
-#obsidian/done 
 
 Sources:
 
 Related:
-[Interact with the File System](filesystem/Interact%20with%20the%20File%20System.md)
+[Interact with the file system](Interact%20with%20the%20file%20system.md)
 
 Tags:

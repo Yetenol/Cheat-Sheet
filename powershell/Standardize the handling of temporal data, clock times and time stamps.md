@@ -1,3 +1,8 @@
+---
+example: First day of this month
+command: '[DateTime]::Now.TimeOfDay'
+---
+
 # Overview
 
 - `[DateTime]` Timestamp as date and time   

@@ -1,33 +1,13 @@
 
 ![List Powershell notes](scripts/List%20Powershell%20notes.md)
 
--   [Bulk rename picture and videos to their capture time](powershell/Bulk%20rename%20picture%20and%20videos%20to%20their%20capture%20time.md):
--   [Data file](powershell/Data%20file.md):
--   [Data types](powershell/Data%20types.md):
-    -   Hashtable
--   [bash-equivalents](powershell/basics/bash-equivalents.md):
-    -   While Loop
-    -   `read name <-> $name = Read-Host -Prompt "Name"`
 -   [Filter and select objects](powershell/basics/Filter%20and%20select%20objects.md):
     -   Add calculated property
-    -   `$list[(0..1;-3..-1)]`
--   [Encrypt or decrypt sensitive text](powershell/Encrypt%20or%20decrypt%20sensitive%20text.md):
-    -   Passwords
-    -   `ConvertTo-SecureString`
--   [attributes](powershell/filesystem/attributes.md):
--   [Download or invoke files from the internet](powershell/filesystem/Download%20or%20invoke%20files%20from%20the%20internet.md):
--   [export](powershell/filesystem/export.md):
--   [Interact with the File System](powershell/filesystem/Interact%20with%20the%20File%20System.md):
-    -   Run as administrator
--   [Test paths and retrieve filesystem information](powershell/filesystem/Test%20paths%20and%20retrieve%20filesystem%20information.md):
--   [Create shortcuts and symbolic links](powershell/filesystem/Create%20shortcuts%20and%20symbolic%20links.md):
--   [Input information](powershell/Input%20information.md):
-    -   File Parsing
-    -   `[RegEx]::Match($_, $pattern).Groups[1].value`
--   [List all apps in PATH locations](powershell/List%20all%20apps%20in%20PATH%20locations.md):
--   [List all bluetooth devices](powershell/List%20all%20bluetooth%20devices.md):
-    -   List Devices
-    -   `Get-PnpDevice -Class Bluetooth`
+    -   `select -First 2 -Last 3`
+-   [Replace code from Linux Bash with PowerShell equivalents](powershell/basics/Replace%20code%20from%20Linux%20Bash%20with%20PowerShell%20equivalents.md):
+    -   While Loop
+    -   `read name`, `$name = Read-Host -Prompt "Name"`
+-   [Bulk rename picture and videos to their capture time](powershell/Bulk%20rename%20picture%20and%20videos%20to%20their%20capture%20time.md):
 -   [Make scripts executable when renamed cmd](powershell/Make%20scripts%20executable%20when%20renamed%20cmd.md):
     -   script.ps1.bat
     -   `Invoke-Command -ScriptBlock ([ScriptBlock]::Create($cmd))`
@@ -35,15 +15,44 @@
 -   [Offer different options in a command line menu](powershell/Offer%20different%20options%20in%20a%20command%20line%20menu.md):
     -   Select option 1, 2, 3
     -   `$Choice = Read-Host -Prompt "Select ..."`
--   [Sensitive input](powershell/Sensitive%20input.md):
 -   [Specify parameters for functions and scripts](powershell/Specify%20parameters%20for%20functions%20and%20scripts.md):
     -   AutoComplete
-    -   -   `Parameter(Mandatory = $true)`
+    -   `Parameter(Mandatory = $true)`
+-   [Troubleshoot issues and help yourself](powershell/Troubleshoot%20issues%20and%20help%20yourself.md):
 -   [Upgrade applications](powershell/Upgrade%20applications.md):
     -   Update Store Apps
     -   `$wmiObj.UpdateScanMethod()`
--   [File system metadata](powershell/File%20system%20metadata.md):
+-   [Encrypt or decrypt sensitive text](powershell/Encrypt%20or%20decrypt%20sensitive%20text.md):
+    -   Passwords
+    -   `ConvertTo-SecureString`
+-   [Create shortcuts and symbolic links](powershell/filesystem/Create%20shortcuts%20and%20symbolic%20links.md):
+-   [Download or invoke files from the internet](powershell/filesystem/Download%20or%20invoke%20files%20from%20the%20internet.md):
+-   [Read or write file system attributes](powershell/filesystem/Read%20or%20write%20file%20system%20attributes.md):
+    -   Always keep on this device
+    -   `[System.IO.FileAttributes]::ReadOnly`
+-   [Export to files or outputs](powershell/filesystem/Export%20to%20files%20or%20outputs.md):
+    -   CSV Tables, Plaintext files
+    -   `Export-Csv -Delimiter "," -NoTypeInformation -Path ".\text.csv"`
+-   [Import and extract specific information out of a data file](powershell/Import%20and%20extract%20specific%20information%20out%20of%20a%20data%20file.md):
+    -   Find occurrences of a pattern
+    -   `[RegEx]::Match($_, $pattern)`
+-   [List all apps in PATH locations](powershell/List%20all%20apps%20in%20PATH%20locations.md):
+-   [List all bluetooth devices](powershell/List%20all%20bluetooth%20devices.md):
+-   [Test paths and retrieve filesystem information](powershell/filesystem/Test%20paths%20and%20retrieve%20filesystem%20information.md):
+    -   Creation time
+-   [Input information](powershell/Input%20information.md):
+    -   File Parsing
+    -   `[RegEx]::Match($_, $pattern).Groups[1].value`
 -   [Powershell Examples](powershell/Powershell%20Examples.md):
     -   list connfiguration items
--   [Date and time](powershell/Date%20and%20time.md):
--   [Troubleshoot issues and help yourself](powershell/Troubleshoot%20issues%20and%20help%20yourself.md):
+-   [Sensitive input](powershell/Sensitive%20input.md):
+-   [Standardize the handling of temporal data, clock times and time stamps](powershell/Standardize%20the%20handling%20of%20temporal%20data,%20clock%20times%20and%20time%20stamps.md):
+    -   First day of this month
+    -   `[DateTime]::Now.TimeOfDay`
+-   [Strongly type variables to ensure correct content and members](powershell/Strongly%20type%20variables%20to%20ensure%20correct%20content%20and%20members.md):
+    -   Hashtable, PSCustomObject
+    -   `[PSCustomObject] @{ Name = "Karl"; ID = 45; }`
+-   [Get advanced file system meta data](powershell/Get%20advanced%20file%20system%20meta%20data.md):
+    -   Rating, Shared, PrivateBuild
+-   [Interact with the file system](powershell/filesystem/Interact%20with%20the%20file%20system.md):
+    -   Run as administrator

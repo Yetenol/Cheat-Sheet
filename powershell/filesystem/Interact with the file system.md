@@ -13,15 +13,15 @@ FROM "powershell/filesystem"
 - **[Import ›](../Input%20information.md)**  
     extract data from files  
     parse using regular expressions  
-- **[Export ›](export.md)**  
+- **[Export ›](Export%20to%20files%20or%20outputs.md)**  
     visualize date  
     export to different filetypes  
 - **[Links ›](Create%20shortcuts%20and%20symbolic%20links.md)**  
     create shell, symbolic or hard links and junctions  
-- **[Attributes](attributes.md)**  
+- **[Attributes](Read%20or%20write%20file%20system%20attributes.md)**  
     get, set and test file, folder attributes  
     set ReadOnly, Archived, OneDrive AlwaysOnDevice, ...  
-- **[Meta data ›](../File%20system%20metadata.md)**  
+- **[Meta data ›](../Get%20advanced%20file%20system%20meta%20data.md)**  
     get additional file metadata  
 - **[Web ›](Download%20or%20invoke%20files%20from%20the%20internet.md)**  
     download files, archives  
@@ -129,8 +129,8 @@ The flag is stored in byte `0x15` (= 21) at bit `0x20` (= 6).
 
 # File Information
 
-- [Get **attributes**](attributes.md)
-- [Get **meta data**](../File%20system%20metadata.md)
+- [Get **attributes**](Read%20or%20write%20file%20system%20attributes.md)
+- [Get **meta data**](../Get%20advanced%20file%20system%20meta%20data.md)
 
 - Get **version data** of Windows components
     ```powershell

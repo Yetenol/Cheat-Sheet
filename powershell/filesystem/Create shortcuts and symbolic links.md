@@ -56,6 +56,6 @@ Sources:
 - 2022-04-25: [Create a desktop shortcut with Windows Script Host - Windows Client - Microsoft Docs](https://docs.microsoft.com/en-us/troubleshoot/windows-client/admin-development/create-desktop-shortcut-with-wsh)
 
 Related:
-[Interact with the File System](Interact%20with%20the%20File%20System.md)
+[Interact with the file system](Interact%20with%20the%20file%20system.md)
 
 Tags:

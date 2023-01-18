@@ -1,6 +1,6 @@
 ---
 example: Add calculated property
-command: $list[(0..1;-3..-1)]
+command: select -First 2 -Last 3
 ---
 
 Everything in PowerShell is already or becomes a .NET object. Therefore, you should be familiar with how to handle and analyze them. Objects are easiest to visualize as text tables, but keep in mind that the entries themselves can also be objects.
@@ -18,7 +18,7 @@ $f = Get-ChildItem
 
 # Inspect result object
 
-- See object's [type](../Data%20types.md) and properties
+- See object's [type](../Strongly%20type%20variables%20to%20ensure%20correct%20content%20and%20members.md) and properties
 	```powershell
 	$c | Get-Member -MemberType Properties
 	```
@@ -120,6 +120,7 @@ $f = Get-ChildItem
 Sources:
 
 Related:
-[Pipelines](Pipelines)
+[Pipelines](Pipelines),
 
 Tags:
+[Handle objects](Handle%20objects)
