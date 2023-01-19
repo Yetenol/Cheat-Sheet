@@ -2,13 +2,13 @@
 
 - **Enable** _run at startup_
     ```powershell
-    $path = "C:\Windows\system32\notepad.exe"
+    $target = "C:\Windows\system32\notepad.exe"
     $shortcutName = "example.lnk"
 
     $env:Startup = (New-Object -ComObject Shell.Application).NameSpace('shell:Startup').Self.Path
     $WshShell = New-Object -comObject WScript.Shell
     $Shortcut = $WshShell.CreateShortcut("$env:Startup\$shortcutName")
-    $Shortcut.TargetPath = $path
+    $Shortcut.TargetPath = $target
     $Shortcut.Save()
     ```
 
