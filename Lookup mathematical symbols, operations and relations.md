@@ -680,7 +680,7 @@ Sources:
 - 2022-06-10: [List of mathematical symbols by subject - Wikipedia](https://en.wikipedia.org/wiki/List_of_mathematical_symbols_by_subject)
 
 Related:
-[Vary the style of mathematical symbols](../notes/Vary%20the%20style%20of%20mathematical%20symbols.md)
+[Vary the style of mathematical symbols](Vary%20the%20style%20of%20mathematical%20symbols.md)
 
 Tags:
-[Standardize values](../notes/Standardize%20values.md)
+[Standardize values](Standardize%20values.md)

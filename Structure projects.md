@@ -62,7 +62,7 @@ Main document at **`main.tex`**
 
 ## Package requirements 
 Dependencies at **`setup/packages.tex`**
-- see [Document Classes](../notes/Layout%20the%20document.md#document-classes) for `\documentclass{}`
+- see [Document Classes](Layout%20the%20document.md#document-classes) for `\documentclass{}`
 ```latex
 \documentclass[a4paper, 11pt]{article}
 \usepackage{syntonly} % Suppress pdf creating and check syntax only
@@ -96,4 +96,4 @@ Sources:
 Related:
 
 Tags:
-[LaTeX](../notes/LaTeX.md)
+[LaTeX](LaTeX.md)

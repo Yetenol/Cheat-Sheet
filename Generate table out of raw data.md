@@ -261,4 +261,4 @@ Related:
 [Standardize how tables are structured](Standardize%20how%20tables%20are%20structured.md)
 
 Tags:
-[Standardize graphical elements](../notes/Standardize%20graphical%20elements.md)
+[Standardize graphical elements](Standardize%20graphical%20elements.md)

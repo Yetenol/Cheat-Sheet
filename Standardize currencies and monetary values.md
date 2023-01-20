@@ -95,4 +95,4 @@ Related:
 [Lookup mathematical symbols, operations and relations](Lookup%20mathematical%20symbols,%20operations%20and%20relations.md)
 
 Tags:
-[Standardize values](../notes/Standardize%20values.md)
+[Standardize values](Standardize%20values.md)

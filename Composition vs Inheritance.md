@@ -9,4 +9,4 @@ Sources:
 Related:
 
 Tags:
-[Discussions](../notes/Discussions.md)
+[Discussions](Discussions.md)

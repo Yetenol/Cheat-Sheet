@@ -131,4 +131,4 @@ Sources:
 Related:
 
 Tags:
-[Applications](../notes/Applications.md)
+[Applications](Applications.md)

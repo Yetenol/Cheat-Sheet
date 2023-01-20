@@ -59,8 +59,8 @@ Use `.xml` files to preserve the PowerShells Object information.
 
 ## Find Occurrences Of A Pattern
 
-> Quick [**Regular Expression**](../notes/Regular%20expressions.md) Reference for `-match` and `[RegEx]::`  
-> `(?ENABLE-DISABLE)` [Interpretation Options](../notes/Regular%20expressions.md#engine-interpretation-options):  `i` IgnoreCase;  `n` ExplicitCapture;  `x` IgnorePatternWhitespace;  `m` Multiline;  `s` Singleline;  
+> Quick [**Regular Expression**](../Regular%20expressions.md) Reference for `-match` and `[RegEx]::`  
+> `(?ENABLE-DISABLE)` [Interpretation Options](../Regular%20expressions.md#engine-interpretation-options):  `i` IgnoreCase;  `n` ExplicitCapture;  `x` IgnorePatternWhitespace;  `m` Multiline;  `s` Singleline;  
 > `^` Start of line;  `$` End of line;  `.*` ≥0 character(s);  `.+` ≥0 character(s);  `\w*` Any word;  `\S*` Any non-whitespace;
 > `\s*` Any whitespace;  `(.*)` Unnamed group;     `(?<user>.*)` Named group called user
 
@@ -106,8 +106,8 @@ $pattern = "(?i)^user"
 
 ## Extract Data Using A Pattern
 
-> Quick [**Regular Expression**](../notes/Regular%20expressions.md) Reference for `-match` and `[RegEx]::`  
-> `(?ENABLE-DISABLE)` [Interpretation Options](../notes/Regular%20expressions.md#engine-interpretation-options):  `i` IgnoreCase;  `n` ExplicitCapture;  `x` IgnorePatternWhitespace;  `m` Multiline;  `s` Singleline;  
+> Quick [**Regular Expression**](../Regular%20expressions.md) Reference for `-match` and `[RegEx]::`  
+> `(?ENABLE-DISABLE)` [Interpretation Options](../Regular%20expressions.md#engine-interpretation-options):  `i` IgnoreCase;  `n` ExplicitCapture;  `x` IgnorePatternWhitespace;  `m` Multiline;  `s` Singleline;  
 > `^` Start of line;  `$` End of line;  `.*` ≥0 character(s);  `.+` ≥0 character(s);  `\w*` Any word;  `\S*` Any non-whitespace;
 > `\s*` Any whitespace;  `(.*)` Unnamed group;     `(?<user>.*)` Named group called user
 
@@ -182,7 +182,7 @@ $pattern = "(?i)^user"
 Sources:
 
 Related:
-[Regular expressions](../notes/Regular%20expressions.md)
+[Regular expressions](../Regular%20expressions.md)
 
 Tags:
 

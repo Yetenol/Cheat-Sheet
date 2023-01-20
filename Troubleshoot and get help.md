@@ -47,4 +47,4 @@ Sources:
 Related:
 
 Tags:
-[LaTeX](../notes/LaTeX.md)
+[LaTeX](LaTeX.md)
