@@ -19,4 +19,6 @@ LIST
     ))
 FROM
     [[]]
+SORT
+    priority DESCENDING
 ```

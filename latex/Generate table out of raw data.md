@@ -257,7 +257,7 @@ Sources:
 - 2023-01-07: [https://texdoc.org/serve/pgfplotstable/0](https://texdoc.org/serve/pgfplotstable/0)
 
 Related:
-[Typeset tables](Typeset%20tables.md)
+[Standardize how tables are structured](Standardize%20how%20tables%20are%20structured.md)
 
 Tags:
-[Typeset standardized graphical elements](../Typeset%20standardized%20graphical%20elements.md)
+[Standardize graphical elements](../Standardize%20graphical%20elements.md)

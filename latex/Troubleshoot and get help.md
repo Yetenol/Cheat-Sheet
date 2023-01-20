@@ -1,6 +1,7 @@
 ---
 example: Package Documentation
 command: '\PackageError {⟨package name⟩} {⟨error text⟩} {}'
+priority: 1
 ---
 
 # View user guide of a specific packages  
