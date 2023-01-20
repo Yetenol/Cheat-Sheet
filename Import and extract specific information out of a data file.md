@@ -27,7 +27,7 @@ Use `.xml` files to preserve the PowerShells Object information.
     ```
 
 - [Standardize the handling of temporal data, clock times and time stamps](Standardize%20the%20handling%20of%20temporal%20data,%20clock%20times%20and%20time%20stamps.md)
-- [Test paths and retrieve filesystem information](filesystem/Test%20paths%20and%20retrieve%20filesystem%20information.md)
+- [Test paths and retrieve filesystem information](../Test%20paths%20and%20retrieve%20filesystem%20information.md)
 
 # Plain text file
 
