@@ -1,5 +1,5 @@
 ---
-example: 
+example: [ Chapter folder, external resources ]
 command: table-floats/
 ---
 
@@ -61,7 +61,7 @@ Main document at **`main.tex`**
 
 ## Package requirements 
 Dependencies at **`setup/packages.tex`**
-- see [Document Classes](layout.md#document-classes) for `\documentclass{}`
+- see [Document Classes](../notes/Layout%20the%20document.md#document-classes) for `\documentclass{}`
 ```latex
 \documentclass[a4paper, 11pt]{article}
 \usepackage{syntonly} % Suppress pdf creating and check syntax only
@@ -84,3 +84,15 @@ at **`text/headings.tex`**
 \label{sec:capter-1}
 \input{text/capter-1}
 ```
+
+
+
+---
+
+
+Sources:
+
+Related:
+
+Tags:
+[LaTeX](../notes/LaTeX.md)

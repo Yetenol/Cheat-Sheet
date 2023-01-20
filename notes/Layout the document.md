@@ -1,7 +1,12 @@
 ---
 example: Hyphenation
-command: [ '\!', '\,', '\:', '\;', '\quad', '\qquad', ]
+command: [ '\!', '\,', '\:', '\;', '\quad', '\qquad' ]
 ---
+
+Generate Placeholder Text    
+```latex
+\usepackage{lipsum} % Generate placeholder paragraphs
+```
 
 # Document Classes
 
@@ -61,7 +66,7 @@ Global formatting in **`setup/layout.tex`**
 - define the hyphenation of a word list
     ```latex
     \hyphenation{FORTRAN Hy-phen-a-tion}
-```
+    ```
 
 | .            | Meaning                                                                                                          |
 | ------------ | ---------------------------------------------------------------------------------------------------------------- |
@@ -78,4 +83,4 @@ Sources:
 Related:
 
 Tags:
-[LaTeX](../LaTeX.md)
+[LaTeX](LaTeX.md)

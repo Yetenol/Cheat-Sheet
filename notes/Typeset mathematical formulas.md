@@ -17,3 +17,4 @@ Related:
 - [Typeset numeric values](Typeset%20numeric%20values.md)
 
 Tags:
+[Standardize values](../notes/Standardize%20values.md)
