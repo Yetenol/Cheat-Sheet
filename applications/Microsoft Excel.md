@@ -63,3 +63,14 @@ Sum column values until next blank cell?
 ```
 =SUM(A4:INDEX(A4:A10,MATCH(TRUE,(A4:A10=""),0)))
 ```
+
+
+---
+
+
+Sources:
+
+Related:
+
+Tags:
+[Applications](../Applications.md)

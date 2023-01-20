@@ -17,3 +17,14 @@ command:
         "when": "terminal.active"
     },
     ```
+
+
+---
+
+
+Sources:
+
+Related:
+
+Tags:
+[Applications](../Applications.md)

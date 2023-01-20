@@ -17,5 +17,6 @@ LIST
             null
         )
     ))
-FROM "applications"
+FROM
+    [[]]
 ```

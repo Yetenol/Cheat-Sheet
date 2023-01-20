@@ -23,3 +23,14 @@ command:
         Set-Content -Path $file -Value $content
     }
     ```
+
+
+---
+
+
+Sources:
+
+Related:
+
+Tags:
+[Applications](../Applications.md)
