@@ -1,3 +1,8 @@
+---
+example: Display .csv file as table
+command: '\pgfplotstabletypeset [⟨options⟩] {⟨csv file⟩}'
+---
+
 Dependency: [pgfplotstable](https://texdoc.org/serve/pgfplotstable/0)
 
 # Usage
@@ -5,17 +10,20 @@ Dependency: [pgfplotstable](https://texdoc.org/serve/pgfplotstable/0)
 - generate a table as a **floating object** from a file
     ```latex
     \begin{table}
-        \pgfplotstabletypeset{resources/⟨RAW-DATA.CSV⟩}
+        \pgfplotstabletypeset{resources/⟨table name⟩.csv}
         \centering
-        \caption{⟨CAPTION⟩}
-        \label{tab:⟨LABEL⟩}
+        \caption{⟨caption⟩}
+        \label{tab:⟨table name⟩}
     \end{table}
     ```
+
+    - `⟨caption⟩`: Title displayed below the table and in the index
+    - `⟨table name⟩`: Filename and handle to cross reference the table
 
 - generate a table **in line with text** from a file
     ```latex
     \begin{center}
-    \pgfplotstabletypeset{resources/⟨RAW-DATA.CSV⟩}
+    \pgfplotstabletypeset{resources/⟨table name⟩.csv}
     \end{center}
     ```
 
@@ -172,25 +180,25 @@ All pgfkeys are stored in `pgfplots/table/`
 
 - **ignore list of characters** (default: *empty*) by    
     ```latex
-    ignore chars = {⟨COMMA-SEPARATED-LIST⟩}
+    ignore chars = {⟨comma separated list⟩}
     ```
 
 - write **cells with spaces** (default: *empty*) by    
     ```latex
-    text indicator = {⟨CHAR⟩}
+    text indicator = {⟨char⟩}
     ```
     - escape text indicators by doubling them like `"A long ""cell""" normalcell`
 
 - skip first # lines of input file (default: 0) by    
     ```latex
-    skip first n = {⟨INTEGER⟩}
+    skip first n = {⟨integer⟩}
     ```
 
 ## Selecting Columns and their Appearance Styles
 
 - **select** columns to be displayed by    
     ```latex
-    /columns = {⟨COMMA-SEPARATED-LIST⟩}
+    /columns = {⟨comma separated list⟩}
     ```
     - *empty*: show all columns
     - with header: use column name or index
@@ -204,20 +212,20 @@ All pgfkeys are stored in `pgfplots/table/`
 - **style** a specific **input column** by    
     ```latex
     columns/⟨column name⟩/.style = {
-        ⟨key-value-list⟩
+        ⟨key value list⟩
     }
     ```
 
 - **style** a specific **displayed column** by    
     ```latex
     display columns/⟨index⟩/.style = {
-        ⟨key-value-list⟩
+        ⟨key value list⟩
     }
     ```
     or
     ```latex
     every col no ⟨index⟩/.style = {
-        ⟨key-value-list⟩
+        ⟨key value list⟩
     }
     ```
 
@@ -252,3 +260,4 @@ Related:
 [Typeset tables](Typeset%20tables.md)
 
 Tags:
+[Typeset standardized graphical elements](../Typeset%20standardized%20graphical%20elements.md)

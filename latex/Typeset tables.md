@@ -222,3 +222,4 @@ Related:
 [Floating Bodies](Floating%20Bodies.md)
 
 Tags:
+[Typeset standardized graphical elements](../Typeset%20standardized%20graphical%20elements.md)

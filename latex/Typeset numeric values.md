@@ -43,7 +43,7 @@ Dependecy: [siunitx](https://texdoc.org/serve/siunitx/0)
 
 # Monetary values
 
-Dependencies: [currency](https://texdoc.org/serve/currency/0) + [Setup standardized currencies and monetary values](Setup%20standardized%20currencies%20and%20monetary%20values.md)
+Dependencies: [currency](https://texdoc.org/serve/currency/0) + [Standardize currencies and monetary values](Standardize%20currencies%20and%20monetary%20values.md)
 
 ## Currency
 
@@ -62,3 +62,14 @@ Dependencies: [currency](https://texdoc.org/serve/currency/0) + [Setup standardi
 | `\dUSD{1.5}` | $ 1.50    |
 | `\dJPY{1.5}` | 2 ¥       |
 | `\dGBP{1.5}` | £ 1.50    |
+
+
+---
+
+
+Sources:
+
+Related:
+
+Tags:
+[Standardize values](../Standardize%20values.md)

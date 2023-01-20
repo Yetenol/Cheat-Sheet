@@ -51,3 +51,14 @@ command: \usepackage{etoolbox}
 
     - `⟨attribute name⟩`: Name of the attribute to be  set
     - `⟨environment name⟩`: Environment that is extended
+
+
+---
+
+
+Sources:
+
+Related:
+
+Tags:
+[Develop LaTeX packages](Develop%20LaTeX%20packages.md)

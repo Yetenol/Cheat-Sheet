@@ -1,3 +1,8 @@
+---
+example: Package Documentation
+command: '\PackageError {⟨package name⟩} {⟨error text⟩} {}'
+---
+
 # View user guide of a specific packages  
  
 - by adding a custom search engine to your browser
@@ -27,10 +32,11 @@
     ```
 
 ---
-#obsidian/done 
+
 
 Sources:
 
 Related:
 
 Tags:
+[LaTeX](../LaTeX.md)
