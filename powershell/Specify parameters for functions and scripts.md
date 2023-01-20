@@ -56,5 +56,13 @@ param (
 | `[ValueFromRemainingArguments()]`     | Create a ParamArray and assign any unbound argument to a parameter              |
 
 
-## Sources
+---
+
+
+Sources:
 - 2022-11-14: [Designing Professional Parameters - powershell.one](https://powershell.one/powershell-internals/attributes/parameters)
+
+Related:
+
+Tags:
+[Develop PowerShell projects](../Develop%20PowerShell%20projects.md)

@@ -7,7 +7,3 @@ This project contains all my documentations of my developer life including code 
 ```dynamic-embed
 [[Map of Content]]
 ```
-
-
-
-- [Powershell](Powershell.md) 

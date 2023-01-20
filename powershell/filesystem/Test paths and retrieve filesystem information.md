@@ -84,6 +84,6 @@ Folders also contain `Parent`, `Root`.
 Sources:
 
 Related:
-[Interact with the file system](Interact%20with%20the%20file%20system.md)
 
 Tags:
+[Operate on the file system](../../Operate%20on%20the%20file%20system.md)

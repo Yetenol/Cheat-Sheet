@@ -115,3 +115,4 @@ Related:
 [Input information](Input%20information.md)
 
 Tags:
+[Handle objects](../Handle%20objects.md)

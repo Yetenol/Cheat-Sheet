@@ -21,4 +21,16 @@ winget upgrade --all
 
 # Update all git repositories
 
-- [shortcutFox-gitUpdateAll.ps1 at main · Yetenol-shortcutFox](https://github.com/Yetenol/shortcutFox/blob/main/source/scripts/gitUpdateAll.ps1)
+- [shortcutFox-gitUpdateAll.ps1](https://github.com/Yetenol/shortcutFox/blob/main/source/scripts/gitUpdateAll.ps1)
+
+
+---
+
+
+Sources:
+
+Related:
+[autohotkey](../autohotkey.md)
+
+Tags:
+[PowerShell](../PowerShell.md)

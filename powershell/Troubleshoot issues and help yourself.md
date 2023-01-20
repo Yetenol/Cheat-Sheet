@@ -1,3 +1,8 @@
+---
+example: 
+command: 
+priority: 1
+---
 **Update help files** using elevated command
 ```powershell
 Update-Help
@@ -59,3 +64,14 @@ $help = Get-Help -Name Invoke-WebRequest
     $help.examples
     ```
     Dirty: `help Invoke-WebRequest -Examples` | `(Invoke-WebRequest -?).examples`  
+
+
+---
+
+
+Sources:
+
+Related:
+
+Tags:
+[PowerShell](../PowerShell.md)

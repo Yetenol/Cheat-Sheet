@@ -32,7 +32,7 @@ $c = Get-Command
 
 # File export
 - **XML object**  
-  &#127775; Lossless (Keeps entire .NET object data)
+  Lossless (Keeps entire .NET object data)
 	```powershell
 	$c | Export-Clixml -Path "object.xml"
 	```
@@ -64,3 +64,14 @@ $c = Get-Command
 		ConvertFrom-SecureString |
 		Out-File -FilePath ".\key.bin"
 	```
+
+
+---
+
+
+Sources:
+
+Related:
+
+Tags:
+[Handle objects](../../Handle%20objects.md)

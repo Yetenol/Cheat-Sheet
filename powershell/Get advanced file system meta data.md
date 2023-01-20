@@ -98,6 +98,6 @@ Sources:
 - 2022-12-17: [Getting file metadata with PowerShell similar to what Windows Explorer provides - Evotec](https://evotec.xyz/getting-file-metadata-with-powershell-similar-to-what-windows-explorer-provides/)
 
 Related:
-[Interact with the file system](filesystem/Interact%20with%20the%20file%20system.md)
 
 Tags:
+[Operate on the file system](../Operate%20on%20the%20file%20system.md)

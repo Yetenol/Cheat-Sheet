@@ -13,6 +13,29 @@ Don't save passwords as plain text. Instead save them as a secure string and **e
     $securePassword = ConvertTo-SecureString $PlainPassword -AsPlainText -Force
     ```
 
+# Read and write files
+
+- **encrypt** an existing file
+    ```powershell
+    $xml = Get-Content -Path ".\temp.xml" -Raw
+    ConvertTo-SecureString -AsPlainText $xml -Force `
+    | ConvertFrom-SecureString `
+    | Out-File secure.bin
+
+    Remove-Item -Path ".\temp.xml"
+    ```
+
+- **decrypt** an existing file
+    ```powershell
+    $secure = Get-Content -Path ".\secure.bin" `
+    | ConvertTo-SecureString
+
+    $bstr = [Runtime.InteropServices.Marshal]::SecureStringToBSTR($secure)
+	$xml = [Runtime.InteropServices.Marshal]::PtrToStringAuto($bstr)
+    $xml | Out-File ".\temp.xml"
+    ```
+
+
 # Decrypt data locally
 
 Only the **same PowerShell instance** can decrypt. 
@@ -63,3 +86,5 @@ Sources:
 Related:
 
 Tags:
+[Operate on the file system](../Operate%20on%20the%20file%20system.md)
+[Handle objects](../Handle%20objects.md)

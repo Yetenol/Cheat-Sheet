@@ -1,3 +1,7 @@
+---
+example: [ Shortcuts, Soft links, Hard links ]
+command: 'New-Item -ItemType SymbolicLink $Path'
+---
 # Create a shell link (shortcut)
 
 - **Enable** _run at startup_
@@ -56,6 +60,6 @@ Sources:
 - 2022-04-25: [Create a desktop shortcut with Windows Script Host - Windows Client - Microsoft Docs](https://docs.microsoft.com/en-us/troubleshoot/windows-client/admin-development/create-desktop-shortcut-with-wsh)
 
 Related:
-[Interact with the file system](Interact%20with%20the%20file%20system.md)
 
 Tags:
+[Operate on the file system](../../Operate%20on%20the%20file%20system.md)
