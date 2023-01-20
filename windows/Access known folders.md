@@ -1,18 +1,15 @@
-#obsidian/removeToc 
-- **[User Folders ›](Retrieve%20and%20modify%20user%20folders.md)**  
-  _This PC_-Folders, Per-user folders & Common-user folders  
-  Downloads | `shell:My Pictures`
+---
+example: [ Recycle Bin, Downloads folder ]
+command: 'shell:My Pictures'
+priority: 1
+---
+```dynamic-embed
+[[Map of Content]]
+```
 
-- **[OS Panels, Folders ›](GUID%20shortcuts.md)**  
-  Known folders and panels specified by a [GUID](https://docs.microsoft.com/en-us/dotnet/api/system.guid)  
-  Recycle Bin | `shell:::{�}`
+<ul class="dataview list-view-ul"><li><span><a aria-label-position="top" aria-label="windows/Retrieve and modify user folder locations.md" data-href="windows/Retrieve and modify user folder locations.md" href="windows/Retrieve and modify user folder locations.md" class="internal-link" target="_blank" rel="noopener">Retrieve and modify user folder locations</a></span>: <ul class="dataview dataview-ul dataview-result-list-ul"><li class="dataview-result-list-li"><span>This PC, Desktop, Downloads</span></li><li class="dataview-result-list-li"><span><code>shell:My Pictures</code></span></li></ul></li><li><span><a aria-label-position="top" aria-label="windows/Access panels and folders of Windows.md" data-href="windows/Access panels and folders of Windows.md" href="windows/Access panels and folders of Windows.md" class="internal-link" target="_blank" rel="noopener">Access panels and folders of Windows</a></span>: <ul class="dataview dataview-ul dataview-result-list-ul"><li class="dataview-result-list-li"><span>Recycle Bin</span></li><li class="dataview-result-list-li"><span><code>shell:::{}</code></span></li></ul></li><li><span><a aria-label-position="top" aria-label="windows/See deprecated built-in panels and folders.md" data-href="windows/See deprecated built-in panels and folders.md" href="windows/See deprecated built-in panels and folders.md" class="internal-link" target="_blank" rel="noopener">See deprecated built-in panels and folders</a></span>: <ul class="dataview dataview-ul dataview-result-list-ul"><li class="dataview-result-list-li"><span>3D Objects, Cookies</span></li><li class="dataview-result-list-li"><span><code>shell:::{}</code></span></li></ul></li></ul>
 
-- **[GUIDs Archive ›](GUID%20archive.md)**  
-  Deprecated GUIDs (usually nonfunctional in current versions)  
-  3D Objects | `shell:::{�}`
-
-
-## Import all user folders as environment variables
+# Import all user folders as environment variables
 
 - define user folder macros
     ```powershell
@@ -30,8 +27,7 @@
     }
     ```
 
-
-- use a macro
+- reveal folder in *File Explorer*    
     ```powershell
     Invoke-Item -Path $env:Pictures
     ```
@@ -52,3 +48,4 @@ Sources:
 Related:
 
 Tags:
+[Windows](../Windows.md)

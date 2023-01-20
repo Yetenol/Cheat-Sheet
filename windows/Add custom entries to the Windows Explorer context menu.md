@@ -30,6 +30,7 @@ Sources:
 - 2022-05-02: [Open a project in IntelliJ from folder - Stack Overflow](https://stackoverflow.com/questions/49733733/open-a-project-in-intellij-from-folder)
 
 Related:
-[[Registry]]
+[[Read and write to the registry]]
 
 Tags:
+[Windows](../Windows.md)

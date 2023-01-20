@@ -1,10 +1,11 @@
 ---
 example: Recycle Bin
 command: shell:::{}
+priority: 3
 ---
 Referenced using a [**CLSID keys**](https://docs.microsoft.com/de-de/windows/win32/com/clsid-key-hklm?redirectedfrom=MSDN) (globally unique identifier that identifies a COM class object)
 
-- **[Archive of old GUIDs ›](GUID%20archive.md)**  
+- **[Archive of old GUIDs ›](See%20deprecated%20built-in%20panels%20and%20folders.md)**  
   3D Objects | `shell:::{�}`
 
 ## Usage
@@ -210,4 +211,4 @@ Sources:
 Related:
 
 Tags:
-
+[Access known folders](Access%20known%20folders.md)

@@ -10,5 +10,4 @@ This project contains all my documentations of my developer life including code 
 
 
 
-- [Windows](Windows.md)
 - [Powershell](Powershell.md) 

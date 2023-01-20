@@ -1,5 +1,5 @@
 ---
-example: 3D Objects
+example: [ 3D Objects, Cookies ]
 command: shell:::{}
 ---
 Shortcuts to special OS folders or panels. Referenced using a [**CLSID keys**](https://docs.microsoft.com/de-de/windows/win32/com/clsid-key-hklm?redirectedfrom=MSDN) (globally unique identifier that identifies a COM class object)
@@ -141,6 +141,7 @@ Sources:
 - 2022-04-23: [Windows- known folders](https://renenyffenegger.ch/notes/Windows/dirs/_known-folders)
 
 Related:
-- [GUID shortcuts](GUID%20shortcuts.md)
+[Access panels and folders of Windows](Access%20panels%20and%20folders%20of%20Windows.md)
 
 Tags:
+[Access known folders](Access%20known%20folders.md)

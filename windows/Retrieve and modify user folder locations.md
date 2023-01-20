@@ -1,3 +1,8 @@
+---
+example: [ This PC, Desktop, Downloads ]
+command: 'shell:My Pictures'
+priority: 1
+---
 ## User-Specific Folders
 
 - **List all locations**
@@ -102,3 +107,4 @@ Sources:
 Related:
 
 Tags:
+[Access known folders](Access%20known%20folders.md)

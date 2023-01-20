@@ -200,3 +200,4 @@ Sources:
 Related:
 
 Tags:
+[Access system components](../Access%20system%20components.md)
