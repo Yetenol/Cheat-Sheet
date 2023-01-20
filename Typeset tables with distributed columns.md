@@ -1,6 +1,7 @@
 ---
 example: Equally distributed column width
 command: '\begin{tabularx}{\columnwidth}'
+priority: 5
 ---
 
 Utilize special column types to distribute the width of different column types

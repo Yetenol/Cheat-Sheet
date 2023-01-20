@@ -1,6 +1,7 @@
 ---
 example: [ Numbers, Physical quantities ]
 command: \qty{3}{\celsius}
+priority: 1
 ---
 
 # Numeric values

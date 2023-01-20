@@ -1,6 +1,7 @@
 ---
 example: Legend below the table defines the symbols used
 command: 'S[table-format = -3.0e-1]'
+priority: 7
 ---
 
 - Use **required packages** in `setup/packages.tex`  
@@ -121,7 +122,7 @@ Sources:
 2023-01-10: [LaTeX tables - Tutorial with code examples - LaTeX-Tutorial.com](https://latex-tutorial.com/tutorials/tables/)
 
 Related:
-[Floating Bodies](Floating%20Bodies.md)
+[Floating objects](latex/Floating%20objects.md)
 
 Tags:
 [Standardize graphical elements](../Standardize%20graphical%20elements.md)

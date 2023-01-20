@@ -1,6 +1,7 @@
 ---
 example: [ Content, Width, Alignment ]
 command: [ L, X, S ]
+priority: 9
 ---
 
 |                       | Content            | Width               | Alignment       | Dependency                                            |

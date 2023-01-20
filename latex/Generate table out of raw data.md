@@ -1,6 +1,7 @@
 ---
 example: Display .csv file as table
 command: '\pgfplotstabletypeset [⟨options⟩] {⟨csv file⟩}'
+priority: 3
 ---
 
 Dependency: [pgfplotstable](https://texdoc.org/serve/pgfplotstable/0)

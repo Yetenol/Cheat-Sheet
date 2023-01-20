@@ -1,6 +1,7 @@
 ---
 example: Arrows
 command: \mathbb{NR}
+priority: 3
 ---
 
 # Favorites

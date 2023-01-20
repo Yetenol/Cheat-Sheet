@@ -2,6 +2,7 @@
 example: Images
 command: \begin{figure}[htbp]
 ---
+
 # Placement Specifiers
 
 ```latex

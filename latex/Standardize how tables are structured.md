@@ -1,9 +1,11 @@
 ---
 example: Extract table to seperate files
 command: 
+priority: 1
 ---
 
-1. Tabular environments should be nested in a **floating object** (aka flaot)
+1. Tabular environments should be nested in a **floating object** aka flaot.    
+    see [Floating objects](Floating%20objects.md)
     ```latex
     \begin{table}
         \begin{⟨tabular environment⟩}

@@ -1,7 +1,7 @@
 ---
 example: PDF of common macros
 command: 
-priority: 3
+priority:
 ---
 
 - [LATEX quick reference](https://icl.utk.edu/~mgates3/docs/latex.pdf)

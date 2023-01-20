@@ -1,6 +1,7 @@
 ---
 example: ϖ vs π
 command: '\renewcommand{\pi}{\varpi}'
+priority: 5
 ---
 
 | Preamble Command                                   | Rendering                  | Original         | Dependency |

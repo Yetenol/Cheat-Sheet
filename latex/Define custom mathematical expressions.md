@@ -1,6 +1,7 @@
 ---
 example: Norm
 command: 
+priority: 7
 ---
 
 # Custom symbols

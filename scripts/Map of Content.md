@@ -20,5 +20,5 @@ LIST
 FROM
     [[]]
 SORT
-    priority DESCENDING
+    choice(priority, priority, 999999)
 ```
