@@ -36,3 +36,4 @@ Related:
 [obsidian](../applications/obsidian.md)
 
 Tags:
+[Languages and Encodings](../Languages%20and%20Encodings.md)

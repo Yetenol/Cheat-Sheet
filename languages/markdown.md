@@ -61,9 +61,12 @@ command: ![](https://render.githubusercontent.com/render/math?math=e^{i\pi}=-1)
 
 
 ---
+
+
 Sources:
 - 2022-04-04: [A hack for showing LaTeX formulas in GitHub markdown.md · GitHub](https://gist.github.com/a-rodin/fef3f543412d6e1ec5b6cf55bf197d7b)
 
 Related:
 
 Tags:
+[Languages and Encodings](../Languages%20and%20Encodings.md)

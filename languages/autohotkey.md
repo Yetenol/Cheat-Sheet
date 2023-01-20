@@ -67,3 +67,14 @@ Menu, Tray, Icon, % A_WinDir "\system32\imageres.dll", 174
         MsgBox,% "The Script execution failed"
     }
 ```
+
+
+---
+
+
+Sources:
+
+Related:
+
+Tags:
+[Languages and Encodings](../Languages%20and%20Encodings.md)

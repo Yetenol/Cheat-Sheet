@@ -131,8 +131,9 @@ command: break
 
 ---
 Sources:
+- 2022-04-06 [Linux Tutorial - GNU GDB Debugger Command Cheat Sheet](http://www.yolinux.com/TUTORIALS/GDB-Commands.html)
 
 Related:
 
 Tags:
-- 2022-04-06 [Linux Tutorial - GNU GDB Debugger Command Cheat Sheet](http://www.yolinux.com/TUTORIALS/GDB-Commands.html)
+[Languages and Encodings](../Languages%20and%20Encodings.md)
