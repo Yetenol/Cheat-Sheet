@@ -7,7 +7,7 @@ $filename = "example.xml"
 ```
 
 - **download and reveal** a file to _Downloads_  
-    _Downloads_ is a [user-specific folder](../../windows/Retrieve%20and%20modify%20user%20folder%20locations.md). 
+    _Downloads_ is a [user-specific folder](../../Retrieve%20and%20modify%20user%20folder%20locations.md). 
     Aborts on failure or reveals in _File Explorer_.
     ```powershell
     $env:Downloads = (New-Object -ComObject Shell.Application).NameSpace('shell:::{374DE290-123F-4565-9164-39C4925E467B}').Self.Path
@@ -28,7 +28,7 @@ $filename = "example.xml"
     ```
 
 - **download** a file to _Temp_  
-    _Temp_ is a [common-user folder](../../windows/Retrieve%20and%20modify%20user%20folder%20locations.md). 
+    _Temp_ is a [common-user folder](../../Retrieve%20and%20modify%20user%20folder%20locations.md). 
     Aborts on failure.
     ```powershell
     $path = "$env:Temp\$filename"
@@ -49,7 +49,7 @@ $foldername = "AutoHotkey 2"
 ```
 
 - **download and extract** an **archive** to _Downloads_  
-    _Downloads_ is a [user-specific folder](../../windows/Retrieve%20and%20modify%20user%20folder%20locations.md). 
+    _Downloads_ is a [user-specific folder](../../Retrieve%20and%20modify%20user%20folder%20locations.md). 
     Aborts on failure or reveals in _File Explorer_.
     ```powershell
     $env:Downloads = (New-Object -ComObject Shell.Application).NameSpace('shell:::{374DE290-123F-4565-9164-39C4925E467B}').Self.Path
