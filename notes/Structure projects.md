@@ -1,6 +1,7 @@
 ---
 example: [ Chapter folder, external resources ]
 command: table-floats/
+priority: 2
 ---
 
 Writing everything in one file reduces readability, increases compile time, and makes debugging more difficult. Therefore a logical project structure is highly recommended.

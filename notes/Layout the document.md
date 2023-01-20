@@ -1,6 +1,7 @@
 ---
 example: Hyphenation
 command: [ '\!', '\,', '\:', '\;', '\quad', '\qquad' ]
+priority: 7
 ---
 
 Generate Placeholder Text    

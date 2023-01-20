@@ -1,5 +1,5 @@
 ---
-example: Package Documentation
+example: [ Cheat sheets, Package Documentation ]
 command: '\PackageError {⟨package name⟩} {⟨error text⟩} {}'
 priority: 1
 ---
@@ -31,6 +31,13 @@ priority: 1
     ```latex
     \PackageError {⟨package name⟩} {⟨error text⟩} {}
     ```
+
+# Print cheat sheets
+
+- [LATEX quick reference](https://icl.utk.edu/~mgates3/docs/latex.pdf)
+- [A quick guide to LaTeX](https://www.overleaf.com/latex/templates/a-quick-guide-to-latex/fghqpfgnxggz.pdf)
+- [LaTeX Cheat Sheet](https://wch.github.io/latexsheet/latexsheet-a4.pdf)
+
 
 ---
 
