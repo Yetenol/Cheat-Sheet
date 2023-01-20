@@ -40,4 +40,4 @@ Sources:
 Related:
 
 Tags:
-[LaTeX](../LaTeX.md)
+[LaTeX](../notes/LaTeX.md)

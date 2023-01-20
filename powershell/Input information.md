@@ -19,4 +19,4 @@ Sources:
 Related:
 
 Tags:
-[[../Powershell]]
+[[../notes/Powershell]]

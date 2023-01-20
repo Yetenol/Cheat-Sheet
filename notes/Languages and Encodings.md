@@ -12,6 +12,6 @@
 Sources:
 
 Related:
-[README](README.md)
+[README](../README.md)
 
 Tags:

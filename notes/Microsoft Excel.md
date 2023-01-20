@@ -73,4 +73,4 @@ Sources:
 Related:
 
 Tags:
-[Applications](../Applications.md)
+[Applications](../notes/Applications.md)

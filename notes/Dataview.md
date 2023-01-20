@@ -33,7 +33,7 @@ Sources:
 - 2023-01-17: [Embed files - Obsidian-docs](https://jackiegeek.gitee.io/obsidian-docs/fr/How%20to/Embed%20files/)
 
 Related:
-[obsidian](../applications/obsidian.md)
+[obsidian](obsidian.md)
 
 Tags:
-[Languages and Encodings](../Languages%20and%20Encodings.md)
+[Languages and Encodings](../notes/Languages%20and%20Encodings.md)
