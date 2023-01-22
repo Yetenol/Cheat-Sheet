@@ -254,6 +254,7 @@ All pgfkeys are stored in `pgfplots/table/`
 
 ---
 #research/addExamples 
+#netlify/fixBuild
 
 Sources:
 - 2023-01-07: [https://texdoc.org/serve/pgfplotstable/0](https://texdoc.org/serve/pgfplotstable/0)
