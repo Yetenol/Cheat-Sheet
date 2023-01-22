@@ -4,11 +4,31 @@ example: [ Recycle Bin, Downloads folder ]
 command: 'shell:My Pictures'
 priority: 1
 ---
-```dynamic-embed
-[[Map of Content]]
-```
 
-<ul class="dataview list-view-ul"><li><span><a aria-label-position="top" aria-label="Retrieve and modify user folder locations.md" data-href="Retrieve and modify user folder locations.md" href="Retrieve and modify user folder locations.md" class="internal-link" target="_blank" rel="noopener">Retrieve and modify user folder locations</a></span>: <ul class="dataview dataview-ul dataview-result-list-ul"><li class="dataview-result-list-li"><span>This PC, Desktop, Downloads</span></li><li class="dataview-result-list-li"><span><code>shell:My Pictures</code></span></li></ul></li><li><span><a aria-label-position="top" aria-label="Access panels and folders of Windows.md" data-href="Access panels and folders of Windows.md" href="Access panels and folders of Windows.md" class="internal-link" target="_blank" rel="noopener">Access panels and folders of Windows</a></span>: <ul class="dataview dataview-ul dataview-result-list-ul"><li class="dataview-result-list-li"><span>Recycle Bin</span></li><li class="dataview-result-list-li"><span><code>shell:::{}</code></span></li></ul></li><li><span><a aria-label-position="top" aria-label="See deprecated built-in panels and folders.md" data-href="See deprecated built-in panels and folders.md" href="See deprecated built-in panels and folders.md" class="internal-link" target="_blank" rel="noopener">See deprecated built-in panels and folders</a></span>: <ul class="dataview dataview-ul dataview-result-list-ul"><li class="dataview-result-list-li"><span>3D Objects, Cookies</span></li><li class="dataview-result-list-li"><span><code>shell:::{}</code></span></li></ul></li></ul>
+```dataview
+LIST
+    nonnull(list(
+        choice(
+            any(example),
+            join(nonnull(example)),
+            null
+        ),
+        choice(
+            any(command),
+            join(
+                map(
+                    nonnull(command), 
+                    (x) => "`" + x + "`"
+                )
+            ),
+            null
+        )
+    ))
+FROM
+    [[]]
+SORT
+    choice(priority, priority, 999999)
+```
 
 # Import all user folders as environment variables
 

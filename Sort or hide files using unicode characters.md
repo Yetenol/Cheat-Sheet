@@ -1,7 +1,7 @@
 ---
 dg-publish: true
 example: Character Sorting
-command: [ '!', '+',, 'Ξ' ]
+command: [ '!', '+', 'Ξ' ]
 ---
 
 # Useful characters
