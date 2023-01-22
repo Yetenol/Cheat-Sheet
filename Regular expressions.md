@@ -1,5 +1,5 @@
 ---
-dg-publish: false
+dg-publish: true
 example: Quantifiers
 command: '(?in)user:(?<name>\S*)\s*key:(?<pwd>\S*)'
 ---
@@ -12,7 +12,7 @@ The following definitions use the .Net Implementation
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
 | `(?imnsx-imnsx)`     | Sets or disables options such as case insensitivity in the middle of a pattern. For more information, see Regular Expression Options. | `\bA(?i)b\w+\b` matches `"ABA"`, `"Able"` in `"ABA Able Act"` |
 | `(?#` _comment_ `)`  | Inline comment. The comment ends at the first closing parenthesis.                                                                    | `\bA(?#Matches words starting with A)\w+\b`                   |
-| `#` [to end of line] | X-mode comment. The comment starts at an unescaped `#` and continues to the end of the line.                                          | `(?x)\bA\w+\b#Matches words starting with A`                  |
+| `#` *to end of line* | X-mode comment. The comment starts at an unescaped `#` and continues to the end of the line.                                          | `(?x)\bA\w+\b#Matches words starting with A`                  |
 
 
 # Engine Interpretation Options
@@ -43,7 +43,7 @@ Start pattern with `(?`_enabled options_`-`_disabled options_`)` e.g: `(?imnsx-i
 | `\p{Lu}` | Letter in uppercase       |
 | `[a–m]`  | In the a-m range          |
 | `[^0–5]` | Not in the 0-5 range      |
-| `.`      | Any except \n (new line)  |
+| `.`      | Any except \\n (new line)  |
 | `\char`  | Escaped special character |
 
 
@@ -51,14 +51,14 @@ Start pattern with `(?`_enabled options_`-`_disabled options_`)` e.g: `(?imnsx-i
 
 | Use       | To match                | Unicode |
 | --------- | ----------------------- | ------- |
-| `\t`      | Horizontal tab          | \u0009  |
-| `\v`      | Vertical tab            | \u000B  |
-| `\b`      | Backspace               | \u0008  |
-| `\e`      | Escape                  | \u001B  |
-| `\r`      | Carriage return         | \u000D  |
-| `\f`      | Form feed               | \u000C  |
-| `\n`      | New line                | \u000A  |
-| `\a`      | Bell (alarm)            | \u0007  |
+| `\t`      | Horizontal tab          | `\u0009`  |
+| `\v`      | Vertical tab            | `\u000B`  |
+| `\b`      | Backspace               | `\u0008`  |
+| `\e`      | Escape                  | `\u001B`  |
+| `\r`      | Carriage return         | `\u000D`  |
+| `\f`      | Form feed               | `\u000C`  |
+| `\n`      | New line                | `\u000A`  |
+| `\a`      | Bell (alarm)            | `\u0007`  |
 | `\c char` | ASCII control character | -       |
 
 
