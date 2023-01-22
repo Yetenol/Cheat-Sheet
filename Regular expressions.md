@@ -194,18 +194,15 @@ The price of SCHLÜMPFE ice cream is 20 €.
     ```
 
 - capture **nested content** in delimiters using **balanced group**    
-    Fails if delimiters are misbalanced.
-  - `[^{}]` ignores no delimiters
-  - `(?<Open>[{])` opening delimiter `{` pushes onto balanced group
-  - `(?<Content-Open>[}])` closing delimiter `}` pops balanced group are captures the content in between
-  - `(?(Open)(?!))` if opening delimiter left over, fail
+    Fails if delimiters are misbalanced.
+    - `[^<>]` ignores no delimiters
+    - `(?<Open>[<])` opening delimiter `<` pushes onto balanced group
+    - `(?<Content-Open>[>])` closing delimiter `>` pops balanced group are captures the content in between
+    - `(?(Open)(?!))` if opening delimiter left over, fail
     ```
-    ^(?:[^{}]|(?<Open>[{])|(?<Content-Open>[}]))*(?(Open)(?!))$
+    ^(?:[^<>]|(?<Open>[<])|(?<Content-Open>[>]))*(?(Open)(?!))$
     ```
-    e.g. text `{{a}-{b}}+{c}` is balanced and captures `a`, `b`, `{a}-{b}` and `c`
-
-
-
+    e.g. text `<<a>-<b>>+<c>` is balanced and captures `a`, `b`, `<a>-<b>` and `c`
 
 # Inline Options
 
