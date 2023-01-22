@@ -1,7 +1,7 @@
 ---
 dg-publish: false
 example: Quantifiers
-command: (?in)user:(?<name>\S*)\s*key:(?<pwd>\S*)
+command: '(?in)user:(?<name>\S*)\s*key:(?<pwd>\S*)'
 ---
 
 The following definitions use the .Net Implementation
@@ -73,28 +73,28 @@ Start pattern with `(?`_enabled options_`-`_disabled options_`)` e.g: `(?imnsx-i
 
 # Character Classes
 
-| Use         | To match character                    |
-| ----------- | ------------------------------------- |
+| Use         | To match character                                                         |
+| ----------- | -------------------------------------------------------------------------- |
 | `\p{ctgry}` | In that [Unicode Category](#Supported%20Unicode%20Categories) or block     |
 | `\P{ctgry}` | Not in that [Unicode Category](#Supported%20Unicode%20Categories) or block |
-| `\w`        | Word character                        |
-| `\W`        | Non-word character                    |
-| `\d`        | Decimal digit                         |
-| `\D`        | Not a decimal digit                   |
-| `\s`        | White-space character                 |
-| `\S`        | Non-white-space char                  |
+| `\w`        | Word character                                                             |
+| `\W`        | Non-word character                                                         |
+| `\d`        | Decimal digit                                                              |
+| `\D`        | Not a decimal digit                                                        |
+| `\s`        | White-space character                                                      |
+| `\S`        | Non-white-space char                                                       |
 
 
 # Quantifiers
 
 | Greedy <br> _as many as possible_ | Lazy <br> _as few as possible_ | Matches           |
 | --------------------------------- | ------------------------------ | ----------------- |
-| `*`                               | *?                             | 0 or more times   |
-| `+`                               | +?                             | 1 or more times   |
-| `?`                               | ??                             | 0 or 1 time       |
-| `{n}`                             | {n}?                           | Exactly n times   |
-| `{n,}`                            | {n,}?                          | At least n times  |
-| `{n,m}`                           | {n,m}?                         | From n to m times |
+| `*`                               | `*?`                           | 0 or more times   |
+| `+`                               | `+?`                           | 1 or more times   |
+| `?`                               | `??`                           | 0 or 1 time       |
+| `{n}`                             | `{n}?`                         | Exactly n times   |
+| `{n,}`                            | `{n,}?`                        | At least n times  |
+| `{n,m}`                           | `{n,m}?`                       | From n to m times |
 
 
 # Anchors
@@ -113,17 +113,17 @@ Start pattern with `(?`_enabled options_`-`_disabled options_`)` e.g: `(?imnsx-i
 
 # Groups
 
-| Use                   | To define                      |
-| --------------------- | ------------------------------ |
-| `(exp)`               | Indexed group                  |
-| `(?<name>exp)`        | Named group                    |
-| `(?<name1-name2>exp)` | Balancing group                |
-| `(?:exp)`             | Noncapturing group             |
-| `(?=exp)`             | Zero-width positive lookahead <br> the following character must match *exp*  |
+| Use                   | To define                                                                      |
+| --------------------- | ------------------------------------------------------------------------------ |
+| `(exp)`               | Indexed group                                                                  |
+| `(?<name>exp)`        | Named group                                                                    |
+| `(?<name1-name2>exp)` | Balancing group                                                                |
+| `(?:exp)`             | Noncapturing group                                                             |
+| `(?=exp)`             | Zero-width positive lookahead <br> the following character must match *exp*    |
 | `(?!exp)`             | Zero-width negative lookahead <br> the following character cannot match *exp*  |
-| `(?<=exp)`            | Zero-width positive lookbehind <br> the previous characters must match *exp* |
+| `(?<=exp)`            | Zero-width positive lookbehind <br> the previous characters must match *exp*   |
 | `(?<!exp)`            | Zero-width negative lookbehind <br> the previous characters cannot match *exp* |
-| `(?>exp)`             | Non-backtracking (greedy)      |
+| `(?>exp)`             | Non-backtracking (greedy)                                                      |
 
 Example:
 ```
