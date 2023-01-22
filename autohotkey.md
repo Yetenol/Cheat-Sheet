@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 example: Get Program stdout
 command: Shell := ComObjCreate("WScript.Shell")
 ---

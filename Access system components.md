@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 example: [ Settings, Icons, Panel, Consoles  ]
 command: 'ms-settings:display'
 priority: 2

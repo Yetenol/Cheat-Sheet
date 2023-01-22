@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 example: Always keep on this device
 command: '[System.IO.FileAttributes]::ReadOnly'
 ---

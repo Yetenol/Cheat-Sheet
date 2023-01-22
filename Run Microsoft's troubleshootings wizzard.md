@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 example: Printer Troubleshooter
 command: msdt -id PrinterDiagnosticmsdt
 ---

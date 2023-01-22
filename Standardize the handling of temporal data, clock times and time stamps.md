@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 example: First day of this month
 command: '[DateTime]::Now.TimeOfDay'
 ---

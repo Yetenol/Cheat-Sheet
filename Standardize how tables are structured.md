@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 example: Extract table to seperate files
 command: 
 priority: 1

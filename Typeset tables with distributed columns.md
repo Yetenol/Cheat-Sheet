@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 example: Equally distributed column width
 command: '\begin{tabularx}{\columnwidth}'
 priority: 5

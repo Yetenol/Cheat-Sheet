@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 example: Certificates
 command: certmgr.msc
 ---

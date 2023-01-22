@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 example: [ Cheat sheets, Package Documentation ]
 command: '\PackageError {⟨package name⟩} {⟨error text⟩} {}'
 priority: 1

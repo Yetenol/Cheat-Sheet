@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 example: Norm
 command: 
 priority: 7

@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 example: [ Chapter folder, external resources ]
 command: table-floats/
 priority: 2

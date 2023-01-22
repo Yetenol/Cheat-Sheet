@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 example: [ This PC, Desktop, Downloads ]
 command: 'shell:My Pictures'
 priority: 1

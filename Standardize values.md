@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 example: [ Numbers, Symbols, Quantities, Money ]
 command: [ '\qty{3}{\celsius}', '\phi', '\dEUR{1.5}' ]
 priority: 4

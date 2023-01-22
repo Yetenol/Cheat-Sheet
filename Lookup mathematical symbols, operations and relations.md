@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 example: Arrows
 command: \mathbb{NR}
 priority: 3
