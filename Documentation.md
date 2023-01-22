@@ -3,10 +3,7 @@ dg-publish: true
 dg-home: true
 dg-enable-search: true
 dg-link-preview: true
-dg-show-inline-title: true
 ---
-
-# Documentation 
 
 This project contains all my documentations of my developer life including code templates, tips and tricks, cheat sheets and glossaries.
 

@@ -36,6 +36,6 @@ SORT
 Sources:
 
 Related:
-[Antons Digital Garden](Antons%20Digital%20Garden.md)
+[Documentation](Documentation.md)
 
 Tags:
