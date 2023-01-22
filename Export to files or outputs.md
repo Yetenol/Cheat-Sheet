@@ -1,5 +1,5 @@
 ---
-dg-publish: false
+dg-publish: true
 example: [ CSV Tables, Plaintext files ]
 command: 'Export-Csv -Delimiter "," -NoTypeInformation -Path ".\text.csv"'
 ---

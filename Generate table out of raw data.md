@@ -1,5 +1,5 @@
 ---
-dg-publish: false
+dg-publish: true
 example: Display .csv file as table
 command: '\pgfplotstabletypeset [⟨options⟩] {⟨csv file⟩}'
 priority: 3

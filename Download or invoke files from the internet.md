@@ -1,5 +1,5 @@
 ---
-dg-publish: false
+dg-publish: true
 example: Download and extract ZIP containers
 command: 
 ---
