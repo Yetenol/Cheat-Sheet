@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 example: add environment specific commands
 command: \usepackage{etoolbox}
 ---
