@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 example: Convert wikilinks to markdown
 command: 
 ---

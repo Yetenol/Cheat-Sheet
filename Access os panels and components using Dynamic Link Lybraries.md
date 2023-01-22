@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 example: Create .lnk shortcut
 command: rundll32 appwiz.cpl,NewLinkHere
 ---

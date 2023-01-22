@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 example: Recycle Bin
 command: shell:::{}
 priority: 3

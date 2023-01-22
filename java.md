@@ -1,3 +1,10 @@
+---
+dg-publish: true
+example: 
+command: 
+priority: 
+---
+
 # Datentypen
 
 ## Typecasting

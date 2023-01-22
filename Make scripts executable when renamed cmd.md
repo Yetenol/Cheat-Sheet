@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 example: script.ps1.bat
 command: 'Invoke-Command -ScriptBlock ([ScriptBlock]::Create($cmd))'
 ---

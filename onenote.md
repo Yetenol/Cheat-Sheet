@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 example: Mathematical Typesetting
 command: \displaystyle\bmatrix(1&2@a&b) 
 ---

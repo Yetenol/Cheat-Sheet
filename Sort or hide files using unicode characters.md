@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 example: Character Sorting
 command: [ '!', '+',, 'Ξ' ]
 ---

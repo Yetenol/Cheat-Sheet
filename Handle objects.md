@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 example: [ Import, Export, Filter, RegEx Parsing ]
 command: 
 priority: 2

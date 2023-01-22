@@ -1,3 +1,10 @@
+---
+dg-publish: true
+example: 
+command: 
+priority: 
+---
+
 # Query types
 
 1.  **TABLE**: The traditional view type; one row per data point, with several columns of field data.

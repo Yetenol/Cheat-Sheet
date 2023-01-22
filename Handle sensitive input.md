@@ -1,3 +1,10 @@
+---
+dg-publish: true
+example: 
+command: 
+priority: 
+---
+
 # Encrypt or input data
 
 Don't save passwords as plain text. Instead save them as a secure string and **encrypt** them **locally**.

@@ -1,3 +1,10 @@
+---
+dg-publish: true
+example: 
+command: 
+priority: 
+---
+
 ## Pass-by-Value
 
 When a parameter is pass-by-value, the caller and the callee method operate on two different variables which are copies of each other. Any changes to one variable don't modify the other.

@@ -1,3 +1,10 @@
+---
+dg-publish: true
+example: 
+command: 
+priority: 
+---
+
 ```powershell
 $paths = [String[]] @($env:path -split ";") 
 $paths = $paths[0..($paths.Length-2)]

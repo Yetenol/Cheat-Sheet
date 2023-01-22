@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 example: LaTeX Render
 command: ![](https://render.githubusercontent.com/render/math?math=e^{i\pi}=-1)
 ---

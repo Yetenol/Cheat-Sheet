@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 example: ϖ vs π
 command: '\renewcommand{\pi}{\varpi}'
 priority: 5

@@ -1,3 +1,10 @@
+---
+dg-publish: true
+example: 
+command: 
+priority: 
+---
+
 ## Command
 
 - scripts that are only available in the Windows PowerShell environment

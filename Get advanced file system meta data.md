@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 example: [ Rating, Shared, PrivateBuild ]
 command: ''
 ---

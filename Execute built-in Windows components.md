@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 example: Certificates
 command: certmgr.msc
 ---

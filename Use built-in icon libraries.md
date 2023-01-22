@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 example: Images Library
 command: shell32.dll
 ---

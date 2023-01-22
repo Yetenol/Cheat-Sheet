@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 example: replace PowerShell with Terminal
 command: '%LocalAppData%\Microsoft\Windows\WinX'
 ---

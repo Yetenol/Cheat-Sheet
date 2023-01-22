@@ -1,3 +1,10 @@
+---
+dg-publish: true
+example: 
+command: 
+priority: 
+---
+
 Class: `[System.Text.RegularExpressions.Regex]`
 
 # Pattern matching with Regex objects

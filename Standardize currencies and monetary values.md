@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 example: Display currency before value
 command: \DefineCurrency{EUR}{name={euro},plural={euros},symbol={\euro},iso={EUR}}
 ---

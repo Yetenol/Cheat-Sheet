@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 example: Run as Administrator
 command: 'Out-File -FilePath $file'
 ---

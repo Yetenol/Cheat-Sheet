@@ -1,3 +1,10 @@
+---
+dg-publish: true
+example: 
+command: 
+priority: 
+---
+
 # Conclusion
 
 - create an indentation **workflow** that works **regardless of** the indentation **style**

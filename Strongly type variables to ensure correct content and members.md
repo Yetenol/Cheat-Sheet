@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 example: [ Hashtable, PSCustomObject ]
 command: '[PSCustomObject] @{ Name = "Karl"; ID = 45; }'
 ---

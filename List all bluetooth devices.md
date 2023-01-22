@@ -1,3 +1,10 @@
+---
+dg-publish: true
+example: 
+command: 
+priority: 
+---
+
 ```powershell
 Get-PnpDevice -Class Bluetooth | where HardwareID -Match "\\DEV_"
 ```

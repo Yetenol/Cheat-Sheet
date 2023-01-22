@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 example: Open in VS Code
 command: HKEY_CLASSES_ROOT\Directory\shell\
 ---

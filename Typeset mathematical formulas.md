@@ -1,3 +1,10 @@
+---
+dg-publish: true
+example: 
+command: 
+priority: 
+---
+
 
 - [User's Guide for the amsmath Package (Version 2.1)](http://www.ams.org/arc/tex/amsmath/amsldoc.pdf)
 - [GitHub - Yetenol/LaTeX.table: A LaTeX package to format tables](https://github.com/Yetenol/latex.table)

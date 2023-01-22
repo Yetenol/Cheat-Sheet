@@ -1,3 +1,10 @@
+---
+dg-publish: true
+example: 
+command: 
+priority: 
+---
+
 # Naming convention
 
 - `yyyyMMdd_HHmmss` for original media

@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 example: Examinate Variables
 command: break
 ---

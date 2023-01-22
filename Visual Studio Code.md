@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 example: Shell command keybindungs
 command: 
 ---

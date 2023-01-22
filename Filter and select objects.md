@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 example: Add calculated property
 command: select -First 2 -Last 3
 ---

@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 example: [ Shortcuts, Soft links, Hard links ]
 command: 'New-Item -ItemType SymbolicLink $Path'
 ---

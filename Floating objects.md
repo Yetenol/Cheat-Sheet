@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 example: Images
 command: \begin{figure}[htbp]
 ---

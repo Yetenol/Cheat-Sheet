@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 example: [ Recycle Bin, Downloads folder ]
 command: 'shell:My Pictures'
 priority: 1

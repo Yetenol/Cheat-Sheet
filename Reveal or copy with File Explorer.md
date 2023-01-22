@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 example: use copy UI
 command: 'explorer "/select,`"$(Resolve-Path $file)`""'
 ---

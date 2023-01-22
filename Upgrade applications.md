@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 example: Update Store Apps
 command: '$wmiObj.UpdateScanMethod()'
 ---

@@ -1,3 +1,10 @@
+---
+dg-publish: true
+example: 
+command: 
+priority: 
+---
+
 - **Resolve** path for **existing** files or folders
     ```powershell
     Resolve-Path $file
