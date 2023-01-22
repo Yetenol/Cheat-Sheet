@@ -1,5 +1,5 @@
 ---
-dg-publish: false
+dg-publish: true
 example: Legend below the table defines the symbols used
 command: 'S[table-format = -3.0e-1]'
 priority: 7

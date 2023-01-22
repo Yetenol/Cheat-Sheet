@@ -1,5 +1,5 @@
 ---
-dg-publish: false
+dg-publish: true
 example: [ Tables, Images, Plots ]
 command: '\begin{figure}'
 priority: 5

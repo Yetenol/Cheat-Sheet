@@ -1,5 +1,5 @@
 ---
-dg-publish: false
+dg-publish: true
 example: [ 3D Objects, Cookies ]
 command: shell:::{}
 ---
