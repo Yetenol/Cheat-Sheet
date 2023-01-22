@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+dg-permalink: "powershell"
 example: 
 command: 
 priority: 
@@ -37,6 +38,6 @@ SORT
 Sources:
 
 Related:
-[Documentation](Documentation.md)
+[Anton's Digital Garden](Anton's%20Digital%20Garden.md)
 
 Tags:
