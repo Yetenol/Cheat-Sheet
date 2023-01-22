@@ -1,6 +1,9 @@
 ---
 dg-publish: true
 dg-home: true
+dg-enable-search: true
+dg-link-preview: true
+dg-show-inline-title: true
 ---
 
 # Documentation 
