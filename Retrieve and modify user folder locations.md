@@ -83,19 +83,19 @@ priority: 1
   Value type: REG_EXPAND_SZ
 
 #obsidian/fixTable 
-    | Shell Folder Name - _Description_                                | Default location                                              |
-    | ---------------------------------------------------------------- | ------------------------------------------------------------- |
-    | `{3D644C9B-1FB8-4f30-9B45-F670235F79C0}` <br> _Common Downloads_ | `%PUBLIC%\Downloads`                                          |
-    | `Common AppData`                                                 | `%ProgramData%`                                               |
-    | `Common Desktop`                                                 | `%PUBLIC%\Desktop`                                            |
-    | `Common Documents`                                               | `%PUBLIC%\Documents`                                          |
-    | `Common Programs`                                                | `%ProgramData%\Microsoft\Windows\Start Menu\Programs`         |
-    | `Common Start Menu`                                              | `%ProgramData%\Microsoft\Windows\Start Menu`                  |
-    | `Common Startup`                                                 | `%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup` |
-    | `Common Templates`                                               | `%ProgramData%\Microsoft\Windows\Templates`                   |
-    | `CommonMusic`                                                    | `%PUBLIC%\Music`                                              |
-    | `CommonPictures`                                                 | `%PUBLIC%\Pictures`                                           |
-    | `CommonVideo`                                                    | `%PUBLIC%\Videos`                                             |
+| Shell Folder Name - _Description_                                | Default location                                              |
+| ---------------------------------------------------------------- | ------------------------------------------------------------- |
+| `{3D644C9B-1FB8-4f30-9B45-F670235F79C0}` <br> _Common Downloads_ | `%PUBLIC%\Downloads`                                          |
+| `Common AppData`                                                 | `%ProgramData%`                                               |
+| `Common Desktop`                                                 | `%PUBLIC%\Desktop`                                            |
+| `Common Documents`                                               | `%PUBLIC%\Documents`                                          |
+| `Common Programs`                                                | `%ProgramData%\Microsoft\Windows\Start Menu\Programs`         |
+| `Common Start Menu`                                              | `%ProgramData%\Microsoft\Windows\Start Menu`                  |
+| `Common Startup`                                                 | `%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup` |
+| `Common Templates`                                               | `%ProgramData%\Microsoft\Windows\Templates`                   |
+| `CommonMusic`                                                    | `%PUBLIC%\Music`                                              |
+| `CommonPictures`                                                 | `%PUBLIC%\Pictures`                                           |
+| `CommonVideo`                                                    | `%PUBLIC%\Videos`                                             |
 
 
 
