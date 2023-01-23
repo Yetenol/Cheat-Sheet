@@ -30,12 +30,46 @@ SORT <expression> [ASC/DESC]
 
 - [Functions - Dataview](https://blacksmithgu.github.io/obsidian-dataview/reference/functions/#choicebool-left-right)
 
+# Format output
+
+Hide bullet point and remove indentation from first level of dataview results using a custom css snippet
+```css
+/* no need the previous padding adjustment if using Minimal */
+ul.dataview.list-view-ul {
+	list-style: none;
+    padding-left: 0;
+}
+
+/* reinstate the bullet to "subpoints" but also adjust the position
+   for the bullet to be on the inside (for compatibility with Minimal) */
+ul.dataview.dataview-ul.dataview-result-list-ul {
+	list-style: disc;
+	/* margin-left: 1.5rem; */
+}
+```
+
+Hide bullet point and remove indentation from first level of all lists
+```css
+/* no need the previous padding adjustment if using Minimal */
+ul {
+	list-style: none;
+    padding-left: 0;
+}
+
+/* reinstate the bullet to "subpoints" but also adjust the position
+   for the bullet to be on the inside (for compatibility with Minimal) */
+ul ul {
+	list-style: disc;
+	margin-left: 1.5rem;
+}
+```
 
 ---
 
 #research/addExamples
 
 Sources:
+- 2023-01-23: [Can we make a cleaner Dataview list? - Resolved help - Obsidian Forum](https://forum.obsidian.md/t/can-we-make-a-cleaner-dataview-list/32843/10)
 - 2023-01-05: [Structure of a Query - Dataview](https://blacksmithgu.github.io/obsidian-dataview/queries/structure/)
 - 2023-01-17: [Embed files - Obsidian-docs](https://jackiegeek.gitee.io/obsidian-docs/fr/How%20to/Embed%20files/)
 
