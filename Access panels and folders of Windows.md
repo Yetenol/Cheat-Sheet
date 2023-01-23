@@ -4,7 +4,6 @@ example: Recycle Bin
 command: shell:::{}
 priority: 3
 ---
-
 Referenced using a [**CLSID keys**](https://docs.microsoft.com/de-de/windows/win32/com/clsid-key-hklm?redirectedfrom=MSDN) (globally unique identifier that identifies a COM class object)
 
 ```dataview
@@ -73,7 +72,7 @@ Applications
 shell:::{4234d49b-0245-4df3-b780-3893943456e1}
 ```
 
-==AutoPlay==
+AutoPlay &#127775;
 ```
 shell:::{9C60DE1E-E5FC-40f4-A487-460851A8D915}
 ```
@@ -113,7 +112,7 @@ Control Panel
 shell:::{5399E694-6CE5-4D6C-8FCE-1D8870FDCBA0}
 ```
 
-==Control Panel (All Tasks)==
+Control Panel (All Tasks) &#127775;
 ```
 shell:::{ED7BA470-8E54-465E-825C-99712043E01C}
 ```
@@ -296,7 +295,7 @@ shell:::{D555645E-D4F8-4c29-A827-D93C859C4F2A}
     shell:::{D555645E-D4F8-4c29-A827-D93C859C4F2A}\pageRepeatRateSlowKeysSettings
     ```
 
-==E-mail (default e-mail program)==
+E-mail (default e-mail program) &#127775;
 ```
 shell:::{2559a1f5-21d7-11d4-bdaf-00c04f60b9f0}
 ```
@@ -356,7 +355,7 @@ Hyper-V Remote File Browsing
 shell:::{0907616E-F5E6-48D8-9D61-A91C3D28106D}
 ```
 
-==Indexing Options==
+Indexing Options &#127775;
 ```
 shell:::{87D66A43-7B11-4A28-9811-C86EE395ACF7}
 ```
@@ -406,7 +405,7 @@ Media Servers
 shell:::{289AF617-1CC3-42A6-926C-E6A863F0E3BA}
 ```
 
-==Mouse Properties==
+Mouse Properties &#127775;
 ```
 shell:::{6C8EEC18-8D75-41B2-A177-8831D59D2D50}
 ```
@@ -422,7 +421,7 @@ My Documents
 shell:::{450D8FBA-AD25-11D0-98A8-0800361B1103}
 ```
 
-==User Accounts (netplwiz)==
+User Accounts (netplwiz) &#127775;
 ```
 shell:::{7A9D77BD-5403-11d2-8785-2E0420524153}
 ```
@@ -447,7 +446,7 @@ shell:::{8E908FC9-BECC-40f6-915B-F4CA0E70D03D}
     shell:::{8E908FC9-BECC-40f6-915B-F4CA0E70D03D}\ShareMedia
     ```
 
-==Network Connections (adapters)==
+Network Connections (adapters) &#127775;
 ```
 shell:::{7007ACC7-3202-11D1-AAD2-00805FC1270E}
 shell:::{992CFFA0-F557-101A-88EC-00DD010CCC48}
@@ -473,7 +472,7 @@ Offline Files Folder
 shell:::{AFDB1F70-2A4C-11d2-9039-00C04F8EEB3E}
 ```
 
-==OneDrive==
+OneDrive &#127775;
 ```
 shell:::{018D5C66-4533-4307-9B53-224DE2ED1FE6}
 ```
@@ -493,7 +492,7 @@ shell:::{ED834ED6-4B5A-4bfe-8F11-A626DCB6A921}
     shell:::{ED834ED6-4B5A-4bfe-8F11-A626DCB6A921}\pageColorization
     ```
 
-- ==Desktop Background==    
+- Desktop Background &#127775;    
     ```
     shell:::{ED834ED6-4B5A-4bfe-8F11-A626DCB6A921}\pageWallpaper
     ```
@@ -580,7 +579,7 @@ Recovery
 shell:::{9FE63AFD-59CF-4419-9775-ABCC3849F861}
 ```
 
-==Recycle Bin==
+Recycle Bin &#127775;
 ```
 shell:::{645FF040-5081-101B-9F08-00AA002F954E}
 ```
@@ -685,12 +684,12 @@ Set Program Access and Computer Defaults
 shell:::{2559a1f7-21d7-11d4-bdaf-00c04f60b9f0}
 ```
 
-==Show Desktop==
+Show Desktop &#127775;
 ```
 shell:::{3080F90D-D7AD-11D9-BD98-0000947B0257}
 ```
 
-==Sound==
+Sound &#127775;
 ```
 shell:::{F2DDFC82-8F12-4CDD-B7DC-D4FE1425AA4D}
 ```
@@ -740,12 +739,12 @@ Tablet PC Settings
 shell:::{80F3F1D5-FECA-45F3-BC32-752C152E456E}
 ```
 
-==Task View==
+Task View &#127775;
 ```
 shell:::{3080F90E-D7AD-11D9-BD98-0000947B0257}
 ```
 
-==Taskbar - User Pinned==
+Taskbar - User Pinned &#127775;
 ```
 shell:::{1f3427c8-5c10-4210-aa03-2ee45287d668}
 ```
@@ -840,7 +839,7 @@ shell:::{60632754-c523-4b62-b45c-4172da012619}
     shell:::{60632754-c523-4b62-b45c-4172da012619}\pageAdminTasks
     ```
 
-==User Accounts (netplwiz)==
+User Accounts (netplwiz) &#127775;
 ```
 shell:::{7A9D77BD-5403-11d2-8785-2E0420524153}
 ```
