@@ -52,6 +52,8 @@ TABLE WITHOUT ID
     as "Category"
 FROM
     "apps"
+FLATTEN
+    "This is a Map of all apps"
 ```
 
 
