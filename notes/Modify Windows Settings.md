@@ -284,6 +284,6 @@ ms-settings:developers
 Sources:
 
 Related:
-[README](../README.md)
+[Setup my computers](../Setup%20my%20computers.md)
 
 Tags:

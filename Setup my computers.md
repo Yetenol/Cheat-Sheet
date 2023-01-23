@@ -1,4 +1,3 @@
-# Guide and instructions to setup my computers
 
 ```dataview
 LIST
@@ -27,6 +26,10 @@ FLATTEN
     "This is a Map of Content"
 ```
 
+# List of all applications
+
+Programs that I no longer install are shown in italics.
+
 ```dataview
 TABLE WITHOUT ID
     choice(
@@ -49,6 +52,12 @@ FROM
 ```
 
 
+---
 
 
+Sources:
 
+Related:
+
+Tags:
+[[Anton's Digital Garden]]
