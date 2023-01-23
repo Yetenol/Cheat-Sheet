@@ -6,4 +6,4 @@ githubRepo: laplock
 githubBinary: laplock.exe
 ---
 
-[[Install personalisation apps]]
+[[../Install personalisation apps]]

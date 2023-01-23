@@ -9,4 +9,4 @@ website:
 priority:
 ---
 
-[[Install office apps]]
+[[../Install office apps]]

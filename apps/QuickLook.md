@@ -20,4 +20,4 @@ or install via winget:
 
 
 
-[[Install personalisation apps]]
+[[../Install personalisation apps]]

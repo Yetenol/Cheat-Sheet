@@ -31,4 +31,4 @@ Open `System Tray > OneDrive > More > Settings`
 
 
 
-[[Install storage apps]]
+[[../Install storage apps]]

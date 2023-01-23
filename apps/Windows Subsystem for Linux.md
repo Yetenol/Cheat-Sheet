@@ -13,4 +13,4 @@ wsl --install Ubuntu
 or install via [Microsoft Store](https://microsoft.com/store/apps/9nblggh4msv6)
 
 
-[[Install subsystems]]
+[[../Install subsystems]]

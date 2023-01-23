@@ -33,4 +33,4 @@ or install via [Website](https://www.videolan.org/vlc/)
     ```
 
 
-[[Install entertainment apps]]
+[[../Install entertainment apps]]

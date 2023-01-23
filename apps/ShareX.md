@@ -43,4 +43,4 @@ or install via [Github](https://github.com/ShareX/ShareX/releases/latest)
 >- [x] Use custom screenshot folder
 >- `%MyPictures%\Screenshots` =: Screenshot folder
 
-[[Install personalisation apps]]
+[[../Install personalisation apps]]

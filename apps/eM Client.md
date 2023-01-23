@@ -87,4 +87,4 @@ or via winget:
 - Click `Save & Close`
 
 
-[[Install messengers]]
+[[../Install messengers]]

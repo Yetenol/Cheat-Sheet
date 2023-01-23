@@ -18,4 +18,4 @@ or install via [Microsoft Store](https://microsoft.com/store/apps/9wzdncrfhvjl)
 
 
 
-[[Install office apps]]
+[[../Install office apps]]

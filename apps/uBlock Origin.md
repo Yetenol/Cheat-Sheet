@@ -35,4 +35,4 @@ Related:
 [[Microsoft Edge]]
 
 Tags:
-[[See extension]]
+[[../See extension]]

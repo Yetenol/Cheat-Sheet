@@ -49,4 +49,4 @@ or install via Microsoft Store:
     ```
 
 
-[[Install development apps]]
+[[../Install development apps]]

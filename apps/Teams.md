@@ -17,4 +17,4 @@ or install via [Website](https://www.microsoft.com/en-us/microsoft-teams/downloa
 > - [ ] Auto-start application
 
 
-[[Install messengers]]
+[[../Install messengers]]

@@ -22,4 +22,4 @@ or install via [Website](https://signal.org/en/download/)
 
 
 
-[[Install messengers]]
+[[../Install messengers]]

@@ -35,4 +35,4 @@ or install via winget:
 
 
 
-[[Install office apps]]
+[[../Install office apps]]

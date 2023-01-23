@@ -12,4 +12,4 @@ or install via [Github](https://github.com/efraimbart/OpenInWSA/releases/latest/
 
 - Install [browser extension](https://chrome.google.com/webstore/detail/open-in-wsa/nkfpikoflncblmlajlcagaflndiijhhl)
 
-[[Install subsystems]]
+[[../Install subsystems]]

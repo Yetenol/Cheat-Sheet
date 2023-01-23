@@ -9,4 +9,4 @@ website: https://batterybarpro.com/basic.php
 priority: 
 ---
 
-[[Install personalisation apps]]
+[[../Install personalisation apps]]

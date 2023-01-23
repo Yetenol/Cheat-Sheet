@@ -80,4 +80,4 @@ $Shortcut.Save()
 ```
 
 
-[[Install storage apps]]
+[[../Install storage apps]]

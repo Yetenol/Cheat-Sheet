@@ -21,4 +21,4 @@ or via winget:
 
 - if used as default browser, see [[Microsoft Edge]] for instructions
 
-[[Install office apps]]
+[[../Install office apps]]

@@ -24,4 +24,4 @@ Related:
 [[Minecraft Java]]
 
 Tags:
-[[See extension]]
+[[../See extension]]

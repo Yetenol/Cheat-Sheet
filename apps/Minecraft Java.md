@@ -184,4 +184,4 @@ Sources:
 Related:
 
 Tags:
-[[Install games]]
+[[../Install games]]

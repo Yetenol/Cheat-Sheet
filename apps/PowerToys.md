@@ -37,4 +37,4 @@ or install via Microsoft Store:
 
 
 
-[[Install personalisation apps]]
+[[../Install personalisation apps]]

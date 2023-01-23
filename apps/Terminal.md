@@ -46,4 +46,4 @@ or via winget:
 >> - Save changes
 
 
-[[Install development apps]]
+[[../Install development apps]]

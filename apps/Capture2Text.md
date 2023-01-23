@@ -21,4 +21,4 @@ Install via [Website](https://sourceforge.net/projects/capture2text/files/Captur
 
 
 
-[[Install personalisation apps]]
+[[../Install personalisation apps]]

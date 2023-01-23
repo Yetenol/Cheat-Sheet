@@ -25,4 +25,4 @@ or install via [Website](https://account.microsoft.com/services/office/install)
 
 
 
-[[Install office apps]]
+[[../Install office apps]]

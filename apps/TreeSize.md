@@ -15,4 +15,4 @@ or via [Website](https://www.jam-software.com/treesize_free)
 or via winget:  
 `winget install -e JAMSoftware.TreeSizeFree`
 
-[[Install storage apps]]
+[[../Install storage apps]]
