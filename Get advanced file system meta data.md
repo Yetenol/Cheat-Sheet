@@ -4,9 +4,8 @@ example: [ Rating, Shared, PrivateBuild ]
 command: ''
 ---
 
-- get **advanced meta data**    
-  ` Attributes `, ` Computer `, ` DateAccessed `, ` DateCreated `, ` DateModified `, ` Debug `, ` File `, ` FileExtension `, ` FileLocation `, ` Filename `, ` FolderName `, ` IsHidden `, ` IsReadOnly `, ` IsSystem `, ` ItemType `, ` LinkStatus `, ` Name `, ` Owner `, ` Patched `, ` Path `, ` PerceivedType `, ` PreRelease `, ` PrivateBuild `, ` Rating `, ` Shared `, ` SharingStatus `, ` Size `, ` SpecialBuild `
-
+Get **advanced meta data**    
+- `Attributes`, `Computer`, `DateAccessed`, `DateCreated`, `DateModified`, `Debug`, `File`, `FileExtension`, `FileLocation`, `Filename`, `FolderName`, `IsHidden`, `IsReadOnly`, `IsSystem`, `ItemType`, `LinkStatus`, `Name`, `Owner`, `Patched`, `Path`, `PerceivedType`, `PreRelease`, `PrivateBuild`, `Rating`, `Shared`, `SharingStatus`, `Size`, `SpecialBuild`
 ```powershell
 function Get-FileMetaData {
     <#
