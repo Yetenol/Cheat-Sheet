@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 storeId: 
 website: https://account.microsoft.com/services/office/install
 ---

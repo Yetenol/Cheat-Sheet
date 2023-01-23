@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 categoryName: Subsystem
 priority: 10
 ---

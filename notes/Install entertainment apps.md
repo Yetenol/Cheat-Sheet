@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 categoryName: Entertainment
 priority: 8
 ---

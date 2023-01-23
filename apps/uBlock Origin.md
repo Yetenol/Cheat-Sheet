@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 storeId: 
 wingetId:
 edgeId: odfafepnkmbhccpbejgmiehpchacaeak

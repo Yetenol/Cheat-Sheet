@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 storeId: xpdc2rh70k22mn
 wingetId: Discord.Discord
 githubUser: 

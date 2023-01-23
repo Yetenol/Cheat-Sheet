@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 storeId: 9mvlwt5dmskr
 ---
 

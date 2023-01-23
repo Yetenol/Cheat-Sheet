@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 storeId: 
 wingetId: GeoGebra.Classic.5
 githubUser: 

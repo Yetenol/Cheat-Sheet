@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 storeId: 9mvvszk43qqw
 wingetId: JGraph.Draw
 githubUser: 

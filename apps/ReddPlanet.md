@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 storeId: 9nblggh4s44m
 priority: 10
 ---

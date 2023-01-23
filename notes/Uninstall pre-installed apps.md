@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 priority: -1
 ---
 

@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 storeId: 
 githubUser: dechamps
 githubRepo: laplock

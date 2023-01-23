@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 storeId: 
 wingetId: SecombaGmbH.Boxcryptor
 githubUser: 

@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 categoryName: Communication
 priority: 7
 ---

@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 storeId: xpdp273c0xhqh2
 wingetId: Adobe.Acrobat.Reader.64-bit
 githubUser: 

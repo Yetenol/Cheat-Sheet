@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 storeId: XPFFTQ037JWMHS
 wingetId: Microsoft.Edge
 githubUser: 

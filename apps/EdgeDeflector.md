@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 storeId: 
 wingetId: da2x.edgedeflector
 githubUser: da2x

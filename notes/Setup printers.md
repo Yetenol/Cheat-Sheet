@@ -1,4 +1,5 @@
 ---
+dg-publish: true
 example: Scanning Software
 command: 'shell:printersfolder'
 priority: 12
