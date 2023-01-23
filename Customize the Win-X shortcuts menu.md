@@ -8,19 +8,15 @@ The context menu of the Start icon is called Win-X Menu
 
 # View shortcuts
 
-Vertical lines separate the context menu into 3 groups starting at the bottom.
-
-```
-%LocalAppData%\Microsoft\Windows\WinX
-```
+Vertical lines separate the context menu into 3 groups starting at the bottom  
 
 # Add a shortcut
 
-- paste shortcuts into preferred group
+- Paste shortcuts into preferred group at
     ```
     %LocalAppData%\Microsoft\Windows\WinX
     ```
-- download [Hashlink](https://github.com/riverar/hashlnk) from [Github](https://raw.githubusercontent.com/riverar/hashlnk/master/bin/hashlnk_0.2.0.0.zip)
+- Download [Hashlink](https://github.com/riverar/hashlnk) from [Github](https://raw.githubusercontent.com/riverar/hashlnk/master/bin/hashlnk_0.2.0.0.zip)
 
 
 
