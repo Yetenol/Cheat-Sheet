@@ -86,8 +86,6 @@ Only the **same PowerShell instance** can decrypt.
 
 
 ---
-#obsidian/done 
-
 Sources:
 
 Related:
