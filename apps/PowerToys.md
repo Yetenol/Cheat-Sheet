@@ -36,4 +36,4 @@ or install via Microsoft Store:
 
 
 
-[Install personalisation apps](../notes/Install%20personalisation%20apps.md)
+[[Install personalisation apps]]

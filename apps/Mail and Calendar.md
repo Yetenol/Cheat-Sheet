@@ -53,4 +53,4 @@ or install via [Microsoft Store](https://microsoft.com/store/apps/9wzdncrfhvqm)
 
 
 
-[Install messengers](../notes/Install%20messengers.md)
+[[Install messengers]]

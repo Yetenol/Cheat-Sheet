@@ -86,4 +86,4 @@ or via winget:
 - Click `Save & Close`
 
 
-[Install messengers](../notes/Install%20messengers.md)
+[[Install messengers]]

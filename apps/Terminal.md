@@ -45,4 +45,4 @@ or via winget:
 >> - Save changes
 
 
-[Install development apps](../notes/Install%20development%20apps.md)
+[[Install development apps]]

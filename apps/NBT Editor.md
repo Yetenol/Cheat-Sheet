@@ -16,6 +16,6 @@ Synopsis:: Modify `level.dat`'s NBT data for colorful text, seeds extraction, in
 Sources:
 
 Related:
-[Minecraft Java](Minecraft%20Java.md)
+[[Minecraft Java]]
 
 Tags:

@@ -8,4 +8,4 @@ website: https://download.geogebra.org/package/win
 priority: 10
 ---
 
-[[Install educational apps](../notes/Install%20educational%20apps.md)]
+[[[Install educational apps]]]

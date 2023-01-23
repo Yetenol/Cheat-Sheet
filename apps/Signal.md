@@ -21,4 +21,4 @@ or install via [Website](https://signal.org/en/download/)
 
 
 
-[Install messengers](../notes/Install%20messengers.md)
+[[Install messengers]]

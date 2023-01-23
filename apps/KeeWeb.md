@@ -79,4 +79,4 @@ $Shortcut.Save()
 ```
 
 
-[Install storage apps](../notes/Install%20storage%20apps.md)
+[[Install storage apps]]

@@ -61,6 +61,6 @@ winget uninstall -e Microsoft.Todos_8wekyb3d8bbwe                          # Mic
 Sources:
 
 Related:
-[Setup my computers](../Setup%20my%20computers.md)
+[[Setup my computers]]
 
 Tags:

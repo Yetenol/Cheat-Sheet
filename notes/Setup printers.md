@@ -59,6 +59,6 @@ priority: 12
 Sources:
 
 Related:
-[Setup my computers](../Setup%20my%20computers.md)
+[[Setup my computers]]
 
 Tags:

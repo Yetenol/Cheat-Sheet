@@ -20,7 +20,7 @@ Synopsis:: Modern rendering engine and client-side optimization mod
 Sources:
 
 Related:
-[Minecraft Java](Minecraft%20Java.md)
+[[Minecraft Java]]
 
 Tags:
-[See extension](../notes/See%20extension.md)
+[[See extension]]

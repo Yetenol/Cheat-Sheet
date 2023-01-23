@@ -17,4 +17,4 @@ or install via [Website](https://www.gimp.org/downloads/)
 
 
 
-[Install office apps](../notes/Install%20office%20apps.md)
+[[Install office apps]]

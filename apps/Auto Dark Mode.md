@@ -20,4 +20,4 @@ priority: 10
 > - `English (English)` =: Language
 
 
-[Install personalisation apps](../notes/Install%20personalisation%20apps.md)
+[[Install personalisation apps]]

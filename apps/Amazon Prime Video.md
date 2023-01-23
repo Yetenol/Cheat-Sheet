@@ -8,4 +8,4 @@ website:
 priority: 10
 ---
 
-[Install entertainment apps](../notes/Install%20entertainment%20apps.md)
+[[Install entertainment apps]]

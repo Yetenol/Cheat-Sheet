@@ -21,4 +21,4 @@ or install via [Website](https://www.ausweisapp.bund.de/download)
 - ON THE PC: Pair the available smartphone
 - Test a Personalausweis
 
-[Install office apps](../notes/Install%20office%20apps.md)
+[[Install office apps]]

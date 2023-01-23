@@ -11,7 +11,7 @@ winget install -e ShareX.ShareX
 ```
 or install via [Github](https://github.com/ShareX/ShareX/releases/latest)
 
-- run at [startup](../notes/How%20to%20Dos.md#edit-startup-apps)
+- [ ] Run at startup
 
 - Disable PrintScreen shortcut elsewhere
     > Open `System Tray > Onedrive > Settings > Backup` tab
@@ -42,4 +42,4 @@ or install via [Github](https://github.com/ShareX/ShareX/releases/latest)
 >- [x] Use custom screenshot folder
 >- `%MyPictures%\Screenshots` =: Screenshot folder
 
-[Install personalisation apps](../notes/Install%20personalisation%20apps.md)
+[[Install personalisation apps]]

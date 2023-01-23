@@ -15,4 +15,4 @@ priority: 6
     Start-Process wt -Verb RunAs -ArgumentList "PowerShell.exe -NoExit -Command $command"
     ```
 
-[Install entertainment apps](../notes/Install%20entertainment%20apps.md)
+[[Install entertainment apps]]

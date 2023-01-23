@@ -32,7 +32,7 @@ No additional setup required
 Sources:
 
 Related:
-[Obsidian](Obsidian.md)
+[[Obsidian]]
 
 Tags:
-[See extension](../notes/See%20extension.md)
+[[See extension]]

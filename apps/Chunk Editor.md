@@ -18,6 +18,6 @@ MCA Selector is an external tool to export or delete selected chunks and regions
 Sources:
 
 Related:
-[Minecraft Java](Minecraft%20Java.md)
+[[Minecraft Java]]
 
 Tags:

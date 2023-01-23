@@ -10,5 +10,5 @@ priority: 10
 > - `EarthPorn` =: Wallpaper subreddit
 
 
-[Install personalisation apps](../notes/Install%20personalisation%20apps.md)
-[Install entertainment apps](../notes/Install%20entertainment%20apps.md)
+[[Install personalisation apps]]
+[[Install entertainment apps]]

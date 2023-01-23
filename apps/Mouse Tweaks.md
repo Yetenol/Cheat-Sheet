@@ -20,7 +20,7 @@ Synopsis:: Enhances inventory management by adding various functions to the mous
 Sources:
 
 Related:
-[Minecraft Java](Minecraft%20Java.md)
+[[Minecraft Java]]
 
 Tags:
-[See extension](../notes/See%20extension.md)
+[[See extension]]

@@ -47,7 +47,7 @@ or [Github](https://github.com/obsidianmd/obsidian-releases/releases/latest)
 A private GitHub repository is used
 
 - Create a new private GitHub repository
-- Setup [Obsidian Git](Obsidian%20Git.md)
+- Setup [[Obsidian Git]]
 
 # Setup note publishing
 
@@ -66,4 +66,4 @@ Sources:
 Related:
 
 Tags:
-[Install office apps](../notes/Install%20office%20apps.md)
+[[Install office apps]]

@@ -20,7 +20,7 @@ Synopsis:: Client side mod to access nearby blocks without leaving your inventor
 Sources:
 
 Related:
-[Minecraft Java](Minecraft%20Java.md)
+[[Minecraft Java]]
 
 Tags:
-[See extension](../notes/See%20extension.md)
+[[See extension]]

@@ -31,7 +31,7 @@ Synopsis:: Finally, an efficient blocker. Easy on CPU and memory.
 Sources:
 
 Related:
-[Microsoft Edge](Microsoft%20Edge.md)
+[[Microsoft Edge]]
 
 Tags:
-[See extension](../notes/See%20extension.md)
+[[See extension]]
