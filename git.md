@@ -62,9 +62,9 @@ git pull origin $mainBranch":"$mainBranch
 ```powershell
 git rebase --interactive origin/HEAD
 ```
-    
+
 **Push** my branch to remote's **main** branch    
-see [git publish script](https://github.com/Yetenol/alias/blob/main/git-publish.ps1)
+- see [git publish script](https://github.com/Yetenol/alias/blob/main/git-publish.ps1)
 ```powershell
 $currentBranch = (git branch --show-current).trim()
 $mainBranch = (git symbolic-ref --short refs/remotes/origin/HEAD).replace("origin/","").trim()
