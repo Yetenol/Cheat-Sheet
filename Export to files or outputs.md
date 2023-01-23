@@ -59,7 +59,6 @@ $c = Get-Command
 	```
 
 - **Encrypted standard string**  
-  read further [[Encrypt or decrypt sensitive text]]
 	```powershell
 	$c | ConvertTo-SecureString -AsPlainText -Force |
 		ConvertFrom-SecureString |
