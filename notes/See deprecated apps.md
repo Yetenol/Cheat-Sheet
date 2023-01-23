@@ -1,3 +1,7 @@
+---
+dg-publish: true
+---
+
 
 ```dynamic-embed
 [[List deprecated apps]]

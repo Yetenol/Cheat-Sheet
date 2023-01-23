@@ -1,3 +1,7 @@
+---
+dg-publish: true
+---
+
 ## Install Microsoft Store third-party storefront app
 
 - Type `app:`_app name_ into Windows Search
