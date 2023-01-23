@@ -35,7 +35,7 @@ priority:
 Sources:
 
 Related:
-[[Troubleshoot and get help]]
+[[Troubleshoot Powershell and help yourself]]
 
 Tags:
 [[PowerShell]]

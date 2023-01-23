@@ -6,10 +6,32 @@ priority: 3
 ---
 Referenced using a [**CLSID keys**](https://docs.microsoft.com/de-de/windows/win32/com/clsid-key-hklm?redirectedfrom=MSDN) (globally unique identifier that identifies a COM class object)
 
-- **[[Archive of old GUIDs ›]]**  
-  3D Objects | `shell:::{�}`
+```dataview
+LIST
+    nonnull(list(
+        choice(
+            any(example),
+            join(nonnull(example)),
+            null
+        ),
+        choice(
+            any(command),
+            join(
+                map(
+                    nonnull(command), 
+                    (x) => "`" + x + "`"
+                )
+            ),
+            null
+        )
+    ))
+FROM
+    [[]]
+SORT
+    choice(priority, priority, 999999)
+```
 
-## Usage
+# Usage
 
 - **Open a location**  
   run one of the following:
@@ -28,7 +50,7 @@ Referenced using a [**CLSID keys**](https://docs.microsoft.com/de-de/windows/win
   $env:Downloads = (New-Object -ComObject Shell.Application).NameSpace('shell:::{088e3905-0323-4b02-9826-5d99428e115f}').Self.Path
   ```
 
-## List of GUIDS
+# List of GUIDS
 
 | Target                                                                 | GUID shortcut                                                                                                   |
 | ---------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
