@@ -55,6 +55,8 @@ FROM
     "apps" and [[]] and ![[See extension]]
 SORT
     choice(priority,priority,99)
+FLATTEN
+    "This is a Map of Apps"
 ```
 
 

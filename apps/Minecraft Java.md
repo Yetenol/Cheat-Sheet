@@ -92,6 +92,8 @@ FROM
     "apps" and [[]] and [[See extension]]
 SORT
     choice(priority,priority,99)
+FLATTEN
+    "This is a Map of Extensions"
 ```
 
 - add **profile to vanilla launcher** using elevated [script](../scripts/Link-MinecraftFabric.ps1)
@@ -167,6 +169,8 @@ FROM
     "apps" and [[]] and ![[See extension]]
 SORT
     choice(priority,priority,99)
+FLATTEN
+    "This is a Map of Apps"
 ```
 
 

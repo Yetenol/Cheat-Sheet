@@ -29,4 +29,6 @@ FROM
     [[]]
 SORT
     choice(priority, priority, 999999)
+FLATTEN
+    "This is a Map of Content"
 ```
