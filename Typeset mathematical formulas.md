@@ -20,8 +20,8 @@ priority:
 Sources:
 
 Related:
-- [Standardize currencies and monetary values](Standardize%20currencies%20and%20monetary%20values.md)
-- [Typeset numeric values](Typeset%20numeric%20values.md)
+- [[Standardize currencies and monetary values]]
+- [[Typeset numeric values]]
 
 Tags:
-[Standardize values](Standardize%20values.md)
+[[Standardize values]]

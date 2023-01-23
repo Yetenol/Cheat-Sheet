@@ -38,6 +38,6 @@ SORT
 Sources:
 
 Related:
-[Anton's Digital Garden](Anton's%20Digital%20Garden.md)
+[[Anton's Digital Garden]]
 
 Tags:

@@ -93,5 +93,5 @@ Sources:
 Related:
 
 Tags:
-[Operate on the file system](../Operate%20on%20the%20file%20system.md)
-[Handle objects](../Handle%20objects.md)
+[[Operate on the file system]]
+[[Handle objects]]

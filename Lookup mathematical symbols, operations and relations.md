@@ -57,14 +57,14 @@ These symbols can also be used in text mode.
 
 | Command      | Rendering | Dependency                               |
 | ------------ | --------- | ---------------------------------------- |
-| `\cEUR{}`    | €         | [currency](https://texdoc.org/serve/currency/0) + [setup](Standardize%20currencies%20and%20monetary%20values.md) |
-| `\cUSD{}`    | $         | [currency](https://texdoc.org/serve/currency/0) + [setup](Standardize%20currencies%20and%20monetary%20values.md) |
-| `\cJPY{}`    | ¥         | [currency](https://texdoc.org/serve/currency/0) + [setup](Standardize%20currencies%20and%20monetary%20values.md) |
-| `\cGBP{}`    | £         | [currency](https://texdoc.org/serve/currency/0) + [setup](Standardize%20currencies%20and%20monetary%20values.md) |
-| `\dEUR{1.5}` | 1.50 €    | [currency](https://texdoc.org/serve/currency/0) + [setup](Standardize%20currencies%20and%20monetary%20values.md) |
-| `\dUSD{1.5}` | $ 1.50    | [currency](https://texdoc.org/serve/currency/0) + [setup](Standardize%20currencies%20and%20monetary%20values.md) |
-| `\dJPY{1.5}` | 2 ¥       | [currency](https://texdoc.org/serve/currency/0) + [setup](Standardize%20currencies%20and%20monetary%20values.md) |
-| `\dGBP{1.5}` | £ 1.50    | [currency](https://texdoc.org/serve/currency/0) + [setup](Standardize%20currencies%20and%20monetary%20values.md) |
+| `\cEUR{}`    | €         | [currency](https://texdoc.org/serve/currency/0) + [[setup]] |
+| `\cUSD{}`    | $         | [currency](https://texdoc.org/serve/currency/0) + [[setup]] |
+| `\cJPY{}`    | ¥         | [currency](https://texdoc.org/serve/currency/0) + [[setup]] |
+| `\cGBP{}`    | £         | [currency](https://texdoc.org/serve/currency/0) + [[setup]] |
+| `\dEUR{1.5}` | 1.50 €    | [currency](https://texdoc.org/serve/currency/0) + [[setup]] |
+| `\dUSD{1.5}` | $ 1.50    | [currency](https://texdoc.org/serve/currency/0) + [[setup]] |
+| `\dJPY{1.5}` | 2 ¥       | [currency](https://texdoc.org/serve/currency/0) + [[setup]] |
+| `\dGBP{1.5}` | £ 1.50    | [currency](https://texdoc.org/serve/currency/0) + [[setup]] |
 
 # Degree Symbols
 
@@ -681,7 +681,7 @@ Sources:
 - 2022-06-10: [List of mathematical symbols by subject - Wikipedia](https://en.wikipedia.org/wiki/List_of_mathematical_symbols_by_subject)
 
 Related:
-[Vary the style of mathematical symbols](Vary%20the%20style%20of%20mathematical%20symbols.md)
+[[Vary the style of mathematical symbols]]
 
 Tags:
-[Standardize values](Standardize%20values.md)
+[[Standardize values]]

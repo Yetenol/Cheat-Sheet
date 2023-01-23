@@ -314,7 +314,7 @@ Sources:
 - 2023-01-10: [c# - What are regular expression Balancing Groups? - Stack Overflow](https://stackoverflow.com/questions/17003799/what-are-regular-expression-balancing-groups)
 
 Related:
-[RegEx implementation in .Net](RegEx%20implementation%20in%20.Net.md)
+[[RegEx implementation in .Net]]
 
 Tags:
-[Languages and Encodings](Languages%20and%20Encodings.md)
+[[Languages and Encodings]]

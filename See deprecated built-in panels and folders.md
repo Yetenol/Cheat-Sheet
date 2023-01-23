@@ -142,7 +142,7 @@ Sources:
 - 2022-04-23: [Windows- known folders](https://renenyffenegger.ch/notes/Windows/dirs/_known-folders)
 
 Related:
-[Access panels and folders of Windows](Access%20panels%20and%20folders%20of%20Windows.md)
+[[Access panels and folders of Windows]]
 
 Tags:
-[Access known folders](Access%20known%20folders.md)
+[[Access known folders]]

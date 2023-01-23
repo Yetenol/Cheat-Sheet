@@ -113,7 +113,7 @@ Sources:
 - 2022-12-17: [PowerShell Multiline String - Working of multiline string using her string](https://www.educba.com/powershell-multiline-string/)
 
 Related:
-[Input information](Input%20information.md)
+[[Input information]]
 
 Tags:
-[Handle objects](../Handle%20objects.md)
+[[Handle objects]]

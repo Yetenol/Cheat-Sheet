@@ -27,8 +27,8 @@ Use `.xml` files to preserve the PowerShells Object information.
     ? { $_.Name -match "processor" } # filter only matching objects
     ```
 
-- [Standardize the handling of temporal data, clock times and time stamps](Standardize%20the%20handling%20of%20temporal%20data,%20clock%20times%20and%20time%20stamps.md)
-- [Test paths and retrieve filesystem information](../Test%20paths%20and%20retrieve%20filesystem%20information.md)
+- [[Standardize the handling of temporal data, clock times and time stamps]]
+- [[Test paths and retrieve filesystem information]]
 
 # Plain text file
 
@@ -60,7 +60,8 @@ Use `.xml` files to preserve the PowerShells Object information.
 
 ## Find Occurrences Of A Pattern
 
-> Quick [**Regular Expression**](../Regular%20expressions.md) Reference for `-match` and `[RegEx]::`  
+#obsidian/embedDuplicate
+> Quick [[Regular expressions]] Reference for `-match` and `[RegEx]::`  
 > `(?ENABLE-DISABLE)` [Interpretation Options](../Regular%20expressions.md#engine-interpretation-options):  `i` IgnoreCase;  `n` ExplicitCapture;  `x` IgnorePatternWhitespace;  `m` Multiline;  `s` Singleline;  
 > `^` Start of line;  `$` End of line;  `.*` ≥0 character(s);  `.+` ≥0 character(s);  `\w*` Any word;  `\S*` Any non-whitespace;
 > `\s*` Any whitespace;  `(.*)` Unnamed group;     `(?<user>.*)` Named group called user
@@ -107,7 +108,8 @@ $pattern = "(?i)^user"
 
 ## Extract Data Using A Pattern
 
-> Quick [**Regular Expression**](../Regular%20expressions.md) Reference for `-match` and `[RegEx]::`  
+#obsidian/embedDuplicate 
+> Quick [[Regular expressions]] Reference for `-match` and `[RegEx]::`  
 > `(?ENABLE-DISABLE)` [Interpretation Options](../Regular%20expressions.md#engine-interpretation-options):  `i` IgnoreCase;  `n` ExplicitCapture;  `x` IgnorePatternWhitespace;  `m` Multiline;  `s` Singleline;  
 > `^` Start of line;  `$` End of line;  `.*` ≥0 character(s);  `.+` ≥0 character(s);  `\w*` Any word;  `\S*` Any non-whitespace;
 > `\s*` Any whitespace;  `(.*)` Unnamed group;     `(?<user>.*)` Named group called user
@@ -183,7 +185,7 @@ $pattern = "(?i)^user"
 Sources:
 
 Related:
-[Regular expressions](../Regular%20expressions.md)
+[[Regular expressions]]
 
 Tags:
-[Handle objects](../Handle%20objects.md)
+[[Handle objects]]

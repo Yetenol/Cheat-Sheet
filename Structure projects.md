@@ -97,4 +97,4 @@ Sources:
 Related:
 
 Tags:
-[LaTeX](LaTeX.md)
+[[LaTeX]]

@@ -42,4 +42,4 @@ Sources:
 Related:
 
 Tags:
-[Standardize values](Standardize%20values.md)
+[[Standardize values]]

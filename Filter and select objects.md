@@ -19,7 +19,7 @@ $f = Get-ChildItem
 
 # Inspect result object
 
-- See object's [type](Strongly%20type%20variables%20to%20ensure%20correct%20content%20and%20members.md) and properties
+- See object's [[Strongly type variables to ensure correct content and members|type]] and properties
 	```powershell
 	$c | Get-Member -MemberType Properties
 	```
@@ -124,4 +124,4 @@ Related:
 [Pipelines](Pipelines),
 
 Tags:
-[Handle objects](Handle%20objects.md)
+[[Handle objects]]

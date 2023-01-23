@@ -123,7 +123,7 @@ Sources:
 2023-01-10: [LaTeX tables - Tutorial with code examples - LaTeX-Tutorial.com](https://latex-tutorial.com/tutorials/tables/)
 
 Related:
-[Floating objects](Floating%20objects.md)
+[[Floating objects]]
 
 Tags:
-[Standardize graphical elements](Standardize%20graphical%20elements.md)
+[[Standardize graphical elements]]

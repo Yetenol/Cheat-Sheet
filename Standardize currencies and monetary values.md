@@ -93,7 +93,7 @@ The [currency](https://texdoc.org/serve/currency/0) package provide a conveninen
 Sources:
 
 Related:
-[Lookup mathematical symbols, operations and relations](Lookup%20mathematical%20symbols,%20operations%20and%20relations.md)
+[[Lookup mathematical symbols, operations and relations]]
 
 Tags:
-[Standardize values](Standardize%20values.md)
+[[Standardize values]]

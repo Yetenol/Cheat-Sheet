@@ -35,7 +35,7 @@ priority:
 Sources:
 
 Related:
-[Troubleshoot and get help](../Troubleshoot%20and%20get%20help.md)
+[[Troubleshoot and get help]]
 
 Tags:
-[PowerShell](../PowerShell.md)
+[[PowerShell]]

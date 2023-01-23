@@ -66,4 +66,4 @@ Sources:
 Related:
 
 Tags:
-[Develop PowerShell projects](../Develop%20PowerShell%20projects.md)
+[[Develop PowerShell projects]]

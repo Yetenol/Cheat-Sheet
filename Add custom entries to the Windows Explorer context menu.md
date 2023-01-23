@@ -34,4 +34,4 @@ Related:
 [[Read and write to the registry]]
 
 Tags:
-[Windows](../Windows.md)
+[[Windows]]

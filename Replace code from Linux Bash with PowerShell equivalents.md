@@ -624,4 +624,4 @@ Related:
 [Linux](Linux)
 
 Tags:
-[PowerShell](../../PowerShell.md)
+[[PowerShell]]

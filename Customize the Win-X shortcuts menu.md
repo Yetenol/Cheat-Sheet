@@ -32,4 +32,4 @@ Sources:
 Related:
 
 Tags:
-[Windows](../Windows.md)
+[[Windows]]

@@ -62,4 +62,4 @@ Sources:
 Related:
 
 Tags:
-[Develop LaTeX packages](Develop%20LaTeX%20packages.md)
+[[Develop LaTeX packages]]

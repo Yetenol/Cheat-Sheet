@@ -50,7 +50,7 @@ regular expression and the text you want to search.
 Sources:
 
 Related:
-[Regular expressions](Regular%20expressions.md)
+[[Regular expressions]]
 
 Tags:
 

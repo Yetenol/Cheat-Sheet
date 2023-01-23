@@ -45,7 +45,7 @@ Dependecy: [siunitx](https://texdoc.org/serve/siunitx/0)
 
 # Monetary values
 
-Dependencies: [currency](https://texdoc.org/serve/currency/0) + [Standardize currencies and monetary values](Standardize%20currencies%20and%20monetary%20values.md)
+Dependencies: [currency](https://texdoc.org/serve/currency/0) + [[Standardize currencies and monetary values]]
 
 ## Currency
 
@@ -74,4 +74,4 @@ Sources:
 Related:
 
 Tags:
-[Standardize values](Standardize%20values.md)
+[[Standardize values]]

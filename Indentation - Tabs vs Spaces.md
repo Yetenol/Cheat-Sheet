@@ -63,4 +63,4 @@ Sources:
 Related:
 
 Tags:
-[Discussions](Discussions.md)
+[[Discussions]]

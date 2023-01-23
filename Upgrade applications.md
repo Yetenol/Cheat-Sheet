@@ -31,7 +31,7 @@ winget upgrade --all
 Sources:
 
 Related:
-[autohotkey](../autohotkey.md)
+[[autohotkey]]
 
 Tags:
-[PowerShell](../PowerShell.md)
+[[PowerShell]]

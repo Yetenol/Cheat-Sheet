@@ -90,4 +90,4 @@ Sources:
 Related:
 
 Tags:
-[Languages and Encodings](Languages%20and%20Encodings.md)
+[[Languages and Encodings]]

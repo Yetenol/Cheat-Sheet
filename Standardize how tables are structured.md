@@ -6,7 +6,7 @@ priority: 1
 ---
 
 1. Tabular environments should be nested in a **floating object** aka flaot.    
-    see [Floating objects](Floating%20objects.md)
+    see [[Floating objects]]
     ```latex
     \begin{table}
         \begin{⟨tabular environment⟩}
@@ -51,4 +51,4 @@ Sources:
 Related:
 
 Tags:
-[Standardize graphical elements](Standardize%20graphical%20elements.md)
+[[Standardize graphical elements]]

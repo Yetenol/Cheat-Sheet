@@ -75,4 +75,4 @@ Sources:
 Related:
 
 Tags:
-[PowerShell](../PowerShell.md)
+[[PowerShell]]

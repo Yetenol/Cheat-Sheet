@@ -59,7 +59,7 @@ $c = Get-Command
 	```
 
 - **Encrypted standard string**  
-  read further [Encrypt or decrypt sensitive text](../Encrypt%20or%20decrypt%20sensitive%20text.md)
+  read further [[Encrypt or decrypt sensitive text]]
 	```powershell
 	$c | ConvertTo-SecureString -AsPlainText -Force |
 		ConvertFrom-SecureString |
@@ -75,4 +75,4 @@ Sources:
 Related:
 
 Tags:
-[Handle objects](../../Handle%20objects.md)
+[[Handle objects]]

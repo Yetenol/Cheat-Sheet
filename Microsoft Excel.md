@@ -74,4 +74,4 @@ Sources:
 Related:
 
 Tags:
-[Applications](Applications.md)
+[[Applications]]

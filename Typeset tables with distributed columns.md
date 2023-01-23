@@ -59,4 +59,4 @@ Sources:
 Related:
 
 Tags:
-[Standardize graphical elements](Standardize%20graphical%20elements.md)
+[[Standardize graphical elements]]
