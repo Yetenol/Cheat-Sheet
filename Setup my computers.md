@@ -2,7 +2,6 @@
 dg-publish: true
 ---
 
-
 ```dataview
 LIST
     nonnull(list(

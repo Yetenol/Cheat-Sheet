@@ -47,4 +47,6 @@ SORT
     choice(priority,priority,99)
 WHERE
     priority = null
+FLATTEN
+    "This is a Map of deprecated apps"
 ```

@@ -47,4 +47,6 @@ SORT
     choice(priority,priority,99)
 WHERE
     priority = 1
+FLATTEN
+    "This is a Map of prioritized apps"
 ```
