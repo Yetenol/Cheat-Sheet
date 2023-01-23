@@ -4,6 +4,7 @@ example: Recycle Bin
 command: shell:::{}
 priority: 3
 ---
+
 Referenced using a [**CLSID keys**](https://docs.microsoft.com/de-de/windows/win32/com/clsid-key-hklm?redirectedfrom=MSDN) (globally unique identifier that identifies a COM class object)
 
 ```dataview
