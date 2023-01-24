@@ -1,5 +1,5 @@
 ---
-dg-publish: false
+dg-publish: true
 priority: -1
 ---
 
