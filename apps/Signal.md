@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 storeId: 
 wingetId: OpenWhisperSystems.Signal
 website: https://signal.org/en/download/

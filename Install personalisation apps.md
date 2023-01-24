@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 categoryName: Personalisation
 priority: 5
 ---

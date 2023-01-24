@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 example: Hyphenation
 command: [ '\!', '\,', '\:', '\;', '\quad', '\qquad' ]
 priority: 7

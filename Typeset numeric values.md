@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 example: [ Numbers, Physical quantities ]
 command: \qty{3}{\celsius}
 priority: 1

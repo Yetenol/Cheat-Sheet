@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 storeId: 
 wingetId: Rainmeter.Rainmeter
 githubUser: rainmeter

@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 example: Leash Decorations
 command: kill   e[type=item,nbt={Item:{id:"minecraft:wool"}}]
 ---

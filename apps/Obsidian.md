@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 storeId: 
 wingetId: Obsidian.Obsidian
 website: https://obsidian.md/

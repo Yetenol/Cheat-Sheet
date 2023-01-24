@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 storeId: 
 wingetId: KeeWeb.KeeWeb
 website: https://keeweb.info/

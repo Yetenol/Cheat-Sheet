@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 storeId: 9wzdncrfj4mv
 priority: 1
 ---

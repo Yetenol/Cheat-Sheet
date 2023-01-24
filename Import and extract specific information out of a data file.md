@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 example: Find occurrences of a pattern
 command: '[RegEx]::Match($_, $pattern)'
 ---

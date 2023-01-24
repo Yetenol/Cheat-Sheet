@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 ---
 
 ## Install Microsoft Store third-party storefront app

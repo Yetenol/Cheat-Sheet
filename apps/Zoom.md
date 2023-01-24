@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 storeId: xp99j3kp4xz4vv
 website: https://zoom.us/download
 ---

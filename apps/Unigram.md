@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 storeId: 9n97zckpd60q
 githubUser: UnigramDev
 githubRepo: Unigram

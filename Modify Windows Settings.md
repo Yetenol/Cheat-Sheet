@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 example: Sync
 command: 'about:settings/content/notifications'
 priority: 5

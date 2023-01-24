@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 storeId: 
 website: https://account.microsoft.com/services/office/install
 ---

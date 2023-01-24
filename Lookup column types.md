@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 example: [ Content, Width, Alignment ]
 command: [ L, X, S ]
 priority: 9

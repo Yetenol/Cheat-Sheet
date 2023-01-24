@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 example: AutoComplete
 command: [Parameter(Mandatory = $true)]
 ---

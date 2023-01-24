@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 storeId: XP9M26RSCLNT88
 wingetId: JAMSoftware.TreeSizeFree
 website: https://www.jam-software.com/treesize_free

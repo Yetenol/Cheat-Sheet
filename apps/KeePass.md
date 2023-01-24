@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 storeId: 
 wingetId: DominikReichl.KeePass
 website: https://keepass.info/download.html

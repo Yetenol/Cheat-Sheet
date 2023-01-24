@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 storeId: 
 website: http://www.angusj.com/resourceh*acker/#download
 ---

@@ -1,5 +1,5 @@
 ---
-dg-publish: true
+dg-publish: false
 example: While Loop
 command: [ read name, $name = Read-Host -Prompt "Name" ]
 ---
