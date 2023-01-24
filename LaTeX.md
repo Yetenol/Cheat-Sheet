@@ -1,5 +1,5 @@
 ---
-dg-publish: false
+dg-publish: true
 dg-permalink: "latex"
 example: 
 command: 

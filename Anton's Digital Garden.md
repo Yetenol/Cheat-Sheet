@@ -4,7 +4,7 @@ dg-home: true
 dg-enable-search: true
 ---
 
-This project contains all my documentations of my developer life including code templates, tips and tricks, cheat sheets and glossaries.
+This project contains all my documentations of my developer life including code templates, tips and tricks, cheat sheets and glossaries...
 
 ```dataview
 LIST

@@ -1,5 +1,5 @@
 ---
-dg-publish: false
+dg-publish: true
 example: Quantifiers
 command: '(?in)user:(?<name>\S*)\s*key:(?<pwd>\S*)'
 ---

@@ -1,5 +1,5 @@
 ---
-dg-publish: false
+dg-publish: true
 example: Delete binary from history
 command: git clone git@github.com:Yetenol/⟨repository⟩.git
 ---
