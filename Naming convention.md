@@ -1,5 +1,5 @@
 ---
-dg-publish: false
+dg-publish: true
 example: 
 command: 
 priority: 
@@ -13,7 +13,7 @@ priority:
 - naming convention: _PREDEFINED\_VERB_-_COMBINATION\_OF\_SPECIFIC\_SINGULAR\_NOUNS_
   - Use Pascal Case (capitalize the first letter of verb and all terms used in the noun)
   
-  - Use one of the predefined verb names provided by PowerShell `Get-Verb` [[MS](https://docs.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands?view=powershell-7.2)]
+  - Use one of the predefined verb names provided by PowerShell `Get-Verb` [MS](https://docs.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands?view=powershell-7.2)
   - use _Remove_, never use _~~Delete~~_ or _~~Eliminate~~_
 
 

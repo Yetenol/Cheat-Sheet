@@ -1,5 +1,5 @@
 ---
-dg-publish: false
+dg-publish: true
 example: 'Select option 1, 2, 3'
 command: '$Choice = Read-Host -Prompt "Select ..."'
 ---
