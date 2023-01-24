@@ -48,4 +48,4 @@ or install via [Website](https://keepass.info/download.html)
 
 
 
-[[../Install storage apps]]
+[[Install storage apps]]

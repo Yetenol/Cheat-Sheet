@@ -21,4 +21,4 @@ or via Microsoft Store:
 - [ ] Run at startup
 
 
-[[../Install messengers]]
+[[Install messengers]]

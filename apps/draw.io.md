@@ -33,4 +33,4 @@ Open `Format > Diagram`
 - [x] Mathematical Typesetting _# Options_
 - `A4` =: Paper Size
 
-[[../Install educational apps]]
+[[Install educational apps]]

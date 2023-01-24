@@ -9,4 +9,4 @@ website: https://www.7-zip.org/
 priority: 10
 ---
 
-[[../Install development apps]]
+[[Install development apps]]

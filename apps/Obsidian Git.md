@@ -36,4 +36,4 @@ Related:
 [[Obsidian]]
 
 Tags:
-[[../See extension]]
+[[See extension]]

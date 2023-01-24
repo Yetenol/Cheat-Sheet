@@ -10,4 +10,4 @@ priority:
 ---
 ---
 
-[[../Install personalisation apps]]
+[[Install personalisation apps]]

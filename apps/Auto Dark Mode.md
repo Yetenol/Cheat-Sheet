@@ -21,4 +21,4 @@ priority: 10
 > - `English (English)` =: Language
 
 
-[[../Install personalisation apps]]
+[[Install personalisation apps]]

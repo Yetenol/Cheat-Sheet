@@ -21,4 +21,4 @@ or install via [Github](https://github.com/randyrants/sharpkeys/releases/latest)
     ```
 
 
-[[../Install personalisation apps]]
+[[Install personalisation apps]]

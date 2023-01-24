@@ -32,4 +32,4 @@ or install via [Website](https://www.gitkraken.com/download/windows64)
 
 
 
-[[../Install development apps]]
+[[Install development apps]]

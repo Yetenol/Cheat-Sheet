@@ -9,4 +9,4 @@ website:
 priority: 10
 ---
 
-[[../Install entertainment apps]]
+[[Install entertainment apps]]

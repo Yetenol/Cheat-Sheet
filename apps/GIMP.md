@@ -18,4 +18,4 @@ or install via [Website](https://www.gimp.org/downloads/)
 
 
 
-[[../Install office apps]]
+[[Install office apps]]

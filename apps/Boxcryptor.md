@@ -71,4 +71,4 @@ or install via [Website](https://www.boxcryptor.com/en/download/)
 > - Restart explorer
 
 
-[[../Install storage apps]]
+[[Install storage apps]]
