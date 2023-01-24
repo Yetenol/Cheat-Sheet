@@ -1,5 +1,5 @@
 ---
-dg-publish: false
+dg-publish: true
 example: File Parsing
 command: '[RegEx]::Match($_, $pattern).Groups[1].value'
 ---
