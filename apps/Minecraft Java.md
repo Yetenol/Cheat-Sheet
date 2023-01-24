@@ -167,7 +167,9 @@ LIST
         )
     ))
 FROM
-    "apps" and [[]] and ![[See extension]]
+    "apps" and [[]]
+WHERE
+    !contains(file.outlinks,link("See extension"))
 SORT
     choice(priority,priority,99)
 FLATTEN
