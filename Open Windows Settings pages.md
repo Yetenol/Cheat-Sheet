@@ -1,5 +1,5 @@
 ---
-dg-publish: false
+dg-publish: true
 example: Display
 command: ms-settings:display
 ---
