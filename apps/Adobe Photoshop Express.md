@@ -1,5 +1,5 @@
 ---
-dg-publish: false
+dg-publish: true
 storeId: 9wzdncrfj27n
 wingetId: 
 githubUser: 

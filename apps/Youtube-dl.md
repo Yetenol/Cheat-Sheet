@@ -1,5 +1,5 @@
 ---
-dg-publish: false
+dg-publish: true
 storeId: 
 wingetId: youtube-dl.youtube-dl
 githubUser: ytdl-org

@@ -1,5 +1,5 @@
 ---
-dg-publish: false
+dg-publish: true
 storeId: 
 wingetId: Lexikos.AutoHotkey
 githubUser: 

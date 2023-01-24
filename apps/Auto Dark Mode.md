@@ -1,5 +1,5 @@
 ---
-dg-publish: false
+dg-publish: true
 storeId: xp8jk4hzbvf435
 wingetId: 
 githubUser: AutoDarkMode

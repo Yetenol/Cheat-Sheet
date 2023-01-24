@@ -1,5 +1,5 @@
 ---
-dg-publish: false
+dg-publish: true
 storeId: 
 wingetId: JetBrains.IntelliJIDEA.Edu
 website: https://www.jetbrains.com/education/download/#section=idea

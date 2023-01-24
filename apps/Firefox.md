@@ -1,5 +1,5 @@
 ---
-dg-publish: false
+dg-publish: true
 storeId: 9nzvdkpmr9rd
 wingetId: Mozilla.Firefox
 githubUser: 

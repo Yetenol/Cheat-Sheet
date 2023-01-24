@@ -1,5 +1,5 @@
 ---
-dg-publish: false
+dg-publish: true
 storeId: xp89dcgq3k6vld
 wingetId: Microsoft.PowerToys
 githubUser: microsoft

@@ -1,5 +1,5 @@
 ---
-dg-publish: false
+dg-publish: true
 storeId: 9nblggh516xp
 wingetId: File-New-Project.EarTrumpet
 githubUser: 

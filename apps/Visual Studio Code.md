@@ -1,5 +1,5 @@
 ---
-dg-publish: false
+dg-publish: true
 storeId: xp9khm4bk9fz7q
 wingetId: Microsoft.VisualStudioCode --scope machine
 website: https://code.visualstudio.com/#alt-downloads
