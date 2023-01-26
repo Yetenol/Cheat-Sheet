@@ -2,6 +2,10 @@
 
 ![last commit](https://img.shields.io/github/last-commit/yetenol/doc?color=white)
 
+This repository is archived and is now hosted on [Anton's Digital Garden](https://antonpusch.de/)
+
+---
+
 This project contains all my documentations of my developer life including code templates, tips and tricks, cheat sheets and glossaries.
 
 ```dynamic-embed
